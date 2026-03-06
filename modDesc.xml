@@ -1,29 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<modDesc descVersion="91"> <!-- Assuming FS25 descVersion, might need adjustment -->
+<modDesc descVersion="91">
     <author>TomTeh</author>
     <version>0.1.0.0</version>
     
-    <title>$l10n_title</title>
-    <description>$l10n_description</description>
+    <title>
+        <en>Analytic Farming Pack</en>
+        <cs>Analytický balíček pro farmáře</cs>
+    </title>
     
-    <iconFilename>icon.png</iconFilename>
+    <description>
+        <en>Advanced data analysis for your farm.</en>
+        <cs>Pokročilá analýza dat pro vaši farmu.</cs>
+    </description>
+    
+    <!-- <iconFilename>icon.png</iconFilename> -->
     <multiplayer supported="false" />
-    
-    <l10n>
-        <en>l10n/l10n_en.xml</en>
-        <cz>l10n/l10n_cz.xml</cz>
-    </l10n>
+
+    <extraSourceFiles>
+        <sourceFile filename="AnalyticMain.lua" />
+    </extraSourceFiles>
     
     <storeItems>
-        <!-- Store items for vehicles and tools will be defined here -->
-    </storeItems>
+        </storeItems>
     
     <actions>
-        <!-- Custom game actions will be defined here -->
-    </actions>
+        </actions>
     
     <inputBindings>
-        <!-- Key bindings for custom actions will be defined here -->
-    </inputBindings>
-    
+        </inputBindings>
 </modDesc>
