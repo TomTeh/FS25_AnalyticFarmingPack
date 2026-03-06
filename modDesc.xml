@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="81"> <!-- Assuming FS25 descVersion, might need adjustment -->
-    <author>Tomas</author>
+    <author>TomTeh</author>
     <version>0.1.0.0</version>
     
     <title>$l10n_title</title>
     <description>$l10n_description</description>
     
     <iconFilename>icon.png</iconFilename>
-    <multiplayer supported="true" />
+    <multiplayer supported="false" />
     
     <l10n>
         <en>l10n/l10n_en.xml</en>
