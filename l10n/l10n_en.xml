@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <texts>
+        <text name="l10n_title" text="Analytic Farming Pack" />
+        <text name="l10n_description"><![CDATA[A pack for precision farming analysis.]]></text>
+    </texts>
+</l10n>
