@@ -1,40 +1,36 @@
 AnalyticMain = {}
+local AnalyticMain_mt = { __index = AnalyticMain }
+
+function AnalyticMain.new(mission, i3dFilename)
+    local self = setmetatable({}, AnalyticMain_mt)
+    print("--- [Analytic Farming Pack] Inicializace objektu ---")
+    return self
+end
 
 function AnalyticMain:loadMap(name)
-    -- --- ČÁST 1: DIAGNOSTIKA ---
-    local gameVersion = g_gui.languageHelp.gameVersion
+    print("--- [Analytic Farming Pack] START ANALYZY ---")
     
-    print("--- [Analytic Farming Pack] DIAGNOSTIKA ---")
-    print(string.format("Verze hry: %s", tostring(gameVersion)))
-    
-    if g_modManager ~= nil then
-        print(string.format("Hra očekává descVersion kolem: %s", tostring(g_modManager.defaultDescVersion)))
+    -- Diagnostika
+    if g_gui and g_gui.languageHelp then
+        print(string.format("Verze hry: %s", tostring(g_gui.languageHelp.gameVersion)))
     end
-    print("-------------------------------------------")
 
-    -- --- ČÁST 2: ANALÝZA POLÍ ---
-    print("--- [Analytic Farming Pack] STARTUJI ANALYZU POLI ---")
-    
-    local fieldManager = g_fieldManager
-    local farmlandManager = g_farmlandManager
-    
-    if fieldManager ~= nil and farmlandManager ~= nil then
-        local fields = fieldManager.fields
-        print(string.format("Nalezeno celkem poli na mape: %d", #fields))
-        
-        for _, field in ipairs(fields) do
-            -- Zjištění majitele pozemku
-            local farmlandId = farmlandManager:getFarmlandIdAtWorldPosition(field.posX, field.posZ)
-            local ownerId = farmlandManager:getFarmlandOwner(farmlandId)
-            
-            -- g_currentMission.playerFarmId je ID tvé farmy
-            if ownerId == g_currentMission.playerFarmId then
-                local area = field.fieldAreaInHa
-                print(string.format("-> Pole c. %d ti patri! Rozloha: %.2f ha", field.fieldId, area))
+    -- Analyza poli
+    if g_fieldManager and g_farmlandManager and g_currentMission then
+        local fields = g_fieldManager.fields
+        if fields ~= nil then
+            for _, field in ipairs(fields) do
+                local farmlandId = g_farmlandManager:getFarmlandIdAtWorldPosition(field.posX, field.posZ)
+                local ownerId = g_farmlandManager:getFarmlandOwner(farmlandId)
+                
+                if ownerId == g_currentMission.playerFarmId then
+                    print(string.format("-> Vlastnis pole c. %s (Rozloha: %.2f ha)", tostring(field.fieldId), field.fieldAreaInHa))
+                end
             end
         end
     end
-    print("--- [Analytic Farming Pack] ANALYZA DOKONCENA ---")
+    print("--- [Analytic Farming Pack] HOTOVO ---")
 end
 
+-- Registrace modu bezpecnejsi cestou
 addModEventListener(AnalyticMain)
