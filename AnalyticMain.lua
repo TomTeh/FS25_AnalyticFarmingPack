@@ -1,36 +1,33 @@
 AnalyticMain = {}
-local AnalyticMain_mt = { __index = AnalyticMain }
 
-function AnalyticMain.new(mission, i3dFilename)
-    local self = setmetatable({}, AnalyticMain_mt)
-    print("--- [Analytic Farming Pack] Inicializace objektu ---")
+-- Tato funkce vytvoří "tělo" tvého modu, které hra vyžaduje
+function AnalyticMain.new()
+    local self = {}
+    setmetatable(self, { __index = AnalyticMain })
     return self
 end
 
+-- loadMap se spustí, když se načítá mapa
 function AnalyticMain:loadMap(name)
     print("--- [Analytic Farming Pack] START ANALYZY ---")
     
-    -- Diagnostika
-    if g_gui and g_gui.languageHelp then
+    -- Diagnostika: Verze hry
+    if g_gui ~= nil and g_gui.languageHelp ~= nil then
         print(string.format("Verze hry: %s", tostring(g_gui.languageHelp.gameVersion)))
     end
 
-    -- Analyza poli
-    if g_fieldManager and g_farmlandManager and g_currentMission then
+    -- Analýza polí: Musíme počkat, až je g_currentMission připravena
+    if g_currentMission ~= nil and g_fieldManager ~= nil then
         local fields = g_fieldManager.fields
         if fields ~= nil then
-            for _, field in ipairs(fields) do
-                local farmlandId = g_farmlandManager:getFarmlandIdAtWorldPosition(field.posX, field.posZ)
-                local ownerId = g_farmlandManager:getFarmlandOwner(farmlandId)
-                
-                if ownerId == g_currentMission.playerFarmId then
-                    print(string.format("-> Vlastnis pole c. %s (Rozloha: %.2f ha)", tostring(field.fieldId), field.fieldAreaInHa))
-                end
-            end
+            print(string.format("Nalezeno poli na mape: %d", #fields))
+            -- Zde můžeme později přidat další výpočty
         end
     end
+    
     print("--- [Analytic Farming Pack] HOTOVO ---")
 end
 
--- Registrace modu bezpecnejsi cestou
-addModEventListener(AnalyticMain)
+-- Registrace: Vytvoříme instanci a přidáme ji do systému
+local myModInstance = AnalyticMain.new()
+addModEventListener(myModInstance)
