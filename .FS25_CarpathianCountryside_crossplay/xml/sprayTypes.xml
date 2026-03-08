@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map>
+    <sprayTypes>
+        <sprayType name="COMPOST" litersPerSecond="0.4000" type="FERTILIZER" sprayGroundType="FERTILIZER" />
+    </sprayTypes>
+</map>

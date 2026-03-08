@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<light xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/sharedLight.xsd">
+    <filename>placeables/sharedAssets/lights/floodLight.i3d</filename>
+    <rootNode node="0" />
+    <defaultLight node="0|0|0" />
+    <rotationNode name="rotationNode01" node="0|0" />
+</light>

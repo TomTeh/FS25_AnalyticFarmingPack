@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../shared/xml/schema/aiHelper.xsd">
+    <helpers>
+        <helper name="A" title="$l10n_aiHelperNameA" color="1 0 0">
+            <playerStyle filename="dataS/character/playerM/playerM.xml">
+                <bottom color="7" name="motion2020Pants2nd"/>
+                <face color="1" name="head01"/>
+                <top color="10" name="volvoSoftJacket2"/>
+                <footwear color="1" name="eltenTerenceXXG5"/>
+                <hairStyle color="13" name="hair06"/>
+                <beard color="13" name="stubble_head01"/>
+            </playerStyle>
+        </helper>
+        <helper name="B" title="$l10n_aiHelperNameB" color="0 1 0">
+            <playerStyle filename="dataS/character/playerF/playerF.xml">
+                <bottom color="10" name="botSlacks"/>
+                <face color="1" name="head02"/>
+                <top color="10" name="topEltenHoodie"/>
+                <footwear color="1" name="eltenTerenceXXG5"/>
+                <hairStyle color="1" name="hair16"/>
+            </playerStyle>
+        </helper>
+        <helper name="C" title="$l10n_aiHelperNameC" color="0 0 1">
+            <playerStyle filename="dataS/character/playerM/playerM.xml">
+                <bottom color="6" name="cargo"/>
+                <face color="1" name="head02"/>
+                <top color="3" name="caseih"/>
+                <footwear color="1" name="husqvarnaBoots"/>
+                <hairStyle color="16" name="hair12"/>
+                <beard color="16" name="goatee01_head02"/>
+            </playerStyle>
+        </helper>
+        <helper name="D" title="$l10n_aiHelperNameD" color="1 1 0">
+            <playerStyle filename="dataS/character/playerF/playerF.xml">
+                <bottom color="5" name="claas"/>
+                <face color="1" name="head02"/>
+                <top color="10" name="claas"/>
+                <gloves color="8" name="mechanic"/>
+                <footwear color="1" name="workBoots1"/>
+                <hairStyle color="13" name="hair07"/>
+            </playerStyle>
+        </helper>
+        <helper name="E" title="$l10n_aiHelperNameE" color="1 0 1">
+            <playerStyle filename="dataS/character/playerM/playerM.xml">
+                <bottom color="5" name="JDPants01"/>
+                <face color="1" name="head01"/>
+                <top color="10" name="JDHoodie"/>
+                <glasses color="1" name="aviator"/>
+                <footwear color="1" name="johnDeereBoots"/>
+                <hairStyle color="13" name="hair08"/>
+                <beard color="13" name="goatee01_head01"/>
+            </playerStyle>
+        </helper>
+        <helper name="F" title="$l10n_aiHelperNameF" color="0 1 1">
+            <playerStyle filename="dataS/character/playerF/playerF.xml">
+                <bottom color="1" name="straussTrousers2nd"/>
+                <face color="1" name="head04"/>
+                <top color="1" name="straussTShirtMerino"/>
+                <glasses color="1" name="reading"/>
+                <footwear color="1" name="eltenMaddoxLowBlack"/>
+                <hairStyle color="20" name="hair16"/>
+            </playerStyle>
+        </helper>
+        <helper name="G" title="$l10n_aiHelperNameG" color="0.5 1 0.5">
+            <playerStyle filename="dataS/character/playerM/playerM.xml">
+                <onepiece color="7" name="fendt"/>
+                <face color="1" name="head02"/>
+                <glasses color="1" name="classic"/>
+                <footwear color="1" name="eltenTerenceXXG5"/>
+                <hairStyle color="7" name="hair03"/>
+                <beard color="7" name="fullBeard_head02"/>
+            </playerStyle>
+        </helper>
+        <helper name="H" title="$l10n_aiHelperNameH" color="0.5 0.5 1">
+            <playerStyle filename="dataS/character/playerF/playerF.xml">
+                <bottom color="5" name="jeans"/>
+                <face color="1" name="head01"/>
+                <top color="10" name="MFHoodie2"/>
+                <footwear color="1" name="eltenSensationXX10"/>
+                <hairStyle color="7" name="hair06"/>
+            </playerStyle>
+        </helper>
+        <helper name="I" title="$l10n_aiHelperNameI" color="1 0.5 0.5">
+            <playerStyle filename="dataS/character/playerM/playerM.xml">
+                <bottom color="2" name="jeans"/>
+                <face color="1" name="head04"/>
+                <top color="2" name="collaredShirt"/>
+                <headgear color="12" name="ballcap"/>
+                <glasses color="1" name="classic"/>
+                <footwear color="9" name="sneakers"/>
+                <hairStyle color="18" name="hair02"/>
+            </playerStyle>
+        </helper>
+        <helper name="J" title="$l10n_aiHelperNameJ" color="0.5 0.5 0.5">
+            <playerStyle filename="dataS/character/playerF/playerF.xml">
+                <onepiece color="2" name="synthetic"/>
+		        <face color="1" name="head01"/>
+		        <footwear color="1" name="galoshes"/>
+		        <hairStyle color="13" name="hair12"/>
+            </playerStyle>
+        </helper>
+    </helpers>
+</map>

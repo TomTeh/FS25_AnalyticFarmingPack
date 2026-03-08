@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="pallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>$l10n_pallet_clayBricksPallet</name>
+        <image>objects/pallets/clayBricksPallet/store_clayBricksPallet.png</image>
+        <price>1610</price>
+        <category>pallets</category>
+        <brand>NONE</brand>
+        <showInStore>false</showInStore>
+        <canBeSold>false</canBeSold>
+        <financeCategory>OTHER</financeCategory>
+
+        <storeIconRendering>
+            <settings centerIcon="true" cameraXRot="-15" cameraYRot="35"/>
+        </storeIconRendering>
+        <vertexBufferMemoryUsage>89856</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>18176</indexBufferMemoryUsage>
+        <textureMemoryUsage>655360</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>objects/pallets/clayBricksPallet/clayBricksPallet.i3d</filename>
+        <size width="1.3" length="0.9" height="1.0" />
+        <canBeReset>false</canBeReset>
+        <components maxMass="400">
+            <component centerOfMass="0 0.2 0" solverIterationCount="10" mass="60"/>
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false" />
+        <input allowed="false"/>
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="CLAYBRICKS" capacity="1000" ignoreFillLimit="true"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <pallet fillUnitIndex="1" linkNode="clayBricksPallet_component1">
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletNew_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletMiddle_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletOld_diffuse.dds"/>
+
+        <content>
+            <object node="clayBricks01" tensionBeltNode="clayBricks01_tension"/>
+            <object node="clayBricks02" tensionBeltNode="clayBricks02_tension"/>
+            <object node="clayBricks03" tensionBeltNode="clayBricks03_tension"/>
+            <object node="clayBricks04" tensionBeltNode="clayBricks04_tension"/>
+        </content>
+
+        <sounds>
+            <unload template="palletsFillStone" pitchScale="0.9" />
+        </sounds>
+    </pallet>
+
+    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="0.65" jointTransY="0.11" jointLimitToRotY="true"/>
+
+    <i3dMappings>
+        <i3dMapping id="clayBricksPallet_component1" node="0>" />
+        <i3dMapping id="dynamicMountTrigger" node="0>0" />
+        <i3dMapping id="clayBricks01" node="0>1|0" />
+        <i3dMapping id="clayBricks01_tension" node="0>1|0|1" />
+        <i3dMapping id="clayBricks02" node="0>1|1" />
+        <i3dMapping id="clayBricks02_tension" node="0>1|1|1" />
+        <i3dMapping id="clayBricks03" node="0>1|2" />
+        <i3dMapping id="clayBricks03_tension" node="0>1|2|1" />
+        <i3dMapping id="clayBricks04" node="0>1|3" />
+        <i3dMapping id="clayBricks04_tension" node="0>1|3|1" />
+    </i3dMappings>
+</vehicle>

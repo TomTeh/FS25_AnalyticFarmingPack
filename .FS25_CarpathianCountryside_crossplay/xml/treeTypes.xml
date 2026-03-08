@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map>
+    <treeTypes>
+        <!-- Edited base game treeTypes -->
+        <treeType name="downyServiceberry" splitType="DOWNYSERVICEBERRY" title="$l10n_treeType_downyServiceberry" growthTimeHours="335" saplingPrice="0">
+            <stage>
+                <variation name="RISUTECSKB240" filename="$data/maps/trees/downyServiceBerry/saplings/downyServiceBerrySapling01.i3d">
+                    <pallet filename="$data/maps/trees/downyServiceBerry/saplings/downyServiceBerrySapling01_pallet.i3d" storeItem="$data/objects/pallets/treeSaplingPallet01/treeSaplingPallet01.xml"/>
+                    <planter filename="$data/maps/trees/downyServiceBerry/saplings/downyServiceBerrySapling01_planter_risutecSKB240.i3d" />
+                </variation>
+                <variation name="DEFAULT" filename="$data/maps/trees/downyServiceBerry/saplings/downyServiceBerrySapling02.i3d">
+                    <pallet storeItem="$data/objects/pallets/treeSaplingPallet02/treeSaplingPallet02.xml"/>
+                </variation>
+            </stage>
+
+            <stage filename="maps/trees/downyServiceBerry/downyServiceBerry_stage01.i3d" />
+            <stage filename="maps/trees/downyServiceBerry/downyServiceBerry_stage02.i3d" />
+            <stage filename="maps/trees/downyServiceBerry/downyServiceBerry_stage03.i3d" />
+        </treeType>
+        <treeType name="goldenRain" splitType="GOLDENRAIN" title="$l10n_treeType_goldenRain" growthTimeHours="335" saplingPrice="0">
+            <stage>
+                <variation name="RISUTECSKB240" filename="$data/maps/trees/goldenRain/saplings/goldenRainSapling01.i3d">
+                    <pallet filename="$data/maps/trees/goldenRain/saplings/goldenRainSapling01_pallet.i3d" storeItem="$data/objects/pallets/treeSaplingPallet01/treeSaplingPallet01.xml"/>
+                    <planter filename="$data/maps/trees/goldenRain/saplings/goldenRainSapling01_planter_risutecSKB240.i3d" />
+                </variation>
+                <variation name="DEFAULT" filename="$data/maps/trees/goldenRain/saplings/goldenRainSapling02.i3d">
+                    <pallet storeItem="$data/objects/pallets/treeSaplingPallet02/treeSaplingPallet02.xml"/>
+                </variation>
+            </stage>
+
+            <stage filename="$data/maps/trees/goldenRain/goldenRain_stage01.i3d" />
+            <stage filename="maps/trees/goldenRain/goldenRain_stage02.i3d" />
+            <stage filename="$data/maps/trees/goldenRain/goldenRain_stage03.i3d" />
+            <stage filename="$data/maps/trees/goldenRain/goldenRain_stage04.i3d" />
+        </treeType>
+        <treeType name="japaneseZelkova" splitType="JAPANESEZELKOVA" title="$l10n_treeType_japaneseZelkova" growthTimeHours="335" saplingPrice="0">
+            <stage>
+                <variation name="RISUTECSKB240" filename="$data/maps/trees/japaneseZelkova/saplings/japaneseZelkovaSapling01.i3d">
+                    <pallet filename="$data/maps/trees/japaneseZelkova/saplings/japaneseZelkovaSapling01_pallet.i3d" storeItem="$data/objects/pallets/treeSaplingPallet01/treeSaplingPallet01.xml"/>
+                    <planter filename="$data/maps/trees/japaneseZelkova/saplings/japaneseZelkovaSapling01_planter_risutecSKB240.i3d" />
+                </variation>
+                <variation name="DEFAULT" filename="$data/maps/trees/japaneseZelkova/saplings/japaneseZelkovaSapling02.i3d">
+                    <pallet storeItem="$data/objects/pallets/treeSaplingPallet02/treeSaplingPallet02.xml"/>
+                </variation>
+            </stage>
+
+            <stage filename="$data/maps/trees/japaneseZelkova/japaneseZelkova_stage01.i3d" />
+            <stage filename="maps/trees/japaneseZelkova/japaneseZelkova_stage02.i3d" />
+            <stage filename="$data/maps/trees/japaneseZelkova/japaneseZelkova_stage03.i3d" />
+            <stage filename="$data/maps/trees/japaneseZelkova/japaneseZelkova_stage04.i3d" />
+        </treeType>
+        <treeType name="northernCatalpa" splitType="NORTHERNCATALPA" title="$l10n_treeType_northernCatalpa" growthTimeHours="576" saplingPrice="0">
+            <stage>
+                <variation name="RISUTECSKB240" filename="$data/maps/trees/northernCatalpa/saplings/northernCatalpaSapling01.i3d">
+                    <pallet filename="$data/maps/trees/northernCatalpa/saplings/northernCatalpaSapling01_pallet.i3d" storeItem="$data/objects/pallets/treeSaplingPallet01/treeSaplingPallet01.xml"/>
+                    <planter filename="$data/maps/trees/northernCatalpa/saplings/northernCatalpaSapling01_planter_risutecSKB240.i3d" />
+                </variation>
+                <variation name="DEFAULT" filename="$data/maps/trees/northernCatalpa/saplings/northernCatalpaSapling02.i3d">
+                    <pallet storeItem="$data/objects/pallets/treeSaplingPallet02/treeSaplingPallet02.xml"/>
+                </variation>
+            </stage>
+
+            <stage filename="maps/trees/northernCatalpa/northernCatalpa_stage01.i3d" />
+            <stage filename="maps/trees/northernCatalpa/northernCatalpa_stage02.i3d" />
+            <stage filename="maps/trees/northernCatalpa/northernCatalpa_stage03.i3d" />
+            <stage filename="maps/trees/northernCatalpa/northernCatalpa_stage04.i3d" />
+        </treeType>
+        <treeType name="oak" splitType="OAK" title="$l10n_treeType_oak" growthTimeHours="114" saplingPrice="0">
+            <stage>
+                <variation name="RISUTECSKB240" filename="$data/maps/trees/oak/saplings/oakSapling01.i3d">
+                    <pallet filename="$data/maps/trees/oak/saplings/oakSapling01_pallet.i3d" storeItem="$data/objects/pallets/treeSaplingPallet01/treeSaplingPallet01.xml"/>
+                    <planter filename="$data/maps/trees/oak/saplings/oakSapling01_planter_risutecSKB240.i3d" />
+                </variation>
+                <variation name="DEFAULT" filename="$data/maps/trees/oak/saplings/oakSapling02.i3d">
+                    <pallet storeItem="$data/objects/pallets/treeSaplingPallet02/treeSaplingPallet02.xml"/>
+                </variation>
+            </stage>
+
+            <stage filename="maps/trees/oak/oak_stage01.i3d" />
+            <stage filename="maps/trees/oak/oak_stage02.i3d" />
+            <stage filename="maps/trees/oak/oak_stage03.i3d" />
+            <stage filename="maps/trees/oak/oak_stage04.i3d" />
+            <stage filename="maps/trees/oak/oak_stage05.i3d" />
+        </treeType>
+        <treeType name="shagbarkHickory" splitType="SHAGBARKHICKORY" title="$l10n_treeType_shagbarkHickory" growthTimeHours="576" saplingPrice="0">
+            <stage>
+                <variation name="RISUTECSKB240" filename="$data/maps/trees/shagbarkHickory/saplings/shagbarkHickorySapling01.i3d">
+                    <pallet filename="$data/maps/trees/shagbarkHickory/saplings/shagbarkHickorySapling01_pallet.i3d" storeItem="$data/objects/pallets/treeSaplingPallet01/treeSaplingPallet01.xml"/>
+                    <planter filename="$data/maps/trees/shagbarkHickory/saplings/shagbarkHickorySapling01_planter_risutecSKB240.i3d" />
+                </variation>
+                <variation name="DEFAULT" filename="$data/maps/trees/shagbarkHickory/saplings/shagbarkHickorySapling02.i3d">
+                    <pallet storeItem="$data/objects/pallets/treeSaplingPallet02/treeSaplingPallet02.xml"/>
+                </variation>
+            </stage>
+
+            <stage filename="maps/trees/shagbarkHickory/shagbarkHickory_stage01.i3d" />
+            <stage filename="maps/trees/shagbarkHickory/shagbarkHickory_stage02.i3d" />
+            <stage filename="maps/trees/shagbarkHickory/shagbarkHickory_stage03.i3d" />
+            <stage filename="maps/trees/shagbarkHickory/shagbarkHickory_stage04.i3d" />
+        </treeType>
+        <treeType name="tiliaAmurensis" splitType="TILIAAMURENSIS" title="$l10n_treeType_tiliaAmurensis" growthTimeHours="576" saplingPrice="0">
+            <stage>
+                <variation name="RISUTECSKB240" filename="$data/maps/trees/tiliaAmurensis/saplings/tiliaAmurensisSapling01.i3d">
+                    <pallet filename="$data/maps/trees/tiliaAmurensis/saplings/tiliaAmurensisSapling01_pallet.i3d" storeItem="$data/objects/pallets/treeSaplingPallet01/treeSaplingPallet01.xml"/>
+                    <planter filename="$data/maps/trees/tiliaAmurensis/saplings/tiliaAmurensisSapling01_planter_risutecSKB240.i3d" />
+                </variation>
+                <variation name="DEFAULT" filename="$data/maps/trees/tiliaAmurensis/saplings/tiliaAmurensisSapling02.i3d">
+                    <pallet storeItem="$data/objects/pallets/treeSaplingPallet02/treeSaplingPallet02.xml"/>
+                </variation>
+            </stage>
+
+            <stage filename="maps/trees/tiliaAmurensis/tiliaAmurensis_stage01.i3d" />
+            <stage filename="maps/trees/tiliaAmurensis/tiliaAmurensis_stage02.i3d" />
+            <stage filename="$data/maps/trees/tiliaAmurensis/tiliaAmurensis_stage03.i3d" />
+            <stage filename="$data/maps/trees/tiliaAmurensis/tiliaAmurensis_stage04.i3d" />
+        </treeType>
+		
+        <!-- Map treeTypes -->
+        <treeType name="spruce" splitType="SPRUCE" title="$l10n_treeType_spruce" growthTimeHours="305" saplingPrice="0">
+            <stage>
+                <variation name="RISUTECSKB240" filename="maps/trees/spruce/saplings/spruceSapling01.i3d">
+                    <pallet filename="maps/trees/spruce/saplings/spruceSapling01_pallet.i3d" storeItem="$data/objects/pallets/treeSaplingPallet01/treeSaplingPallet01.xml"/>
+                    <planter filename="maps/trees/spruce/saplings/spruceSapling01_planter_risutecSKB240.i3d" />
+                </variation>
+                <variation name="DEFAULT" filename="maps/trees/spruce/saplings/spruceSapling02.i3d">
+                    <pallet storeItem="$data/objects/pallets/treeSaplingPallet02/treeSaplingPallet02.xml"/>
+                </variation>
+            </stage>
+
+            <stage filename="maps/trees/spruce/spruceVar2_stage01.i3d" />
+            <stage filename="maps/trees/spruce/spruceVar1_stage01.i3d" />
+            <stage>
+                <variation filename="maps/trees/spruce/spruceVar1_stage02.i3d" />
+                <variation filename="maps/trees/spruce/spruceVar2_stage02.i3d" />
+            </stage>
+            <stage>
+                <variation filename="maps/trees/spruce/spruceVar1_stage03.i3d" />
+                <variation filename="maps/trees/spruce/spruceVar2_stage03.i3d" />
+            </stage>
+        </treeType>
+
+        <treeType name="cypress" splitType="CYPRESS" title="$l10n_treeType_cypress" growthTimeHours="206" saplingPrice="0">
+            <stage filename="maps/trees/cypress/cypress_stage01.i3d" />
+            <stage filename="maps/trees/cypress/cypress_stage02.i3d" />
+            <stage filename="maps/trees/cypress/cypress_stage03.i3d" />
+            <stage filename="maps/trees/cypress/cypress_stage04.i3d" />
+        </treeType>
+    </treeTypes>
+</map>

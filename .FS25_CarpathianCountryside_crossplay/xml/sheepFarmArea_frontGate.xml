@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="simplePlaceable" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_placeableObject_preplacedMapObject</name>
+        <functions>
+            <function>$l10n_function_decoration</function>
+        </functions>
+        <image>placeables/store_defaultMapItem.dds</image>
+        <price>2000</price>
+        <dailyUpkeep>0</dailyUpkeep>
+        <canBeSold>true</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>decoration</category>
+        <vertexBufferMemoryUsage>47616</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>8192</indexBufferMemoryUsage>
+        <textureMemoryUsage>1638400</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>placeables/area/sheepFarmArea_frontGate.i3d</filename>
+        <canBeRenamed>false</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" />
+
+    <clearAreas/>
+
+    <leveling/>
+
+    <indoorAreas/>
+
+    <tipOcclusionUpdateAreas/>
+
+    <ai>
+        <updateAreas>
+        </updateAreas>
+    </ai>
+
+    <animatedObjects>
+        <animatedObject saveId="sheepFarmGate_front_small">
+            <animation duration="1.2">
+                <part node="farmGateSmall">
+                    <keyFrame time="0.1" rotation="0 -90 0"/>
+                    <keyFrame time="1.0" rotation="0 -185 0"/>
+                </part>
+                <part node="farmGateSmall_handle">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="0.1" rotation="0 0 -35"/>
+                    <keyFrame time="0.2" rotation="0 0 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="farmGateSmall_trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving linkNode="farmGateSmall_sound" template="metalDoorsLoop" />
+                <posEnd linkNode="farmGateSmall_sound" template="metalDoorsOpen" />
+                <negEnd linkNode="farmGateSmall_sound" template="metalDoorsClose" />
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="sheepFarmGate_front">
+            <animation duration="5">
+                <part node="farmGateRight">
+                    <keyFrame time="0.05" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 -95 0"/>
+                </part>
+                <part node="farmGateLeft">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 95 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="farmGate_trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving linkNode="farmGate_sound" file="sounds/placeables/gates/metalGate.wav" loops="0" innerRadius="5" outerRadius="18" fadeOut="0.1" >
+                    <randomization minVolume="-0.1" maxVolume="0.1" minPitch="-0.1" maxPitch="0.1" isInside="true" isOutside="true" />
+                    <volume indoor="4.2" outdoor="4.2" />
+                </moving>
+                <posEnd linkNode="farmGate_sound" template="metalDoorsOpen" innerRadius="5" outerRadius="18" />
+                <negEnd linkNode="farmGate_sound" file="sounds/placeables/gates/metalGate_closed.wav" innerRadius="5" outerRadius="18" >
+                    <randomization minVolume="-0.1" maxVolume="0.1" minPitch="-0.1" maxPitch="0.1" isInside="true" isOutside="true" />
+                    <volume indoor="4.0" outdoor="4.0" />
+                </negEnd>
+            </sounds>
+        </animatedObject>
+    </animatedObjects>
+
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart node="15" linkNode="propsBordersNode" filename="placeables/sharedAssets/propsBorders.i3d" />
+    </dynamicallyLoadedParts>
+
+    <i3dMappings>
+        <i3dMapping id="propsBordersNode" node="0>0|0" />
+        <i3dMapping id="propsPreplacedNode" node="0>0|1" />
+        <i3dMapping id="farmGateSmall" node="0>1|0|3|0" />
+        <i3dMapping id="farmGateSmall_handle" node="0>1|0|3|0|0" />
+        <i3dMapping id="farmGateSmall_trigger" node="0>1|0|3|1" />
+        <i3dMapping id="farmGateSmall_sound" node="0>1|0|3|2" />
+        <i3dMapping id="farmGateRight" node="0>1|0|4|0" />
+        <i3dMapping id="farmGateLeft" node="0>1|0|4|1" />
+        <i3dMapping id="farmGate_trigger" node="0>1|0|4|2" />
+        <i3dMapping id="farmGate_sound" node="0>1|0|4|3" />
+    </i3dMappings>
+</placeable>

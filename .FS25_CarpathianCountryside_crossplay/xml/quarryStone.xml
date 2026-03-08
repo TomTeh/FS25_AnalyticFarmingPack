@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="heapSpawner" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_productionPoint_quarryStone</name>
+        <functions>
+            <function>$l10n_function_heapSpawnerStoneCC</function>
+        </functions>
+        <image>placeables/productionPoints/quarry/store_quarryStone.png</image>
+        <price>99000</price>
+        <dailyUpkeep>5</dailyUpkeep>
+        <showInStore>true</showInStore>
+        <canBeSold>true</canBeSold>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>PLACEABLE</species>
+        <category>productionPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>factories</tab>
+        </brush>
+        <vertexBufferMemoryUsage>478208</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>121600</indexBufferMemoryUsage>
+        <textureMemoryUsage>13631488</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>$data/placeables/brandless/productionPointsGeneric/stoneQuarry/stoneQuarry.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+        <canBeDeleted>true</canBeDeleted>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" placementPositionSnapSize="0.5" placementRotationSnapAngle="90" >
+        <testAreas>
+            <testArea startNode="testAreaStart01" endNode="testAreaEnd01" />
+            <testArea startNode="testAreaStart02" endNode="testAreaEnd02" />
+        </testAreas>
+        <sounds>
+            <place template="smallImp"/>
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearAreaStart01" widthNode="clearAreaWidth01" heightNode="clearAreaHeight01"/>
+        <clearArea startNode="clearAreaStart02" widthNode="clearAreaWidth02" heightNode="clearAreaHeight02"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30" >
+        <levelAreas>
+            <levelArea startNode="levelAreaStart01" widthNode="levelAreaWidth01" heightNode="levelAreaHeight01" groundType="asphalt"/>
+            <levelArea startNode="levelAreaStart02" widthNode="levelAreaWidth02" heightNode="levelAreaHeight02" groundType="asphalt"/>
+        </levelAreas>
+        <paintAreas>
+            <paintArea startNode="paintAreaStart01" widthNode="paintAreaWidth01" heightNode="paintAreaHeight01" groundType="asphalt"/>
+            <paintArea startNode="paintAreaStart02" widthNode="paintAreaWidth02" heightNode="paintAreaHeight02" groundType="asphalt"/>
+        </paintAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorAreaStart01" widthNode="indoorAreaWidth01" heightNode="indoorAreaHeight01" />
+        <indoorArea startNode="indoorAreaStart02" widthNode="indoorAreaWidth02" heightNode="indoorAreaHeight02" />
+        <indoorArea startNode="indoorAreaStart03" widthNode="indoorAreaWidth03" heightNode="indoorAreaHeight03" />
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
+        </updateAreas>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger"/>
+
+    <lights>
+        <lightShape node="interior" groupIndex="1"/>
+
+        <realLights>
+            <low>
+                <light node="realLights" groupIndex="1"/>
+            </low>
+            <high>
+                <light node="realLights" groupIndex="1"/>
+            </high>
+        </realLights>
+
+        <group name="$l10n_action_placeableLightShed" activateTime="17:30" deactivateTime="8:20"/>
+    </lights>
+
+    <hotspots>
+        <hotspot type="PRODUCTION_POINT" linkNode="teleportNode" teleportNode="teleportNode" />
+    </hotspots>
+
+    <heapSpawner>
+        <spawnArea fillType="STONE" litersPerHour="3000" >
+            <area startNode="spawnAreaStart01" widthNode="spawnAreaWidth01" heightNode="spawnAreaHeight01" />
+            <effectNodes>
+                <effectNode effectNode="effectSmoke"    materialType="unloadingSmoke" fadeTime="0.5" useFruitColor="true" />
+                <effectNode effectNode="effectParticle" effectClass="ParticleEffect"  particleType="STONE" emitCountScale="1.5"/>
+            </effectNodes>
+            <animationNodes>
+                <animationNode class="ScrollingAnimation" node="belt" rotSpeed="-20" rotAxis="1" shaderComponentScale="-1 0 0 0" scrollSpeed="0.5" shaderParameterName="offsetUV"/>
+            </animationNodes>
+        </spawnArea>
+    </heapSpawner>
+
+    <i3dMappings>
+        <i3dMapping id="clearAreaStart01" node="0>0|0" />
+        <i3dMapping id="clearAreaWidth01" node="0>0|0|0" />
+        <i3dMapping id="clearAreaHeight01" node="0>0|0|1" />
+        <i3dMapping id="clearAreaStart02" node="0>0|1" />
+        <i3dMapping id="clearAreaWidth02" node="0>0|1|0" />
+        <i3dMapping id="clearAreaHeight02" node="0>0|1|1" />
+        <i3dMapping id="levelAreaStart01" node="0>1|0" />
+        <i3dMapping id="levelAreaWidth01" node="0>1|0|0" />
+        <i3dMapping id="levelAreaHeight01" node="0>1|0|1" />
+        <i3dMapping id="levelAreaStart02" node="0>1|1" />
+        <i3dMapping id="levelAreaWidth02" node="0>1|1|0" />
+        <i3dMapping id="levelAreaHeight02" node="0>1|1|1" />
+        <i3dMapping id="paintAreaStart01" node="0>2|0" />
+        <i3dMapping id="paintAreaWidth01" node="0>2|0|0" />
+        <i3dMapping id="paintAreaHeight01" node="0>2|0|1" />
+        <i3dMapping id="paintAreaStart02" node="0>2|1" />
+        <i3dMapping id="paintAreaWidth02" node="0>2|1|0" />
+        <i3dMapping id="paintAreaHeight02" node="0>2|1|1" />
+        <i3dMapping id="indoorAreaStart01" node="0>3|0" />
+        <i3dMapping id="indoorAreaWidth01" node="0>3|0|0" />
+        <i3dMapping id="indoorAreaHeight01" node="0>3|0|1" />
+        <i3dMapping id="indoorAreaStart02" node="0>3|1" />
+        <i3dMapping id="indoorAreaWidth02" node="0>3|1|0" />
+        <i3dMapping id="indoorAreaHeight02" node="0>3|1|1" />
+        <i3dMapping id="indoorAreaStart03" node="0>3|2" />
+        <i3dMapping id="indoorAreaWidth03" node="0>3|2|0" />
+        <i3dMapping id="indoorAreaHeight03" node="0>3|2|1" />
+        <i3dMapping id="testAreaStart01" node="0>4|0" />
+        <i3dMapping id="testAreaEnd01" node="0>4|0|0" />
+        <i3dMapping id="testAreaStart02" node="0>4|1" />
+        <i3dMapping id="testAreaEnd02" node="0>4|1|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart01" node="0>5|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd01" node="0>5|0|0" />
+        <i3dMapping id="infoTrigger" node="0>6" />
+        <i3dMapping id="realLights" node="0>7|0" />
+        <i3dMapping id="interior" node="0>7|1|0" />
+        <i3dMapping id="teleportNode" node="0>8|1|0" />
+        <i3dMapping id="belt" node="0>8|1|1|0" />
+        <i3dMapping id="effectSmoke" node="0>8|1|1|1" />
+        <i3dMapping id="effectParticle" node="0>8|1|1|2" />
+        <i3dMapping id="spawnAreaStart01" node="0>8|1|2|0" />
+        <i3dMapping id="spawnAreaWidth01" node="0>8|1|2|0|0" />
+        <i3dMapping id="spawnAreaHeight01" node="0>8|1|2|0|1" />
+    </i3dMappings>
+</placeable>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="productionPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_shopItem_dairy</name>
+        <functions>
+            <function>$l10n_function_productionPoint</function>
+        </functions>
+        <image>placeables/productionPoints/mapIcon_dairy.png</image>
+        <price>225000</price>
+        <dailyUpkeep>80</dailyUpkeep>
+        <canBeSold>true</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>productionPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>factories</tab>
+        </brush>
+        <vertexBufferMemoryUsage>2816</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>1536</indexBufferMemoryUsage>
+        <textureMemoryUsage>65536</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>placeables/productionPoints/dairy.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+        <buysFarmland>true</buysFarmland>
+        <canBeDeleted>false</canBeDeleted>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" />
+
+    <clearAreas/>
+
+    <leveling/>
+
+    <indoorAreas/>
+
+    <tipOcclusionUpdateAreas/>
+
+    <ai>
+        <updateAreas>
+        </updateAreas>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger"/>
+
+    <hotspots>
+        <hotspot type="PRODUCTION_POINT" linkNode="hotspotNode" teleportNode="teleportNode" />
+    </hotspots>
+
+    <triggerMarkers>
+        <triggerMarker node="playerTriggerMarker" filename="placeables/sharedAssets/marker/markerIconProductionPoint.i3d" adjustToGround="true" />
+        <triggerMarker node="unloadTriggerMarker" filename="$data/shared/assets/marker/markerIconUnload.i3d" adjustToGround="true" />
+    </triggerMarkers>
+
+    <productionPoint>
+        <productions sharedThroughputCapacity="false">
+            <production id="butter_milk" name="%s (%s)" params="$l10n_fillType_butter|$l10n_fillType_milk" cyclesPerHour="40" costsPerActiveHour="2">
+                <inputs>
+                    <input fillType="MILK" amount="15" />
+                </inputs>
+                <outputs>
+                    <output fillType="BUTTER" amount="13" />
+                </outputs>
+            </production>
+            <production id="butter_goatMilk" name="%s (%s)" params="$l10n_fillType_butter|$l10n_fillType_goatMilk" cyclesPerHour="62" costsPerActiveHour="4">
+                <inputs>
+                    <input fillType="GOATMILK" amount="3" />
+                </inputs>
+                <outputs>
+                    <output fillType="BUTTER" amount="10" />
+                </outputs>
+            </production>
+            <production id="butter_buffaloMilk" name="%s (%s)" params="$l10n_fillType_butter|$l10n_fillType_buffaloMilk" cyclesPerHour="4" costsPerActiveHour="8">
+                <inputs>
+                    <input fillType="BUFFALOMILK" amount="3" />
+                </inputs>
+                <outputs>
+                    <output fillType="BUTTER" amount="45" />
+                </outputs>
+            </production>
+
+            <production id="cheese" name="$l10n_fillType_cheese" cyclesPerHour="60" costsPerActiveHour="2">
+                <inputs>
+                    <input fillType="MILK" amount="6" />
+                </inputs>
+                <outputs>
+                    <output fillType="CHEESE" amount="4" />
+                </outputs>
+            </production>
+            <production id="goatcheese" name="$l10n_fillType_goatCheese" cyclesPerHour="80" costsPerActiveHour="4">
+                <inputs>
+                    <input fillType="GOATMILK" amount="3" />
+                </inputs>
+                <outputs>
+                    <output fillType="GOATCHEESE" amount="6" />
+                </outputs>
+            </production>
+            <production id="buffalomozzarella" name="$l10n_fillType_buffaloMozzarella" cyclesPerHour="40" costsPerActiveHour="8">
+                <inputs>
+                    <input fillType="BUFFALOMILK" amount="3" />
+                </inputs>
+                <outputs>
+                    <output fillType="BUFFALOMOZZARELLA" amount="2" />
+                </outputs>
+            </production>
+
+            <production id="chocolate" name="$l10n_fillType_chocolate" cyclesPerHour="200" costsPerActiveHour="3">
+                <inputs>
+                    <input fillType="MILK" amount="2" />
+                    <input fillType="SUGAR" amount="2" />
+                </inputs>
+                <outputs>
+                    <output fillType="CHOCOLATE" amount="2" />
+                </outputs>
+            </production>
+
+            <production id="milkBottled" name="$l10n_fillType_milk_bottled" cyclesPerHour="40" costsPerActiveHour="2">
+                <inputs>
+                    <input fillType="MILK" amount="10" />
+                </inputs>
+                <outputs>
+                    <output fillType="MILK_BOTTLED" amount="20" />
+                </outputs>
+            </production>
+            <production id="goatmilkBottled" name="$l10n_fillType_goatMilk_bottled" cyclesPerHour="12" costsPerActiveHour="4">
+                <inputs>
+                    <input fillType="GOATMILK" amount="10" />
+                </inputs>
+                <outputs>
+                    <output fillType="GOATMILK_BOTTLED" amount="20" />
+                </outputs>
+            </production>
+            <production id="buffalomilkBottled" name="$l10n_fillType_buffaloMilk_bottled" cyclesPerHour="12" costsPerActiveHour="8">
+                <inputs>
+                    <input fillType="BUFFALOMILK" amount="10" />
+                </inputs>
+                <outputs>
+                    <output fillType="BUFFALOMILK_BOTTLED" amount="20" />
+                </outputs>
+            </production>
+        </productions>
+
+        <sellingStation node="sellingStation" appearsOnStats="true" supportsExtension="false" allowMissions="false" litersForFullPriceDrop="200000" fullPriceRecoverHours="48">
+            <unloadTrigger exactFillRootNode="unloadTrigger" fillTypes="MILK GOATMILK BUFFALOMILK SUGAR"/>
+            <palletTrigger triggerNode="palletTrigger" fillTypes="MILK GOATMILK BUFFALOMILK SUGAR"/>
+            <unloadTrigger exactFillRootNode="unloadTriggerAI" aiNode="unloadTriggerAINode" fillTypes="MILK GOATMILK BUFFALOMILK" />
+        </sellingStation>
+
+        <palletSpawner node="palletSpawner">
+            <spawnPlaces>
+                <spawnPlace startNode="spawnSpace1start" endNode="spawnSpace1end" />
+                <spawnPlace startNode="spawnSpace2start" endNode="spawnSpace2end" />
+                <spawnPlace startNode="spawnSpace3start" endNode="spawnSpace3end" />
+            </spawnPlaces>
+        </palletSpawner>
+
+        <storage isExtension="false" fillLevelSyncThreshold="50">
+            <capacity fillType="MILK"                capacity="400000" />
+            <capacity fillType="GOATMILK"            capacity="200000" />
+            <capacity fillType="BUFFALOMILK"         capacity="100000" />
+            <capacity fillType="SUGAR"               capacity="50000" />
+            <capacity fillType="BUTTER"              capacity="50000" />
+            <capacity fillType="CHEESE"              capacity="50000" />
+            <capacity fillType="GOATCHEESE"          capacity="50000" />
+            <capacity fillType="BUFFALOMOZZARELLA"   capacity="20000" />
+            <capacity fillType="CHOCOLATE"           capacity="50000" />
+            <capacity fillType="GOATMILK"            capacity="200000" />
+            <capacity fillType="MILK_BOTTLED"        capacity="100000" />
+            <capacity fillType="GOATMILK_BOTTLED"    capacity="50000" />
+            <capacity fillType="BUFFALOMILK_BOTTLED" capacity="50000" />
+        </storage>
+
+        <playerTrigger node="playerTrigger" />
+
+        <effectNodes>
+            <effectNode effectClass="ParticleEffect" effectNode="smokeChimenyEffectShape01" particleType="SMOKE_CHIMNEY" emitCountScale="75"/>
+            <effectNode effectClass="ParticleEffect" effectNode="smokeChimenyEffectShape02" particleType="SMOKE_CHIMNEY" emitCountScale="75"/>
+            <effectNode effectClass="ParticleEffect" effectNode="smokeEffectShape01" particleType="SMOKE" scale="0.1 0.5 0.1" emitCountScale="40"/>
+        </effectNodes>
+
+        <sounds>
+            <idle template="dairyIdle" linkNode="soundNode" />
+            <active template="dairyWork" linkNode="soundNode" />
+        </sounds>
+    </productionPoint>
+
+    <i3dMappings>
+        <i3dMapping id="sellingStation" node="0>0" />
+        <i3dMapping id="unloadTrigger" node="0>0|0" />
+        <i3dMapping id="palletTrigger" node="0>0|1" />
+        <i3dMapping id="unloadTriggerMarker" node="0>0|2" />
+        <i3dMapping id="unloadTriggerAI" node="0>0|3" />
+        <i3dMapping id="unloadTriggerAINode" node="0>0|4" />
+        <i3dMapping id="playerTrigger" node="0>1|0" />
+        <i3dMapping id="playerTriggerMarker" node="0>1|0|0" />
+        <i3dMapping id="soundNode" node="0>1|1" />
+        <i3dMapping id="smokeChimenyEffectShape01" node="0>1|2|0" />
+        <i3dMapping id="smokeChimenyEffectShape02" node="0>1|2|1" />
+        <i3dMapping id="smokeEffectShape01" node="0>1|2|2" />
+        <i3dMapping id="palletSpawner" node="0>2" />
+        <i3dMapping id="spawnSpace1start" node="0>2|0" />
+        <i3dMapping id="spawnSpace1end" node="0>2|0|0" />
+        <i3dMapping id="spawnSpace2start" node="0>2|1" />
+        <i3dMapping id="spawnSpace2end" node="0>2|1|0" />
+        <i3dMapping id="spawnSpace3start" node="0>2|2" />
+        <i3dMapping id="spawnSpace3end" node="0>2|2|0" />
+        <i3dMapping id="infoTrigger" node="0>3" />
+        <i3dMapping id="hotspotNode" node="0>4" />
+        <i3dMapping id="teleportNode" node="0>5" />
+    </i3dMappings>
+</placeable>

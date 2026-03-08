@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="productionPointWardrobe" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_shopItem_tailorShop</name>
+        <functions>
+            <function>$l10n_function_productionPoint</function>
+        </functions>
+        <image>placeables/productionPoints/mapIcon_tailorShop.png</image>
+        <price>130000</price>
+        <dailyUpkeep>40</dailyUpkeep>
+        <canBeSold>true</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>productionPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>factories</tab>
+        </brush>
+        <vertexBufferMemoryUsage>2560</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>1280</indexBufferMemoryUsage>
+        <textureMemoryUsage>65536</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>placeables/productionPoints/tailorShop.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+        <buysFarmland>true</buysFarmland>
+        <canBeDeleted>false</canBeDeleted>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" />
+
+    <clearAreas/>
+
+    <leveling/>
+
+    <indoorAreas/>
+
+    <tipOcclusionUpdateAreas/>
+
+    <ai>
+        <updateAreas>
+        </updateAreas>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger" />
+
+    <hotspots>
+        <hotspot type="PRODUCTION_POINT" linkNode="hotspotNode" teleportNode="teleportNode" />
+    </hotspots>
+
+    <triggerMarkers>
+        <triggerMarker node="playerTriggerMarker" filename="placeables/sharedAssets/marker/markerIconProductionPoint.i3d" adjustToGround="true"/>
+        <triggerMarker node="wardrobePlayerTriggerMarker" filename="$data/shared/assets/marker/markerIconWardrobe.i3d" adjustToGround="true"/>
+        <triggerMarker node="unloadTriggerMarker" filename="$data/shared/assets/marker/markerIconUnload.i3d" adjustToGround="true"/>
+    </triggerMarkers>
+
+    <productionPoint>
+        <productions sharedThroughputCapacity="true">
+            <production id="clothes" name="$l10n_fillType_clothes" cyclesPerHour="100" costsPerActiveHour="10">
+                <inputs>
+                    <input fillType="FABRIC" amount="4" />
+                </inputs>
+                <outputs>
+                    <output fillType="CLOTHES" amount="2" />
+                </outputs>
+            </production>
+        </productions>
+
+        <sellingStation node="sellingStation" appearsOnStats="true" supportsExtension="false" allowMissions="false" litersForFullPriceDrop="50000" fullPriceRecoverHours="48">
+            <unloadTrigger exactFillRootNode="unloadTrigger" fillTypes="FABRIC"/>
+            <palletTrigger triggerNode="palletTrigger" fillTypes="FABRIC" />
+        </sellingStation>
+
+        <palletSpawner node="palletSpawner">
+            <spawnPlaces>
+                <spawnPlace startNode="spawnSpace1start" endNode="spawnSpace1end" />
+                <spawnPlace startNode="spawnSpace2start" endNode="spawnSpace2end" />
+                <spawnPlace startNode="spawnSpace3start" endNode="spawnSpace3end" />
+            </spawnPlaces>
+        </palletSpawner>
+
+        <storage isExtension="false" fillLevelSyncThreshold="50">
+            <capacity fillType="FABRIC"  capacity="75000" />
+            <capacity fillType="CLOTHES" capacity="40000" />
+        </storage>
+
+        <playerTrigger node="playerTrigger" />
+
+        <sounds>
+            <idle template="tailorShopIdle" linkNode="soundNode" />
+            <active template="tailorShopWork" linkNode="soundNode" />
+        </sounds>
+    </productionPoint>
+
+    <wardrobe triggerNode="wardrobePlayerTrigger" isFreeForAll="true"/>
+
+    <i3dMappings>
+        <i3dMapping id="sellingStation" node="0>0" />
+        <i3dMapping id="unloadTrigger" node="0>0|0" />
+        <i3dMapping id="palletTrigger" node="0>0|1" />
+        <i3dMapping id="unloadTriggerMarker" node="0>0|2" />
+        <i3dMapping id="playerTrigger" node="0>1|0" />
+        <i3dMapping id="playerTriggerMarker" node="0>1|0|0" />
+        <i3dMapping id="soundNode" node="0>1|1" />
+        <i3dMapping id="palletSpawner" node="0>2" />
+        <i3dMapping id="spawnSpace1start" node="0>2|0" />
+        <i3dMapping id="spawnSpace1end" node="0>2|0|0" />
+        <i3dMapping id="spawnSpace2start" node="0>2|1" />
+        <i3dMapping id="spawnSpace2end" node="0>2|1|0" />
+        <i3dMapping id="spawnSpace3start" node="0>2|2" />
+        <i3dMapping id="spawnSpace3end" node="0>2|2|0" />
+        <i3dMapping id="infoTrigger" node="0>3" />
+        <i3dMapping id="hotspotNode" node="0>4" />
+        <i3dMapping id="teleportNode" node="0>5" />
+        <i3dMapping id="wardrobePlayerTrigger" node="0>6|0" />
+        <i3dMapping id="wardrobePlayerTriggerMarker" node="0>6|1" />
+    </i3dMappings>
+</placeable>

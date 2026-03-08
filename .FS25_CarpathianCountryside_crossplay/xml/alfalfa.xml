@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<foliageType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../shared/xml/schema/foliageType.xsd">
+    <fruitType name="alfalfa" shownOnMap="true" useForFieldMissions="false">
+        <mapColors default="0.171 0.044 0.305 1" colorBlind="0.262 0.102 0.356 1"/>
+        <harvest litersPerSqm="4.59" groundType="GRASS_CUT"/>
+        <windrow fillType="alfalfa_windrow" />
+        <growth resetsSpray="true" growthRequiresLime="false"/>
+        <soil lowDensityRequired="false" increasesDensity="false" consumesLime="false" startSprayLevel="1"/>
+        <seeding directionSnapAngle="0" needsRolling="false" litersPerSqm="0.014" isAvailable="true" plantsWeed="false"/>
+        <cultivation isAllowed="true"/>
+    </fruitType>
+    <!-- alfalfa
+
+    0 1 2 3
+
+    1 0 0 0 - invisible
+    0 1 0 0 - green small
+    1 1 0 0 - green middle
+    0 0 1 0 - harvest ready
+    1 0 1 0 - cut
+    0 1 1 0 - cut rolled
+
+    -->
+    <foliageLayer densityMapChannelOffset="0" numDensityMapChannels="4" numBlocksPerUnit="2.5" shapeSource="alfalfa.i3d" alignsToSun="false">
+        <foliageStateDefaults distanceMapLayer="1" width="1.0" height="1.2" widthVariance="0.3" heightVariance="0.7" horizontalPositionVariance="0.3"/>
+        <!-- default LOD distances etc -->
+        <foliageLodDefaults lod="0" viewDistance="18" blendOutDistance="2" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1"/>
+        <foliageLodDefaults lod="1" viewDistance="80" blendOutDistance="2" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1"/>
+        <!-- 1 0 0 0 - invisible -->
+        <foliageState name="invisible" isGrowing="true" />
+        <!-- 0 1 0 0 - green small -->
+        <foliageState name="greenSmall" numBlocksPerUnit="2.9" width="1.75" height="1.6" distanceMap="distance/foliage_alfalfa_distance2_diffuse.png" isGrowing="true" regrowthStart="true" groundType="GRASS" groundTypeMask="GRASS GRASS_CUT SOWN DIRECT_SOWN ROLLER_LINES" isDestructibleByDisaster="true">
+            <foliageShape>
+                <foliageLod blockShape="0>0|0"/>
+                <foliageLod blockShape="0>1|0"/>
+            </foliageShape>
+        </foliageState>
+        <!-- 1 1 0 0 - green middle -->
+        <foliageState name="greenMiddle" numBlocksPerUnit="2.7" width="2.0" height="1.7" distanceMap="distance/foliage_alfalfa_distance3_diffuse.png" isGrowing="true" isHarvestReady="true" yieldScale="0.5" isDestructibleByDisaster="true">
+            <foliageShape>
+                <foliageLod blockShape="0>0|1"/>
+                <foliageLod blockShape="0>1|1"/>
+            </foliageShape>
+        </foliageState>
+        <!-- 0 0 1 0 - green big (harvest ready) -->
+        <foliageState name="harvestReady" width="2.0" height="1.75" distanceMap="distance/foliage_alfalfa_distance4_diffuse.png" isGrowing="true" isHarvestReady="true" isDestructibleByDisaster="true">
+            <foliageShape>
+                <foliageLod blockShape="0>0|2"/>
+                <foliageLod blockShape="0>1|2"/>
+            </foliageShape>
+        </foliageState>
+        <!-- 1 0 1 0 - cut -->
+        <foliageState name="cut" numBlocksPerUnit="2.8" distanceMap="distance/foliage_alfalfa_distance5_diffuse.png" isCut="true" isDestructedByWheel="true" isDestructedByDisaster="true" isMulched="true" cullCropsBelowFillHeight="true">
+            <foliageShape>
+                <foliageLod blockShape="0>0|3"/>
+                <foliageLod blockShape="0>1|3"/>
+            </foliageShape>
+        </foliageState>
+        <!-- 0 1 1 0 - cut rolled -->
+        <foliageState name="cutRolled" numBlocksPerUnit="2.0" distanceMap="distance/foliage_alfalfa_distance6_diffuse.png" isRolledCut="true" cullCropsBelowFillHeight="true">
+            <foliageShape>
+                <foliageLod blockShape="0>0|4"/>
+                <foliageLod blockShape="0>1|4"/>
+            </foliageShape>
+        </foliageState>
+    </foliageLayer>
+
+    <growth>
+        <seasonal initialState="greenMiddle">
+            <period name="EARLY_SPRING" plantingAllowed="true">
+                <update startState="invisible" endState="greenSmall" />
+                <update startState="greenSmall" endState="greenMiddle" />
+                <update startState="greenMiddle" endState="harvestReady" />
+                <update startState="cut" endState="greenSmall" />
+                <update startState="cutRolled" endState="greenSmall" />
+            </period>
+            <period name="MID_SPRING" plantingAllowed="true">
+                <update startState="invisible" endState="greenSmall" />
+                <update startState="greenSmall" endState="greenMiddle" />
+                <update startState="greenMiddle" endState="harvestReady" />
+                <update startState="cut" endState="greenSmall" />
+                <update startState="cutRolled" endState="greenSmall" />
+            </period>
+            <period name="LATE_SPRING" plantingAllowed="true">
+                <update startState="invisible" endState="greenSmall" />
+                <update startState="greenSmall" endState="greenMiddle" />
+                <update startState="greenMiddle" endState="harvestReady" />
+                <update startState="cut" endState="greenSmall" />
+                <update startState="cutRolled" endState="greenSmall" />
+            </period>
+            <period name="EARLY_SUMMER" plantingAllowed="true">
+                <update startState="invisible" endState="greenSmall" />
+                <update startState="greenSmall" endState="greenMiddle" />
+                <update startState="greenMiddle" endState="harvestReady" />
+                <update startState="cut" endState="greenSmall" />
+                <update startState="cutRolled" endState="greenSmall" />
+            </period>
+            <period name="MID_SUMMER" plantingAllowed="true">
+                <update startState="invisible" endState="greenSmall" />
+                <update startState="greenSmall" endState="greenMiddle" />
+                <update startState="greenMiddle" endState="harvestReady" />
+                <update startState="cut" endState="greenSmall" />
+                <update startState="cutRolled" endState="greenSmall" />
+            </period>
+            <period name="LATE_SUMMER" plantingAllowed="true">
+                <update startState="invisible" endState="greenSmall" />
+                <update startState="greenSmall" endState="greenMiddle" />
+                <update startState="greenMiddle" endState="harvestReady" />
+                <update startState="cut" endState="greenSmall" />
+                <update startState="cutRolled" endState="greenSmall" />
+            </period>
+            <period name="EARLY_AUTUMN" plantingAllowed="true">
+                <update startState="invisible" endState="greenSmall" />
+                <update startState="greenSmall" endState="greenMiddle" />
+                <update startState="greenMiddle" endState="harvestReady" />
+                <update startState="cut" endState="greenSmall" />
+                <update startState="cutRolled" endState="greenSmall" />
+            </period>
+            <period name="MID_AUTUMN" plantingAllowed="true">
+                <update startState="invisible" endState="greenSmall" />
+                <update startState="greenSmall" endState="greenMiddle" />
+                <update startState="greenMiddle" endState="harvestReady" />
+                <update startState="cut" endState="greenSmall" />
+                <update startState="cutRolled" endState="greenSmall" />
+            </period>
+            <period name="LATE_AUTUMN" plantingAllowed="true">
+                <update startState="invisible" endState="greenSmall" />
+                <update startState="greenMiddle" endState="greenSmall" /> <!-- knock back due to winter -->
+                <update startState="harvestReady" endState="greenSmall" /> <!-- knock back due to winter -->
+                <update startState="cut" endState="greenSmall" />
+                <update startState="cutRolled" endState="greenSmall" />
+            </period>
+            <period name="EARLY_WINTER" />
+            <period name="MID_WINTER" />
+            <period name="LATE_WINTER">
+                <update startState="greenSmall" endState="greenMiddle" />
+                <update startState="cut" endState="greenSmall" />
+                <update startState="cutRolled" endState="greenSmall" />
+            </period>
+        </seasonal>
+
+        <nonSeasonal>
+            <update startState="invisible" endState="greenSmall" />
+            <update startState="greenSmall" endState="greenMiddle" />
+            <update startState="greenMiddle" endState="harvestReady" />
+            <update startState="cut" endState="greenSmall" />
+            <update startState="cutRolled" endState="greenSmall" />
+        </nonSeasonal>
+    </growth>
+</foliageType>

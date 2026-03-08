@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map width="2048" height="2048" imageFilename="maps/ui/mapOverview.png"  mapFieldColor="0.1500 0.1195 0.0953" mapGrassFieldColor="0.1470 0.1441 0.0823"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../shared/xml/schema/mission00.xsd">
+    <filename>maps/carpathianCountrysideMap.i3d</filename>
+
+    <culling xzOffset="100" />
+    <densityMap revision="1" />
+    <terrainLodTexture revision="1" />
+    <splitShapes revision="1" />
+    <tipCollision revision="1" />
+    <placementCollision revision="1" />
+    <navigationCollision revision="1" />
+
+    <shop filename="$data/store/ui/shop.xml" />
+    <storeItems filename="maps/config/storeItems.xml" />
+
+    <guidedTours>
+        <!-- <guidedTour name="intro" filename="$data/maps/mapEU/guidedTour/guidedTour_intro.xml" /> -->
+    </guidedTours>
+
+    <sounds filename="maps/sounds/sounds.xml" />
+    <environment filename="maps/config/environment.xml" />
+    <farmlands filename="maps/config/farmlands.xml" />
+    <weed filename="maps/config/weed.xml" />
+    <fieldGround filename="maps/config/fieldGround.xml" />
+    <fields filename="maps/config/fields.xml" />
+
+    <animals filename="maps/config/animals.xml">
+        <names filename="$dataS/character/animalNames.xml" />
+        <food filename="maps/config/animalFood.xml" />
+    </animals>
+    <wildlife filename="$data/animals/wildlife/wildlife.xml" />
+
+    <npcs filename="$data/maps/maps_npcs.xml" />
+    <helpers filename="maps/config/helpers.xml" />
+    <aiSystem filename="maps/config/aiSystem.xml" />
+
+    <licensePlates filename="maps/licensePlates/licensePlatesSK.xml"/>
+
+    <collectibles filename="maps/config/collectibles.xml" />
+
+    <helpline filename="$dataS/helpLine.xml" />
+    <gameplayHints filename="$dataS/gameplayHints.xml" />
+
+    <missions vehicleFilename="$dataS/missionVehicles.xml">
+        <deadwoodMission treeType="DEADWOOD">
+            <spots filename="maps/missions/deadwoodSpots.i3d" />
+        </deadwoodMission>
+        <treeTransportMission treeType="TRANSPORT">
+            <spots filename="maps/missions/transportSpots.i3d" />
+        </treeTransportMission>
+        <destructibleRockMission>
+            <spots filename="maps/missions/destructibleRocksSpots.i3d" />
+            <marker filename="$data/shared/assets/marker/rockMissionFlag.i3d" />
+        </destructibleRockMission>
+    </missions>
+
+    <fishingSystem>
+        <spot position="-882 -780" radius="35" items="TROUT TROUT_MEDIUM TROUT_LARGE" spawnWeight="20" />
+        <spot position="-884 -816" radius="25" items="TROUT TROUT_MEDIUM TROUT_LARGE" spawnWeight="20" />
+    </fishingSystem>
+
+    <fillTypes filename="maps/config/fillTypes.xml" />
+    <sprayTypes filename="maps/config/sprayTypes.xml"/>
+    <treeTypes filename="maps/config/treeTypes.xml" maxNumTrees="12000" />
+    <densityMapHeightTypes filename="maps/config/densityMapHeightTypes.xml"/>
+
+    <bales filename="maps/config/bales.xml"/>
+
+    <fruitTypes>
+        <fruitType filename="foliage/wheat/wheat.xml"/>
+        <fruitType filename="foliage/barley/barley.xml"/>
+        <fruitType filename="foliage/canola/canola.xml"/>
+        <fruitType filename="foliage/oat/oat.xml"/>
+        <fruitType filename="foliage/maize/maize.xml"/>
+        <fruitType filename="foliage/sunflower/sunflower.xml"/>
+        <fruitType filename="foliage/soybean/soybean.xml"/>
+        <fruitType filename="foliage/potato/potato.xml"/>
+        <fruitType filename="foliage/rice/rice.xml"/>
+        <fruitType filename="foliage/riceLongGrain/riceLongGrain.xml"/>
+        <fruitType filename="foliage/sugarbeet/sugarbeet.xml"/>
+        <fruitType filename="foliage/sugarcane/sugarcane.xml"/>
+        <fruitType filename="foliage/cotton/cotton.xml"/>
+        <fruitType filename="foliage/sorghum/sorghum.xml"/>
+        <fruitType filename="foliage/poplar/poplar.xml"/>
+        <fruitType filename="foliage/rye/rye.xml"/>
+        <fruitType filename="foliage/grass/grass.xml"/>
+        <fruitType filename="foliage/alfalfa/alfalfa.xml"/>
+        <fruitType filename="foliage/meadow/meadow.xml"/>
+        <fruitType filename="foliage/decoGardenFoliage/decoGardenFoliage.xml"/>
+        <fruitType filename="foliage/decoGardenFoliage/decoGardenCrops.xml"/>
+        <fruitType filename="foliage/decoGardenFoliage/decoGardenRootCrops.xml"/>
+    </fruitTypes>
+
+    <fruitTypeCategories>
+        <fruitTypeCategory name="GRAINHEADER">RYE</fruitTypeCategory>
+        <fruitTypeCategory name="MAIZECUTTER">RYE</fruitTypeCategory>
+        <fruitTypeCategory name="DIRECTCUTTER">RYE ALFALFA MEADOW</fruitTypeCategory>
+        <fruitTypeCategory name="SOWINGMACHINE">RYE ALFALFA</fruitTypeCategory>
+        <fruitTypeCategory name="WEEDER">ALFALFA</fruitTypeCategory>
+        <fruitTypeCategory name="MOWER">RYE ALFALFA MEADOW</fruitTypeCategory>
+        <fruitTypeCategory name="COMBINE_MOWER">RYE</fruitTypeCategory>
+    </fruitTypeCategories>
+
+    <fruitTypeConverters>
+        <fruitTypeConverter name="FORAGEHARVESTER">
+            <converter from="RYE" to="CHAFF" factor="4.5"/>
+            <converter from="ALFALFA" to="ALFALFA_WINDROW" factor="1.0"/>
+            <converter from="MEADOW" to="GRASS_WINDROW" factor="1.0" />
+        </fruitTypeConverter>
+        <fruitTypeConverter name="MOWER">
+            <converter from="RYE" to="STRAW" factor="1.0"/>
+            <converter from="ALFALFA" to="ALFALFA_WINDROW" factor="1.0"/>
+            <converter from="MEADOW" to="GRASS_WINDROW" factor="1.0" />
+        </fruitTypeConverter>
+        <fruitTypeConverter name="COMBINE_MOWER">
+            <converter from="RYE" to="RYE_CUT" factor="1.0"/>
+        </fruitTypeConverter>
+    </fruitTypeConverters>
+
+    <motionPathEffects filename="$data/effects/motionPathEffects.xml">
+        <motionPathEffect filename="effects/compost/compostEffects.xml" />
+        <motionPathEffect filename="effects/cutter/cutterEffects.xml" />
+        <motionPathEffect filename="effects/chopper/chopperEffects.xml" />
+        <motionPathEffect filename="effects/mixerWagon/mixerWagonEffects.xml" />
+        <motionPathEffect filename="effects/mower/mowerEffects.xml" />
+        <motionPathEffect filename="effects/pickup/pickupEffects.xml" />
+        <motionPathEffect filename="effects/tedder/tedderEffects.xml" />
+        <motionPathEffect filename="effects/windrower/windrowerEffects.xml" />
+    </motionPathEffects>
+
+    <additionalFiles>
+        <additionalFile filename="$data/shared/materialHolders/tensionBelts/tensionBeltMaterialHolder.i3d" />
+        <additionalFile filename="$data/shared/materialHolders/tireTrackMaterialHolder.i3d" />
+        <additionalFile filename="$data/shared/materialHolders/waterSimulationMaterialHolder.i3d" />
+        <additionalFile filename="$data/fillPlanes/fillPlane_materialHolder.i3d" />
+        <additionalFile filename="$data/objects/bales/wrapBale_materialHolder.i3d" />
+        <additionalFile filename="$data/effects/effects.xml" />
+    </additionalFiles>
+
+    <!-- add all foliage layers that are not fruits. You need to define these foliage layers to be able to remove them with a cultivator or plow -->
+    <decoFoliages>
+        <decoFoliage layerName="decoFoliage" startChannel="0" numChannels="4" mowable="true"/>
+        <decoFoliage layerName="groundFoliage" startChannel="0" numChannels="4"/>
+        <decoFoliage layerName="decoBush" startChannel="0" numChannels="4" />
+        <decoFoliage layerName="forestPlants" startChannel="0" numChannels="4"/>
+        <decoFoliage layerName="waterPlants" startChannel="0" numChannels="4"/>
+        <decoFoliage layerName="decoGardenFoliage" startChannel="0" numChannels="4"/>
+        <decoFoliage layerName="decoGardenRootCrops" startChannel="0" numChannels="4"/>
+        <decoFoliage layerName="decoGardenCrops" startChannel="0" numChannels="4"/>
+
+        <mapping name="grassShort" layerName="decoFoliage" state="9" />
+    </decoFoliages>
+
+    <paintableFoliages>
+        <paintableFoliage layerName="meadow" startChannel="0" numStateChannels="4" />
+        <paintableFoliage layerName="decoFoliage" startChannel="0" numStateChannels="4" />
+        <paintableFoliage layerName="decoBush" startChannel="0" numStateChannels="4" />
+    </paintableFoliages>
+
+    <groundTypeMappings>
+        <groundTypeMapping type="asphalt"            title="$l10n_groundType_asphalt" layer="ASPHALT" />
+        <groundTypeMapping type="asphaltDusty"       title="$l10n_groundType_asphalt" layer="ASPHALT_DUSTY" />
+        <groundTypeMapping type="asphaltCracks"      title="$l10n_groundType_asphalt" layer="ASPHALT_CRACKS" />
+        <groundTypeMapping type="asphaltCracksDirt"  title="$l10n_groundType_asphalt" layer="ASPHALT_CRACKS_DIRT" />
+        <groundTypeMapping type="asphaltDirt"        title="$l10n_groundType_asphalt" layer="ASPHALT_DIRT" />
+        <groundTypeMapping type="concrete"           title="$l10n_groundType_concrete" layer="CONCRETE" />
+        <groundTypeMapping type="concreteDark"       title="$l10n_groundType_concrete" layer="CONCRETE_DARK" />
+        <groundTypeMapping type="concreteDirt"       title="$l10n_groundType_concrete" layer="CONCRETE_DIRT" />
+        <groundTypeMapping type="plate"              title="$l10n_groundType_plates" layer="PLATE" />
+        <groundTypeMapping type="plateDamaged"       title="$l10n_groundType_plates" layer="PLATE_DAMAGED" />
+        <groundTypeMapping type="plateDirt"          title="$l10n_groundType_plates" layer="PLATE_DIRT" />
+        <groundTypeMapping type="pavementSmallTiles" title="$l10n_groundType_flagstones" layer="PAVEMENT_SMALL_TILES" />
+        <groundTypeMapping type="pavementHTiles"     title="$l10n_groundType_flagstones" layer="PAVEMENT_H_TILES" />
+        <groundTypeMapping type="pavementGrass"      title="$l10n_groundType_cobblestones" layer="PAVEMENT_GRASS" />
+        <groundTypeMapping type="dirt"               title="$l10n_groundType_dirt" layer="DIRT" />
+        <groundTypeMapping type="animalMud"          title="$l10n_groundType_animalMud" layer="ANIMAL_MUD" />
+        <groundTypeMapping type="vehicleMud"         title="$l10n_groundType_dirt" layer="VEHICLE_MUD" />
+        <groundTypeMapping type="vehicleMudPuddle"   title="$l10n_groundType_dirt" layer="VEHICLE_MUD_PUDDLE" />
+        <groundTypeMapping type="mud"                title="$l10n_groundType_sandWet" layer="MUD" />
+        <groundTypeMapping type="riverBed"           title="$l10n_groundType_sandRough" layer="RIVER_BED" />
+        <groundTypeMapping type="grass"              title="$l10n_groundType_grass" layer="GRASS" />
+        <groundTypeMapping type="grassRough"         title="$l10n_groundType_grassDry" layer="GRASS_ROUGH" />
+        <groundTypeMapping type="grassTown"          title="$l10n_groundType_grass" layer="GRASS_TOWN" />
+        <groundTypeMapping type="grassLeaves"        title="$l10n_groundType_grass" layer="GRASS_LEAVES" />
+        <groundTypeMapping type="gravel"             title="$l10n_groundType_gravel" layer="GRAVEL" />
+        <groundTypeMapping type="gravelPathway"      title="$l10n_groundType_gravel" layer="GRAVEL_PATHWAY" />
+        <groundTypeMapping type="gravelDirt"         title="$l10n_groundType_gravel" layer="GRAVEL_DIRT" />
+        <groundTypeMapping type="gravelDirtBlend"    title="$l10n_groundType_gravel" layer="GRAVEL_DIRT_BLEND" />
+        <groundTypeMapping type="gravelMoss"         title="$l10n_groundType_grassMoss" layer="GRAVEL_MOSS" />
+        <groundTypeMapping type="forestGrass"        title="$l10n_groundType_forestGround" layer="FOREST_GRASS" />
+        <groundTypeMapping type="forestNeedels"      title="$l10n_groundType_forestGround" layer="FOREST_NEEDELS" />
+        <groundTypeMapping type="forestRoots"        title="$l10n_groundType_forestGround" layer="FOREST_ROOTS" />
+        <groundTypeMapping type="rock"               title="$l10n_groundType_rock" layer="ROCK" />
+        <groundTypeMapping type="rockLight"          title="$l10n_groundType_rock" layer="ROCK_LIGHT" />
+    </groundTypeMappings>
+
+    <precisionFarming>
+        <soilMap filename="maps/carpathianCountryside/infoLayer_soilMap.grle"/>
+
+        <cropSensor fruitTypes="RYE ALFALFA"/>
+
+        <fruitRequirements>
+            <fruitRequirement fruitTypeName="RYE">
+                <soil soilTypeIndex="1" targetLevel="120" reduction="100" yieldPotential="0.8"/>
+                <soil soilTypeIndex="2" targetLevel="140" reduction="120" yieldPotential="1.0"/>
+                <soil soilTypeIndex="3" targetLevel="180" reduction="160" yieldPotential="1.25"/>
+                <soil soilTypeIndex="4" targetLevel="120" reduction="100" yieldPotential="0.9"/>
+            </fruitRequirement>
+            <fruitRequirement fruitTypeName="ALFALFA" alwaysAllowFertilization="true" ignoreOverfertilization="true">
+                <soil soilTypeIndex="1" targetLevel="50" reduction="40" yieldPotential="0.8"/>
+                <soil soilTypeIndex="2" targetLevel="55" reduction="40" yieldPotential="1.0"/>
+                <soil soilTypeIndex="3" targetLevel="65" reduction="50" yieldPotential="1.25"/>
+                <soil soilTypeIndex="4" targetLevel="65" reduction="55" yieldPotential="0.9"/>
+            </fruitRequirement>
+        </fruitRequirements>
+
+        <applicationRates>
+            <applicationRate fillType="COMPOST" autoAdjustToFruit="false" regularRate="60">
+                <soil soilTypeIndex="1" rate="40"/>
+                <soil soilTypeIndex="2" rate="60"/>
+                <soil soilTypeIndex="3" rate="80"/>
+                <soil soilTypeIndex="4" rate="60"/>
+            </applicationRate>
+        </applicationRates>
+
+        <fertilizerUsage>
+            <nAmount fillType="COMPOST" amount="0.006"/>
+        </fertilizerUsage>
+
+        <seedRateMap>
+            <fruitTypes>
+                <fruitType name="RYE">
+                    <seedRates rates="170 285 400" usages="0.01688 0.0288 0.04012" />
+
+                    <soilTypes>
+                        <soilType index="1" yields="0.875 1.000 1.125" />
+                        <soilType index="2" yields="0.950 1.000 1.000" />
+                        <soilType index="3" yields="1.000 1.000 1.000" />
+                        <soilType index="4" yields="0.777 1.000 1.111" />
+                    </soilTypes>
+                </fruitType>
+            </fruitTypes>
+        </seedRateMap>
+
+        <npcTramlines fruitTypes="RYE"/>
+    </precisionFarming>
+    <vertexBufferMemoryUsage>156248832</vertexBufferMemoryUsage>
+    <indexBufferMemoryUsage>33179648</indexBufferMemoryUsage>
+    <textureMemoryUsage>1169555456</textureMemoryUsage>
+</map>

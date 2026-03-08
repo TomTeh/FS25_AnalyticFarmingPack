@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="simplePlaceable" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_placeableObject_milkingParlor</name>
+        <image>placeables/milkingParlor/store_milkingParlor.png</image>
+        <price>238500</price>
+        <dailyUpkeep>0</dailyUpkeep>
+        <canBeSold>true</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>LIZARDFARMING</brand>
+        <species>placeable</species>
+        <category>decoration</category>
+        <brush>
+            <type>placeable</type>
+            <category>decoration</category>
+            <tab>uncategorized</tab>
+        </brush>
+
+        <storeIconRendering>
+            <settings cameraXRot="-10" cameraYRot="120" advancedBoundingBox="true"/>
+        </storeIconRendering>
+        <vertexBufferMemoryUsage>507136</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>115456</indexBufferMemoryUsage>
+        <textureMemoryUsage>10878976</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>placeables/milkingParlor/milkingParlor.i3d</filename>
+        <boughtWithFarmland>true</boughtWithFarmland>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testAreaStart1" endNode="testAreaEnd1" />
+            <testArea startNode="testAreaStart2" endNode="testAreaEnd2" />
+            <testArea startNode="testAreaStart3" endNode="testAreaEnd3" />
+            <testArea startNode="testAreaStart4" endNode="testAreaEnd4" />
+        </testAreas>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearLevelAreaStart1" widthNode="clearLevelAreaWidth1" heightNode="clearLevelAreaHeight1"/>
+    </clearAreas>
+
+    <leveling requireLeveling="false" maxSmoothDistance="5" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="clearLevelAreaStart1" widthNode="clearLevelAreaWidth1" heightNode="clearLevelAreaHeight1"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorAreaStart1" widthNode="indoorAreaWidth1" heightNode="indoorAreaHeight1" />
+        <indoorArea startNode="indoorAreaStart2" widthNode="indoorAreaWidth2" heightNode="indoorAreaHeight2" />
+        <indoorArea startNode="indoorAreaStart3" widthNode="indoorAreaWidth3" heightNode="indoorAreaHeight3" />
+        <indoorArea startNode="indoorAreaStart4" widthNode="indoorAreaWidth4" heightNode="indoorAreaHeight4" />
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStart1" endNode="tipOcclusionUpdateAreaEnd1" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateAreaStart1" endNode="tipOcclusionUpdateAreaEnd1" />
+        </updateAreas>
+    </ai>
+
+    <lights>
+        <group weatherRequiredFlags="NIGHT" />
+        
+        <sharedLight filename="placeables/sharedAssets/lights/warehouseWallLamp.xml" linkNode="warehouseWallLamp01" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/warehouseWallLamp.xml" linkNode="warehouseWallLamp02" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/industrialWallLight.xml" linkNode="industrialWallLight01" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/industrialWallLight.xml" linkNode="industrialWallLight02" groupIndex="1"/>
+
+        <realLights>
+            <low>
+                <light node="realLightsLow" groupIndex="1"/>
+            </low>
+            <high>
+                <light node="realLightsHigh" groupIndex="1"/>
+            </high>
+        </realLights>
+    </lights>
+
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart node="6" linkNode="propsBuildingNode" filename="placeables/sharedAssets/propsBuilding/propsBuilding_farmBuildings.i3d"/>
+    </dynamicallyLoadedParts>
+
+    <i3dMappings>
+        <i3dMapping id="propsBuildingNode" node="0>1|0" />
+        <i3dMapping id="propsBordersNode" node="0>1|1" />
+        <i3dMapping id="propsPreplacedNode" node="0>1|2" />
+        <i3dMapping id="warehouseWallLamp01" node="0>2|0|0" />
+        <i3dMapping id="warehouseWallLamp02" node="0>2|0|1" />
+        <i3dMapping id="industrialWallLight01" node="0>2|0|2" />
+        <i3dMapping id="industrialWallLight02" node="0>2|0|3" />
+        <i3dMapping id="realLightsLow" node="0>2|1|0" />
+        <i3dMapping id="realLightsHigh" node="0>2|1|1" />
+        <i3dMapping id="clearLevelAreaStart1" node="0>3|0" />
+        <i3dMapping id="clearLevelAreaWidth1" node="0>3|0|0" />
+        <i3dMapping id="clearLevelAreaHeight1" node="0>3|0|1" />
+        <i3dMapping id="indoorAreaStart1" node="0>4|0" />
+        <i3dMapping id="indoorAreaWidth1" node="0>4|0|0" />
+        <i3dMapping id="indoorAreaHeight1" node="0>4|0|1" />
+        <i3dMapping id="indoorAreaStart2" node="0>4|1" />
+        <i3dMapping id="indoorAreaWidth2" node="0>4|1|0" />
+        <i3dMapping id="indoorAreaHeight2" node="0>4|1|1" />
+        <i3dMapping id="indoorAreaStart3" node="0>4|2" />
+        <i3dMapping id="indoorAreaWidth3" node="0>4|2|0" />
+        <i3dMapping id="indoorAreaHeight3" node="0>4|2|1" />
+        <i3dMapping id="indoorAreaStart4" node="0>4|3" />
+        <i3dMapping id="indoorAreaWidth4" node="0>4|3|0" />
+        <i3dMapping id="indoorAreaHeight4" node="0>4|3|1" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart1" node="0>5|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd1" node="0>5|0|0" />
+        <i3dMapping id="testAreaStart1" node="0>6|0" />
+        <i3dMapping id="testAreaEnd1" node="0>6|0|0" />
+        <i3dMapping id="testAreaStart2" node="0>6|1" />
+        <i3dMapping id="testAreaEnd2" node="0>6|1|0" />
+        <i3dMapping id="testAreaStart3" node="0>6|2" />
+        <i3dMapping id="testAreaEnd3" node="0>6|2|0" />
+        <i3dMapping id="testAreaStart4" node="0>6|3" />
+        <i3dMapping id="testAreaEnd4" node="0>6|3|0" />
+    </i3dMappings>
+</placeable>

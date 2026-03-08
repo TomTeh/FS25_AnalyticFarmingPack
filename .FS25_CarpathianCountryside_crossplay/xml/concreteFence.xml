@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="newFence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_placeableObject_concreteFence</name>
+        <functions>
+            <function>$l10n_function_decoration</function>
+        </functions>
+        <image>placeables/fences/store_concreteFence.dds</image>
+        <price>150</price>
+        <dailyUpkeep>0</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>LIZARDBUILDING</brand>
+        <species>PLACEABLE</species>
+        <category>fences</category>
+        <canBeSold>true</canBeSold>
+        <showInStore>true</showInStore>
+
+        <brush>
+            <type>newFence</type>
+            <category>decoration</category>
+            <tab>newFences</tab>
+        </brush>
+
+        <storeIconRendering>
+            <settings centerIcon="true"/>
+            <objectBundle>
+                <object filename="placeables/fences/concreteFence.i3d">
+                    <!-- panels -->
+                    <node node="1|0" translation="0 0 0" rotation="0 90 0" scale="1 1 1"/>
+                    <node node="1|1" translation="4 0 0" rotation="0 90 0" scale="1 1 1"/>
+                </object>
+            </objectBundle>
+        </storeIconRendering>
+        <vertexBufferMemoryUsage>9728</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>1536</indexBufferMemoryUsage>
+        <textureMemoryUsage>1638400</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>placeables/fences/concreteFence.i3d</filename>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <sounds>
+            <place template="fenceStoneImp" />
+            <destroy template="destroyFence" />
+        </sounds>
+    </placement>
+
+    <fence hasInvisiblePoles="true">
+        <segment id="SEGMENT" class="FenceSegment" maxVerticalAngle="45">
+            <poles>
+                <pole node="pole01" radius="0.0"/>
+            </poles>
+            <panels maxScale="1.2">
+                <panel node="panel01" length="4" />
+                <panel node="panel02" length="4" />
+                <panel node="panel03" length="4" />
+                <panel node="panel04" length="4" />
+            </panels>
+        </segment>
+    </fence>
+
+    <i3dMappings>
+        <i3dMapping id="pole01" node="0>0" />
+        <i3dMapping id="panel01" node="1>0" />
+        <i3dMapping id="panel02" node="1>1" />
+        <i3dMapping id="panel03" node="1>2" />
+        <i3dMapping id="panel04" node="1>3" />
+    </i3dMappings>
+</placeable>

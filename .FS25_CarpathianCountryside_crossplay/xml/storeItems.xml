@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<storeItems>
+<!-- TRAIN AND WAGONS -->
+    <storeItem xmlFilename="$data/vehicles/train/locomotiveEU/locomotiveEU.xml" />
+    <storeItem xmlFilename="$data/vehicles/train/wagonGrainEU/wagonGrainEU.xml" />
+    <storeItem xmlFilename="$data/vehicles/train/wagonSugarbeetsEU/wagonSugarbeetsEU.xml" />
+    <storeItem xmlFilename="$data/vehicles/train/wagonWoodChipsEU/wagonWoodChipsEU.xml" />
+    <storeItem xmlFilename="$data/vehicles/train/wagonTimberEU/wagonTimberEU.xml" />
+    <storeItem xmlFilename="$data/vehicles/train/wagonVehiclesEU/wagonVehiclesEU.xml" />
+
+<!-- Company vehicles -->
+    <storeItem xmlFilename="vehicles/companyVehicles/jungheinrichEfgS50S.xml" />
+    <storeItem xmlFilename="vehicles/companyVehicles/manitouM504.xml" />
+    <storeItem xmlFilename="vehicles/companyVehicles/ropaMaus5.xml" />
+
+<!-- TREES -->
+    <storeItem xmlFilename="maps/trees/spruce/spruceVar1_stage03.xml" />
+    <storeItem xmlFilename="maps/trees/cypress/cypress_stage04.xml" />
+
+<!-- PLANTS -->
+    <storeItem xmlFilename="foliage/meadow/paintable_meadow.xml" />
+    <storeItem xmlFilename="foliage/decoFoliage/paintable_decoFoliageGrassMedium.xml" />
+    <storeItem xmlFilename="foliage/decoFoliage/paintable_decoFoliageGrassSmall.xml" />
+    <storeItem xmlFilename="foliage/decoFoliage/paintable_decoFoliageGrassCut.xml" />
+    <storeItem xmlFilename="foliage/decoFoliage/paintable_decoFoliageFlowerWhite.xml" />
+    <storeItem xmlFilename="foliage/decoFoliage/paintable_decoFoliageFlowerLavender.xml" />
+    <storeItem xmlFilename="foliage/decoFoliage/paintable_decoFoliageFlowerYellow.xml" />
+    <storeItem xmlFilename="foliage/decoFoliage/paintable_decoFoliageFlowerBlue.xml" />
+    <storeItem xmlFilename="foliage/decoFoliage/paintable_decoFoliageWeedSmall.xml" />
+    <storeItem xmlFilename="foliage/decoFoliage/paintable_decoFoliageWeedSmallRumex.xml" />
+    <storeItem xmlFilename="foliage/decoFoliage/paintable_decoFoliageWeedApera.xml" />
+    <storeItem xmlFilename="foliage/decoFoliage/paintable_decoFoliageWeedChaerophyllum.xml" />
+    <storeItem xmlFilename="foliage/decoFoliage/paintable_decoFoliageWeedChenopodium.xml" />
+    <storeItem xmlFilename="foliage/decoFoliage/paintable_decoFoliageWeedCirsium.xml" />
+    <storeItem xmlFilename="foliage/decoFoliage/paintable_decoFoliageWeedPapaverRhoeas.xml" />
+    <storeItem xmlFilename="foliage/decoFoliage/paintable_decoFoliageWeedRumex.xml" />
+    <storeItem xmlFilename="foliage/decoBush/paintable_decoBush_small.xml" />
+    <storeItem xmlFilename="foliage/decoBush/paintable_decoBush_medium.xml" />
+    <storeItem xmlFilename="foliage/decoBush/paintable_decoBush_big.xml" />
+    <storeItem xmlFilename="foliage/decoBush/paintable_decoBush_superBig.xml" />
+    <storeItem xmlFilename="foliage/decoBush/paintable_decoBushBlueberry_short.xml" />
+    <storeItem xmlFilename="foliage/decoBush/paintable_decoBushBlueberry_small.xml" />
+    <storeItem xmlFilename="foliage/decoBush/paintable_decoBushBlueberry_medium.xml" />
+    <storeItem xmlFilename="foliage/decoBush/paintable_decoBushBlueberry_big.xml" />
+    <storeItem xmlFilename="foliage/decoBush/paintable_decoBushBlueberry_tall.xml" />
+    <storeItem xmlFilename="foliage/decoBush/paintable_decoBushBoxwood_small.xml" />
+    <storeItem xmlFilename="foliage/decoBush/paintable_decoBushBoxwood_medium.xml" />
+    <storeItem xmlFilename="foliage/decoBush/paintable_decoBushBoxwood_big.xml" />
+    <storeItem xmlFilename="foliage/decoBush/paintable_decoBushHazelnut_small.xml" />
+    <storeItem xmlFilename="foliage/decoBush/paintable_decoBushHazelnut_medium.xml" />
+    <storeItem xmlFilename="foliage/decoBush/paintable_decoBushHazelnut_big.xml" />
+</storeItems>

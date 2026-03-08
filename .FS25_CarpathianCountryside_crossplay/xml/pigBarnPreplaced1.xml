@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="pigHusbandry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_placeableObject_pig1</name>
+        <image>placeables/animalHusbandry/store_pigBarn.png</image>
+        <price>284000</price>
+        <functions>
+            <function>$l10n_function_animalPenPig</function>
+            <function>$l10n_function_adjustableMeadow</function>
+            <function>$l10n_function_roofSolarPanelsOption</function>
+        </functions>
+        <lifetime>1000</lifetime>
+        <dailyUpkeep>180</dailyUpkeep>
+        <canBeSold>true</canBeSold>
+        <showInStore>false</showInStore>
+        <rotation>0</rotation>
+        <brand>LIZARDFARMING</brand>
+        <species>placeable</species>
+        <category>animalpens</category>
+        <brush>
+            <type>husbandry</type>
+            <category>animals</category>
+            <tab>pigs</tab>
+        </brush>
+
+        <storeIconRendering>
+            <settings cameraXRot="-20" cameraYRot="140" advancedBoundingBox="true"/>
+        </storeIconRendering>
+        <vertexBufferMemoryUsage>1525760</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>342784</indexBufferMemoryUsage>
+        <textureMemoryUsage>10747904</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>placeables/animalHusbandry/pigSheepBarn.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true">
+        <testAreas>
+            <testArea startNode="testAreaStart1" endNode="testAreaEnd1" />
+            <testArea startNode="testAreaStartPigSilo" endNode="testAreaEndPigSilo" />
+        </testAreas>
+
+        <sounds>
+            <place template="largeImp" />
+            <placeLayered template="pigLayer" />
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearAreaStart1" widthNode="clearAreaWidth1" heightNode="clearAreaHeight1"/>
+        <clearArea startNode="clearAreaStartPigSilo" widthNode="clearAreaWidthPigSilo" heightNode="clearAreaHeightPigSilo"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelAreaStart1" widthNode="levelAreaWidth1" heightNode="levelAreaHeight1" groundType="concrete"/>
+            <levelArea startNode="levelAreaStartPigSilo" widthNode="levelAreaWidthPigSilo" heightNode="levelAreaHeightPigSilo" groundType="concrete"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorAreaStart1" widthNode="indoorAreaWidth1" heightNode="indoorAreaHeight1"/>
+        <indoorArea startNode="indoorAreaStart2" widthNode="indoorAreaWidth2" heightNode="indoorAreaHeight2"/>
+        <indoorArea startNode="indoorAreaStartPigSilo" widthNode="indoorAreaWidthPigSilo" heightNode="indoorAreaHeightPigSilo"/>
+        <indoorArea startNode="indoorAreaStartPigWater1" widthNode="indoorAreaWidthPigWater1" heightNode="indoorAreaHeightPigWater1"/>
+        <indoorArea startNode="indoorAreaStartTank1Pig1" widthNode="indoorAreaWidthTank1Pig1" heightNode="indoorAreaHeightTank1Pig1"/>
+        <indoorArea startNode="indoorAreaStartTank2Pig1" widthNode="indoorAreaWidthTank2Pig1" heightNode="indoorAreaHeightTank2Pig1"/>
+        <indoorArea startNode="indoorAreaStartTank3Pig1" widthNode="indoorAreaWidthTank3Pig1" heightNode="indoorAreaHeightTank3Pig1"/>
+        <indoorArea startNode="indoorAreaStartTank4Pig1" widthNode="indoorAreaWidthTank4Pig1" heightNode="indoorAreaHeightTank4Pig1"/>
+        <indoorArea startNode="indoorAreaStartTank5Pig1" widthNode="indoorAreaWidthTank5Pig1" heightNode="indoorAreaHeightTank5Pig1"/>
+        <indoorArea startNode="indoorAreaStartTank6Pig1" widthNode="indoorAreaWidthTank6Pig1" heightNode="indoorAreaHeightTank6Pig1"/>
+        <indoorArea startNode="indoorAreaStartTank7Pig1" widthNode="indoorAreaWidthTank7Pig1" heightNode="indoorAreaHeightTank7Pig1"/>
+        <indoorArea startNode="indoorAreaStartTank8Pig1" widthNode="indoorAreaWidthTank8Pig1" heightNode="indoorAreaHeightTank8Pig1"/>
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStart1" endNode="tipOcclusionUpdateAreaEnd1" />
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStartTankPig1" endNode="tipOcclusionUpdateAreaEndTankPig1" />
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStartWaterPig" endNode="tipOcclusionUpdateAreaEndWaterPig" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateAreaStart1" endNode="tipOcclusionUpdateAreaEnd1" />
+            <updateArea startNode="tipOcclusionUpdateAreaStartTankPig1" endNode="tipOcclusionUpdateAreaEndTankPig1" />
+            <updateArea startNode="tipOcclusionUpdateAreaStartWaterPig" endNode="tipOcclusionUpdateAreaEndWaterPig" />
+        </updateAreas>
+    </ai>
+
+    <triggerMarkers>
+        <triggerMarker node="markerFoodPig" filename="$data/shared/assets/marker/markerIconFood.i3d" adjustToGround="false" />
+        <triggerMarker node="markerFoodSheep" filename="placeables/sharedAssets/marker/markerIconStrawBlower.i3d" adjustToGround="true" />
+        <triggerMarker node="markerAnimalsPig" filename="placeables/sharedAssets/marker/markerIconPigInOut.i3d" adjustToGround="true" />
+        <triggerMarker node="markerStrawBale" filename="$data/shared/assets/marker/markerIconBales.i3d" adjustToGround="true" />
+        <triggerMarker node="markerLiquidManurePig1" filename="$data/shared/assets/marker/markerIconSlurry.i3d" adjustToGround="true" />
+    </triggerMarkers>
+
+    <hotspots>
+        <hotspot type="PIG" teleportNode="teleportNode" />
+    </hotspots>
+
+    <lights>
+        <group weatherRequiredFlags="NIGHT" />
+        <group name="$l10n_category_floodLighting" triggerNode="controledLightsTrigger">
+            <sounds>
+                <toggle template="lizardFloodLight" innerRadius="50" outerRadius="60" volumeScale="0.2"/>
+            </sounds>
+        </group>
+        <group name="$l10n_action_placeableLightShed" activateTime="17:30" deactivateTime="8:20"/>
+
+        <sharedLight filename="placeables/sharedAssets/lights/warehouseHangingLamp.xml" linkNode="warehouseHangingLamp01" groupIndex="2"/>
+        <sharedLight filename="placeables/sharedAssets/lights/warehouseHangingLamp.xml" linkNode="warehouseHangingLamp02" groupIndex="2"/>
+        <sharedLight filename="placeables/sharedAssets/lights/warehouseHangingLamp.xml" linkNode="warehouseHangingLamp03" groupIndex="2"/>
+        <sharedLight filename="placeables/sharedAssets/lights/warehouseHangingLamp.xml" linkNode="warehouseHangingLamp04" groupIndex="2"/>
+        <sharedLight filename="placeables/sharedAssets/lights/warehouseHangingLamp.xml" linkNode="warehouseHangingLamp05" groupIndex="2"/>
+        <sharedLight filename="placeables/sharedAssets/lights/warehouseHangingLamp.xml" linkNode="warehouseHangingLamp06" groupIndex="2"/>
+        <sharedLight filename="placeables/sharedAssets/lights/warehouseHangingLamp.xml" linkNode="warehouseHangingLamp07" groupIndex="2"/>
+        <sharedLight filename="placeables/sharedAssets/lights/warehouseHangingLamp.xml" linkNode="warehouseHangingLamp08" groupIndex="2"/>
+        <sharedLight filename="placeables/sharedAssets/lights/warehouseHangingLamp.xml" linkNode="warehouseHangingLamp09" groupIndex="2"/>
+        <sharedLight filename="placeables/sharedAssets/lights/industrialWallLight.xml" linkNode="industrialWallLight01" groupIndex="2"/>
+        <sharedLight filename="placeables/sharedAssets/lights/neonLight01.xml" linkNode="neonLight01_01" groupIndex="2"/>
+
+        <sharedLight filename="placeables/sharedAssets/lights/industrialWallLight.xml" linkNode="industrialWallLight02" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/warehouseWallLamp.xml" linkNode="warehouseWallLamp01" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/warehouseWallLamp.xml" linkNode="warehouseWallLamp02" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/warehouseWallLamp.xml" linkNode="warehouseWallLamp03" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/warehouseWallLamp.xml" linkNode="warehouseWallLamp04" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/floodLight.xml" linkNode="floodLight01" groupIndex="1">
+            <rotationNode name="rotationNode01" rotation="0 0 30" />
+        </sharedLight>
+
+        <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml" linkNode="fluorescentTube50W01" groupIndex="3" color="1 0 0" />
+        <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml" linkNode="fluorescentTube50W02" groupIndex="3" color="1 0 0" />
+        <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml" linkNode="fluorescentTube50W03" groupIndex="3" color="1 0 0" />
+        <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml" linkNode="fluorescentTube50W04" groupIndex="3" color="1 0 0" />
+        <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml" linkNode="fluorescentTube50W05" groupIndex="3" color="1 0 0" />
+        <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml" linkNode="fluorescentTube50W06" groupIndex="3" color="1 0 0" />
+        <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml" linkNode="fluorescentTube50W07" groupIndex="3" color="1 0 0" />
+
+        <realLights>
+            <low>
+                <light node="realLightsLow" groupIndex="1"/>
+                <light node="realLightsControledLow" groupIndex="2"/>
+                <light node="realLightsTerraLedLow" groupIndex="3"/>
+            </low>
+            <high>
+                <light node="realLightsHigh" groupIndex="1"/>
+                <light node="realLightsControledHigh" groupIndex="2"/>
+                <light node="realLightsTerraLedHigh" groupIndex="3"/>
+            </high>
+        </realLights>
+    </lights>
+
+    <animatedObjects>
+        <animatedObject saveId="pigStable1_gate1" >
+            <animation duration="3">
+                <part node="gateLeft1">
+                    <keyFrame time="0.03" rotation="-90 0 0"/>
+                    <keyFrame time="1.0" rotation="-90 -160 0"/>
+                </part>
+                <part node="gateRight1">
+                    <keyFrame time="0.03" rotation="-90 0 0"/>
+                    <keyFrame time="1.0" rotation="-90 160 0"/>
+                </part>
+                <part node="gateHandle1">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="0.03" rotation="0 -35 0"/>
+                    <keyFrame time="0.06" rotation="0 0 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="gate1_trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving linkNode="gate1_sound" template="metalDoorsLoop" volumeScale="0.6"/>
+                <posEnd linkNode="gate1_sound" template="metalDoorsOpen" volumeScale="0.7" />
+                <negEnd linkNode="gate1_sound" template="metalDoorsClose" volumeScale="1" />
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="pigStable1_gate2" >
+            <animation duration="3">
+                <part node="gateLeft2">
+                    <keyFrame time="0.03" rotation="-90 0 0"/>
+                    <keyFrame time="1.0" rotation="-90 -160 0"/>
+                </part>
+                <part node="gateRight2">
+                    <keyFrame time="0.03" rotation="-90 0 0"/>
+                    <keyFrame time="1.0" rotation="-90 160 0"/>
+                </part>
+                <part node="gateHandle2">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="0.03" rotation="0 -35 0"/>
+                    <keyFrame time="0.06" rotation="0 0 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="gate2_trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving linkNode="gate2_sound" template="metalDoorsLoop" volumeScale="0.6"/>
+                <posEnd linkNode="gate2_sound" template="metalDoorsOpen" volumeScale="0.7" />
+                <negEnd linkNode="gate2_sound" template="metalDoorsClose" volumeScale="1" />
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="pigStable1_gate3" >
+            <animation duration="3">
+                <part node="gateLeft3">
+                    <keyFrame time="0.03" rotation="-90 0 0"/>
+                    <keyFrame time="1.0" rotation="-90 -160 0"/>
+                </part>
+                <part node="gateRight3">
+                    <keyFrame time="0.03" rotation="-90 0 0"/>
+                    <keyFrame time="1.0" rotation="-90 160 0"/>
+                </part>
+                <part node="gateHandle3">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="0.03" rotation="0 -35 0"/>
+                    <keyFrame time="0.06" rotation="0 0 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="gate3_trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving linkNode="gate3_sound" template="metalDoorsLoop" volumeScale="0.6"/>
+                <posEnd linkNode="gate3_sound" template="metalDoorsOpen" volumeScale="0.7" />
+                <negEnd linkNode="gate3_sound" template="metalDoorsClose" volumeScale="1" />
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="pigStable1_interiorDoor" >
+            <animation duration="1.2">
+                <part node="pigInteriorDoor1">
+                    <keyFrame time="0.03" rotation="-90 0 0"/>
+                    <keyFrame time="1.0" rotation="-90 110 0"/>
+                </part>
+                <part node="pigInteriorDoorHandle1">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="0.1" rotation="35 0 0"/>
+                    <keyFrame time="0.2" rotation="0 0 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="pigInteriorDoor1_trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving linkNode="pigInteriorDoor1_sound" template="fenceMetalLoop" volumeScale="0.85" />
+                <posEnd linkNode="pigInteriorDoor1_sound" template="fenceMetalOpen" volumeScale="0.4" />
+                <negEnd linkNode="pigInteriorDoor1_sound" template="fenceMetalClose" volumeScale="0.4" />
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="pigStable1_hopperCover" >
+            <animation duration="2">
+                <part node="pigHopperCover1">
+                    <keyFrame time="0.0" rotation="-95.3 0 0"/>
+                    <keyFrame time="1.0" rotation="6.2 0 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="pigHopperCover1_trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving linkNode="pigHopperCover1_sound" template="fenceMetalLoop" volumeScale="0.85" />
+                <posEnd linkNode="pigHopperCover1_sound" template="fenceMetalOpen" volumeScale="0.4" />
+                <negEnd linkNode="pigHopperCover1_sound" template="fenceMetalClose" volumeScale="0.6" />
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="pigStable1_ladder" >
+            <animation duration="2">
+                <part node="ladderPig1_collision">
+                    <keyFrame time="0.0" translation="-9.274 -1 0.602"/>
+                    <keyFrame time="1.0" translation="-9.274 5.217 0.602"/>
+                </part>
+            </animation>
+            <controls triggerNode="ladderPig1_trigger" posAction="ACTIVATE_HANDTOOL" posText="action_ladderUp" negText="action_ladderDown" />
+        </animatedObject>
+    </animatedObjects>
+
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart node="0" linkNode="terraLedLightSwitch01" filename="$data/shared/assets/lights/terraLed/switch.i3d" />
+        <dynamicallyLoadedPart node="0" linkNode="lightSwitch01" filename="$data/shared/assets/lights/rudolfHormann/powerSwitch.i3d" />
+        <dynamicallyLoadedPart node="0" linkNode="lightSwitch02" filename="$data/shared/assets/lights/rudolfHormann/powerSwitch.i3d" />
+        <dynamicallyLoadedPart node="0" linkNode="pigFoodSiloNode" filename="placeables/sharedAssets/lizardSilos.i3d" />
+        <dynamicallyLoadedPart node="0" linkNode="waterTroughInsideNode" filename="placeables/sharedAssets/waterTrough.i3d" />
+        <dynamicallyLoadedPart node="0" linkNode="waterTroughPig1Node" filename="placeables/sharedAssets/waterTrough.i3d" />
+        <dynamicallyLoadedPart node="0" linkNode="waterTroughFencePig1Node" filename="placeables/sharedAssets/waterTroughFence.i3d" />
+        <dynamicallyLoadedPart node="0|0" linkNode="liquidManureTankNodePig1" filename="placeables/liquidManureTank/liquidManureTank.i3d" />
+        <dynamicallyLoadedPart node="0|1" linkNode="liquidManureTankNodePig1" filename="placeables/liquidManureTank/liquidManureTank.i3d" />
+        <dynamicallyLoadedPart node="0|12" linkNode="liquidManureTankNodePig1" filename="placeables/liquidManureTank/liquidManureTank.i3d" />
+        <dynamicallyLoadedPart node="0|15" linkNode="liquidManureTankNodePig1" filename="placeables/liquidManureTank/liquidManureTank.i3d" />
+        <dynamicallyLoadedPart node="0|4|1|0" linkNode="liquidManurePlaneNodePig1" filename="placeables/liquidManureTank/liquidManureTank.i3d" />
+        <dynamicallyLoadedPart node="0" linkNode="fillTowerNodePig1" filename="placeables/sharedAssets/fillTower.i3d" />
+        <dynamicallyLoadedPart node="0" linkNode="propsBuildingNode" filename="placeables/sharedAssets/propsBuilding/propsBuilding_pigBarn.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="propsDecoNode" filename="placeables/sharedAssets/props/props_pigBarn.i3d"/>
+        <dynamicallyLoadedPart node="3" linkNode="propsDecoNode" filename="placeables/sharedAssets/props/decals.i3d"/>
+    </dynamicallyLoadedParts>
+
+    <infoTrigger triggerNode="infoTriggerPreplacedPig1" />
+
+    <husbandry saveId="Animals_PIG" hasStatistics="false">
+        <storage node="storageNode" fillTypes="LIQUIDMANURE STRAW MANURE" isExtension="false">
+            <capacity fillType="LIQUIDMANURE" capacity="1500000" />
+            <capacity fillType="STRAW" capacity="60000" />
+            <capacity fillType="MANURE" capacity="0" />
+
+            <fillPlane node="liquidManurePlaneNodePig1" fillType="LIQUIDMANURE" changeVisibility="true" minY="0.0" maxY="6.1"/>
+        </storage>
+
+        <unloadingStation supportsExtension="true" storageRadius="115" hideFromPricesMenu="true">
+            <unloadTrigger exactFillRootNode="exactFillRootNodeStraw" fillTypes="STRAW" />
+            <baleTrigger triggerNode="baleTriggerStraw" fillTypes="STRAW"/>
+            <palletTrigger triggerNode="palletTriggerStraw" fillTypes="STRAW"/>
+            <unloadTrigger fillTypes="MANURE LIQUIDMANURE" />
+        </unloadingStation>
+
+        <loadingStation supportsExtension="true" storageRadius="115" fillTypes="STRAW">
+            <loadTrigger triggerNode="liquidManureTriggerPig1" fillTypes="LIQUIDMANURE" fillLitersPerSecond="2000" aiNode="aiLoadingNodeLiquidManurePig1"/>
+            <loadTrigger triggerNode="loadingTriggerLiquidManurePig1MS" fillTypes="LIQUIDMANURE" fillLitersPerSecond="285" dischargeNode="dischargeNodeLiquidManurePig1MS">
+                <effectNode effectClass="PipeEffect" effectNode="pipeEffectLiquidManurePig1MS" materialType="PIPE" stopDelay="0.5" maxBending="0.8" extraDistance="0.2" controlPoint="4 0 0 0"/>
+            </loadTrigger>
+        </loadingStation>
+
+        <animals type="PIG" baseMaxNumAnimals="260" maxNumAnimals="300">
+            <navigation shape="navMeshShapePig"/>
+            <loadingTrigger node="animalLoadTriggerPig" />
+        </animals>
+
+        <food capacity="110000" >
+            <foodPlane node="pigFoodPlane" minY="-0.265" maxY="0.44" changeVisibility="true" defaultFillType="PIGFOOD" />
+            <foodPlaces>
+                <foodPlace node="foodPlacePig01" />
+                <foodPlace node="foodPlacePig02" />
+                <foodPlace node="foodPlacePig03" />
+                <foodPlace node="foodPlacePig04" />
+                <foodPlace node="foodPlacePig05" />
+                <foodPlace node="foodPlacePig06" />
+                <foodPlace node="foodPlacePig07" />
+                <foodPlace node="foodPlacePig08" />
+                <foodPlace node="foodPlacePig09" />
+                <foodPlace node="foodPlacePig10" />
+                <foodPlace node="foodPlacePig11" />
+                <foodPlace node="foodPlacePig12" />
+                <foodPlace node="foodPlacePig13" />
+                <foodPlace node="foodPlacePig14" />
+            </foodPlaces>
+            <unloadTrigger exactFillRootNode="exactFillRootNodePigFood" />
+            <baleTrigger triggerNode="baleTriggerPigFood" />
+            <palletTrigger triggerNode="palletTriggerPigFood" />
+        </food>
+
+        <water automaticWaterSupply="true" />
+
+        <straw>
+            <manure factor="1.5" />
+            <strawPlane node="strawPlane" minY="-0.28" maxY="0" changeVisibility="true" colorChange="false" />
+        </straw>
+
+        <fence xmlFilename="placeables/fences/animalPigFence.xml">
+            <sections>
+                <section segmentId="SEGMENT">
+                    <node node="fencePigNode1" />
+                    <node node="fencePigNode2" />
+                </section>
+                <section segmentId="GATE4m">
+                    <node node="fencePigNode2" />
+                    <node node="fencePigNode3" />
+                </section>
+                <section segmentId="SEGMENT" customizable="true">
+                    <node node="fencePigNode3" />
+                    <node node="fencePigNode4" />
+                    <node node="fencePigNode5" />
+                    <node node="fencePigNode6" />
+                </section>
+            </sections>
+        </fence>
+
+        <meadow>
+            <createTask weedState="0">
+                <fruit type="UNKNOWN" growthState="0"/>
+                <ground type="NONE" />
+                <terrainGroundType name="animalMud" />
+            </createTask>
+        </meadow>
+    </husbandry>
+
+    <deletedNodes>
+        <deletedNode node="sheepConfig" />
+        <deletedNode node="animalLoadTriggerSheep" />
+        <deletedNode node="foodSheep" />
+        <deletedNode node="liquidManurePig" />
+        <deletedNode node="liquidManurePig2" />
+        <deletedNode node="liquidManurePig3" />
+        <deletedNode node="waterTroughPig2Node" />
+        <deletedNode node="waterTroughPig3Node" />
+        <deletedNode node="waterTroughSheepNode" />
+        <deletedNode node="navMeshShapeSheep" />
+        <deletedNode node="navMeshShapeSheepPreplaced" />
+        <deletedNode node="palletAreas" />
+        <deletedNode node="warningStripesWool" />
+        <deletedNode node="infoTrigger" />
+        <deletedNode node="infoTriggerPreplacedPig2" />
+        <deletedNode node="infoTriggerPreplacedPig3" />
+        <deletedNode node="infoTriggerPreplacedSheep" />
+        <deletedNode node="tipCollisionsSheep" />
+    </deletedNodes>
+
+    <colorConfigurations price="0" useDefaultColors="true" defaultColorIndex="1">
+        <node node="pigStable_p1_LOD0" />
+        <node node="pigStable_p1_LOD1" />
+        <colorConfiguration color="1 0.96 0.86" name="$l10n_color_buildingSpecificDefault" isDefault="true"/>
+        <colorConfiguration color="0.8 0.08 0.08" name="$l10n_color_lizardRed"/>
+        <colorConfiguration color="0.324 0.101 0.081" name="$l10n_color_lizardDarkRed"/>
+        <colorConfiguration color="0.95 0.23 0.05" name="$l10n_color_lizardOrange"/>
+        <colorConfiguration color="0.35 0.19 0.05" name="$l10n_color_lizardBrown"/>
+        <colorConfiguration color="1 0.51 0.09" name="$l10n_color_lizardYellow"/>
+        <colorConfiguration color="0.79 0.67 0.28" name="$l10n_color_lizardBrightYellow"/>
+        <colorConfiguration color="0.35 0.43 0.045" name="$l10n_color_lizardLimeGreen"/>
+        <colorConfiguration color="0.258 0.392 0.13" name="$l10n_color_lizardFarmBrightGreen"/>
+        <colorConfiguration color="0.15 0.47 0.05" name="$l10n_color_lizardBrightGreen"/>
+        <colorConfiguration color="0.09 0.35 0.1" name="$l10n_color_lizardGreen"/>
+        <colorConfiguration color="0.15 0.32 0.13" name="$l10n_color_lizardFarmGreen"/>
+        <colorConfiguration color="0.05 0.15 0.05" name="$l10n_color_lizardDarkGreen"/>
+        <colorConfiguration color="0.05 0.25 0.213" name="$l10n_color_lizardTurquoise"/>
+        <colorConfiguration color="0.3 0.61 0.83" name="$l10n_color_lizardSkyBlue"/>
+        <colorConfiguration color="0 0.42 0.85" name="$l10n_color_lizardLizardBrightBlue"/>
+        <colorConfiguration color="0.05 0.27 0.8" name="$l10n_color_lizardBlue"/>
+        <colorConfiguration color="0.01 0.22 0.45" name="$l10n_color_lizardOceanBlue"/>
+        <colorConfiguration color="0.01 0.1 0.3" name="$l10n_color_lizardDarkBlue"/>
+        <colorConfiguration color="0.22 0.18 0.56" name="$l10n_color_lizardPurple"/>
+        <colorConfiguration color="0.27 0.27 0.57" name="$l10n_color_lizardBrightPurple"/>
+        <colorConfiguration color="0.85 0.15 0.25" name="$l10n_color_lizardPink"/>
+        <colorConfiguration color="0.85 0.3 0.42" name="$l10n_color_lizardBrightPink"/>
+    </colorConfigurations>
+
+    <solarPanels>
+        <solarPanelsConfigurations>
+            <solarPanelsConfiguration name="$l10n_ui_none" isActive="false"/>
+            <solarPanelsConfiguration name="240 A" isActive="true" price="63600" incomePerHour="216" >
+                <objectChange node="solarPanels01" visibilityActive="true"/>
+            </solarPanelsConfiguration>
+            <solarPanelsConfiguration name="240 B" isActive="true" price="63600" incomePerHour="216" >
+                <objectChange node="solarPanels02" visibilityActive="true"/>
+            </solarPanelsConfiguration>
+            <solarPanelsConfiguration name="480" isActive="true" price="127200" incomePerHour="432" >
+                <objectChange node="solarPanels01" visibilityActive="true"/>
+                <objectChange node="solarPanels02" visibilityActive="true"/>
+            </solarPanelsConfiguration>
+        </solarPanelsConfigurations>
+    </solarPanels>
+
+    <i3dMappings>
+        <i3dMapping id="pigStable_p1_LOD0" node="0>0|0|1" />
+        <i3dMapping id="pigStable_p1_LOD1" node="0>0|1|0" />
+        <i3dMapping id="gateLeft1" node="0>1|0|0" />
+        <i3dMapping id="gateRight1" node="0>1|0|1" />
+        <i3dMapping id="gateHandle1" node="0>1|0|1|0" />
+        <i3dMapping id="gate1_trigger" node="0>1|0|2" />
+        <i3dMapping id="gate1_sound" node="0>1|0|3" />
+        <i3dMapping id="gateLeft2" node="0>1|1|0" />
+        <i3dMapping id="gateRight2" node="0>1|1|1" />
+        <i3dMapping id="gateHandle2" node="0>1|1|1|0" />
+        <i3dMapping id="gate2_trigger" node="0>1|1|2" />
+        <i3dMapping id="gate2_sound" node="0>1|1|3" />
+        <i3dMapping id="gateLeft3" node="0>1|2|0" />
+        <i3dMapping id="gateRight3" node="0>1|2|1" />
+        <i3dMapping id="gateHandle3" node="0>1|2|1|0" />
+        <i3dMapping id="gate3_trigger" node="0>1|2|2" />
+        <i3dMapping id="gate3_sound" node="0>1|2|3" />
+        <i3dMapping id="pigConfig" node="0>2" />
+        <i3dMapping id="pigInteriorDoor1" node="0>2|2|0" />
+        <i3dMapping id="pigInteriorDoorHandle1" node="0>2|2|0|0" />
+        <i3dMapping id="pigInteriorDoor1_trigger" node="0>2|2|1" />
+        <i3dMapping id="pigInteriorDoor1_sound" node="0>2|2|2" />
+        <i3dMapping id="pigHopperCover1" node="0>2|3|0" />
+        <i3dMapping id="pigHopperCover1_trigger" node="0>2|3|1" />
+        <i3dMapping id="pigHopperCover1_sound" node="0>2|3|2" />
+        <i3dMapping id="pigFoodSiloNode" node="0>2|4" />
+        <i3dMapping id="sheepConfig" node="0>3" />
+        <i3dMapping id="sheepInteriorGate1" node="0>3|1|0" />
+        <i3dMapping id="sheepInteriorGate1_trigger" node="0>3|1|1" />
+        <i3dMapping id="sheepInteriorGate1_sound" node="0>3|1|2" />
+        <i3dMapping id="milkTrigger" node="0>3|2" />
+        <i3dMapping id="propsBuildingNode" node="0>4|0" />
+        <i3dMapping id="propsDecoNode" node="0>4|1" />
+        <i3dMapping id="propsBordersNodePig1" node="0>4|2" />
+        <i3dMapping id="propsPreplacedNodePig1" node="0>4|3" />
+        <i3dMapping id="propsBordersNodePig2" node="0>4|4" />
+        <i3dMapping id="propsPreplacedNodePig2" node="0>4|5" />
+        <i3dMapping id="propsBordersNodePig3" node="0>4|6" />
+        <i3dMapping id="propsPreplacedNodePig3" node="0>4|7" />
+        <i3dMapping id="propsBordersNodeSheep" node="0>4|8" />
+        <i3dMapping id="propsPreplacedNodeSheep" node="0>4|9" />
+        <i3dMapping id="warehouseHangingLamp01" node="0>5|0|0" />
+        <i3dMapping id="warehouseHangingLamp02" node="0>5|0|1" />
+        <i3dMapping id="warehouseHangingLamp03" node="0>5|0|2" />
+        <i3dMapping id="warehouseHangingLamp04" node="0>5|0|3" />
+        <i3dMapping id="warehouseHangingLamp05" node="0>5|0|4" />
+        <i3dMapping id="warehouseHangingLamp06" node="0>5|0|5" />
+        <i3dMapping id="warehouseHangingLamp07" node="0>5|0|6" />
+        <i3dMapping id="warehouseHangingLamp08" node="0>5|0|7" />
+        <i3dMapping id="warehouseHangingLamp09" node="0>5|0|8" />
+        <i3dMapping id="industrialWallLight01" node="0>5|0|9" />
+        <i3dMapping id="industrialWallLight02" node="0>5|0|10" />
+        <i3dMapping id="warehouseWallLamp01" node="0>5|0|11" />
+        <i3dMapping id="warehouseWallLamp02" node="0>5|0|12" />
+        <i3dMapping id="warehouseWallLamp03" node="0>5|0|13" />
+        <i3dMapping id="warehouseWallLamp04" node="0>5|0|14" />
+        <i3dMapping id="neonLight01_01" node="0>5|0|15" />
+        <i3dMapping id="floodLight01" node="0>5|0|16" />
+        <i3dMapping id="fluorescentTube50W01" node="0>5|0|17" />
+        <i3dMapping id="fluorescentTube50W02" node="0>5|0|18" />
+        <i3dMapping id="fluorescentTube50W03" node="0>5|0|19" />
+        <i3dMapping id="fluorescentTube50W04" node="0>5|0|20" />
+        <i3dMapping id="fluorescentTube50W05" node="0>5|0|21" />
+        <i3dMapping id="fluorescentTube50W06" node="0>5|0|22" />
+        <i3dMapping id="fluorescentTube50W07" node="0>5|0|23" />
+        <i3dMapping id="realLightsLow" node="0>5|1|0" />
+        <i3dMapping id="spotLightPigHopperCoverLow" node="0>5|1|0|4" />
+        <i3dMapping id="realLightsHigh" node="0>5|1|1" />
+        <i3dMapping id="spotLightPigHopperCoverHigh" node="0>5|1|1|5" />
+        <i3dMapping id="realLightsControledLow" node="0>5|1|2" />
+        <i3dMapping id="realLightsControledHigh" node="0>5|1|3" />
+        <i3dMapping id="realLightsTerraLedLow" node="0>5|1|4" />
+        <i3dMapping id="realLightsTerraLedHigh" node="0>5|1|5" />
+        <i3dMapping id="terraLedLightSwitch01" node="0>5|2|0" />
+        <i3dMapping id="lightSwitch01" node="0>5|2|1" />
+        <i3dMapping id="lightSwitch02" node="0>5|2|2" />
+        <i3dMapping id="controledLightsTrigger" node="0>5|3" />
+        <i3dMapping id="teleportNode" node="0>6" />
+        <i3dMapping id="storageNode" node="0>7" />
+        <i3dMapping id="animalLoadTriggerPig" node="0>8|0" />
+        <i3dMapping id="animalLoadTriggerSheep" node="0>8|1" />
+        <i3dMapping id="foodPig" node="0>9" />
+        <i3dMapping id="exactFillRootNodePigFood" node="0>9|0" />
+        <i3dMapping id="baleTriggerPigFood" node="0>9|1" />
+        <i3dMapping id="palletTriggerPigFood" node="0>9|2" />
+        <i3dMapping id="pigFoodPlane" node="0>9|3" />
+        <i3dMapping id="foodPlacePig01" node="0>9|4|0" />
+        <i3dMapping id="foodPlacePig02" node="0>9|4|1" />
+        <i3dMapping id="foodPlacePig03" node="0>9|4|2" />
+        <i3dMapping id="foodPlacePig04" node="0>9|4|3" />
+        <i3dMapping id="foodPlacePig05" node="0>9|4|4" />
+        <i3dMapping id="foodPlacePig06" node="0>9|4|5" />
+        <i3dMapping id="foodPlacePig07" node="0>9|4|6" />
+        <i3dMapping id="foodPlacePig08" node="0>9|4|7" />
+        <i3dMapping id="foodPlacePig09" node="0>9|4|8" />
+        <i3dMapping id="foodPlacePig10" node="0>9|4|9" />
+        <i3dMapping id="foodPlacePig11" node="0>9|4|10" />
+        <i3dMapping id="foodPlacePig12" node="0>9|4|11" />
+        <i3dMapping id="foodPlacePig13" node="0>9|4|12" />
+        <i3dMapping id="foodPlacePig14" node="0>9|4|13" />
+        <i3dMapping id="foodPigAINode" node="0>9|5" />
+        <i3dMapping id="foodSheep" node="0>10" />
+        <i3dMapping id="exactFillRootNodeSheepFood" node="0>10|0" />
+        <i3dMapping id="baleTriggerSheepFood" node="0>10|1" />
+        <i3dMapping id="palletTriggerSheepFood" node="0>10|2" />
+        <i3dMapping id="fillVolumeSheepFood" node="0>10|3" />
+        <i3dMapping id="foodPlaceSheep01" node="0>10|4|0" />
+        <i3dMapping id="foodPlaceSheep02" node="0>10|4|1" />
+        <i3dMapping id="foodPlaceSheep03" node="0>10|4|2" />
+        <i3dMapping id="foodPlaceSheep04" node="0>10|4|3" />
+        <i3dMapping id="foodPlaceSheep05" node="0>10|4|4" />
+        <i3dMapping id="foodPlaceSheep06" node="0>10|4|5" />
+        <i3dMapping id="foodPlaceSheep07" node="0>10|4|6" />
+        <i3dMapping id="foodPlaceSheep08" node="0>10|4|7" />
+        <i3dMapping id="straw" node="0>11" />
+        <i3dMapping id="exactFillRootNodeStraw" node="0>11|0" />
+        <i3dMapping id="baleTriggerStraw" node="0>11|1" />
+        <i3dMapping id="palletTriggerStraw" node="0>11|2" />
+        <i3dMapping id="strawPlane" node="0>11|3" />
+        <i3dMapping id="liquidManurePig" node="0>12|0" />
+        <i3dMapping id="liquidManureTriggerPig" node="0>12|0|0" />
+        <i3dMapping id="aiLoadingNodeLiquidManurePig" node="0>12|0|1" />
+        <i3dMapping id="markerLiquidManurePig" node="0>12|0|2" />
+        <i3dMapping id="fillTowerNode" node="0>12|0|3" />
+        <i3dMapping id="loadingTriggerLiquidManurePigMS" node="0>12|0|4|0" />
+        <i3dMapping id="dischargeNodeLiquidManurePigMS" node="0>12|0|4|1" />
+        <i3dMapping id="pipeEffectLiquidManurePigMS" node="0>12|0|4|2" />
+        <i3dMapping id="liquidManurePig1" node="0>12|1" />
+        <i3dMapping id="liquidManureTankNodePig1" node="0>12|1|0" />
+        <i3dMapping id="fillTowerNodePig1" node="0>12|1|1" />
+        <i3dMapping id="liquidManureTriggerPig1" node="0>12|1|2" />
+        <i3dMapping id="liquidManurePlaneNodePig1" node="0>12|1|3" />
+        <i3dMapping id="aiLoadingNodeLiquidManurePig1" node="0>12|1|4" />
+        <i3dMapping id="markerLiquidManurePig1" node="0>12|1|5" />
+        <i3dMapping id="indoorAreaStartTank1Pig1" node="0>12|1|6|0" />
+        <i3dMapping id="indoorAreaWidthTank1Pig1" node="0>12|1|6|0|0" />
+        <i3dMapping id="indoorAreaHeightTank1Pig1" node="0>12|1|6|0|1" />
+        <i3dMapping id="indoorAreaStartTank2Pig1" node="0>12|1|6|1" />
+        <i3dMapping id="indoorAreaWidthTank2Pig1" node="0>12|1|6|1|0" />
+        <i3dMapping id="indoorAreaHeightTank2Pig1" node="0>12|1|6|1|1" />
+        <i3dMapping id="indoorAreaStartTank3Pig1" node="0>12|1|6|2" />
+        <i3dMapping id="indoorAreaWidthTank3Pig1" node="0>12|1|6|2|0" />
+        <i3dMapping id="indoorAreaHeightTank3Pig1" node="0>12|1|6|2|1" />
+        <i3dMapping id="indoorAreaStartTank4Pig1" node="0>12|1|6|3" />
+        <i3dMapping id="indoorAreaWidthTank4Pig1" node="0>12|1|6|3|0" />
+        <i3dMapping id="indoorAreaHeightTank4Pig1" node="0>12|1|6|3|1" />
+        <i3dMapping id="indoorAreaStartTank5Pig1" node="0>12|1|6|4" />
+        <i3dMapping id="indoorAreaWidthTank5Pig1" node="0>12|1|6|4|0" />
+        <i3dMapping id="indoorAreaHeightTank5Pig1" node="0>12|1|6|4|1" />
+        <i3dMapping id="indoorAreaStartTank6Pig1" node="0>12|1|6|5" />
+        <i3dMapping id="indoorAreaWidthTank6Pig1" node="0>12|1|6|5|0" />
+        <i3dMapping id="indoorAreaHeightTank6Pig1" node="0>12|1|6|5|1" />
+        <i3dMapping id="indoorAreaStartTank7Pig1" node="0>12|1|6|6" />
+        <i3dMapping id="indoorAreaWidthTank7Pig1" node="0>12|1|6|6|0" />
+        <i3dMapping id="indoorAreaHeightTank7Pig1" node="0>12|1|6|6|1" />
+        <i3dMapping id="indoorAreaStartTank8Pig1" node="0>12|1|6|7" />
+        <i3dMapping id="indoorAreaWidthTank8Pig1" node="0>12|1|6|7|0" />
+        <i3dMapping id="indoorAreaHeightTank8Pig1" node="0>12|1|6|7|1" />
+        <i3dMapping id="tipOcclusionUpdateAreaStartTankPig1" node="0>12|1|7" />
+        <i3dMapping id="tipOcclusionUpdateAreaEndTankPig1" node="0>12|1|7|0" />
+        <i3dMapping id="testAreaStartTankPig1" node="0>12|1|8" />
+        <i3dMapping id="testAreaEndTankPig1" node="0>12|1|8|0" />
+        <i3dMapping id="tipCollisionsTankPig1" node="0>12|1|9" />
+        <i3dMapping id="connectorCollisionTankPig1" node="0>12|1|10" />
+        <i3dMapping id="loadingTriggerLiquidManurePig1MS" node="0>12|1|11|0" />
+        <i3dMapping id="dischargeNodeLiquidManurePig1MS" node="0>12|1|11|1" />
+        <i3dMapping id="pipeEffectLiquidManurePig1MS" node="0>12|1|11|2" />
+        <i3dMapping id="ladderPig1" node="0>12|1|12" />
+        <i3dMapping id="ladderPig1_collision" node="0>12|1|12|0" />
+        <i3dMapping id="ladderPig1_trigger" node="0>12|1|12|1" />
+        <i3dMapping id="liquidManurePig2" node="0>12|2" />
+        <i3dMapping id="liquidManureTankNodePig2" node="0>12|2|0" />
+        <i3dMapping id="fillTowerNodePig2" node="0>12|2|1" />
+        <i3dMapping id="liquidManureTriggerPig2" node="0>12|2|2" />
+        <i3dMapping id="liquidManurePlaneNodePig2" node="0>12|2|3" />
+        <i3dMapping id="aiLoadingNodeLiquidManurePig2" node="0>12|2|4" />
+        <i3dMapping id="markerLiquidManurePig2" node="0>12|2|5" />
+        <i3dMapping id="indoorAreaStartTank1Pig2" node="0>12|2|6|0" />
+        <i3dMapping id="indoorAreaWidthTank1Pig2" node="0>12|2|6|0|0" />
+        <i3dMapping id="indoorAreaHeightTank1Pig2" node="0>12|2|6|0|1" />
+        <i3dMapping id="indoorAreaStartTank2Pig2" node="0>12|2|6|1" />
+        <i3dMapping id="indoorAreaWidthTank2Pig2" node="0>12|2|6|1|0" />
+        <i3dMapping id="indoorAreaHeightTank2Pig2" node="0>12|2|6|1|1" />
+        <i3dMapping id="indoorAreaStartTank3Pig2" node="0>12|2|6|2" />
+        <i3dMapping id="indoorAreaWidthTank3Pig2" node="0>12|2|6|2|0" />
+        <i3dMapping id="indoorAreaHeightTank3Pig2" node="0>12|2|6|2|1" />
+        <i3dMapping id="indoorAreaStartTank4Pig2" node="0>12|2|6|3" />
+        <i3dMapping id="indoorAreaWidthTank4Pig2" node="0>12|2|6|3|0" />
+        <i3dMapping id="indoorAreaHeightTank4Pig2" node="0>12|2|6|3|1" />
+        <i3dMapping id="indoorAreaStartTank5Pig2" node="0>12|2|6|4" />
+        <i3dMapping id="indoorAreaWidthTank5Pig2" node="0>12|2|6|4|0" />
+        <i3dMapping id="indoorAreaHeightTank5Pig2" node="0>12|2|6|4|1" />
+        <i3dMapping id="indoorAreaStartTank6Pig2" node="0>12|2|6|5" />
+        <i3dMapping id="indoorAreaWidthTank6Pig2" node="0>12|2|6|5|0" />
+        <i3dMapping id="indoorAreaHeightTank6Pig2" node="0>12|2|6|5|1" />
+        <i3dMapping id="indoorAreaStartTank7Pig2" node="0>12|2|6|6" />
+        <i3dMapping id="indoorAreaWidthTank7Pig2" node="0>12|2|6|6|0" />
+        <i3dMapping id="indoorAreaHeightTank7Pig2" node="0>12|2|6|6|1" />
+        <i3dMapping id="indoorAreaStartTank8Pig2" node="0>12|2|6|7" />
+        <i3dMapping id="indoorAreaWidthTank8Pig2" node="0>12|2|6|7|0" />
+        <i3dMapping id="indoorAreaHeightTank8Pig2" node="0>12|2|6|7|1" />
+        <i3dMapping id="tipOcclusionUpdateAreaStartTankPig2" node="0>12|2|7" />
+        <i3dMapping id="tipOcclusionUpdateAreaEndTankPig2" node="0>12|2|7|0" />
+        <i3dMapping id="testAreaStartTankPig2" node="0>12|2|8" />
+        <i3dMapping id="testAreaEndTankPig2" node="0>12|2|8|0" />
+        <i3dMapping id="tipCollisionsTankPig2" node="0>12|2|9" />
+        <i3dMapping id="connectorCollisionTankPig2" node="0>12|2|10" />
+        <i3dMapping id="loadingTriggerLiquidManurePig2MS" node="0>12|2|11|0" />
+        <i3dMapping id="dischargeNodeLiquidManurePig2MS" node="0>12|2|11|1" />
+        <i3dMapping id="pipeEffectLiquidManurePig2MS" node="0>12|2|11|2" />
+        <i3dMapping id="ladderPig2" node="0>12|2|12" />
+        <i3dMapping id="ladderPig2_collision" node="0>12|2|12|0" />
+        <i3dMapping id="ladderPig2_trigger" node="0>12|2|12|1" />
+        <i3dMapping id="liquidManurePig3" node="0>12|3" />
+        <i3dMapping id="liquidManureTankNodePig3" node="0>12|3|0" />
+        <i3dMapping id="fillTowerNodePig3" node="0>12|3|1" />
+        <i3dMapping id="liquidManureTriggerPig3" node="0>12|3|2" />
+        <i3dMapping id="liquidManurePlaneNodePig3" node="0>12|3|3" />
+        <i3dMapping id="aiLoadingNodeLiquidManurePig3" node="0>12|3|4" />
+        <i3dMapping id="markerLiquidManurePig3" node="0>12|3|5" />
+        <i3dMapping id="indoorAreaStartTank1Pig3" node="0>12|3|6|0" />
+        <i3dMapping id="indoorAreaWidthTank1Pig3" node="0>12|3|6|0|0" />
+        <i3dMapping id="indoorAreaHeightTank1Pig3" node="0>12|3|6|0|1" />
+        <i3dMapping id="indoorAreaStartTank2Pig3" node="0>12|3|6|1" />
+        <i3dMapping id="indoorAreaWidthTank2Pig3" node="0>12|3|6|1|0" />
+        <i3dMapping id="indoorAreaHeightTank2Pig3" node="0>12|3|6|1|1" />
+        <i3dMapping id="indoorAreaStartTank3Pig3" node="0>12|3|6|2" />
+        <i3dMapping id="indoorAreaWidthTank3Pig3" node="0>12|3|6|2|0" />
+        <i3dMapping id="indoorAreaHeightTank3Pig3" node="0>12|3|6|2|1" />
+        <i3dMapping id="indoorAreaStartTank4Pig3" node="0>12|3|6|3" />
+        <i3dMapping id="indoorAreaWidthTank4Pig3" node="0>12|3|6|3|0" />
+        <i3dMapping id="indoorAreaHeightTank4Pig3" node="0>12|3|6|3|1" />
+        <i3dMapping id="indoorAreaStartTank5Pig3" node="0>12|3|6|4" />
+        <i3dMapping id="indoorAreaWidthTank5Pig3" node="0>12|3|6|4|0" />
+        <i3dMapping id="indoorAreaHeightTank5Pig3" node="0>12|3|6|4|1" />
+        <i3dMapping id="indoorAreaStartTank6Pig3" node="0>12|3|6|5" />
+        <i3dMapping id="indoorAreaWidthTank6Pig3" node="0>12|3|6|5|0" />
+        <i3dMapping id="indoorAreaHeightTank6Pig3" node="0>12|3|6|5|1" />
+        <i3dMapping id="indoorAreaStartTank7Pig3" node="0>12|3|6|6" />
+        <i3dMapping id="indoorAreaWidthTank7Pig3" node="0>12|3|6|6|0" />
+        <i3dMapping id="indoorAreaHeightTank7Pig3" node="0>12|3|6|6|1" />
+        <i3dMapping id="indoorAreaStartTank8Pig3" node="0>12|3|6|7" />
+        <i3dMapping id="indoorAreaWidthTank8Pig3" node="0>12|3|6|7|0" />
+        <i3dMapping id="indoorAreaHeightTank8Pig3" node="0>12|3|6|7|1" />
+        <i3dMapping id="tipOcclusionUpdateAreaStartTankPig3" node="0>12|3|7" />
+        <i3dMapping id="tipOcclusionUpdateAreaEndTankPig3" node="0>12|3|7|0" />
+        <i3dMapping id="testAreaStartTankPig3" node="0>12|3|8" />
+        <i3dMapping id="testAreaEndTankPig3" node="0>12|3|8|0" />
+        <i3dMapping id="tipCollisionsTankPig3" node="0>12|3|9" />
+        <i3dMapping id="connectorCollisionTankPig3" node="0>12|3|10" />
+        <i3dMapping id="loadingTriggerLiquidManurePig3MS" node="0>12|3|11|0" />
+        <i3dMapping id="dischargeNodeLiquidManurePig3MS" node="0>12|3|11|1" />
+        <i3dMapping id="pipeEffectLiquidManurePig3MS" node="0>12|3|11|2" />
+        <i3dMapping id="ladderPig3" node="0>12|3|12" />
+        <i3dMapping id="ladderPig3_collision" node="0>12|3|12|0" />
+        <i3dMapping id="ladderPig3_trigger" node="0>12|3|12|1" />
+        <i3dMapping id="waterTroughInsideNode" node="0>13|0" />
+        <i3dMapping id="waterTroughPig1Node" node="0>13|1" />
+        <i3dMapping id="waterTroughFencePig1Node" node="0>13|1|0" />
+        <i3dMapping id="waterTroughPig2Node" node="0>13|2" />
+        <i3dMapping id="waterTroughFencePig2Node" node="0>13|2|0" />
+        <i3dMapping id="waterTroughPig3Node" node="0>13|3" />
+        <i3dMapping id="waterTroughFencePig3Node" node="0>13|3|0" />
+        <i3dMapping id="waterTroughSheepNode" node="0>13|4" />
+        <i3dMapping id="waterTroughFenceSheepNode" node="0>13|4|0" />
+        <i3dMapping id="navMeshShapePig" node="0>14|0" />
+        <i3dMapping id="navMeshShapeSheep" node="0>14|1" />
+        <i3dMapping id="navMeshShapeSheepPreplaced" node="0>14|2" />
+        <i3dMapping id="palletAreas" node="0>15" />
+        <i3dMapping id="palletTrigger" node="0>15|0" />
+        <i3dMapping id="palletAreaStart1" node="0>15|1" />
+        <i3dMapping id="palletAreaEnd1" node="0>15|1|0" />
+        <i3dMapping id="palletAreaStart2" node="0>15|2" />
+        <i3dMapping id="palletAreaEnd2" node="0>15|2|0" />
+        <i3dMapping id="palletAreaStart3" node="0>15|3" />
+        <i3dMapping id="palletAreaEnd3" node="0>15|3|0" />
+        <i3dMapping id="palletAreaStart4" node="0>15|4" />
+        <i3dMapping id="palletAreaEnd4" node="0>15|4|0" />
+        <i3dMapping id="fencePigNode1" node="0>16|0|0" />
+        <i3dMapping id="fencePigNode2" node="0>16|0|1" />
+        <i3dMapping id="fencePigNode3" node="0>16|0|2" />
+        <i3dMapping id="fencePigNode4" node="0>16|0|3" />
+        <i3dMapping id="fencePigNode5" node="0>16|0|4" />
+        <i3dMapping id="fencePigNode6" node="0>16|0|5" />
+        <i3dMapping id="fenceSheepNode1" node="0>16|1|0" />
+        <i3dMapping id="fenceSheepNode2" node="0>16|1|1" />
+        <i3dMapping id="fenceSheepNode3" node="0>16|1|2" />
+        <i3dMapping id="fenceSheepNode4" node="0>16|1|3" />
+        <i3dMapping id="fenceSheepNode5" node="0>16|1|4" />
+        <i3dMapping id="fenceSheepNode6" node="0>16|1|5" />
+        <i3dMapping id="markerFoodPig" node="0>17|0" />
+        <i3dMapping id="markerFoodSheep" node="0>17|1" />
+        <i3dMapping id="markerStrawBale" node="0>17|2" />
+        <i3dMapping id="markerAnimalsPig" node="0>17|3" />
+        <i3dMapping id="markerAnimalsSheep" node="0>17|4" />
+        <i3dMapping id="warningStripesWool" node="0>17|5" />
+        <i3dMapping id="markerMilk" node="0>17|6" />
+        <i3dMapping id="infoTrigger" node="0>18|0" />
+        <i3dMapping id="infoTriggerPreplacedPig1" node="0>18|1" />
+        <i3dMapping id="infoTriggerPreplacedPig2" node="0>18|2" />
+        <i3dMapping id="infoTriggerPreplacedPig3" node="0>18|3" />
+        <i3dMapping id="infoTriggerPreplacedSheep" node="0>18|4" />
+        <i3dMapping id="clearAreaStart1" node="0>19|0" />
+        <i3dMapping id="clearAreaWidth1" node="0>19|0|0" />
+        <i3dMapping id="clearAreaHeight1" node="0>19|0|1" />
+        <i3dMapping id="clearAreaStartPigSilo" node="0>19|1" />
+        <i3dMapping id="clearAreaWidthPigSilo" node="0>19|1|0" />
+        <i3dMapping id="clearAreaHeightPigSilo" node="0>19|1|1" />
+        <i3dMapping id="clearAreaStartSheepWool" node="0>19|2" />
+        <i3dMapping id="clearAreaWidthSheepWool" node="0>19|2|0" />
+        <i3dMapping id="clearAreaHeightSheepWool" node="0>19|2|1" />
+        <i3dMapping id="levelAreaStart1" node="0>20|0" />
+        <i3dMapping id="levelAreaWidth1" node="0>20|0|0" />
+        <i3dMapping id="levelAreaHeight1" node="0>20|0|1" />
+        <i3dMapping id="levelAreaStartPigSilo" node="0>20|1" />
+        <i3dMapping id="levelAreaWidthPigSilo" node="0>20|1|0" />
+        <i3dMapping id="levelAreaHeightPigSilo" node="0>20|1|1" />
+        <i3dMapping id="levelAreaStartSheepWool" node="0>20|2" />
+        <i3dMapping id="levelAreaWidthSheepWool" node="0>20|2|0" />
+        <i3dMapping id="levelAreaHeightSheepWool" node="0>20|2|1" />
+        <i3dMapping id="indoorAreaStart1" node="0>21|0" />
+        <i3dMapping id="indoorAreaWidth1" node="0>21|0|0" />
+        <i3dMapping id="indoorAreaHeight1" node="0>21|0|1" />
+        <i3dMapping id="indoorAreaStart2" node="0>21|1" />
+        <i3dMapping id="indoorAreaWidth2" node="0>21|1|0" />
+        <i3dMapping id="indoorAreaHeight2" node="0>21|1|1" />
+        <i3dMapping id="indoorAreaStartPigSilo" node="0>21|2" />
+        <i3dMapping id="indoorAreaWidthPigSilo" node="0>21|2|0" />
+        <i3dMapping id="indoorAreaHeightPigSilo" node="0>21|2|1" />
+        <i3dMapping id="indoorAreaStartSheepWool" node="0>21|3" />
+        <i3dMapping id="indoorAreaWidthSheepWool" node="0>21|3|0" />
+        <i3dMapping id="indoorAreaHeightSheepWool" node="0>21|3|1" />
+        <i3dMapping id="indoorAreaStartPigWater1" node="0>21|4" />
+        <i3dMapping id="indoorAreaWidthPigWater1" node="0>21|4|0" />
+        <i3dMapping id="indoorAreaHeightPigWater1" node="0>21|4|1" />
+        <i3dMapping id="indoorAreaStartPigWater2" node="0>21|5" />
+        <i3dMapping id="indoorAreaWidthPigWater2" node="0>21|5|0" />
+        <i3dMapping id="indoorAreaHeightPigWater2" node="0>21|5|1" />
+        <i3dMapping id="indoorAreaStartPigWater3" node="0>21|6" />
+        <i3dMapping id="indoorAreaWidthPigWater3" node="0>21|6|0" />
+        <i3dMapping id="indoorAreaHeightPigWater3" node="0>21|6|1" />
+        <i3dMapping id="indoorAreaStartSheepWater" node="0>21|7" />
+        <i3dMapping id="indoorAreaWidthSheepWater" node="0>21|7|0" />
+        <i3dMapping id="indoorAreaHeightSheepWater" node="0>21|7|1" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart1" node="0>22|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd1" node="0>22|0|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaStartWaterPig" node="0>22|1" />
+        <i3dMapping id="tipOcclusionUpdateAreaEndWaterPig" node="0>22|1|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaStartWaterSheep" node="0>22|2" />
+        <i3dMapping id="tipOcclusionUpdateAreaEndWaterSheep" node="0>22|2|0" />
+        <i3dMapping id="testAreaStart1" node="0>23|0" />
+        <i3dMapping id="testAreaEnd1" node="0>23|0|0" />
+        <i3dMapping id="testAreaStartPigSilo" node="0>23|1" />
+        <i3dMapping id="testAreaEndPigSilo" node="0>23|1|0" />
+        <i3dMapping id="collisions" node="0>24" />
+        <i3dMapping id="tipCollisionsPig" node="0>25" />
+        <i3dMapping id="tipCollisionsSheep" node="0>26" />
+        <i3dMapping id="solarPanels01" node="0>28|0" />
+        <i3dMapping id="solarPanels02" node="0>28|1" />
+    </i3dMappings>
+</placeable>

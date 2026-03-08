@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="buyingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_shopItem_gasStation</name>
+        <image>placeables/buyingStations/mapIcon_gasStation01.png</image>
+        <price>1</price>
+        <dailyUpkeep>0</dailyUpkeep>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>placeableMisc</category>
+        <vertexBufferMemoryUsage>512</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>256</indexBufferMemoryUsage>
+        <textureMemoryUsage>65536</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>placeables/buyingStations/gasStation.i3d</filename>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" />
+
+    <clearAreas/>
+
+    <leveling/>
+
+    <indoorAreas/>
+
+    <ai>
+        <updateAreas/>
+    </ai>
+
+    <triggerMarkers>
+        <triggerMarker node="markerFuel_01_1" filename="placeables/sharedAssets/marker/markerIconFuel.i3d" adjustToGround="true" />
+        <!-- <triggerMarker node="markerFuel_01_2" filename="placeables/sharedAssets/marker/markerIconFuel.i3d" adjustToGround="true" /> -->
+        <triggerMarker node="markerFuel_01_3" filename="placeables/sharedAssets/marker/markerIconFuel.i3d" adjustToGround="true" />
+    </triggerMarkers>
+
+    <hotspots>
+        <hotspot type="FUEL" linkNode="mapPosition" teleportNode="teleportNode01" />
+    </hotspots>
+
+    <buyingStation node="buyingStation" supportsExtension="false">
+        <loadTrigger triggerNode="loadingTrigger" fillTypes="DIESEL" fillLitersPerSecond="20" autoStart="true" infiniteCapacity="true" startFillText="$l10n_action_refuel" stopFillText="$l10n_action_stopRefuel"/>
+        <fillType name="DIESEL" priceScale="1.0" />
+    </buyingStation>
+
+    <i3dMappings>
+        <i3dMapping id="buyingStation" node="0>0" />
+        <i3dMapping id="loadingTrigger" node="0>0|0" />
+        <i3dMapping id="markerFuel_01_1" node="0>1|0" />
+        <i3dMapping id="markerFuel_01_2" node="0>1|1" />
+        <i3dMapping id="markerFuel_01_3" node="0>1|2" />
+        <i3dMapping id="markerFuel_02_1" node="0>1|3" />
+        <i3dMapping id="markerFuel_02_2" node="0>1|4" />
+        <i3dMapping id="mapPosition" node="0>2" />
+        <i3dMapping id="teleportNode01" node="0>3" />
+        <i3dMapping id="teleportNode02" node="0>4" />
+    </i3dMappings>
+</placeable>

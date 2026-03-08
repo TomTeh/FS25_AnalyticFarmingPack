@@ -1,0 +1,147 @@
+Vítejte na Karpatském Venkově. Fiktivní mapa inspirovaná skutečným, moderním zemědělským podnikem a jeho okolím, na západním Slovensku.
+
+Vlastnosti mapy:
+
+3 předem umístěné farmy. Abyste je mohli používat, musíte je koupit zakoupením zemědělské půdy, na které jsou postaveny.
+Všechny 3 předem umístěné farmy jsou plně upravitelné, můžete prodat jednotlivé budovy nebo části plotů - farmy můžete rozšiřovat. Pokud chcete, můžete vše prodat a postavit si na stejném místě vlastní farmu. Většina budov a objektů použitých na předem umístěných farmách má také umístitelné varianty, které jsou součástí mapy.
+
+Hlavní farma (počáteční farma).
+Největší předem umístěná farma na mapě, která se skládá z: 2 kravínů, 1 vepřína, 1 koňské stáje, 2 přístřešků pro telata / jalovice, statku, velkého sila na obilí s výrobou krmiva pro zvířata, dílny na vozidla, 2 kryté budovy silážních jam ( celkem 6 silážních jam), mnoha přístřešků pro vozidla nebo jakékoli balené či sypké zboží, skladů balíků a palet, velkého skladu hnoje, nádrže na kejdu, vodárenské věže a další.
+
+Prasečí farma.
+Vše o prasatech: 2 stáje, obilní silo, bunkrové silo, dílna pro vozidla, přístřešek pro vozidla, sklad hnoje, sklad balíků, sklad palet, sklad sypkého materiálu, vodárenská věž a nádrže na kejdu.
+
+Ovčí farma.
+Zahrnuje: 1 ovčí stáj, 1 kurník, obilní silo, dílnu pro vozidla, sklad hnoje, přístřešek pro vozidla, sklad balíků a sklad palet.
+
+70 polí + 6 lučních polí. Obzvláště velká pole různých tvarů, ale i některá střední a malá.
+Na některých polích jsou elektrické sloupy, jejichž kolize lze kdykoli zakázat / povolit – navštivte radnici vedle hlavní farmy.
+
+Velká lesnická oblast.
+14 kupitelných lesních parcel s různými rozměry, podmínkami a odpovídajícími cenami.
+
+Mise.
+Zahrnuje všechny typy misí - všechny druhy polních misí, odstraňování mrtvých stromů, přepravu dřeva a odstraňování kamenů.
+
+Sběratelskúe předměty.
+100 dřevěných hraček rozdělených do 10 sad, 10 sběratelských předmětů v každé sadě.
+Odměna za sesbírání jednoho je 1,000.
+Odměna za dokončení celé sady je 100,000 a hračka bude vystavena na poličce ve vašem pokoji v kancelářské budově.
+
+Vlakový systém.
+Pronajímatelný vlak s železničními sily a prodejním místem.
+
+8 Prodejních stanic.
+Přepravní společnost, Trh s hospodářskými zvířaty, Supermarket, Farmářský trh, Malý zemědělec, Obchodník s kontejnery, Obchodník se stavebním materiálem, Drtič kamene.
+Každá má zájem o jiný druh a množství zboží.
+Po dosažení požadovaného množství zboží začne cena na nějakou dobu klesat.
+
+7 Nákupních stanic.
+Velká a malá čerpací stanice s nabíjecími stanicemi elektřiny a čerpací stanicí na metan.
+Stanice na vápno.
+Zemědělské potřeby - možnost nákupu zemědělského spotřebního materiálu (např. semena, hnojiva) přímo do přívěsu.
+Trh s hospodářskými zvířaty - možnost nákupu hnoje, kejdy a krmiva pro zvířata.
+Přepravní společnost - možnost nákupu jakéhokoli druhu produktů na paletách.
+Obchodník se stavebním materiálem - možnost nákupu stavebních materiálů na paletách.
+
+11 Výrobních závodů zabudovaných do mapy.
+Pekárna, Obilný mlýn, Mlékárna, Cukrovar, Pila, Tesařství, Přádelna, Krejčovství, Závod na zpracování potravin, Továrna na konzervy, Bioplynová stanice.
+Výrobní závody mají vlastní vysokozdvižné vozíky, které může používat kdokoli.
+Cukrovar nabízí vlastní nakladač cukrové řepy, který může používat kdokoli.
+Mapa obsahuje několik malých a levně prodejných pozemků, které jsou ideální pro výstavbu dalších výrobních bodů.
+
+Všechny prodejní a nákupní stanice a produkce mají různou otevírací dobu.
+Brány se otevírají a zavírají automaticky v určitých časech. (Všechny jsou ve výchozím nastavení zavřené při prvním spuštění hry, počkejte hodinu ve hře, než se vrátí do normálního cyklu).
+Pokud potřebujete udělat něco naléhavého i po zavření, můžete brány otevřít ručně.
+
+2 Malé rodinné firmy.
+Továrna na klavíry - vyrábí vysoce kvalitní a drahé klavíry.
+Dřevařský umělec - vyrábí hřiště s traktory a různé další ručně vyráběné dřevěné výrobky.
+Můžete jim pomoci prodejem materiálů, které potřebují, a sledovat, jak vyrábějí svá umělecká díla, nebo si je můžete koupit a provozovat podnikání sami s pěkným ziskem.
+
+Stavební projekty.
+Ve výstavbě jsou 3 domy, jeden v každé vesnici na mapě.
+Potřebují vaši pomoc a vy jim můžete pomoci prodejem stavebního materiálu, který potřebují.
+Dále můžete pomoci sousedství růst s umístitelnými postavitelnými nájemními domy a také získat z nájemného pěkný zisk.
+
+Opuštěný lom, Cementárna a Vysoká pec.
+V lese se nachází opuštěný lom, který můžete provozovat zakoupením zemědělské půdy, na které je postaven.
+Vyžaduje hodně údržby, než bude znovu použitelný nebo vůbec přístupný. Musíte odstranit přerostlé rostliny a kameny všude kolem. Opravte nebo odstraňte zničené budovy. Dočasný bezpečnostní plot, který ho obklopuje, lze odstranit v nabídce stavby.
+Můžete si také postavit vlastní lom kdekoli na mapě, všechny potřebné aspekty jsou zahrnuty v mapě jako umístitelné varianty.
+Lom v lese produkuje: kámen, vápenec, jíl a železnou rudu.
+Kámen a vápenec lze použít v drtičích kamene a vápence k výrobě štěrku a vápna. Štěrk, vápno a jíl jsou pak potřebné v Cementárně k výrobě různých stavebních produktů.
+Železnou rudu lze použít ve Vysoké peci k výrobě kovu za účelem zisku. Vedlejším produktem je vysokopecní struska, která je pak potřebná v Cementárně k výrobě cementu.
+Vysokou pec a Cementárnu si musíte postavit sami, nejsou zabudovány přímo do mapy.
+Cementárna na mapě je mnohem pokročilejší, s mnohem realističtějším receptem na cement ve srovnání se základní hrou a s novými produkty, jako jsou pálené cihly a pálená střešní krytina.
+Dalším materiálem potřebným v Cementárně je písek, který lze zakoupit pouze u obchodníka se stavebním materiálem, stejně jako jakékoli další materiály, které můžete potřebovat, pokud si je nemůžete vyrobit sami.
+Přebytečné suroviny z lomu lze také prodat obchodníkovi se stavebním materiálem.
+
+Funkční vesnice.
+Malé funkce pro milovníky role play nebo skutečná výzva začínat od nuly.
+Téměř všechny nemovitosti ve vesnicích lze zakoupit.
+Můžete umístit trigger spánku a používat jakýkoli dům jako svůj vlastní, nebo pokud je dostatek místa, můžete tam postavit i něco navíc. To, co je již na těchto pozemcích umístěno, však nelze odstranit.
+S dostatečně malým vybavením můžete na těchto dvorech sázet, pěstovat a sklízet plodiny.
+Každou jednotlivou bránu lze otevřít, i když pozemek nevlastníte.
+Některé nemovitosti, jako například: restaurace, lékárna, fotbalová hřiště... generují stálý zisk, pokud jsou vlastněny - Pokud si koupíte zemědělskou půdu, zobrazí se nová ikona. Příjem je založen na hodnotě zemědělské půdy - 1,1€ za hodinu / za každých 1000€ hodnoty půdy.
+
+Vlastní nastavení zvířat.
+Mírně upraveno: spotřeba krmiva a slámy, produkce hnoje, kejdy a mléka a ceny zvířat.
+Ovce, kozy a slepice produkují hnůj, pokud jsou podestýlány slámou (pouze chovy zahrnuté v mapě nebo mod, který splňuje požadavky).
+Pokud se rádi staráte o telata v boudách pro telata, mapa nabízí umístitelné boudy pro telata. Varianta pro jedno tele a skupinová varianta pro pět telat. (Doporučení: použijte mod pro zvýšení limitu pastvin pro zvířata, aby bylo možné umístit více boudek)
+
+Nové plodiny: Vojtěška a Žito.
+Vojtěška je součástí krmení zvířat. V mapě jsou zahrnuty upravené umístitelné silážní jámy ze základní hry, která přijímají vojtěšku. Vlastní mapové silážní jámy přijímají vojtěšku taky.
+Žito lze použít k výrobě mouky a chleba. Lze sklízet oběma způsoby, klasickým kombajnem nebo řádkovačem.
+
+Vylepšené fáze růstu plodin pro všechny plodiny na mapě.
+Každá růstová fáze má jinou výšku, takže růst vypadá mnohem hladší.
+
+Ne všechny plodiny vyžadují válcování.
+Plodiny, které vyžadují válcování: pšenice, ječmen, řepka, oves, sója, žito.
+Plodiny, které nevyžadují válcování: kukuřice, slunečnice, brambory, rýže, dlouhozrnná rýže, cukrová řepa, cukrová třtina, bavlna, čirok, topol, červená řepa, mrkev, pastinák, fazole, hrách, špenát, tráva, ředkev olejná, vojtěška.
+
+Sezónní růst plodin
+Většinou stejné jako v základní hře (velmi dobře se hodí pro zemi mapy), ale s přidanou možností sázet pšenici a ječmen na jaře - v březnu.
+Bavlna, cukrová třtina, rýže a dlouhozrnná rýže nejsou pro danou zemi mapy typické, ale můžete je pěstovat, pokud chcete, NPC nebudou.
+
+Vlastní sezónní počasí typické pro krajinu mapy.
+Pravděpodobnost výskytu tornáda je snížená a může se vyskytnout pouze v létě.
+
+
+Sady A Skleníky:
+
+Umístitelné sady.
+Funguje jako standardní produkční místo, vyžaduje vodu, tekuté hnojivo a kompost k produkci: jablek, hrušek, meruněk nebo švestek.
+Jablka, meruňky a švestky lze prodávat nebo dále zpracovávat v umístitelném závodě na zpracování ovoce a zeleniny nebo v závodě na zpracování potravin(vestavěném na mapě) pro větší zisk.
+Hrušky lze prodávat pouze přímo.
+
+Umístitelné pokročilé skleníky.
+Podobné skleníkům v základní hře, ale s dodatečnými požadavky na větší výnos a pěstování více druhů plodin.
+K dispozici ve velké, střední a malé variantě.
+Vyžaduje vodu, tekuté hnojivo a kompost k produkci: rajčat, hlávkového salátu, jahod, jarní cibulky, zelí napa, chilli, česneku, zelené papriky, okurek, cibule a vodních melounů.
+Vedlejším produktem pokročilých skleníků je organický odpad. Ten lze použít v kompostovací jámě k výrobě kompostu.
+Rajčata, jahody, zelí napa a okurky lze prodávat nebo dále zpracovávat v umístitelné továrně na zpracování ovoce a zeleniny nebo v závodě na zpracování potravin(vestavěném na mapě) pro větší zisk.
+Malé množství zelené papriky, jarní cibulky, chilli, česneku a cibule je vyžadováno v receptech umístitelné továrny na zpracování ovoce a zeleniny nebo v závodě na zpracování potravin(vestavěném na mapě), ale většinu lze prodat přímo.
+Hlávkový salát a vodní melouny lze prodávat pouze přímo.
+
+Umístitelný závod na zpracování ovoce a zeleniny.
+Zpracovává ovoce a zeleninu ze sadů a skleníků za účelem zvýšení zisku.
+Produkty: Rozinky, hroznový džus, kimči, jablečný džus, jahodový džus, meruňková povidla, švestková povidla, kečup a kyselé okurky.
+Organický odpad vzniká jako vedlejší produkt a lze jej v kompostovacím silu použít k výrobě kompostu.
+K dispozici také v menší verzi s nižší produkcí a cenou.
+Všechny produkty a recepty jsou k dispozici také v Továrne na konzervované jídlo a Závodě na zpracování potravin (zabudovaných do mapy).
+
+Výroba kompostu.
+Kompost je potřebný v sadech a sklenících a lze jej také prodat za účelem zisku nebo použít jako hnojivo na polích.
+Kompost se vyrábí v umístitelné kompostovací jámě z organického odpadu, trávy, sena, slámy a dalších podobných materiálů.
+
+Krajinu protíná několik malých potoků s volným odběrem vody.
+
+
+Highlands Fishing Expansion funkce (pokud vlastníte DLC a je povoleno):
+Cibulové produkty v DLC (cibulačka, cibulová sůl a smažená cibulka) lze vyrábět také v Závodě na zpracování potravin (vestavěném do mapy).
+V lesním rybníku, pokud jej vlastníte, můžete chovat pstruhy zakoupením zemědělské půdy, na které je postaven.
+Rybník je navíc také místem, které lidé navštěvují a loví tam ryby, takže od nich získáváte stálý denní příjem 140€ za hodinu. (Tento příjem funguje i bez DLC).
+
+
+Precision Farming DLC podporováno - Vlastní půdní mapa zahrnuta. Kompost a nové plodiny plně podporovány.

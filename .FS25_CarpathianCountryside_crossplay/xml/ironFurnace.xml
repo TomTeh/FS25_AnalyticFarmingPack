@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="productionPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/placeable.xsd">
+    <storeData>
+        <name>$l10n_storeItem_ironFurnace</name>
+        <functions>
+            <function>$l10n_function_productionPoint</function>
+        </functions>
+        <image>placeables/productionPoints/ironFurnace/store_ironFurnace.png</image>
+        <price>310000</price>
+        <dailyUpkeep>150</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>productionPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>factories</tab>
+        </brush>
+
+        <storeIconRendering>
+            <settings cameraXRot="-10" cameraYRot="26" advancedBoundingBox="true"/>
+        </storeIconRendering>
+        <vertexBufferMemoryUsage>816128</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>180480</indexBufferMemoryUsage>
+        <textureMemoryUsage>7340032</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>placeables/productionPoints/ironFurnace/ironFurnace.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testAreaStart1" endNode="testAreaEnd1" />
+        </testAreas>
+
+        <sounds>
+            <place template="largeImp" />
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearLevelAreaStart1" widthNode="clearLevelAreaWidth1" heightNode="clearLevelAreaHeight1"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30" >
+        <levelAreas>
+            <levelArea startNode="clearLevelAreaStart1" widthNode="clearLevelAreaWidth1" heightNode="clearLevelAreaHeight1" groundType="concrete"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorAreaStart1" widthNode="indoorAreaWidth1" heightNode="indoorAreaHeight1" />
+        <indoorArea startNode="indoorAreaStart2" widthNode="indoorAreaWidth2" heightNode="indoorAreaHeight2" />
+        <indoorArea startNode="indoorAreaStart3" widthNode="indoorAreaWidth3" heightNode="indoorAreaHeight3" />
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStart1" endNode="tipOcclusionUpdateAreaEnd1" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateAreaStart1" endNode="tipOcclusionUpdateAreaEnd1" />
+        </updateAreas>
+        <splines>
+            <spline node="aiSpline" />
+        </splines>
+    </ai>
+
+    <triggerMarkers>
+        <triggerMarker node="playerTriggerMarker" filename="placeables/sharedAssets/marker/markerIconProductionPoint.i3d" adjustToGround="true" />
+        <triggerMarker node="unloadTriggerMarker" filename="$data/shared/assets/marker/markerIconUnload.i3d" adjustToGround="true" />
+        <triggerMarker node="markerLoadingSilo" filename="$data/shared/assets/marker/markerIconLoad.i3d" adjustToGround="true" />
+        <triggerMarker node="warningStripes1" />
+        <triggerMarker node="warningStripes2" />
+    </triggerMarkers>
+
+    <hotspots>
+        <hotspot type="PRODUCTION_POINT" linkNode="unloadTriggerMarker" teleportNode="unloadTriggerMarker" />
+    </hotspots>
+
+    <lights>
+        <group weatherRequiredFlags="NIGHT" />
+
+        <sharedLight filename="placeables/sharedAssets/lights/warehouseWallLamp.xml" linkNode="warehouseWallLamp01" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/industrialWallLight.xml" linkNode="industrialWallLight01" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/industrialWallLight.xml" linkNode="industrialWallLight02" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/industrialWallLight.xml" linkNode="industrialWallLight03" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/neonLight02.xml" linkNode="neonLight02_01" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/neonLight02.xml" linkNode="neonLight02_02" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/neonLight02.xml" linkNode="neonLight02_03" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/neonLight02.xml" linkNode="neonLight02_04" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/neonLight02.xml" linkNode="neonLight02_05" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/neonLight02.xml" linkNode="neonLight02_06" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/neonLight02.xml" linkNode="neonLight02_07" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/neonLight02.xml" linkNode="neonLight02_08" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/neonLight02.xml" linkNode="neonLight02_09" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/neonLight02.xml" linkNode="neonLight02_10" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/neonLight02.xml" linkNode="neonLight02_11" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/floodLight.xml" linkNode="floodLight01" groupIndex="1">
+            <rotationNode name="rotationNode01" rotation="0 0 45" />
+        </sharedLight>
+        <sharedLight filename="placeables/sharedAssets/lights/floodLight.xml" linkNode="floodLight02" groupIndex="1">
+            <rotationNode name="rotationNode01" rotation="0 0 45" />
+        </sharedLight>
+        <sharedLight filename="placeables/sharedAssets/lights/floodLight.xml" linkNode="floodLight03" groupIndex="1">
+            <rotationNode name="rotationNode01" rotation="0 0 65" />
+        </sharedLight>
+        <sharedLight filename="placeables/sharedAssets/lights/floodLight.xml" linkNode="floodLight04" groupIndex="1">
+            <rotationNode name="rotationNode01" rotation="0 0 55" />
+        </sharedLight>
+        <sharedLight filename="placeables/sharedAssets/lights/floodLight.xml" linkNode="floodLight05" groupIndex="1">
+            <rotationNode name="rotationNode01" rotation="0 0 55" />
+        </sharedLight>
+
+        <realLights>
+            <low>
+                <light node="realLightsLow" groupIndex="1"/>
+            </low>
+            <high>
+                <light node="realLightsHigh" groupIndex="1"/>
+            </high>
+        </realLights>
+    </lights>
+
+    <infoTrigger triggerNode="infoTrigger"/>
+
+    <productionPoint>
+        <productions sharedThroughputCapacity="true">
+            <production id="metal" name="%s" params="$l10n_fillType_metal" cyclesPerHour="1" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="IRONORE" amount="660" />
+                </inputs>
+                <outputs>
+                    <output fillType="METAL" amount="460" />
+                    <output fillType="BLASTFURNACESLAG" amount="200" />
+                </outputs>
+            </production>
+        </productions>
+
+        <sellingStation node="sellingStation" supportsExtension="false" hideFromPricesMenu="true" allowMissions="false">
+            <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="IRONORE" />
+            <palletTrigger triggerNode="palletTrigger" aiNode="unloadTriggerAINode" fillTypes="IRONORE" />
+        </sellingStation>
+
+        <loadingStation>
+            <loadTrigger triggerNode="loadingTrigger" fillLitersPerSecond="2000" dischargeNode="dischargeNode" fillTypes="BLASTFURNACESLAG" >
+                <effectNode effectClass="PipeEffect" effectNode="pipeEffect"      materialType="pipe"           fadeTime="0.5" maxBending="0" controlPoint="4.3 0 0 0" />
+                <effectNode                          effectNode="pipeEffectSmoke" materialType="unloadingSmoke" fadeTime="0.5" />
+            </loadTrigger>
+        </loadingStation>
+
+        <palletSpawner>
+            <spawnPlaces>
+                <spawnPlace startNode="palletAreaStart1" endNode="palletAreaEnd1" fillTypes="METAL"/>
+                <spawnPlace startNode="palletAreaStart2" endNode="palletAreaEnd2" fillTypes="METAL"/>
+            </spawnPlaces>
+        </palletSpawner>
+
+        <storage isExtension="false" fillLevelSyncThreshold="50">
+            <capacity fillType="IRONORE"          capacity="60000" />
+            <capacity fillType="METAL"            capacity="20000" />
+            <capacity fillType="BLASTFURNACESLAG" capacity="90000" />
+
+            <fillPlane node="fillPlaneIronOre" fillType="IRONORE" minY="-1.39" maxY="0" changeVisibility="true" />
+            <fillPlane node="fillPlaneBlastFurnaceSlag" fillType="BLASTFURNACESLAG" minY="9.338" maxY="9.65" changeVisibility="true" />
+        </storage>
+
+        <playerTrigger node="playerTrigger" />
+
+        <animationNodes>
+            <animationNode node="conveyorBelt" class="ScrollingAnimation" shaderParameterName="offsetUV" shaderComponentScale="-1 0 0 0" scrollSpeed="-0.4" turnOnFadeTime="3" turnOffFadeTime="3" />
+        </animationNodes>
+
+        <effectNodes>
+            <effectNode effectNode="effectBelt" effectClass="MorphPositionEffect" materialType="belt" defaultFillType="IRONORE" delay="0" fadeTime="2" speed="0.9" scrollLength="9" scrollSpeed="0.2" />
+            <effectNode effectNode="smokeEffectChimneyShape01" effectClass="ParticleEffect" particleType="SMOKE_CHIMNEY" emitCountScale="50"/>
+            <effectNode effectNode="smokeEffectShape01" effectClass="ParticleEffect" particleType="SMOKE" scale="0.1 0.5 0.1" emitCountScale="50"/>
+            <effectNode effectNode="smokeEffectShape02" effectClass="ParticleEffect" particleType="SMOKE" scale="0.1 0.5 0.1" emitCountScale="50"/>
+            <effectNode effectNode="siloEffect" effectClass="MorphPositionEffect" materialType="belt" defaultFillType="BLASTFURNACESLAG" delay="0" fadeTime="6" speed="0.9" scrollLength="6" scrollSpeed="1.4" />
+        </effectNodes>
+
+        <sounds>
+            <idle   file="sounds/placeables/productionPoints/ironFurnaceIdle.wav" linkNode="soundNode" loops="0" volumeScale="2.3" innerRadius="7" outerRadius="50" supportsReverb="false"/>
+            <active file="sounds/placeables/productionPoints/ironFurnaceWork.wav" linkNode="soundNode" loops="0" volumeScale="1.8" innerRadius="7" outerRadius="40" supportsReverb="false"/>
+        </sounds>
+    </productionPoint>
+
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart node="0" linkNode="siloNode" filename="placeables/productionPoints/stoneCrusher/quarrySilo.i3d" />
+        <dynamicallyLoadedPart node="0" linkNode="propsNode" filename="placeables/sharedAssets/propsBuilding/propsBuilding_ironFurnace.i3d" />
+        <dynamicallyLoadedPart node="0" linkNode="propsNode" filename="placeables/sharedAssets/props/props_ironFurnace.i3d" />
+    </dynamicallyLoadedParts>
+
+    <i3dMappings>
+        <i3dMapping id="conveyorBelt" node="0>0|0|1|2" />
+        <i3dMapping id="propsNode" node="0>2" />
+        <i3dMapping id="warehouseWallLamp01" node="0>3|0|0" />
+        <i3dMapping id="industrialWallLight01" node="0>3|0|1" />
+        <i3dMapping id="industrialWallLight02" node="0>3|0|2" />
+        <i3dMapping id="industrialWallLight03" node="0>3|0|3" />
+        <i3dMapping id="neonLight02_01" node="0>3|0|4" />
+        <i3dMapping id="neonLight02_02" node="0>3|0|5" />
+        <i3dMapping id="neonLight02_03" node="0>3|0|6" />
+        <i3dMapping id="neonLight02_04" node="0>3|0|7" />
+        <i3dMapping id="neonLight02_05" node="0>3|0|8" />
+        <i3dMapping id="neonLight02_06" node="0>3|0|9" />
+        <i3dMapping id="neonLight02_07" node="0>3|0|10" />
+        <i3dMapping id="neonLight02_08" node="0>3|0|11" />
+        <i3dMapping id="neonLight02_09" node="0>3|0|12" />
+        <i3dMapping id="neonLight02_10" node="0>3|0|13" />
+        <i3dMapping id="neonLight02_11" node="0>3|0|14" />
+        <i3dMapping id="floodLight01" node="0>3|0|15" />
+        <i3dMapping id="floodLight02" node="0>3|0|16" />
+        <i3dMapping id="floodLight03" node="0>3|0|17" />
+        <i3dMapping id="floodLight04" node="0>3|0|18" />
+        <i3dMapping id="floodLight05" node="0>3|0|19" />
+        <i3dMapping id="realLightsLow" node="0>3|1|0" />
+        <i3dMapping id="realLightsHigh" node="0>3|1|1" />
+        <i3dMapping id="sellingStation" node="0>4|0" />
+        <i3dMapping id="unloadTrigger" node="0>4|0|0" />
+        <i3dMapping id="palletTrigger" node="0>4|0|1" />
+        <i3dMapping id="unloadTriggerMarker" node="0>4|0|2" />
+        <i3dMapping id="warningStripes1" node="0>4|0|3" />
+        <i3dMapping id="unloadTriggerAINode" node="0>4|0|4" />
+        <i3dMapping id="aiSpline" node="0>4|0|5" />
+        <i3dMapping id="fillPlaneIronOre" node="0>4|0|6" />
+        <i3dMapping id="loadingStation" node="0>4|1" />
+        <i3dMapping id="siloNode" node="0>4|1|0" />
+        <i3dMapping id="loadingTrigger" node="0>4|1|1" />
+        <i3dMapping id="dischargeNode" node="0>4|1|2" />
+        <i3dMapping id="pipeEffect" node="0>4|1|3|0" />
+        <i3dMapping id="pipeEffectSmoke" node="0>4|1|3|1" />
+        <i3dMapping id="markerLoadingSilo" node="0>4|1|4" />
+        <i3dMapping id="fillPlaneBlastFurnaceSlag" node="0>4|1|5" />
+        <i3dMapping id="palletSpawner" node="0>4|2" />
+        <i3dMapping id="palletAreaStart1" node="0>4|2|0" />
+        <i3dMapping id="palletAreaEnd1" node="0>4|2|0|0" />
+        <i3dMapping id="palletAreaStart2" node="0>4|2|1" />
+        <i3dMapping id="palletAreaEnd2" node="0>4|2|1|0" />
+        <i3dMapping id="warningStripes2" node="0>4|2|2" />
+        <i3dMapping id="infoTrigger" node="0>4|3" />
+        <i3dMapping id="playerTrigger" node="0>4|4" />
+        <i3dMapping id="playerTriggerMarker" node="0>4|5" />
+        <i3dMapping id="smokeEffectChimneyShape01" node="0>4|6|0" />
+        <i3dMapping id="smokeEffectShape01" node="0>4|6|1" />
+        <i3dMapping id="smokeEffectShape02" node="0>4|6|2" />
+        <i3dMapping id="siloEffect" node="0>4|6|3" />
+        <i3dMapping id="effectBelt" node="0>4|7|0" />
+        <i3dMapping id="soundNode" node="0>4|8" />
+        <i3dMapping id="clearLevelAreaStart1" node="0>5|0" />
+        <i3dMapping id="clearLevelAreaWidth1" node="0>5|0|0" />
+        <i3dMapping id="clearLevelAreaHeight1" node="0>5|0|1" />
+        <i3dMapping id="indoorAreaStart1" node="0>6|0" />
+        <i3dMapping id="indoorAreaWidth1" node="0>6|0|0" />
+        <i3dMapping id="indoorAreaHeight1" node="0>6|0|1" />
+        <i3dMapping id="indoorAreaStart2" node="0>6|1" />
+        <i3dMapping id="indoorAreaWidth2" node="0>6|1|0" />
+        <i3dMapping id="indoorAreaHeight2" node="0>6|1|1" />
+        <i3dMapping id="indoorAreaStart3" node="0>6|2" />
+        <i3dMapping id="indoorAreaWidth3" node="0>6|2|0" />
+        <i3dMapping id="indoorAreaHeight3" node="0>6|2|1" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart1" node="0>7|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd1" node="0>7|0|0" />
+        <i3dMapping id="testAreaStart1" node="0>8|0" />
+        <i3dMapping id="testAreaEnd1" node="0>8|0|0" />
+    </i3dMappings>
+</placeable>

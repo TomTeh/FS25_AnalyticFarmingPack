@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="productionPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/placeable.xsd">
+    <storeData>
+        <name>$l10n_productionPoint_stoneCrusher</name>
+        <functions>
+            <function>$l10n_function_productionPoint</function>
+        </functions>
+        <image>placeables/productionPoints/stoneCrusher/store_stoneCrusher.png</image>
+        <price>88000</price>
+        <dailyUpkeep>15</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>productionPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>factories</tab>
+        </brush>
+
+        <storeIconRendering>
+            <settings cameraXRot="-10" cameraYRot="-60" advancedBoundingBox="true"/>
+        </storeIconRendering>
+        <vertexBufferMemoryUsage>694016</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>146688</indexBufferMemoryUsage>
+        <textureMemoryUsage>4784128</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>placeables/productionPoints/stoneCrusher/stoneCrusher.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testAreaStart1" endNode="testAreaEnd1" />
+            <testArea startNode="testAreaStart2" endNode="testAreaEnd2" />
+            <testArea startNode="testAreaStart3" endNode="testAreaEnd3" />
+        </testAreas>
+
+        <sounds>
+            <place template="medImp" />
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearLevelAreaStart1" widthNode="clearLevelAreaWidth1" heightNode="clearLevelAreaHeight1"/>
+        <clearArea startNode="clearLevelAreaStart2" widthNode="clearLevelAreaWidth2" heightNode="clearLevelAreaHeight2"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30" >
+        <levelAreas>
+            <levelArea startNode="clearLevelAreaStart1" widthNode="clearLevelAreaWidth1" heightNode="clearLevelAreaHeight1" groundType="concrete"/>
+            <levelArea startNode="clearLevelAreaStart2" widthNode="clearLevelAreaWidth2" heightNode="clearLevelAreaHeight2" groundType="concrete"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorAreaStart1" widthNode="indoorAreaWidth1" heightNode="indoorAreaHeight1" />
+        <indoorArea startNode="indoorAreaStart2" widthNode="indoorAreaWidth2" heightNode="indoorAreaHeight2" />
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStart1" endNode="tipOcclusionUpdateAreaEnd1" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateAreaStart1" endNode="tipOcclusionUpdateAreaEnd1" />
+        </updateAreas>
+    </ai>
+
+    <triggerMarkers>
+        <triggerMarker node="playerTriggerMarker" filename="placeables/sharedAssets/marker/markerIconProductionPoint.i3d" adjustToGround="true" />
+        <triggerMarker node="unloadTriggerMarker" filename="$data/shared/assets/marker/markerIconUnload.i3d" adjustToGround="false" />
+        <triggerMarker node="loadingTriggerMarker" filename="$data/shared/assets/marker/markerIconLoad.i3d" adjustToGround="true" />
+        <triggerMarker node="warningStripes" />
+    </triggerMarkers>
+
+    <hotspots>
+        <hotspot type="PRODUCTION_POINT" linkNode="hotspotNode" teleportNode="teleportNode" />
+    </hotspots>
+
+    <infoTrigger triggerNode="infoTrigger"/>
+
+    <productionPoint>
+        <productions sharedThroughputCapacity="true">
+            <production id="gravel" name="$l10n_fillType_gravel" cyclesPerHour="300" costsPerActiveHour="1">
+                <inputs>
+                    <input fillType="STONE" amount="10" />
+                </inputs>
+                <outputs>
+                    <output fillType="GRAVEL" amount="10" />
+                </outputs>
+
+                <sounds>
+                    <active template="debrisCrusherWork" linkNode="soundNode" loops="0" volumeScale="1.0" innerRadius="7" outerRadius="40" supportsReverb="false"/>
+                </sounds>
+            </production>
+        </productions>
+
+        <sellingStation node="sellingStation" supportsExtension="false" hideFromPricesMenu="true" allowMissions="false">
+            <unloadTrigger exactFillRootNode="unloadTriggerUp" fillTypes="STONE" />
+            <unloadTrigger exactFillRootNode="unloadTriggerDown" fillTypes="STONE" />
+            <palletTrigger triggerNode="palletTriggerDown" fillTypes="STONE" />
+        </sellingStation>
+
+        <loadingStation>
+            <loadTrigger triggerNode="loadingTrigger" fillTypes="GRAVEL" fillLitersPerSecond="2000" dischargeNode="dischargeNode" >
+                <effectNode effectClass="PipeEffect" effectNode="pipeEffect"      materialType="pipe"           fadeTime="0.5" maxBending="0" controlPoint="4.8 0 0 0" />
+                <effectNode                          effectNode="pipeEffectSmoke" materialType="unloadingSmoke" fadeTime="0.5" />
+            </loadTrigger>
+        </loadingStation>
+
+        <storage isExtension="false" fillLevelSyncThreshold="50">
+            <capacity fillType="STONE"  capacity="40000" />
+            <capacity fillType="GRAVEL" capacity="110000" />
+
+            <fillPlane node="fillPlaneStone" fillType="STONE" minRotX="-29.65" maxRotX="0" changeVisibility="true" />
+            <fillPlane node="fillPlaneGravel" fillType="GRAVEL" minY="11.29" maxY="11.65" changeVisibility="true" />
+        </storage>
+
+        <playerTrigger node="playerTrigger" />
+
+        <animationNodes>
+            <animationNode node="stoneCrusher_conveyorBelt" class="ScrollingAnimation" shaderParameterName="offsetUV" shaderComponentScale="-1 0 0 0" scrollSpeed="-0.2" turnOnFadeTime="3" turnOffFadeTime="3" />
+            <animationNode node="stoneCrusher_engineWheel01" rotSpeed="-500" rotAxis="3" turnOnFadeTime="3" turnOffFadeTime="3"/>
+            <animationNode node="stoneCrusher_engineWheel02" rotSpeed="-500" rotAxis="3" turnOnFadeTime="3" turnOffFadeTime="3"/>
+            <animationNode node="stoneCrusher_engineWheel03" rotSpeed="-320" rotAxis="3" turnOnFadeTime="3" turnOffFadeTime="3"/>
+            <animationNode node="stoneCrusher_engineBelt01" class="ScrollingAnimation" shaderParameterName="offsetUV" shaderComponentScale="-1 0 0 0" scrollSpeed="0.4" turnOnFadeTime="3" turnOffFadeTime="3" />
+            <animationNode node="stoneCrusher_engineBelt02" class="ScrollingAnimation" shaderParameterName="offsetUV" shaderComponentScale="-1 0 0 0" scrollSpeed="-0.4" turnOnFadeTime="3" turnOffFadeTime="3" />
+            <animationNode node="conveyorSmall_belt" class="ScrollingAnimation" shaderParameterName="offsetUV" shaderComponentScale="-1 0 0 0" scrollSpeed="-0.2" turnOnFadeTime="3" turnOffFadeTime="3" />
+            <animationNode node="conveyorSmall_beltWheelBig01" rotSpeed="-220" rotAxis="3" turnOnFadeTime="3" turnOffFadeTime="3"/>
+            <animationNode node="conveyorSmall_beltWheelBig02" rotSpeed="-220" rotAxis="3" turnOnFadeTime="3" turnOffFadeTime="3"/>
+            <animationNode node="conveyorSmall_beltWheelSmall01" rotSpeed="-250" rotAxis="3" turnOnFadeTime="3" turnOffFadeTime="3"/>
+            <animationNode node="conveyorSmall_beltWheelSmall02" rotSpeed="-250" rotAxis="3" turnOnFadeTime="3" turnOffFadeTime="3"/>
+            <animationNode node="conveyorSmall_beltWheelSmall03" rotSpeed="-250" rotAxis="3" turnOnFadeTime="3" turnOffFadeTime="3"/>
+            <animationNode node="conveyorSmall_beltWheelSmall04" rotSpeed="-250" rotAxis="3" turnOnFadeTime="3" turnOffFadeTime="3"/>
+            <animationNode node="conveyorSmall_beltWheelSmall05" rotSpeed="-250" rotAxis="3" turnOnFadeTime="3" turnOffFadeTime="3"/>
+            <animationNode node="conveyorSmall_beltWheelSmall06" rotSpeed="-250" rotAxis="3" turnOnFadeTime="3" turnOffFadeTime="3"/>
+            <animationNode node="conveyorBig_belt" class="ScrollingAnimation" shaderParameterName="offsetUV" shaderComponentScale="-1 0 0 0" scrollSpeed="-0.2" turnOnFadeTime="3" turnOffFadeTime="3" />
+            <animationNode node="conveyorBig_wheel" rotSpeed="-220" rotAxis="3" turnOnFadeTime="3" turnOffFadeTime="3"/>
+        </animationNodes>
+
+        <effectNodes>
+            <effectNode effectNode="stoneCrusherEffect" effectClass="MorphPositionEffect" materialType="belt" defaultFillType="GRAVEL" delay="0" fadeTime="6" speed="0.9" scrollLength="3" scrollSpeed="0.33" />
+            <effectNode effectNode="conveyorSmallEffect" effectClass="MorphPositionEffect" materialType="belt" defaultFillType="GRAVEL" delay="0" fadeTime="6" speed="0.9" scrollLength="10" scrollSpeed="0.33" />
+            <effectNode effectNode="conveyorBigEffect" effectClass="MorphPositionEffect" materialType="belt" defaultFillType="GRAVEL" delay="0" fadeTime="6" speed="0.9" scrollLength="3" scrollSpeed="0.33" />
+            <effectNode effectNode="conveyorBigEffectEnd" effectClass="MorphPositionEffect" materialType="belt" defaultFillType="GRAVEL" delay="0" fadeTime="6" speed="0.9" scrollLength="6" scrollSpeed="1.4" />
+            <effectNode effectNode="effectSmoke01" effectClass="ShaderPlaneEffect" materialType="unloadingSmoke" defaultFillType="GRAVEL" fadeTime="0.5" startDelay="0.5" stopDelay="0.5" />
+            <effectNode effectNode="effectSmoke02" effectClass="ShaderPlaneEffect" materialType="unloadingSmoke" defaultFillType="GRAVEL" fadeTime="0.5" startDelay="2.6" stopDelay="2.6" />
+            <effectNode effectNode="effectSmoke03" effectClass="ShaderPlaneEffect" materialType="unloadingSmoke" defaultFillType="GRAVEL" fadeTime="0.5" startDelay="5.0" stopDelay="5.0" />
+        </effectNodes>
+
+        <sounds>
+            <idle   file="sounds/placeables/productionPoints/ironFurnaceIdle.wav" linkNode="soundNodeEngine" loops="0" volumeScale="1.8" innerRadius="9" outerRadius="40" supportsReverb="false"/>
+            <active file="sounds/placeables/productionPoints/ironFurnaceWork.wav" linkNode="soundNodeEngine" loops="0" volumeScale="1.0" innerRadius="9" outerRadius="40" supportsReverb="false"/>
+        </sounds>
+    </productionPoint>
+
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart node="0" linkNode="siloNode" filename="placeables/productionPoints/stoneCrusher/quarrySilo.i3d" />
+        <dynamicallyLoadedPart node="0" linkNode="propsNode" filename="placeables/sharedAssets/propsBuilding/propsBuilding_quarry.i3d" />
+        <dynamicallyLoadedPart node="0" linkNode="propsNode" filename="placeables/sharedAssets/props/props_quarry.i3d" />
+    </dynamicallyLoadedParts>
+
+    <i3dMappings>
+        <i3dMapping id="stoneCrusher_conveyorBelt" node="0>0|0|0|1" />
+        <i3dMapping id="stoneCrusher_engineWheel01" node="0>0|0|0|2" />
+        <i3dMapping id="stoneCrusher_engineWheel02" node="0>0|0|0|3" />
+        <i3dMapping id="stoneCrusher_engineWheel03" node="0>0|0|0|4" />
+        <i3dMapping id="stoneCrusher_engineBelt01" node="0>0|0|0|5" />
+        <i3dMapping id="stoneCrusher_engineBelt02" node="0>0|0|0|6" />
+        <i3dMapping id="conveyorSmall_belt" node="0>0|1|0|1" />
+        <i3dMapping id="conveyorSmall_beltWheelBig01" node="0>0|1|0|2" />
+        <i3dMapping id="conveyorSmall_beltWheelBig02" node="0>0|1|0|3" />
+        <i3dMapping id="conveyorSmall_beltWheelSmall01" node="0>0|1|0|4" />
+        <i3dMapping id="conveyorSmall_beltWheelSmall02" node="0>0|1|0|5" />
+        <i3dMapping id="conveyorSmall_beltWheelSmall03" node="0>0|1|0|6" />
+        <i3dMapping id="conveyorSmall_beltWheelSmall04" node="0>0|1|0|7" />
+        <i3dMapping id="conveyorSmall_beltWheelSmall05" node="0>0|1|0|8" />
+        <i3dMapping id="conveyorSmall_beltWheelSmall06" node="0>0|1|0|9" />
+        <i3dMapping id="conveyorBig_belt" node="0>0|2|0|1" />
+        <i3dMapping id="conveyorBig_wheel" node="0>0|2|0|2" />
+        <i3dMapping id="propsNode" node="0>1" />
+        <i3dMapping id="sellingStation" node="0>2|0" />
+        <i3dMapping id="unloadTriggerUp" node="0>2|0|0" />
+        <i3dMapping id="unloadTriggerDown" node="0>2|0|1" />
+        <i3dMapping id="palletTriggerDown" node="0>2|0|2" />
+        <i3dMapping id="unloadTriggerMarker" node="0>2|0|3" />
+        <i3dMapping id="warningStripes" node="0>2|0|4" />
+        <i3dMapping id="fillPlaneStone" node="0>2|0|5" />
+        <i3dMapping id="loadingStation" node="0>2|1" />
+        <i3dMapping id="siloNode" node="0>2|1|0" />
+        <i3dMapping id="loadingTrigger" node="0>2|1|1" />
+        <i3dMapping id="dischargeNode" node="0>2|1|2" />
+        <i3dMapping id="pipeEffect" node="0>2|1|3|0" />
+        <i3dMapping id="pipeEffectSmoke" node="0>2|1|3|1" />
+        <i3dMapping id="loadingTriggerMarker" node="0>2|1|4" />
+        <i3dMapping id="fillPlaneGravel" node="0>2|1|5" />
+        <i3dMapping id="infoTrigger" node="0>2|2" />
+        <i3dMapping id="playerTrigger" node="0>2|3" />
+        <i3dMapping id="playerTriggerMarker" node="0>2|4" />
+        <i3dMapping id="exhaustEffect" node="0>2|5|0" />
+        <i3dMapping id="stoneCrusherEffect" node="0>2|5|1" />
+        <i3dMapping id="conveyorSmallEffect" node="0>2|5|2" />
+        <i3dMapping id="conveyorBigEffect" node="0>2|5|3" />
+        <i3dMapping id="conveyorBigEffectEnd" node="0>2|5|4" />
+        <i3dMapping id="effectSmoke01" node="0>2|5|5" />
+        <i3dMapping id="effectSmoke02" node="0>2|5|6" />
+        <i3dMapping id="effectSmoke03" node="0>2|5|7" />
+        <i3dMapping id="effectParticle" node="0>2|5|8" />
+        <i3dMapping id="soundNode" node="0>2|6" />
+        <i3dMapping id="soundNodeEngine" node="0>2|7" />
+        <i3dMapping id="hotspotNode" node="0>3" />
+        <i3dMapping id="teleportNode" node="0>4" />
+        <i3dMapping id="clearLevelAreaStart1" node="0>5|0" />
+        <i3dMapping id="clearLevelAreaWidth1" node="0>5|0|0" />
+        <i3dMapping id="clearLevelAreaHeight1" node="0>5|0|1" />
+        <i3dMapping id="clearLevelAreaStart2" node="0>5|1" />
+        <i3dMapping id="clearLevelAreaWidth2" node="0>5|1|0" />
+        <i3dMapping id="clearLevelAreaHeight2" node="0>5|1|1" />
+        <i3dMapping id="indoorAreaStart1" node="0>6|0" />
+        <i3dMapping id="indoorAreaWidth1" node="0>6|0|0" />
+        <i3dMapping id="indoorAreaHeight1" node="0>6|0|1" />
+        <i3dMapping id="indoorAreaStart2" node="0>6|1" />
+        <i3dMapping id="indoorAreaWidth2" node="0>6|1|0" />
+        <i3dMapping id="indoorAreaHeight2" node="0>6|1|1" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart1" node="0>7|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd1" node="0>7|0|0" />
+        <i3dMapping id="testAreaStart1" node="0>8|0" />
+        <i3dMapping id="testAreaEnd1" node="0>8|0|0" />
+        <i3dMapping id="testAreaStart2" node="0>8|1" />
+        <i3dMapping id="testAreaEnd2" node="0>8|1|0" />
+        <i3dMapping id="testAreaStart3" node="0>8|2" />
+        <i3dMapping id="testAreaEnd3" node="0>8|2|0" />
+    </i3dMappings>
+</placeable>

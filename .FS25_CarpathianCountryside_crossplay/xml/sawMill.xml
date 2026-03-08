@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="productionPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_productionPoint_sawMill</name>
+        <functions>
+            <function>$l10n_function_productionPoint</function>
+        </functions>
+        <image>placeables/productionPoints/mapIcon_sawMill.png</image>
+        <price>300000</price>
+        <dailyUpkeep>120</dailyUpkeep>
+        <canBeSold>true</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>productionPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>factories</tab>
+        </brush>
+        <vertexBufferMemoryUsage>4096</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>2048</indexBufferMemoryUsage>
+        <textureMemoryUsage>65536</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>placeables/productionPoints/sawMill.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+        <buysFarmland>true</buysFarmland>
+        <canBeDeleted>false</canBeDeleted>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" />
+
+    <clearAreas/>
+
+    <leveling/>
+
+    <indoorAreas/>
+
+    <tipOcclusionUpdateAreas/>
+
+    <ai>
+        <updateAreas>
+        </updateAreas>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger" />
+
+    <hotspots>
+        <hotspot type="PRODUCTION_POINT" linkNode="hotspotNode" teleportNode="teleportNode" />
+    </hotspots>
+
+    <triggerMarkers>
+        <triggerMarker node="playerTriggerMarker" filename="placeables/sharedAssets/marker/markerIconProductionPoint.i3d" adjustToGround="true" />
+        <triggerMarker node="unloadTriggerMarker" filename="$data/shared/assets/marker/markerIconUnload.i3d" adjustToGround="true" />
+        <triggerMarker node="markerLoading" filename="$data/shared/assets/marker/markerIconLoad.i3d" adjustToGround="true" />
+        <triggerMarker node="woodTriggerMarker" filename="$data/shared/assets/marker/markerIconUnload.i3d" adjustToGround="true" />
+        <triggerMarker node="woodSellTriggerMarker" filename="$data/shared/assets/marker/markerIconExclamationMark.i3d" adjustToGround="true" />
+    </triggerMarkers>
+
+    <productionPoint>
+        <productions sharedThroughputCapacity="false">
+            <production id="boards" name="$l10n_fillType_boards" cyclesPerHour="2.5" costsPerActiveHour="3">
+                <inputs>
+                    <input fillType="WOOD" amount="416" />
+                </inputs>
+                <outputs>
+                    <output fillType="BOARDS" amount="410" />
+                    <output fillType="WOODCHIPS" amount="120" />
+                </outputs>
+            </production>
+            <production id="planks" name="$l10n_fillType_planks" cyclesPerHour="2" costsPerActiveHour="3">
+                <inputs>
+                    <input fillType="WOOD" amount="416" />
+                </inputs>
+                <outputs>
+                    <output fillType="PLANKS" amount="275" />
+                    <output fillType="WOODCHIPS" amount="120" />
+                </outputs>
+            </production>
+            <production id="woodBeam" name="$l10n_fillType_woodBeam" cyclesPerHour="1.5" costsPerActiveHour="3">
+                <inputs>
+                    <input fillType="WOOD" amount="416" />
+                </inputs>
+                <outputs>
+                    <output fillType="WOODBEAM" amount="185" />
+                    <output fillType="WOODCHIPS" amount="180" />
+                </outputs>
+            </production>
+            <production id="chipwoodBoards" name="$l10n_fillType_chipwoodBoards" cyclesPerHour="2" costsPerActiveHour="3">
+                <inputs>
+                    <input fillType="WOODCHIPS" amount="900" />
+                </inputs>
+                <outputs>
+                    <output fillType="CHIPWOODBOARDS" amount="300" />
+                </outputs>
+            </production>
+            <production id="prefabWall" name="$l10n_fillType_prefabWall" cyclesPerHour="1" costsPerActiveHour="3">
+                <inputs>
+                    <input fillType="WOOD" amount="412" />
+                </inputs>
+                <outputs>
+                    <output fillType="PREFABWALL" amount="100" />
+                </outputs>
+            </production>
+        </productions>
+
+        <sellingStation node="sellingStation" appearsOnStats="true" supportsExtension="false" allowMissions="false" litersForFullPriceDrop="200000" fullPriceRecoverHours="48">
+            <unloadTrigger exactFillRootNode="unloadTrigger" fillTypes="WOODCHIPS"/>
+            <palletTrigger triggerNode="palletTrigger" fillTypes="WOODCHIPS"/>
+            <baleTrigger triggerNode="baleTrigger" fillTypes="WOODCHIPS" deleteLitersPerSecond="4000" />
+            <unloadTrigger exactFillRootNode="unloadTriggerWood" fillTypes="WOOD" />
+            <palletTrigger triggerNode="palletTriggerWood" fillTypes="WOOD" />
+            <woodTrigger triggerNode="woodTrigger" activationTriggerNode="woodSellTrigger" fillTypes="WOOD"/>
+        </sellingStation>
+
+        <loadingStation node="loadingStation" supportsExtension="false">
+            <loadTrigger triggerNode="loadTrigger" fillLitersPerSecond="1000" fillTypes="WOODCHIPS"/>
+        </loadingStation>
+
+        <palletSpawner node="palletSpawner">
+            <spawnPlaces>
+                <spawnPlace startNode="spawnSpace1start" endNode="spawnSpace1end" />
+                <spawnPlace startNode="spawnSpace2start" endNode="spawnSpace2end" />
+                <spawnPlace startNode="spawnSpace3start" endNode="spawnSpace3end" />
+            </spawnPlaces>
+        </palletSpawner>
+
+        <storage isExtension="false" fillLevelSyncThreshold="50" >
+            <capacity fillType="WOOD"            capacity="400000" />
+            <capacity fillType="WOODCHIPS"       capacity="300000" />
+            <capacity fillType="BOARDS"          capacity="100000" />
+            <capacity fillType="PLANKS"          capacity="100000" />
+            <capacity fillType="WOODBEAM"        capacity="75000" />
+            <capacity fillType="CHIPWOODBOARDS"  capacity="100000" />
+            <capacity fillType="PREFABWALL"      capacity="50000" />
+        </storage>
+
+        <playerTrigger node="playerTrigger" />
+
+        <sounds>
+            <idle template="carpenterIdle" linkNode="soundNode" innerRadius="10" outerRadius="45" />
+            <active template="carpenterWork" linkNode="soundNode" innerRadius="10" outerRadius="45" />
+        </sounds>
+    </productionPoint>
+
+    <i3dMappings>
+        <i3dMapping id="sellingStation" node="0>0" />
+        <i3dMapping id="unloadTrigger" node="0>0|0" />
+        <i3dMapping id="palletTrigger" node="0>0|1" />
+        <i3dMapping id="baleTrigger" node="0>0|2" />
+        <i3dMapping id="unloadTriggerMarker" node="0>0|3" />
+        <i3dMapping id="unloadTriggerWood" node="0>0|4" />
+        <i3dMapping id="palletTriggerWood" node="0>0|5" />
+        <i3dMapping id="woodTrigger" node="0>0|6" />
+        <i3dMapping id="woodTriggerMarker" node="0>0|7" />
+        <i3dMapping id="woodSellTrigger" node="0>0|8" />
+        <i3dMapping id="woodSellTriggerMarker" node="0>0|8|0" />
+        <i3dMapping id="playerTrigger" node="0>1|0" />
+        <i3dMapping id="playerTriggerMarker" node="0>1|0|0" />
+        <i3dMapping id="soundNode" node="0>1|1" />
+        <i3dMapping id="loadingStation" node="0>2" />
+        <i3dMapping id="loadTrigger" node="0>2|0" />
+        <i3dMapping id="markerLoading" node="0>2|1" />
+        <i3dMapping id="palletSpawner" node="0>3" />
+        <i3dMapping id="spawnSpace1start" node="0>3|0" />
+        <i3dMapping id="spawnSpace1end" node="0>3|0|0" />
+        <i3dMapping id="spawnSpace2start" node="0>3|1" />
+        <i3dMapping id="spawnSpace2end" node="0>3|1|0" />
+        <i3dMapping id="spawnSpace3start" node="0>3|2" />
+        <i3dMapping id="spawnSpace3end" node="0>3|2|0" />
+        <i3dMapping id="infoTrigger" node="0>4" />
+        <i3dMapping id="hotspotNode" node="0>5" />
+        <i3dMapping id="teleportNode" node="0>6" />
+    </i3dMappings>
+</placeable>

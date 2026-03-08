@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<foliageType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/foliageType.xsd">
+    <fruitType name="decoGardenCrops" shownOnMap="false" useForFieldMissions="false">
+        <mapColors default="1 0 0 1" colorBlind="1 0 0 1"/>
+        <harvest litersPerSqm="1.00"/>
+        <growth resetsSpray="false" growthRequiresLime="false"/>
+        <soil lowDensityRequired="false" increasesDensity="false" consumesLime="false" startSprayLevel="0"/>
+        <seeding directionSnapAngle="0" needsRolling="false" litersPerSqm="0.01" isAvailable="false" plantsWeed="false"/>
+        <cultivation isAllowed="true"/>
+        <mulcher chopperType="CHOPPER_STRAW"/>
+    </fruitType>
+
+    <foliageLayer densityMapChannelOffset="0" numDensityMapChannels="4" numBlocksPerUnit="2.5" shapeSource="decoGardenCrops.i3d">
+        <foliageStateDefaults distanceMapLayer="0" width="1.0" height="1.0" widthVariance="0.4" heightVariance="0.2" horizontalPositionVariance="0.4"/>
+        
+        <!-- default LOD distances etc -->
+        <foliageLodDefaults lod="0" viewDistance="15" blendOutDistance="2" texCoords="0 0 1 1"/>
+        <foliageLodDefaults lod="1" viewDistance="60" blendOutDistance="2" texCoords="0 0 1 1"/>
+
+        <!-- pea -->
+        <foliageState name="peaInvisible"/>
+        <foliageState name="peaGreenMiddle" numBlocksPerUnit="2.5" widthVariance="0.4" heightVariance="0.2" horizontalPositionVariance="0.4">
+            <foliageShape>
+                <foliageLod blockShape="0>0|0"/>
+                <foliageLod blockShape="0>1|0"/>
+            </foliageShape>
+        </foliageState>
+        <foliageState name="peaHarvestReady" numBlocksPerUnit="2.5" widthVariance="0.4" heightVariance="0.2" horizontalPositionVariance="0.4">
+            <foliageShape>
+                <foliageLod blockShape="0>0|1"/>
+                <foliageLod blockShape="0>1|1"/>
+            </foliageShape>
+        </foliageState>
+
+        <!-- greenBean -->
+        <foliageState name="greenBeanInvisible"/>
+        <foliageState name="greenBeanGreenMiddle" numBlocksPerUnit="2" widthVariance="0" heightVariance="0.25" horizontalPositionVariance="0">
+            <foliageShape>
+                <foliageLod blockShape="1>0|0"/>
+                <foliageLod blockShape="1>1|0"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="1>0|1"/>
+                <foliageLod blockShape="1>1|1"/>
+            </foliageShape>
+        </foliageState>
+        <foliageState name="greenBeanHarvestReady" numBlocksPerUnit="2" widthVariance="0" heightVariance="0.25" horizontalPositionVariance="0">
+            <foliageShape>
+                <foliageLod blockShape="1>0|2"/>
+                <foliageLod blockShape="1>1|2"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="1>0|3"/>
+                <foliageLod blockShape="1>1|3"/>
+            </foliageShape>
+        </foliageState>
+
+        <!-- spinach -->
+        <foliageState name="spinachInvisible"/>
+        <foliageState name="spinachGreenMiddle" numBlocksPerUnit="4.5" widthVariance="0.2" heightVariance="0.25" horizontalPositionVariance="0.2">
+            <foliageShape>
+                <foliageLod blockShape="2>0|0" blendOutDistance="4"/>
+                <foliageLod blockShape="2>1|0" blendOutDistance="4"/>
+            </foliageShape>
+        </foliageState>
+        <foliageState name="spinachHarvestReady" numBlocksPerUnit="3.0" widthVariance="0.2" heightVariance="0.25" horizontalPositionVariance="0.2">
+            <foliageShape>
+                <foliageLod blockShape="2>0|1" blendOutDistance="4"/>
+                <foliageLod blockShape="2>1|1" blendOutDistance="4"/>
+            </foliageShape>
+        </foliageState>
+
+        <!-- wheat -->
+        <foliageState name="wheatInvisible"/>
+        <foliageState name="wheatGreenMiddle" numBlocksPerUnit="2.2" widthVariance="0.2" heightVariance="0.2" horizontalPositionVariance="0.5">
+            <foliageShape>
+                <foliageLod blockShape="3>0|0" atlasSize="1" atlasOffset="1 0"/>
+                <foliageLod blockShape="3>1|0" atlasSize="1" atlasOffset="1 0"/>
+            </foliageShape>
+        </foliageState>
+        <foliageState name="wheatHarvestReady" numBlocksPerUnit="2.2" width="1.3" widthVariance="0.2" heightVariance="0.2" horizontalPositionVariance="0.5">
+            <foliageShape>
+                <foliageLod blockShape="3>0|1" atlasSize="1" atlasOffset="1 0"/>
+                <foliageLod blockShape="3>1|1" atlasSize="1" atlasOffset="1 0"/>
+            </foliageShape>
+        </foliageState>
+
+        <!-- maize -->
+        <foliageState name="maizeInvisible"/>
+        <foliageState name="maizeGreenMiddle" numBlocksPerUnit="1.333" width="1.2" widthVariance="0.2" heightVariance="0.2" horizontalPositionVariance="0.15">
+            <foliageShape>
+                <foliageLod blockShape="4>0|0" atlasSize="1" atlasOffset="1 0"/>
+                <foliageLod blockShape="4>1|0" atlasSize="1" atlasOffset="1 0"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="4>0|1" atlasSize="1" atlasOffset="1 0"/>
+                <foliageLod blockShape="4>1|0" atlasSize="1" atlasOffset="1 0"/>
+            </foliageShape>
+        </foliageState>
+        <foliageState name="maizeHarvestReady" numBlocksPerUnit="1.333" widthVariance="0.2" heightVariance="0.2" horizontalPositionVariance="0.15">
+            <foliageShape>
+                <foliageLod blockShape="4>0|2" atlasSize="1" atlasOffset="1 0"/>
+                <foliageLod blockShape="4>1|1" atlasSize="1" atlasOffset="1 0"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="4>0|3" atlasSize="1" atlasOffset="1 0"/>
+                <foliageLod blockShape="4>1|1" atlasSize="1" atlasOffset="1 0"/>
+            </foliageShape>
+        </foliageState>
+    </foliageLayer>
+
+    <growth>
+        <seasonal>
+            <period name="EARLY_SPRING" >
+                <update startState="wheatInvisible" endState="wheatGreenMiddle" />
+            </period>
+            <period name="MID_SPRING" >
+                <update startState="peaInvisible" endState="peaGreenMiddle" />
+                <update startState="spinachInvisible" endState="spinachGreenMiddle" />
+            </period>
+            <period name="LATE_SPRING" >
+                <update startState="greenBeanInvisible" endState="greenBeanGreenMiddle" />
+                <update startState="maizeInvisible" endState="maizeGreenMiddle" />
+            </period>
+            <period name="EARLY_SUMMER" >
+                <update startState="peaGreenMiddle" endState="peaHarvestReady" />
+                <update startState="spinachGreenMiddle" endState="spinachHarvestReady" />
+                <update startState="wheatGreenMiddle" endState="wheatHarvestReady" />
+            </period>
+            <period name="MID_SUMMER" >
+                <update startState="greenBeanGreenMiddle" endState="greenBeanHarvestReady" />
+                <update startState="maizeGreenMiddle" endState="maizeHarvestReady" />
+            </period>
+            <period name="LATE_SUMMER" >
+                <update startState="wheatHarvestReady" endState="wheatInvisible" />
+                <update startState="peaHarvestReady" endState="peaInvisible" />
+            </period>
+            <period name="EARLY_AUTUMN" >
+                <update startState="spinachHarvestReady" endState="spinachInvisible" />
+            </period>
+            <period name="MID_AUTUMN" >
+                <update startState="greenBeanHarvestReady" endState="greenBeanInvisible" />
+                <update startState="maizeHarvestReady" endState="maizeInvisible" />
+            </period>
+            <period name="LATE_AUTUMN" />
+            <period name="EARLY_WINTER" />
+            <period name="MID_WINTER" />
+            <period name="LATE_WINTER"/>
+        </seasonal>
+        <nonSeasonal>
+            <update startState="peaInvisible" endState="peaGreenMiddle" />
+            <update startState="peaGreenMiddle" endState="peaHarvestReady" />
+            <update startState="peaHarvestReady" endState="peaInvisible" />
+            <update startState="greenBeanInvisible" endState="greenBeanGreenMiddle" />
+            <update startState="greenBeanGreenMiddle" endState="greenBeanHarvestReady" />
+            <update startState="greenBeanHarvestReady" endState="greenBeanInvisible" />
+            <update startState="spinachInvisible" endState="spinachGreenMiddle" />
+            <update startState="spinachGreenMiddle" endState="spinachHarvestReady" />
+            <update startState="spinachHarvestReady" endState="spinachInvisible" />
+            <update startState="wheatInvisible" endState="wheatGreenMiddle" />
+            <update startState="wheatGreenMiddle" endState="wheatHarvestReady" />
+            <update startState="wheatHarvestReady" endState="wheatInvisible" />
+            <update startState="maizeInvisible" endState="maizeGreenMiddle" />
+            <update startState="maizeGreenMiddle" endState="maizeHarvestReady" />
+            <update startState="maizeHarvestReady" endState="maizeInvisible" />
+        </nonSeasonal>
+    </growth>
+</foliageType>

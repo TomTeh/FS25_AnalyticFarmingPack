@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <texts>
+        <!-- Placeable Objects and Shop Items -->
+        <text name="placeableObject_preplacedMapObject" text="Předem umístěný objekt mapy" />
+        <text name="placeableObject_cowBarnSmall" text="Kravský chlév" />
+        <text name="placeableObject_cowBarnSmallVector" text="Kravský chlév s krmícím automatem" />
+        <text name="placeableObject_cowBarnSmallNoPasture" text="Kravský chlév (bez pastvy)" />
+        <text name="placeableObject_cowBarnSmallNoPastureVector" text="Kravský chlév s krmícím automatem (bez pastvy)" />
+        <text name="placeableObject_cowBarnBig" text="Kravský chlév (velký)" />
+        <text name="placeableObject_cowBarnBigVector" text="Kravský chlév (velký) s krmícím automatem" />
+        <text name="placeableObject_cowBarnBigNoPasture" text="Kravský chlév (velký, bez pastvy)" />
+        <text name="placeableObject_cowBarnBigNoPastureVector" text="Kravský chlév (velký) s krmícím automatem (bez pastvy)" />
+        <text name="placeableObject_cow1" text="Kravský chlév 1 - Šterusy" />
+        <text name="placeableObject_cow2" text="Kravský chlév 2 - Šterusy" />
+        <text name="placeableObject_animalBarnHeiferStablePreplaced" text="Přístřešek pro jalovice - Šterusy" />
+        <text name="placeableObject_animalBarnCowYoungShelter" text="Přístřešek pro mladé krávy" />
+        <text name="placeableObject_animalBarnCowYoungShelterPreplaced" text="Přístřešek pro mladé krávy - Šterusy" />
+        <text name="placeableObject_calfHutSingle" text="Bouda pro telata - jednotlivec" />
+        <text name="placeableObject_calfHutGroupRight" text="Bouda pro telata - skupina (Orientována vpravo)" />
+        <text name="placeableObject_calfHutGroupLeft" text="Bouda pro telata - skupina (Orientována vlevo)" />
+        <text name="placeableObject_horse1" text="Koňská stáj - Šterusy" />
+        <text name="placeableObject_chicken1" text="Kurník - Lančár" />
+        <text name="placeableObject_pig1" text="Vepřín 1 - Šterusy" />
+        <text name="placeableObject_pig2" text="Vepřín 2 - Kočín" />
+        <text name="placeableObject_pig3" text="Vepřín 3 - Kočín" />
+        <text name="placeableObject_sheep1" text="Ovčí chlév - Lančár" />
+        <text name="placeableObject_coveredMultiBunkerSilo1" text="Krytá vícebunkrová silážní jáma 1" />
+        <text name="placeableObject_coveredMultiBunkerSilo2" text="Krytá vícebunkrová silážní jáma 2" />
+        <text name="placeableObject_bgaBunkerSilo" text="Silážní jáma bioplynové stanice" />
+        <text name="placeableObject_bunkerSilo" text="Silážní jáma" />
+        <text name="placeableObject_compostSilo" text="Kompostovací jáma" />
+        <text name="placeableObject_farmGatehouse" text="Vrátnice farmy" />
+        <text name="placeableObject_farmGatehouseWithWeight" text="Vrátnice Farmy s vážicí stanicí" />
+        <text name="placeableObject_farmOfficeBuilding" text="Kancelář farmy s ubytováním a dílnou" />
+        <text name="placeableObject_fuelTank" text="Nádrž na naftu" />
+        <text name="placeableObject_grainStorage" text="Sklad obilí a Šrotovačka" />
+        <text name="placeableObject_grainStoragePreplaced" text="Sklad obilí a Šrotovačka - Šterusy" />
+        <text name="placeableObject_liquidFertilizerAndHerbicideTanks" text="Nádrže na tekutá hnojiva a herbicidy" />
+        <text name="placeableObject_milkingParlor" text="Dojírna" />
+        <text name="placeableObject_easyShed01WithWalls" text="Přístřešek se zdmi" />
+        <text name="placeableObject_manureHeapMainFarm" text="Kopa mrvy - Šterusy" />
+        <text name="placeableObject_manureHeapPigFarm" text="Kopa mrvy - Kočín" />
+        <text name="placeableObject_manureHeapSheepFarm" text="Kopa mrvy - Lančár" />
+        <text name="placeableObject_manureStorageSpotLower" text="Místo pro skladování hnoje - spodní" />
+        <text name="placeableObject_manureStorageSpotUpper" text="Místo pro skladování hnoje - horní" />
+        <text name="placeableObject_manureHeapSmall" text="Kopa mrvy - malá" />
+        <text name="placeableObject_manureHeapSmallExtension" text="Kopa mrvy - malé rozšíření" />
+        <text name="placeableObject_manureHeapMedium" text="Kopa mrvy - střední" />
+        <text name="placeableObject_manureHeapMediumExtension" text="Kopa mrvy - střední rozšíření" />
+        <text name="placeableObject_manureHeapLarge" text="Kopa mrvy - velká" />
+        <text name="placeableObject_manureHeapLargeExtension" text="Kopa mrvy - velké rozšíření" />
+        <text name="placeableObject_repairRamp" text="Servisní rampa" />
+        <text name="placeableObject_siloPF" text="Obilné silo - Kočín" />
+        <text name="placeableObject_siloSF" text="Obilné silo - Lančár" />
+        <text name="placeableObject_baleShed" text="Přístřešek na balíky" />
+        <text name="placeableObject_consumablesStorage" text="Sklad spotřebních surovin" />
+        <text name="placeableObject_hall1" text="Přístřešek pro vozidla a sklad" />
+        <text name="placeableObject_hall2" text="Kompozice přístřešků pro vozidla a skladů" />
+        <text name="placeableObject_vehicleShelter1" text="Přístřešek pro vozidla - uzavřený" />
+        <text name="placeableObject_vehicleShelter2" text="Přístřešek pro vozidla - otevřený, velký" />
+        <text name="placeableObject_vehicleShelter3" text="Přístřešek pro vozidla - otevřený, malý" />
+        <text name="placeableObject_palletRack" text="Paletový regál" />
+        <text name="placeableObject_waterTower" text="Vodojem" />
+        <text name="placeableObject_calfArea" text="Budova ošetřovatele telat" />
+        <text name="placeableObject_animalPigFence" text="Ohrada pro prasata" />
+        <text name="placeableObject_animalSheepFence" text="Ohrada pro ovce" />
+        <text name="placeableObject_animalCowFence" text="Ohrada pro krávy" />
+        <text name="placeableObject_oldChainlinkFence" text="Starý drátěný plot" />
+        <text name="placeableObject_metalGridFence" text="Kovový mřížkový plot" />
+        <text name="placeableObject_metalGridFenceBase" text="Kovový mřížkový plot (se základem)" />
+        <text name="placeableObject_concreteFence" text="Betonový plot" />
+        <text name="placeableObject_chainlinkFenceBig" text="Drátěný plot velký" />
+        <text name="placeableObject_chainlinkFenceBigBase" text="Drátěný plot velký (se základem)" />
+        <text name="placeableObject_constructionFence" text="Stavební plot" />
+        <text name="placeableObject_metalGate" text="Kovová brána" />
+        <text name="placeableObject_metalGateDoorLeft" text="Kovová brána s malými dveřmi (vlevo)" />
+        <text name="placeableObject_metalGateDoorRight" text="Kovová brána s malými dveřmi (vpravo)" />
+        <text name="placeableObject_floodLightPole" text="Sloup s reflektory" />
+        <text name="placeableObject_streetLight" text="Pouliční osvětlení" />
+        <text name="placeableObject_streetLightSmall" text="Pouliční osvětlení malé" />
+        <text name="placeableObject_poleLamp" text="Sloupová lampa" />
+        <text name="placeableObject_sleepTrigger" text="Trigger na Spánek" />
+        <text name="placeableObject_sleepTriggerDoormat" text="Trigger na Spánek s rohožkou" />
+        <text name="placeableObject_wardrobeTrigger" text="Trigger Šatníku" />
+        <text name="shopItem_decoFoliageGrassMedium" text="Tráva střední" />
+        <text name="shopItem_decoFoliageGrassSmall" text="Tráva malá" />
+        <text name="shopItem_decoFoliageGrassCut" text="Tráva posekaná" />
+        <text name="shopItem_decoFoliageFlowerWhite" text="Bílý květ" />
+        <text name="shopItem_decoFoliageFlowerLavender" text="Levandule" />
+        <text name="shopItem_decoFoliageFlowerYellow" text="Žlutý květ" />
+        <text name="shopItem_decoFoliageFlowerBlue" text="Modrý květ" />
+        <text name="shopItem_decoFoliageWeedSmall" text="Plevel malá" />
+        <text name="shopItem_decoFoliageWeedSmallRumex" text="Plevel - Šťovík malý" />
+        <text name="shopItem_decoFoliageWeedApera" text="Plevel - Chundelka" />
+        <text name="shopItem_decoFoliageWeedChaerophyllum" text="Plevel - Krabilice mámivá" />
+        <text name="shopItem_decoFoliageWeedChenopodium" text="Plevel - Merlík" />
+        <text name="shopItem_decoFoliageWeedCirsium" text="Plevel - Pcháč" />
+        <text name="shopItem_decoFoliageWeedPapaverRhoeas" text="Plevel - Mák vlčí" />
+        <text name="shopItem_decoFoliageWeedRumex" text="Plevel - Šťovík" />
+        <text name="shopItem_groundFoliageBranchesBig" text="Velké větve" />
+        <text name="shopItem_groundFoliageBranchesSmall" text="Malé větve" />
+        <text name="shopItem_groundFoliageBranchesDry" text="Suché větve" />
+        <text name="shopItem_groundFoliageMushroomChanterelle" text="Kuriatko jedlé" />
+        <text name="shopItem_groundFoliageMushroomBoletus" text="Hřib smrkový" />
+        <text name="shopItem_groundFoliageMushroomWhiteTip" text="Muchomůrka pošvatá bílá" />
+        <text name="shopItem_groundFoliageMushroomFlyCap" text="Muchomůrka červená" />
+        <text name="shopItem_groundFoliageCoverFoliage" text="Krycí listí" />
+        <text name="shopItem_groundFoliageThimbleberry" text="Ostružiník" />
+        <text name="shopItem_groundFoliageMaidenFern" text="Panenská kapradina" />
+        <text name="shopItem_groundFoliageStingingNettle" text="Kopřiva dvoudomá" />
+        <text name="shopItem_forestPlantsClover" text="Jetel" />
+        <text name="shopItem_forestPlantsStarflower" text="Sedmikvítek" />
+        <text name="shopItem_forestPlantsBunchberry" text="Drieň kanadský" />
+        <text name="shopItem_forestPlantsSalmonberryBush" text="Maliník lososový" />
+        <text name="shopItem_forestPlantsStarryFalseSolomonSeal" text="Pstroček hvězdnatý" />
+        <text name="shopItem_forestPlantsSwordFern" text="Mečová kapradina" />
+        <text name="shopItem_forestPlantsDeerFern" text="Jelení kapradina" />
+        <text name="shopItem_forestPlantsGrass" text="Lesní tráva" />
+        <text name="shopItem_waterPlantsTyphaLatifoliaSmall" text="Orobinec širokolistý (malý)" />
+        <text name="shopItem_waterPlantsTyphaLatifoliaMedium" text="Orobinec širokolistý (střední)" />
+        <text name="shopItem_waterPlantsTyphaLatifoliaLarge" text="Orobinec širokolistý (velký)" />
+        <text name="shopItem_waterPlantsMiscanthusSinensisSmall" text="Miscanthus čínský (malý)" />
+        <text name="shopItem_waterPlantsMiscanthusSinensisMedium" text="Miscanthus čínský (střední)" />
+        <text name="shopItem_waterPlantsMiscanthusSinensisLarge" text="Miscanthus čínský (velký)" />
+        <text name="shopItem_waterPlantsStipaTenuissimaSmall" text="Velmi tenký kavyl (střední)" />
+        <text name="shopItem_waterPlantsStipaTenuissimaLarge" text="Velmi tenký kavyl (velký)" />
+        <text name="shopItem_paintableFieldPlowed" text="Orané Pole" />
+        <text name="shopItem_paintableFieldCultivated" text="Kultivované Pole" />
+        <text name="shopItem_paintableFieldRidged" text="Brázdy" />
+
+        <!-- Function Texts -->
+        <text name="function_roofSolarPanelsOption" text="Tato budova má možnost přidat na střechu solární panely. Cena za panel: 265 €. Příjem na panel za měsíc: 21,6 € (při odpovídajících povětrnostních podmínkách)." />
+        <text name="function_heiferStable" text="Tento přístřešek je určen pro jalovice. Tady mohou vyrůst a poté by měly být přesunuty do jiné stáje. Krávy v tomto přístřešku neprodukují mléko a kejdu, ale pouze hnůj." />
+        <text name="function_cowYoungShelter" text="Tento přístřešek je určen pro telata nebo jalovice. Tady mohou vyrůst a poté by měly být přesunuty do jiné stáje. Krávy v tomto přístřešku neprodukují mléko a kejdu, ale pouze hnůj." />
+        <text name="function_calfHut" text="Tato bouda je určena pouze pro telata. Zde mohou vyrůst a pak se musí přesunout do jiné stáje. Krávy v tomto výběhu neprodukují mléko a kejdu, ale pouze hnůj a vyžadují mnoho ruční každodenní péče!" />
+        <text name="function_bunkerSiloCC" text="Tuto silážní jámu lze plnit řezankou, trávou, vojtěškou a jetelem. Po zhutnění a zakrytí sila se obsah přemění na siláž. POZNÁMKA: Pokud používáte Maize Plus mod, změní se funkčnost tohoto sila na standardy M+." />
+        <text name="function_grainStorage" text="Toto víceúčelové zařízení má velkou skladovací halu, která vám umožňuje skladovat plodiny na zemi nebo před jejich zpracováním, dostatek místa i pro vozidla. Šrotovačka vyrábí krmivo pro vaše zvířata. Obilí lze skladovat i ve velkokapacitních silech." />
+        <text name="function_fillableLiquidFertilizerAndHerbicideTanks" text="Tyto nádrže lze plnit tekutým hnojivem a herbicidem." />
+        <text name="function_baleStorageCC" text="Tuto budovu lze použít k uskladnění balíků." />
+        <text name="function_palletStorage" text="Tuto budovu lze použít k uskladnění palet." />
+        <text name="function_orchard" text="Sad produkuje ovoce. Potřebujete vodu, tekuté hnojivo a kompost." />
+        <text name="function_greenhouseAdvanced" text="Pokročilé skleníky produkují zeleninu rychleji, ale vyžadují více péče - Potřeba: Voda, tekuté hnojivo a kompost." />
+        <text name="function_compost" text="Kompost je vyžadován v sadech a sklenících. Lze použít i jako hnojivo na poli." />
+        <text name="function_compostSilo" text="Kompostovací Jámu lze naplnit organickým odpadem. Po zhutnění a zakrytí sila se obsah mění na kompost." />
+        <text name="function_heapSpawnerStoneCC" text="V této budově si můžete vyzvednout kameny zdarma. Produkuje 3000 jednotek kamene za hodinu."/>
+        <text name="function_heapSpawnerLimestone" text="V této budově si můžete vyzvednout vápenec zdarma. Produkuje 2800 jednotek vápence za hodinu."/>
+        <text name="function_heapSpawnerClay" text="V této budově si můžete vyzvednout jíl zdarma. Produkuje 1600 jednotek jílu za hodinu."/>
+        <text name="function_heapSpawnerIronOre" text="V této budově si můžete vyzvednout železnou rudu zdarma. Produkuje 800 jednotek železné rudy za hodinu."/>
+        <text name="function_rentalHouse" text="Tento dům je určen k pronájmu a generuje zisk:"/>
+        <text name="function_rentalHouse01Income" text="2,500 € za měsíc"/>
+        <text name="function_rentalHouse02Income" text="3,000 € za měsíc"/>
+        <text name="function_rentalHouse03Income" text="2,000 € za měsíc"/>
+        <text name="function_chainlinkFenceBigGatePlacement" text="POZNÁMKA K UMÍSTĚNÍ: Ujistěte se, že je brána umístěna rovnoběžně s plotem a na rovném terénu pro správnou estetiku." />
+        <text name="function_decorativeGrass" text="Tato tráva neroste! Zůstává v současném stádiu – slouží jako okrasná tráva." />
+        <text name="function_decorativeGardenCrops" text="Toto je dekorativní zahradní plodina, není funkční. Mění vzhled v závislosti na ročním období nebo mizí v určitých obdobích, například v zimě. (V závislosti na tom, kdy byla rostlina namalována, může sezónní růst začít až příští rok. Záleží také na tom, zda sezónní růst používáte, či nikoli. Pokud je sezónní růst vypnutý, mění vzhled každý herní den.)" />
+        <text name="function_paintableField" text="Vytváří půdu pro pěstování plodin." />
+
+        <!-- Fill Types -->
+        <text name="fillType_decoGardenFoliage" text="Dekorativní zahradní plodiny" />
+        <text name="fillType_rye" text="Žito" />
+        <text name="fillType_mustard" text="Hořčice" />
+        <text name="fillType_mowedCrop" text="Posekaná plodina" />
+        <text name="fillType_alfalfa" text="Vojtěška" />
+        <text name="fillType_alfalfaHay" text="Vojtěškové seno" />
+        <text name="fillType_alfalfaSilo" text="Vojtěška na siláž" />
+        <text name="fillType_alfalfaSilage" text="Vojtěšková siláž" />
+        <text name="fillType_clover" text="Jetel" />
+        <text name="fillType_cloverHay" text="Jetelové seno" />
+        <text name="fillType_cloverSilo" text="Jetel na siláž" />
+        <text name="fillType_cloverSilage" text="Jetelová siláž" />
+        <text name="fillType_mustardProcessed" text="Hořčice (zpracována)" />
+        <text name="fillType_apple" text="Jablka" />
+        <text name="fillType_pear" text="Hrušky" />
+        <text name="fillType_apricot" text="Meruňky" />
+        <text name="fillType_plum" text="Švestky" />
+        <text name="fillType_greenPepper" text="Paprika zelená" />
+        <text name="fillType_cucumber" text="Okurky" />
+        <text name="fillType_watermelon" text="Vodní meloun" />
+        <text name="fillType_appleJuice" text="Jablečný džus" />
+        <text name="fillType_apricotJam" text="Meruňková povidla" />
+        <text name="fillType_plumJam" text="Švestková povidla" />
+        <text name="fillType_ketchup" text="Kečup" />
+        <text name="fillType_strawberryJuice" text="Jahodový džus" />
+        <text name="fillType_pickles" text="Kyselé okurky" />
+        <text name="fillType_organicWaste" text="Organický odpad" />
+        <text name="fillType_compost" text="Kompost" />
+        <text name="fillType_leather" text="Kůže" />
+        <text name="fillType_clayBrick" text="Pálená cihla" />
+        <text name="fillType_clayRoofPlate" text="Pálená střešní krytina" />
+        <text name="fillType_chipwoodBoards" text="Dřevotřískové desky" />
+        <text name="fillType_blastFurnaceSlag" text="Struska z vysoké pece" />
+        <text name="fillType_limestone" text="Vápenec" />
+        <text name="fillType_clay" text="Jíl" />
+        <text name="fillType_sand" text="Písek" />
+        <text name="fillType_gravel" text="Štěrk" />
+        <text name="fillTypeGroup_alfClo" text="Vojtěška / Jetel" />
+
+        <!-- Production Points -->
+        <text name="productionPoint_appleOrchard" text="Jablečný sad" />
+        <text name="productionPoint_pearOrchard" text="Hruškový sad" />
+        <text name="productionPoint_apricotOrchard" text="Meruňkový sad" />
+        <text name="productionPoint_plumOrchard" text="Švestkový sad" />
+        <text name="productionPoint_greenhouseSmallAdvanced" text="Malý skleník - Pokročilý" />
+        <text name="productionPoint_greenhouseSmallAdvanced_watermelon" text="Malý skleník - Pokročilý (vodní meloun)" />
+        <text name="productionPoint_greenhouseMediumAdvanced" text="Střední skleník - Pokročilý" />
+        <text name="productionPoint_greenhouseMediumAdvanced_watermelon" text="Střední skleník - Pokročilý (vodní meloun)" />
+        <text name="productionPoint_greenhouseLargeAdvanced" text="Velký skleník - Pokročilý" />
+        <text name="productionPoint_greenhouseLargeAdvanced_watermelon" text="Velký skleník - Pokročilý (vodní meloun)" />
+        <text name="productionPoint_fruitVegetableFactory" text="Závod na zpracování ovoce a zeleniny" />
+        <text name="productionPoint_foodProcessingPlant" text="Závod na zpracování potravin" />
+        <text name="productionPoint_sawMill" text="Pila" />
+        <text name="productionPoint_fishFarmPond" text="Rybník" />
+        <text name="productionPoint_woodArtist" text="Dřevařský umělec" />
+        <text name="productionPoint_woodArtist_playgroundMaker" text="Dřevařský umělec - výroba hřišť" />
+        <text name="productionPoint_quarryStone" text="Kamenný lom" />
+        <text name="productionPoint_quarryLimestone" text="Vápencový lom" />
+        <text name="productionPoint_quarryClay" text="Hliniště" />
+        <text name="productionPoint_stoneCrusher" text="Drtič kamene" />
+        <text name="productionPoint_limestoneCrusher" text="Drtič vápence" />
+        <!-- ProductionPoints - texts -->
+        <text name="productionPoint_grainShredder_pigFood1" text="Prasečí krmivo (recept 1)" />
+        <text name="productionPoint_grainShredder_pigFood2" text="Prasečí krmivo (recept 2)" />
+        <text name="productionPoint_fillType_friedOnion" text="Smažená cibulka" />
+        <text name="productionPoint_fillType_onionBag" text="Cibule (balená)" />
+        <text name="productionPoint_fillType_onionSalt" text="Cibulová sůl" />
+        <text name="productionPoint_fillType_onionSoup" text="Cibulačka" />
+        <text name="productionPoint_fillType_fishFood" text="Krmivo pro ryby" />
+        <text name="productionPoint_fillType_trout" text="Pstruh" />
+        <text name="productionPoint_fillType_troutYoung" text="Mladý pstruh" />
+
+        <!-- Production Point Pallets -->
+        <text name="pallet_applesBoxPallet" text="Paleta Jablek" />
+        <text name="pallet_pearsBoxPallet" text="Paleta Hrušek" />
+        <text name="pallet_apricotsBoxPallet" text="Paleta Meruněk" />
+        <text name="pallet_plumsBoxPallet" text="Paleta Švestek" />
+        <text name="pallet_greenPepperBoxPallet" text="Paleta Papriky zelené" />
+        <text name="pallet_cucumbersBoxPallet" text="Paleta Okurek" />
+        <text name="pallet_onionsBoxPallet" text="Paleta Cibule" />
+        <text name="pallet_watermelonBoxPallet" text="Paleta Vodních melounů" />
+        <text name="pallet_appleJuiceBoxPallet" text="Paleta Jablečného džusu" />
+        <text name="pallet_apricotJamBoxPallet" text="Paleta s Meruňkových povidel" />
+        <text name="pallet_plumJamBoxPallet" text="paleta Švestkových povidel" />
+        <text name="pallet_ketchupBoxPallet" text="Paleta kečupu" />
+        <text name="pallet_strawberryJuiceBoxPallet" text="Paleta Jahodového džusu" />
+        <text name="pallet_picklesBoxPallet" text="Paleta Nakládaných okurek" />
+        <text name="pallet_leathersPallet" text="Paleta Kůže" />
+        <text name="pallet_clayBricksPallet" text="Paleta pálených cihel" />
+        <text name="pallet_clayRoofPlatesPallet" text="Paleta pálené střešní krytiny" />
+        <text name="pallet_chipwoodBoardsStackPallet" text="Paleta Dřevotřískových desek" />
+
+        <!-- Constructibles -->
+        <text name="constructable_rentalHouse01" text="Nájemní dům 1" />
+        <text name="constructable_rentalHouse02" text="Nájemní dům 2" />
+        <text name="constructable_rentalHouse03" text="Nájemní dům 3" />
+        <text name="constructable_residentialBuilding01Preplaced01" text="Výstavba rodinného domu - Lančár" />
+        <text name="constructable_residentialBuilding02Preplaced01" text="Výstavba rodinného domu - Šterusy" />
+        <text name="constructable_residentialBuilding02Preplaced02" text="Výstavba rodinného domu - Kočín" />
+
+        <!-- Selling Stations -->
+        <text name="sellingStation_vehicleShop" text="Servis a prodej vozidel Luca Motors" />
+        <text name="sellingStation_constructionMaterialTrader" text="Obchodník se stavebními materiály" />
+        <text name="sellingStation_containerTrader" text="Obchodník s kontejnery" />
+        <text name="sellingStation_smallFarmer" text="Kateřinina Farma" />
+        <text name="sellingStation_trainOtherTownSK" text="Žilina" />
+        <text name="sellingStation_railroadSiloBulk" text="Železniční silo - velkoobjemový materiál" />
+        <text name="sellingStation_railroadSiloGrain" text="Železniční silo - obilí" />
+        <text name="openingHours_4-0" text="Otevírací doba je: 4:00 - 0:00." />
+        <text name="openingHours_5-23" text="Otevírací doba je: 5:00 - 23:00." />
+        <text name="openingHours_6-18" text="Otevírací doba je: 6:00 - 18:00." />
+        <text name="openingHours_6-22" text="Otevírací doba je: 6:00 - 22:00." />
+        <text name="openingHours_6-0" text="Otevírací doba je: 6:00 - 0:00." />
+
+        <!-- Buying Stations -->
+        <text name="buyingStation_farmSupplies" text="Obchodník s farmářskými potřebami" />
+        <text name="buyingStation_creekWater" text="Voda z potoka" />
+        <text name="buyingStation_smallGasStation" text="Malá čerpací stanice" />
+        <text name="buyingStation_horseRanch" text="Ranč" />
+        <text name="buyingStation_chargingStationBiogasplant" text="Elektrická nabíjecí stanice - Bioplynová stanice" />
+        <text name="buyingStation_biogasStationBiogasplant" text="Biometanová stanice - Bioplynová stanice" />
+        <text name="buyingStation_chargingStation01GasStation01" text="Elektrická nabíjecí stanice - Čerpací stanice" />
+        <text name="buyingStation_chargingStation02GasStation02" text="Elektrická nabíjecí stanice - Malá čerpací stanice" />
+        <text name="buyingStation_biogasStation01GasStation01" text="Biometanová stanice - Čerpací stanice" />
+
+        <!-- Income Buildings -->
+        <text name="incomeBuilding_horseRanch" text="Ranč" />
+        <text name="incomeBuilding_pharmacy" text="Lékárna" />
+        <text name="incomeBuilding_restaurantSterusy" text="Restaurace Svatý Petr" />
+        <text name="incomeBuilding_restaurantLancar" text="Pizzerie Hladová Kamna" />
+        <text name="incomeBuilding_pubKocin" text="Hospoda u Kočičáka" />
+        <text name="incomeBuilding_footballFieldSterusy" text="Fotbalové hřiště Šterusy" />
+        <text name="incomeBuilding_footballFieldKocín" text="Fotbalové hřiště Kočín" />
+
+        <!-- Animations -->
+        <text name="action_hideRoof" text="Skrýt střechu" />
+        <text name="action_unhideRoof" text="Odkrýt střechu" />
+        <text name="action_openInspectionPit" text="Odkrýt inspekční jámu" />
+        <text name="action_closeInspectionPit" text="Zakrýt inspekční jámu" />
+        <text name="action_disableElectricityPoleCols" text="Zakázat kolize nízkonapěťových elektrických sloupů v polích" />
+        <text name="action_enableElectricityPoleCols" text="Povolit kolize nízkonapěťových elektrických sloupů v polích" />
+        <text name="action_configureObjectStorageOff" text="Zakázat automatické ukládání objektů. VAROVÁNÍ: před přepnutím režimu vyprázdněte sklad" />
+        <text name="action_configureObjectStorageOn" text="Povolit automatické skladování objektů. VAROVÁNÍ: před přepnutím režimu vyprázdněte sklad" />
+        <text name="action_heiferStableAddPoles" text="Přidat střešní sloupky. POZNÁMKA: Použijte v případě, že jste prodali silážní jámu, ke které je tento přístřešek připojen." />
+        <text name="action_heiferStableRemovePoles" text="Odstranit střešní sloupky. POZNÁMKA: Použijte, pokud je stále přítomna silážní jáma, ke které je tento přístřešek připojen." />
+        <text name="action_moveFenceClean" text="Přesunout plot do polohy čištění" />
+        <text name="action_moveFenceBack" text="Přesunout plot zpět do normální polohy" />
+        <text name="action_ladderUp" text="Žebřík: nahoru" />
+        <text name="action_ladderDown" text="Žebřík: dolů" />
+
+        <!-- Colors -->
+        <text name="color_buildingSpecificDefault" text="LIZARD Výchozí barva konkrétní budovy" />
+        <text name="color_lizardRed" text="LIZARD Červená" />
+        <text name="color_lizardDarkRed" text="LIZARD Tmavě červená" />
+        <text name="color_lizardOrange" text="LIZARD Oranžová" />
+        <text name="color_lizardBrown" text="LIZARD Hnědá" />
+        <text name="color_lizardYellow" text="LIZARD Žlutá" />
+        <text name="color_lizardBrightYellow" text="LIZARD Světle žlutá" />
+        <text name="color_lizardLimeGreen" text="LIZARD Limetkově zelená" />
+        <text name="color_lizardFarmBrightGreen" text="LIZARD Farma světle zelená" />
+        <text name="color_lizardBrightGreen" text="LIZARD Světle zelené" />
+        <text name="color_lizardGreen" text="LIZARD Zelená" />
+        <text name="color_lizardFarmGreen" text="LIZARD Farma zelená" />
+        <text name="color_lizardDarkGreen" text="LIZARD Tmavě zelená" />
+        <text name="color_lizardTurquoise" text="LIZARD Tyrkysová" />
+        <text name="color_lizardSkyBlue" text="LIZARD Nebesky modrá" />
+        <text name="color_lizardLizardBrightBlue" text="LIZARD Jasně modrá" />
+        <text name="color_lizardBlue" text="LIZARD Modrá" />
+        <text name="color_lizardOceanBlue" text="LIZARD Oceánská modrá" />
+        <text name="color_lizardDarkBlue" text="LIZARD Tmavě modrá" />
+        <text name="color_lizardPurple" text="LIZARD Fialová" />
+        <text name="color_lizardBrightPurple" text="LIZARD Světle fialová" />
+        <text name="color_lizardPink" text="LIZARD Růžová" />
+        <text name="color_lizardBrightPink" text="LIZARD Světle růžová" />
+
+        <!-- AI Helpers -->
+        <text name="aiHelperNameA" text="Lukáš" />
+        <text name="aiHelperNameB" text="Dominika" />
+        <text name="aiHelperNameC" text="Martin" />
+        <text name="aiHelperNameD" text="Sofia" />
+        <text name="aiHelperNameE" text="Stanislav" />
+        <text name="aiHelperNameF" text="Ema" />
+        <text name="aiHelperNameG" text="Patrik" />
+        <text name="aiHelperNameH" text="Laura" />
+        <text name="aiHelperNameI" text="David" />
+        <text name="aiHelperNameJ" text="Katarína" />
+
+        <!-- Ground Types -->
+        <text name="groundType_asphaltDusty" text="Prašný asfalt"/>
+        <text name="groundType_asphaltCracks" text="Popraskaný asfalt"/>
+        <text name="groundType_asphaltCracksDirt" text="Špinavý popraskaný asfalt"/>
+        <text name="groundType_asphaltDirt" text="Špinavý asfalt"/>
+        <text name="groundType_concreteDark" text="Tmavý beton"/>
+        <text name="groundType_concreteDirty" text="Špinavý beton"/>
+        <text name="groundType_panel" text="Panel"/>
+        <text name="groundType_panelDamaged" text="Poškozený panel"/>
+        <text name="groundType_panelDirt" text="Špinavý panel"/>
+        <text name="groundType_pavement" text="Dlažba"/>
+        <text name="groundType_pavementHTiles" text="Dlažba - tvar H"/>
+        <text name="groundType_pavementGrass" text="Zatravňovací dlažba"/>
+        <text name="groundType_vehicleMud" text="Stopy pneumatik v bahně"/>
+        <text name="groundType_vehicleMudPuddle" text="Stopy pneumatik v bahně s kalužemi"/>
+        <text name="groundType_mud" text="Bláto"/>
+        <text name="groundType_riverBed" text="Koryto řeky"/>
+        <text name="groundType_grassTown" text="Trávník"/>
+        <text name="groundType_grassLeaves" text="Tráva s listy"/>
+        <text name="groundType_gravelPathway" text="Štěrková cesta"/>
+        <text name="groundType_gravelDirt" text="Štěrkovitá hlína"/>
+        <text name="groundType_gravelDirtBlend" text="Špinavý štěrk"/>
+        <text name="groundType_gravelMoss" text="Mechový štěrk"/>
+        <text name="groundType_forestNeedels" text="Lesní půda s jehličím"/>
+        <text name="groundType_forestRoots" text="Lesní půda s kořeny"/>
+        <text name="groundType_rockLight" text="Světlá skála"/>
+        <text name="groundType_rockDark" text="Tmavá skála"/>
+
+        <!-- Collectibles -->
+        <text name="collectible_cc_all_cow" text="Podařilo se ti najít všech 10 krav! Běž se podívat do svého pokoje v kancelářské budově farmy, něco se změnilo!" />
+        <text name="collectible_cc_all_harvester" text="Podařilo se ti najít všech 10 harvestorů! Běž se podívat do svého pokoje v kancelářské budově farmy, něco se změnilo!" />
+        <text name="collectible_cc_all_horse" text="Podařilo se ti najít všech 10 koní! Běž se podívat do svého pokoje v kancelářské budově farmy, něco se změnilo!" />
+        <text name="collectible_cc_all_pig" text="Podařilo se ti najít všech 10 prasat! Běž se podívat do svého pokoje v kancelářské budově farmy, něco se změnilo!" />
+        <text name="collectible_cc_all_plow" text="Podařilo se ti najít všech 10 pluhů! Běž se podívat do svého pokoje v kancelářské budově farmy, něco se změnilo!" />
+        <text name="collectible_cc_all_seeder" text="Podařilo se ti najít všech 10 secích strojů! Běž se podívat do svého pokoje v kancelářské budově farmy, něco se změnilo!" />
+        <text name="collectible_cc_all_sheep" text="Podařilo se ti najít všech 10 ovcí! Běž se podívat do svého pokoje v kancelářské budově farmy, něco se změnilo!" />
+        <text name="collectible_cc_all_tractor" text="Podařilo se ti najít všech 10 secích traktorů! Běž se podívat do svého pokoje v kancelářské budově farmy, něco se změnilo!" />
+        <text name="collectible_cc_all_trailer" text="Podařilo se ti najít všech 10 vleček! Běž se podívat do svého pokoje v kancelářské budově farmy, něco se změnilo!" />
+        <text name="collectible_cc_all_waterTrailer" text="Podařilo se ti najít všech 10 cisteren na vodu! Běž se podívat do svého pokoje v kancelářské budově farmy, něco se změnilo!" />
+    </texts>
+    <elements>
+        <e k="collectible_cc_cow" v="Našel jsi krávu! Zbývá najít ještě krav: %d" tag="format"/>
+        <e k="collectible_cc_harvester" v="Našel jsi harvestor! Zbývá najít ještě harvestorů: %d" tag="format"/>
+        <e k="collectible_cc_horse" v="Našel jsi koně! Zbývá najít ještě koní: %d" tag="format"/>
+        <e k="collectible_cc_pig" v="Našel jsi prase! Zbývá najít ještě prasat: %d" tag="format"/>
+        <e k="collectible_cc_plow" v="Nacházíš pluh! Zbývá najít ještě pluhů: %d" tag="format"/>
+        <e k="collectible_cc_seeder" v="Našel jsi secí stroj! Zbývá najít ještě secích strojů: %d" tag="format"/>
+        <e k="collectible_cc_sheep" v="Našel jsi secí ovci! Zbývá najít ještě ovcí: %d" tag="format"/>
+        <e k="collectible_cc_tractor" v="Našel jsi traktor! Zbývá najít ještě traktorů: %d" tag="format"/>
+        <e k="collectible_cc_trailer" v="Našel jsi vlečku! Zbývá najít ještě vleček: %d" tag="format"/>
+        <e k="collectible_cc_waterTrailer" v="Našel jsi cisternu na vodu! Zbývá najít ještě cisteren na vodu: %d" tag="format"/>
+    </elements>
+</l10n>

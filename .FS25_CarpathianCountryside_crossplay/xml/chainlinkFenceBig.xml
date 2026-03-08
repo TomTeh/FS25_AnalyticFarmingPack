@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="newFence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_placeableObject_chainlinkFenceBig</name>
+        <functions>
+            <function>$l10n_function_decoration</function>
+            <function>$l10n_function_chainlinkFenceBigGatePlacement</function>
+        </functions>
+        <image>placeables/fences/store_chainlinkFenceBig.png</image>
+        <price>175</price>
+        <dailyUpkeep>0</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>LIZARDBUILDING</brand>
+        <species>PLACEABLE</species>
+        <category>fences</category>
+        <canBeSold>true</canBeSold>
+        <showInStore>true</showInStore>
+
+        <brush>
+            <type>newFence</type>
+            <category>decoration</category>
+            <tab>newFences</tab>
+        </brush>
+
+        <storeIconRendering>
+            <settings centerIcon="true"/>
+            <objectBundle>
+                <object filename="placeables/fences/chainlinkFenceBig.i3d">
+                    <!-- poles -->
+                    <node node="2|0" translation="0 0 0" rotation="0 90 0" scale="1 1 1"/>
+                    <node node="2|0" translation="6 0 0" rotation="0 90 0" scale="1 1 1"/>
+                    <node node="2|0" translation="12 0 0" rotation="0 90 0" scale="1 1 1"/>
+
+                    <!-- panels -->
+                    <node node="3|0" translation="0 0 0" rotation="0 90 0" scale="1 1 1"/>
+                    <node node="3|0" translation="6 0 0" rotation="0 90 0" scale="1 1 1"/>
+                </object>
+            </objectBundle>
+        </storeIconRendering>
+        <vertexBufferMemoryUsage>28928</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>7936</indexBufferMemoryUsage>
+        <textureMemoryUsage>2490368</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>placeables/fences/chainlinkFenceBig.i3d</filename>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <sounds>
+            <place template="fenceMetalImp" />
+            <destroy template="destroyFence" />
+        </sounds>
+    </placement>
+
+    <fence>
+        <segment id="SEGMENT" class="FenceSegment" maxVerticalAngle="45">
+            <poles>
+                <pole node="pole01" radius="0.0"/>
+            </poles>
+            <panels maxScale="1.5">
+                <panel node="panel01" length="6" />
+            </panels>
+        </segment>
+        <segment id="GATE6m" class="FenceGate" maxVerticalAngle="45">
+            <gate node="gate6m" length="6">
+                <animatedObject saveId="chainlinkFenceBig_gate6m" useAIBlockingRegion="true" >
+                    <animation duration="3">
+                        <part node="gate6mOpenA">
+                            <keyFrame time="0.0" translation="0.22 0 0"/>
+                            <keyFrame time="1.0" translation="0.22 0 6"/>
+                        </part>
+                    </animation>
+                    <controls triggerNode="gate6mTrigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+                    <sounds>
+                        <moving linkNode="gate6mSoundNode" file="sounds/placeables/gates/chainLinkFence.wav" loops="0" innerRadius="5" outerRadius="18" fadeOut="0.1" >
+                            <randomization minVolume="-0.1" maxVolume="0.1" minPitch="-0.1" maxPitch="0.1" isInside="true" isOutside="true" />
+                            <volume indoor="2.8" outdoor="2.8" />
+                        </moving>
+                        <posEnd linkNode="gate6mSoundNode" file="sounds/placeables/gates/chainLinkFence_closed.wav" innerRadius="5" outerRadius="18" >
+                            <randomization minVolume="-0.1" maxVolume="0.1" minPitch="-0.1" maxPitch="0.1" isInside="true" isOutside="true" />
+                            <volume indoor="2.8" outdoor="2.8" />
+                        </posEnd>
+                        <negEnd linkNode="gate6mSoundNode" file="sounds/placeables/gates/chainLinkFence_closed.wav" innerRadius="5" outerRadius="18" >
+                            <randomization minVolume="-0.1" maxVolume="0.1" minPitch="-0.1" maxPitch="0.1" isInside="true" isOutside="true" />
+                            <volume indoor="2.8" outdoor="2.8" />
+                        </negEnd>
+                    </sounds>
+                </animatedObject>
+            </gate>
+        </segment>
+        <segment id="GATE12m" class="FenceGate" maxVerticalAngle="45">
+            <gate node="gate12m" length="12">
+                <animatedObject saveId="chainlinkFenceBig_gate12m" useAIBlockingRegion="true" >
+                    <animation duration="5">
+                        <part node="gate12mOpenA">
+                            <keyFrame time="0.0" translation="0.22 0 0"/>
+                            <keyFrame time="1.0" translation="0.22 0 12"/>
+                        </part>
+                    </animation>
+                    <controls triggerNode="gate12mTrigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+                    <sounds>
+                        <moving linkNode="gate12mSoundNode" file="sounds/placeables/gates/chainLinkFence.wav" loops="0" innerRadius="5" outerRadius="18" fadeOut="0.1" >
+                            <randomization minVolume="-0.1" maxVolume="0.1" minPitch="-0.1" maxPitch="0.1" isInside="true" isOutside="true" />
+                            <volume indoor="2.8" outdoor="2.8" />
+                        </moving>
+                        <posEnd linkNode="gate12mSoundNode" file="sounds/placeables/gates/chainLinkFence_closed.wav" innerRadius="5" outerRadius="18" >
+                            <randomization minVolume="-0.1" maxVolume="0.1" minPitch="-0.1" maxPitch="0.1" isInside="true" isOutside="true" />
+                            <volume indoor="2.8" outdoor="2.8" />
+                        </posEnd>
+                        <negEnd linkNode="gate12mSoundNode" file="sounds/placeables/gates/chainLinkFence_closed.wav" innerRadius="5" outerRadius="18" >
+                            <randomization minVolume="-0.1" maxVolume="0.1" minPitch="-0.1" maxPitch="0.1" isInside="true" isOutside="true" />
+                            <volume indoor="2.8" outdoor="2.8" />
+                        </negEnd>
+                    </sounds>
+                </animatedObject>
+            </gate>
+        </segment>
+    </fence>
+
+    <i3dMappings>
+        <i3dMapping id="pole01" node="0>0" />
+        <i3dMapping id="panel01" node="1>0" />
+        <i3dMapping id="gate6m" node="4>0" />
+        <i3dMapping id="gate6mOpenA" node="4>0|2" />
+        <i3dMapping id="gate6mTrigger" node="4>0|3" />
+        <i3dMapping id="gate6mSoundNode" node="4>0|4" />
+        <i3dMapping id="gate12m" node="4>1" />
+        <i3dMapping id="gate12mOpenA" node="4>1|2" />
+        <i3dMapping id="gate12mTrigger" node="4>1|3" />
+        <i3dMapping id="gate12mSoundNode" node="4>1|4" />
+    </i3dMappings>
+</placeable>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="weighingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_storeItem_weighingStationSmall</name>
+        <functions>
+            <function>$l10n_function_weighingstation</function>
+        </functions>
+        <image>placeables/weighingStation/store_weighingStation02.png</image>
+        <price>15000</price>
+        <dailyUpkeep>5</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>silos</category>
+        <brush>
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>tools</tab>
+        </brush>
+
+        <storeIconRendering>
+            <settings cameraXRot="-20" cameraYRot="205" advancedBoundingBox="true"/>
+        </storeIconRendering>
+        <vertexBufferMemoryUsage>6912</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>2048</indexBufferMemoryUsage>
+        <textureMemoryUsage>1638400</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>placeables/weighingStation/weighingStation02.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testAreaStart1" endNode="testAreaEnd1" />
+        </testAreas>
+
+        <sounds>
+            <place template="smallImp" />
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearLevelAreaStart1" widthNode="clearLevelAreaWidth1" heightNode="clearLevelAreaHeight1"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="5" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="clearLevelAreaStart1" widthNode="clearLevelAreaWidth1" heightNode="clearLevelAreaHeight1" groundType="asphalt"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas/>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStart1" endNode="tipOcclusionUpdateAreaEnd1" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateAreaStart1" endNode="tipOcclusionUpdateAreaEnd1" />
+        </updateAreas>
+    </ai>
+
+    <weighingStation triggerNode="weighingTrigger">
+        <display node="weightDisplayNodeMirrored" font="DIGIT" mask="00000000.0" alignment="RIGHT" size="0.13" emissiveScale="1" color="0.6 0 0" hiddenColor="0.05 0.05 0.05"/>
+    </weighingStation>
+
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart node="1" linkNode="weightDisplayObjectNodeMirrored" filename="placeables/sharedAssets/weighingStation.i3d" />
+    </dynamicallyLoadedParts>
+
+    <i3dMappings>
+        <i3dMapping id="weightDisplayObjectNode" node="0>1" />
+        <i3dMapping id="weightDisplayObjectNodeMirrored" node="0>2" />
+        <i3dMapping id="weighingTrigger" node="0>3" />
+        <i3dMapping id="weightDisplayNode" node="0>4" />
+        <i3dMapping id="weightDisplayNodeMirrored" node="0>5" />
+        <i3dMapping id="clearLevelAreaStart1" node="0>6|0" />
+        <i3dMapping id="clearLevelAreaWidth1" node="0>6|0|0" />
+        <i3dMapping id="clearLevelAreaHeight1" node="0>6|0|1" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart1" node="0>7|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd1" node="0>7|0|0" />
+        <i3dMapping id="testAreaStart1" node="0>8|0" />
+        <i3dMapping id="testAreaEnd1" node="0>8|0|0" />
+    </i3dMappings>
+</placeable>

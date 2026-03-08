@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="sellingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_shopItem_debrisCrusher</name>
+        <functions>
+            <function>$l10n_function_sellingPoint</function>
+        </functions>
+        <image>placeables/sellingStations/mapIcon_debrisCrusher01.png</image>
+        <price>1</price>
+        <dailyUpkeep>0</dailyUpkeep>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>PLACEABLE</species>
+        <category>sellingPoints</category>
+        <vertexBufferMemoryUsage>270080</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>56832</indexBufferMemoryUsage>
+        <textureMemoryUsage>1638400</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <deletedNodes>
+        <deletedNode node="unloadTriggerLowerAINode_rotated"/>
+        <deletedNode node="effectExhaust"/>
+    </deletedNodes>
+
+    <base>
+        <filename>$data/placeables/brandless/sellingStationGeneric/debrisCrusher/debrisCrusher.i3d</filename>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testAreaStart01" endNode="testAreaEnd01" />
+            <testArea startNode="testAreaStart02" endNode="testAreaEnd02" />
+        </testAreas>
+
+        <sounds>
+            <place template="smallImp" />
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearAreaStart01" widthNode="clearAreaWidth01" heightNode="clearAreaHeight01"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30" >
+        <levelAreas>
+            <levelArea startNode="levelAreaStart01" widthNode="levelAreaWidth01" heightNode="levelAreaHeight01" groundType="asphalt"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorAreaStart01" widthNode="indoorAreaWidth01" heightNode="indoorAreaHeight01" />
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
+        </updateAreas>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger"/>
+
+    <triggerMarkers>
+        <triggerMarker node="warningStripes01"/>
+        <triggerMarker node="unloadTriggerUpperMarker" filename="$data/shared/assets/marker/markerIconUnload.i3d" />
+        <triggerMarker node="unloadTriggerLowerMarker" filename="$data/shared/assets/marker/markerIconUnload.i3d" adjustToGround="true" />
+    </triggerMarkers>
+
+    <hotspots>
+        <hotspot type="UNLOADING" linkNode="unloadTriggerUpperMarker" teleportNode="teleportNode" />
+    </hotspots>
+
+    <sellingStation appearsOnStats="true" node="sellingStation" supportsExtension="false" >
+        <unloadTrigger exactFillRootNode="unloadTriggerUpper" fillTypes="STONE LIMESTONE" priceScale="2" />  <!-- give players a bonus for using upper trigger -->
+        <unloadTrigger exactFillRootNode="unloadTriggerLower" fillTypes="STONE LIMESTONE" />
+
+        <fillType name="STONE" priceScale="1" disablePriceDrop="false" />
+        <fillType name="LIMESTONE" priceScale="1" disablePriceDrop="false" />
+
+        <sounds>
+            <active template="debrisCrusherWork" linkNode="roll" />
+        </sounds>
+
+        <effectNodes>
+            <effectNode effectNode="effectSmoke" materialType="unloadingSmoke" />
+        </effectNodes>
+
+        <animationNodes>
+            <animationNode node="roll" rotSpeed="-40" rotAxis="1" />
+        </animationNodes>
+
+        <!-- <storage isExtension="false" fillLevelSyncThreshold="100"> -->
+            <!-- <capacity fillType="STONE" capacity="5000" /> -->
+
+            <!-- <dynamicFillPlane node="fillvolume" allSidePlanes="false" maxAllowedHeapAngle="10" maxDelta="0.3" defaultFillType="STONE" /> -->
+        <!-- </storage> -->
+    </sellingStation>
+
+    <i3dMappings>
+        <i3dMapping id="clearAreaStart01" node="0>0|0" />
+        <i3dMapping id="clearAreaWidth01" node="0>0|0|0" />
+        <i3dMapping id="clearAreaHeight01" node="0>0|0|1" />
+        <i3dMapping id="levelAreaStart01" node="0>1|0" />
+        <i3dMapping id="levelAreaWidth01" node="0>1|0|0" />
+        <i3dMapping id="levelAreaHeight01" node="0>1|0|1" />
+        <i3dMapping id="indoorAreaStart01" node="0>2|0" />
+        <i3dMapping id="indoorAreaWidth01" node="0>2|0|0" />
+        <i3dMapping id="indoorAreaHeight01" node="0>2|0|1" />
+        <i3dMapping id="testAreaStart01" node="0>3|0" />
+        <i3dMapping id="testAreaEnd01" node="0>3|0|0" />
+        <i3dMapping id="testAreaStart02" node="0>3|1" />
+        <i3dMapping id="testAreaEnd02" node="0>3|1|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart01" node="0>4|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd01" node="0>4|0|0" />
+        <i3dMapping id="infoTrigger" node="0>5" />
+        <i3dMapping id="warningStripes01" node="0>6|0" />
+        <i3dMapping id="unloadTriggerUpper" node="0>7|0" />
+        <i3dMapping id="unloadTriggerLower" node="0>7|1" />
+        <i3dMapping id="unloadTriggerLowerMarker" node="0>7|2" />
+        <i3dMapping id="unloadTriggerUpperMarker" node="0>7|3" />
+        <i3dMapping id="unloadTriggerLowerAINode" node="0>7|4" />
+        <i3dMapping id="unloadTriggerLowerAINode_rotated" node="0>7|5" />
+        <i3dMapping id="fillvolume" node="0>7|6" />
+        <i3dMapping id="effectSmoke" node="0>8|0" />
+        <i3dMapping id="effectExhaust" node="0>8|1" />
+        <i3dMapping id="roll" node="0>9|0|0|3" />
+        <i3dMapping id="teleportNode" node="0>9|1" />
+    </i3dMappings>
+</placeable>

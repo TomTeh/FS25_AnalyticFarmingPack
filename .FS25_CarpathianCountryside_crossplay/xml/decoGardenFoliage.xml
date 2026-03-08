@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<foliageType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/foliageType.xsd">
+    <fruitType name="decoGardenFoliage" shownOnMap="false" useForFieldMissions="false">
+        <mapColors default="1 0 0 1" colorBlind="1 0 0 1"/>
+        <harvest litersPerSqm="1.00"/>
+        <growth resetsSpray="false" growthRequiresLime="false"/>
+        <soil lowDensityRequired="false" increasesDensity="false" consumesLime="false" startSprayLevel="0"/>
+        <seeding directionSnapAngle="0" needsRolling="false" litersPerSqm="0.01" isAvailable="false" plantsWeed="false"/>
+        <cultivation isAllowed="true"/>
+        <mulcher chopperType="CHOPPER_STRAW"/>
+    </fruitType>
+
+    <foliageLayer densityMapChannelOffset="0" numDensityMapChannels="4" numBlocksPerUnit="2.5" shapeSource="decoGardenFoliage.i3d">
+        <foliageStateDefaults distanceMapLayer="0" width="1.0" height="1.0" widthVariance="0.25" heightVariance="0.25" horizontalPositionVariance="0.3" />
+
+        <!-- default LOD distances etc -->
+        <foliageLodDefaults lod="0" viewDistance="15" blendOutDistance="2" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1" />
+        <foliageLodDefaults lod="1" viewDistance="60" blendOutDistance="2" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1" />
+
+        <!-- tomatoes -->
+        <foliageState name="tomatoesInvisible"/>
+        <foliageState name="tomatoesGreenSmall" numBlocksPerUnit="1.3" width="1.3" height="1.3" widthVariance="0.5" heightVariance="0.5" horizontalPositionVariance="0.2">
+            <foliageShape>
+                <foliageLod blockShape="0>0|0" />
+                <foliageLod blockShape="0>1|0" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="tomatoesHarvestReady" numBlocksPerUnit="1.3" width="1.3" height="1.3" widthVariance="0.5" heightVariance="0.5" horizontalPositionVariance="0.2">
+            <foliageShape>
+                <foliageLod blockShape="0>0|1" />
+                <foliageLod blockShape="0>1|1" />
+            </foliageShape>
+        </foliageState>
+
+        <!-- strawberry -->
+        <foliageState name="strawberryInvisible"/>
+        <foliageState name="strawberryGreenSmall" numBlocksPerUnit="2.0" width="1.3" height="1.3" widthVariance="0.3" heightVariance="0.3" horizontalPositionVariance="0.15">
+            <foliageShape>
+                <foliageLod blockShape="1>0|0" />
+                <foliageLod blockShape="1>1|0" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="strawberryHarvestReady" numBlocksPerUnit="2.0" width="1.3" height="1.3" widthVariance="0.3" heightVariance="0.3" horizontalPositionVariance="0.15">
+            <foliageShape>
+                <foliageLod blockShape="1>0|1" />
+                <foliageLod blockShape="1>1|1" />
+            </foliageShape>
+        </foliageState>
+
+        <!-- lettuce -->
+        <foliageState name="lettuceInvisible"/>
+        <foliageState name="lettuceGreenSmall" numBlocksPerUnit="2.0" width="1.1" height="1.1" widthVariance="0.5" heightVariance="0.5" horizontalPositionVariance="0.15">
+            <foliageShape>
+                <foliageLod blockShape="2>0|0" />
+                <foliageLod blockShape="2>1|0" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="lettuceHarvestReady" numBlocksPerUnit="2.0" width="1.3" height="1.3" widthVariance="0.5" heightVariance="0.5" horizontalPositionVariance="0.15">
+            <foliageShape>
+                <foliageLod blockShape="2>0|1" />
+                <foliageLod blockShape="2>1|1" />
+            </foliageShape>
+        </foliageState>
+
+        <!-- springOnion -->
+        <foliageState name="springOnionInvisible"/>
+        <foliageState name="springOnionGreenSmall" numBlocksPerUnit="1.4" height="1.15" widthVariance="0.2" heightVariance="0.2" horizontalPositionVariance="0.15">
+            <foliageShape>
+                <foliageLod blockShape="3>0|0" />
+                <foliageLod blockShape="3>1|0" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="springOnionHarvestReady" numBlocksPerUnit="1.4" widthVariance="0.2" heightVariance="0.2" horizontalPositionVariance="0.15">
+            <foliageShape>
+                <foliageLod blockShape="3>0|1" />
+                <foliageLod blockShape="3>1|1" />
+            </foliageShape>
+        </foliageState>
+
+        <!-- garlic -->
+        <foliageState name="garlicInvisible"/>
+        <foliageState name="garlicGreenSmall" numBlocksPerUnit="1.4" widthVariance="0.2" heightVariance="0.2" horizontalPositionVariance="0.15">
+            <foliageShape>
+                <foliageLod blockShape="4>0|0" />
+                <foliageLod blockShape="4>1|0" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="garlicHarvestReady" numBlocksPerUnit="1.4" widthVariance="0.2" heightVariance="0.2" horizontalPositionVariance="0.15">
+            <foliageShape>
+                <foliageLod blockShape="4>0|1" />
+                <foliageLod blockShape="4>1|1" />
+            </foliageShape>
+        </foliageState>
+    </foliageLayer>
+
+    <growth>
+        <seasonal>
+            <period name="EARLY_SPRING" />
+            <period name="MID_SPRING" >
+                <update startState="tomatoesInvisible" endState="tomatoesGreenSmall" />
+                <update startState="strawberryInvisible" endState="strawberryGreenSmall" />
+                <update startState="lettuceInvisible" endState="lettuceGreenSmall" />
+                <update startState="springOnionInvisible" endState="springOnionGreenSmall" />
+                <update startState="garlicInvisible" endState="garlicGreenSmall" />
+            </period>
+            <period name="LATE_SPRING" />
+            <period name="EARLY_SUMMER" >
+                <update startState="tomatoesGreenSmall" endState="tomatoesHarvestReady" />
+                <update startState="strawberryGreenSmall" endState="strawberryHarvestReady" />
+                <update startState="lettuceGreenSmall" endState="lettuceHarvestReady" />
+                <update startState="springOnionGreenSmall" endState="springOnionHarvestReady" />
+                <update startState="garlicGreenSmall" endState="garlicHarvestReady" />
+            </period>
+            <period name="MID_SUMMER" />
+            <period name="LATE_SUMMER" />
+            <period name="EARLY_AUTUMN" >
+                <update startState="tomatoesHarvestReady" endState="tomatoesInvisible" />
+                <update startState="strawberryHarvestReady" endState="strawberryInvisible" />
+                <update startState="lettuceHarvestReady" endState="lettuceInvisible" />
+                <update startState="springOnionHarvestReady" endState="springOnionInvisible" />
+                <update startState="garlicHarvestReady" endState="garlicInvisible" />
+            </period>
+            <period name="MID_AUTUMN" />
+            <period name="LATE_AUTUMN" />
+            <period name="EARLY_WINTER" />
+            <period name="MID_WINTER" />
+            <period name="LATE_WINTER"/>
+        </seasonal>
+        <nonSeasonal>
+            <update startState="tomatoesInvisible" endState="tomatoesGreenSmall" />
+            <update startState="tomatoesGreenSmall" endState="tomatoesHarvestReady" />
+            <update startState="tomatoesHarvestReady" endState="tomatoesInvisible" />
+            <update startState="strawberryInvisible" endState="strawberryGreenSmall" />
+            <update startState="strawberryGreenSmall" endState="strawberryHarvestReady" />
+            <update startState="strawberryHarvestReady" endState="strawberryInvisible" />
+            <update startState="lettuceInvisible" endState="lettuceGreenSmall" />
+            <update startState="lettuceGreenSmall" endState="lettuceHarvestReady" />
+            <update startState="lettuceHarvestReady" endState="lettuceInvisible" />
+            <update startState="springOnionInvisible" endState="springOnionGreenSmall" />
+            <update startState="springOnionGreenSmall" endState="springOnionHarvestReady" />
+            <update startState="springOnionHarvestReady" endState="springOnionInvisible" />
+            <update startState="garlicInvisible" endState="garlicGreenSmall" />
+            <update startState="garlicGreenSmall" endState="garlicHarvestReady" />
+            <update startState="garlicHarvestReady" endState="garlicInvisible" />
+        </nonSeasonal>
+    </growth>
+</foliageType>

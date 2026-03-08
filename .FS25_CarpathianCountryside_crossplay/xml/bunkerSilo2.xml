@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="mapCC_multiBunkerSilo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_placeableObject_coveredMultiBunkerSilo2</name>
+        <functions>
+            <function>$l10n_function_bunkerSilo</function>
+            <function>$l10n_function_roofSolarPanelsOption</function>
+        </functions>
+        <image>placeables/bunkerSilo/store_bunkerSilo2.dds</image>
+        <price>268000</price>
+        <dailyUpkeep>100</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>LIZARDSTORAGE</brand>
+        <species>placeable</species>
+        <category>silos</category>
+        <brush>
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>silos</tab>
+        </brush>
+
+        <storeIconRendering>
+            <settings cameraXRot="-10" cameraYRot="-120" advancedBoundingBox="true"/>
+        </storeIconRendering>
+        <vertexBufferMemoryUsage>1177088</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>189952</indexBufferMemoryUsage>
+        <textureMemoryUsage>7536640</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>placeables/bunkerSilo/bunkerSilo2.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" placementRotationSnapAngle="90" placementPositionSnapSize="1" >
+        <testAreas>
+            <testArea startNode="testAreaStart1" endNode="testAreaEnd1"/>
+        </testAreas>
+
+        <sounds>
+            <place template="largeImp" />
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearAreaStart1" widthNode="clearAreaWidth1" heightNode="clearAreaHeight1"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="5" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelAreaStart1" widthNode="levelAreaWidth1" heightNode="levelAreaHeight1" groundType="concrete"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorAreaStart1" widthNode="indoorAreaWidth1" heightNode="indoorAreaHeight1"/>
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStart1" endNode="tipOcclusionUpdateAreaEnd1" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateAreaStart1" endNode="tipOcclusionUpdateAreaEnd1" />
+        </updateAreas>
+    </ai>
+
+    <triggerMarkers>
+        <triggerMarker node="markerHideRoof" filename="placeables/sharedAssets/marker/markerIconHideRoof.i3d" adjustToGround="true" />
+        <triggerMarker node="warningStripes1" />
+        <triggerMarker node="warningStripes2" />
+        <triggerMarker node="warningStripes3" />
+    </triggerMarkers>
+
+    <lights>
+        <group name="$l10n_category_floodLighting" triggerNode="controledLightsTrigger">
+            <sounds>
+                <toggle template="lizardFloodLight" innerRadius="50" outerRadius="70" volumeScale="0.2"/>
+            </sounds>
+        </group>
+
+        <sharedLight filename="placeables/sharedAssets/lights/floodLight.xml" linkNode="floodLight01" groupIndex="1">
+            <rotationNode name="rotationNode01" rotation="0 0 50" />
+        </sharedLight>
+        <sharedLight filename="placeables/sharedAssets/lights/floodLight.xml" linkNode="floodLight02" groupIndex="1">
+            <rotationNode name="rotationNode01" rotation="0 0 50" />
+        </sharedLight>
+        <sharedLight filename="placeables/sharedAssets/lights/floodLight.xml" linkNode="floodLight03" groupIndex="1">
+            <rotationNode name="rotationNode01" rotation="0 0 50" />
+        </sharedLight>
+        <sharedLight filename="placeables/sharedAssets/lights/floodLight.xml" linkNode="floodLight04" groupIndex="1">
+            <rotationNode name="rotationNode01" rotation="0 0 50" />
+        </sharedLight>
+        <sharedLight filename="placeables/sharedAssets/lights/floodLight.xml" linkNode="floodLight05" groupIndex="1">
+            <rotationNode name="rotationNode01" rotation="0 0 50" />
+        </sharedLight>
+        <sharedLight filename="placeables/sharedAssets/lights/floodLight.xml" linkNode="floodLight06" groupIndex="1">
+            <rotationNode name="rotationNode01" rotation="0 0 50" />
+        </sharedLight>
+        <sharedLight filename="placeables/sharedAssets/lights/floodLight.xml" linkNode="floodLight07" groupIndex="1">
+            <rotationNode name="rotationNode01" rotation="0 0 50" />
+        </sharedLight>
+        <sharedLight filename="placeables/sharedAssets/lights/floodLight.xml" linkNode="floodLight08" groupIndex="1">
+            <rotationNode name="rotationNode01" rotation="0 0 50" />
+        </sharedLight>
+        <sharedLight filename="placeables/sharedAssets/lights/floodLight.xml" linkNode="floodLight09" groupIndex="1">
+            <rotationNode name="rotationNode01" rotation="0 0 50" />
+        </sharedLight>
+
+        <realLights>
+            <low>
+                <light node="realLightsLow" groupIndex="1"/>
+            </low>
+            <high>
+                <light node="realLightsHigh" groupIndex="1"/>
+            </high>
+        </realLights>
+    </lights>
+
+    <animatedObjects>
+        <animatedObject saveId="bunkerSilo2_hideRoof">
+            <animation duration="0.2">
+                <part node="bunkerSilo2Roof">
+                    <keyFrame time="0.0" visibility="true"/>
+                    <keyFrame time="0.1" visibility="false"/>
+                </part>
+                <part node="solarPanels">
+                    <keyFrame time="0.0" visibility="true"/>
+                    <keyFrame time="0.1" visibility="false"/>
+                </part>
+                <part node="bunkerSilo2Lights">
+                    <keyFrame time="0.0" visibility="true"/>
+                    <keyFrame time="0.1" visibility="false"/>
+                </part>
+                <part node="bunkerSilo2RoofCollisions">
+                    <keyFrame time="0" translation="0 0 0" />
+                    <keyFrame time="1.0" translation="0 100 0" />
+                </part>
+                <part node="occluderMesh_bunkerSilo2">
+                    <keyFrame time="0.0" visibility="true"/>
+                    <keyFrame time="0.1" visibility="false"/>
+                </part>
+            </animation>
+            <controls triggerNode="hideRoof_trigger" posAction="ACTIVATE_HANDTOOL" posText="action_hideRoof" negText="action_unhideRoof" />
+        </animatedObject>
+    </animatedObjects>
+
+    <bunkerSilo isExtendable="false" acceptedFillTypes="CHAFF GRASS_WINDROW DRYGRASS_WINDROW ALFALFA_WINDROW DRYALFALFA_WINDROW" inputFillType="CHAFF" outputFillType="SILAGE" distanceToCompactedFillLevel="100" openingLength="5" >
+        <bunkerSiloConfigurations>
+            <bunkerSiloConfiguration saveId="bunkerSilo2_tripleSilo" isSelectable="false" isDefault="true" >
+                <bunkerSilo acceptedFillTypes="CHAFF GRASS_WINDROW DRYGRASS_WINDROW ALFALFA_WINDROW DRYALFALFA_WINDROW" inputFillType="CHAFF" outputFillType="SILAGE" distanceToCompactedFillLevel="100" openingLength="5" >
+                    <area      startNode="siloAreaStart1"      widthNode="siloAreaWidth1"      heightNode="siloAreaHeight1" />
+                    <innerArea startNode="siloInnerAreaStart1" widthNode="siloInnerAreaWidth1" heightNode="siloInnerAreaHeight1" />
+                    <interactionTrigger node="interactionTrigger1" />
+                </bunkerSilo>
+                <bunkerSilo acceptedFillTypes="CHAFF GRASS_WINDROW DRYGRASS_WINDROW ALFALFA_WINDROW DRYALFALFA_WINDROW" inputFillType="CHAFF" outputFillType="SILAGE" distanceToCompactedFillLevel="100" openingLength="5" >
+                    <area      startNode="siloAreaStart2"      widthNode="siloAreaWidth2"      heightNode="siloAreaHeight2" />
+                    <innerArea startNode="siloInnerAreaStart2" widthNode="siloInnerAreaWidth2" heightNode="siloInnerAreaHeight2" />
+                    <interactionTrigger node="interactionTrigger2" />
+                </bunkerSilo>
+                <bunkerSilo acceptedFillTypes="CHAFF GRASS_WINDROW DRYGRASS_WINDROW ALFALFA_WINDROW DRYALFALFA_WINDROW" inputFillType="CHAFF" outputFillType="SILAGE" distanceToCompactedFillLevel="100" openingLength="5" >
+                    <area      startNode="siloAreaStart3"      widthNode="siloAreaWidth3"      heightNode="siloAreaHeight3" />
+                    <innerArea startNode="siloInnerAreaStart3" widthNode="siloInnerAreaWidth3" heightNode="siloInnerAreaHeight3" />
+                    <interactionTrigger node="interactionTrigger3" />
+                </bunkerSilo>
+            </bunkerSiloConfiguration>
+        </bunkerSiloConfigurations>
+    </bunkerSilo>
+
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart node="0" linkNode="lightSwitch01" filename="$data/shared/assets/lights/rudolfHormann/powerSwitch.i3d" />
+        <dynamicallyLoadedPart node="4" linkNode="propsBuildingNode" filename="placeables/sharedAssets/propsBuilding/propsBuilding_farmBuildings.i3d"/>
+    </dynamicallyLoadedParts>
+
+    <deletedNodes>
+        <deletedNode node="bunkerSiloBorder" />
+    </deletedNodes>
+
+    <colorConfigurations price="0" useDefaultColors="true" defaultColorIndex="1">
+        <node node="bunkerSilo2Roof_p1_LOD0" />
+        <node node="bunkerSilo2Roof_p1_LOD1" />
+        <node node="bunkerSilo2Roof_p1_LOD2" />
+        <colorConfiguration color="0.16 0.35 0.16" name="$l10n_color_buildingSpecificDefault" isDefault="true"/>
+        <colorConfiguration color="0.8 0.08 0.08" name="$l10n_color_lizardRed"/>
+        <colorConfiguration color="0.324 0.101 0.081" name="$l10n_color_lizardDarkRed"/>
+        <colorConfiguration color="0.95 0.23 0.05" name="$l10n_color_lizardOrange"/>
+        <colorConfiguration color="0.35 0.19 0.05" name="$l10n_color_lizardBrown"/>
+        <colorConfiguration color="1 0.51 0.09" name="$l10n_color_lizardYellow"/>
+        <colorConfiguration color="0.79 0.67 0.28" name="$l10n_color_lizardBrightYellow"/>
+        <colorConfiguration color="0.35 0.43 0.045" name="$l10n_color_lizardLimeGreen"/>
+        <colorConfiguration color="0.258 0.392 0.13" name="$l10n_color_lizardFarmBrightGreen"/>
+        <colorConfiguration color="0.15 0.47 0.05" name="$l10n_color_lizardBrightGreen"/>
+        <colorConfiguration color="0.09 0.35 0.1" name="$l10n_color_lizardGreen"/>
+        <colorConfiguration color="0.15 0.32 0.13" name="$l10n_color_lizardFarmGreen"/>
+        <colorConfiguration color="0.05 0.15 0.05" name="$l10n_color_lizardDarkGreen"/>
+        <colorConfiguration color="0.05 0.25 0.213" name="$l10n_color_lizardTurquoise"/>
+        <colorConfiguration color="0.3 0.61 0.83" name="$l10n_color_lizardSkyBlue"/>
+        <colorConfiguration color="0 0.42 0.85" name="$l10n_color_lizardLizardBrightBlue"/>
+        <colorConfiguration color="0.05 0.27 0.8" name="$l10n_color_lizardBlue"/>
+        <colorConfiguration color="0.01 0.22 0.45" name="$l10n_color_lizardOceanBlue"/>
+        <colorConfiguration color="0.01 0.1 0.3" name="$l10n_color_lizardDarkBlue"/>
+        <colorConfiguration color="0.22 0.18 0.56" name="$l10n_color_lizardPurple"/>
+        <colorConfiguration color="0.27 0.27 0.57" name="$l10n_color_lizardBrightPurple"/>
+        <colorConfiguration color="0.85 0.15 0.25" name="$l10n_color_lizardPink"/>
+        <colorConfiguration color="0.85 0.3 0.42" name="$l10n_color_lizardBrightPink"/>
+    </colorConfigurations>
+
+    <solarPanels>
+        <solarPanelsConfigurations>
+            <solarPanelsConfiguration name="$l10n_ui_none" isActive="false"/>
+            <solarPanelsConfiguration name="572 A" isActive="true" price="151580" incomePerHour="515" >
+                <objectChange node="solarPanels01" visibilityActive="true"/>
+            </solarPanelsConfiguration>
+            <solarPanelsConfiguration name="572 B" isActive="true" price="151580" incomePerHour="515" >
+                <objectChange node="solarPanels02" visibilityActive="true"/>
+            </solarPanelsConfiguration>
+            <solarPanelsConfiguration name="1144" isActive="true" price="303160" incomePerHour="1030" >
+                <objectChange node="solarPanels01" visibilityActive="true"/>
+                <objectChange node="solarPanels02" visibilityActive="true"/>
+            </solarPanelsConfiguration>
+        </solarPanelsConfigurations>
+    </solarPanels>
+
+    <i3dMappings>
+        <i3dMapping id="bunkerSilo2Roof" node="0>1|0" />
+        <i3dMapping id="bunkerSilo2Roof_p1_LOD0" node="0>1|0|0|1" />
+        <i3dMapping id="bunkerSilo2Roof_p1_LOD1" node="0>1|0|1|0" />
+        <i3dMapping id="bunkerSilo2Roof_p1_LOD2" node="0>1|0|2|0" />
+        <i3dMapping id="bunkerSilo2RoofCollisions" node="0>1|1" />
+        <i3dMapping id="hideRoof_trigger" node="0>1|2|0" />
+        <i3dMapping id="markerHideRoof" node="0>1|2|1" />
+        <i3dMapping id="bunkerSilo2Lights" node="0>1|3" />
+        <i3dMapping id="floodLight01" node="0>1|3|0|0" />
+        <i3dMapping id="floodLight02" node="0>1|3|0|1" />
+        <i3dMapping id="floodLight03" node="0>1|3|0|2" />
+        <i3dMapping id="floodLight04" node="0>1|3|0|3" />
+        <i3dMapping id="floodLight05" node="0>1|3|0|4" />
+        <i3dMapping id="floodLight06" node="0>1|3|0|5" />
+        <i3dMapping id="floodLight07" node="0>1|3|0|6" />
+        <i3dMapping id="floodLight08" node="0>1|3|0|7" />
+        <i3dMapping id="floodLight09" node="0>1|3|0|8" />
+        <i3dMapping id="realLightsLow" node="0>1|3|1|0" />
+        <i3dMapping id="realLightsHigh" node="0>1|3|1|1" />
+        <i3dMapping id="lightSwitch01" node="0>1|3|2|0" />
+        <i3dMapping id="controledLightsTrigger" node="0>1|3|3" />
+        <i3dMapping id="solarPanels" node="0>1|4" />
+        <i3dMapping id="solarPanels01" node="0>1|4|0" />
+        <i3dMapping id="solarPanels02" node="0>1|4|1" />
+        <i3dMapping id="propsBuildingNode" node="0>2|0" />
+        <i3dMapping id="propsDecoNode" node="0>2|1" />
+        <i3dMapping id="propsBordersNode" node="0>2|2" />
+        <i3dMapping id="propsPreplacedNode" node="0>2|3" />
+        <i3dMapping id="bunkerSiloBorder" node="0>2|4" />
+        <i3dMapping id="siloAreaStart1" node="0>3|0|0" />
+        <i3dMapping id="siloAreaWidth1" node="0>3|0|1" />
+        <i3dMapping id="siloAreaHeight1" node="0>3|0|2" />
+        <i3dMapping id="interactionTrigger1" node="0>3|0|3" />
+        <i3dMapping id="siloInnerAreaStart1" node="0>3|1|0" />
+        <i3dMapping id="siloInnerAreaWidth1" node="0>3|1|1" />
+        <i3dMapping id="siloInnerAreaHeight1" node="0>3|1|2" />
+        <i3dMapping id="warningStripes1" node="0>3|2" />
+        <i3dMapping id="siloAreaStart2" node="0>4|0|0" />
+        <i3dMapping id="siloAreaWidth2" node="0>4|0|1" />
+        <i3dMapping id="siloAreaHeight2" node="0>4|0|2" />
+        <i3dMapping id="interactionTrigger2" node="0>4|0|3" />
+        <i3dMapping id="siloInnerAreaStart2" node="0>4|1|0" />
+        <i3dMapping id="siloInnerAreaWidth2" node="0>4|1|1" />
+        <i3dMapping id="siloInnerAreaHeight2" node="0>4|1|2" />
+        <i3dMapping id="warningStripes2" node="0>4|2" />
+        <i3dMapping id="siloAreaStart3" node="0>5|0|0" />
+        <i3dMapping id="siloAreaWidth3" node="0>5|0|1" />
+        <i3dMapping id="siloAreaHeight3" node="0>5|0|2" />
+        <i3dMapping id="interactionTrigger3" node="0>5|0|3" />
+        <i3dMapping id="siloInnerAreaStart3" node="0>5|1|0" />
+        <i3dMapping id="siloInnerAreaWidth3" node="0>5|1|1" />
+        <i3dMapping id="siloInnerAreaHeight3" node="0>5|1|2" />
+        <i3dMapping id="warningStripes3" node="0>5|2" />
+        <i3dMapping id="clearAreaStart1" node="0>6|0" />
+        <i3dMapping id="clearAreaWidth1" node="0>6|0|0" />
+        <i3dMapping id="clearAreaHeight1" node="0>6|0|1" />
+        <i3dMapping id="levelAreaStart1" node="0>7|0" />
+        <i3dMapping id="levelAreaWidth1" node="0>7|0|0" />
+        <i3dMapping id="levelAreaHeight1" node="0>7|0|1" />
+        <i3dMapping id="indoorAreaStart1" node="0>8|0" />
+        <i3dMapping id="indoorAreaWidth1" node="0>8|0|0" />
+        <i3dMapping id="indoorAreaHeight1" node="0>8|0|1" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart1" node="0>9|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd1" node="0>9|0|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart2" node="0>9|1" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd2" node="0>9|1|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart3" node="0>9|2" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd3" node="0>9|2|0" />
+        <i3dMapping id="testAreaStart1" node="0>10|0" />
+        <i3dMapping id="testAreaEnd1" node="0>10|0|0" />
+        <i3dMapping id="testAreaStart2" node="0>10|1" />
+        <i3dMapping id="testAreaEnd2" node="0>10|1|0" />
+        <i3dMapping id="testAreaStart3" node="0>10|2" />
+        <i3dMapping id="testAreaEnd3" node="0>10|2|0" />
+        <i3dMapping id="testAreaStart4" node="0>10|3" />
+        <i3dMapping id="testAreaEnd4" node="0>10|3|0" />
+        <i3dMapping id="occluderMesh_bunkerSilo2" node="0>12" />
+    </i3dMappings>
+</placeable>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="pallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>$l10n_storeItem_shinglePallet</name>
+        <image>objects/pallets/shingleGenericPallet/store_shingleGenericPallet.png</image>
+        <price>1850</price>
+        <category>pallets</category>
+        <brand>NONE</brand>
+        <showInStore>false</showInStore>
+        <canBeSold>false</canBeSold>
+        <financeCategory>OTHER</financeCategory>
+
+        <storeIconRendering>
+            <settings centerIcon="true" cameraXRot="-15" cameraYRot="35"/>
+        </storeIconRendering>
+        <vertexBufferMemoryUsage>3328</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>1536</indexBufferMemoryUsage>
+        <textureMemoryUsage>1245184</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>objects/pallets/shingleGenericPallet/shingleGenericPallet.i3d</filename>
+        <size width="1.3" length="0.9" height="1.4" />
+        <canBeReset>false</canBeReset>
+        <components maxMass="600">
+            <component centerOfMass="0 0.2 0" solverIterationCount="10" mass="500"/>
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false" />
+        <input allowed="false"/>
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits removeVehicleIfEmpty="true">
+                    <fillUnit unitTextOverride="$l10n_unit_pieces" fillTypes="SHINGLE" capacity="1000" ignoreFillLimit="true"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <pallet fillUnitIndex="1" linkNode="shingleGenericPallet_main_component1">
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletNew_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletMiddle_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletOld_diffuse.dds"/>
+
+        <content>
+            <object node="shingleBox01" tensionBeltNode="shingleBox_Tension01"/>
+            <object node="shingleBox02" tensionBeltNode="shingleBox_Tension02"/>
+            <object node="shingleBox03" tensionBeltNode="shingleBox_Tension03"/>
+            <object node="shingleBox04" tensionBeltNode="shingleBox_Tension04"/>
+            <object node="shingleBox05" tensionBeltNode="shingleBox_Tension05"/>
+            <object node="shingleBox06" tensionBeltNode="shingleBox_Tension06"/>
+            <object node="shingleBox07" tensionBeltNode="shingleBox_Tension07"/>
+            <object node="shingleBox08" tensionBeltNode="shingleBox_Tension08"/>
+            <object node="shingleBox09" tensionBeltNode="shingleBox_Tension09"/>
+            <object node="shingleBox10" tensionBeltNode="shingleBox_Tension10"/>
+            <object node="shingleBox11" tensionBeltNode="shingleBox_Tension11"/>
+            <object node="shingleBox12" tensionBeltNode="shingleBox_Tension12"/>
+        </content>
+
+        <sounds>
+            <unload template="palletsFillPaper" pitchScale="0.9" volumeScale="1"/>
+        </sounds>
+    </pallet>
+
+    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="1.34" jointTransY="0.106" jointLimitToRotY="true"/>
+
+    <i3dMappings>
+        <i3dMapping id="shingleGenericPallet_main_component1" node="0>" />
+        <i3dMapping id="dynamicMountTrigger" node="0>0" />
+        <i3dMapping id="shingleBox01" node="0>1|0" />
+        <i3dMapping id="shingleBox_Tension01" node="0>1|0|0" />
+        <i3dMapping id="shingleBox02" node="0>1|1" />
+        <i3dMapping id="shingleBox_Tension02" node="0>1|1|0" />
+        <i3dMapping id="shingleBox03" node="0>1|2" />
+        <i3dMapping id="shingleBox_Tension03" node="0>1|2|0" />
+        <i3dMapping id="shingleBox04" node="0>1|3" />
+        <i3dMapping id="shingleBox_Tension04" node="0>1|3|0" />
+        <i3dMapping id="shingleBox05" node="0>1|4" />
+        <i3dMapping id="shingleBox_Tension05" node="0>1|4|0" />
+        <i3dMapping id="shingleBox06" node="0>1|5" />
+        <i3dMapping id="shingleBox_Tension06" node="0>1|5|0" />
+        <i3dMapping id="shingleBox07" node="0>1|6" />
+        <i3dMapping id="shingleBox_Tension07" node="0>1|6|0" />
+        <i3dMapping id="shingleBox08" node="0>1|7" />
+        <i3dMapping id="shingleBox_Tension08" node="0>1|7|0" />
+        <i3dMapping id="shingleBox09" node="0>1|8" />
+        <i3dMapping id="shingleBox_Tension09" node="0>1|8|0" />
+        <i3dMapping id="shingleBox10" node="0>1|9" />
+        <i3dMapping id="shingleBox_Tension10" node="0>1|9|0" />
+        <i3dMapping id="shingleBox11" node="0>1|10" />
+        <i3dMapping id="shingleBox_Tension11" node="0>1|10|0" />
+        <i3dMapping id="shingleBox12" node="0>1|11" />
+        <i3dMapping id="shingleBox_Tension12" node="0>1|11|0" />
+    </i3dMappings>
+</vehicle>

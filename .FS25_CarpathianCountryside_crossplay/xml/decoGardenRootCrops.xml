@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<foliageType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/foliageType.xsd">
+    <fruitType name="decoGardenRootCrops" shownOnMap="false" useForFieldMissions="false">
+        <mapColors default="1 0 0 1" colorBlind="1 0 0 1"/>
+        <harvest litersPerSqm="1.00"/>
+        <growth resetsSpray="false" growthRequiresLime="false"/>
+        <soil lowDensityRequired="false" increasesDensity="false" consumesLime="false" startSprayLevel="0"/>
+        <seeding directionSnapAngle="0" needsRolling="false" litersPerSqm="0.01" isAvailable="false" plantsWeed="false"/>
+        <cultivation isAllowed="true"/>
+        <mulcher chopperType="CHOPPER_STRAW"/>
+    </fruitType>
+
+    <foliageLayer densityMapChannelOffset="0" numDensityMapChannels="4" plantSeparation="0.75 0.65" plantOffset="0 0" plantLayoutRotation="true" shapeSource="decoGardenRootCrops.i3d">
+        <foliageStateDefaults distanceMapLayer="0" width="1.0" height="1.0" widthVariance="0.2" heightVariance="0.2" horizontalPositionVariance="0.15"/>
+        
+        <!-- default LOD distances etc -->
+        <foliageLodDefaults lod="0" viewDistance="15" blendOutDistance="2" texCoords="0 0 1 1"/>
+        <foliageLodDefaults lod="1" viewDistance="60" blendOutDistance="2" texCoords="0 0 1 1"/>
+
+        <!-- potato -->
+        <foliageState name="potatoInvisible"/>
+        <foliageState name="potatoGreenMiddle" widthVariance="0.2" heightVariance="0.2" horizontalPositionVariance="0.15">
+            <foliageShape>
+                <foliageLod blockShape="0>0|0" atlasSize="1" atlasOffset="1 0"/>
+                <foliageLod blockShape="0>1|0" atlasSize="1" atlasOffset="1 0"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|1" atlasSize="1" atlasOffset="1 0"/>
+                <foliageLod blockShape="0>1|0" atlasSize="1" atlasOffset="1 0"/>
+            </foliageShape>
+        </foliageState>
+        <foliageState name="potatoHarvestReady" widthVariance="0.2" heightVariance="0.2" horizontalPositionVariance="0.15">
+            <foliageShape>
+                <foliageLod blockShape="0>0|2" atlasSize="1" atlasOffset="1 0"/>
+                <foliageLod blockShape="0>1|1" atlasSize="1" atlasOffset="1 0"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|3" atlasSize="1" atlasOffset="1 0"/>
+                <foliageLod blockShape="0>1|1" atlasSize="1" atlasOffset="1 0"/>
+            </foliageShape>
+        </foliageState>
+
+        <!-- sugarBeet -->
+        <foliageState name="sugarBeetInvisible"/>
+        <foliageState name="sugarBeetGreenMiddle" plantSeparation="0.5 0.55" widthVariance="0" heightVariance="0.07" horizontalPositionVariance="0.15">
+            <foliageShape>
+                <foliageLod blockShape="1>0|0" atlasSize="1" atlasOffset="1 0"/>
+                <foliageLod blockShape="1>1|0" atlasSize="1" atlasOffset="1 0"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="1>0|1" atlasSize="1" atlasOffset="1 0"/>
+                <foliageLod blockShape="1>1|0" atlasSize="1" atlasOffset="1 0"/>
+            </foliageShape>
+        </foliageState>
+        <foliageState name="sugarBeetHarvestReady" plantSeparation="0.5 0.55" widthVariance="0" heightVariance="0.07" horizontalPositionVariance="0.15">
+            <foliageShape>
+                <foliageLod blockShape="1>0|2" atlasSize="1" atlasOffset="1 0"/>
+                <foliageLod blockShape="1>1|1" atlasSize="1" atlasOffset="1 0"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="1>0|3" atlasSize="1" atlasOffset="1 0"/>
+                <foliageLod blockShape="1>1|1" atlasSize="1" atlasOffset="1 0"/>
+            </foliageShape>
+        </foliageState>
+
+        <!-- beetRoot -->
+        <foliageState name="beetRootInvisible"/>
+        <foliageState name="beetRootGreenMiddle" plantSeparation="0.75 0.82" widthVariance="0" heightVariance="0.25" horizontalPositionVariance="0.1">
+            <foliageShape>
+                <foliageLod blockShape="2>0|0" atlasSize="1"/>
+                <foliageLod blockShape="2>1|0" atlasSize="1"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="2>0|1" atlasSize="1"/>
+                <foliageLod blockShape="2>1|1" atlasSize="1"/>
+            </foliageShape>
+        </foliageState>
+        <foliageState name="beetRootHarvestReady" plantSeparation="0.75 0.82" widthVariance="0" heightVariance="0.25" horizontalPositionVariance="0.1">
+            <foliageShape>
+                <foliageLod blockShape="2>0|2" atlasSize="1"/>
+                <foliageLod blockShape="2>1|2" atlasSize="1"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="2>0|3" atlasSize="1"/>
+                <foliageLod blockShape="2>1|3" atlasSize="1"/>
+            </foliageShape>
+        </foliageState>
+
+        <!-- carrot -->
+        <foliageState name="carrotInvisible"/>
+        <foliageState name="carrotGreenMiddle" plantSeparation="0.75 0.8" widthVariance="0" heightVariance="0.25" horizontalPositionVariance="0.1">
+            <foliageShape>
+                <foliageLod blockShape="3>0|0" blendOutDistance="4"/>
+                <foliageLod blockShape="3>1|0"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="3>0|1" blendOutDistance="4"/>
+                <foliageLod blockShape="3>1|0"/>
+            </foliageShape>
+        </foliageState>
+        <foliageState name="carrotHarvestReady" plantSeparation="0.75 0.8" widthVariance="0" heightVariance="0.25" horizontalPositionVariance="0.1">
+            <foliageShape>
+                <foliageLod blockShape="3>0|2" blendOutDistance="4"/>
+                <foliageLod blockShape="3>1|1"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="3>0|3" blendOutDistance="4"/>
+                <foliageLod blockShape="3>1|1"/>
+            </foliageShape>
+        </foliageState>
+
+        <!-- parsnip -->
+        <foliageState name="parsnipInvisible"/>
+        <foliageState name="parsnipGreenMiddle" plantSeparation="0.75 0.8" widthVariance="0" heightVariance="0.25" horizontalPositionVariance="0.1">
+            <foliageShape>
+                <foliageLod blockShape="4>0|0" blendOutDistance="4"/>
+                <foliageLod blockShape="4>1|0"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="4>0|1" blendOutDistance="4"/>
+                <foliageLod blockShape="4>1|0"/>
+            </foliageShape>
+        </foliageState>
+        <foliageState name="parsnipHarvestReady" plantSeparation="0.75 0.8" widthVariance="0" heightVariance="0.25" horizontalPositionVariance="0.1">
+            <foliageShape>
+                <foliageLod blockShape="4>0|2" blendOutDistance="4"/>
+                <foliageLod blockShape="4>1|1"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="4>0|3" blendOutDistance="4"/>
+                <foliageLod blockShape="4>1|1"/>
+            </foliageShape>
+        </foliageState>
+    </foliageLayer>
+
+    <growth>
+        <seasonal>
+            <period name="EARLY_SPRING" />
+            <period name="MID_SPRING" >
+                <update startState="potatoInvisible" endState="potatoGreenMiddle" />
+                <update startState="sugarBeetInvisible" endState="sugarBeetGreenMiddle" />
+                <update startState="beetRootInvisible" endState="beetRootGreenMiddle" />
+                <update startState="carrotInvisible" endState="carrotGreenMiddle" />
+                <update startState="parsnipInvisible" endState="parsnipGreenMiddle" />
+            </period>
+            <period name="LATE_SPRING" />
+            <period name="EARLY_SUMMER" />
+            <period name="MID_SUMMER" >
+                <update startState="potatoGreenMiddle" endState="potatoHarvestReady" />
+                <update startState="beetRootGreenMiddle" endState="beetRootHarvestReady" />
+                <update startState="carrotGreenMiddle" endState="carrotHarvestReady" />
+                <update startState="parsnipGreenMiddle" endState="parsnipHarvestReady" />
+            </period>
+            <period name="LATE_SUMMER" />
+            <period name="EARLY_AUTUMN" >
+                <update startState="sugarBeetGreenMiddle" endState="sugarBeetHarvestReady" />
+            </period>
+            <period name="MID_AUTUMN" >
+                <update startState="potatoHarvestReady" endState="potatoInvisible" />
+                <update startState="beetRootHarvestReady" endState="beetRootInvisible" />
+                <update startState="carrotHarvestReady" endState="carrotInvisible" />
+                <update startState="parsnipHarvestReady" endState="parsnipInvisible" />
+            </period>
+            <period name="LATE_AUTUMN" >
+                <update startState="sugarBeetHarvestReady" endState="sugarBeetInvisible" />
+            </period>
+            <period name="EARLY_WINTER" />
+            <period name="MID_WINTER" />
+            <period name="LATE_WINTER"/>
+        </seasonal>
+        <nonSeasonal>
+            <update startState="potatoInvisible" endState="potatoGreenMiddle" />
+            <update startState="potatoGreenMiddle" endState="potatoHarvestReady" />
+            <update startState="potatoHarvestReady" endState="potatoInvisible" />
+            <update startState="sugarBeetInvisible" endState="sugarBeetGreenMiddle" />
+            <update startState="sugarBeetGreenMiddle" endState="sugarBeetHarvestReady" />
+            <update startState="sugarBeetHarvestReady" endState="sugarBeetInvisible" />
+            <update startState="beetRootInvisible" endState="beetRootGreenMiddle" />
+            <update startState="beetRootGreenMiddle" endState="beetRootHarvestReady" />
+            <update startState="beetRootHarvestReady" endState="beetRootInvisible" />
+            <update startState="carrotInvisible" endState="carrotGreenMiddle" />
+            <update startState="carrotGreenMiddle" endState="carrotHarvestReady" />
+            <update startState="carrotHarvestReady" endState="carrotInvisible" />
+            <update startState="parsnipInvisible" endState="parsnipGreenMiddle" />
+            <update startState="parsnipGreenMiddle" endState="parsnipHarvestReady" />
+            <update startState="parsnipHarvestReady" endState="parsnipInvisible" />
+        </nonSeasonal>
+    </growth>
+</foliageType>

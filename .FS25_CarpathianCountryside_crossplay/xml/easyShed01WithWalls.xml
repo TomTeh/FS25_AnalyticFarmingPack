@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="garageSolarPanels" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_placeableObject_easyShed01WithWalls</name>
+        <functions>
+            <function>$l10n_function_garageBulk</function>
+            <function>$l10n_function_garage</function>
+            <function>$l10n_function_roofSolarPanelsOption</function>
+        </functions>
+        <image>placeables/modularWalls/store_easyShed01WithWalls.png</image>
+        <price>28000</price>
+        <dailyUpkeep>10</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>EASYSHEDS</brand>
+        <species>placeable</species>
+        <category>sheds</category>
+        <brush>
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>sheds</tab>
+        </brush>
+
+        <storeIconRendering>
+            <settings cameraXRot="-10" cameraYRot="-40" advancedBoundingBox="true"/>
+        </storeIconRendering>
+        <vertexBufferMemoryUsage>391680</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>63488</indexBufferMemoryUsage>
+        <textureMemoryUsage>2424832</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>placeables/modularWalls/easyShed01WithWalls.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" placementRotationSnapAngle="90" placementPositionSnapSize="0.5" >
+        <testAreas>
+            <testArea startNode="testAreaStart1" endNode="testAreaEnd1" />
+        </testAreas>
+
+        <sounds>
+            <place template="medImp" />
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearAreaStart1" widthNode="clearAreaWidth1" heightNode="clearAreaHeight1"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="5" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelAreaStart1" widthNode="levelAreaWidth1" heightNode="levelAreaHeight1" groundType="plate"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorAreaStart1" widthNode="indoorAreaWidth1" heightNode="indoorAreaHeight1" />
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStart1" endNode="tipOcclusionUpdateAreaEnd1" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateAreaStart1" endNode="tipOcclusionUpdateAreaEnd1" />
+        </updateAreas>
+    </ai>
+
+    <lights>
+        <group name="$l10n_action_placeableLightShed" triggerNode="controledLightsTrigger">
+            <sounds>
+                <toggle template="lizardFloodLight" innerRadius="30" outerRadius="50" volumeScale="0.2"/>
+            </sounds>
+        </group>
+
+        <sharedLight filename="placeables/sharedAssets/lights/industrialWallLight.xml" linkNode="industrialWallLight01" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/industrialWallLight.xml" linkNode="industrialWallLight02" groupIndex="1"/>
+
+        <realLights>
+            <low>
+                <light node="realLightsControledLow" groupIndex="1"/>
+            </low>
+            <high>
+                <light node="realLightsControledHigh" groupIndex="1"/>
+            </high>
+        </realLights>
+    </lights>
+
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart node="0" linkNode="easyShed01Node" filename="placeables/sharedAssets/easyShed01.i3d" />
+        <dynamicallyLoadedPart node="0" linkNode="lightSwitch01" filename="$data/shared/assets/lights/rudolfHormann/powerSwitch.i3d" />
+    </dynamicallyLoadedParts>
+
+    <deletedNodes>
+        <deletedNode node="concreteWall10m_01" />
+        <deletedNode node="concreteWall10m_02" />
+        <deletedNode node="concreteWallEnd_01" />
+        <deletedNode node="concreteWallEnd_02" />
+        <deletedNode node="concreteWall10m_03" />
+        <deletedNode node="concreteWallEnd_03" />
+        <deletedNode node="loadingTrigger" />
+        <deletedNode node="activationTrigger" />
+        <deletedNode node="infoTrigger" />
+        <deletedNode node="siloAreaTrigger" />
+        <deletedNode node="warningStripes" />
+        <deletedNode node="siloCollisions" />
+        <deletedNode node="siloTipCollisions" />
+    </deletedNodes>
+
+    <solarPanels>
+        <solarPanelsConfigurations>
+            <solarPanelsConfiguration name="$l10n_ui_none" isActive="false"/>
+            <solarPanelsConfiguration name="195" isActive="true" price="51940" incomePerHour="176" >
+                <objectChange node="solarPanels" visibilityActive="true"/>
+            </solarPanelsConfiguration>
+        </solarPanelsConfigurations>
+    </solarPanels>
+
+    <i3dMappings>
+        <i3dMapping id="easyShed01Node" node="0>0" />
+        <i3dMapping id="walls" node="0>1" />
+        <i3dMapping id="concreteWall10m_01" node="0>1|9" />
+        <i3dMapping id="concreteWall10m_02" node="0>1|10" />
+        <i3dMapping id="concreteWallEnd_01" node="0>1|11" />
+        <i3dMapping id="concreteWallEnd_02" node="0>1|12" />
+        <i3dMapping id="concreteWall10m_03" node="0>1|13" />
+        <i3dMapping id="concreteWallEnd_03" node="0>1|14" />
+        <i3dMapping id="propsBordersNodeMF" node="0>2|0" />
+        <i3dMapping id="propsBordersNodePF" node="0>2|1" />
+        <i3dMapping id="propsPreplacedNodeMF" node="0>2|2" />
+        <i3dMapping id="propsPreplacedNodeMFwalled" node="0>2|3" />
+        <i3dMapping id="propsPreplacedNodePF" node="0>2|4" />
+        <i3dMapping id="industrialWallLight01" node="0>3|0|0" />
+        <i3dMapping id="industrialWallLight02" node="0>3|0|1" />
+        <i3dMapping id="realLightsControledLow" node="0>3|1|0" />
+        <i3dMapping id="realLightsControledHigh" node="0>3|1|1" />
+        <i3dMapping id="lightSwitch01" node="0>3|2|0" />
+        <i3dMapping id="lightSwitch02" node="0>3|2|1" />
+        <i3dMapping id="controledLightsTrigger" node="0>3|3" />
+        <i3dMapping id="manureHeap" node="0>4" />
+        <i3dMapping id="loadingTrigger" node="0>4|0" />
+        <i3dMapping id="loadingTriggerAINode" node="0>4|1" />
+        <i3dMapping id="loadingTriggerMarker" node="0>4|2" />
+        <i3dMapping id="tipAreaStart" node="0>4|3|0" />
+        <i3dMapping id="tipAreaWidth" node="0>4|3|0|0" />
+        <i3dMapping id="tipAreaHeight" node="0>4|3|0|1" />
+        <i3dMapping id="activationTrigger" node="0>4|4" />
+        <i3dMapping id="clearAreaStart" node="0>4|5" />
+        <i3dMapping id="clearAreaWidth" node="0>4|5|0" />
+        <i3dMapping id="clearAreaHeight" node="0>4|5|1" />
+        <i3dMapping id="infoTrigger" node="0>4|6" />
+        <i3dMapping id="mapPosition" node="0>4|7" />
+        <i3dMapping id="teleportNode" node="0>4|8" />
+        <i3dMapping id="bunkerSilo" node="0>5" />
+        <i3dMapping id="siloAreaStart" node="0>5|0|0" />
+        <i3dMapping id="siloAreaWidth" node="0>5|0|1" />
+        <i3dMapping id="siloAreaHeight" node="0>5|0|2" />
+        <i3dMapping id="siloAreaTrigger" node="0>5|0|3" />
+        <i3dMapping id="siloInnerAreaStart" node="0>5|1|0" />
+        <i3dMapping id="siloInnerAreaWidth" node="0>5|1|1" />
+        <i3dMapping id="siloInnerAreaHeight" node="0>5|1|2" />
+        <i3dMapping id="warningStripes" node="0>5|2" />
+        <i3dMapping id="mapPositionBunker" node="0>5|3" />
+        <i3dMapping id="siloCollisions" node="0>5|4" />
+        <i3dMapping id="wallLeftCollision" node="0>5|4|0" />
+        <i3dMapping id="wallRightCollision" node="0>5|4|1" />
+        <i3dMapping id="siloTipCollisions" node="0>5|5" />
+        <i3dMapping id="wallLeft" node="0>5|6" />
+        <i3dMapping id="wallRight" node="0>5|7" />
+        <i3dMapping id="clearAreaStart1" node="0>6|0" />
+        <i3dMapping id="clearAreaWidth1" node="0>6|0|0" />
+        <i3dMapping id="clearAreaHeight1" node="0>6|0|1" />
+        <i3dMapping id="clearAreaStart2" node="0>6|1" />
+        <i3dMapping id="clearAreaWidth2" node="0>6|1|0" />
+        <i3dMapping id="clearAreaHeight2" node="0>6|1|1" />
+        <i3dMapping id="levelAreaStart1" node="0>7|0" />
+        <i3dMapping id="levelAreaWidth1" node="0>7|0|0" />
+        <i3dMapping id="levelAreaHeight1" node="0>7|0|1" />
+        <i3dMapping id="levelAreaStart2" node="0>7|1" />
+        <i3dMapping id="levelAreaWidth2" node="0>7|1|0" />
+        <i3dMapping id="levelAreaHeight2" node="0>7|1|1" />
+        <i3dMapping id="indoorAreaStart1" node="0>8|0" />
+        <i3dMapping id="indoorAreaWidth1" node="0>8|0|0" />
+        <i3dMapping id="indoorAreaHeight1" node="0>8|0|1" />
+        <i3dMapping id="indoorAreaStart2" node="0>8|1" />
+        <i3dMapping id="indoorAreaWidth2" node="0>8|1|0" />
+        <i3dMapping id="indoorAreaHeight2" node="0>8|1|1" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart1" node="0>9|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd1" node="0>9|0|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart2" node="0>9|1" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd2" node="0>9|1|0" />
+        <i3dMapping id="testAreaStart1" node="0>10|0" />
+        <i3dMapping id="testAreaEnd1" node="0>10|0|0" />
+        <i3dMapping id="testAreaStart2" node="0>10|1" />
+        <i3dMapping id="testAreaEnd2" node="0>10|1|0" />
+        <i3dMapping id="solarPanels" node="0>11" />
+    </i3dMappings>
+</placeable>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="mapCC_buySellWarehouseStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_sellingStation_constructionMaterialTrader</name>
+        <image>placeables/sellingStations/mapIcon_sellingStationConstructionMaterialTrader.png</image>
+        <price>1</price>
+        <dailyUpkeep>0</dailyUpkeep>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>sellingPoints</category>
+        <vertexBufferMemoryUsage>48128</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>19456</indexBufferMemoryUsage>
+        <textureMemoryUsage>65536</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>placeables/sellingStations/sellingStationConstructionMaterialTrader.i3d</filename>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" />
+
+    <clearAreas/>
+
+    <leveling/>
+
+    <indoorAreas/>
+
+    <ai>
+        <updateAreas/>
+    </ai>
+
+    <triggerMarkers>
+        <triggerMarker node="unloadTriggerMarkerBulk" filename="$data/shared/assets/marker/markerIconUnload.i3d" adjustToGround="true" />
+        <triggerMarker node="unloadTriggerMarkerPallets" filename="$data/shared/assets/marker/markerIconUnload.i3d" adjustToGround="true" />
+        <triggerMarker node="markerLoadingBulk" filename="placeables/sharedAssets/marker/markerIconBuyConsumable.i3d" adjustToGround="true" />
+        <triggerMarker node="palletBuyingActivationTriggerMarker" filename="$data/shared/assets/marker/markerIconShopping.i3d" adjustToGround="true" />
+    </triggerMarkers>
+
+    <hotspots>
+        <hotspot type="UNLOADING" linkNode="hotspotNode" teleportNode="teleportNode" />
+        <hotspot type="SHOP" linkNode="palletBuyingActivationTriggerMarker" teleportNode="palletBuyingActivationTriggerMarker" />
+    </hotspots>
+
+    <sellingStation node="0" appearsOnStats="true" supportsExtension="false" allowMissions="false" litersForFullPriceDrop="200000" fullPriceRecoverHours="48">
+        <unloadTrigger exactFillRootNode="unloadTriggerBulk" priceScale="1" fillTypes="BOARDS PLANKS PREFABWALL WOODBEAM CEMENT CEMENTBRICKS ROOFPLATES CLAYBRICKS CLAYROOFPLATES CHIPWOODBOARDS FLOORTILES SHINGLE" />
+        <palletTrigger triggerNode="palletTriggerBulk" priceScale="1" fillTypes="BOARDS PLANKS PREFABWALL WOODBEAM CEMENT CEMENTBRICKS ROOFPLATES CLAYBRICKS CLAYROOFPLATES CHIPWOODBOARDS FLOORTILES SHINGLE" />
+
+        <unloadTrigger exactFillRootNode="unloadTriggerPallets" priceScale="1" fillTypes="STONE BLASTFURNACESLAG LIMESTONE CLAY GRAVEL" />
+        <palletTrigger triggerNode="palletTriggerPallets" priceScale="1" fillTypes="STONE BLASTFURNACESLAG LIMESTONE CLAY GRAVEL" />
+    </sellingStation>
+
+    <buyingStation node="0" supportsExtension="false">
+        <loadTrigger triggerNode="loadingTriggerBulk" fillTypes="STONE BLASTFURNACESLAG LIMESTONE CLAY SAND GRAVEL" fillLitersPerSecond="1000" autoStart="false" dischargeNode="dischargeNodeBulk" infiniteCapacity="true">
+            <effectNode effectClass="PipeEffect" effectNode="pipeEffectBulk"      materialType="pipe"           fadeTime="0.5" maxBending="0" shapeScaleSpread="0.8 0.8 1 0" controlPoint="4.5 0 0 0"/>
+            <effectNode                          effectNode="pipeEffectSmokeBulk" materialType="unloadingSmoke" fadeTime="0.5" />
+        </loadTrigger>
+
+        <fillType name="STONE"            priceScale="1.28" />
+        <fillType name="BLASTFURNACESLAG" priceScale="1.28" />
+        <fillType name="LIMESTONE"        priceScale="1.28" />
+        <fillType name="CLAY"             priceScale="1.28" />
+        <fillType name="SAND"             priceScale="1.28" />
+        <fillType name="GRAVEL"           priceScale="1.28" />
+    </buyingStation>
+
+    <palletBuyingStation triggerNode="palletBuyingActivationTrigger">
+        <fillType name="BOARDS"               priceScale="1.28" />
+        <fillType name="PLANKS"               priceScale="1.28" />
+        <fillType name="PREFABWALL"           priceScale="1.28" />
+        <fillType name="WOODBEAM"             priceScale="1.28" />
+        <fillType name="CEMENT"               priceScale="1.28" />
+        <fillType name="CEMENTBRICKS"         priceScale="1.28" />
+        <fillType name="ROOFPLATES"           priceScale="1.28" />
+
+        <fillType name="CLAYBRICKS"           priceScale="1.28" />
+        <fillType name="CLAYROOFPLATES"       priceScale="1.28" />
+        <fillType name="CHIPWOODBOARDS"       priceScale="1.28" />
+        <fillType name="FLOORTILES"           priceScale="1.28" />
+        <fillType name="SHINGLE"              priceScale="1.28" />
+
+        <palletSpawner>
+            <spawnPlaces>
+                <spawnPlace startNode="palletAreaStart01" endNode="palletAreaEnd01" />
+                <spawnPlace startNode="palletAreaStart02" endNode="palletAreaEnd02" />
+                <spawnPlace startNode="palletAreaStart03" endNode="palletAreaEnd03" />
+            </spawnPlaces>
+        </palletSpawner>
+    </palletBuyingStation>
+
+    <i3dMappings>
+        <i3dMapping id="sellingStationBulk" node="0>0" />
+        <i3dMapping id="unloadTriggerBulk" node="0>0|0" />
+        <i3dMapping id="palletTriggerBulk" node="0>0|1" />
+        <i3dMapping id="unloadTriggerMarkerBulk" node="0>0|2" />
+        <i3dMapping id="sellingStationPallets" node="0>1" />
+        <i3dMapping id="unloadTriggerPallets" node="0>1|0" />
+        <i3dMapping id="palletTriggerPallets" node="0>1|1" />
+        <i3dMapping id="unloadTriggerMarkerPallets" node="0>1|2" />
+        <i3dMapping id="buyingTriggerBulk" node="0>2" />
+        <i3dMapping id="loadingTriggerBulk" node="0>2|0" />
+        <i3dMapping id="dischargeNodeBulk" node="0>2|1" />
+        <i3dMapping id="pipeEffectBulk" node="0>2|2|0" />
+        <i3dMapping id="pipeEffectSmokeBulk" node="0>2|2|1" />
+        <i3dMapping id="markerLoadingBulk" node="0>2|3" />
+        <i3dMapping id="palletBuyingActivationTrigger" node="0>3|0" />
+        <i3dMapping id="palletBuyingActivationTriggerMarker" node="0>3|0|0" />
+        <i3dMapping id="palletAreaStart01" node="0>3|1|0" />
+        <i3dMapping id="palletAreaEnd01" node="0>3|1|0|0" />
+        <i3dMapping id="palletAreaStart02" node="0>3|1|1" />
+        <i3dMapping id="palletAreaEnd02" node="0>3|1|1|0" />
+        <i3dMapping id="palletAreaStart03" node="0>3|1|2" />
+        <i3dMapping id="palletAreaEnd03" node="0>3|1|2|0" />
+        <i3dMapping id="hotspotNode" node="0>4" />
+        <i3dMapping id="teleportNode" node="0>5" />
+    </i3dMappings>
+</placeable>

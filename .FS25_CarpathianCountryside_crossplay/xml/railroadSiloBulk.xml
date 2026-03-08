@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="silo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_sellingStation_railroadSiloBulk</name>
+        <functions>
+            <function>$l10n_function_storageSilo</function>
+        </functions>
+        <image>placeables/trainSystem/mapIcon_railroadSiloBulk.png</image>
+        <price>1</price>
+        <dailyUpkeep>0</dailyUpkeep>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>placeableMisc</category>
+        <vertexBufferMemoryUsage>82688</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>18944</indexBufferMemoryUsage>
+        <textureMemoryUsage>131072</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>placeables/trainSystem/railroadSiloBulk.i3d</filename>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" />
+
+    <clearAreas/>
+
+    <leveling/>
+
+    <indoorAreas/>
+
+    <tipOcclusionUpdateAreas/>
+
+    <ai>
+        <updateAreas></updateAreas>
+        <splines>
+            <spline node="aiSpline" />
+        </splines>
+    </ai>
+
+    <triggerMarkers>
+        <triggerMarker node="unloadTriggerMarkerRoad"  filename="$data/shared/assets/marker/markerIconUnload.i3d" adjustToGround="false" />
+        <triggerMarker node="loadTriggerMarkerTrain"   filename="$data/shared/assets/marker/markerIconLoad.i3d" adjustToGround="true" />
+    </triggerMarkers>
+
+    <hotspots>
+        <hotspot type="UNLOADING" linkNode="unloadTriggerMarkerRoad" teleportNode="teleportNodeRoad" />
+    </hotspots>
+
+    <infoTrigger triggerNode="infoTrigger" showAllPlayers="true" />
+
+    <silo>
+        <loadingStation supportsExtension="false" >
+            <loadTrigger triggerNode="loadingTriggerTrain" fillLitersPerSecond="4000" dischargeNode="dischargeNodeTrain" fillTypes="SUGARBEET SUGARBEET_CUT BEETROOT CARROT PARSNIP GREENBEAN SPINACH SUGARCANE WOODCHIPS">
+                <effectNode effectClass="PipeEffect" effectNode="pipeEffectTrain"      materialType="pipe"           fadeTime="0.5" maxBending="0" shapeScaleSpread="1 1 1 0" controlPoint="7.25 0 0 0"/>
+                <effectNode                          effectNode="pipeEffectSmokeTrain" materialType="unloadingSmoke" fadeTime="0.5" />
+            </loadTrigger>
+        </loadingStation>
+
+        <unloadingStation supportsExtension="false" >
+            <unloadTrigger exactFillRootNode="unloadTriggerRoad" aiNode="unloadTriggerRoadAINode" fillTypes="SUGARBEET SUGARBEET_CUT BEETROOT CARROT PARSNIP GREENBEAN SPINACH SUGARCANE WOODCHIPS"/>
+            <palletTrigger triggerNode="palletTriggerRoad" aiNode="unloadTriggerRoadAINode" fillTypes="SUGARBEET SUGARBEET_CUT BEETROOT CARROT PARSNIP GREENBEAN SPINACH SUGARCANE WOODCHIPS"/>
+            <baleTrigger triggerNode="baleTriggerRoad" deleteLitersPerSecond="10000" aiNode="unloadTriggerRoadAINode" fillTypes="SUGARBEET SUGARBEET_CUT BEETROOT CARROT PARSNIP GREENBEAN SPINACH SUGARCANE WOODCHIPS"/>
+        </unloadingStation>
+
+        <storages perFarm="true">
+            <storage isExtension="false" capacity="200000" costsPerFillLevelAndDay="0.005" fillTypes="SUGARBEET SUGARBEET_CUT BEETROOT CARROT PARSNIP GREENBEAN SPINACH SUGARCANE WOODCHIPS"/>
+        </storages>
+    </silo>
+
+    <i3dMappings>
+        <i3dMapping id="unloadStationRoad" node="0>0|0" />
+        <i3dMapping id="unloadTriggerRoad" node="0>0|0|0" />
+        <i3dMapping id="palletTriggerRoad" node="0>0|0|1" />
+        <i3dMapping id="baleTriggerRoad" node="0>0|0|2" />
+        <i3dMapping id="unloadTriggerRoadAINode" node="0>0|0|3" />
+        <i3dMapping id="unloadTriggerMarkerRoad" node="0>0|0|4" />
+        <i3dMapping id="teleportNodeRoad" node="0>0|1" />
+        <i3dMapping id="loadingStationTrain" node="0>1|0" />
+        <i3dMapping id="loadingTriggerTrain" node="0>1|0|0|0" />
+        <i3dMapping id="pipeEffectTrain" node="0>1|0|0|1|0" />
+        <i3dMapping id="pipeEffectSmokeTrain" node="0>1|0|0|1|1" />
+        <i3dMapping id="dischargeNodeTrain" node="0>1|0|0|2" />
+        <i3dMapping id="loadTriggerMarkerTrain" node="0>1|1" />
+        <i3dMapping id="infoTrigger" node="0>2" />
+        <i3dMapping id="aiSpline" node="0>3" />
+    </i3dMappings>
+</placeable>

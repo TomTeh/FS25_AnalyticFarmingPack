@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<placeables version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/savegame_placeables.xsd">
+    <!--Main Farm-->
+    <placeable isPreplaced="true" uniqueId="mainFarmArea_frontGate_es5lvx3rjqo6d3smxnjr155aywg2yq66" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="mainFarmArea_fenceEast_d5raa1f3nqj8wgbvzcb6axmw2qg1ed34" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="mainFarmArea_fenceNorth1_xswcgbi4j6um7nmkoh58oymu7per35ge" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="mainFarmArea_fenceNorth2_5bcg4vfwdpzsl456cusa610kbh7sgp6q" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="mainFarmArea_fenceWest1_td0eocx5dg6jhc5riddw5jmxjlrwkqr6" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="mainFarmArea_fenceWest2_jn6v253o6o908owp4wmxmjcbued6ai8m" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="mainFarmArea_fenceSouth1_uhfdsd79eleebqpc2cgqa61w4s866tks" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="mainFarmArea_fenceSouth2_pmmku8qgg5iyzc6hgu4cdexwg6twav8j" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="mainFarmArea_freeArea_61axc1lvsiisknitmy05rucy0igrfk7b" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="mainFarmArea_freeAreaParlor_tb0qk4ae9dtr0rw2mo1m97rte26ue6v5" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="mainFarmArea_calfArea_xq6u2kg2szl5xswcg7ta4n8tty89p489" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="mainFarmArea_calfAreaHuts1_1y1xdymcag1d76s6kkt5rahvussenvde" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="mainFarmArea_calfAreaHuts2_rbmzx8yneo55x88jkaae59fy3r3abtl2" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="cowBarnSmallPreplaced_01MF_5of3auo7zfdzp6lahxpt6s0u8l2n6lvw" boughtWithFarmlandOverwrite="true">
+        <husbandryFence>
+            <fence>
+                <segment start="48.78 88 -636" end="48.78 88 -633.3" id="SEGMENT"/>
+                <segment start="48.78 88 -633.3" end="98.65 88 -633.3" id="SEGMENT"/>
+                <segment start="98.65 88 -633.3" end="98.65 88 -620.45" id="SEGMENT"/>
+                <segment start="98.65 88 -620.45" end="27.2 89.32 -620.45" id="SEGMENT"/>
+                <segment start="27.2 89.32 -620.45" end="27.2 89.617 -646.745" id="SEGMENT"/>
+                <segment start="27.2 89.617 -646.745" end="38.35 88.46 -646.745" id="SEGMENT"/>
+            </fence>
+        </husbandryFence>
+    </placeable>
+    <placeable isPreplaced="true" uniqueId="cowBarnBigPreplaced_01MF_019v1egxdysojefhcgg335j6nb1ppc5l" boughtWithFarmlandOverwrite="true">
+        <husbandryFence>
+            <fence>
+                <segment start="-71.2 90 -659.6" end="-71.2 90 -656.27" id="SEGMENT"/>
+                <segment start="-71.2 90 -656.27" end="-33.2 90 -656.27" id="SEGMENT"/>
+                <segment start="-33.2 90 -656.27" end="-33.2 89.5 -617" id="SEGMENT"/>
+                <segment start="-33.2 89.5 -617" end="-85.2 89.34 -630.18" id="SEGMENT"/>
+                <segment start="-85.2 89.34 -630.18" end="-85.2 89.98 -674" id="SEGMENT"/>
+            </fence>
+        </husbandryFence>
+    </placeable>
+    <placeable isPreplaced="true" uniqueId="heiferStablePreplaced_01MF_h3u8ubfl5oqfwbtynwf1g4u66r3iolk0" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="cowYoungShelterPreplaced_01MF_mtojgrukot2884onufqwh95zzu91z44u" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="horseBarnPreplaced_01MF_gk9mqms0mezbx1j8iyef3tto8ndsn388" boughtWithFarmlandOverwrite="true">
+        <husbandryFence>
+            <fence>
+                <segment start="213.93 86 -525.5" end="231 85.8 -525.5" id="SEGMENT"/>
+                <segment start="231 85.8 -525.5" end="231 85.35 -436.86" id="SEGMENT"/>
+                <segment start="231 85.35 -436.86" end="213.93 85.9 -436.86" id="SEGMENT"/>
+            </fence>
+        </husbandryFence>
+    </placeable>
+    <placeable isPreplaced="true" uniqueId="pigBarnPreplaced1_01MF_l4rjswutrnkx9199rojj5xonwjlhfnri" boughtWithFarmlandOverwrite="true">
+        <husbandryFence>
+            <fence>
+                <segment start="143.8 87 -583.05" end="143.8 87 -579.7" id="SEGMENT"/>
+                <segment start="143.8 87 -579.7" end="138.7 87 -579.7" id="SEGMENT"/>
+                <segment start="138.7 87 -579.7" end="134.35 87 -579.7" id="GATE4m">
+                    <animatedObject id="animalPigFence_gate4m" time="0.000000" direction="0"/>
+                </segment>
+                <segment start="134.35 87 -579.7" end="125.97 87 -579.7" id="SEGMENT"/>
+                <segment start="125.97 87 -579.7" end="123 87 -583" id="SEGMENT"/>
+                <segment start="123 87 -583" end="123 87 -586" id="SEGMENT"/>
+                <segment start="123 87 -598" end="123 87.4 -625" id="SEGMENT"/>
+                <segment start="123 87.4 -625" end="126 87.3 -628" id="SEGMENT"/>
+                <segment start="126 87.3 -628" end="132 87 -628" id="SEGMENT"/>
+                <segment start="132 87 -628" end="132 87 -625" id="SEGMENT"/>
+                <segment start="132 87 -625" end="138.8 87 -625" id="SEGMENT"/>
+            </fence>
+        </husbandryFence>
+    </placeable>
+    <placeable isPreplaced="true" uniqueId="bunkerSilo1Preplaced_01MF_j0xtf7n931miswf0e26z224gqt6ttdbv" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="bunkerSilo2Preplaced_01MF_pjkpouff4d7i7ih32115ko1zyuodx61y" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="farmGatehouseWithWeight_01MF_oijkj2so6is4ms024r2f5plyd7ujr790" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="farmOfficeBuilding_01MF_ptpyceu7tmhvrj3efmndh4k8m3gyxm7g" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="fuelTank_01MF_m8qh1dmul984zajxzqnycjijzjhheebv" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="grainStorage_01MF_s1pdis6kku6ttvmaq9e5f34r03nk1bj7" boughtWithFarmlandOverwrite="true" nameL10nKey="$l10n_placeableObject_grainStoragePreplaced"/>
+    <placeable isPreplaced="true" uniqueId="liquidFertilizerTanks_01MF_uyzi9k5ozwx0c2l190w9gn6f2xrhs3je" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="milkingParlorPreplaced_01MF_402vkgwv8c0jdmgvtmvvoi2xto4chf6z" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="easyShed01WithWalls_01MF_uor0n6pil9o96fjqz63jxpf22a6bn13h" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="manureHeapMainFarmPreplaced_01MF_6yirqhpck10s3b0p5lebnmmfo5s4ih80" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="repairRamp_01MF_l3y152x345nau9vo0xt4c4d1nkfg8mld" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="consumablesStorage_01MF_r4f0224q3814ewzlg4mkxo4zhuyftxfr" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="hall1_01MF_qgnkc2xcdrkydi0hief7dtlsposdl1hy" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="hall2_01MF_29zb9lm7iu5deoparrnx7ev5vkg46p0x" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="hall2Preplaced_palletRack_01MF_7lcc7g6rkem69yjoy46kse8k5vd83lz6" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="vehicleShelter1_01MF_gss7l6jtyvyoihsurj0b91ivg9yy2b6y" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="vehicleShelter2_01MF_94vd3lqpwmoqhzvrs9uqp5g40r29zctz" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="waterTowerPreplaced_01MF_h8k2sit9ix5ujw7zci2yddacv3r962jx" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="doghouse_01MF_l5b8ruvkb17k7ivdhoudy8yspy55yoah" boughtWithFarmlandOverwrite="true">
+        <configuration name="dogHouse" id="1" isActive="false"/>
+        <configuration name="dogHouse" id="5" isActive="true"/>
+        <doghouse name="Dusty"/>
+    </placeable>
+
+    <!--Pig Farm-->
+    <placeable isPreplaced="true" uniqueId="pigFarmArea_fenceNorth_b0i5aa93a88ufq9s9v27ly5eicdjzkax" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="pigFarmArea_fenceEast_jnjvo9nyk5xu2e2es7drrtrpdj07w7ub" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="pigFarmArea_fenceSouth_7xt9zop8kqlo91dyj48iub91nlvnte0r" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="pigFarmArea_fenceWest_ey3cyv2ocb0hhxd1eadms3qntdkcnpzr" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="pigBarnPreplaced2_01PF_p2kj97qjvi0xig239d8j91yz3paxv7p7" boughtWithFarmlandOverwrite="true">
+        <husbandryFence>
+            <fence>
+                <segment start="-152.1 103.78 409.2" end="-149.1 103.78 409.2" id="SEGMENT"/>
+                <segment start="-149.1 103.78 409.2" end="-149.1 104.14 414.75" id="SEGMENT"/>
+                <segment start="-149.1 104.14 414.75" end="-149.1 104.14 419.1" id="GATE4m">
+                    <animatedObject id="animalPigFence_gate4m" time="0.000000" direction="0"/>
+                </segment>
+                <segment start="-149.1 104.14 419.1" end="-149.1 104.24 424.4" id="SEGMENT"/>
+                <segment start="-149.1 104.24 424.4" end="-150.335 104.343 427.737" id="SEGMENT"/>
+                <segment start="-150.335 104.343 427.737" end="-153.37 104.39 428.67" id="SEGMENT"/>
+                <segment start="-153.37 104.39 428.67" end="-159.3 104.39 428.67" id="SEGMENT"/>
+                <segment start="-171.28 104.39 428.67" end="-195.35 104.39 428.67" id="SEGMENT"/>
+                <segment start="-195.35 104.39 428.67" end="-197.5 104.215 426.5" id="SEGMENT"/>
+                <segment start="-197.5 104.215 426.5" end="-197.5 103.95 420.5" id="SEGMENT"/>
+                <segment start="-197.5 103.95 420.5" end="-194.5 103.95 420.5" id="SEGMENT"/>
+                <segment start="-194.5 103.95 420.5" end="-194.5 103.8 414.165" id="SEGMENT"/>
+            </fence>
+        </husbandryFence>
+    </placeable>
+    <placeable isPreplaced="true" uniqueId="pigBarnPreplaced3_01PF_f3nngrfi6uis9tf202ehtfok4dh6um18" boughtWithFarmlandOverwrite="true">
+        <husbandryFence>
+            <fence>
+                <segment start="-152 104.46 460.15" end="-148.9 104.46 460.15" id="SEGMENT"/>
+                <segment start="-148.9 104.46 460.15" end="-148.9 104.46 465.3" id="SEGMENT"/>
+                <segment start="-148.9 104.46 465.3" end="-148.9 104.46 469.65" id="GATE4m">
+                    <animatedObject id="animalPigFence_gate4m" time="0.000000" direction="0"/>
+                </segment>
+                <segment start="-148.9 104.46 469.65" end="-159.96 104.47 479.64" id="SEGMENT"/>
+                <segment start="-171.85 104.47 479.64" end="-195.34 104.47 479.64" id="SEGMENT"/>
+                <segment start="-195.34 104.47 479.64" end="-197.5 104.47 477.5" id="SEGMENT"/>
+                <segment start="-197.5 104.47 477.5" end="-197.5 104.47 471.5" id="SEGMENT"/>
+                <segment start="-197.5 104.47 471.5" end="-194.5 104.47 471.5" id="SEGMENT"/>
+                <segment start="-194.5 104.47 471.5" end="-194.5 104.47 465.2" id="SEGMENT"/>
+            </fence>
+        </husbandryFence>
+    </placeable>
+    <placeable isPreplaced="true" uniqueId="manureHeapPigFarmPreplaced_01PF_7rz9bvzu9799wl14zoqryvmvv508ne8e" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="baleShedPreplacedPF_01PF_xfeavh2gm0bu160c3s00u9jzcvi4kbfm" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="vehicleShelter3PreplacedPF_01PF_f7z5zfikulli8xjcj0yq3cuvske6kj99" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="vehicleShelter3Preplaced_palletRack_01PF_mcqfw7s4curcisphvr83cz94zqpab5fn" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="uniaFarma400_01PF_v8gkgjpj9dbpccljqn8k0qfmk0kmvdzx" boughtWithFarmlandOverwrite="true" nameL10nKey="$l10n_placeableObject_siloPF"/>
+    <placeable isPreplaced="true" uniqueId="waterTowerPreplaced_01PF_k8h38bzg8k0cja8anq9zphxq7w9bfc9j" boughtWithFarmlandOverwrite="true"/>
+
+    <!--Sheep Farm-->
+    <placeable isPreplaced="true" uniqueId="sheepFarmArea_frontGate_i646h7pz5bhj6lct0w0wz5grosy3phx0" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="sheepFarmArea_fenceNorth_xp36hctanbamxseb1yt4u74drc4dxron" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="sheepFarmArea_fenceEast_etlo0rttct1zldj52b00cl304qsqvpok" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="sheepFarmArea_fenceSouth_dqtal4cn4zf92ddknrvvcgiui93a6scg" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="sheepFarmArea_fenceWest_3rdh45bmvwobtvsx0qah8ch0cdl1s19l" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="sheepFarmArea_sheepLoadingZone_id18faavlxjlcapuqpxn6bgj9xfzb4ni" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="chickenBarnPreplaced_01SF_62r20fsohqbeb2w9ejqwywc9bn6a46qn" boughtWithFarmlandOverwrite="true">
+        <husbandryFence>
+            <fence>
+                <segment start="-302 87 799.8" end="-302 87 788" id="SEGMENT"/>
+                <segment start="-302 87 788" end="-335 87 788" id="SEGMENT"/>
+                <segment start="-335 87 788" end="-335 87 791" id="SEGMENT"/>
+                <segment start="-335 87 791" end="-334 87 799.8" id="SEGMENT"/>
+            </fence>
+        </husbandryFence>
+    </placeable>
+    <placeable isPreplaced="true" uniqueId="sheepBarnPreplaced_01SF_k3prc3b3ez8lel4s33x0tv2901oqg87m" boughtWithFarmlandOverwrite="true">
+        <husbandryFence>
+            <fence>
+                <segment start="-285 88 852.2" end="-285.231 88.299 870.961" id="SEGMENT"/>
+                <segment start="-285.231 88.299 870.961" end="-268.88 93.77 911.6" id="SEGMENT"/>
+                <segment start="-268.88 93.77 911.6" end="-271.4 94.3 915" id="SEGMENT"/>
+                <segment start="-271.4 94.3 915" end="-351.3 95.14 915" id="SEGMENT"/>
+                <segment start="-351.3 95.14 915" end="-354.27 94.84 912.6" id="SEGMENT"/>
+                <segment start="-354.27 94.84 912.6" end="-354.27 88.46 857" id="SEGMENT"/>
+                <segment start="-354.27 88.46 857" end="-347 88 857" id="SEGMENT"/>
+                <segment start="-347 88 857" end="-347 88 866" id="SEGMENT"/>
+                <segment start="-347 88 866" end="-338.5 88 866" id="SEGMENT"/>
+                <segment start="-338.5 88 866" end="-338.5 88 857" id="SEGMENT"/>
+                <segment start="-338.5 88 857" end="-323.5 88 857" id="SEGMENT"/>
+            </fence>
+        </husbandryFence>
+    </placeable>
+    <placeable isPreplaced="true" uniqueId="farmGatehouse_01SF_192swzskcborohqaxr22s4bwvvf3c6rw" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="manureHeapSheepFarmPreplaced_01SF_49xvdijpf64ovfbp1xx5mfzbtd7t7u6n" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="baleShedPreplacedSF_01SF_gltonp4ik0krjthradxy5ef1qb0m3qtk" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="vehicleShelter3PreplacedSF_01SF_pgce4cte8ybnnsvny2s70itjcufmiv4p" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="vehicleShelter3Preplaced_palletRack_01SF_0h5mu27yn2cy72b9gntjlo93kmpu6cec" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="uniaFarma400_01SF_wijd7vdpnewaodfto2eqjf1eg65t7wv4" boughtWithFarmlandOverwrite="true" nameL10nKey="$l10n_placeableObject_siloSF"/>
+
+    <!--Biogas Plant-->
+    <placeable isPreplaced="true" uniqueId="bga_aui7m9rap2a8dyqv3l3rrleejzky5lwd"/>
+    <placeable isPreplaced="true" uniqueId="bgaBunkerSilo1_5w6mtaxrhuxw5nv1snglgo2h715rj8my"/>
+    <placeable isPreplaced="true" uniqueId="bgaBunkerSilo2_74p0v8r8gz1k4g7v8j5cwj5se7sad9ju"/>
+    <placeable isPreplaced="true" uniqueId="bgaBunkerSilo3_mrumvk0clex73kiskgzbbdvfmcb0xfpd"/>
+    <placeable isPreplaced="true" uniqueId="bgaWorkshop_go0zeapfllrbbykbogp47gyl056hth4t"/>
+    <placeable isPreplaced="true" uniqueId="bgaWeighingStation_n2vzum78m4ec2107hxlwl18e6fftjaeo"/>
+    <placeable isPreplaced="true" uniqueId="bgaChargingStation_q98np7ifqnjbmhahdvqr17wndnolyll5" nameL10nKey="$l10n_buyingStation_chargingStationBiogasplant">
+        <customImage filename="$mapdir$/placeables/buyingStations/mapIcon_chargingStationBiogasplant.png"/>
+    </placeable>
+    <placeable isPreplaced="true" uniqueId="bgaBiogasStation_eytujvv9nvoigx8oz87w172dqfo5p7x9" nameL10nKey="$l10n_buyingStation_biogasStationBiogasplant">
+        <customImage filename="$mapdir$/placeables/buyingStations/mapIcon_biogasStationBiogasplant.png"/>
+    </placeable>
+
+    <!--Manure Storage Spot-->
+    <placeable isPreplaced="true" uniqueId="manureStorageSpotLowerPreplaced_cqln8oyzp6f6spt11144s92kkdqeytdf" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="manureStorageSpotUpperPreplaced_y8vlkkizugzgy9wl38oc1ws0pcdb0oht" boughtWithFarmlandOverwrite="true"/>
+
+    <!--Tran System-->
+    <placeable isPreplaced="true" uniqueId="railroadSiloBulk_3pnpr2mdgmp6g5bhccpj9hijrqh0oqmf"/>
+    <placeable isPreplaced="true" uniqueId="railroadSiloGrain_uizqf581pictfmn0vdq96coz7xvxepz0"/>
+    <placeable isPreplaced="true" uniqueId="sellingStationTrain_fdr9vfvd35e0dyvvvl7gduuzpi3xdiwx"/>
+    <placeable filename="$mapdir$/placeables/trainSystem/trainSystem.xml" uniqueId="trainSystem" position="0 0 0" rotation="0 0 0" farmId="0"/>
+
+    <!--Production Points-->
+    <placeable isPreplaced="true" uniqueId="bakery_fmmb16j2ejrxhbbu2buskvts9ya2wfzn"/>
+    <placeable isPreplaced="true" uniqueId="carpenter_yf1dfnm4a7llm6s7yxlrkgccr9a99f9g"/>
+    <placeable isPreplaced="true" uniqueId="dairy_hfzn0nofgbv2hn1wqwnkn9sjjuybnoio"/>
+    <placeable isPreplaced="true" uniqueId="foodProcessingPlant_2c8z93d054r0y80qq9uehpmnvysby1sn"/>
+    <placeable isPreplaced="true" uniqueId="grainMill_22zbgnsval4avuc0ekp84kcq1v048tvy"/>
+    <placeable isPreplaced="true" uniqueId="preservedFoodFactory_feuvgueqest61zrezlvwhevkpmgzjaiz"/>
+    <placeable isPreplaced="true" uniqueId="sawMill_zbaalqtmj7zmivgtg84xn4yv1o56uw25"/>
+    <placeable isPreplaced="true" uniqueId="spinnery_1hduanm4n2ypx101pu4xbonw1hda0f4c"/>
+    <placeable isPreplaced="true" uniqueId="sugarMill_e4n2uahaug7wgmbnk34tv13ejncirpp7"/>
+    <placeable isPreplaced="true" uniqueId="tailorShop_eun88iv7sxc2l4t4ajvugypdvaoyosrj"/>
+    <placeable isPreplaced="true" uniqueId="fishFarmPond_41sd4gmq180xakt86gkig5i8l5o2g18f"/>
+
+    <placeable isPreplaced="true" uniqueId="pianoFactory_slgce508hgcrcaw6qtybjy8u1r6h7d46"/>
+    <placeable isPreplaced="true" uniqueId="woodArtist_q96d7w2jg310szng2yc4edskbkgidxwd"/>
+    <placeable isPreplaced="true" uniqueId="woodArtist_playgroundMaker_4zumuaw404ldfqs1w8u1b7e77g5po8hn"/>
+
+    <!--Quarry-->
+    <placeable isPreplaced="true" uniqueId="quarryArea_ql7gvcxd47dkgrsfc2e42xg9e9ywt9em"/>
+    <placeable isPreplaced="true" uniqueId="quarryStone_steoumb95vxkmnaui1dwd9vrxpmjqwmw"/>
+    <placeable isPreplaced="true" uniqueId="quarryLimestone_kek1b0z73oo9cfnkmcfi9dyd4cz830og"/>
+    <placeable isPreplaced="true" uniqueId="quarryClay_004ez3k5igzysp1xg2wveawv9199vwtt"/>
+    <placeable isPreplaced="true" uniqueId="stoneCrusher_x9ma1hk6dtbdl1s2ovai8alx6tj0thko">
+        <productionPoint>
+            <production id="gravel" isEnabled="false"/>
+        </productionPoint>
+    </placeable>
+    <placeable isPreplaced="true" uniqueId="limestoneCrusher_hz027tt82o1zplzopkvcw900fzx9shdl">
+        <productionPoint>
+            <production id="limestone" isEnabled="false"/>
+        </productionPoint>
+    </placeable>
+    <placeable isPreplaced="true" uniqueId="miningShaftTower_7tft8pdbvkvg1vfcv9howw7jrd8ympgd" canBeDeletedOverwrite="true">
+        <customImage filename="$mapdir$/placeables/productionPoints/miningShaftTower/mapIcon_miningShaftTower.png"/>
+    </placeable>
+
+    <!--Constructibles-->
+    <placeable isPreplaced="true" uniqueId="constructableResidentialBuilding01Preplaced01_i7x4q380up68vr6haoxg0d6tkig48eux"/>
+    <placeable isPreplaced="true" uniqueId="constructableResidentialBuilding02Preplaced01_nae51rs7sgh4p88kch3m2vpw5pmfq18u"/>
+    <placeable isPreplaced="true" uniqueId="constructableResidentialBuilding02Preplaced02_6mylapo6xdtg2eqplf95zatvc12aztas">
+        <constructible>
+            <state name="BUILDING_2">
+                <input fillType="CLAYBRICKS" remainingAmount="8000"/>
+                <input fillType="GRAVEL" remainingAmount="3000"/>
+                <input fillType="CEMENT" remainingAmount="1000"/>
+            </state>
+        </constructible>
+    </placeable>
+    <placeable isPreplaced="true" uniqueId="oldSmallBarn04Quarry_xzps1pzck15c9wswqoes7qqv7v3r0csp" boughtWithFarmlandOverwrite="true">
+        <constructible>
+            <state name="DESTROYED"/>
+        </constructible>
+    </placeable>
+    <placeable isPreplaced="true" uniqueId="oldSmallBarn06Quarry_53xdhhj5uqsbrx7hbfe07ba5z6jsaya9" boughtWithFarmlandOverwrite="true">
+        <constructible>
+            <state name="DESTROYED"/>
+        </constructible>
+    </placeable>
+
+    <!--Selling Stations-->
+    <placeable isPreplaced="true" uniqueId="sellingStationVehicles_n6i7qjjma14l2cok486eu297483k42qs"/>
+
+    <placeable isPreplaced="true" uniqueId="sellingStationConstructionMaterialTrader_zcnlq02b0mmoizz356kqr9tb0m2knjt1"/>
+    <placeable isPreplaced="true" uniqueId="sellingStationContainerTrader_f74f01y364gcbwbr3fdbfo3xrapem7jf"/>
+    <placeable isPreplaced="true" uniqueId="sellingStationLivestockMarket_dwie1rywsmjvm5w0k9h16wv9e4hj4osj"/>
+    <placeable isPreplaced="true" uniqueId="sellingStationSmallFarmer_0pf6pdy18qrbbc85b72ivv2wswypvyxu"/>
+    <placeable isPreplaced="true" uniqueId="sellingStationSupermarket_cvb8630ezmx52n6du0yckr86f64xmcew"/>
+    <placeable isPreplaced="true" uniqueId="sellingStationTransportCompany_f5d2mg93qlc350cppicu7mhp67k9qr0w"/>
+    <placeable filename="$moddir$FS25_orchardsAndGreenhouses_crossplay/placeables/farmersMarket/farmersMarketPreplaced_mapCC.xml" position="17 76.358 -326" rotation="0 -90 0" />
+
+    <placeable isPreplaced="true" uniqueId="debrisCrusher01_4xcmd9xms323zedbhikc06bi1mgp6kh3"/>
+
+    <!--Buying Stations-->
+    <placeable isPreplaced="true" uniqueId="buyingStationFarmSupplies_4k25xx8nvs46vdofjjom029lrodypfb6"/>
+    <placeable isPreplaced="true" uniqueId="buyingStationLime_z69442loxftar1cf2nzclvvfvjsvonec"/>
+    <placeable isPreplaced="true" uniqueId="gasStation01_9eov3g20cnvis6k8w0osez3dalzdkzfz"/>
+    <placeable isPreplaced="true" uniqueId="gasStation02_tz6exj1dz5uug2b2ooj2njvrkmlexh45"/>
+
+    <placeable isPreplaced="true" uniqueId="horseRanch_75a8gx2ll3f7ei4d9ayx4gilcxf6uezn"/>
+
+    <placeable isPreplaced="true" uniqueId="creekWater_3ji1avvn5fhoo7l5xl21fghkp2z5hkb8"/>
+
+    <placeable isPreplaced="true" uniqueId="chargingStation01_gasStation01_z2okbsmcyn6iccmqg28wt1bumozp62kx" nameL10nKey="$l10n_buyingStation_chargingStation01GasStation01">
+        <customImage filename="$mapdir$/placeables/buyingStations/mapIcon_chargingStation01GasStation01.png"/>
+    </placeable>
+    <placeable isPreplaced="true" uniqueId="biogasStation01_gasStation01_4lnz7sp7731wf8ry2nl84n1r0w3gy1ov" nameL10nKey="$l10n_buyingStation_biogasStation01GasStation01">
+        <customImage filename="$mapdir$/placeables/buyingStations/mapIcon_biogasStation01GasStation01.png"/>
+    </placeable>
+    <placeable isPreplaced="true" uniqueId="chargingStation02_gasStation02_4sxzni7pstanj07wrku37di6m7qv43d3" nameL10nKey="$l10n_buyingStation_chargingStation02GasStation02">
+        <customImage filename="$mapdir$/placeables/buyingStations/mapIcon_chargingStation02GasStation02.png"/>
+    </placeable>
+
+    <!--Income Buildings-->
+    <placeable isPreplaced="true" uniqueId="incomeBuildingHorseRanch_dt3lzokrztjb3v69sst7pfcphit2uouo"/>
+    <placeable isPreplaced="true" uniqueId="incomeBuildingPharmacy_rhqfwmrpvo3esyw2kr04lhdocnqqwv11"/>
+    <placeable isPreplaced="true" uniqueId="incomeBuildingRestaurantSterusy_zsd4u9otgq39x4dn81cdaoqulv8zvqn2"/>
+    <placeable isPreplaced="true" uniqueId="incomeBuildingRestaurantLancar_qse393b4h1vpa8coimrkolwd5xp0sfz2"/>
+    <placeable isPreplaced="true" uniqueId="incomeBuildingPubKocin_9vzc8wn5p9me83cx3ja6ivrv4397yw0z"/>
+    <placeable isPreplaced="true" uniqueId="incomeBuildingFootballFieldSterusy_hyqb9ol9usv2nju7xfdz9o9asvscgnl6"/>
+    <placeable isPreplaced="true" uniqueId="incomeBuildingFootballFieldKocin_pag2vq003x1lzw3x1al301fmz5ck06et"/>
+
+    <!--Weighing Stations-->
+    <placeable isPreplaced="true" uniqueId="weighingStation01LivestockMarket_tyaglyoxwbpdedpyt1o095tcxoo775fi"/>
+    <placeable isPreplaced="true" uniqueId="weighingStation01Sawmill_qqtke6zrh9sf4dekw76tymx361kznvl4"/>
+    <placeable isPreplaced="true" uniqueId="weighingStation01MirroredFoodProcessingPlant_1fzsyyvh6slk0bgi85323lmqnyfyebk7"/>
+    <placeable isPreplaced="true" uniqueId="weighingStation01TransportCompany_4p5o0von62cma5xc9u2ypw695ey01y6c"/>
+    <placeable isPreplaced="true" uniqueId="weighingStation02Quarry_oo6j6arcjobm6rgupun5wb438q7pitrc" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="weighingStationLargeTrainStation_37yree8w9bo5tgravqe51z5jccedxi15"/>
+</placeables>

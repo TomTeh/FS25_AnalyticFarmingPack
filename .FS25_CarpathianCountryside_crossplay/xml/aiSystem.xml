@@ -1,0 +1,5 @@
+<aiSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/aiSystem.xsd">
+    <blockedAreaInfoLayer channel="0" name="navigationCollision"/>
+    <maxSlopeAngle>20</maxSlopeAngle>
+    <vehicleMaxHeight>5</vehicleMaxHeight>
+</aiSystem>

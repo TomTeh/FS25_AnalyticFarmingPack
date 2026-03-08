@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/fields.xsd">
+    <fields>
+        <field fieldId="5" weedState="0">
+            <fruit type="CANOLA" growthState="harvested" />
+            <ground type="HARVEST_READY" angle="0" />
+            <spray type="NONE" level="0" />
+        </field>
+        <field fieldId="6" weedState="0">
+            <fruit type="SOYBEAN" growthState="greenBig2" />
+            <ground type="HARVEST_READY_OTHER" angle="0" />
+            <spray type="NONE" level="0" />
+        </field>
+        <field fieldId="7" weedState="0">
+            <fruit type="WHEAT" growthState="harvestReady" />
+            <ground type="HARVEST_READY" angle="0" />
+            <spray type="NONE" level="0" />
+        </field>
+        <field fieldId="32" weedState="0">
+            <fruit type="WHEAT" growthState="harvestReady" />
+            <ground type="HARVEST_READY" angle="90" />
+            <spray type="NONE" level="0" />
+        </field>
+    </fields>
+</map>

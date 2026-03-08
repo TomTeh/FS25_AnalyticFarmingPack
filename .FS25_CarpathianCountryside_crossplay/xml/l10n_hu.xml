@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <texts>
+        <!-- Placeable Objects and Shop Items -->
+        <text name="placeableObject_preplacedMapObject" text="Előre elhelyezett térképtárgy" />
+        <text name="placeableObject_cowBarnSmall" text="Tehénistálló" />
+        <text name="placeableObject_cowBarnSmallVector" text="Tehénistálló etetőrobottal" />
+        <text name="placeableObject_cowBarnSmallNoPasture" text="Tehénistálló (legelő nélkül)" />
+        <text name="placeableObject_cowBarnSmallNoPastureVector" text="Tehénistálló etetőrobottal (legelő nélkül)" />
+        <text name="placeableObject_cowBarnBig" text="Tehénistálló (nagy)" />
+        <text name="placeableObject_cowBarnBigVector" text="Tehénistálló (nagy) etetőrobottal" />
+        <text name="placeableObject_cowBarnBigNoPasture" text="Tehénistálló (nagy, legelő nélkül)" />
+        <text name="placeableObject_cowBarnBigNoPastureVector" text="Tehénistálló (nagy) etetőrobottal (legelő nélkül)" />
+        <text name="placeableObject_cow1" text="Tehénistálló 1 - Šterusy" />
+        <text name="placeableObject_cow2" text="Tehénistálló 2 - Šterusy" />
+        <text name="placeableObject_animalBarnHeiferStablePreplaced" text="Üszőistálló - Šterusy" />
+        <text name="placeableObject_animalBarnCowYoungShelter" text="Fiatal szarvasmarha menedék" />
+        <text name="placeableObject_animalBarnCowYoungShelterPreplaced" text="Fiatal szarvasmarha menedék - Šterusy" />
+        <text name="placeableObject_calfHutSingle" text="Borjúház - egyedi" />
+        <text name="placeableObject_calfHutGroupRight" text="Borjúház - csoportos (jobbra tájolt)" />
+        <text name="placeableObject_calfHutGroupLeft" text="Borjúház - csoportos (balra tájolt)" />
+        <text name="placeableObject_horse1" text="Lóistálló - Šterusy" />
+        <text name="placeableObject_chicken1" text="Tyúkól - Lančár" />
+        <text name="placeableObject_pig1" text="Sertésól 1 - Šterusy" />
+        <text name="placeableObject_pig2" text="Sertésól 2 - Kočín" />
+        <text name="placeableObject_pig3" text="Sertésól 3 - Kočín" />
+        <text name="placeableObject_sheep1" text="Juhistálló - Lančár" />
+        <text name="placeableObject_coveredMultiBunkerSilo1" text="Fedett többkamrás siló 1" />
+        <text name="placeableObject_coveredMultiBunkerSilo2" text="Fedett többkamrás siló 2" />
+        <text name="placeableObject_bgaBunkerSilo" text="Biogázüzemi siló" />
+        <text name="placeableObject_bunkerSilo" text="Siló" />
+        <text name="placeableObject_compostSilo" text="Komposzt siló" />
+        <text name="placeableObject_farmGatehouse" text="Gazdasági kapuház" />
+        <text name="placeableObject_farmGatehouseWithWeight" text="Gazdasági kapuház mérleggel" />
+        <text name="placeableObject_farmOfficeBuilding" text="Gazdasági iroda lakrésszel és műhellyel" />
+        <text name="placeableObject_fuelTank" text="Üzemanyagtartály" />
+        <text name="placeableObject_grainStorage" text="Gabonatároló és daráló" />
+        <text name="placeableObject_grainStoragePreplaced" text="Gabonatároló és daráló - Šterusy" />
+        <text name="placeableObject_liquidFertilizerAndHerbicideTanks" text="Folyékony műtrágya- és gyomirtótartályok" />
+        <text name="placeableObject_milkingParlor" text="Fejőház" />
+        <text name="placeableObject_easyShed01WithWalls" text="Fedett tároló falakkal" />
+        <text name="placeableObject_manureHeapMainFarm" text="Trágyadomb - Šterusy" />
+        <text name="placeableObject_manureHeapPigFarm" text="Trágyadomb - Kočín" />
+        <text name="placeableObject_manureHeapSheepFarm" text="Trágyadomb - Lančár" />
+        <text name="placeableObject_manureStorageSpotLower" text="Trágyatároló pont - alsó" />
+        <text name="placeableObject_manureStorageSpotUpper" text="Trágyatároló pont - felső" />
+        <text name="placeableObject_manureHeapSmall" text="Trágyadomb - kicsi" />
+        <text name="placeableObject_manureHeapSmallExtension" text="Trágyadomb - kicsi bővítés" />
+        <text name="placeableObject_manureHeapMedium" text="Trágyadomb - közepes" />
+        <text name="placeableObject_manureHeapMediumExtension" text="Trágyadomb - közepes bővítés" />
+        <text name="placeableObject_manureHeapLarge" text="Trágyadomb - nagy" />
+        <text name="placeableObject_manureHeapLargeExtension" text="Trágyadomb - nagy bővítés" />
+        <text name="placeableObject_repairRamp" text="Javítórámpa" />
+        <text name="placeableObject_siloPF" text="Gabonasiló - Kočín" />
+        <text name="placeableObject_siloSF" text="Gabonasiló - Lančár" />
+        <text name="placeableObject_baleShed" text="Bálatároló" />
+        <text name="placeableObject_consumablesStorage" text="Fogyóeszköz raktár" />
+        <text name="placeableObject_hall1" text="Járműtároló és raktár" />
+        <text name="placeableObject_hall2" text="Járműtárolók és raktárak együttese" />
+        <text name="placeableObject_vehicleShelter1" text="Járműtároló - zárt" />
+        <text name="placeableObject_vehicleShelter2" text="Járműtároló - nyitott, nagy" />
+        <text name="placeableObject_vehicleShelter3" text="Járműtároló - nyitott, kicsi" />
+        <text name="placeableObject_palletRack" text="Raklapállvány" />
+        <text name="placeableObject_waterTower" text="Víztorony" />
+        <text name="placeableObject_calfArea" text="Borjúgondozó épület" />
+        <text name="placeableObject_animalPigFence" text="Sertéskerítés" />
+        <text name="placeableObject_animalSheepFence" text="Juhkerítés" />
+        <text name="placeableObject_animalCowFence" text="Tehénkerítés" />
+        <text name="placeableObject_oldChainlinkFence" text="Régi drótkerítés" />
+        <text name="placeableObject_metalGridFence" text="Fémrácsos kerítés" />
+        <text name="placeableObject_metalGridFenceBase" text="Fémrácsos kerítés alappal" />
+        <text name="placeableObject_concreteFence" text="Betonkerítés" />
+        <text name="placeableObject_chainlinkFenceBig" text="Nagy drótkerítés" />
+        <text name="placeableObject_chainlinkFenceBigBase" text="Nagy drótkerítés alappal" />
+        <text name="placeableObject_constructionFence" text="Építési kerítés" />
+        <text name="placeableObject_metalGate" text="Fémkapu" />
+        <text name="placeableObject_metalGateDoorLeft" text="Fémkapu kiskapuval (bal)" />
+        <text name="placeableObject_metalGateDoorRight" text="Fémkapu kiskapuval (jobb)" />
+        <text name="placeableObject_floodLightPole" text="Reflektoros oszlop" />
+        <text name="placeableObject_streetLight" text="Utcai lámpa" />
+        <text name="placeableObject_streetLightSmall" text="Kis utcai lámpa" />
+        <text name="placeableObject_poleLamp" text="Oszloplámpa" />
+        <text name="placeableObject_sleepTrigger" text="Alvás aktivátor" />
+        <text name="placeableObject_sleepTriggerDoormat" text="Alvás aktivátor lábtörlővel" />
+        <text name="placeableObject_wardrobeTrigger" text="Ruhatár aktivátor" />
+        <text name="shopItem_decoFoliageGrassMedium" text="Fű - közepes" />
+        <text name="shopItem_decoFoliageGrassSmall" text="Fű - kicsi" />
+        <text name="shopItem_decoFoliageGrassCut" text="Vágott fű" />
+        <text name="shopItem_decoFoliageFlowerWhite" text="Fehér virág" />
+        <text name="shopItem_decoFoliageFlowerLavender" text="Levendula" />
+        <text name="shopItem_decoFoliageFlowerYellow" text="Sárga virág" />
+        <text name="shopItem_decoFoliageFlowerBlue" text="Kék virág" />
+        <text name="shopItem_decoFoliageWeedSmall" text="Gyom - kicsi" />
+        <text name="shopItem_decoFoliageWeedSmallRumex" text="Gyom - lórom (kicsi)" />
+        <text name="shopItem_decoFoliageWeedApera" text="Gyom - ecsetpázsit" />
+        <text name="shopItem_decoFoliageWeedChaerophyllum" text="Gyom - turbolya" />
+        <text name="shopItem_decoFoliageWeedChenopodium" text="Gyom - libatop" />
+        <text name="shopItem_decoFoliageWeedCirsium" text="Gyom - aszat" />
+        <text name="shopItem_decoFoliageWeedPapaverRhoeas" text="Gyom - pipacs" />
+        <text name="shopItem_decoFoliageWeedRumex" text="Gyom - lórom" />
+        <text name="shopItem_groundFoliageBranchesBig" text="Nagy ágak" />
+        <text name="shopItem_groundFoliageBranchesSmall" text="Kis ágak" />
+        <text name="shopItem_groundFoliageBranchesDry" text="Száraz ágak" />
+        <text name="shopItem_groundFoliageMushroomChanterelle" text="Rókagomba" />
+        <text name="shopItem_groundFoliageMushroomBoletus" text="Vargánya" />
+        <text name="shopItem_groundFoliageMushroomWhiteTip" text="Fehér kalapos gomba" />
+        <text name="shopItem_groundFoliageMushroomFlyCap" text="Légyölő galóca" />
+        <text name="shopItem_groundFoliageCoverFoliage" text="Talajtakaró növényzet" />
+        <text name="shopItem_groundFoliageThimbleberry" text="Tüskétlen málna" />
+        <text name="shopItem_groundFoliageMaidenFern" text="Hölgyharaszt" />
+        <text name="shopItem_groundFoliageStingingNettle" text="Csalán" />
+        <text name="shopItem_forestPlantsClover" text="Here" />
+        <text name="shopItem_forestPlantsStarflower" text="Csillagvirág" />
+        <text name="shopItem_forestPlantsBunchberry" text="Somfajta" />
+        <text name="shopItem_forestPlantsSalmonberryBush" text="Lazacbogyó bokor" />
+        <text name="shopItem_forestPlantsStarryFalseSolomonSeal" text="Csillagos salamonpecsét" />
+        <text name="shopItem_forestPlantsSwordFern" text="Kardpáfrány" />
+        <text name="shopItem_forestPlantsDeerFern" text="Szarvaspáfrány" />
+        <text name="shopItem_forestPlantsGrass" text="Erdői fű" />
+        <text name="shopItem_waterPlantsTyphaLatifoliaSmall" text="Széleslevelű gyékény (kicsi)" />
+        <text name="shopItem_waterPlantsTyphaLatifoliaMedium" text="Széleslevelű gyékény (közepes)" />
+        <text name="shopItem_waterPlantsTyphaLatifoliaLarge" text="Széleslevelű gyékény (nagy)" />
+        <text name="shopItem_waterPlantsMiscanthusSinensisSmall" text="Kínai nádfű (kicsi)" />
+        <text name="shopItem_waterPlantsMiscanthusSinensisMedium" text="Kínai nádfű (közepes)" />
+        <text name="shopItem_waterPlantsMiscanthusSinensisLarge" text="Kínai nádfű (nagy)" />
+        <text name="shopItem_waterPlantsStipaTenuissimaSmall" text="Tollfű (kicsi)" />
+        <text name="shopItem_waterPlantsStipaTenuissimaLarge" text="Tollfű (nagy)" />
+        <text name="shopItem_paintableFieldPlowed" text="Felszántott föld" />
+        <text name="shopItem_paintableFieldCultivated" text="Kultivált föld" />
+        <text name="shopItem_paintableFieldRidged" text="Bakátolt föld" />
+
+        <!-- Function Texts -->
+        <text name="function_roofSolarPanelsOption" text="This building has an option to add solar panels on its roof. Price per panel: 265 $. Income per panel per month: 21.6 $ (with adequate weather conditions)." />
+        <text name="function_heiferStable" text="This shelter is intended for heifers. Here they can grow up and should then be moved to another cow barn. Cows in this shelter do not produce milk or liquid manure, but they still produce manure." />
+        <text name="function_cowYoungShelter" text="This shelter is intended for calves or heifers. Here they can grow up and should then be moved to another cow barn. Animals in this shelter do not produce milk or liquid manure, but they still produce manure." />
+        <text name="function_calfHut" text="This hut is intended for calves only. Here they can grow up and must be moved to another cow barn. Animals in this enclosure do not produce milk or liquid manure, only manure, and they require a lot of manual daily care!" />
+        <text name="function_bunkerSiloCC" text="This bunker silo can be filled with chaff, grass, alfalfa, and clover. After compacting and covering the silo, the contents convert into silage. NOTE: If the Maize Plus mod is used, the functionality of this silo changes to M+ standards." />
+        <text name="function_grainStorage" text="This multipurpose facility features a large storage hall allowing crops to be stored on the ground or kept before processing, with plenty of space even for vehicles. The shredder produces food for your animals. Grain can also be stored in large-capacity silos." />
+        <text name="function_fillableLiquidFertilizerAndHerbicideTanks" text="These tanks can be filled with liquid fertilizer and herbicide." />
+        <text name="function_baleStorageCC" text="This building can be used to store your bales." />
+        <text name="function_palletStorage" text="This building can be used to store your pallets." />
+        <text name="function_orchard" text="Orchards produce fruit. They require water, liquid fertilizer, and compost." />
+        <text name="function_greenhouseAdvanced" text="Advanced greenhouses produce vegetables faster but require more care. Needs: water, liquid fertilizer, and compost." />
+        <text name="function_compostSilo" text="A compost silo can be filled with organic waste. After compacting and covering the silo, the contents convert into compost." />
+        <text name="function_compost" text="Compost is required for orchards and greenhouses. It can also be used as fertilizer on fields." />
+        <text name="function_heapSpawnerStoneCC" text="Stones can be collected free of charge from this building. Produces 3,000 units of stone per hour." />
+        <text name="function_heapSpawnerLimestone" text="Limestone can be collected free of charge from this building. Produces 2,800 units of limestone per hour." />
+        <text name="function_heapSpawnerClay" text="Clay can be collected free of charge from this building. Produces 1,600 units of clay per hour." />
+        <text name="function_heapSpawnerIronOre" text="Iron ore can be collected free of charge from this building. Produces 800 units of iron ore per hour." />
+        <text name="function_rentalHouse" text="This house is intended for rent and generates a profit of:" />
+        <text name="function_rentalHouse01Income" text="2,500 $ per month" />
+        <text name="function_rentalHouse02Income" text="3,000 $ per month" />
+        <text name="function_rentalHouse03Income" text="2,000 $ per month" />
+        <text name="function_chainlinkFenceBigGatePlacement" text="PLACEMENT NOTE: Make sure to place the gate parallel to the fence and on flat terrain for correct aesthetics." />
+        <text name="function_decorativeGrass" text="This grass does not grow. It remains in its current stage and serves as decorative grass." />
+        <text name="function_decorativeGardenCrops" text="This is a decorative garden crop and is not functional. It changes visuals depending on the season or disappears during specific times such as winter. (Depending on when it was painted, seasonal changes may start the following year. This also depends on whether seasonal growth is enabled. If seasonal growth is disabled, the appearance changes every in-game day.)" />
+        <text name="function_paintableField" text="Creates soil suitable for growing crops." />
+
+        <!-- Fill Types -->
+        <text name="fillType_decoGardenFoliage" text="Dekoratív kerti növények" />
+        <text name="fillType_rye" text="Rozs" />
+        <text name="fillType_mustard" text="Mustár" />
+        <text name="fillType_mowedCrop" text="Kaszált növény" />
+        <text name="fillType_alfalfa" text="Lucerna" />
+        <text name="fillType_alfalfaHay" text="Lucernaszéna" />
+        <text name="fillType_alfalfaSilo" text="Lucerna siló (apríték)" />
+        <text name="fillType_alfalfaSilage" text="Lucernaszenázs" />
+        <text name="fillType_clover" text="Here" />
+        <text name="fillType_cloverHay" text="Hereszéna" />
+        <text name="fillType_cloverSilo" text="Here siló (apríték)" />
+        <text name="fillType_cloverSilage" text="Hereszenázs" />
+        <text name="fillType_mustardProcessed" text="Feldolgozott mustár" />
+        <text name="fillType_apple" text="Alma" />
+        <text name="fillType_pear" text="Körte" />
+        <text name="fillType_apricot" text="Sárgabarack" />
+        <text name="fillType_plum" text="Szilva" />
+        <text name="fillType_greenPepper" text="Zöldpaprika" />
+        <text name="fillType_cucumber" text="Uborka" />
+        <text name="fillType_watermelon" text="Görögdinnye" />
+        <text name="fillType_appleJuice" text="Almalé" />
+        <text name="fillType_apricotJam" text="Sárgabaracklekvár" />
+        <text name="fillType_plumJam" text="Szilvalekvár" />
+        <text name="fillType_ketchup" text="Ketchup" />
+        <text name="fillType_strawberryJuice" text="Eperlé" />
+        <text name="fillType_pickles" text="Savanyúság" />
+        <text name="fillType_organicWaste" text="Szerves hulladék" />
+        <text name="fillType_compost" text="Komposzt" />
+        <text name="fillType_leather" text="Bőr" />
+        <text name="fillType_clayBrick" text="Agyagtégla" />
+        <text name="fillType_clayRoofPlate" text="Agyag tetőcserép" />
+        <text name="fillType_chipwoodBoards" text="Forgácslap" />
+        <text name="fillType_blastFurnaceSlag" text="Kohósalak" />
+        <text name="fillType_limestone" text="Mészkő" />
+        <text name="fillType_clay" text="Agyag" />
+        <text name="fillType_sand" text="Homok" />
+        <text name="fillType_gravel" text="Kavics" />
+        <text name="fillTypeGroup_alfClo" text="Lucerna / Here" />
+        
+        <!-- ProductionPoints -->
+        <text name="productionPoint_appleOrchard" text="Almaültetvény" />
+        <text name="productionPoint_pearOrchard" text="Körteültetvény" />
+        <text name="productionPoint_apricotOrchard" text="Sárgabarack-ültetvény" />
+        <text name="productionPoint_plumOrchard" text="Szilvaültetvény" />
+        <text name="productionPoint_greenhouseSmallAdvanced" text="Kis üvegház – fejlett" />
+        <text name="productionPoint_greenhouseSmallAdvanced_watermelon" text="Kis üvegház – fejlett (görögdinnye)" />
+        <text name="productionPoint_greenhouseMediumAdvanced" text="Közepes üvegház – fejlett" />
+        <text name="productionPoint_greenhouseMediumAdvanced_watermelon" text="Közepes üvegház – fejlett (görögdinnye)" />
+        <text name="productionPoint_greenhouseLargeAdvanced" text="Nagy üvegház – fejlett" />
+        <text name="productionPoint_greenhouseLargeAdvanced_watermelon" text="Nagy üvegház – fejlett (görögdinnye)" />
+        <text name="productionPoint_fruitVegetableFactory" text="Gyümölcs- és zöldségfeldolgozó üzem" />
+        <text name="productionPoint_foodProcessingPlant" text="Élelmiszer-feldolgozó üzem" />
+        <text name="productionPoint_sawMill" text="Fűrészüzem" />
+        <text name="productionPoint_fishFarmPond" text="Halastó" />
+        <text name="productionPoint_woodArtist" text="Faipari műhely" />
+        <text name="productionPoint_woodArtist_playgroundMaker" text="Faipari műhely – játszótér gyártás" />
+        <text name="productionPoint_quarryStone" text="Kőbánya" />
+        <text name="productionPoint_quarryLimestone" text="Mészkőbánya" />
+        <text name="productionPoint_quarryClay" text="Agyagbánya" />
+        <text name="productionPoint_stoneCrusher" text="Kőtörő" />
+        <text name="productionPoint_limestoneCrusher" text="Mészkőtörő" />
+        <!-- ProductionPoints - texts -->
+        <text name="productionPoint_grainShredder_pigFood1" text="Sertéstáp (1. recept)" />
+        <text name="productionPoint_grainShredder_pigFood2" text="Sertéstáp (2. recept)" />
+        <text name="productionPoint_fillType_friedOnion" text="Pirított hagyma" />
+        <text name="productionPoint_fillType_onionBag" text="Hagyma (csomagolt)" />
+        <text name="productionPoint_fillType_onionSalt" text="Hagymasó" />
+        <text name="productionPoint_fillType_onionSoup" text="Hagymaleves" />
+        <text name="productionPoint_fillType_fishFood" text="Haleleség" />
+        <text name="productionPoint_fillType_trout" text="Pisztráng" />
+        <text name="productionPoint_fillType_troutYoung" text="Fiatal pisztráng" />
+
+        <!-- Production Point Pallets -->
+        <text name="pallet_applesBoxPallet" text="Almás raklap" />
+        <text name="pallet_pearsBoxPallet" text="Körtés raklap" />
+        <text name="pallet_apricotsBoxPallet" text="Sárgabarackos raklap" />
+        <text name="pallet_plumsBoxPallet" text="Szilvás raklap" />
+        <text name="pallet_greenPepperBoxPallet" text="Zöldpaprikás raklap" />
+        <text name="pallet_cucumbersBoxPallet" text="Uborkás raklap" />
+        <text name="pallet_onionsBoxPallet" text="Hagymás raklap" />
+        <text name="pallet_watermelonBoxPallet" text="Görögdinnyés raklap" />
+        <text name="pallet_appleJuiceBoxPallet" text="Almalés raklap" />
+        <text name="pallet_apricotJamBoxPallet" text="Sárgabaracklekváros raklap" />
+        <text name="pallet_plumJamBoxPallet" text="Szilvalekváros raklap" />
+        <text name="pallet_ketchupBoxPallet" text="Ketchupos raklap" />
+        <text name="pallet_strawberryJuiceBoxPallet" text="Eperleves raklap" />
+        <text name="pallet_picklesBoxPallet" text="Savanyúuborkás raklap" />
+        <text name="pallet_leathersPallet" text="Bőr raklap" />
+        <text name="pallet_clayBricksPallet" text="Agyagtéglás raklap" />
+        <text name="pallet_clayRoofPlatesPallet" text="Agyag tetőcserepes raklap" />
+        <text name="pallet_chipwoodBoardsStackPallet" text="Forgácslapos raklap" />
+
+        <!-- Constructibles -->
+        <text name="constructable_rentalHouse01" text="Bérelhető ház 1" />
+        <text name="constructable_rentalHouse02" text="Bérelhető ház 2" />
+        <text name="constructable_rentalHouse03" text="Bérelhető ház 3" />
+        <text name="constructable_residentialBuilding01Preplaced01" text="Családi ház építése – Lančár" />
+        <text name="constructable_residentialBuilding02Preplaced01" text="Családi ház építése – Šterusy" />
+        <text name="constructable_residentialBuilding02Preplaced02" text="Családi ház építése – Kočín" />
+
+        <!-- Selling Stations -->
+        <text name="sellingStation_vehicleShop" text="Járműszerviz és -értékesítés – Luca Motors" />
+        <text name="sellingStation_constructionMaterialTrader" text="Építőanyag-kereskedő" />
+        <text name="sellingStation_containerTrader" text="Konténerkereskedő" />
+        <text name="sellingStation_smallFarmer" text="Katie farmja" />
+        <text name="sellingStation_trainOtherTownSK" text="Žilina" />
+        <text name="sellingStation_railroadSiloBulk" text="Vasúti siló – nagy kapacitás" />
+        <text name="sellingStation_railroadSiloGrain" text="Vasúti siló – gabona" />
+        <text name="openingHours_4-0" text="Nyitvatartás: 4:00–24:00." />
+        <text name="openingHours_5-23" text="Nyitvatartás: 5:00–23:00." />
+        <text name="openingHours_6-18" text="Nyitvatartás: 6:00–18:00." />
+        <text name="openingHours_6-22" text="Nyitvatartás: 6:00–22:00." />
+        <text name="openingHours_6-0" text="Nyitvatartás: 6:00–24:00." />
+
+        <!-- Buying Stations -->
+        <text name="buyingStation_farmSupplies" text="Mezőgazdasági felszerelés kereskedő" />
+        <text name="buyingStation_creekWater" text="Víztározás a patakból" />
+        <text name="buyingStation_smallGasStation" text="Kis benzinkút" />
+        <text name="buyingStation_horseRanch" text="Ranch" />
+        <text name="buyingStation_chargingStationBiogasplant" text="Elektromos töltőállomás – Biogázüzem" />
+        <text name="buyingStation_biogasStationBiogasplant" text="Biometán állomás – Biogázüzem" />
+        <text name="buyingStation_chargingStation01GasStation01" text="Elektromos töltőállomás – Benzinkút" />
+        <text name="buyingStation_chargingStation02GasStation02" text="Elektromos töltőállomás – Kis benzinkút" />
+        <text name="buyingStation_biogasStation01GasStation01" text="Biometán állomás – Benzinkút" />
+
+        <!-- Income Buildings -->
+        <text name="incomeBuilding_horseRanch" text="Ranch" />
+        <text name="incomeBuilding_pharmacy" text="Gyógyszertár" />
+        <text name="incomeBuilding_restaurantSterusy" text="Étterem Szent Péter" />
+        <text name="incomeBuilding_restaurantLancar" text="Pizzéria Éhes Sütő" />
+        <text name="incomeBuilding_pubKocin" text="A Macskás Pub" />
+        <text name="incomeBuilding_footballFieldSterusy" text="Futballpálya Šterusy" />
+        <text name="incomeBuilding_footballFieldKocín" text="Futballpálya Kočín" />
+
+        <!-- Animations -->
+        <text name="action_hideRoof" text="Tető elrejtése" />
+        <text name="action_unhideRoof" text="Tető visszaállítása" />
+        <text name="action_openInspectionPit" text="Szemleárok feltárása" />
+        <text name="action_closeInspectionPit" text="Szemleárok lefedése" />
+        <text name="action_disableElectricityPoleCols" text="Alacsony feszültségű oszlopütközések letiltása a földeken" />
+        <text name="action_enableElectricityPoleCols" text="Alacsony feszültségű oszlopütközések engedélyezése a földeken" />
+        <text name="action_configureObjectStorageOff" text="Automatikus tárhelyhasználat letiltása. FIGYELEM: ürítse ki a tárolót a mód váltása előtt" />
+        <text name="action_configureObjectStorageOn" text="Automatikus tárhelyhasználat engedélyezése. FIGYELEM: ürítse ki a tárolót a mód váltása előtt" />
+        <text name="action_heiferStableAddPoles" text="Tetőoszlopok hozzáadása. MEGJEGYZÉS: Használja, ha eladott egy bunker silót, amelyhez ez a pajta csatlakozik." />
+        <text name="action_heiferStableRemovePoles" text="Tetőoszlopok eltávolítása. MEGJEGYZÉS: Használja, ha a pajtához csatlakozó bunker siló még jelen van." />
+        <text name="action_moveFenceClean" text="Kerítés áthelyezése tisztító pozícióba" />
+        <text name="action_moveFenceBack" text="Kerítés visszahelyezése normál pozícióba" />
+        <text name="action_ladderUp" text="Létra: fel" />
+        <text name="action_ladderDown" text="Létra: le" />
+
+        <!-- Colors -->
+        <text name="color_buildingSpecificDefault" text="LIZARD Épület specifikus alapértelmezett szín" />
+        <text name="color_lizardRed" text="LIZARD Piros" />
+        <text name="color_lizardDarkRed" text="LIZARD Sötétpiros" />
+        <text name="color_lizardOrange" text="LIZARD Narancs" />
+        <text name="color_lizardBrown" text="LIZARD Barna" />
+        <text name="color_lizardYellow" text="LIZARD Sárga" />
+        <text name="color_lizardBrightYellow" text="LIZARD Élénksárga" />
+        <text name="color_lizardLimeGreen" text="LIZARD Lime zöld" />
+        <text name="color_lizardFarmBrightGreen" text="LIZARD Gazdasági élénk zöld" />
+        <text name="color_lizardBrightGreen" text="LIZARD Élénk zöld" />
+        <text name="color_lizardGreen" text="LIZARD Zöld" />
+        <text name="color_lizardFarmGreen" text="LIZARD Gazdasági zöld" />
+        <text name="color_lizardDarkGreen" text="LIZARD Sötétzöld" />
+        <text name="color_lizardTurquoise" text="LIZARD Türkiz" />
+        <text name="color_lizardSkyBlue" text="LIZARD Égkék" />
+        <text name="color_lizardLizardBrightBlue" text="LIZARD Élénk kék" />
+        <text name="color_lizardBlue" text="LIZARD Kék" />
+        <text name="color_lizardOceanBlue" text="LIZARD Óceánkék" />
+        <text name="color_lizardDarkBlue" text="LIZARD Sötétkék" />
+        <text name="color_lizardPurple" text="LIZARD Lila" />
+        <text name="color_lizardBrightPurple" text="LIZARD Élénklila" />
+        <text name="color_lizardPink" text="LIZARD Rózsaszín" />
+        <text name="color_lizardBrightPink" text="LIZARD Élénkrózsaszín" />
+
+        <!-- AI Helpers -->
+        <text name="aiHelperNameA" text="Lukács" />
+        <text name="aiHelperNameB" text="Dominika" />
+        <text name="aiHelperNameC" text="Márton" />
+        <text name="aiHelperNameD" text="Szófia" />
+        <text name="aiHelperNameE" text="Sztanyiszlav" />
+        <text name="aiHelperNameF" text="Emma" />
+        <text name="aiHelperNameG" text="Patrik" />
+        <text name="aiHelperNameH" text="Laura" />
+        <text name="aiHelperNameI" text="Dávid" />
+        <text name="aiHelperNameJ" text="Katalin" />
+
+        <!-- Ground Types -->
+        <text name="groundType_asphaltDusty" text="Poros aszfalt"/>
+        <text name="groundType_asphaltCracks" text="Repedezett aszfalt"/>
+        <text name="groundType_asphaltCracksDirt" text="Piszkos repedezett aszfalt"/>
+        <text name="groundType_asphaltDirt" text="Piszkos aszfalt"/>
+        <text name="groundType_concreteDark" text="Sötét beton"/>
+        <text name="groundType_concreteDirty" text="Piszkos beton"/>
+        <text name="groundType_panel" text="Panel"/>
+        <text name="groundType_panelDamaged" text="Sérült panel"/>
+        <text name="groundType_panelDirt" text="Piszkos panel"/>
+        <text name="groundType_pavement" text="Járda"/>
+        <text name="groundType_pavementHTiles" text="Járda - H alakú"/>
+        <text name="groundType_pavementGrass" text="Füves burkolat"/>
+        <text name="groundType_vehicleMud" text="Gumiabroncs nyomok a sárban"/>
+        <text name="groundType_vehicleMudPuddle" text="Gumiabroncs nyomok a sárban pocsolyákkal"/>
+        <text name="groundType_mud" text="Sár"/>
+        <text name="groundType_riverBed" text="Folyómeder"/>
+        <text name="groundType_grassTown" text="Gyep"/>
+        <text name="groundType_grassLeaves" text="Fű levelekkel"/>
+        <text name="groundType_gravelPathway" text="Útszéli kavics"/>
+        <text name="groundType_gravelDirt" text="Kavicsos föld"/>
+        <text name="groundType_gravelDirtBlend" text="Piszkos kavics"/>
+        <text name="groundType_gravelMoss" text="Mohás kavics"/>
+        <text name="groundType_forestNeedels" text="Erdő talaj tűlevelekkel"/>
+        <text name="groundType_forestRoots" text="Erdő talaj gyökerekkel"/>
+        <text name="groundType_rockLight" text="Világos kő"/>
+        <text name="groundType_rockDark" text="Sötét kő"/>
+
+        <!-- Collectibles -->
+        <text name="collectible_cc_all_cow" text="Minden 10 tehenet megtaláltál! Menj a szálláshelyedre a gazdasági irodaházban, valami megváltozott!"/>
+        <text name="collectible_cc_all_harvester" text="Minden 10 kombájnt megtaláltál! Menj a szálláshelyedre a gazdasági irodaházban, valami megváltozott!"/>
+        <text name="collectible_cc_all_horse" text="Minden 10 lovat megtaláltál! Menj a szálláshelyedre a gazdasági irodaházban, valami megváltozott!"/>
+        <text name="collectible_cc_all_pig" text="Minden 10 disznót megtaláltál! Menj a szálláshelyedre a gazdasági irodaházban, valami megváltozott!"/>
+        <text name="collectible_cc_all_plow" text="Minden 10 eke megtaláltad! Menj a szálláshelyedre a gazdasági irodaházban, valami megváltozott!"/>
+        <text name="collectible_cc_all_seeder" text="Minden 10 vetőgépet megtaláltál! Menj a szálláshelyedre a gazdasági irodaházban, valami megváltozott!"/>
+        <text name="collectible_cc_all_sheep" text="Minden 10 bárányt megtaláltál! Menj a szálláshelyedre a gazdasági irodaházban, valami megváltozott!"/>
+        <text name="collectible_cc_all_tractor" text="Minden 10 traktort megtaláltál! Menj a szálláshelyedre a gazdasági irodaházban, valami megváltozott!"/>
+        <text name="collectible_cc_all_trailer" text="Minden 10 utánfutót megtaláltál! Menj a szálláshelyedre a gazdasági irodaházban, valami megváltozott!"/>
+        <text name="collectible_cc_all_waterTrailer" text="Minden 10 vízszállító utánfutót megtaláltál! Menj a szálláshelyedre a gazdasági irodaházban, valami megváltozott!"/>
+    </texts>
+    <elements>
+        <e k="collectible_cc_cow" v="Találtál egy tehenet! Még %d tehén van hátra." tag="format"/>
+        <e k="collectible_cc_harvester" v="Találtál egy kombájnt! Még %d kombájn van hátra." tag="format"/>
+        <e k="collectible_cc_horse" v="Találtál egy lovat! Még %d ló van hátra." tag="format"/>
+        <e k="collectible_cc_pig" v="Találtál egy disznót! Még %d disznó van hátra." tag="format"/>
+        <e k="collectible_cc_plow" v="Találtál egy ekét! Még %d eke van hátra." tag="format"/>
+        <e k="collectible_cc_seeder" v="Találtál egy vetőgépet! Még %d vetőgép van hátra." tag="format"/>
+        <e k="collectible_cc_sheep" v="Találtál egy bárányt! Még %d bárány van hátra." tag="format"/>
+        <e k="collectible_cc_tractor" v="Találtál egy traktort! Még %d traktor van hátra." tag="format"/>
+        <e k="collectible_cc_trailer" v="Találtál egy utánfutót! Még %d utánfutó van hátra." tag="format"/>
+        <e k="collectible_cc_waterTrailer" v="Találtál egy vízszállító utánfutót! Még %d vízszállító utánfutó van hátra." tag="format"/>
+    </elements>
+</l10n>

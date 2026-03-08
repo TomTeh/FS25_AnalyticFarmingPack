@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="buyingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_buyingStation_farmSupplies</name>
+        <image>placeables/buyingStations/mapIcon_buyingStationFarmSupplies.png</image>
+        <price>1</price>
+        <dailyUpkeep>0</dailyUpkeep>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>placeableMisc</category>
+        <vertexBufferMemoryUsage>1024</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>512</indexBufferMemoryUsage>
+        <textureMemoryUsage>65536</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>placeables/buyingStations/buyingStationFarmSupplies.i3d</filename>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" />
+
+    <clearAreas/>
+
+    <leveling/>
+
+    <indoorAreas/>
+
+    <ai>
+        <updateAreas/>
+    </ai>
+
+    <triggerMarkers>
+        <triggerMarker node="markerLoading" filename="placeables/sharedAssets/marker/markerIconBuyConsumable.i3d" adjustToGround="true" />
+    </triggerMarkers>
+
+    <hotspots>
+        <hotspot type="LOADING" linkNode="mapPosition" teleportNode="teleportNode" />
+    </hotspots>
+
+    <buyingStation node="buyingStation" supportsExtension="false">
+        <loadTrigger triggerNode="loadTrigger" fillTypes="SEEDS FERTILIZER LIQUIDFERTILIZER HERBICIDE ROADSALT" fillLitersPerSecond="1000" autoStart="false" infiniteCapacity="true"/>
+        <fillType name="SEEDS" priceScale="0.5" />
+        <fillType name="FERTILIZER" priceScale="0.5" />
+        <fillType name="LIQUIDFERTILIZER" priceScale="0.6" />
+        <fillType name="HERBICIDE" priceScale="0.5" />
+        <fillType name="ROADSALT" priceScale="0.5" />
+    </buyingStation>
+
+    <i3dMappings>
+        <i3dMapping id="buyingStation" node="0>0" />
+        <i3dMapping id="loadTrigger" node="0>0|0" />
+        <i3dMapping id="markerLoading" node="0>1" />
+        <i3dMapping id="mapPosition" node="0>2" />
+        <i3dMapping id="teleportNode" node="0>3" />
+        <i3dMapping id="connectorCollisionFertilizerVegetable" node="0>4" />
+        <i3dMapping id="connectorCollisionFertilizer" node="0>5" />
+        <i3dMapping id="connectorCollisionHerbicide" node="0>6" />
+    </i3dMappings>
+</placeable>

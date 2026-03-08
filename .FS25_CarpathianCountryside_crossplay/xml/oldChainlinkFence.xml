@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="newFence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_placeableObject_oldChainlinkFence</name>
+        <functions>
+            <function>$l10n_function_decoration</function>
+        </functions>
+        <image>placeables/fences/store_oldChainlinkFence.dds</image>
+        <price>80</price>
+        <dailyUpkeep>0</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>LIZARDBUILDING</brand>
+        <species>PLACEABLE</species>
+        <category>fences</category>
+        <canBeSold>true</canBeSold>
+        <showInStore>true</showInStore>
+
+        <brush>
+            <type>newFence</type>
+            <category>decoration</category>
+            <tab>newFences</tab>
+        </brush>
+
+        <storeIconRendering>
+            <settings centerIcon="true"/>
+            <objectBundle>
+                <object filename="placeables/fences/oldChainlinkFence.i3d">
+                    <!-- poles -->
+                    <node node="0|0" translation="0 0 0" rotation="0 90 0" scale="1 1 1"/>
+                    <node node="0|0" translation="3 0 0" rotation="0 90 0" scale="1 1 1"/>
+                    <node node="0|0" translation="6 0 0" rotation="0 90 0" scale="1 1 1"/>
+
+                    <!-- panels -->
+                    <node node="1|0" translation="0 0 0" rotation="0 90 0" scale="1 1 1"/>
+                    <node node="1|0" translation="3 0 0" rotation="0 90 0" scale="1 1 1"/>
+                </object>
+            </objectBundle>
+        </storeIconRendering>
+        <vertexBufferMemoryUsage>3072</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>1280</indexBufferMemoryUsage>
+        <textureMemoryUsage>2621440</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>placeables/fences/oldChainlinkFence.i3d</filename>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <sounds>
+            <place template="fenceStoneImp" />
+            <destroy template="destroyFence" />
+        </sounds>
+    </placement>
+
+    <fence>
+        <segment id="SEGMENT" class="FenceSegment" maxVerticalAngle="45">
+            <poles>
+                <pole node="pole01" radius="0.0"/>
+                <pole node="pole02" radius="0.0"/>
+            </poles>
+            <panels maxScale="1.5">
+                <panel node="panel01" length="3" />
+            </panels>
+        </segment>
+    </fence>
+
+    <i3dMappings>
+        <i3dMapping id="pole01" node="0>0" />
+        <i3dMapping id="pole02" node="0>1" />
+        <i3dMapping id="panel01" node="1>0" />
+    </i3dMappings>
+</placeable>

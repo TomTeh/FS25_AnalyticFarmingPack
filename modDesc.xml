@@ -2,30 +2,17 @@
 <modDesc descVersion="91">
     <author>TomTeh</author>
     <version>0.1.0.0</version>
-    
     <title>
+        <cs>Analytic Farming Pack</cs>
         <en>Analytic Farming Pack</en>
-        <cs>Analytický balíček pro farmáře</cs>
     </title>
-    
     <description>
-        <en>Advanced data analysis for your farm.</en>
-        <cs>Pokročilá analýza dat pro vaši farmu.</cs>
+        <cs>Komplexní analýza farmy jako firmy.</cs>
+        <en>Complex farm management analysis.</en>
     </description>
-    
-    <!-- <iconFilename>icon.png</iconFilename> -->
-    <multiplayer supported="false" />
-
+    <iconFilename>icon.dds</iconFilename>
+    <multiplayer supported="false"/>
     <extraSourceFiles>
         <sourceFile filename="AnalyticMain.lua" />
     </extraSourceFiles>
-    
-    <storeItems>
-        </storeItems>
-    
-    <actions>
-        </actions>
-    
-    <inputBindings>
-        </inputBindings>
 </modDesc>

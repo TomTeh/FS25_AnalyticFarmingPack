@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="silo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_sellingStation_railroadSiloGrain</name>
+        <functions>
+            <function>$l10n_function_storageSilo</function>
+        </functions>
+        <image>placeables/trainSystem/mapIcon_railroadSiloGrain.png</image>
+        <price>1</price>
+        <dailyUpkeep>0</dailyUpkeep>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>placeableMisc</category>
+        <vertexBufferMemoryUsage>103168</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>36352</indexBufferMemoryUsage>
+        <textureMemoryUsage>131072</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>placeables/trainSystem/railroadSiloGrain.i3d</filename>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" />
+
+    <clearAreas/>
+
+    <leveling/>
+
+    <indoorAreas/>
+
+    <tipOcclusionUpdateAreas/>
+
+    <ai>
+        <updateAreas></updateAreas>
+        <splines>
+            <spline node="aiSpline" />
+        </splines>
+    </ai>
+
+    <triggerMarkers>
+        <triggerMarker node="unloadTriggerMarkerTrain" filename="$data/shared/assets/marker/markerIconUnload.i3d" adjustToGround="true" />
+        <triggerMarker node="loadTriggerMarkerTrain"   filename="$data/shared/assets/marker/markerIconLoad.i3d" adjustToGround="true" />
+        <triggerMarker node="unloadTriggerMarkerRoad"  filename="$data/shared/assets/marker/markerIconUnload.i3d" adjustToGround="true" />
+        <triggerMarker node="loadTriggerMarkerRoad"    filename="$data/shared/assets/marker/markerIconLoad.i3d" adjustToGround="true" />
+    </triggerMarkers>
+
+    <hotspots>
+        <hotspot type="UNLOADING_TRAIN" linkNode="unloadTriggerMarkerTrain" teleportNode="teleportNodeTrain" />
+        <hotspot type="UNLOADING" linkNode="unloadTriggerMarkerRoad" teleportNode="teleportNodeRoad" />
+    </hotspots>
+
+    <infoTrigger triggerNode="infoTrigger" showAllPlayers="true" />
+
+    <silo>
+        <loadingStation supportsExtension="false" >
+            <loadTrigger triggerNode="loadingTriggerRoad" fillLitersPerSecond="1500" dischargeNode="dischargeNodeRoad" aiNode="loadTriggerRoadAINode" fillTypes="WHEAT BARLEY OAT CANOLA SORGHUM SUNFLOWER SOYBEAN MAIZE RICE RICELONGGRAIN PEA OLIVE GRAPE SEEDS RYE">
+                <effectNode effectClass="PipeEffect" effectNode="pipeEffectRoad"      materialType="pipe"           fadeTime="0.5" maxBending="0" shapeScaleSpread="0.7 0.7 1 0" controlPoint="5.2 0 0 0"/>
+                <effectNode                          effectNode="pipeEffectSmokeRoad" materialType="unloadingSmoke" fadeTime="0.5" />
+            </loadTrigger>
+            <loadTrigger triggerNode="loadingTriggerTrain" fillLitersPerSecond="4000" dischargeNode="dischargeNodeTrain" fillTypes="WHEAT BARLEY OAT CANOLA SORGHUM SUNFLOWER SOYBEAN MAIZE RICE RICELONGGRAIN PEA OLIVE GRAPE SEEDS RYE">
+                <effectNode effectClass="PipeEffect" effectNode="pipeEffectTrain"      materialType="pipe"           fadeTime="0.5" maxBending="0" shapeScaleSpread="0.8 0.8 1 0" controlPoint="4.5 0 0 0"/>
+                <effectNode                          effectNode="pipeEffectSmokeTrain" materialType="unloadingSmoke" fadeTime="0.5" />
+            </loadTrigger>
+        </loadingStation>
+
+        <unloadingStation supportsExtension="false" >
+            <unloadTrigger exactFillRootNode="unloadTriggerRoad" aiNode="unloadTriggerRoadAINode" fillTypes="WHEAT BARLEY OAT CANOLA SORGHUM SUNFLOWER SOYBEAN MAIZE RICE RICELONGGRAIN PEA OLIVE GRAPE SEEDS RYE"/>
+            <palletTrigger triggerNode="palletTriggerRoad" aiNode="unloadTriggerRoadAINode" fillTypes="WHEAT BARLEY OAT CANOLA SORGHUM SUNFLOWER SOYBEAN MAIZE RICE RICELONGGRAIN PEA OLIVE GRAPE SEEDS RYE"/>
+            <baleTrigger triggerNode="baleTriggerRoad" aiNode="unloadTriggerRoadAINode" deleteLitersPerSecond="10000" fillTypes="WHEAT BARLEY OAT CANOLA SORGHUM SUNFLOWER SOYBEAN MAIZE RICE RICELONGGRAIN PEA OLIVE GRAPE SEEDS RYE"/>
+            <unloadTrigger exactFillRootNode="unloadTriggerTrain" fillTypes="WHEAT BARLEY OAT CANOLA SORGHUM SUNFLOWER SOYBEAN MAIZE RICE RICELONGGRAIN PEA OLIVE GRAPE SEEDS RYE" />
+        </unloadingStation>
+
+        <storages perFarm="true">
+            <storage isExtension="false" capacity="1000000" costsPerFillLevelAndDay="0.005" fillTypes="WHEAT BARLEY OAT CANOLA SORGHUM SUNFLOWER SOYBEAN MAIZE RICE RICELONGGRAIN PEA OLIVE GRAPE SEEDS RYE"/>
+        </storages>
+    </silo>
+
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart filename="placeables/sharedAssets/grainPit.i3d" node="0" linkNode="grainGateLinkNodeRoad" />
+        <dynamicallyLoadedPart filename="placeables/sharedAssets/grainPit.i3d" node="2" linkNode="grainGateLinkNodeTrain" />
+    </dynamicallyLoadedParts>
+
+    <i3dMappings>
+        <i3dMapping id="unloadStationRoad" node="0>0|0" />
+        <i3dMapping id="unloadTriggerRoad" node="0>0|0|0" />
+        <i3dMapping id="palletTriggerRoad" node="0>0|0|1" />
+        <i3dMapping id="baleTriggerRoad" node="0>0|0|2" />
+        <i3dMapping id="unloadTriggerRoadAINode" node="0>0|0|3" />
+        <i3dMapping id="unloadTriggerMarkerRoad" node="0>0|0|4" />
+        <i3dMapping id="loadingStationRoad" node="0>0|1" />
+        <i3dMapping id="loadingTriggerRoad" node="0>0|1|0|0" />
+        <i3dMapping id="loadTriggerRoadAINode" node="0>0|1|0|1" />
+        <i3dMapping id="pipeEffectRoad" node="0>0|1|0|2|0" />
+        <i3dMapping id="pipeEffectSmokeRoad" node="0>0|1|0|2|1" />
+        <i3dMapping id="dischargeNodeRoad" node="0>0|1|0|3" />
+        <i3dMapping id="loadTriggerMarkerRoad" node="0>0|1|1" />
+        <i3dMapping id="grainGateLinkNodeRoad" node="0>0|2" />
+        <i3dMapping id="teleportNodeRoad" node="0>0|3" />
+        <i3dMapping id="unloadStationTrain" node="0>1|0" />
+        <i3dMapping id="unloadTriggerTrain" node="0>1|0|0" />
+        <i3dMapping id="loadingStationTrain" node="0>1|1" />
+        <i3dMapping id="loadingTriggerTrain" node="0>1|1|0|0" />
+        <i3dMapping id="pipeEffectTrain" node="0>1|1|0|1|0" />
+        <i3dMapping id="pipeEffectSmokeTrain" node="0>1|1|0|1|1" />
+        <i3dMapping id="dischargeNodeTrain" node="0>1|1|0|2" />
+        <i3dMapping id="grainGateLinkNodeTrain" node="0>1|2" />
+        <i3dMapping id="teleportNodeTrain" node="0>1|3" />
+        <i3dMapping id="loadTriggerMarkerTrain" node="0>1|4" />
+        <i3dMapping id="unloadTriggerMarkerTrain" node="0>1|5" />
+        <i3dMapping id="infoTrigger" node="0>2" />
+        <i3dMapping id="aiSpline" node="0>3" />
+    </i3dMappings>
+</placeable>

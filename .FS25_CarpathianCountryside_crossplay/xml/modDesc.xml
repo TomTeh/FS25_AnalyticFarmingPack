@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="106">
+    <author>MrHector</author>
+    <version>1.0.0.0</version>
+
+    <title>
+        <en>Carpathian Countryside</en>
+        <de>Karpatenlandschaft</de>
+        <cz>Karpatský Venkov</cz>
+    </title>
+
+    <description>
+        <en><![CDATA[
+Welcome to Carpathian Countryside. Fictional map inspired by a modern real life agricultural company and its surroundings in western Slovakia.
+
+Map features:
+
+3 Pre-placed farms. To use them or interact with anything you have to buy them by purchasing the farm land they are built on.
+All 3 pre-placed farms are fully editable, you can sell individual buildings or parts of fences - you can expand the farms. You can sell everything and build your own farm on the same place. Most buildings and objects used on pre-placed farms also have their placeable variants included in the map.
+
+Main Farm (the start farm).
+The largest pre-placed farm on the map, consisting of: 2 cow barns, 1 pig barn, 1 horse barn, 2 calf / heifer shelters, farmhouse, large grain silo with animal feed production, vehicle workshop, 2 covered bunker silo buildings (6 bunkers in total), many shelters for vehicles or any packaged or loose goods, bale and pallet storages, large manure storage, slurry tanks, water tower and more.
+
+Pig Farm.
+All about the pigs with: 2 pig barns, grain silo, bunker silo, vehicle workshop, vehicle shelter, manure storage, bale storage, pallet storage, bulk storage, water tower and slurry tanks.
+
+Sheep Farm.
+Includes: 1 sheep barn, 1 chicken coop, grain silo, vehicle workshop, manure storage, vehicle shelter, bale storage and pallet storage.
+
+70 fields + 6 meadow fields. Especially large fields with different shapes, also some medium and small.
+Some fields have electricity poles in them, their collisions can be disabled /enabled at any time - to do so visit the town hall next to the main farm.
+
+Large forestry area.
+14 purchasable forest parcels with different sizes, conditions and corresponding prices.
+
+Contracts.
+All Contract types included - all kind of field missions, dead trees removal, wood transport and rocks removal.
+
+Collectibles.
+100 wooden toys divided into 10 sets, 10 collectibles in each set.
+The reward for collecting is 1,000.
+The reward for completing the entire set is 100,000 and the toy will be displayed on the shelf in your room in the office building.
+
+Train system.
+Rentable train with railroad silos and sell point.
+
+8 Selling stations.
+Transport Company, Livestock market, Supermarket, Farmers market, Small farmer, Container trader, Construction material trader, Stone crusher.
+Each interested in a different type and quantity of goods.
+When the desired quantity of goods is reach the price will start to drop for some time.
+
+7 Buying stations.
+Big and small gas stations with electricity charges and methane refill station.
+Lime station.
+Farm supplies - option to buy farm consumables (e.g. seeds, fertilizer) directly to the trailer.
+Livestock market - option to buy manure, slurry and animal feed.
+Transport Company - option to buy any kind of products on pallets.
+Construction material trader - option to buy construction materials on pallets.
+
+11 Production sites built into the map.
+Bakery, Grain mill, Dairy, Sugarmill, Sawmill, Carpentry, Spinnery, Tailor shop, Food processing plant, Preserved food factory, Biogas plant.
+Production sites have their own forklifts, which can be used by everybody.
+Sugarmill offer their own sugar beet loader useable for everybody.
+The map contains several small and cheaply purchasable lands, which are ideal for building additional production points.
+
+All selling and buying stations and productions have different opening hours.
+The gates open and close automatically at specific times. (All closed by default when you first started the game, wait an hour in game to bring them back to normal cycle).
+If you need to do something urgent even after closing, you can open the gates manually.
+
+2 Small family businesses.
+Piano factory - produce high quality and expensive pianos.
+Wood artist - produce tractor playgrounds and various other handcrafted wooden products.
+You can help them by selling them materials they require and see how they produce their art or you can buy them and run the business on your own for nice profit.
+
+Construction projects.
+There are 3 houses under construction, 1 in each village on the map.
+They require your help and you can help them by selling them construction materials they require.
+Furthermore you can help the neighbourhood grow with placeable constructible rental houses and get nice profit too from the rent.
+
+Abandoned quarry, Cement factory and Iron furnace.
+There is abandoned quarry in the forest that you can run by purchasing the farmland it is built on.
+It requires a lot of maintenance before it is usable again or even accessible. You have to remove overgrown foliage and rocks all around the place. Repair or remove destroyed buildings. The temporary safety fence surrounding it can be removed in build menu.
+You can also build your own quarry anywhere on the map, all requried aspects are included in the map as placeable variants.
+Quarry in the forest produce: stone, limestone, clay and iron ore.
+Stone and limestone can be used in the stone and limestone crushers to make gravel and lime. Gravel, lime and clay are then required in the cement factory to make varius construction products.
+Iron ore can be used in the Iron furnace to make metal for nice profit. The side product is blast furnace slag which is then required in the cement factory to make cement.
+Iron furnace and Cement factory must be build by yourself, they are not built directly into the map.
+The cement factory included in the map is much more advanced, with much more realistic cement recipe comare to the base game one, new products like clay bricks and clay roof plates.
+Another material required in the cement factory is sand, which can be only purchased from the construction material trader, aswell as any other materials you may need if you can not make them by yourself.
+Any excess raw materials from the quarry can be also sold to the construction material trader.
+
+Functional map villages.
+A small features for role players or a real challenge of starting from scratch.
+Almost all properties in villages can be purchased.
+You can place in sleep trigger and use any house as your own or if there is enough space you can build something extra there too, however what is already placed on these parcels can not be removed.
+With small enough equipment you can plant, grow and harvest crops in these yards.
+Every single gate can be opened, even if you do not own the land.
+Some properties such as: restaurants, pharmacy, football fields... generate stady profit if owned - If you purchase the farmland a new icon will pop up. The income is based on the farmland value - 1,1$ per hour / per each 1000$ land value.
+
+Custom animal settings.
+Slightly adjusted: food and straw consumption, production of manure, liquid manure and milk and animal prices.
+Sheeps, goats and chickens produce manure if beded with straw (Only husbandries included in the map or a mod that meet requirements).
+If you like to take care of calves in calf huts, the map features placeable calf huts. A variant for one calf and a group variant for five calves. (Recommendation: use mod to increase animal pastures limit, so it is possible to place more huts)
+
+New crops: Alfalfa and Rye. 
+Alfalfa is part of the animal feeding. Edited placeable base game bunker silos accepting alfalfa are included in the map. Custom map bunker silos all accept alfalfa.
+Rye can be used to make flour and bread. Can be harvested both ways, the classic combine or with windrower.
+
+Enhanced crop growth stages for all crops on the map.
+Each growth stage has different height so the growth looks much smoother.
+
+Not all crops require rolling.
+Crops that require rolling: wheat, barley, canola, oats, soybeans, rye.
+Crops that do not require rolling: corn, sunflowers, potatoes, rice, long grain rice, sugar beets, sugar cane, cotton, sorghum, poplar, beetroot, carrots, parsnips, beans, peas, spinach, grass, oilseed radish, alfalfa.
+
+Seasonal crop growth
+Is mostly the same as the base game (fits very well for the country of the map) but with added option to plant wheat and barley in the spring - in march.
+Cotton, sugarcane, rice and long grain rice are not typical for the country of the map, but you can grow them if you want, NPCs will not.
+
+Custom seasonal weather, typical for the country of the map.
+Twister probability reduced and can happen only during summer.
+
+
+Orchards and Greenhouses:
+
+Placeable Orchards.
+Works as standard production point, require water, liquid fertilizer and compost to produce: apples, pears, apricots or plums.
+Apples, apricots and plums can be sold or further processed in the placeable Fruit and vegetable processing plant or in the Food processing plant(built into the map) for bigger profit.
+Pears can be only sold directly.
+
+Placeable Advanced greenhouses.
+Similar to the base game greenhouses but with additional requirements for bigger yield and additional fruits to grow.
+Available as large, medium and small size variants.
+Require water, liquid fertilizer and compost to produce: tomatoes, lettuce, strawberries, spring onion, napa cabbage, chilli, garlic, green pepper, cucumbers, onions and watermelons.
+Byproduct of Advanced greenhouses is organic waste. This can be used in compost silo to make compost.
+Tomatoes, strawberries, napa cabbage and cucumbers can be sold or further processed in the placeable Fruit and vegetable processing plant or in the Food processing plant(built into the map) for bigger profit.
+Small amount of green pepper, spring onion, chilli, garlic and onions are required in recipes of the placeable Fruit and vegetable processing plant or in the Food processing plant(built into the map), but majority of it can be sold directly.
+Lettuce and watermelons can be only sold directly.
+
+Placeable Fruit and vegetable processing plant.
+Can further process fruits and vegetables produced in the orchards and greenhouses for bigger profit.
+Products: Raisins, Grape juice, Kimchi, Apple juice, strawberry juice, apricot jam, plum jam, ketchup and pickles.
+Byproduct is organic waste. This can be used in compost silo to make compost.
+Available also as small variant with lower production speed and price.
+All products and same recipes aree also availabe in the Preserved food factory and Food processing plant (factories built inot the map).
+
+Compost making.
+Compost is required in the orchards and greenhouses and can be also sold for profit or used as fertilizer on fields.
+Compost is made in placeable Compost silo from organic waste, grass, hay, straw and other similar materials.
+
+Several small streams crisscross the land, with free water withdrawal.
+
+
+Highlands Fishing Expansion features (if you own the DLC and is enabled):
+Onion products in the DLC (onion soup, onion salt and fried onion) can be produced also in the Food processing plant(built into the map).
+You can raise trouts in the forest fishing pond if owned, by purchasing the farmland it is built on.
+Furthermore the fishing pond is also a place that people visit and fish there so you also get stady daily income from them of 140$ per hour. (This income works even without the DLC).
+
+
+Precision Farming DLC ready - Custom soil map included. Compost and new crops fully supported.
+]]>
+        </en>
+        <de><![CDATA[
+Willkommen in der Karpatenlandschaft. Fiktive Karte, inspiriert von einem modernen realen landwirtschaftlichen Unternehmen und seiner Umgebung in der Westslowakei.
+
+Kartenfunktionen:
+
+3 vordefinierte Farmen. Um sie zu nutzen oder mit ihnen zu interagieren, müssen Sie sie erwerben, indem Sie das Farmland kaufen, auf dem sie gebaut sind.
+Alle 3 vorplatzierten Farmen sind vollständig editierbar, Sie können einzelne Gebäude oder Teile von Zäunen verkaufen, Sie können die Farmen erweitern. Wenn Sie möchten, können Sie alles verkaufen und an derselben Stelle Ihre eigene Farm bauen. Die meisten Gebäude und Objekte, die auf vorplatzierten Farmen verwendet werden, haben auch ihre platzierbaren Varianten, die in der Karte enthalten sind.
+
+Hauptfarm (die Startfarm).
+Die größte vordefinierte Farm auf der Karte, bestehend aus: 2 Kuhställen, 1 Schweinestall, 1 Pferdestall, 2 Kälber / Jungfärsenunterständen, Bauernhaus, großem Getreidesilo mit Tierfutterproduktion, Fahrzeugwerkstatt, 2 überdachten Bunkersilos (insgesamt 6 Bunker), zahlreichen Unterständen für Fahrzeuge oder verpackte bzw. lose Waren, Ballen- und Palettenlagern, großem Mistlager, Güllegruben, Wasserturm und mehr.
+
+Schweinefarm.
+Alles rund um die Schweine mit: 2 Schweineställen, Getreidesilo, Bunkersilo, Fahrzeugwerkstatt, Fahrzeugunterstand, Mistlager, Ballenlager, Palettenlager, Schüttgutlager, Wasserturm und Güllebehälter.
+
+Schafzuchtbetrieb.
+Beinhaltet: 1 Schafstall, 1 Hühnerstall, Getreidesilo, Fahrzeugwerkstatt, Mistlager, Fahrzeugunterstand, Ballenlager und Palettenlager.
+
+70 Felder + 6 Wiesen. Besonders große Felder in verschiedenen Formen, aber auch einige mittlere und kleine.
+Auf manchen Feldern befinden sich Strommasten. Die Kollisionserkennung kann jederzeit deaktiviert / aktiviert werden – besuchen Sie dazu das Rathaus neben dem Haupthof.
+
+Großes Waldgebiet.
+14 käufliche Waldparzellen unterschiedlicher Größe, Beschaffenheit und zu entsprechenden Preisen.
+
+Einsätze.
+Alle Einsatzarten sind enthalten – alle Arten von Feldeinsätzen, Entfernung von abgestorbenen Bäumen, Holztransport und Steinräumung.
+
+Sammelobjekte.
+100 Holzspielzeuge, aufgeteilt in 10 Sets mit je 10 Sammelobjekten.
+Die Belohnung für das Sammeln beträgt 1.000.
+Die Belohnung für das Vervollständigen des gesamten Sets 100.000. Das Spielzeug wird dann in Ihrem Bürozimmer im Regal ausgestellt.
+
+Zugsystem.
+Mietbarer Zug mit Eisenbahnsilos und Verkaufsstelle.
+
+8 Verkaufsstellen.
+Transportunternehmen, Viehmarkt, Supermarkt, Wochenmarkt, Kleinbauer, Containerhändler, Baustoffhändler, Steinbrecher.
+Jede Verkaufsstelle ist an unterschiedlichen Warenarten und -mengen interessiert.
+Sobald die gewünschte Warenmenge erreicht ist, sinkt der Preis für eine gewisse Zeit.
+
+7 Ankaufsstellen.
+Große und kleine Tankstellen mit Stromanschluss und Methan-Nachfüllstation.
+Kalkstation.
+Landwirtschaftliche Betriebsmittel – Möglichkeit, landwirtschaftliche Verbrauchsmaterialien (z. B. Saatgut, Dünger) direkt auf den Anhänger zu laden.
+Viehmarkt – Möglichkeit, Mist, Gülle und Tierfutter zu kaufen.
+Transportunternehmen – Möglichkeit, Waren aller Art auf Paletten zu kaufen.
+Baustoffhändler – Möglichkeit, Baumaterialien auf Paletten zu kaufen.
+
+11 Produktionsstätten sind in die Karte integriert.
+Bäckerei, Getreidemühle, Molkerei, Zuckermühle, Sägewerk, Schreinerei, Spinnerei, Schneiderei, Lebensmittelverarbeitungsbetrieb, Konservenfabrik, Biogasanlage.
+Jede Produktionsstätte verfügt über eigene Gabelstapler, die von allen genutzt werden können.
+Die Zuckermühle bietet einen eigenen Rübenlader, der ebenfalls von allen genutzt werden kann.
+Die Karte enthält mehrere kleine und günstig zu erwerbende Grundstücke, die sich ideal für den Bau zusätzlicher Produktionsstätten eignen.
+
+Alle Verkaufs- und Ankaufsstationen sowie Produktionsstätten haben unterschiedliche Öffnungszeiten.
+Die Tore öffnen und schließen sich automatisch zu bestimmten Zeiten. (Standardmäßig sind sie beim Spielstart geschlossen. Warten Sie eine Stunde im Spiel, bis sie wieder ihren normalen Rhythmus einhalten.)
+Falls Sie nach Schließung der Tore dringend etwas erledigen müssen, können Sie diese manuell öffnen.
+
+2 kleine Familienbetriebe.
+Eine Klavierfabrik stellt hochwertige und teure Klaviere her.
+Ein Holzkünstler fertigt Traktorspielplätze und diverse andere handgefertigte Holzprodukte.
+Sie können die Betriebe unterstützen, indem Sie ihnen benötigte Materialien verkaufen und ihnen bei der Arbeit zusehen. Alternativ können Sie die Betriebe auch übernehmen und mit gutem Gewinn weiterführen.
+
+Bauprojekte.
+Es befinden sich drei Häuser im Bau, eines in jedem Dorf auf der Karte.
+Sie benötigen Ihre Hilfe, indem Sie ihnen die benötigten Baumaterialien verkaufen.
+Darüber hinaus können Sie mit platzierbaren, bebaubaren Mietshäusern zur Entwicklung der Nachbarschaft beitragen und gleichzeitig einen guten Gewinn aus den Mieteinnahmen erzielen.
+
+Verlassener Steinbruch, Zementfabrik und Eisenofen.
+Im Wald befindet sich ein verlassener Steinbruch, den Sie betreiben können, indem Sie das dazugehörige Ackerland erwerben.
+Er benötigt umfangreiche Instandhaltungsarbeiten, bevor er wieder nutzbar oder überhaupt zugänglich ist. Sie müssen das wuchernde Laub und die Steine ​​rundherum entfernen. Reparieren oder entfernen Sie zerstörte Gebäude. Der provisorische Sicherheitszaun kann im Baumenü entfernt werden.
+Sie können auch überall auf der Karte einen eigenen Steinbruch errichten. Alle benötigten Elemente sind als platzierbare Varianten auf der Karte enthalten.
+Der Steinbruch im Wald produziert: Stein, Kalkstein, Ton und Eisenerz.
+Stein und Kalkstein können in den Stein- und Kalksteinbrechern zu Kies und Kalk verarbeitet werden. Kies, Kalk und Ton werden anschließend in der Zementfabrik zur Herstellung verschiedener Bauprodukte benötigt.
+Eisenerz kann im Eisenofen zu Metall verarbeitet werden, was einen guten Gewinn bringt. Als Nebenprodukt entsteht Hochofenschlacke, die ebenfalls in der Zementfabrik zur Zementherstellung benötigt wird.
+Eisenofen und Zementfabrik müssen selbst gebaut werden, sie sind nicht direkt in die Karte integriert.
+Die in der Karte enthaltene Zementfabrik ist deutlich fortschrittlicher und verwendet ein viel realistischeres Zementrezept als die im Basisspiel. Außerdem werden neue Produkte wie Ziegel und Dachplatten aus Lehm hergestellt.
+Für die Zementfabrik wird außerdem Sand benötigt, der – wie alle anderen benötigten Materialien, die Sie nicht selbst herstellen können – ausschließlich beim Baustoffhändler erworben werden kann.
+Überschüssige Rohstoffe aus dem Steinbruch können ebenfalls beim Baustoffhändler verkauft werden.
+
+Funktionale Dorfkarten.
+Kleine Features für Rollenspieler oder die echte Herausforderung, ganz von vorn anzufangen.
+Fast alle Grundstücke in den Dörfern können erworben werden.
+Sie können ein Haus mit einem Schlaftrigger platzieren und es als Ihr eigenes nutzen. Bei ausreichend Platz können Sie dort auch etwas zusätzlich bauen. Bereits vorhandene Gebäude auf diesen Grundstücken können jedoch nicht entfernt werden.
+Mit kleinen Geräten können Sie in diesen Höfen Pflanzen anbauen und ernten.
+Jedes Tor kann geöffnet werden, auch wenn Ihnen das Land nicht gehört.
+Bestimmte Gebäude wie Restaurants, Apotheken und Fußballplätze... generieren einen stetigen Gewinn, wenn Sie sie besitzen. Beim Kauf von Ackerland erscheint ein neues Symbol. Der Gewinn basiert auf dem Wert des Ackerlandes: 1,1€ pro Stunde bzw. pro 1000€ Landwert.
+
+Benutzerdefinierte Tiereinstellungen.
+Leicht angepasst: Futter- und Strohverbrauch, Produktion von Dung, Flüssigmist und Milch sowie Tierpreise.
+Schafe, Ziegen und Hühner produzieren Mist, wenn sie mit Stroh eingestreut sind (nur bei Tierhaltungen, die in der Karte enthalten sind oder durch eine Mod die Voraussetzungen erfüllen).
+Wer Kälber gerne in Kälberhütten versorgt, findet auf der Karte platzierbare Kälberhütten. Es gibt eine Variante für ein Kalb und eine Gruppenvariante für fünf Kälber. (Empfehlung: Verwenden Sie eine Mod, um das Weideflächenlimit zu erhöhen, damit mehr Hütten platziert werden können.)
+
+Neue Anbaupflanzen: Luzerne und Roggen.
+Luzerne dient als Tierfutter. Die Karte enthält bearbeitete, platzierbare Bunkersilos aus dem Basisspiel, die Luzerne aufnehmen können. Alle Bunkersilos der benutzerdefinierten Karte können Luzerne aufnehmen.
+Roggen kann zu Mehl und Brot verarbeitet werden. Er kann auf zwei Arten geerntet werden: mit dem klassischen Mähdrescher oder mit dem Schwadmäher.
+
+Verbesserte Wachstumsstadien für alle Nutzpflanzen auf der Karte.
+Jedes Wachstumsstadium hat eine andere Höhe, wodurch das Wachstum viel gleichmäßiger wirkt.
+
+Nicht alle Nutzpflanzen müssen gewalzt werden.
+Müssen gewalzt werden: Weizen, Gerste, Raps, Hafer, Sojabohnen, Roggen. 
+Müssen nicht gewalzt werden: Mais, Sonnenblumen, Kartoffeln, Reis, Langkornreis, Zuckerrüben, Zuckerrohr, Baumwolle, Sorghum, Pappel, Rote Bete, Karotten, Pastinaken, Bohnen, Erbsen, Spinat, Gras, Ölrettich, Luzerne.
+
+Saisonales Pflanzenwachstum
+Ist im Wesentlichen identisch mit dem Basisspiel (passt sehr gut zum Land auf der Karte), bietet aber zusätzlich die Möglichkeit, Weizen und Gerste im Frühjahr – im März – anzubauen.
+Baumwolle, Zuckerrohr, Reis und Langkornreis sind für das Land auf der Karte nicht typisch, aber du kannst sie anbauen, wenn du willst; NPCs werden es nicht tun.
+
+Saisonales Wetter, typisch für das Land auf der Karte.
+Die Wahrscheinlichkeit für Tornados ist geringer und sie können nur im Sommer auftreten.
+
+
+Obstgärten Und Gewächshäuser:
+
+Platzierbare Obstgärten.
+Funktionieren als Standardproduktionsstätte und benötigen Wasser, Flüssigdünger und Kompost zur Produktion von Äpfeln, Birnen, Aprikosen oder Pflaumen. Äpfel, Aprikosen und Pflaumen können verkauft oder in der platzierbaren Obst- und Gemüseverarbeitungsanlage oder in der (in die Karte integrierten) Lebensmittelverarbeitungsanlage weiterverarbeitet werden, um einen höheren Gewinn zu erzielen.
+Birnen dürfen nur direkt verkauft werden.
+
+Platzierbare, fortgeschrittene Gewächshäuser.
+Ähnlich den Gewächshäusern im Basisspiel, jedoch mit zusätzlichen Anforderungen für höhere Erträge und den Anbau weiterer Früchte.
+Verfügbar in den Größen groß, mittel und klein.
+Benötigen Wasser, Flüssigdünger und Kompost für die Produktion von Tomaten, Salat, Erdbeeren, Frühlingszwiebeln, Chinakohl, Chili, Knoblauch, Paprika, Gurken, Zwiebeln und Wassermelonen.
+Als Nebenprodukt der fortgeschrittenen Gewächshäuser entsteht organischer Abfall. Dieser kann im Kompostsilo zu Kompost verarbeitet werden.
+Tomaten, Erdbeeren, Chinakohl und Gurken können verkauft oder in der platzierbaren Obst- und Gemüseverarbeitungsanlage oder in der Lebensmittelverarbeitungsanlage (im Spiel integriert) weiterverarbeitet werden, um einen höheren Gewinn zu erzielen.
+Grüne Paprika, Frühlingszwiebeln, Chili, Knoblauch und Zwiebeln werden in geringen Mengen für die Rezepte der platzierbaren Obst- und Gemüseverarbeitungsanlage oder der Lebensmittelverarbeitungsanlage benötigt, der Großteil kann jedoch direkt verkauft werden.
+Salat und Wassermelonen können nur direkt verkauft werden.
+
+Platzierbare Obst- und Gemüseverarbeitungsanlage.
+Verarbeitet Obst und Gemüse aus Obstgärten und Gewächshäusern weiter, um den Gewinn zu steigern.
+Produkte: Rosinen, Traubensaft, Kimchi, Apfelsaft, Erdbeersaft, Aprikosenmarmelade, Pflaumenmarmelade, Ketchup und Essiggurken.
+Als Nebenprodukt entsteht organischer Abfall, der im Kompostsilo zur Kompostherstellung verwendet werden kann.
+Auch als kleinere Variante mit geringerer Produktionsgeschwindigkeit und niedrigerem Preis erhältlich.
+Alle Produkte und Rezepte sind auch in der Konservenfabrik und der Lebensmittelverarbeitungsanlage (beide auf der Karte) verfügbar.
+
+Kompostherstellung.
+Kompost wird in Obstplantagen und Gewächshäusern benötigt und kann auch gewinnbringend verkauft oder als Dünger auf Feldern verwendet werden.
+Kompost wird in einem platzierbaren Kompostsilo aus organischen Abfällen, Gras, Heu, Stroh und ähnlichen Materialien hergestellt.
+
+Mehrere kleine Bäche durchziehen das Gelände, aus denen man kostenlos Wasser entnehmen kann.
+
+
+Highlands Fishing Expansion funktionen (falls du den DLC besitzt und er aktiviert ist):
+Zwiebelprodukte aus dem DLC (Zwiebelsuppe, Zwiebelsalz und Röstzwiebeln) können auch in der Lebensmittelverarbeitungsanlage (auf der Karte) hergestellt werden.
+Wenn du den Waldteich besitzt, kannst du dort Forellen züchten, indem du das dazugehörige Ackerland kaufst.
+Der Teich wird außerdem von anderen Besuchern zum Angeln genutzt, wodurch du täglich 140€ pro Stunde verdienst. (Dieses Einkommen funktioniert auch ohne den DLC.)
+
+
+Precision Farming DLC ​​verfügbar - Benutzerdefinierte Bodenkarte enthalten. Kompostierung und Neuanbau werden vollumfänglich unterstützt.
+]]>
+        </de>
+        <cz><![CDATA[
+Vítejte na Karpatském Venkově. Fiktivní mapa inspirovaná skutečným, moderním zemědělským podnikem a jeho okolím, na západním Slovensku.
+
+Vlastnosti mapy:
+
+3 předem umístěné farmy. Abyste je mohli používat, musíte je koupit zakoupením zemědělské půdy, na které jsou postaveny.
+Všechny 3 předem umístěné farmy jsou plně upravitelné, můžete prodat jednotlivé budovy nebo části plotů - farmy můžete rozšiřovat. Pokud chcete, můžete vše prodat a postavit si na stejném místě vlastní farmu. Většina budov a objektů použitých na předem umístěných farmách má také umístitelné varianty, které jsou součástí mapy.
+
+Hlavní farma (počáteční farma).
+Největší předem umístěná farma na mapě, která se skládá z: 2 kravínů, 1 vepřína, 1 koňské stáje, 2 přístřešků pro telata / jalovice, statku, velkého sila na obilí s výrobou krmiva pro zvířata, dílny na vozidla, 2 kryté budovy silážních jam ( celkem 6 silážních jam), mnoha přístřešků pro vozidla nebo jakékoli balené či sypké zboží, skladů balíků a palet, velkého skladu hnoje, nádrže na kejdu, vodárenské věže a další.
+
+Prasečí farma.
+Vše o prasatech: 2 stáje, obilní silo, bunkrové silo, dílna pro vozidla, přístřešek pro vozidla, sklad hnoje, sklad balíků, sklad palet, sklad sypkého materiálu, vodárenská věž a nádrže na kejdu.
+
+Ovčí farma.
+Zahrnuje: 1 ovčí stáj, 1 kurník, obilní silo, dílnu pro vozidla, sklad hnoje, přístřešek pro vozidla, sklad balíků a sklad palet.
+
+70 polí + 6 lučních polí. Obzvláště velká pole různých tvarů, ale i některá střední a malá.
+Na některých polích jsou elektrické sloupy, jejichž kolize lze kdykoli zakázat / povolit – navštivte radnici vedle hlavní farmy.
+
+Velká lesnická oblast.
+14 kupitelných lesních parcel s různými rozměry, podmínkami a odpovídajícími cenami.
+
+Mise.
+Zahrnuje všechny typy misí - všechny druhy polních misí, odstraňování mrtvých stromů, přepravu dřeva a odstraňování kamenů.
+
+Sběratelskúe předměty.
+100 dřevěných hraček rozdělených do 10 sad, 10 sběratelských předmětů v každé sadě.
+Odměna za sesbírání jednoho je 1,000.
+Odměna za dokončení celé sady je 100,000 a hračka bude vystavena na poličce ve vašem pokoji v kancelářské budově.
+
+Vlakový systém.
+Pronajímatelný vlak s železničními sily a prodejním místem.
+
+8 Prodejních stanic.
+Přepravní společnost, Trh s hospodářskými zvířaty, Supermarket, Farmářský trh, Malý zemědělec, Obchodník s kontejnery, Obchodník se stavebním materiálem, Drtič kamene.
+Každá má zájem o jiný druh a množství zboží.
+Po dosažení požadovaného množství zboží začne cena na nějakou dobu klesat.
+
+7 Nákupních stanic.
+Velká a malá čerpací stanice s nabíjecími stanicemi elektřiny a čerpací stanicí na metan.
+Stanice na vápno.
+Zemědělské potřeby - možnost nákupu zemědělského spotřebního materiálu (např. semena, hnojiva) přímo do přívěsu.
+Trh s hospodářskými zvířaty - možnost nákupu hnoje, kejdy a krmiva pro zvířata.
+Přepravní společnost - možnost nákupu jakéhokoli druhu produktů na paletách.
+Obchodník se stavebním materiálem - možnost nákupu stavebních materiálů na paletách.
+
+11 Výrobních závodů zabudovaných do mapy.
+Pekárna, Obilný mlýn, Mlékárna, Cukrovar, Pila, Tesařství, Přádelna, Krejčovství, Závod na zpracování potravin, Továrna na konzervy, Bioplynová stanice.
+Výrobní závody mají vlastní vysokozdvižné vozíky, které může používat kdokoli.
+Cukrovar nabízí vlastní nakladač cukrové řepy, který může používat kdokoli.
+Mapa obsahuje několik malých a levně prodejných pozemků, které jsou ideální pro výstavbu dalších výrobních bodů.
+
+Všechny prodejní a nákupní stanice a produkce mají různou otevírací dobu.
+Brány se otevírají a zavírají automaticky v určitých časech. (Všechny jsou ve výchozím nastavení zavřené při prvním spuštění hry, počkejte hodinu ve hře, než se vrátí do normálního cyklu).
+Pokud potřebujete udělat něco naléhavého i po zavření, můžete brány otevřít ručně.
+
+2 Malé rodinné firmy.
+Továrna na klavíry - vyrábí vysoce kvalitní a drahé klavíry.
+Dřevařský umělec - vyrábí hřiště s traktory a různé další ručně vyráběné dřevěné výrobky.
+Můžete jim pomoci prodejem materiálů, které potřebují, a sledovat, jak vyrábějí svá umělecká díla, nebo si je můžete koupit a provozovat podnikání sami s pěkným ziskem.
+
+Stavební projekty.
+Ve výstavbě jsou 3 domy, jeden v každé vesnici na mapě.
+Potřebují vaši pomoc a vy jim můžete pomoci prodejem stavebního materiálu, který potřebují.
+Dále můžete pomoci sousedství růst s umístitelnými postavitelnými nájemními domy a také získat z nájemného pěkný zisk.
+
+Opuštěný lom, Cementárna a Vysoká pec.
+V lese se nachází opuštěný lom, který můžete provozovat zakoupením zemědělské půdy, na které je postaven.
+Vyžaduje hodně údržby, než bude znovu použitelný nebo vůbec přístupný. Musíte odstranit přerostlé rostliny a kameny všude kolem. Opravte nebo odstraňte zničené budovy. Dočasný bezpečnostní plot, který ho obklopuje, lze odstranit v nabídce stavby.
+Můžete si také postavit vlastní lom kdekoli na mapě, všechny potřebné aspekty jsou zahrnuty v mapě jako umístitelné varianty.
+Lom v lese produkuje: kámen, vápenec, jíl a železnou rudu.
+Kámen a vápenec lze použít v drtičích kamene a vápence k výrobě štěrku a vápna. Štěrk, vápno a jíl jsou pak potřebné v Cementárně k výrobě různých stavebních produktů.
+Železnou rudu lze použít ve Vysoké peci k výrobě kovu za účelem zisku. Vedlejším produktem je vysokopecní struska, která je pak potřebná v Cementárně k výrobě cementu.
+Vysokou pec a Cementárnu si musíte postavit sami, nejsou zabudovány přímo do mapy.
+Cementárna na mapě je mnohem pokročilejší, s mnohem realističtějším receptem na cement ve srovnání se základní hrou a s novými produkty, jako jsou pálené cihly a pálená střešní krytina.
+Dalším materiálem potřebným v Cementárně je písek, který lze zakoupit pouze u obchodníka se stavebním materiálem, stejně jako jakékoli další materiály, které můžete potřebovat, pokud si je nemůžete vyrobit sami.
+Přebytečné suroviny z lomu lze také prodat obchodníkovi se stavebním materiálem.
+
+Funkční vesnice.
+Malé funkce pro milovníky role play nebo skutečná výzva začínat od nuly.
+Téměř všechny nemovitosti ve vesnicích lze zakoupit.
+Můžete umístit trigger spánku a používat jakýkoli dům jako svůj vlastní, nebo pokud je dostatek místa, můžete tam postavit i něco navíc. To, co je již na těchto pozemcích umístěno, však nelze odstranit.
+S dostatečně malým vybavením můžete na těchto dvorech sázet, pěstovat a sklízet plodiny.
+Každou jednotlivou bránu lze otevřít, i když pozemek nevlastníte.
+Některé nemovitosti, jako například: restaurace, lékárna, fotbalová hřiště... generují stálý zisk, pokud jsou vlastněny - Pokud si koupíte zemědělskou půdu, zobrazí se nová ikona. Příjem je založen na hodnotě zemědělské půdy - 1,1€ za hodinu / za každých 1000€ hodnoty půdy.
+
+Vlastní nastavení zvířat.
+Mírně upraveno: spotřeba krmiva a slámy, produkce hnoje, kejdy a mléka a ceny zvířat.
+Ovce, kozy a slepice produkují hnůj, pokud jsou podestýlány slámou (pouze chovy zahrnuté v mapě nebo mod, který splňuje požadavky).
+Pokud se rádi staráte o telata v boudách pro telata, mapa nabízí umístitelné boudy pro telata. Varianta pro jedno tele a skupinová varianta pro pět telat. (Doporučení: použijte mod pro zvýšení limitu pastvin pro zvířata, aby bylo možné umístit více boudek)
+
+Nové plodiny: Vojtěška a Žito.
+Vojtěška je součástí krmení zvířat. V mapě jsou zahrnuty upravené umístitelné silážní jámy ze základní hry, která přijímají vojtěšku. Vlastní mapové silážní jámy přijímají vojtěšku taky.
+Žito lze použít k výrobě mouky a chleba. Lze sklízet oběma způsoby, klasickým kombajnem nebo řádkovačem.
+
+Vylepšené fáze růstu plodin pro všechny plodiny na mapě.
+Každá růstová fáze má jinou výšku, takže růst vypadá mnohem hladší.
+
+Ne všechny plodiny vyžadují válcování.
+Plodiny, které vyžadují válcování: pšenice, ječmen, řepka, oves, sója, žito.
+Plodiny, které nevyžadují válcování: kukuřice, slunečnice, brambory, rýže, dlouhozrnná rýže, cukrová řepa, cukrová třtina, bavlna, čirok, topol, červená řepa, mrkev, pastinák, fazole, hrách, špenát, tráva, ředkev olejná, vojtěška.
+
+Sezónní růst plodin
+Většinou stejné jako v základní hře (velmi dobře se hodí pro zemi mapy), ale s přidanou možností sázet pšenici a ječmen na jaře - v březnu.
+Bavlna, cukrová třtina, rýže a dlouhozrnná rýže nejsou pro danou zemi mapy typické, ale můžete je pěstovat, pokud chcete, NPC nebudou.
+
+Vlastní sezónní počasí typické pro krajinu mapy.
+Pravděpodobnost výskytu tornáda je snížená a může se vyskytnout pouze v létě.
+
+
+Sady A Skleníky:
+
+Umístitelné sady.
+Funguje jako standardní produkční místo, vyžaduje vodu, tekuté hnojivo a kompost k produkci: jablek, hrušek, meruněk nebo švestek.
+Jablka, meruňky a švestky lze prodávat nebo dále zpracovávat v umístitelném závodě na zpracování ovoce a zeleniny nebo v závodě na zpracování potravin(vestavěném na mapě) pro větší zisk.
+Hrušky lze prodávat pouze přímo.
+
+Umístitelné pokročilé skleníky.
+Podobné skleníkům v základní hře, ale s dodatečnými požadavky na větší výnos a pěstování více druhů plodin.
+K dispozici ve velké, střední a malé variantě.
+Vyžaduje vodu, tekuté hnojivo a kompost k produkci: rajčat, hlávkového salátu, jahod, jarní cibulky, zelí napa, chilli, česneku, zelené papriky, okurek, cibule a vodních melounů.
+Vedlejším produktem pokročilých skleníků je organický odpad. Ten lze použít v kompostovací jámě k výrobě kompostu.
+Rajčata, jahody, zelí napa a okurky lze prodávat nebo dále zpracovávat v umístitelné továrně na zpracování ovoce a zeleniny nebo v závodě na zpracování potravin(vestavěném na mapě) pro větší zisk.
+Malé množství zelené papriky, jarní cibulky, chilli, česneku a cibule je vyžadováno v receptech umístitelné továrny na zpracování ovoce a zeleniny nebo v závodě na zpracování potravin(vestavěném na mapě), ale většinu lze prodat přímo.
+Hlávkový salát a vodní melouny lze prodávat pouze přímo.
+
+Umístitelný závod na zpracování ovoce a zeleniny.
+Zpracovává ovoce a zeleninu ze sadů a skleníků za účelem zvýšení zisku.
+Produkty: Rozinky, hroznový džus, kimči, jablečný džus, jahodový džus, meruňková povidla, švestková povidla, kečup a kyselé okurky.
+Organický odpad vzniká jako vedlejší produkt a lze jej v kompostovacím silu použít k výrobě kompostu.
+K dispozici také v menší verzi s nižší produkcí a cenou.
+Všechny produkty a recepty jsou k dispozici také v Továrne na konzervované jídlo a Závodě na zpracování potravin (zabudovaných do mapy).
+
+Výroba kompostu.
+Kompost je potřebný v sadech a sklenících a lze jej také prodat za účelem zisku nebo použít jako hnojivo na polích.
+Kompost se vyrábí v umístitelné kompostovací jámě z organického odpadu, trávy, sena, slámy a dalších podobných materiálů.
+
+Krajinu protíná několik malých potoků s volným odběrem vody.
+
+
+Highlands Fishing Expansion funkce (pokud vlastníte DLC a je povoleno):
+Cibulové produkty v DLC (cibulačka, cibulová sůl a smažená cibulka) lze vyrábět také v Závodě na zpracování potravin (vestavěném do mapy).
+V lesním rybníku, pokud jej vlastníte, můžete chovat pstruhy zakoupením zemědělské půdy, na které je postaven.
+Rybník je navíc také místem, které lidé navštěvují a loví tam ryby, takže od nich získáváte stálý denní příjem 140€ za hodinu. (Tento příjem funguje i bez DLC).
+
+
+Precision Farming DLC podporováno - Vlastní půdní mapa zahrnuta. Kompost a nové plodiny plně podporovány.
+]]>
+        </cz>
+    </description>
+
+    <iconFilename>icon_CarpathianCountryside.png</iconFilename>
+    <multiplayer supported="true"/>
+
+    <l10n filenamePrefix="translations/l10n" />
+
+    <brands>
+        <brand name="LIZARDBUILDING" title="Lizard Building" image="$data/store/brands/brand_lizardBuilding.png" imageOffset="0.020"/>
+        <brand name="LIZARDENERGY" title="Lizard Energy" image="$data/store/brands/brand_lizardEnergy.png" imageOffset="0.020"/>
+        <brand name="LIZARDFARMING" title="Lizard Farming" image="$data/store/brands/brand_lizardFarming.png" imageOffset="0.020"/>
+        <brand name="LIZARDGOODS" title="Lizard Goods" image="$data/store/brands/brand_lizardGoods.png" imageOffset="0.020"/>
+        <brand name="LIZARDMOTORS" title="Lizard Motors" image="$data/store/brands/brand_lizardMotors.png" imageOffset="0.020"/>
+        <brand name="LIZARDSTORAGE" title="Lizard Storage" image="$data/store/brands/brand_lizardStorage.png" imageOffset="0.020"/>
+    </brands>
+
+    <placeableTypes>
+        <type name="mapCC_farmOfficeBuilding" parent="simplePlaceable" filename="$dataS/scripts/placeables/Placeable.lua">
+            <specialization name="farmhouse" />
+            <specialization name="wardrobe" />
+            <specialization name="cartridgePlayer" />
+            <specialization name="workshop" />
+            <specialization name="handToolHolders" />
+        </type>
+        <type name="mapCC_productionPointAndSilo" parent="simplePlaceable" filename="$dataS/scripts/placeables/Placeable.lua">
+            <specialization name="productionPoint" />
+            <specialization name="silo" />
+            <specialization name="infoTrigger" />
+            <specialization name="solarPanels"/>
+            <specialization name="incomePerHour"/>
+        </type>
+        <type name="mapCC_workshopGaragePreplaced" parent="garageWorkshopSolarPanels" filename="$dataS/scripts/placeables/Placeable.lua">
+            <specialization name="handToolHolders" />
+        </type>
+        <type name="mapCC_multiBunkerSilo" parent="multiBunkerSilo" filename="$dataS/scripts/placeables/Placeable.lua">
+            <specialization name="solarPanels"/>
+            <specialization name="incomePerHour"/>
+        </type>
+        <type name="mapCC_bunkerAndManureHeap" parent="simplePlaceable" filename="$dataS/scripts/placeables/Placeable.lua">
+            <specialization name="manureHeap" />
+            <specialization name="bunkerSilo" />
+            <specialization name="infoTrigger" />
+            <specialization name="solarPanels"/>
+            <specialization name="incomePerHour"/>
+        </type>
+        <type name="mapCC_objectStorage" parent="objectStorage" filename="$dataS/scripts/placeables/Placeable.lua">
+            <specialization name="solarPanels"/>
+            <specialization name="incomePerHour"/>
+        </type>
+        <type name="mapCC_cowYoungHusbandry" parent="baseHusbandry" filename="$dataS/scripts/placeables/Placeable.lua">
+            <specialization name="husbandryWater" />
+            <specialization name="husbandryStraw" />
+        </type>
+        <type name="mapCC_calfHut" parent="simplePlaceable" filename="$dataS/scripts/placeables/Placeable.lua">
+            <specialization name="husbandry" />
+            <specialization name="husbandryAnimals" />
+            <specialization name="husbandryFood" />
+            <specialization name="husbandryStraw" />
+            <specialization name="husbandryWater" />
+            <specialization name="infoTrigger" />
+        </type>
+        <type name="mapCC_sheepHusbandry" parent="sheepHusbandry" filename="$dataS/scripts/placeables/Placeable.lua">
+            <specialization name="husbandryStraw" />
+        </type>
+        <type name="mapCC_chickenHusbandry" parent="chickenHusbandryPasture" filename="$dataS/scripts/placeables/Placeable.lua">
+            <specialization name="husbandryStraw" />
+        </type>
+        <type name="mapCC_horseHusbandry" parent="horseHusbandry" filename="$dataS/scripts/placeables/Placeable.lua">
+            <specialization name="handToolHolders" />
+        </type>
+        <type name="mapCC_buySellStation" parent="simplePlaceable" filename="$dataS/scripts/placeables/Placeable.lua">
+            <specialization name="sellingStation" />
+            <specialization name="buyingStation" />
+        </type>
+        <type name="mapCC_buySellWarehouseStation" parent="simplePlaceable" filename="$dataS/scripts/placeables/Placeable.lua">
+            <specialization name="sellingStation" />
+            <specialization name="buyingStation" />
+            <specialization name="palletBuyingStation" />
+        </type>
+        <type name="mapCC_fishFarmPond" parent="productionPoint" filename="$dataS/scripts/placeables/Placeable.lua">
+            <specialization name="incomePerHour"/>
+        </type>
+        <type name="mapCC_sleepTrigger" parent="simplePlaceable" filename="$dataS/scripts/placeables/Placeable.lua">
+            <specialization name="farmhouse" />
+        </type>
+        <type name="mapCC_constructibleIncomePerHour" parent="constructible" filename="$dataS/scripts/placeables/Placeable.lua">
+            <specialization name="incomePerHour" />
+        </type>
+        <type name="mapCC_wheelWashBath" parent="simplePlaceable" filename="$dataS/scripts/placeables/Placeable.lua">
+            <specialization name="shallowWaterSimulation" />
+        </type>
+    </placeableTypes>
+
+    <maps>
+        <map id="CarpathianCountryside" className="Mission00" filename="$dataS/scripts/mission00.lua" configFilename="maps/carpathianCountryside.xml" defaultVehiclesXMLFilename="maps/config/defaultVehicles.xml" defaultHandToolsXMLFilename="maps/config/defaultHandTools.xml" defaultPlaceablesXMLFilename="maps/config/placeables.xml" defaultItemsXMLFilename="maps/config/defaultItems.xml">
+            <title>
+                <en>Carpathian Countryside</en>
+                <de>Karpatenlandschaft</de>
+                <cz>Karpatský Venkov</cz>
+            </title>
+            <description>
+                <en>Welcome to Carpathian Countryside. Fictional map inspired by a modern real life agricultural company and its surroundings in western Slovakia.</en>
+                <de>Willkommen in der Karpatenlandschaft. Fiktive Karte, inspiriert von einem modernen realen landwirtschaftlichen Unternehmen und seiner Umgebung in der Westslowakei.</de>
+                <cz>Vítejte na Karpatském Venkově. Fiktivní mapa inspirovaná skutečným, moderním zemědělským podnikem a jeho okolím, na západním Slovensku.</cz>
+            </description>
+            <iconFilename>maps/ui/mapPreview.png</iconFilename>
+        </map>
+    </maps>
+
+    <storeItems>
+        <storeItem xmlFilename="placeables/area/mainFarmArea_calfArea.xml" />
+        <storeItem xmlFilename="placeables/area/mainFarmArea_calfAreaHuts1.xml" />
+        <storeItem xmlFilename="placeables/area/mainFarmArea_calfAreaHuts2.xml" />
+        <storeItem xmlFilename="placeables/area/mainFarmArea_fenceEast.xml" />
+        <storeItem xmlFilename="placeables/area/mainFarmArea_fenceNorth1.xml" />
+        <storeItem xmlFilename="placeables/area/mainFarmArea_fenceNorth2.xml" />
+        <storeItem xmlFilename="placeables/area/mainFarmArea_fenceSouth1.xml" />
+        <storeItem xmlFilename="placeables/area/mainFarmArea_fenceSouth2.xml" />
+        <storeItem xmlFilename="placeables/area/mainFarmArea_fenceWest1.xml" />
+        <storeItem xmlFilename="placeables/area/mainFarmArea_fenceWest2.xml" />
+        <storeItem xmlFilename="placeables/area/mainFarmArea_freeArea.xml" />
+        <storeItem xmlFilename="placeables/area/mainFarmArea_freeAreaParlor.xml" />
+        <storeItem xmlFilename="placeables/area/mainFarmArea_frontGate.xml" />
+        <storeItem xmlFilename="placeables/area/pigFarmArea_fenceEast.xml" />
+        <storeItem xmlFilename="placeables/area/pigFarmArea_fenceNorth.xml" />
+        <storeItem xmlFilename="placeables/area/pigFarmArea_fenceSouth.xml" />
+        <storeItem xmlFilename="placeables/area/pigFarmArea_fenceWest.xml" />
+        <storeItem xmlFilename="placeables/area/sheepFarmArea_fenceEast.xml" />
+        <storeItem xmlFilename="placeables/area/sheepFarmArea_fenceNorth.xml" />
+        <storeItem xmlFilename="placeables/area/sheepFarmArea_fenceSouth.xml" />
+        <storeItem xmlFilename="placeables/area/sheepFarmArea_fenceWest.xml" />
+        <storeItem xmlFilename="placeables/area/sheepFarmArea_frontGate.xml" />
+        <storeItem xmlFilename="placeables/area/sheepFarmArea_sheepLoadingZone.xml" />
+        <storeItem xmlFilename="placeables/animalHusbandry/cowBarnSmall.xml" />
+        <storeItem xmlFilename="placeables/animalHusbandry/cowBarnSmallVector.xml" />
+        <storeItem xmlFilename="placeables/animalHusbandry/cowBarnSmallNoPasture.xml" />
+        <storeItem xmlFilename="placeables/animalHusbandry/cowBarnSmallNoPastureVector.xml" />
+        <storeItem xmlFilename="placeables/animalHusbandry/cowBarnSmallPreplaced.xml" />
+        <storeItem xmlFilename="placeables/animalHusbandry/cowBarnBig.xml" />
+        <storeItem xmlFilename="placeables/animalHusbandry/cowBarnBigVector.xml" />
+        <storeItem xmlFilename="placeables/animalHusbandry/cowBarnBigNoPasture.xml" />
+        <storeItem xmlFilename="placeables/animalHusbandry/cowBarnBigNoPastureVector.xml" />
+        <storeItem xmlFilename="placeables/animalHusbandry/cowBarnBigPreplaced.xml" />
+        <storeItem xmlFilename="placeables/animalHusbandry/heiferStablePreplaced.xml" />
+        <storeItem xmlFilename="placeables/animalHusbandry/cowYoungShelter.xml" />
+        <storeItem xmlFilename="placeables/animalHusbandry/cowYoungShelterPreplaced.xml" />
+        <storeItem xmlFilename="placeables/animalHusbandry/calfHutSingle.xml" />
+        <storeItem xmlFilename="placeables/animalHusbandry/calfHutGroupRight.xml" />
+        <storeItem xmlFilename="placeables/animalHusbandry/calfHutGroupLeft.xml" />
+        <storeItem xmlFilename="placeables/animalHusbandry/calfHutSingleDeco.xml" />
+        <storeItem xmlFilename="placeables/animalHusbandry/calfHutGroupRightDeco.xml" />
+        <storeItem xmlFilename="placeables/animalHusbandry/calfHutGroupLeftDeco.xml" />
+        <storeItem xmlFilename="placeables/animalHusbandry/horseBarn.xml" />
+        <storeItem xmlFilename="placeables/animalHusbandry/horseBarnDyeable.xml" />
+        <storeItem xmlFilename="placeables/animalHusbandry/horseBarnPreplaced.xml" />
+        <storeItem xmlFilename="placeables/animalHusbandry/chickenBarn.xml" />
+        <storeItem xmlFilename="placeables/animalHusbandry/chickenBarnPreplaced.xml" />
+        <storeItem xmlFilename="placeables/animalHusbandry/pigBarn.xml" />
+        <storeItem xmlFilename="placeables/animalHusbandry/pigBarnPreplaced1.xml" />
+        <storeItem xmlFilename="placeables/animalHusbandry/pigBarnPreplaced2.xml" />
+        <storeItem xmlFilename="placeables/animalHusbandry/pigBarnPreplaced3.xml" />
+        <storeItem xmlFilename="placeables/animalHusbandry/sheepBarn.xml" />
+        <storeItem xmlFilename="placeables/animalHusbandry/sheepBarnPreplaced.xml" />
+        <storeItem xmlFilename="placeables/animalHusbandry/doghousePreplaced.xml" />
+        <storeItem xmlFilename="placeables/grainStorage/grainStorage.xml" />
+        <storeItem xmlFilename="placeables/bunkerSilo/bunkerSilo1.xml" />
+        <storeItem xmlFilename="placeables/bunkerSilo/bunkerSilo1Preplaced.xml" />
+        <storeItem xmlFilename="placeables/bunkerSilo/bunkerSilo2.xml" />
+        <storeItem xmlFilename="placeables/bunkerSilo/bunkerSilo2Preplaced.xml" />
+        <storeItem xmlFilename="placeables/bunkerSilo/bunkerSiloSmall.xml" />
+        <storeItem xmlFilename="placeables/bunkerSilo/bunkerSiloMedium.xml" />
+        <storeItem xmlFilename="placeables/bunkerSilo/bunkerSiloLarge.xml" />
+        <storeItem xmlFilename="placeables/bunkerSilo/bunkerSiloPlanET.xml" />
+        <storeItem xmlFilename="placeables/farmGatehouse/farmGatehouse.xml" />
+        <storeItem xmlFilename="placeables/farmGatehouse/farmGatehouseWithWeight.xml" />
+        <storeItem xmlFilename="placeables/farmOfficeBuilding/farmOfficeBuilding.xml" />
+        <storeItem xmlFilename="placeables/fuelTank/fuelTank.xml" />
+        <storeItem xmlFilename="placeables/liquidFertilizerTanks/liquidFertilizerTanks.xml" />
+        <storeItem xmlFilename="placeables/liquidManureTank/liquidManureTank.xml" />
+        <storeItem xmlFilename="placeables/liquidManureTank/liquidManureTankExtension.xml" />
+        <storeItem xmlFilename="placeables/milkingParlor/milkingParlorPreplaced.xml" />
+        <storeItem xmlFilename="placeables/modularWalls/easyShed01WithWalls.xml" />
+        <storeItem xmlFilename="placeables/modularWalls/manureHeapMainFarmPreplaced.xml" />
+        <storeItem xmlFilename="placeables/modularWalls/manureHeapPigFarmPreplaced.xml" />
+        <storeItem xmlFilename="placeables/modularWalls/manureHeapSheepFarmPreplaced.xml" />
+        <storeItem xmlFilename="placeables/modularWalls/manureStorageSpotLowerPreplaced.xml" />
+        <storeItem xmlFilename="placeables/modularWalls/manureStorageSpotUpperPreplaced.xml" />
+        <storeItem xmlFilename="placeables/modularWalls/manureHeapSmall.xml" />
+        <storeItem xmlFilename="placeables/modularWalls/manureHeapMedium.xml" />
+        <storeItem xmlFilename="placeables/modularWalls/manureHeapLarge.xml" />
+        <storeItem xmlFilename="placeables/modularWalls/manureHeapSmallExtension.xml" />
+        <storeItem xmlFilename="placeables/modularWalls/manureHeapMediumExtension.xml" />
+        <storeItem xmlFilename="placeables/modularWalls/manureHeapLargeExtension.xml" />
+        <storeItem xmlFilename="placeables/repairRamp/repairRamp.xml" />
+        <storeItem xmlFilename="placeables/shed/baleShed.xml" />
+        <storeItem xmlFilename="placeables/shed/baleShedPreplacedPF.xml" />
+        <storeItem xmlFilename="placeables/shed/baleShedPreplacedSF.xml" />
+        <storeItem xmlFilename="placeables/shed/consumablesStorage.xml" />
+        <storeItem xmlFilename="placeables/shed/consumablesStorageDyeable.xml" />
+        <storeItem xmlFilename="placeables/shed/hall1.xml" />
+        <storeItem xmlFilename="placeables/shed/hall2.xml" />
+        <storeItem xmlFilename="placeables/shed/hall2Preplaced_palletRack.xml" />
+        <storeItem xmlFilename="placeables/shed/vehicleShelter1.xml" />
+        <storeItem xmlFilename="placeables/shed/vehicleShelter2.xml" />
+        <storeItem xmlFilename="placeables/shed/vehicleShelter3.xml" />
+        <storeItem xmlFilename="placeables/shed/vehicleShelter3PreplacedPF.xml" />
+        <storeItem xmlFilename="placeables/shed/vehicleShelter3PreplacedSF.xml" />
+        <storeItem xmlFilename="placeables/shed/vehicleShelter3Preplaced_palletRack.xml" />
+        <storeItem xmlFilename="placeables/silo/uniaFarma400.xml" />
+        <storeItem xmlFilename="placeables/waterTower/waterTower.xml" />
+        <storeItem xmlFilename="placeables/waterTower/waterTowerPreplaced.xml" />
+        <storeItem xmlFilename="placeables/biogasPlant/bga.xml" />
+        <storeItem xmlFilename="placeables/biogasPlant/bgaBunkerSilo.xml" />
+        <storeItem xmlFilename="placeables/biogasPlant/bgaWorkshop.xml" />
+        <storeItem xmlFilename="placeables/trainSystem/railroadSiloBulk.xml" />
+        <storeItem xmlFilename="placeables/trainSystem/railroadSiloGrain.xml" />
+        <storeItem xmlFilename="placeables/trainSystem/sellingStationTrain.xml" />
+        <storeItem xmlFilename="placeables/trainSystem/trainSystem.xml" />
+        <storeItem xmlFilename="placeables/productionPoints/bakery.xml" />
+        <storeItem xmlFilename="placeables/productionPoints/carpenter.xml" />
+        <storeItem xmlFilename="placeables/productionPoints/dairy.xml" />
+        <storeItem xmlFilename="placeables/productionPoints/foodProcessingPlant.xml" />
+        <storeItem xmlFilename="placeables/productionPoints/grainMill.xml" />
+        <storeItem xmlFilename="placeables/productionPoints/preservedFoodFactory.xml" />
+        <storeItem xmlFilename="placeables/productionPoints/sawMill.xml" />
+        <storeItem xmlFilename="placeables/productionPoints/spinnery.xml" />
+        <storeItem xmlFilename="placeables/productionPoints/sugarMill.xml" />
+        <storeItem xmlFilename="placeables/productionPoints/tailorShop.xml" />
+        <storeItem xmlFilename="placeables/productionPoints/pianoFactory.xml" />
+        <storeItem xmlFilename="placeables/productionPoints/fishFarmPond.xml" />
+        <storeItem xmlFilename="placeables/productionPoints/woodArtist.xml" />
+        <storeItem xmlFilename="placeables/productionPoints/woodArtist_playgroundMaker.xml" />
+        <storeItem xmlFilename="placeables/productionPoints/quarry/quarryArea.xml" />
+        <storeItem xmlFilename="placeables/productionPoints/quarry/quarryStone.xml" />
+        <storeItem xmlFilename="placeables/productionPoints/quarry/quarryStonePreplaced.xml" />
+        <storeItem xmlFilename="placeables/productionPoints/quarry/quarryLimestone.xml" />
+        <storeItem xmlFilename="placeables/productionPoints/quarry/quarryLimestonePreplaced.xml" />
+        <storeItem xmlFilename="placeables/productionPoints/quarry/quarryClay.xml" />
+        <storeItem xmlFilename="placeables/productionPoints/quarry/quarryClayPreplaced.xml" />
+        <storeItem xmlFilename="placeables/productionPoints/stoneCrusher/stoneCrusher.xml" />
+        <storeItem xmlFilename="placeables/productionPoints/stoneCrusher/stoneCrusherPreplaced.xml" />
+        <storeItem xmlFilename="placeables/productionPoints/limestoneCrusher/limestoneCrusher.xml" />
+        <storeItem xmlFilename="placeables/productionPoints/limestoneCrusher/limestoneCrusherPreplaced.xml" />
+        <storeItem xmlFilename="placeables/productionPoints/cementFactory/cementFactory.xml" />
+        <storeItem xmlFilename="placeables/productionPoints/miningShaftTower/miningShaftTower.xml" />
+        <storeItem xmlFilename="placeables/productionPoints/ironFurnace/ironFurnace.xml" />
+        <storeItem xmlFilename="placeables/constructibles/constructableRentalHouse01.xml" />
+        <storeItem xmlFilename="placeables/constructibles/constructableRentalHouse02.xml" />
+        <storeItem xmlFilename="placeables/constructibles/constructableRentalHouse03.xml" />
+        <storeItem xmlFilename="placeables/constructibles/constructableResidentialBuilding01Preplaced01.xml" />
+        <storeItem xmlFilename="placeables/constructibles/constructableResidentialBuilding02Preplaced01.xml" />
+        <storeItem xmlFilename="placeables/constructibles/constructableResidentialBuilding02Preplaced02.xml" />
+        <storeItem xmlFilename="placeables/sellingStations/sellingStationVehicles.xml" />
+        <storeItem xmlFilename="placeables/sellingStations/sellingStationConstructionMaterialTrader.xml" />
+        <storeItem xmlFilename="placeables/sellingStations/sellingStationContainerTrader.xml" />
+        <storeItem xmlFilename="placeables/sellingStations/sellingStationLivestockMarket.xml" />
+        <storeItem xmlFilename="placeables/sellingStations/sellingStationSmallFarmer.xml" />
+        <storeItem xmlFilename="placeables/sellingStations/sellingStationSupermarket.xml" />
+        <storeItem xmlFilename="placeables/sellingStations/sellingStationTransportCompany.xml" />
+        <storeItem xmlFilename="placeables/sellingStations/debrisCrusher01.xml" />
+        <storeItem xmlFilename="placeables/buyingStations/biogasStation/biogasStation.xml" />
+        <storeItem xmlFilename="placeables/buyingStations/buyingStationFarmSupplies.xml" />
+        <storeItem xmlFilename="placeables/buyingStations/buyingStationLime.xml" />
+        <storeItem xmlFilename="placeables/buyingStations/creekWater.xml" />
+        <storeItem xmlFilename="placeables/buyingStations/gasStation01.xml" />
+        <storeItem xmlFilename="placeables/buyingStations/gasStation02.xml" />
+        <storeItem xmlFilename="placeables/buyingStations/horseRanch.xml" />
+        <storeItem xmlFilename="placeables/incomeBuildings/incomeBuildingHorseRanch.xml" />
+        <storeItem xmlFilename="placeables/incomeBuildings/incomeBuildingPharmacy.xml" />
+        <storeItem xmlFilename="placeables/incomeBuildings/incomeBuildingRestaurantSterusy.xml" />
+        <storeItem xmlFilename="placeables/incomeBuildings/incomeBuildingRestaurantLancar.xml" />
+        <storeItem xmlFilename="placeables/incomeBuildings/incomeBuildingPubKocin.xml" />
+        <storeItem xmlFilename="placeables/incomeBuildings/incomeBuildingFootballFieldSterusy.xml" />
+        <storeItem xmlFilename="placeables/incomeBuildings/incomeBuildingFootballFieldKocin.xml" />
+        <storeItem xmlFilename="placeables/weighingStation/weighingStation01.xml" />
+        <storeItem xmlFilename="placeables/weighingStation/weighingStation01Mirrored.xml" />
+        <storeItem xmlFilename="placeables/weighingStation/weighingStation02.xml" />
+        <storeItem xmlFilename="placeables/weighingStation/weighingStation02Mirrored.xml" />
+        <storeItem xmlFilename="placeables/fences/animalFenceInvisible.xml" />
+        <storeItem xmlFilename="placeables/fences/animalPigFence.xml" />
+        <storeItem xmlFilename="placeables/fences/animalSheepFence.xml" />
+        <storeItem xmlFilename="placeables/fences/animalCowFence.xml" />
+        <storeItem xmlFilename="placeables/fences/oldChainlinkFence.xml" />
+        <storeItem xmlFilename="placeables/fences/metalGridFence.xml" />
+        <storeItem xmlFilename="placeables/fences/metalGridFenceBase.xml" />
+        <storeItem xmlFilename="placeables/fences/concreteFence.xml" />
+        <storeItem xmlFilename="placeables/fences/chainlinkFenceBig.xml" />
+        <storeItem xmlFilename="placeables/fences/chainlinkFenceBigBase.xml" />
+        <storeItem xmlFilename="placeables/fences/constructionFence.xml" />
+        <storeItem xmlFilename="placeables/fences/metalGate.xml" />
+        <storeItem xmlFilename="placeables/fences/metalGateDoorLeft.xml" />
+        <storeItem xmlFilename="placeables/fences/metalGateDoorRight.xml" />
+        <storeItem xmlFilename="placeables/lights/poleLamp.xml" />
+        <storeItem xmlFilename="placeables/lights/streetLightSmall.xml" />
+        <storeItem xmlFilename="placeables/lights/streetLight.xml" />
+        <storeItem xmlFilename="placeables/lights/floodLightPole.xml" />
+        <storeItem xmlFilename="placeables/farmOfficeBuilding/sleepTriggerDoormat.xml"/>
+        <storeItem xmlFilename="placeables/farmOfficeBuilding/sleepTrigger.xml"/>
+        <storeItem xmlFilename="placeables/farmOfficeBuilding/wardrobeTrigger.xml"/>
+
+        <!-- PALLES -->
+        <storeItem xmlFilename="objects/bigBag/bigBag.xml" />
+        <storeItem xmlFilename="objects/bigBag/mineralFeed/bigBag_mineralFeed.xml" />
+        <storeItem xmlFilename="objects/bigBag/mineralFeed/multiPurchaseBigBag_mineralFeed.xml" />
+
+        <!-- PRODUCTION POINT PALLES -->
+        <storeItem xmlFilename="objects/pallets/vegetablesSpawnPallet/vegetablesSpawnPallet.xml" />
+        <storeItem xmlFilename="objects/pallets/clayBricksPallet/clayBricksPallet.xml" />
+        <storeItem xmlFilename="objects/pallets/clayRoofPlatesPallet/clayRoofPlatesPallet.xml" />
+        <storeItem xmlFilename="objects/pallets/chipwoodBoardsStackPallet/chipwoodBoardsStackPallet.xml" />
+        <storeItem xmlFilename="objects/pallets/floorTilesPallet/floorTilesPallet.xml" />
+        <storeItem xmlFilename="objects/pallets/shingleGenericPallet/shingleGenericPallet.xml" />
+        <storeItem xmlFilename="objects/pallets/metalPallet/metalPallet.xml" />
+        <storeItem xmlFilename="objects/pallets/chairPallet/chairPallet.xml" />
+        <storeItem xmlFilename="objects/pallets/tablePallet/tablePallet.xml" />
+        <storeItem xmlFilename="objects/pallets/armoirePallet/armoirePallet.xml" />
+        <storeItem xmlFilename="objects/pallets/bowlsPallet/bowlsPallet.xml" />
+        <storeItem xmlFilename="objects/pallets/pepperGrinderPallet/pepperGrinderPallet.xml" />
+        <storeItem xmlFilename="objects/pallets/birdHousePallet/birdHousePallet.xml" />
+        <storeItem xmlFilename="objects/pallets/catTreePallet/catTreePallet.xml" />
+        <storeItem xmlFilename="objects/pallets/dogHousePallet/dogHousePallet.xml" />
+    </storeItems>
+
+    <dependencies>
+        <dependency>FS25_orchardsAndGreenhouses_crossplay</dependency>
+    </dependencies>
+</modDesc>

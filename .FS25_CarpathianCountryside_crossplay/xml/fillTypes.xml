@@ -1,0 +1,958 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../shared/xml/schema/fillTypes.xsd">
+    <fillTypeConverters>
+        <fillTypeConverter name="TEDDER">
+            <converter from="ALFALFA_WINDROW"    to="DRYALFALFA_WINDROW" factor="1.0" />
+            <converter from="DRYALFALFA_WINDROW" to="DRYALFALFA_WINDROW" factor="1.0" />
+        </fillTypeConverter>
+        <fillTypeConverter name="PICKUPHEADER_GRASS">
+            <converter from="RYE_CUT"         to="CHAFF" factor="1.0" />
+            <converter from="ALFALFA_WINDROW" to="ALFALFA_WINDROW" factor="1.0" />
+        </fillTypeConverter>
+        <fillTypeConverter name="PICKUPHEADER_GRAIN">
+            <converter from="RYE_CUT" to="RYE" factor="1.0" />
+        </fillTypeConverter>
+        <fillTypeConverter name="SEEDTREATMENT">
+            <converter from="RYE" to="SEEDS" factor="1.92"/>
+        </fillTypeConverter>
+    </fillTypeConverters>
+
+    <fillTypes>
+        <!-- Edited base game fillTypes -->
+        <fillType name="BARLEY" title="$l10n_fillType_barley" showOnPriceTable="true" isBulkType="true" unitShort="$l10n_unit_literShort">
+            <physics  massPerLiter ="0.68" maxPhysicalSurfaceAngle="15" />
+            <economy  pricePerLiter="0.313">
+                <factors>
+                    <factor period="1"  value="1.00" />
+                    <factor period="2"  value="1.07" />
+                    <factor period="3"  value="0.99" />
+                    <factor period="4"  value="0.94" />
+                    <factor period="5"  value="0.85" />
+                    <factor period="6"  value="0.81" />
+                    <factor period="7"  value="0.86" />
+                    <factor period="8"  value="0.99" />
+                    <factor period="9"  value="1.08" />
+                    <factor period="10" value="1.13" />
+                    <factor period="11" value="1.21" />
+                    <factor period="12" value="1.08" />
+                </factors>
+            </economy>
+            <image    hud          ="$dataS/menu/hud/fillTypes/hud_fill_barley.png" />
+            <pallet   filename     ="$data/objects/pallets/fillablePallet/fillablePallet.xml" />
+            <textures diffuse      ="fillPlanes/barley_diffuse.png" unitSize="0.5" blendContrast="0.2" noiseScale="0.5" porosityAtZeroRoughness="0.9" porosityAtFullRoughness="1"
+                      normal       ="fillPlanes/barley_normal.png"
+                      height       ="$data/fillPlanes/barley_height.png"
+                      displacement ="$data/fillPlanes/barley_displacement.png" displacementMaxHeight="0.2" firmness="0.3" viscosity="0.5"
+                      distance     ="fillPlanes/distance/barleyDistance_diffuse.png" />
+        </fillType>
+        <fillType name="POTATO" title="$l10n_fillType_potato" showOnPriceTable="true" isBulkType="true" isPalletType="true" unitShort="$l10n_unit_literShort">
+            <physics  massPerLiter ="0.75" maxPhysicalSurfaceAngle="34" />
+            <economy  pricePerLiter="0.222">
+                <factors>
+                    <factor period="1"  value="1.00" />
+                    <factor period="2"  value="0.95" />
+                    <factor period="3"  value="0.90" />
+                    <factor period="4"  value="0.95" />
+                    <factor period="5"  value="1.00" />
+                    <factor period="6"  value="1.00" />
+                    <factor period="7"  value="1.00" />
+                    <factor period="8"  value="1.05" />
+                    <factor period="9"  value="1.10" />
+                    <factor period="10" value="1.15" />
+                    <factor period="11" value="1.10" />
+                    <factor period="12" value="1.05" />
+                </factors>
+            </economy>
+            <effects  prioritizedEffectType="ParticleEffect">
+                <particle particleType="unloading" filename="$data/effects/unload/particle/potato/potato.i3d" useFillTexture="false" emitCountScale="8" spriteScaleX="1" spriteScaleY="1"/>
+                <alphaClip beltAlphaScale="0.28"/>
+            </effects>
+            <image    hud          ="$dataS/menu/hud/fillTypes/hud_fill_potato.png" />
+            <pallet   filename     ="objects/pallets/vegetablesSpawnPallet/vegetablesSpawnPallet.xml" />
+            <textures diffuse      ="$data/fillPlanes/potatoes_diffuse.png" unitSize="0.75" blendContrast="0.2" noiseScale="0.5" porosityAtZeroRoughness="0.9" porosityAtFullRoughness="1"
+                      normal       ="$data/fillPlanes/potatoes_normal.png"
+                      height       ="fillPlanes/potatoes_height.png"
+                      displacement ="$data/fillPlanes/potatoes_displacement.png" displacementMaxHeight="0.2" firmness="0.3" viscosity="0.5"
+                      distance     ="$data/fillPlanes/distance/potatoesDistance_diffuse.png" />
+        </fillType>
+        <fillType name="SUGARBEET" title="$l10n_fillType_sugarBeet" showOnPriceTable="true" isBulkType="true" unitShort="$l10n_unit_literShort">
+            <physics  massPerLiter ="0.70" maxPhysicalSurfaceAngle="34" />
+            <economy  pricePerLiter="0.172">
+                <factors>
+                    <factor period="1"  value="1.00" />
+                    <factor period="2"  value="0.95" />
+                    <factor period="3"  value="0.90" />
+                    <factor period="4"  value="0.95" />
+                    <factor period="5"  value="1.00" />
+                    <factor period="6"  value="1.00" />
+                    <factor period="7"  value="1.00" />
+                    <factor period="8"  value="1.05" />
+                    <factor period="9"  value="1.10" />
+                    <factor period="10" value="1.15" />
+                    <factor period="11" value="1.10" />
+                    <factor period="12" value="1.05" />
+                </factors>
+            </economy>
+            <effects  prioritizedEffectType="ParticleEffect">
+                <particle particleType="unloading" filename="$data/effects/unload/particle/sugarBeet/sugarBeet.i3d" useFillTexture="false" emitCountScale="3" spriteScaleX="1" spriteScaleY="1"/>
+                <alphaClip beltAlphaScale="0.35"/>
+            </effects>
+            <image    hud          ="$dataS/menu/hud/fillTypes/hud_fill_sugarBeet.png" />
+            <pallet   filename     ="objects/pallets/vegetablesSpawnPallet/vegetablesSpawnPallet.xml" />
+            <textures diffuse      ="$data/fillPlanes/sugarBeets_diffuse.png" unitSize="1" blendContrast="0.2" noiseScale="0.5" porosityAtZeroRoughness="0.9" porosityAtFullRoughness="1"
+                      normal       ="$data/fillPlanes/sugarBeets_normal.png"
+                      height       ="fillPlanes/sugarBeets_height.png"
+                      displacement ="$data/fillPlanes/sugarBeets_displacement.png" displacementMaxHeight="0.2" firmness="0.3" viscosity="0.5"
+                      distance     ="$data/fillPlanes/distance/sugarBeetsDistance_diffuse.png" />
+        </fillType>
+        <fillType name="BEETROOT" title="$l10n_fillType_beetRoot" showOnPriceTable="true" isBulkType="true" isPalletType="true" unitShort="$l10n_unit_literShort">
+            <physics  massPerLiter ="0.52" maxPhysicalSurfaceAngle="34" />
+            <economy  pricePerLiter="0.122">
+                <factors>
+                    <factor period="1"  value="1.05" />
+                    <factor period="2"  value="1.00" />
+                    <factor period="3"  value="0.95" />
+                    <factor period="4"  value="0.90" />
+                    <factor period="5"  value="0.95" />
+                    <factor period="6"  value="1.00" />
+                    <factor period="7"  value="1.00" />
+                    <factor period="8"  value="1.00" />
+                    <factor period="9"  value="1.05" />
+                    <factor period="10" value="1.10" />
+                    <factor period="11" value="1.15" />
+                    <factor period="12" value="1.10" />
+                </factors>
+            </economy>
+            <effects  prioritizedEffectType="ParticleEffect">
+                <particle particleType="unloading" filename="$data/effects/unload/particle/beetroot/beetroot.i3d" useFillTexture="false" emitCountScale="4" spriteScaleX="1" spriteScaleY="1"/>
+                <alphaClip beltAlphaScale="0.35"/>
+            </effects>
+            <image    hud          ="$dataS/menu/hud/fillTypes/hud_fill_beetRoot.png" />
+            <pallet   filename     ="$data/objects/pallets/vegetablesPallet/vegetablesPallet.xml" />
+            <textures diffuse      ="$data/fillPlanes/beetroot_diffuse.png" unitSize="0.6" blendContrast="0.2" noiseScale="0.5" porosityAtZeroRoughness="0.9" porosityAtFullRoughness="1"
+                      normal       ="$data/fillPlanes/beetroot_normal.png"
+                      height       ="fillPlanes/beetroot_height.png"
+                      displacement ="$data/fillPlanes/beetroot_displacement.png" displacementMaxHeight="0.2" firmness="0.3" viscosity="0.5"
+                      distance     ="$data/fillPlanes/distance/beetrootDistance_diffuse.png" />
+        </fillType>
+        <fillType name="CARROT" title="$l10n_fillType_carrots" showOnPriceTable="true" isBulkType="true" isPalletType="true" unitShort="$l10n_unit_literShort">
+            <physics  massPerLiter ="0.64" maxPhysicalSurfaceAngle="34" />
+            <economy  pricePerLiter="0.132">
+                <factors>
+                    <factor period="1"  value="1.05" />
+                    <factor period="2"  value="1.00" />
+                    <factor period="3"  value="0.95" />
+                    <factor period="4"  value="0.90" />
+                    <factor period="5"  value="0.95" />
+                    <factor period="6"  value="1.00" />
+                    <factor period="7"  value="1.00" />
+                    <factor period="8"  value="1.00" />
+                    <factor period="9"  value="1.05" />
+                    <factor period="10" value="1.10" />
+                    <factor period="11" value="1.15" />
+                    <factor period="12" value="1.10" />
+                </factors>
+            </economy>
+            <effects  prioritizedEffectType="ParticleEffect">
+                <particle particleType="unloading" filename="$data/effects/unload/particle/carrot/carrot.i3d" useFillTexture="false" emitCountScale="3" spriteScaleX="1" spriteScaleY="1"/>
+                <alphaClip beltAlphaScale="0.4"/>
+            </effects>
+            <image    hud          ="$dataS/menu/hud/fillTypes/hud_fill_carrot.png" />
+            <pallet   filename     ="$data/objects/pallets/vegetablesPallet/vegetablesPallet.xml" />
+            <textures diffuse      ="$data/fillPlanes/carrot_diffuse.png" unitSize="0.8" blendContrast="0.2" noiseScale="0.5" porosityAtZeroRoughness="0.9" porosityAtFullRoughness="1"
+                      normal       ="$data/fillPlanes/carrot_normal.png"
+                      height       ="fillPlanes/carrot_height.png"
+                      displacement ="$data/fillPlanes/carrot_displacement.png" displacementMaxHeight="0.2" firmness="0.3" viscosity="0.5"
+                      distance     ="$data/fillPlanes/distance/carrotDistance_diffuse.png" />
+        </fillType>
+        <fillType name="PARSNIP" title="$l10n_fillType_parsnip" showOnPriceTable="true" isBulkType="true" isPalletType="true" unitShort="$l10n_unit_literShort">
+            <physics  massPerLiter ="0.58" maxPhysicalSurfaceAngle="34" />
+            <economy  pricePerLiter="0.131">
+                <factors>
+                    <factor period="1"  value="1.05" />
+                    <factor period="2"  value="1.00" />
+                    <factor period="3"  value="0.95" />
+                    <factor period="4"  value="0.90" />
+                    <factor period="5"  value="0.95" />
+                    <factor period="6"  value="1.00" />
+                    <factor period="7"  value="1.00" />
+                    <factor period="8"  value="1.00" />
+                    <factor period="9"  value="1.05" />
+                    <factor period="10" value="1.10" />
+                    <factor period="11" value="1.15" />
+                    <factor period="12" value="1.10" />
+                </factors>
+            </economy>
+            <effects  prioritizedEffectType="ParticleEffect">
+                <particle particleType="unloading" filename="$data/effects/unload/particle/parsnip/parsnip.i3d" useFillTexture="false" emitCountScale="3" spriteScaleX="1" spriteScaleY="1"/>
+                <alphaClip beltAlphaScale="0.3"/>
+            </effects>
+            <image    hud          ="$dataS/menu/hud/fillTypes/hud_fill_parsnip.png" />
+            <pallet   filename     ="$data/objects/pallets/vegetablesPallet/vegetablesPallet.xml" />
+            <textures diffuse      ="$data/fillPlanes/parsnip_diffuse.png" unitSize="0.8" blendContrast="0.2" noiseScale="0.5" porosityAtZeroRoughness="0.9" porosityAtFullRoughness="1"
+                      normal       ="$data/fillPlanes/parsnip_normal.png"
+                      height       ="fillPlanes/parsnip_height.png"
+                      displacement ="$data/fillPlanes/parsnip_displacement.png" displacementMaxHeight="0.2" firmness="0.3" viscosity="0.5"
+                      distance     ="$data/fillPlanes/distance/parsnipDistance_diffuse.png" />
+        </fillType>
+        <fillType name="BARLEY_CUT" title="$l10n_fillType_barley" showOnPriceTable="false" unitShort="$l10n_unit_literShort">
+            <physics  massPerLiter ="0.74" maxPhysicalSurfaceAngle="50" />
+            <economy  pricePerLiter="0.313" />
+            <effects  prioritizedEffectType="ParticleEffect">
+                <alphaClip value="0.15" sharpness="0.1" gradientScale="0.1" alphaScale="1.0" beltAlphaScale="0.3"/>
+            </effects>
+            <image    hud          ="$dataS/menu/hud/fillTypes/hud_fill_barleyCut.png" />
+            <textures diffuse      ="$data/fillPlanes/barleyCut_diffuse.png" unitSize="2" blendContrast="0.2" noiseScale="0.5" porosityAtZeroRoughness="0.9" porosityAtFullRoughness="1"
+                      normal       ="$data/fillPlanes/barleyCut_normal.png"
+                      height       ="$data/fillPlanes/barleyCut_height.png"
+                      displacement ="$data/fillPlanes/barleyCut_displacement.png" displacementMaxHeight="0.2" firmness="0.3" viscosity="0.5"
+                      distance     ="fillPlanes/distance/barleyCutDistance_diffuse.png" />
+        </fillType>
+        <fillType name="SEEDS" title="$l10n_fillType_seeds" showOnPriceTable="true" isBulkType="true" unitShort="$l10n_unit_literShort">
+            <physics  massPerLiter ="0.35" maxPhysicalSurfaceAngle="15" />
+            <economy  pricePerLiter="0.9">
+                <factors>
+                    <factor period="1"  value="1.00" />
+                    <factor period="2"  value="1.07" />
+                    <factor period="3"  value="0.99" />
+                    <factor period="4"  value="0.94" />
+                    <factor period="5"  value="0.85" />
+                    <factor period="6"  value="0.81" />
+                    <factor period="7"  value="0.86" />
+                    <factor period="8"  value="0.99" />
+                    <factor period="9"  value="1.08" />
+                    <factor period="10" value="1.13" />
+                    <factor period="11" value="1.21" />
+                    <factor period="12" value="1.08" />
+                </factors>
+            </economy>
+            <effects>
+                <alphaClip beltAlphaScale="0.33"/>
+            </effects>
+            <image    hud          ="$dataS/menu/hud/fillTypes/hud_fill_seeds.png" />
+            <pallet   filename     ="$data/objects/bigBag/seeds/bigBag_seeds.xml" />
+            <textures diffuse      ="$data/fillPlanes/genericSeed_diffuse.png" unitSize="0.5" blendContrast="0.2" noiseScale="0.5" porosityAtZeroRoughness="0.9" porosityAtFullRoughness="1"
+                      normal       ="$data/fillPlanes/genericSeed_normal.png"
+                      height       ="$data/fillPlanes/genericSeed_height.png"
+                      displacement ="$data/fillPlanes/genericSeed_displacement.png" displacementMaxHeight="0.2" firmness="0.3" viscosity="0.5"
+                      distance     ="$data/fillPlanes/distance/genericSeedDistance_diffuse.png" />
+        </fillType>
+        <fillType name="STONE" title="$l10n_fillType_stone" showOnPriceTable="true" isBulkType="true" achievementName="DeliveryStones" unitShort="$l10n_unit_literShort">
+            <physics  massPerLiter ="1.6" maxPhysicalSurfaceAngle="35" />
+            <economy  pricePerLiter="0.05">
+                <factors>
+                    <factor period="1"  value="0.97" />
+                    <factor period="2"  value="0.99" />
+                    <factor period="3"  value="1.00" />
+                    <factor period="4"  value="1.02" />
+                    <factor period="5"  value="1.04" />
+                    <factor period="6"  value="1.04" />
+                    <factor period="7"  value="1.04" />
+                    <factor period="8"  value="1.03" />
+                    <factor period="9"  value="1.02" />
+                    <factor period="10" value="1.00" />
+                    <factor period="11" value="0.99" />
+                    <factor period="12" value="0.97" />
+                </factors>
+            </economy>
+            <effects>
+                <alphaClip beltAlphaScale="0.36"/>
+            </effects>
+            <image    hud          ="$dataS/menu/hud/fillTypes/hud_fill_stone.png" />
+            <pallet   filename     ="$data/objects/pallets/stonePallet/stonePallet.xml" />
+            <textures diffuse      ="$data/fillPlanes/stone_diffuse.png" unitSize="0.7" blendContrast="0.2" noiseScale="0.5" porosityAtZeroRoughness="0.9" porosityAtFullRoughness="1"
+                      normal       ="$data/fillPlanes/stone_normal.png"
+                      height       ="fillPlanes/stone_height.png"
+                      displacement ="$data/fillPlanes/stone_displacement.png" displacementMaxHeight="0.2" firmness="0.3" viscosity="0.5"
+                      distance     ="$data/fillPlanes/distance/stoneDistance_diffuse.png" />
+        </fillType>
+        <fillType name="ROADSALT" title="$l10n_fillType_roadSalt" showOnPriceTable="true" isBulkType="true" unitShort="$l10n_unit_literShort">
+            <physics  massPerLiter ="1.2" maxPhysicalSurfaceAngle="32" />
+            <economy  pricePerLiter="0.2" />
+            <effects>
+                <alphaClip beltAlphaScale="0.27"/>
+            </effects>
+            <image    hud          ="$dataS/menu/hud/fillTypes/hud_fill_roadSalt.png" />
+            <pallet   filename     ="$data/objects/bigBag/roadSalt/bigBag_roadSalt.xml" />
+            <textures diffuse      ="$data/fillPlanes/roadSalt_diffuse.png" unitSize="0.8" blendContrast="0.2" noiseScale="0.5" porosityAtZeroRoughness="0.9" porosityAtFullRoughness="1"
+                      normal       ="$data/fillPlanes/roadSalt_normal.png"
+                      height       ="$data/fillPlanes/roadSalt_height.png"
+                      displacement ="$data/fillPlanes/roadSalt_displacement.png" displacementMaxHeight="0.2" firmness="0.3" viscosity="0.5"
+                      distance     ="$data/fillPlanes/distance/roadSaltDistance_diffuse.png" />
+        </fillType>
+        <fillType name="FERTILIZER" title="$l10n_fillType_fertilizer" showOnPriceTable="true" isBulkType="true" unitShort="$l10n_unit_literShort">
+            <physics  massPerLiter ="0.8" maxPhysicalSurfaceAngle="15" />
+            <economy  pricePerLiter="1.60" />
+            <effects>
+                <alphaClip beltAlphaScale="0.29"/>
+            </effects>
+            <image    hud          ="$dataS/menu/hud/fillTypes/hud_fill_fertilizer.png" />
+            <pallet   filename     ="$data/objects/bigBag/fertilizer/bigBagHelm_fertilizer.xml" />
+            <textures diffuse      ="$data/fillPlanes/fertilizer_diffuse.png" unitSize="0.4" blendContrast="0.2" noiseScale="0.5" porosityAtZeroRoughness="0.9" porosityAtFullRoughness="1"
+                      normal       ="$data/fillPlanes/fertilizer_normal.png"
+                      height       ="$data/fillPlanes/fertilizer_height.png"
+                      displacement ="$data/fillPlanes/fertilizer_displacement.png" displacementMaxHeight="0.2" firmness="0.3" viscosity="0.5"
+                      distance     ="$data/fillPlanes/distance/fertilizerDistance_diffuse.png" />
+        </fillType>
+        <fillType name="PIGFOOD" title="$l10n_fillType_pigFood" showOnPriceTable="true" isBulkType="true" unitShort="$l10n_unit_literShort">
+            <physics  massPerLiter ="0.65" maxPhysicalSurfaceAngle="23" />
+            <economy  pricePerLiter="1.4" />
+            <effects>
+                <alphaClip beltAlphaScale="0.23"/>
+            </effects>
+            <image    hud          ="$dataS/menu/hud/fillTypes/hud_fill_pigFood.png" />
+            <pallet   filename     ="$data/objects/bigBag/pigFood/bigBag_pigFood.xml" />
+            <textures diffuse      ="$data/fillPlanes/pigFood_diffuse.png" unitSize="0.5" blendContrast="0.2" noiseScale="0.5" porosityAtZeroRoughness="0.9" porosityAtFullRoughness="1"
+                      normal       ="$data/fillPlanes/pigFood_normal.png"
+                      height       ="$data/fillPlanes/pigFood_height.png"
+                      displacement ="$data/fillPlanes/pigFood_displacement.png" displacementMaxHeight="0.2" firmness="0.3" viscosity="0.5"
+                      distance     ="$data/fillPlanes/distance/pigFoodDistance_diffuse.png" />
+        </fillType>
+        <fillType name="LIME" title="$l10n_fillType_lime" showOnPriceTable="true" isBulkType="true" unitShort="$l10n_unit_literShort">
+            <physics  massPerLiter ="1.2" maxPhysicalSurfaceAngle="15" />
+            <economy  pricePerLiter="0.225" />
+            <image    hud          ="$dataS/menu/hud/fillTypes/hud_fill_lime.png" />
+            <pallet   filename     ="$data/objects/bigBag/lime/bigBag_lime.xml" />
+            <textures diffuse      ="$data/fillPlanes/lime_diffuse.png" unitSize="1" blendContrast="0.2" noiseScale="0.5" porosityAtZeroRoughness="0.9" porosityAtFullRoughness="1"
+                      normal       ="$data/fillPlanes/lime_normal.png"
+                      height       ="$data/fillPlanes/lime_height.png"
+                      displacement ="$data/fillPlanes/lime_displacement.png" displacementMaxHeight="0.2" firmness="0.3" viscosity="0.5"
+                      distance     ="$data/fillPlanes/distance/limeDistance_diffuse.png" />
+        </fillType>
+        <fillType name="MINERAL_FEED" title="$l10n_fillType_mineralFeed" showOnPriceTable="true" isBulkType="true" unitShort="$l10n_unit_literShort">
+            <physics  massPerLiter ="0.65" maxPhysicalSurfaceAngle="23" />
+            <economy  pricePerLiter="1.2" />
+            <effects>
+                <alphaClip beltAlphaScale="0.26"/>
+            </effects>
+            <image    hud          ="$dataS/menu/hud/fillTypes/hud_fill_mineralFeed.png" />
+            <pallet   filename     ="objects/bigBag/mineralFeed/bigBag_mineralFeed.xml" />
+            <textures diffuse      ="$data/fillPlanes/mineralFeed_diffuse.png" unitSize="0.5" blendContrast="0.2" noiseScale="0.5" porosityAtZeroRoughness="0.9" porosityAtFullRoughness="1"
+                      normal       ="$data/fillPlanes/mineralFeed_normal.png"
+                      height       ="$data/fillPlanes/mineralFeed_height.png"
+                      displacement ="$data/fillPlanes/mineralFeed_displacement.png" displacementMaxHeight="0.2" firmness="0.3" viscosity="0.5"
+                      distance     ="$data/fillPlanes/distance/mineralFeedDistance_diffuse.png" />
+        </fillType>
+
+        <!-- Highlands Fishing Pack support within the map -->
+        <fillType name="FRIEDONION" title="$l10n_productionPoint_fillType_friedOnion" showOnPriceTable="true" isPalletType="true">
+            <physics  massPerLiter ="0.5" maxPhysicalSurfaceAngle="38" />
+            <economy  pricePerLiter="1.72">
+                <factors>
+                    <factor period="1"  value="1.20" />
+                    <factor period="2"  value="1.10" />
+                    <factor period="3"  value="1.00" />
+                    <factor period="4"  value="0.90" />
+                    <factor period="5"  value="0.85" />
+                    <factor period="6"  value="0.90" />
+                    <factor period="7"  value="1.00" />
+                    <factor period="8"  value="1.10" />
+                    <factor period="9"  value="1.20" />
+                    <factor period="10" value="1.30" />
+                    <factor period="11" value="1.30" />
+                    <factor period="12" value="1.30" />
+                </factors>
+            </economy>
+            <image    hud          ="hud/fillTypes/hud_fill_friedOnion.png" />
+        </fillType>
+        <fillType name="ONIONBAG" title="$l10n_productionPoint_fillType_onionBag" showOnPriceTable="true" isPalletType="true">
+            <physics  massPerLiter ="0.55" maxPhysicalSurfaceAngle="38" />
+            <economy  pricePerLiter="0.325">
+                <factors>
+                    <factor period="1"  value="1.10" />
+                    <factor period="2"  value="1.00" />
+                    <factor period="3"  value="0.95" />
+                    <factor period="4"  value="0.90" />
+                    <factor period="5"  value="0.85" />
+                    <factor period="6"  value="0.90" />
+                    <factor period="7"  value="1.00" />
+                    <factor period="8"  value="1.10" />
+                    <factor period="9"  value="1.20" />
+                    <factor period="10" value="1.30" />
+                    <factor period="11" value="1.20" />
+                    <factor period="12" value="1.20" />
+                </factors>
+            </economy>
+            <image    hud          ="hud/fillTypes/hud_fill_onionBag.png" />
+        </fillType>
+        <fillType name="ONIONSALT" title="$l10n_productionPoint_fillType_onionSalt" showOnPriceTable="true" isPalletType="true">
+            <physics  massPerLiter ="0.6" maxPhysicalSurfaceAngle="38" />
+            <economy  pricePerLiter="1.74">
+                <factors>
+                    <factor period="1"  value="1.00" />
+                    <factor period="2"  value="0.95" />
+                    <factor period="3"  value="0.90" />
+                    <factor period="4"  value="0.85" />
+                    <factor period="5"  value="0.80" />
+                    <factor period="6"  value="0.85" />
+                    <factor period="7"  value="0.95" />
+                    <factor period="8"  value="1.00" />
+                    <factor period="9"  value="1.10" />
+                    <factor period="10" value="1.20" />
+                    <factor period="11" value="1.10" />
+                    <factor period="12" value="1.10" />
+                </factors>
+            </economy>
+            <image    hud          ="hud/fillTypes/hud_fill_onionSalt.png" />
+        </fillType>
+        <fillType name="ONIONSOUP" title="$l10n_productionPoint_fillType_onionSoup" showOnPriceTable="true" isPalletType="true">
+            <physics  massPerLiter ="0.8" maxPhysicalSurfaceAngle="38" />
+            <economy  pricePerLiter="0.86">
+                <factors>
+                    <factor period="1"  value="1.30" />
+                    <factor period="2"  value="1.20" />
+                    <factor period="3"  value="1.10" />
+                    <factor period="4"  value="1.00" />
+                    <factor period="5"  value="0.95" />
+                    <factor period="6"  value="1.00" />
+                    <factor period="7"  value="1.10" />
+                    <factor period="8"  value="1.20" />
+                    <factor period="9"  value="1.30" />
+                    <factor period="10" value="1.40" />
+                    <factor period="11" value="1.40" />
+                    <factor period="12" value="1.40" />
+                </factors>
+            </economy>
+            <image    hud          ="hud/fillTypes/hud_fill_onionSoup.png" />
+        </fillType>
+        <fillType name="FISHFOOD" title="$l10n_productionPoint_fillType_fishFood" showOnPriceTable="true" isPalletType="true">
+            <physics  massPerLiter ="0.6" maxPhysicalSurfaceAngle="38" />
+            <economy  pricePerLiter="1.3">
+                <factors>
+                    <factor period="1"  value="0.90" />
+                    <factor period="2"  value="1.00" />
+                    <factor period="3"  value="1.10" />
+                    <factor period="4"  value="1.20" />
+                    <factor period="5"  value="1.30" />
+                    <factor period="6"  value="1.25" />
+                    <factor period="7"  value="1.10" />
+                    <factor period="8"  value="1.00" />
+                    <factor period="9"  value="0.90" />
+                    <factor period="10" value="0.85" />
+                    <factor period="11" value="0.80" />
+                    <factor period="12" value="0.85" />
+                </factors>
+            </economy>
+            <image    hud          ="hud/fillTypes/hud_fill_fishFood.png" />
+        </fillType>
+        <fillType name="TROUTYOUNG" title="$l10n_productionPoint_fillType_troutYoung" showOnPriceTable="true" isPalletType="true">
+            <physics  massPerLiter ="0.8" maxPhysicalSurfaceAngle="38" />
+            <economy  pricePerLiter="0.893">
+                <factors>
+                    <factor period="1"  value="0.70" />
+                    <factor period="2"  value="0.80" />
+                    <factor period="3"  value="0.90" />
+                    <factor period="4"  value="1.00" />
+                    <factor period="5"  value="1.10" />
+                    <factor period="6"  value="1.05" />
+                    <factor period="7"  value="0.90" />
+                    <factor period="8"  value="0.80" />
+                    <factor period="9"  value="0.70" />
+                    <factor period="10" value="0.65" />
+                    <factor period="11" value="0.60" />
+                    <factor period="12" value="0.65" />
+                </factors>
+            </economy>
+            <image    hud          ="hud/fillTypes/hud_fill_troutYoung.png" />
+        </fillType>
+        <fillType name="TROUT" title="$l10n_productionPoint_fillType_trout" showOnPriceTable="true" isPalletType="true">
+            <physics  massPerLiter ="0.8" maxPhysicalSurfaceAngle="38" />
+            <economy  pricePerLiter="1.725">
+                <factors>
+                    <factor period="1"  value="1.20" />
+                    <factor period="2"  value="1.25" />
+                    <factor period="3"  value="1.30" />
+                    <factor period="4"  value="1.35" />
+                    <factor period="5"  value="1.40" />
+                    <factor period="6"  value="1.35" />
+                    <factor period="7"  value="1.30" />
+                    <factor period="8"  value="1.25" />
+                    <factor period="9"  value="1.20" />
+                    <factor period="10" value="1.15" />
+                    <factor period="11" value="1.10" />
+                    <factor period="12" value="1.15" />
+                </factors>
+            </economy>
+            <image    hud          ="hud/fillTypes/hud_fill_trout.png" />
+        </fillType>
+
+        <!-- Map fruitTypes -->
+        <fillType name="RYE" title="$l10n_fillType_rye" showOnPriceTable="true" isBulkType="true" unitShort="$l10n_unit_literShort">
+            <physics  massPerLiter ="0.71" maxPhysicalSurfaceAngle="15" />
+            <economy  pricePerLiter="0.325">
+                <factors>
+                    <factor period="1"  value="1.00" />
+                    <factor period="2"  value="1.07" />
+                    <factor period="3"  value="0.99" />
+                    <factor period="4"  value="0.94" />
+                    <factor period="5"  value="0.85" />
+                    <factor period="6"  value="0.81" />
+                    <factor period="7"  value="0.86" />
+                    <factor period="8"  value="0.99" />
+                    <factor period="9"  value="1.08" />
+                    <factor period="10" value="1.13" />
+                    <factor period="11" value="1.21" />
+                    <factor period="12" value="1.08" />
+                </factors>
+            </economy>
+            <image    hud          ="hud/fillTypes/hud_fill_rye.png" />
+            <pallet   filename     ="$data/objects/pallets/fillablePallet/fillablePallet.xml" />
+            <textures diffuse      ="fillPlanes/rye_diffuse.png" unitSize="0.5" blendContrast="0.2" noiseScale="0.5" porosityAtZeroRoughness="0.9" porosityAtFullRoughness="1"
+                      normal       ="fillPlanes/barley_normal.png"
+                      height       ="$data/fillPlanes/barley_height.png"
+                      displacement ="$data/fillPlanes/barley_displacement.png" displacementMaxHeight="0.2" firmness="0.3" viscosity="0.5"
+                      distance     ="fillPlanes/distance/ryeDistance_diffuse.png" />
+        </fillType>
+        <fillType name="RYE_CUT" title="$l10n_fillType_rye" showOnPriceTable="false" unitShort="$l10n_unit_literShort">
+            <physics  massPerLiter ="0.74" maxPhysicalSurfaceAngle="50" />
+            <economy  pricePerLiter="0.325" />
+            <effects  prioritizedEffectType="ParticleEffect">
+                <alphaClip value="0.15" sharpness="0.1" gradientScale="0.1" alphaScale="1.0" beltAlphaScale="0.3"/>
+            </effects>
+            <image    hud          ="hud/fillTypes/hud_fill_ryeCut.png" />
+            <textures diffuse      ="fillPlanes/ryeCut_diffuse.png" unitSize="2" blendContrast="0.2" noiseScale="0.5" porosityAtZeroRoughness="0.9" porosityAtFullRoughness="1"
+                      normal       ="$data/fillPlanes/barleyCut_normal.png"
+                      height       ="$data/fillPlanes/barleyCut_height.png"
+                      displacement ="$data/fillPlanes/barleyCut_displacement.png" displacementMaxHeight="0.2" firmness="0.3" viscosity="0.5"
+                      distance     ="fillPlanes/distance/ryeCutDistance_diffuse.png" />
+        </fillType>
+        <fillType name="ALFALFA" title="$l10n_fillType_alfalfa" showOnPriceTable="false" isBulkType="true" isBaleType="true" unitShort="$l10n_unit_literShort">
+            <physics  massPerLiter ="0.30" maxPhysicalSurfaceAngle="50" />
+            <economy  pricePerLiter="0.049" />
+            <effects  fruitSmokeColor="0.3098 0.1771 0.0474 0.15"/>
+            <image    hud          ="hud/fillTypes/hud_fill_alfalfa.png" />
+        </fillType>
+        <fillType name="ALFALFA_WINDROW" title="$l10n_fillType_alfalfa" showOnPriceTable="true" isBulkType="true" isBaleType="true" unitShort="$l10n_unit_literShort">
+            <physics  massPerLiter ="0.30" maxPhysicalSurfaceAngle="50" />
+            <economy  pricePerLiter="0.05">
+                <factors>
+                    <factor period="1"  value="1.05" />
+                    <factor period="2"  value="1.02" />
+                    <factor period="3"  value="0.96" />
+                    <factor period="4"  value="0.93" />
+                    <factor period="5"  value="0.9" />
+                    <factor period="6"  value="0.9" />
+                    <factor period="7"  value="0.93" />
+                    <factor period="8"  value="0.99" />
+                    <factor period="9"  value="1.05" />
+                    <factor period="10" value="1.08" />
+                    <factor period="11" value="1.11" />
+                    <factor period="12" value="1.11" />
+                </factors>
+            </economy>
+            <effects  prioritizedEffectType="ParticleEffect" fillSmokeColor="0.3098 0.1771 0.0474 0.15">
+                <alphaClip value="0.2" sharpness="0.05" gradientScale="0.1" alphaScale="1.8" beltAlphaScale="0.6"/>
+            </effects>
+            <image    hud          ="hud/fillTypes/hud_fill_alfalfa_windrow.png" />
+            <textures diffuse      ="fillPlanes/alfalfa_diffuse.png" unitSize="1" blendContrast="0.2" noiseScale="0.5" porosityAtZeroRoughness="0.9" porosityAtFullRoughness="1"
+                      normal       ="fillPlanes/alfalfa_normal.png"
+                      height       ="fillPlanes/alfalfa_height.png"
+                      displacement ="fillPlanes/flatFillPlane_displacement.png" displacementMaxHeight="0.2" firmness="0.3" viscosity="0.5"
+                      distance     ="fillPlanes/distance/alfalfaDistance_diffuse.png" />
+        </fillType>
+        <fillType name="DRYALFALFA_WINDROW" title="$l10n_fillType_alfalfaHay" showOnPriceTable="true" isBulkType="true" isBaleType="true" unitShort="$l10n_unit_literShort">
+            <physics massPerLiter="0.07" maxPhysicalSurfaceAngle="50" />
+            <economy  pricePerLiter="0.06">
+                <factors>
+                    <factor period="1"  value="1.05" />
+                    <factor period="2"  value="1.02" />
+                    <factor period="3"  value="0.96" />
+                    <factor period="4"  value="0.93" />
+                    <factor period="5"  value="0.9" />
+                    <factor period="6"  value="0.9" />
+                    <factor period="7"  value="0.93" />
+                    <factor period="8"  value="0.99" />
+                    <factor period="9"  value="1.05" />
+                    <factor period="10" value="1.08" />
+                    <factor period="11" value="1.11" />
+                    <factor period="12" value="1.11" />
+                </factors>
+            </economy>
+            <effects  prioritizedEffectType="ParticleEffect" fillSmokeColor="0.3098 0.1771 0.0474 0.15">
+                <alphaClip value="0.2" sharpness="0.05" gradientScale="0.1" alphaScale="1.8" beltAlphaScale="0.65"/>
+            </effects>
+            <image    hud          ="hud/fillTypes/hud_fill_alfalfaHay_windrow.png" />
+            <textures diffuse      ="fillPlanes/alfalfaHay_diffuse.png" unitSize="1" blendContrast="0.2" noiseScale="0.5" porosityAtZeroRoughness="0.9" porosityAtFullRoughness="1"
+                      normal       ="fillPlanes/alfalfaHay_normal.png"
+                      height       ="fillPlanes/alfalfaHay_height.png"
+                      displacement ="fillPlanes/flatFillPlane_displacement.png" displacementMaxHeight="0.2" firmness="0.3" viscosity="0.5"
+                      distance     ="fillPlanes/distance/alfalfaHayDistance_diffuse.png" />
+        </fillType>
+        <fillType name="DECOGARDENFOLIAGE" title="$l10n_fillType_decoGardenFoliage" showOnPriceTable="false" unitShort="$l10n_unit_literShort">
+            <physics  massPerLiter   ="0.30" maxPhysicalSurfaceAngle="50" />
+            <economy  pricePerLiter  ="0.045" />
+            <effects  fruitSmokeColor="0.0970 0.1130 0.0171 1.0000"/>
+        </fillType>
+        <fillType name="DECOGARDENCROPS" title="$l10n_fillType_decoGardenFoliage" showOnPriceTable="false" unitShort="$l10n_unit_literShort">
+            <physics  massPerLiter   ="0.30" maxPhysicalSurfaceAngle="50" />
+            <economy  pricePerLiter  ="0.045" />
+            <effects  fruitSmokeColor="0.0970 0.1130 0.0171 1.0000"/>
+        </fillType>
+        <fillType name="DECOGARDENROOTCROPS" title="$l10n_fillType_decoGardenFoliage" showOnPriceTable="false" unitShort="$l10n_unit_literShort">
+            <physics  massPerLiter   ="0.30" maxPhysicalSurfaceAngle="50" />
+            <economy  pricePerLiter  ="0.045" />
+            <effects  fruitSmokeColor="0.0970 0.1130 0.0171 1.0000"/>
+        </fillType>
+
+        <!-- Map fillTypes -->
+        <fillType name="COMPOST" title="$l10n_fillType_compost" showOnPriceTable="true" isBulkType="true" isPalletType="true" unitShort="$l10n_unit_literShort">
+            <physics  massPerLiter ="0.7" maxPhysicalSurfaceAngle="30" />
+            <economy  pricePerLiter="0.08">
+                <factors>
+                    <factor period="1"  value="0.90" />
+                    <factor period="2"  value="0.94" />
+                    <factor period="3"  value="1.01" />
+                    <factor period="4"  value="1.11" />
+                    <factor period="5"  value="1.11" />
+                    <factor period="6"  value="1.06" />
+                    <factor period="7"  value="1.03" />
+                    <factor period="8"  value="0.97" />
+                    <factor period="9"  value="0.92" />
+                    <factor period="10" value="0.89" />
+                    <factor period="11" value="0.88" />
+                    <factor period="12" value="0.87" />
+                </factors>
+            </economy>
+            <effects  prioritizedEffectType="ParticleEffect" fillSmokeColor="0.65 0.65 0.65 1">
+                <alphaClip value="0.4" sharpness="0.05" gradientScale="0.1" alphaScale="2.0" beltAlphaScale="0.7"/>
+            </effects>
+            <image    hud          ="hud/fillTypes/hud_fill_compost.png" />
+            <pallet   filename     ="objects/bigBag/compost/bigBag_compost.xml" />
+            <textures diffuse      ="fillPlanes/compost_diffuse.png" unitSize="1" blendContrast="0.2" noiseScale="0.5" porosityAtZeroRoughness="0.9" porosityAtFullRoughness="1"
+                      normal       ="fillPlanes/compost_normal.png"
+                      height       ="fillPlanes/compost_height.png"
+                      displacement ="fillPlanes/flatFillPlane_displacement.png" displacementMaxHeight="0.2" firmness="0.3" viscosity="0.5"
+                      distance     ="fillPlanes/distance/compostDistance_diffuse.png" />
+        </fillType>
+        <fillType name="IRONORE" title="$l10n_fillType_ironOre" showOnPriceTable="true" isBulkType="true" unitShort="$l10n_unit_literShort">
+            <physics  massPerLiter ="1.85" maxPhysicalSurfaceAngle="35" />
+            <economy  pricePerLiter="1.0">
+                <factors>
+                    <factor period="1"  value="0.97" />
+                    <factor period="2"  value="0.99" />
+                    <factor period="3"  value="1.00" />
+                    <factor period="4"  value="1.02" />
+                    <factor period="5"  value="1.04" />
+                    <factor period="6"  value="1.04" />
+                    <factor period="7"  value="1.04" />
+                    <factor period="8"  value="1.03" />
+                    <factor period="9"  value="1.02" />
+                    <factor period="10" value="1.00" />
+                    <factor period="11" value="0.99" />
+                    <factor period="12" value="0.97" />
+                </factors>
+            </economy>
+            <image    hud          ="$dataS/menu/hud/fillTypes/hud_fill_ironOre.png" />
+            <pallet   filename     ="$data/objects/pallets/fillablePallet/fillablePallet.xml" />
+            <textures diffuse      ="fillPlanes/ironOre_diffuse.png" unitSize="1" blendContrast="0.2" noiseScale="0.5" porosityAtZeroRoughness="0.9" porosityAtFullRoughness="1"
+                      normal       ="fillPlanes/ironOre_normal.png"
+                      height       ="fillPlanes/ironOre_height.png"
+                      displacement ="fillPlanes/ironOre_displacement.png" displacementMaxHeight="0.2" firmness="0.3" viscosity="0.5"
+                      distance     ="fillPlanes/distance/ironOreDistance_diffuse.png" />
+        </fillType>
+        <fillType name="BLASTFURNACESLAG" title="$l10n_fillType_blastFurnaceSlag" showOnPriceTable="true" isBulkType="true" unitShort="$l10n_unit_literShort">
+            <physics  massPerLiter ="1.3" maxPhysicalSurfaceAngle="35" />
+            <economy  pricePerLiter="0.18">
+                <factors>
+                    <factor period="1"  value="0.97" />
+                    <factor period="2"  value="0.99" />
+                    <factor period="3"  value="1.00" />
+                    <factor period="4"  value="1.02" />
+                    <factor period="5"  value="1.04" />
+                    <factor period="6"  value="1.04" />
+                    <factor period="7"  value="1.04" />
+                    <factor period="8"  value="1.03" />
+                    <factor period="9"  value="1.02" />
+                    <factor period="10" value="1.00" />
+                    <factor period="11" value="0.99" />
+                    <factor period="12" value="0.97" />
+                </factors>
+            </economy>
+            <image    hud          ="hud/fillTypes/hud_fill_blastFurnaceSlag.png" />
+            <pallet   filename     ="$data/objects/pallets/fillablePallet/fillablePallet.xml" />
+            <textures diffuse      ="fillPlanes/blastFurnaceSlag_diffuse.png" unitSize="0.6" blendContrast="0.2" noiseScale="0.5" porosityAtZeroRoughness="0.9" porosityAtFullRoughness="1"
+                      normal       ="fillPlanes/blastFurnaceSlag_normal.png"
+                      height       ="fillPlanes/ironOre_height.png"
+                      displacement ="fillPlanes/ironOre_displacement.png" displacementMaxHeight="0.2" firmness="0.3" viscosity="0.5"
+                      distance     ="fillPlanes/distance/blastFurnaceSlagDistance_diffuse.png" />
+        </fillType>
+        <fillType name="LIMESTONE" title="$l10n_fillType_limestone" showOnPriceTable="true" isBulkType="true" unitShort="$l10n_unit_literShort">
+            <physics  massPerLiter ="1.3" maxPhysicalSurfaceAngle="35" />
+            <economy  pricePerLiter="0.11">
+                <factors>
+                    <factor period="1"  value="0.97" />
+                    <factor period="2"  value="0.99" />
+                    <factor period="3"  value="1.00" />
+                    <factor period="4"  value="1.02" />
+                    <factor period="5"  value="1.04" />
+                    <factor period="6"  value="1.04" />
+                    <factor period="7"  value="1.04" />
+                    <factor period="8"  value="1.03" />
+                    <factor period="9"  value="1.02" />
+                    <factor period="10" value="1.00" />
+                    <factor period="11" value="0.99" />
+                    <factor period="12" value="0.97" />
+                </factors>
+            </economy>
+            <effects>
+                <alphaClip beltAlphaScale="0.36"/>
+            </effects>
+            <image    hud          ="hud/fillTypes/hud_fill_limestone.png" />
+            <pallet   filename     ="$data/objects/pallets/fillablePallet/fillablePallet.xml" />
+            <textures diffuse      ="fillPlanes/limestone_diffuse.png" unitSize="0.7" blendContrast="0.2" noiseScale="0.5" porosityAtZeroRoughness="0.9" porosityAtFullRoughness="1"
+                      normal       ="fillPlanes/limestone_normal.png"
+                      height       ="fillPlanes/stone_height.png"
+                      displacement ="$data/fillPlanes/stone_displacement.png" displacementMaxHeight="0.2" firmness="0.3" viscosity="0.5"
+                      distance     ="fillPlanes/distance/limestoneDistance_diffuse.png" />
+        </fillType>
+        <fillType name="CLAY" title="$l10n_fillType_clay" showOnPriceTable="true" isBulkType="true" unitShort="$l10n_unit_literShort">
+            <physics  massPerLiter ="1.2" maxPhysicalSurfaceAngle="32" />
+            <economy  pricePerLiter="0.075">
+                <factors>
+                    <factor period="1"  value="0.97" />
+                    <factor period="2"  value="0.99" />
+                    <factor period="3"  value="1.00" />
+                    <factor period="4"  value="1.02" />
+                    <factor period="5"  value="1.04" />
+                    <factor period="6"  value="1.04" />
+                    <factor period="7"  value="1.04" />
+                    <factor period="8"  value="1.03" />
+                    <factor period="9"  value="1.02" />
+                    <factor period="10" value="1.00" />
+                    <factor period="11" value="0.99" />
+                    <factor period="12" value="0.97" />
+                </factors>
+            </economy>
+            <image    hud          ="hud/fillTypes/hud_fill_clay.png" />
+            <pallet   filename     ="$data/objects/pallets/fillablePallet/fillablePallet.xml" />
+            <textures diffuse      ="fillPlanes/clay_diffuse.png" unitSize="0.7" blendContrast="0.2" noiseScale="0.5" porosityAtZeroRoughness="0.9" porosityAtFullRoughness="1"
+                      normal       ="fillPlanes/clay_normal.png"
+                      height       ="fillPlanes/clay_height.png"
+                      displacement ="fillPlanes/clay_displacement.png" displacementMaxHeight="0.2" firmness="0.3" viscosity="0.5"
+                      distance     ="fillPlanes/distance/clayDistance_diffuse.png" />
+        </fillType>
+        <fillType name="SAND" title="$l10n_fillType_sand" showOnPriceTable="true" isBulkType="true" unitShort="$l10n_unit_literShort">
+            <physics  massPerLiter ="1.15" maxPhysicalSurfaceAngle="15" />
+            <economy  pricePerLiter="0.165">
+                <factors>
+                    <factor period="1"  value="0.97" />
+                    <factor period="2"  value="0.99" />
+                    <factor period="3"  value="1.00" />
+                    <factor period="4"  value="1.02" />
+                    <factor period="5"  value="1.04" />
+                    <factor period="6"  value="1.04" />
+                    <factor period="7"  value="1.04" />
+                    <factor period="8"  value="1.03" />
+                    <factor period="9"  value="1.02" />
+                    <factor period="10" value="1.00" />
+                    <factor period="11" value="0.99" />
+                    <factor period="12" value="0.97" />
+                </factors>
+            </economy>
+            <image    hud          ="hud/fillTypes/hud_fill_sand.png" />
+            <pallet   filename     ="$data/objects/pallets/fillablePallet/fillablePallet.xml" />
+            <textures diffuse      ="fillPlanes/sand_diffuse.png" unitSize="0.5" blendContrast="0.2" noiseScale="0.5" porosityAtZeroRoughness="0.9" porosityAtFullRoughness="1"
+                      normal       ="fillPlanes/sand_normal.png"
+                      height       ="fillPlanes/sand_height.png"
+                      displacement ="fillPlanes/sand_displacement.png" displacementMaxHeight="0.2" firmness="0.3" viscosity="0.5"
+                      distance     ="fillPlanes/distance/sandDistance_diffuse.png" />
+        </fillType>
+        <fillType name="GRAVEL" title="$l10n_fillType_gravel" showOnPriceTable="true" isBulkType="true" unitShort="$l10n_unit_literShort">
+            <physics  massPerLiter ="1.35" maxPhysicalSurfaceAngle="30" />
+            <economy  pricePerLiter="0.15">
+                <factors>
+                    <factor period="1"  value="0.97" />
+                    <factor period="2"  value="0.99" />
+                    <factor period="3"  value="1.00" />
+                    <factor period="4"  value="1.02" />
+                    <factor period="5"  value="1.04" />
+                    <factor period="6"  value="1.04" />
+                    <factor period="7"  value="1.04" />
+                    <factor period="8"  value="1.03" />
+                    <factor period="9"  value="1.02" />
+                    <factor period="10" value="1.00" />
+                    <factor period="11" value="0.99" />
+                    <factor period="12" value="0.97" />
+                </factors>
+            </economy>
+            <image    hud          ="hud/fillTypes/hud_fill_gravel.png" />
+            <pallet   filename     ="$data/objects/pallets/fillablePallet/fillablePallet.xml" />
+            <textures diffuse      ="fillPlanes/gravel_diffuse.png" unitSize="0.5" blendContrast="0.2" noiseScale="0.5" porosityAtZeroRoughness="0.9" porosityAtFullRoughness="1"
+                      normal       ="fillPlanes/gravel_normal.png"
+                      height       ="fillPlanes/gravel_height.png"
+                      displacement ="fillPlanes/gravel_displacement.png" displacementMaxHeight="0.2" firmness="0.3" viscosity="0.5"
+                      distance     ="fillPlanes/distance/gravelDistance_diffuse.png" />
+        </fillType>
+
+        <!-- Products -->
+        <fillType name="CLAYBRICKS" title="$l10n_fillType_clayBrick" showOnPriceTable="true" isPalletType="true">
+            <physics  massPerLiter ="1.3" maxPhysicalSurfaceAngle="0" />
+            <economy  pricePerLiter="1.61" />
+            <image    hud          ="hud/fillTypes/hud_fill_clayBrick.png" />
+            <pallet   filename     ="objects/pallets/clayBricksPallet/clayBricksPallet.xml" />
+        </fillType>
+        <fillType name="CLAYROOFPLATES" title="$l10n_fillType_clayRoofPlate" showOnPriceTable="true" isPalletType="true">
+            <physics  massPerLiter ="1.3" maxPhysicalSurfaceAngle="0" />
+            <economy  pricePerLiter="1.28" />
+            <image    hud          ="hud/fillTypes/hud_fill_clayRoofPlate.png" />
+            <pallet   filename     ="objects/pallets/clayRoofPlatesPallet/clayRoofPlatesPallet.xml" />
+        </fillType>
+        <fillType name="CHIPWOODBOARDS" title="$l10n_fillType_chipwoodBoards" showOnPriceTable="true" isPalletType="true">
+            <physics  massPerLiter ="0.58" maxPhysicalSurfaceAngle="0" />
+            <economy  pricePerLiter="1.2">
+                <factors>
+                    <factor period="1"  value="0.95" />
+                    <factor period="2"  value="0.98" />
+                    <factor period="3"  value="1.01" />
+                    <factor period="4"  value="1.03" />
+                    <factor period="5"  value="1.05" />
+                    <factor period="6"  value="1.03" />
+                    <factor period="7"  value="1.02" />
+                    <factor period="8"  value="1.00" />
+                    <factor period="9"  value="0.99" />
+                    <factor period="10" value="0.97" />
+                    <factor period="11" value="0.95" />
+                    <factor period="12" value="0.94" />
+                </factors>
+            </economy>
+            <image    hud          ="hud/fillTypes/hud_fill_chipwoodBoards.png" />
+            <pallet   filename     ="objects/pallets/chipwoodBoardsStackPallet/chipwoodBoardsStackPallet.xml" />
+        </fillType>
+        <fillType name="FLOORTILES" title="$l10n_fillType_floorTiles" showOnPriceTable="true" isPalletType="true">
+            <physics  massPerLiter ="0.17" maxPhysicalSurfaceAngle="0" />
+            <economy  pricePerLiter="1.7" />
+            <image    hud          ="$dataS/menu/hud/fillTypes/hud_fill_floorTiles.png" />
+            <pallet   filename     ="objects/pallets/floorTilesPallet/floorTilesPallet.xml" />
+        </fillType>
+        <fillType name="SHINGLE" title="$l10n_fillType_shingle" showOnPriceTable="true" isPalletType="true">
+            <physics  massPerLiter ="0.17" maxPhysicalSurfaceAngle="0" />
+            <economy  pricePerLiter="1.85" />
+            <image    hud          ="$dataS/menu/hud/fillTypes/hud_fill_shingles.png" />
+            <pallet   filename     ="objects/pallets/shingleGenericPallet/shingleGenericPallet.xml" />
+        </fillType>
+        <fillType name="METAL" title="$l10n_fillType_metal" showOnPriceTable="true" isPalletType="true">
+            <physics  massPerLiter ="7.8" maxPhysicalSurfaceAngle="0" />
+            <economy  pricePerLiter="3.4">
+                <factors>
+                    <factor period="1"  value="0.97" />
+                    <factor period="2"  value="0.99" />
+                    <factor period="3"  value="1.00" />
+                    <factor period="4"  value="1.02" />
+                    <factor period="5"  value="1.04" />
+                    <factor period="6"  value="1.04" />
+                    <factor period="7"  value="1.04" />
+                    <factor period="8"  value="1.03" />
+                    <factor period="9"  value="1.02" />
+                    <factor period="10" value="1.00" />
+                    <factor period="11" value="0.99" />
+                    <factor period="12" value="0.97" />
+                </factors>
+            </economy>
+            <image    hud          ="$dataS/menu/hud/fillTypes/hud_fill_metal.png" />
+            <pallet   filename     ="objects/pallets/metalPallet/metalPallet.xml" />
+        </fillType>
+        <fillType name="CHAIR" title="$l10n_fillType_chair" showOnPriceTable="true">
+            <physics  massPerLiter ="0.17" maxPhysicalSurfaceAngle="0" />
+            <economy  pricePerLiter="1.55" />
+            <image    hud          ="$dataS/menu/hud/fillTypes/hud_fill_chair.png" />
+            <pallet   filename     ="objects/pallets/chairPallet/chairPallet.xml" />
+        </fillType>
+        <fillType name="TABLE" title="$l10n_fillType_table" showOnPriceTable="true" isPalletType="true">
+            <physics  massPerLiter ="0.17" maxPhysicalSurfaceAngle="0" />
+            <economy  pricePerLiter="2.45" />
+            <image    hud          ="$dataS/menu/hud/fillTypes/hud_fill_table.png" />
+            <pallet   filename     ="objects/pallets/tablePallet/tablePallet.xml" />
+        </fillType>
+        <fillType name="ARMOIRE" title="$l10n_fillType_armoire" showOnPriceTable="true" isPalletType="true">
+            <physics  massPerLiter ="0.17" maxPhysicalSurfaceAngle="0" />
+            <economy  pricePerLiter="2.2" />
+            <image    hud          ="$dataS/menu/hud/fillTypes/hud_fill_armoire.png" />
+            <pallet   filename     ="objects/pallets/armoirePallet/armoirePallet.xml" />
+        </fillType>
+        <fillType name="BOWL" title="$l10n_fillType_bowl" showOnPriceTable="true" isPalletType="true">
+            <physics  massPerLiter ="0.17" maxPhysicalSurfaceAngle="0" />
+            <economy  pricePerLiter="1.65" />
+            <image    hud          ="$dataS/menu/hud/fillTypes/hud_fill_bowl.png" />
+            <pallet   filename     ="objects/pallets/bowlsPallet/bowlsPallet.xml" />
+        </fillType>
+        <fillType name="PEPPERGRINDER" title="$l10n_fillType_pepperGrinder" showOnPriceTable="true" isPalletType="true">
+            <physics  massPerLiter ="0.17" maxPhysicalSurfaceAngle="0" />
+            <economy  pricePerLiter="1.35" />
+            <image    hud          ="$dataS/menu/hud/fillTypes/hud_fill_pepperGrinder.png" />
+            <pallet   filename     ="objects/pallets/pepperGrinderPallet/pepperGrinderPallet.xml" />
+        </fillType>
+        <fillType name="BIRDHOUSE" title="$l10n_fillType_birdHouse" showOnPriceTable="true" isPalletType="true">
+            <physics  massPerLiter ="0.17" maxPhysicalSurfaceAngle="0" />
+            <economy  pricePerLiter="1.52" />
+            <image    hud          ="$dataS/menu/hud/fillTypes/hud_fill_birdHouse.png" />
+            <pallet   filename     ="objects/pallets/birdHousePallet/birdHousePallet.xml" />
+        </fillType>
+        <fillType name="CATTREE" title="$l10n_fillType_catTree" showOnPriceTable="true" isPalletType="true">
+            <physics  massPerLiter ="0.17" maxPhysicalSurfaceAngle="0" />
+            <economy  pricePerLiter="3.22" />
+            <image    hud          ="$dataS/menu/hud/fillTypes/hud_fill_catTree.png" />
+            <pallet   filename     ="objects/pallets/catTreePallet/catTreePallet.xml" />
+        </fillType>
+        <fillType name="DOGHOUSE" title="$l10n_fillType_dogHouse" showOnPriceTable="true" isPalletType="true">
+            <physics  massPerLiter ="0.17" maxPhysicalSurfaceAngle="0" />
+            <economy  pricePerLiter="2.45" />
+            <image    hud          ="$dataS/menu/hud/fillTypes/hud_fill_dogHouse.png" />
+            <pallet   filename     ="objects/pallets/dogHousePallet/dogHousePallet.xml" />
+        </fillType>
+    </fillTypes>
+
+    <fillTypeCategories>
+        <fillTypeCategory name="BULK">RYE ALFALFA_WINDROW DRYALFALFA_WINDROW IRONORE BLASTFURNACESLAG LIMESTONE CLAY SAND GRAVEL</fillTypeCategory>
+        <fillTypeCategory name="WINDROW">ALFALFA_WINDROW DRYALFALFA_WINDROW</fillTypeCategory>
+        <fillTypeCategory name="COMBINE">RYE</fillTypeCategory>
+        <fillTypeCategory name="MIXERWAGON">DRYALFALFA_WINDROW</fillTypeCategory>
+        <fillTypeCategory name="AUGERWAGON">LIME RYE</fillTypeCategory>
+        <fillTypeCategory name="FORAGEWAGON">ALFALFA_WINDROW DRYALFALFA_WINDROW</fillTypeCategory>
+        <fillTypeCategory name="SILAGETRAILER">ALFALFA_WINDROW DRYALFALFA_WINDROW</fillTypeCategory>
+        <fillTypeCategory name="TRAINWAGON">RYE</fillTypeCategory>
+        <fillTypeCategory name="FORAGEHARVESTER">ALFALFA_WINDROW</fillTypeCategory>
+        <fillTypeCategory name="MANURESPREADER">COMPOST</fillTypeCategory>
+        <fillTypeCategory name="MANURESPREADER_ORCHARDS">COMPOST</fillTypeCategory>
+        <fillTypeCategory name="FORK">ALFALFA_WINDROW DRYALFALFA_WINDROW</fillTypeCategory>
+        <fillTypeCategory name="SHOVEL">RYE ALFALFA_WINDROW DRYALFALFA_WINDROW IRONORE BLASTFURNACESLAG LIMESTONE CLAY SAND GRAVEL</fillTypeCategory>
+        <fillTypeCategory name="FARMSILO">PIGFOOD MINERAL_FEED RYE</fillTypeCategory>
+        <fillTypeCategory name="HAYLOFT">DRYALFALFA_WINDROW</fillTypeCategory>
+        <fillTypeCategory name="LOADINGVEHICLE">RYE</fillTypeCategory>
+        <fillTypeCategory name="PRODUCT">TROUT FRIEDONION ONIONBAG ONIONSALT ONIONSOUP FISHFOOD CLAYBRICKS CLAYROOFPLATES CHIPWOODBOARDS FLOORTILES SHINGLE METAL CHAIR TABLE ARMOIRE BOWL PEPPERGRINDER BIRDHOUSE CATTREE DOGHOUSE</fillTypeCategory>
+
+        <fillTypeCategory name="SELLINGSTATION_FIELDFRUITS">RYE</fillTypeCategory>
+        <fillTypeCategory name="SELLINGSTATION_PRODUCTS">FISHFOOD CLAYBRICKS CLAYROOFPLATES CHIPWOODBOARDS FLOORTILES SHINGLE METAL CHAIR TABLE ARMOIRE BOWL PEPPERGRINDER BIRDHOUSE CATTREE DOGHOUSE</fillTypeCategory>
+        <fillTypeCategory name="SELLINGSTATION_PRODUCTSFOOD">TROUT FRIEDONION ONIONBAG ONIONSALT ONIONSOUP</fillTypeCategory>
+        <fillTypeCategory name="SELLINGSTATION_BALES">ALFALFA_WINDROW DRYALFALFA_WINDROW</fillTypeCategory>
+        <fillTypeCategory name="SELLINGSTATION_SUPERMARKET">POTATO RICELONGGRAIN RICE GREENBEAN PEA SPINACH OLIVE CLOTHES CHAIR TABLE ARMOIRE BOWL PEPPERGRINDER BIRDHOUSE CATTREE DOGHOUSE</fillTypeCategory>
+        <fillTypeCategory name="SELLINGSTATION_TRANSPORTCOMPANY_GRAIN">WHEAT BARLEY OAT CANOLA SORGHUM SUNFLOWER SOYBEAN MAIZE RICE RICELONGGRAIN SEEDS RYE</fillTypeCategory>
+        <fillTypeCategory name="SELLINGSTATION_TRANSPORTCOMPANY_PALLET">OLIVE</fillTypeCategory>
+        <fillTypeCategory name="SELLINGSTATION_TRANSPORTCOMPANY_GENERAL">COTTON SUGARCANE GREENBEAN PEA SPINACH WOODCHIPS SUGARBEET_CUT</fillTypeCategory>
+    </fillTypeCategories>
+
+    <fillTypeSounds>
+        <fillTypeSound fillTypes="SAND">
+            <sound template="dustFill"/>
+        </fillTypeSound>
+
+        <fillTypeSound fillTypes="RYE">
+            <sound template="grainMediumFill"/>
+        </fillTypeSound>
+
+        <fillTypeSound fillTypes="ALFALFA_WINDROW DRYALFALFA_WINDROW">
+            <sound template="grassFill"/>
+        </fillTypeSound>
+
+        <fillTypeSound fillTypes="IRONORE BLASTFURNACESLAG LIMESTONE">
+            <sound template="rocksUnload"/>
+        </fillTypeSound>
+
+        <fillTypeSound fillTypes="COMPOST CLAY">
+            <sound template="manureFill"/>
+        </fillTypeSound>
+
+        <fillTypeSound fillTypes="GRAVEL">
+            <sound template="gravelFill"/>
+        </fillTypeSound>
+    </fillTypeSounds>
+</map>

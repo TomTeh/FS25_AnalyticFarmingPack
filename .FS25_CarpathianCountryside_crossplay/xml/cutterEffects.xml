@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<motionPathEffects xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../shared/xml/schema/mapMotionPathEffects.xsd">
+
+<!-- _____________________________________ GRAIN HEADER _____________________________________ -->
+
+    <!-- RYE - greenBig -->
+    <motionPathEffect effectClass="CutterMotionPathEffect" effectType="CUTTER_FORAGE" filename="effects/cutter/rye/rye_greenBig.i3d">
+        <effectGeneration rootNode="0|2|0" minRot="0 0 0" maxRot="0 360 0" minScale="1 0.9 1" maxScale="1 1.1 1" useFoliage="rye" useFoliageStage="5" useFoliageLOD="0"/>
+        <typeDefinition fruitTypes="RYE" growthStates="6 7" speedScale="0.25"/>
+
+        <effectMeshes>
+            <!-- forage harvesters -->
+            <effectMesh node="0|0|0" numRows="6"  rowLength="5"  skipPositions="0" boundingBox="6 4 4"/>
+            <effectMesh node="0|0|1" numRows="6"  rowLength="20" skipPositions="0" boundingBox="10 7.5 7.5"/>
+            <effectMesh node="0|0|2" numRows="12" rowLength="26" skipPositions="0" boundingBox="16 7.5 7.5"/>
+            <effectMesh node="0|0|3" numRows="20" rowLength="36" skipPositions="0" boundingBox="24 7.5 7.5"/>
+        </effectMeshes>
+
+        <customShaderDefaults>
+            <customShaderMap name="shapeArray" filename="$data/effects/cutter/arrays/maizeheader/cutterArray12x26.dds"/>
+            <customShaderVariation name="scaleByTexture_verticalOffsetCut_alphaMap"/>
+            <customShaderParameter name="keepNormals" value="1 0 0 0"/>
+            <customShaderParameter name="verticalOffset"  value="-0.15 0 0 0"/>
+        </customShaderDefaults>
+    </motionPathEffect>
+
+    <!-- RYE - harvestReady -->
+    <motionPathEffect effectClass="CutterMotionPathEffect" effectType="CUTTER CUTTER_FORAGE" filename="effects/cutter/rye/rye_harvestReady.i3d">
+        <effectGeneration rootNode="0|2|1" minRot="0 0 0" maxRot="0 360 0" minScale="1 0.9 1" maxScale="1 1.1 1" useFoliage="rye" useFoliageStage="7" useFoliageLOD="0"/>
+        <typeDefinition fruitTypes="RYE" growthStates="8" speedScale="0.25"/>
+
+        <effectMeshes>
+            <!-- grain cutters -->
+            <effectMesh node="0|0|0" numRows="32" rowLength="42" skipPositions="1" boundingBox="18 3 5"/>
+
+            <!-- forage harvesters -->
+            <effectMesh node="0|0|1" numRows="6"  rowLength="5"  skipPositions="0" boundingBox="6 4 4"/>
+            <effectMesh node="0|0|2" numRows="6"  rowLength="20" skipPositions="0" boundingBox="10 7.5 7.5"/>
+            <effectMesh node="0|0|3" numRows="12" rowLength="26" skipPositions="0" boundingBox="16 7.5 7.5"/>
+            <effectMesh node="0|0|4" numRows="20" rowLength="36" skipPositions="0" boundingBox="24 7.5 7.5"/>
+        </effectMeshes>
+
+        <customShaderDefaults>
+            <customShaderMap name="shapeArray" filename="$data/effects/cutter/arrays/grainheader/beltXArray.dds"/>
+            <customShaderVariation name="scaleByTexture_verticalOffsetCut_alphaMap"/>
+            <customShaderParameter name="keepNormals" value="1 0 0 0"/>
+            <customShaderParameter name="verticalOffset"  value="-0.15 0 0 0"/>
+        </customShaderDefaults>
+    </motionPathEffect>
+
+</motionPathEffects>

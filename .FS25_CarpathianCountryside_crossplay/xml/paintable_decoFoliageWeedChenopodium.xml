@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="foliage" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_shopItem_decoFoliageWeedChenopodium</name>
+        <functions>
+            <function>$l10n_function_foliage</function>
+        </functions>
+        <image>foliage/decoFoliage/store_decoFoliageWeedChenopodium.dds</image>
+        <price>3</price>
+        <dailyUpkeep>0</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>PLACEABLE</species>
+        <category>placeableMisc</category>
+        <canBeSold>true</canBeSold>
+        <showInStore>true</showInStore>
+        <brush>
+            <type>foliage</type>
+            <category>landscaping</category>
+            <tab>plants</tab>
+            <parameters>
+                <parameter>decoFoliage</parameter> <!-- foliage painter id -->
+                <parameter>5</parameter> <!-- value -->
+            </parameters>
+        </brush>
+
+        <storeIconRendering>
+            <settings centerIcon="true"/>
+            <objectBundle>
+                <object filename="foliage/decoFoliage/decoFoliage.i3d">
+                    <node node="1|2|0" translation="0 0 0" rotation="0 0 0" scale="1 1 1"/>
+                </object>
+            </objectBundle>
+        </storeIconRendering>
+    </storeData>
+
+    <!-- Used only for store icon generation and store item. Does not use this i3d reference in-game. -->
+    <base>
+        <filename>foliage/decoFoliage/decoFoliage.i3d</filename>
+    </base>
+
+    <placement>
+        <testAreas>
+            <testArea/>
+        </testAreas>
+        <sounds>
+            <place/>
+            <placeLayered/>
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea/>
+    </clearAreas>
+
+    <leveling >
+        <levelAreas>
+            <levelArea/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea/>
+    </indoorAreas>
+
+</placeable>

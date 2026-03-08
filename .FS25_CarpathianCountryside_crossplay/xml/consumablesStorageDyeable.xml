@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="mapCC_objectStorage" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_placeableObject_consumablesStorage</name>
+        <functions>
+            <function>$l10n_function_garageBulk</function>
+            <function>$l10n_function_garage</function>
+            <function>$l10n_function_palletStorage</function>
+            <function>$l10n_function_roofSolarPanelsOption</function>
+        </functions>
+        <image>placeables/shed/store_consumablesStorageDyeable.dds</image>
+        <price>128000</price>
+        <dailyUpkeep>40</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>LIZARDBUILDING</brand>
+        <species>placeable</species>
+        <category>sheds</category>
+
+        <storeIconRendering>
+            <settings cameraXRot="-10" cameraYRot="40" advancedBoundingBox="true"/>
+        </storeIconRendering>
+        <vertexBufferMemoryUsage>556544</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>111104</indexBufferMemoryUsage>
+        <textureMemoryUsage>7733248</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>placeables/shed/consumablesStorage.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" placementRotationSnapAngle="90" placementPositionSnapSize="0.5" >
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+        </testAreas>
+
+        <sounds>
+            <place template="medImp" />
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="5" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="concrete"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height"/>
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+    </ai>
+
+    <lights>
+        <group weatherRequiredFlags="NIGHT" />
+        <group name="$l10n_action_placeableLightShed" triggerNode="controledLightsTrigger">
+            <sounds>
+                <toggle template="lizardFloodLight" innerRadius="40" outerRadius="50" volumeScale="0.2"/>
+            </sounds>
+        </group>
+
+        <sharedLight filename="placeables/sharedAssets/lights/warehouseHangingLamp.xml" linkNode="warehouseHangingLamp01" groupIndex="2"/>
+        <sharedLight filename="placeables/sharedAssets/lights/warehouseHangingLamp.xml" linkNode="warehouseHangingLamp02" groupIndex="2"/>
+        <sharedLight filename="placeables/sharedAssets/lights/warehouseHangingLamp.xml" linkNode="warehouseHangingLamp03" groupIndex="2"/>
+
+        <sharedLight filename="placeables/sharedAssets/lights/industrialWallLight.xml" linkNode="industrialWallLight01" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/industrialWallLight.xml" linkNode="industrialWallLight02" groupIndex="1"/>
+
+        <realLights>
+            <low>
+                <light node="realLightsLow" groupIndex="1"/>
+                <light node="realLightsControledLow" groupIndex="2"/>
+            </low>
+            <high>
+                <light node="realLightsHigh" groupIndex="1"/>
+                <light node="realLightsControledHigh" groupIndex="2"/>
+            </high>
+        </realLights>
+    </lights>
+
+    <animatedObjects>
+        <animatedObject saveId="consumablesBuilding_gate1">
+            <animation duration="3">
+                <part node="gateRight1">
+                    <keyFrame time="0.03" rotation="-90 0 0"/>
+                    <keyFrame time="1.0" rotation="-90 160 0"/>
+                </part>
+                <part node="gateLeft1">
+                    <keyFrame time="0.03" rotation="-90 0 0"/>
+                    <keyFrame time="1.0" rotation="-90 -160 0"/>
+                </part>
+                <part node="gateHandle1">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="0.03" rotation="-35 0 0"/>
+                    <keyFrame time="0.06" rotation="0 0 0"/>
+                </part>
+                <part node="occluderMesh_gate1">
+                    <keyFrame time="0.0" visibility="true" />
+                    <keyFrame time="0.01" visibility="false" />
+                </part>
+            </animation>
+            <controls triggerNode="gate1_trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving linkNode="gate1_sound" template="metalDoorsLoop" volumeScale="0.6" />
+                <posEnd linkNode="gate1_sound" template="metalDoorsOpen" volumeScale="0.7" />
+                <negEnd linkNode="gate1_sound" template="metalDoorsClose" volumeScale="1" />
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="consumablesBuilding_gate2">
+            <animation duration="3">
+                <part node="gateRight2">
+                    <keyFrame time="0.03" rotation="-90 0 0"/>
+                    <keyFrame time="1.0" rotation="-90 160 0"/>
+                </part>
+                <part node="gateLeft2">
+                    <keyFrame time="0.03" rotation="-90 0 0"/>
+                    <keyFrame time="1.0" rotation="-90 -160 0"/>
+                </part>
+                <part node="gateHandle2">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="0.03" rotation="-35 0 0"/>
+                    <keyFrame time="0.06" rotation="0 0 0"/>
+                </part>
+                <part node="occluderMesh_gate2">
+                    <keyFrame time="0.0" visibility="true" />
+                    <keyFrame time="0.01" visibility="false" />
+                </part>
+            </animation>
+            <controls triggerNode="gate2_trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving linkNode="gate2_sound" template="metalDoorsLoop" volumeScale="0.6" />
+                <posEnd linkNode="gate2_sound" template="metalDoorsOpen" volumeScale="0.7" />
+                <negEnd linkNode="gate2_sound" template="metalDoorsClose" volumeScale="1" />
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="consumablesBuilding_objectStorageConfig">
+            <animation duration="0.2">
+                <part node="objectTrigger">
+                    <keyFrame time="0" translation="9.5 -0.1 13.9" />
+                    <keyFrame time="1.0" translation="9.5 -50 13.9" />
+                </part>
+                <part node="playerTrigger">
+                    <keyFrame time="0" translation="6.5 -0.1 7.3" />
+                    <keyFrame time="1.0" translation="6.5 -50 7.3" />
+                </part>
+                <part node="infoTrigger">
+                    <keyFrame time="0" translation="3.75 2 7.23" />
+                    <keyFrame time="1.0" translation="3.75 -50 7.23" />
+                </part>
+                <part node="markers">
+                    <keyFrame time="0" visibility="true" />
+                    <keyFrame time="1.0" visibility="false" />
+                </part>
+                <part node="objectStorageCollisions">
+                    <keyFrame time="0" translation="0 0 0" />
+                    <keyFrame time="1.0" translation="0 -50 0" />
+                </part>
+            </animation>
+            <controls triggerNode="objectStorageConfig_trigger" posAction="ACTIVATE_HANDTOOL" posText="action_configureObjectStorageOff" negText="action_configureObjectStorageOn" />
+        </animatedObject>
+    </animatedObjects>
+
+    <hotspots>
+        <hotspot type="UNLOADING" linkNode="hotspotNode" teleportNode="teleportNode"/>
+    </hotspots>
+
+    <triggerMarkers>
+        <triggerMarker node="warningStripes" />
+        <triggerMarker node="objectTriggerMarker" filename="placeables/sharedAssets/marker/markerIconStorageIn.i3d" adjustToGround="true" />
+        <triggerMarker node="playerTriggerMarker" filename="placeables/sharedAssets/marker/markerIconStorageOut.i3d" adjustToGround="true" />
+        <triggerMarker node="objectStorageConfig_marker" filename="$data/shared/assets/marker/markerIconWrench.i3d" adjustToGround="true" />
+    </triggerMarkers>
+
+    <infoTrigger triggerNode="infoTrigger"/>
+
+    <objectStorage supportsBales="false" supportsPallets="true" capacity="200" maxUnloadAmount="30" maxLength="6" maxWidth="4" maxHeight="3.3">
+        <playerTrigger node="playerTrigger" />
+        <objectTrigger node="objectTrigger" />
+        <storageAreas>
+            <storageArea startNode="storageAreaStart01" endNode="storageAreaEnd01" maxHeight="3.5"/>
+            <storageArea startNode="storageAreaStart02" endNode="storageAreaEnd02" maxHeight="3.5"/>
+        </storageAreas>
+        <spawnAreas>
+            <spawnArea startNode="spawnAreaStart01" endNode="spawnAreaEnd01"/>
+        </spawnAreas>
+    </objectStorage>
+
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart node="0" linkNode="lightSwitch01" filename="$data/shared/assets/lights/rudolfHormann/powerSwitch.i3d" />
+        <dynamicallyLoadedPart node="0" linkNode="lightSwitch02" filename="$data/shared/assets/lights/rudolfHormann/powerSwitch.i3d" />
+        <dynamicallyLoadedPart node="0" linkNode="lightSwitch03" filename="$data/shared/assets/lights/rudolfHormann/powerSwitch.i3d" />
+        <dynamicallyLoadedPart node="0" linkNode="propsBuildingNode" filename="placeables/sharedAssets/propsBuilding/propsBuilding_farmBuildings.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="propsDecoNode" filename="placeables/sharedAssets/props/cabinetWorkbecnches.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="propsDecoNode" filename="placeables/sharedAssets/props/props_consumablesStorage.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="stopCrossing01" filename="$data/placeables/mapUS/objectStorage/stopCrossing.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="stopCrossing02" filename="$data/placeables/mapUS/objectStorage/stopCrossing.i3d"/>
+    </dynamicallyLoadedParts>
+
+    <deletedNodes>
+        <deletedNode node="consumablesStorage_p1_LOD0" />
+        <deletedNode node="consumablesStorage_p1_LOD1" />
+    </deletedNodes>
+
+    <colorConfigurations price="0" useDefaultColors="true" defaultColorIndex="1">
+        <node node="consumablesStorage_p1_dyeable_LOD0" />
+        <node node="consumablesStorage_p1_dyeable_LOD1" />
+        <colorConfiguration color="1 0.96 0.86" name="$l10n_color_buildingSpecificDefault" isDefault="true"/>
+        <colorConfiguration color="0.8 0.08 0.08" name="$l10n_color_lizardRed"/>
+        <colorConfiguration color="0.324 0.101 0.081" name="$l10n_color_lizardDarkRed"/>
+        <colorConfiguration color="0.95 0.23 0.05" name="$l10n_color_lizardOrange"/>
+        <colorConfiguration color="0.35 0.19 0.05" name="$l10n_color_lizardBrown"/>
+        <colorConfiguration color="1 0.51 0.09" name="$l10n_color_lizardYellow"/>
+        <colorConfiguration color="0.79 0.67 0.28" name="$l10n_color_lizardBrightYellow"/>
+        <colorConfiguration color="0.35 0.43 0.045" name="$l10n_color_lizardLimeGreen"/>
+        <colorConfiguration color="0.258 0.392 0.13" name="$l10n_color_lizardFarmBrightGreen"/>
+        <colorConfiguration color="0.15 0.47 0.05" name="$l10n_color_lizardBrightGreen"/>
+        <colorConfiguration color="0.09 0.35 0.1" name="$l10n_color_lizardGreen"/>
+        <colorConfiguration color="0.15 0.32 0.13" name="$l10n_color_lizardFarmGreen"/>
+        <colorConfiguration color="0.05 0.15 0.05" name="$l10n_color_lizardDarkGreen"/>
+        <colorConfiguration color="0.05 0.25 0.213" name="$l10n_color_lizardTurquoise"/>
+        <colorConfiguration color="0.3 0.61 0.83" name="$l10n_color_lizardSkyBlue"/>
+        <colorConfiguration color="0 0.42 0.85" name="$l10n_color_lizardLizardBrightBlue"/>
+        <colorConfiguration color="0.05 0.27 0.8" name="$l10n_color_lizardBlue"/>
+        <colorConfiguration color="0.01 0.22 0.45" name="$l10n_color_lizardOceanBlue"/>
+        <colorConfiguration color="0.01 0.1 0.3" name="$l10n_color_lizardDarkBlue"/>
+        <colorConfiguration color="0.22 0.18 0.56" name="$l10n_color_lizardPurple"/>
+        <colorConfiguration color="0.27 0.27 0.57" name="$l10n_color_lizardBrightPurple"/>
+        <colorConfiguration color="0.85 0.15 0.25" name="$l10n_color_lizardPink"/>
+        <colorConfiguration color="0.85 0.3 0.42" name="$l10n_color_lizardBrightPink"/>
+    </colorConfigurations>
+
+    <solarPanels>
+        <solarPanelsConfigurations>
+            <solarPanelsConfiguration name="$l10n_ui_none" isActive="false"/>
+            <solarPanelsConfiguration name="117 A" isActive="true" price="31005" incomePerHour="105" >
+                <objectChange node="solarPanels01" visibilityActive="true"/>
+            </solarPanelsConfiguration>
+            <solarPanelsConfiguration name="117 B" isActive="true" price="31005" incomePerHour="105" >
+                <objectChange node="solarPanels02" visibilityActive="true"/>
+            </solarPanelsConfiguration>
+            <solarPanelsConfiguration name="234" isActive="true" price="62010" incomePerHour="210" >
+                <objectChange node="solarPanels01" visibilityActive="true"/>
+                <objectChange node="solarPanels02" visibilityActive="true"/>
+            </solarPanelsConfiguration>
+        </solarPanelsConfigurations>
+    </solarPanels>
+
+    <i3dMappings>
+        <i3dMapping id="consumablesStorage_p1_LOD0" node="0>0|0|2" />
+        <i3dMapping id="consumablesStorage_p1_dyeable_LOD0" node="0>0|0|3" />
+        <i3dMapping id="consumablesStorage_p1_LOD1" node="0>0|1|0" />
+        <i3dMapping id="consumablesStorage_p1_dyeable_LOD1" node="0>0|1|1" />
+        <i3dMapping id="gateRight1" node="0>1|0|0" />
+        <i3dMapping id="gateHandle1" node="0>1|0|0|0" />
+        <i3dMapping id="gateLeft1" node="0>1|0|1" />
+        <i3dMapping id="gate1_trigger" node="0>1|0|2" />
+        <i3dMapping id="gate1_sound" node="0>1|0|3" />
+        <i3dMapping id="occluderMesh_gate1" node="0>1|0|4" />
+        <i3dMapping id="gateRight2" node="0>1|1|0" />
+        <i3dMapping id="gateHandle2" node="0>1|1|0|0" />
+        <i3dMapping id="gateLeft2" node="0>1|1|1" />
+        <i3dMapping id="gate2_trigger" node="0>1|1|2" />
+        <i3dMapping id="gate2_sound" node="0>1|1|3" />
+        <i3dMapping id="occluderMesh_gate2" node="0>1|1|4" />
+        <i3dMapping id="propsBuildingNode" node="0>2|0" />
+        <i3dMapping id="propsDecoNode" node="0>2|1" />
+        <i3dMapping id="propsBordersNode" node="0>2|2" />
+        <i3dMapping id="propsPreplacedNode" node="0>2|3" />
+        <i3dMapping id="warehouseHangingLamp01" node="0>3|0|0" />
+        <i3dMapping id="warehouseHangingLamp02" node="0>3|0|1" />
+        <i3dMapping id="warehouseHangingLamp03" node="0>3|0|2" />
+        <i3dMapping id="industrialWallLight01" node="0>3|0|3" />
+        <i3dMapping id="industrialWallLight02" node="0>3|0|4" />
+        <i3dMapping id="realLightsLow" node="0>3|1|0" />
+        <i3dMapping id="realLightsHigh" node="0>3|1|1" />
+        <i3dMapping id="realLightsControledLow" node="0>3|1|2" />
+        <i3dMapping id="realLightsControledHigh" node="0>3|1|3" />
+        <i3dMapping id="lightSwitch01" node="0>3|2|0" />
+        <i3dMapping id="lightSwitch02" node="0>3|2|1" />
+        <i3dMapping id="lightSwitch03" node="0>3|2|2" />
+        <i3dMapping id="controledLightsTrigger" node="0>3|3" />
+        <i3dMapping id="objectTrigger" node="0>4|0" />
+        <i3dMapping id="playerTrigger" node="0>4|1" />
+        <i3dMapping id="storageAreaStart01" node="0>4|2|0" />
+        <i3dMapping id="storageAreaEnd01" node="0>4|2|0|0" />
+        <i3dMapping id="storageAreaStart02" node="0>4|2|1" />
+        <i3dMapping id="storageAreaEnd02" node="0>4|2|1|0" />
+        <i3dMapping id="spawnAreaStart01" node="0>4|3|0" />
+        <i3dMapping id="spawnAreaEnd01" node="0>4|3|0|0" />
+        <i3dMapping id="infoTrigger" node="0>4|4" />
+        <i3dMapping id="markers" node="0>4|5" />
+        <i3dMapping id="warningStripes" node="0>4|5|0" />
+        <i3dMapping id="objectTriggerMarker" node="0>4|5|1" />
+        <i3dMapping id="playerTriggerMarker" node="0>4|5|2" />
+        <i3dMapping id="stopCrossing01" node="0>4|5|3|0" />
+        <i3dMapping id="stopCrossing02" node="0>4|5|3|1" />
+        <i3dMapping id="hotspotNode" node="0>4|6" />
+        <i3dMapping id="teleportNode" node="0>4|7" />
+        <i3dMapping id="objectStorageCollisions" node="0>4|8" />
+        <i3dMapping id="objectStorageConfig_trigger" node="0>4|9|0" />
+        <i3dMapping id="objectStorageConfig_marker" node="0>4|9|1" />
+        <i3dMapping id="clearArea1Start" node="0>5|0" />
+        <i3dMapping id="clearArea1Width" node="0>5|0|0" />
+        <i3dMapping id="clearArea1Height" node="0>5|0|1" />
+        <i3dMapping id="levelArea1Start" node="0>6|0" />
+        <i3dMapping id="levelArea1Width" node="0>6|0|0" />
+        <i3dMapping id="levelArea1Height" node="0>6|0|1" />
+        <i3dMapping id="indoorArea1Start" node="0>7|0" />
+        <i3dMapping id="indoorArea1Width" node="0>7|0|0" />
+        <i3dMapping id="indoorArea1Height" node="0>7|0|1" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>8|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>8|0|0" />
+        <i3dMapping id="testArea1Start" node="0>9|0" />
+        <i3dMapping id="testArea1End" node="0>9|0|0" />
+        <i3dMapping id="solarPanels01" node="0>13|0" />
+        <i3dMapping id="solarPanels02" node="0>13|1" />
+    </i3dMappings>
+</placeable>

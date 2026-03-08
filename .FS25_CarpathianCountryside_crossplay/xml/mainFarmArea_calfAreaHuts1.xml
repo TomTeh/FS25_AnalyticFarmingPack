@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="simplePlaceable" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_placeableObject_preplacedMapObject</name>
+        <functions>
+            <function>$l10n_function_decoration</function>
+        </functions>
+        <image>placeables/store_defaultMapItem.dds</image>
+        <price>2500</price>
+        <dailyUpkeep>0</dailyUpkeep>
+        <canBeSold>true</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>decoration</category>
+        <vertexBufferMemoryUsage>337664</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>84480</indexBufferMemoryUsage>
+        <textureMemoryUsage>11468800</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>placeables/area/mainFarmArea_calfArea.i3d</filename>
+        <canBeRenamed>false</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testAreaStart3" endNode="testAreaEnd3"/>
+        </testAreas>
+
+        <sounds>
+            <place template="smallImp"/>
+        </sounds>
+    </placement>
+
+    <clearAreas/>
+
+    <leveling/>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorAreaStart2" widthNode="indoorAreaWidth2" heightNode="indoorAreaHeight2"/>
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStart2" endNode="tipOcclusionUpdateAreaEnd2" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateAreaStart2" endNode="tipOcclusionUpdateAreaEnd2" />
+        </updateAreas>
+    </ai>
+
+    <deletedNodes>
+        <deletedNode node="smallOffice" />
+        <deletedNode node="calfHuts1" />
+        <deletedNode node="calfHuts3" />
+        <deletedNode node="realLightsLow" />
+        <deletedNode node="realLightsHigh" />
+        <deletedNode node="tipCol1" />
+        <deletedNode node="tipCol2" />
+        <deletedNode node="tipCol4" />
+        <deletedNode node="water" />
+    </deletedNodes>
+
+    <i3dMappings>
+        <i3dMapping id="smallOffice" node="0>0" />
+        <i3dMapping id="calfHuts1" node="0>1" />
+        <i3dMapping id="calfHuts2" node="0>2" />
+        <i3dMapping id="calfHuts3" node="0>3" />
+        <i3dMapping id="propsBuildingNode" node="0>4|0" />
+        <i3dMapping id="propsBordersNode" node="0>4|1" />
+        <i3dMapping id="propsPreplacedNode" node="0>4|2" />
+        <i3dMapping id="industrialWallLight01" node="0>5|0|0" />
+        <i3dMapping id="industrialWallLight02" node="0>5|0|1" />
+        <i3dMapping id="realLightsLow" node="0>5|1|0" />
+        <i3dMapping id="realLightsHigh" node="0>5|1|1" />
+        <i3dMapping id="water" node="0>6" />
+        <i3dMapping id="fillTrigger" node="0>6|0" />
+        <i3dMapping id="loadingMarker" node="0>6|1" />
+        <i3dMapping id="indoorAreaStart1" node="0>7|0" />
+        <i3dMapping id="indoorAreaWidth1" node="0>7|0|0" />
+        <i3dMapping id="indoorAreaHeight1" node="0>7|0|1" />
+        <i3dMapping id="indoorAreaStart2" node="0>7|1" />
+        <i3dMapping id="indoorAreaWidth2" node="0>7|1|0" />
+        <i3dMapping id="indoorAreaHeight2" node="0>7|1|1" />
+        <i3dMapping id="indoorAreaStart3" node="0>7|2" />
+        <i3dMapping id="indoorAreaWidth3" node="0>7|2|0" />
+        <i3dMapping id="indoorAreaHeight3" node="0>7|2|1" />
+        <i3dMapping id="indoorAreaStart4" node="0>7|3" />
+        <i3dMapping id="indoorAreaWidth4" node="0>7|3|0" />
+        <i3dMapping id="indoorAreaHeight4" node="0>7|3|1" />
+        <i3dMapping id="indoorAreaStart5" node="0>7|4" />
+        <i3dMapping id="indoorAreaWidth5" node="0>7|4|0" />
+        <i3dMapping id="indoorAreaHeight5" node="0>7|4|1" />
+        <i3dMapping id="indoorAreaStart6" node="0>7|5" />
+        <i3dMapping id="indoorAreaWidth6" node="0>7|5|0" />
+        <i3dMapping id="indoorAreaHeight6" node="0>7|5|1" />
+        <i3dMapping id="indoorAreaStart7" node="0>7|6" />
+        <i3dMapping id="indoorAreaWidth7" node="0>7|6|0" />
+        <i3dMapping id="indoorAreaHeight7" node="0>7|6|1" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart1" node="0>8|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd1" node="0>8|0|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart2" node="0>8|1" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd2" node="0>8|1|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart3" node="0>8|2" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd3" node="0>8|2|0" />
+        <i3dMapping id="testAreaStart1" node="0>9|0" />
+        <i3dMapping id="testAreaEnd1" node="0>9|0|0" />
+        <i3dMapping id="testAreaStart2" node="0>9|1" />
+        <i3dMapping id="testAreaEnd2" node="0>9|1|0" />
+        <i3dMapping id="testAreaStart3" node="0>9|2" />
+        <i3dMapping id="testAreaEnd3" node="0>9|2|0" />
+        <i3dMapping id="testAreaStart4" node="0>9|3" />
+        <i3dMapping id="testAreaEnd4" node="0>9|3|0" />
+        <i3dMapping id="tipCol1" node="0>10|0" />
+        <i3dMapping id="tipCol2" node="0>10|1" />
+        <i3dMapping id="tipCol3" node="0>10|2" />
+        <i3dMapping id="tipCol4" node="0>10|3" />
+    </i3dMappings>
+</placeable>

@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="productionPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_productionPoint_foodProcessingPlant</name>
+        <functions>
+            <function>$l10n_function_productionPoint</function>
+        </functions>
+        <image>placeables/productionPoints/mapIcon_foodProcessingPlant.png</image>
+        <price>405000</price>
+        <dailyUpkeep>130</dailyUpkeep>
+        <canBeSold>true</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>productionPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>factories</tab>
+        </brush>
+        <vertexBufferMemoryUsage>72448</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>24576</indexBufferMemoryUsage>
+        <textureMemoryUsage>1310720</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>placeables/productionPoints/foodProcessingPlant.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+        <buysFarmland>true</buysFarmland>
+        <canBeDeleted>false</canBeDeleted>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" />
+
+    <clearAreas/>
+
+    <leveling/>
+
+    <indoorAreas/>
+
+    <tipOcclusionUpdateAreas/>
+
+    <ai>
+        <updateAreas>
+        </updateAreas>
+        <splines>
+            <spline node="aiSpline" />
+        </splines>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger"/>
+
+    <hotspots>
+        <hotspot type="PRODUCTION_POINT" linkNode="hotspotNode" teleportNode="teleportNode" />
+    </hotspots>
+
+    <triggerMarkers>
+        <triggerMarker node="playerTriggerMarker" filename="placeables/sharedAssets/marker/markerIconProductionPoint.i3d" adjustToGround="true" />
+        <triggerMarker node="unloadTriggerMarkerStorage" filename="$data/shared/assets/marker/markerIconUnload.i3d" adjustToGround="true" />
+        <triggerMarker node="unloadTriggerMarkerPallets" filename="$data/shared/assets/marker/markerIconUnload.i3d" adjustToGround="true" />
+        <!-- <triggerMarker node="unloadTriggerMarkerGrain" filename="$data/shared/assets/marker/markerIconUnload.i3d" adjustToGround="true" /> -->
+        <triggerMarker node="markerLoadingOrganicWaste" filename="$data/shared/assets/marker/markerIconLoad.i3d" adjustToGround="true" />
+    </triggerMarkers>
+
+    <productionPoint>
+        <productions sharedThroughputCapacity="false">
+            <production id="soupCansMixed" name="$l10n_fillType_soupCansMixed" cyclesPerHour="3" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="CARROT"   amount="100" />
+                    <input fillType="PARSNIP"  amount="100" />
+                    <input fillType="BEETROOT" amount="100" />
+                </inputs>
+                <outputs>
+                    <output fillType="SOUPCANSMIXED" amount="75" />
+                    <output fillType="ORGANICWASTE" amount="30" />
+                </outputs>
+            </production>
+            <production id="soupCansCarrots" name="$l10n_fillType_soupCansCarrots" cyclesPerHour="4" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="CARROT" amount="300" />
+                </inputs>
+                <outputs>
+                    <output fillType="SOUPCANSCARROTS" amount="75" />
+                    <output fillType="ORGANICWASTE" amount="30" />
+                </outputs>
+            </production>
+            <production id="soupCansParsnip" name="$l10n_fillType_soupCansParsnip" cyclesPerHour="4" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="PARSNIP" amount="300" />
+                </inputs>
+                <outputs>
+                    <output fillType="SOUPCANSPARSNIP" amount="75" />
+                    <output fillType="ORGANICWASTE" amount="30" />
+                </outputs>
+            </production>
+            <production id="soupCansBeetroot" name="$l10n_fillType_soupCansBeetroot" cyclesPerHour="4" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="BEETROOT" amount="300" />
+                </inputs>
+                <outputs>
+                    <output fillType="SOUPCANSBEETROOT" amount="75" />
+                    <output fillType="ORGANICWASTE" amount="30" />
+                </outputs>
+            </production>
+            <production id="soupCansPotato" name="$l10n_fillType_soupCansPotato" cyclesPerHour="4" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="POTATO" amount="300" />
+                </inputs>
+                <outputs>
+                    <output fillType="SOUPCANSPOTATO" amount="75" />
+                    <output fillType="ORGANICWASTE" amount="30" />
+                </outputs>
+            </production>
+
+            <production id="potatoChips_sunflowerOil" name="%s (%s)" params="$l10n_fillType_potatoChips|$l10n_fillType_sunflowerOil" cyclesPerHour="8" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="POTATO" amount="100" />
+                    <input fillType="SUNFLOWER_OIL" amount="5" />
+                </inputs>
+                <outputs>
+                    <output fillType="POTATOCHIPS" amount="30" />
+                    <output fillType="ORGANICWASTE" amount="10" />
+                </outputs>
+            </production>
+            <production id="potatoChips_canolaOil" name="%s (%s)" params="$l10n_fillType_potatoChips|$l10n_fillType_canolaOil" cyclesPerHour="8" costsPerActiveHour="8">
+                <inputs>
+                    <input fillType="POTATO" amount="100" />
+                    <input fillType="CANOLA_OIL" amount="5" />
+                </inputs>
+                <outputs>
+                    <output fillType="POTATOCHIPS" amount="30" />
+                    <output fillType="ORGANICWASTE" amount="10" />
+                </outputs>
+            </production>
+            <production id="potatoChips_oliveOil" name="%s (%s)" params="$l10n_fillType_potatoChips|$l10n_fillType_oliveOil" cyclesPerHour="8" costsPerActiveHour="2">
+                <inputs>
+                    <input fillType="POTATO" amount="100" />
+                    <input fillType="OLIVE_OIL" amount="4" />
+                </inputs>
+                <outputs>
+                    <output fillType="POTATOCHIPS" amount="30" />
+                    <output fillType="ORGANICWASTE" amount="10" />
+                </outputs>
+            </production>
+            <production id="potatoChips_riceOil" name="%s (%s)" params="$l10n_fillType_potatoChips|$l10n_fillType_riceOil" cyclesPerHour="8" costsPerActiveHour="8">
+                <inputs>
+                    <input fillType="POTATO" amount="100" />
+                    <input fillType="RICE_OIL" amount="5" />
+                </inputs>
+                <outputs>
+                    <output fillType="POTATOCHIPS" amount="30" />
+                    <output fillType="ORGANICWASTE" amount="10" />
+                </outputs>
+            </production>
+
+            <production id="raisins" name="$l10n_fillType_raisins" cyclesPerHour="220" costsPerActiveHour="2.5">
+                <inputs>
+                    <input fillType="GRAPE" amount="2" />
+                </inputs>
+                <outputs>
+                    <output fillType="RAISINS" amount="1" />
+                </outputs>
+            </production>
+            <production id="grapejuice" name="$l10n_fillType_grapeJuice" cyclesPerHour="30" costsPerActiveHour="2.5">
+                <inputs>
+                    <input fillType="GRAPE" amount="14" />
+                </inputs>
+                <outputs>
+                    <output fillType="GRAPEJUICE" amount="7" />
+                    <output fillType="ORGANICWASTE" amount="2" />
+                </outputs>
+            </production>
+
+            <production id="appleJuice" name="$l10n_fillType_appleJuice" cyclesPerHour="52" costsPerActiveHour="4">
+                <inputs>
+                    <input fillType="APPLE" amount="3" />
+                </inputs>
+                <outputs>
+                    <output fillType="APPLEJUICE" amount="2" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+            <production id="apricotJam" name="$l10n_fillType_apricotJam" cyclesPerHour="52" costsPerActiveHour="4">
+                <inputs>
+                    <input fillType="APRICOT" amount="3" />
+                    <input fillType="SUGAR" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="APRICOTJAM" amount="3" />
+                    <output fillType="ORGANICWASTE" amount="0.5" />
+                </outputs>
+            </production>
+            <production id="plumJam" name="$l10n_fillType_plumJam" cyclesPerHour="16" costsPerActiveHour="4">
+                <inputs>
+                    <input fillType="PLUM" amount="10" />
+                    <input fillType="SUGAR" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="PLUMJAM" amount="10" />
+                    <output fillType="ORGANICWASTE" amount="1.5" />
+                </outputs>
+            </production>
+            <production id="ketchup" name="$l10n_fillType_ketchup" cyclesPerHour="51" costsPerActiveHour="4">
+                <inputs>
+                    <input fillType="TOMATO" amount="5" />
+                    <input fillType="GREENPEPPER" amount="1" />
+                    <input fillType="APPLE" amount="1" />
+                    <input fillType="SUGAR" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="KETCHUP" amount="7" />
+                    <output fillType="ORGANICWASTE" amount="0.5" />
+                </outputs>
+            </production>
+            <production id="strawberryJuice" name="$l10n_fillType_strawberryJuice" cyclesPerHour="60" costsPerActiveHour="4">
+                <inputs>
+                    <input fillType="STRAWBERRY" amount="6" />
+                </inputs>
+                <outputs>
+                    <output fillType="STRAWBERRYJUICE" amount="4" />
+                    <output fillType="ORGANICWASTE" amount="2" />
+                </outputs>
+            </production>
+
+            <production id="onionSoup" name="$l10n_productionPoint_fillType_onionSoup" cyclesPerHour="10" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="ONION" amount="100" />
+                </inputs>
+                <outputs>
+                    <output fillType="ONIONSOUP" amount="50" />
+                    <output fillType="ORGANICWASTE" amount="5" />
+                </outputs>
+            </production>
+            <production id="onionSalt" name="$l10n_productionPoint_fillType_onionSalt" cyclesPerHour="10" costsPerActiveHour="10">
+                <inputs>
+                    <input fillType="ONION" amount="100" />
+                </inputs>
+                <outputs>
+                    <output fillType="ONIONSALT" amount="25" />
+                    <output fillType="ORGANICWASTE" amount="5" />
+                </outputs>
+            </production>
+            <production id="friedOnion_sunflowerOil" name="%s (%s)" params="$l10n_productionPoint_fillType_friedOnion|$l10n_fillType_sunflowerOil" cyclesPerHour="10" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="ONION" amount="100" />
+                    <input fillType="SUNFLOWER_OIL" amount="5" />
+                </inputs>
+                <outputs>
+                    <output fillType="FRIEDONION" amount="28" />
+                    <output fillType="ORGANICWASTE" amount="5" />
+                </outputs>
+            </production>
+            <production id="friedOnion_canolaOil" name="%s (%s)" params="$l10n_productionPoint_fillType_friedOnion|$l10n_fillType_canolaOil" cyclesPerHour="10" costsPerActiveHour="12">
+                <inputs>
+                    <input fillType="ONION" amount="100" />
+                    <input fillType="CANOLA_OIL" amount="5" />
+                </inputs>
+                <outputs>
+                    <output fillType="FRIEDONION" amount="28" />
+                    <output fillType="ORGANICWASTE" amount="5" />
+                </outputs>
+            </production>
+            <production id="friedOnion_oliveOil" name="%s (%s)" params="$l10n_productionPoint_fillType_friedOnion|$l10n_fillType_oliveOil" cyclesPerHour="10" costsPerActiveHour="21">
+                <inputs>
+                    <input fillType="ONION" amount="100" />
+                    <input fillType="OLIVE_OIL" amount="3" />
+                </inputs>
+                <outputs>
+                    <output fillType="FRIEDONION" amount="28" />
+                    <output fillType="ORGANICWASTE" amount="5" />
+                </outputs>
+            </production>
+            <production id="friedOnion_riceOil" name="%s (%s)" params="$l10n_productionPoint_fillType_friedOnion|$l10n_fillType_riceOil" cyclesPerHour="10" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="ONION" amount="100" />
+                    <input fillType="RICE_OIL" amount="5" />
+                </inputs>
+                <outputs>
+                    <output fillType="FRIEDONION" amount="28" />
+                    <output fillType="ORGANICWASTE" amount="5" />
+                </outputs>
+            </production>
+        </productions>
+
+        <sellingStation node="sellingStation" appearsOnStats="true" supportsExtension="false" litersForFullPriceDrop="300000" fullPriceRecoverHours="48">
+            <unloadTrigger exactFillRootNode="unloadTriggerStorage" aiNode="unloadTriggerAINodeStorage" fillTypes="CARROT PARSNIP BEETROOT POTATO ONION GRAPE APPLE APRICOT PLUM TOMATO STRAWBERRY GREENPEPPER SUNFLOWER_OIL CANOLA_OIL OLIVE_OIL RICE_OIL SUGAR"/>
+            <palletTrigger triggerNode="palletTriggerStorage" aiNode="unloadTriggerAINodeStorage" fillTypes="CARROT PARSNIP BEETROOT POTATO ONION GRAPE APPLE APRICOT PLUM TOMATO STRAWBERRY GREENPEPPER SUNFLOWER_OIL CANOLA_OIL OLIVE_OIL RICE_OIL SUGAR"/>
+            <unloadTrigger exactFillRootNode="unloadTriggerPallets" fillTypes="SUNFLOWER_OIL CANOLA_OIL OLIVE_OIL RICE_OIL SUGAR"/>
+            <palletTrigger triggerNode="palletTriggerPallets" fillTypes="SUNFLOWER_OIL CANOLA_OIL OLIVE_OIL RICE_OIL SUGAR"/>
+            <!--  <unloadTrigger exactFillRootNode="unloadTriggerGrain" fillTypes="XXX"/>  -->
+        </sellingStation>
+
+        <loadingStation>
+            <loadTrigger triggerNode="loadingTriggerOrganicWaste" fillLitersPerSecond="1000" dischargeNode="dischargeNodeOrganicWaste" fillTypes="ORGANICWASTE" >
+                <effectNode effectClass="PipeEffect" effectNode="pipeEffectOrganicWaste"      materialType="pipe"           fadeTime="0.5" maxBending="0" controlPoint="4.6 0 0 0" />
+                <effectNode                          effectNode="pipeEffectSmokeOrganicWaste" materialType="unloadingSmoke" fadeTime="0.5" />
+            </loadTrigger>
+            <loadTrigger triggerNode="loadingTriggerFake" fillTypes="ONIONSOUP ONIONSALT FRIEDONION" fillLitersPerSecond="1000"/>
+        </loadingStation>
+
+        <palletSpawner node="palletSpawner">
+            <spawnPlaces>
+                <spawnPlace startNode="spawnSpace1start" endNode="spawnSpace1end" />
+                <spawnPlace startNode="spawnSpace2start" endNode="spawnSpace2end" />
+                <spawnPlace startNode="spawnSpace3start" endNode="spawnSpace3end" />
+                <spawnPlace startNode="spawnSpace4start" endNode="spawnSpace4end" />
+                <spawnPlace startNode="spawnSpace5start" endNode="spawnSpace5end" />
+            </spawnPlaces>
+        </palletSpawner>
+
+        <storage isExtension="false" fillLevelSyncThreshold="50">
+            <capacity fillType="CARROT"           capacity="350000" />
+            <capacity fillType="PARSNIP"          capacity="350000" />
+            <capacity fillType="BEETROOT"         capacity="350000" />
+            <capacity fillType="POTATO"           capacity="550000" />
+            <capacity fillType="ONION"            capacity="350000" />
+            <capacity fillType="GRAPE"            capacity="105000" />
+            <capacity fillType="APPLE"            capacity="30000" />
+            <capacity fillType="APRICOT"          capacity="30000" />
+            <capacity fillType="PLUM"             capacity="30000" />
+            <capacity fillType="TOMATO"           capacity="30000" />
+            <capacity fillType="STRAWBERRY"       capacity="30000" />
+            <capacity fillType="GREENPEPPER"      capacity="10000" />
+            <capacity fillType="SUNFLOWER_OIL"    capacity="30000" />
+            <capacity fillType="CANOLA_OIL"       capacity="30000" />
+            <capacity fillType="OLIVE_OIL"        capacity="30000" />
+            <capacity fillType="RICE_OIL"         capacity="30000" />
+            <capacity fillType="SUGAR"            capacity="15000" />
+            <capacity fillType="SOUPCANSMIXED"    capacity="110000" />
+            <capacity fillType="SOUPCANSCARROTS"  capacity="110000" />
+            <capacity fillType="SOUPCANSPARSNIP"  capacity="110000" />
+            <capacity fillType="SOUPCANSBEETROOT" capacity="110000" />
+            <capacity fillType="SOUPCANSPOTATO"   capacity="110000" />
+            <capacity fillType="POTATOCHIPS"      capacity="60000" />
+            <capacity fillType="RAISINS"          capacity="60000" />
+            <capacity fillType="GRAPEJUICE"       capacity="60000" />
+            <capacity fillType="APPLEJUICE"       capacity="60000" />
+            <capacity fillType="APRICOTJAM"       capacity="60000" />
+            <capacity fillType="PLUMJAM"          capacity="60000" />
+            <capacity fillType="KETCHUP"          capacity="60000" />
+            <capacity fillType="STRAWBERRYJUICE"  capacity="60000" />
+            <capacity fillType="ORGANICWASTE"     capacity="250000" />
+            <capacity fillType="ONIONSOUP"        capacity="60000" />
+            <capacity fillType="ONIONSALT"        capacity="30000" />
+            <capacity fillType="FRIEDONION"       capacity="30000" />
+
+            <fillPlane node="fillPlaneOrganicWaste" fillType="ORGANICWASTE" changeVisibility="true" minY="-4.05" maxY="0.0"/>
+        </storage>
+
+        <playerTrigger node="playerTrigger" />
+
+        <effectNodes>
+            <effectNode effectClass="ParticleEffect" effectNode="smokeChimenyEffectShape01" particleType="SMOKE_CHIMNEY" emitCountScale="75"/>
+            <effectNode effectClass="ParticleEffect" effectNode="smokeChimenyEffectShape02" particleType="SMOKE_CHIMNEY" emitCountScale="75"/>
+        </effectNodes>
+
+        <sounds>
+            <idle template="cerealFactoryIdle" linkNode="soundNode" innerRadius="20" outerRadius="60" />
+            <active template="cerealFactoryWork" linkNode="soundNode" innerRadius="20" outerRadius="60" />
+        </sounds>
+    </productionPoint>
+
+    <i3dMappings>
+        <i3dMapping id="sellingStation" node="0>0" />
+        <i3dMapping id="unloadTriggerStorage" node="0>0|0" />
+        <i3dMapping id="palletTriggerStorage" node="0>0|1" />
+        <i3dMapping id="unloadTriggerMarkerStorage" node="0>0|2" />
+        <i3dMapping id="unloadTriggerAINodeStorage" node="0>0|3" />
+        <i3dMapping id="unloadTriggerPallets" node="0>0|4" />
+        <i3dMapping id="palletTriggerPallets" node="0>0|5" />
+        <i3dMapping id="unloadTriggerMarkerPallets" node="0>0|6" />
+        <i3dMapping id="unloadTriggerGrain" node="0>0|7" />
+        <i3dMapping id="unloadTriggerMarkerGrain" node="0>0|8" />
+        <i3dMapping id="aiSpline" node="0>0|9" />
+        <i3dMapping id="loadingStations" node="0>1" />
+        <i3dMapping id="loadingTriggerOrganicWaste" node="0>1|0|0" />
+        <i3dMapping id="dischargeNodeOrganicWaste" node="0>1|0|1" />
+        <i3dMapping id="pipeEffectOrganicWaste" node="0>1|0|2|0" />
+        <i3dMapping id="pipeEffectSmokeOrganicWaste" node="0>1|0|2|1" />
+        <i3dMapping id="markerLoadingOrganicWaste" node="0>1|0|3" />
+        <i3dMapping id="fillPlaneOrganicWaste" node="0>1|1" />
+        <i3dMapping id="loadingTriggerFake" node="0>1|2" />
+        <i3dMapping id="playerTrigger" node="0>2|0" />
+        <i3dMapping id="playerTriggerMarker" node="0>2|0|0" />
+        <i3dMapping id="soundNode" node="0>2|1" />
+        <i3dMapping id="smokeChimenyEffectShape01" node="0>2|2|0" />
+        <i3dMapping id="smokeChimenyEffectShape02" node="0>2|2|1" />
+        <i3dMapping id="palletSpawner" node="0>3" />
+        <i3dMapping id="spawnSpace1start" node="0>3|0" />
+        <i3dMapping id="spawnSpace1end" node="0>3|0|0" />
+        <i3dMapping id="spawnSpace2start" node="0>3|1" />
+        <i3dMapping id="spawnSpace2end" node="0>3|1|0" />
+        <i3dMapping id="spawnSpace3start" node="0>3|2" />
+        <i3dMapping id="spawnSpace3end" node="0>3|2|0" />
+        <i3dMapping id="spawnSpace4start" node="0>3|3" />
+        <i3dMapping id="spawnSpace4end" node="0>3|3|0" />
+        <i3dMapping id="spawnSpace5start" node="0>3|4" />
+        <i3dMapping id="spawnSpace5end" node="0>3|4|0" />
+        <i3dMapping id="infoTrigger" node="0>4" />
+        <i3dMapping id="hotspotNode" node="0>5" />
+        <i3dMapping id="teleportNode" node="0>6" />
+    </i3dMappings>
+</placeable>

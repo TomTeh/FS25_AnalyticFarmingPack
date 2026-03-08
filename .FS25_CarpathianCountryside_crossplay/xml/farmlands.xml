@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/farmlands.xsd">
+    <farmlands densityMapFilename="maps/carpathianCountryside/infoLayer_farmlands.png" numChannels="8" pricePerHa="60000">
+        <farmland id="1"   priceScale="1"    npcName="FORESTER" /> <!-- field 1 -->
+        <farmland id="2"   priceScale="1"    npcName="FORESTER" /> <!-- field 2 -->
+        <farmland id="3"   priceScale="1"    npcName="GRANDPA" /> <!-- field 3 - grass -->
+        <farmland id="4"   priceScale="1"    npcName="GRANDPA" /> <!-- field 4 -->
+        <farmland id="5"   priceScale="1"    npcName="GRANDPA" defaultFarmProperty="true" /> <!-- field 5 -->
+        <farmland id="6"   priceScale="1"    npcName="GRANDPA" defaultFarmProperty="true" /> <!-- field 6 -->
+        <farmland id="7"   priceScale="1"    npcName="GRANDPA" defaultFarmProperty="true" /> <!-- field 7 -->
+        <farmland id="8"   priceScale="0.85" npcName="GRANDPA" defaultFarmProperty="true" /> <!-- meadow field 01 -->
+        <farmland id="9"   priceScale="4.2"  npcName="GRANDPA" defaultFarmProperty="true" /> <!-- main farm -->
+        <farmland id="10"  priceScale="1"    npcName="FORESTER" /> <!-- field 8 -->
+        <farmland id="11"  priceScale="1"    npcName="GRANDPA" /> <!-- field 9 -->
+        <farmland id="12"  priceScale="1"    npcName="GRANDPA" /> <!-- field 10 -->
+        <farmland id="13"  priceScale="1"    npcName="GRANDPA" /> <!-- field 11 -->
+        <farmland id="14"  priceScale="1"    npcName="GRANDPA" /> <!-- field 12 -->
+        <farmland id="15"  priceScale="1"    npcName="GRANDPA" /> <!-- field 13 -->
+        <farmland id="16"  priceScale="1"    npcName="HELPER" /> <!-- field 14 -->
+        <farmland id="17"  priceScale="1"    npcName="ANIMAL_DEALER" /> <!-- field 15 -->
+        <farmland id="18"  priceScale="1"    npcName="ANIMAL_DEALER" /> <!-- field 16 -->
+        <farmland id="19"  priceScale="1"    npcName="GRANDPA" /> <!-- field 17 -->
+        <farmland id="20"  priceScale="1"    npcName="FARMER" /> <!-- field 18 -->
+        <farmland id="21"  priceScale="1"    npcName="FARMER" /> <!-- field 19 -->
+        <farmland id="22"  priceScale="1"    npcName="HELPER" /> <!-- field 20 -->
+        <farmland id="23"  priceScale="1"    npcName="ANIMAL_DEALER" /> <!-- field 21 - grass -->
+        <farmland id="24"  priceScale="1"    npcName="FARMER" /> <!-- field 22 -->
+        <farmland id="25"  priceScale="1"    npcName="FORESTER" /> <!-- field 23 -->
+        <farmland id="26"  priceScale="1"    npcName="FORESTER" /> <!-- field 24 -->
+        <farmland id="27"  priceScale="1"    npcName="FARMER" /> <!-- field 25 -->
+        <farmland id="28"  priceScale="1"    npcName="FARMER" /> <!-- field 26 -->
+        <farmland id="29"  priceScale="0.55" npcName="FORESTER" /> <!-- field 27 -->
+        <farmland id="30"  priceScale="1"    npcName="GRANDPA" /> <!-- field 28 -->
+        <farmland id="31"  priceScale="1"    npcName="GRANDPA" /> <!-- field 29 -->
+        <farmland id="32"  priceScale="1"    npcName="GRANDPA" defaultFarmProperty="true" /> <!-- field 30 -->
+        <farmland id="33"  priceScale="0.8"  npcName="FORESTER" /> <!-- field 31 - grass -->
+        <farmland id="34"  priceScale="0.8"  npcName="FARMER" /> <!-- field 32 - grass -->
+        <farmland id="35"  priceScale="1"    npcName="FARMER" /> <!-- field 33 -->
+        <farmland id="36"  priceScale="1"    npcName="FARMER" /> <!-- field 34 -->
+        <farmland id="37"  priceScale="1"    npcName="FARMER" /> <!-- field 35 -->
+        <farmland id="38"  priceScale="1"    npcName="HELPER" /> <!-- field 36 -->
+        <farmland id="39"  priceScale="1"    npcName="HELPER" /> <!-- field 37 -->
+        <farmland id="40"  priceScale="1"    npcName="ANIMAL_DEALER" /> <!-- field 38 -->
+        <farmland id="41"  priceScale="1"    npcName="HELPER" /> <!-- field 39 -->
+        <farmland id="42"  priceScale="1"    npcName="HELPER" /> <!-- field 40 -->
+        <farmland id="43"  priceScale="1"    npcName="GRANDPA" /> <!-- field 41 -->
+        <farmland id="44"  priceScale="1"    npcName="GRANDPA" /> <!-- field 42 -->
+        <farmland id="45"  priceScale="1"    npcName="ANIMAL_DEALER" /> <!-- field 43 -->
+        <farmland id="46"  priceScale="1"    npcName="ANIMAL_DEALER" /> <!-- field 44 -->
+        <farmland id="47"  priceScale="1"    npcName="HELPER" /> <!-- field 45 - grass -->
+        <farmland id="48"  priceScale="1"    npcName="FARMER" /> <!-- field 46 -->
+        <farmland id="49"  priceScale="1"    npcName="HELPER" /> <!-- field 47 -->
+        <farmland id="50"  priceScale="1"    npcName="HELPER" /> <!-- field 48 -->
+        <farmland id="51"  priceScale="1"    npcName="FARMER" /> <!-- field 49 -->
+        <farmland id="52"  priceScale="1"    npcName="FARMER" /> <!-- field 50 -->
+        <farmland id="53"  priceScale="1"    npcName="GRANDPA" /> <!-- field 51 -->
+        <farmland id="54"  priceScale="1"    npcName="GRANDPA" /> <!-- field 52 -->
+        <farmland id="55"  priceScale="0"    npcName="ANIMAL_DEALER" showOnFarmlandsScreen="false" /> <!-- BGA, farmland bought via placeable -->
+        <farmland id="56"  priceScale="1"    npcName="ANIMAL_DEALER" /> <!-- field 53 - grass -->
+        <farmland id="57"  priceScale="1"    npcName="FARMER" /> <!-- field 54 -->
+        <farmland id="58"  priceScale="5"    npcName="FARMER" /> <!-- pig Farm -->
+        <farmland id="59"  priceScale="1"    npcName="FARMER" /> <!-- field 55 -->
+        <farmland id="60"  priceScale="1"    npcName="HELPER" /> <!-- field 56 -->
+        <farmland id="61"  priceScale="1"    npcName="HELPER" /> <!-- field 57 -->
+        <farmland id="62"  priceScale="1"    npcName="GRANDPA" /> <!-- field 58 -->
+        <farmland id="63"  priceScale="1"    npcName="ANIMAL_DEALER" /> <!-- field 59 -->
+        <farmland id="64"  priceScale="1"    npcName="HELPER" /> <!-- field 60 -->
+        <farmland id="65"  priceScale="1"    npcName="FARMER" /> <!-- field 61 -->
+        <farmland id="66"  priceScale="0.75" npcName="FORESTER" /> <!-- meadow field 02 -->
+        <farmland id="67"  priceScale="0.7"  npcName="HELPER" /> <!-- meadow field 03 -->
+        <farmland id="68"  priceScale="0.7"  npcName="FORESTER" /> <!-- meadow field 04 -->
+        <farmland id="69"  priceScale="4.8"  npcName="HELPER" /> <!-- sheep Farm -->
+        <farmland id="70"  priceScale="1"    npcName="HELPER" /> <!-- field 62 -->
+        <farmland id="71"  priceScale="1"    npcName="HELPER" /> <!-- field 63 -->
+        <farmland id="72"  priceScale="1"    npcName="ANIMAL_DEALER" /> <!-- field 64 -->
+        <farmland id="73"  priceScale="1"    npcName="FORESTER" /> <!-- field 65 -->
+        <farmland id="74"  priceScale="1"    npcName="FARMER" /> <!-- field 66 -->
+        <farmland id="75"  priceScale="1"    npcName="ANIMAL_DEALER" /> <!-- field 67 -->
+        <farmland id="76"  priceScale="1"    npcName="ANIMAL_DEALER" /> <!-- field 68 -->
+        <farmland id="77"  priceScale="1"    npcName="ANIMAL_DEALER" /> <!-- field 69 -->
+        <farmland id="78"  priceScale="1"    npcName="ANIMAL_DEALER" /> <!-- field 70 -->
+        <farmland id="79"  priceScale="0.8"  npcName="HELPER" /> <!-- forest land 1 -->
+        <farmland id="80"  priceScale="0.8"  npcName="FORESTER" /> <!-- forest land 2 -->
+        <farmland id="81"  priceScale="2.5" npcName="FORESTER" indicatorPosition="-918 905" /> <!-- quarry -->
+        <farmland id="82"  priceScale="0.8"  npcName="FORESTER" /> <!-- forest land 3 -->
+        <farmland id="83"  priceScale="0.7"  npcName="FORESTER" /> <!-- forest land 4 -->
+        <farmland id="84"  priceScale="0.8"  npcName="FORESTER" /> <!-- forest land 5 -->
+        <farmland id="85"  priceScale="0.6"  npcName="FARMER" /> <!-- forest land 6 -->
+        <farmland id="86"  priceScale="0.8"  npcName="FORESTER" /> <!-- forest land 7 -->
+        <farmland id="87"  priceScale="0.8"  npcName="ANIMAL_DEALER" /> <!-- forest land 8 -->
+        <farmland id="88"  priceScale="0.8"  npcName="FORESTER" /> <!-- forest land 9 -->
+        <farmland id="89"  priceScale="0.8"  npcName="FORESTER" /> <!-- forest land 10 -->
+        <farmland id="90"  priceScale="0.8"  npcName="GRANDPA" /> <!-- forest land 11 -->
+        <farmland id="91"  priceScale="0.8"  npcName="FORESTER" /> <!-- forest land 12 -->
+        <farmland id="92"  priceScale="0.65" npcName="FORESTER" indicatorPosition="-898 -752" /> <!-- forest pond -->
+        <farmland id="93"  priceScale="0.65" npcName="FORESTER" /> <!-- forest land 13 -->
+        <farmland id="94"  priceScale="0.8"  npcName="FORESTER" /> <!-- forest land 14 -->
+        <farmland id="95"  priceScale="0.7"  npcName="HELPER" /> <!-- empty land 1 -->
+        <farmland id="96"  priceScale="0.7"  npcName="HELPER" /> <!-- empty land 2 -->
+        <farmland id="97"  priceScale="0.7"  npcName="ANIMAL_DEALER" /> <!-- empty land 3 -->
+        <farmland id="98"  priceScale="0.7"  npcName="FORESTER" /> <!-- empty land 4 -->
+        <farmland id="99"  priceScale="0.7"  npcName="FORESTER" /> <!-- empty land 5 -->
+        <farmland id="100" priceScale="0.7"  npcName="HELPER" /> <!-- empty land 6 -->
+        <farmland id="101" priceScale="0.7"  npcName="HELPER" /> <!-- empty land 7 -->
+        <farmland id="102" priceScale="0.7"  npcName="GRANDPA" /> <!-- empty land 8 -->
+        <farmland id="103" priceScale="0.7"  npcName="GRANDPA" /> <!-- empty land 9 -->
+        <farmland id="104" priceScale="0.7"  npcName="ANIMAL_DEALER" /> <!-- empty land 10 -->
+        <farmland id="105" priceScale="0.7"  npcName="ANIMAL_DEALER" /> <!-- empty land 11 -->
+        <farmland id="106" priceScale="0.7"  npcName="ANIMAL_DEALER" /> <!-- empty land 12 -->
+        <farmland id="107" priceScale="0.7"  npcName="ANIMAL_DEALER" /> <!-- empty land 13 -->
+        <farmland id="108" priceScale="0.6"  npcName="ANIMAL_DEALER" /> <!-- empty land 14 -->
+        <farmland id="109" priceScale="0"    npcName="HELPER" indicatorPosition="833.6 427" showOnFarmlandsScreen="false" /> <!-- preserved food factory -->
+        <farmland id="110" priceScale="0"    npcName="HELPER" indicatorPosition="904 460" showOnFarmlandsScreen="false" /> <!-- food processing plant -->
+        <farmland id="111" priceScale="0"    npcName="ANIMAL_DEALER" showOnFarmlandsScreen="false" /> <!-- spinnery -->
+        <farmland id="112" priceScale="9"    npcName="HELPER" /> <!-- village 01 - house 01 -->
+        <farmland id="113" priceScale="9"    npcName="GRANDPA" indicatorPosition="258 -334" /> <!-- village 01 - house 02 -->
+        <farmland id="114" priceScale="15"   npcName="ANIMAL_DEALER" indicatorPosition="264 -264" /> <!-- village 01 - house 03 -->
+        <farmland id="115" priceScale="15"   npcName="FORESTER" /> <!-- village 01 - house 04 -->
+        <farmland id="116" priceScale="4"    npcName="FARMER" /> <!-- village 01 - football field -->
+        <farmland id="117" priceScale="30"   npcName="FARMER" /> <!-- village 01 - house 05 -->
+        <farmland id="118" priceScale="30"   npcName="ANIMAL_DEALER" /> <!-- village 01 - house 06 -->
+        <farmland id="119" priceScale="15"   npcName="GRANDPA" /> <!-- village 01 - house 07 -->
+        <farmland id="120" priceScale="20"   npcName="HELPER" /> <!-- village 01 - house 08 -->
+        <farmland id="121" priceScale="25"   npcName="GRANDPA" /> <!-- village 01 - house 09 -->
+        <farmland id="122" priceScale="25"   npcName="GRANDPA" /> <!-- village 01 - house 10 -->
+        <farmland id="123" priceScale="31"   npcName="GRANDPA" indicatorPosition="194 -311" /> <!-- village 01 - restaurant -->
+        <farmland id="124" priceScale="0"    npcName="ANIMAL_DEALER" showOnFarmlandsScreen="false" /> <!-- tailor shop -->
+        <farmland id="125" priceScale="55"   npcName="FARMER" /> <!-- village 01 - pharmacy -->
+        <farmland id="126" priceScale="15"   npcName="FORESTER" /> <!-- village 01 - house 11 -->
+        <farmland id="127" priceScale="25"   npcName="ANIMAL_DEALER" /> <!-- village 01 - house 12 -->
+        <farmland id="128" priceScale="20"   npcName="FARMER" /> <!-- village 01 - house 13 -->
+        <farmland id="129" priceScale="20"   npcName="GRANDPA" /> <!-- village 01 - house 14 -->
+        <farmland id="130" priceScale="20"   npcName="HELPER" /> <!-- village 01 - house 15 -->
+        <farmland id="131" priceScale="0"    npcName="FORESTER" showOnFarmlandsScreen="false" /> <!-- piano factory -->
+        <farmland id="132" priceScale="15"   npcName="GRANDPA" /> <!-- village 01 - house 16 -->
+        <farmland id="133" priceScale="20"   npcName="FARMER" /> <!-- village 01 - house 17 -->
+        <farmland id="134" priceScale="20"   npcName="FORESTER" /> <!-- village 01 - house 18 -->
+        <farmland id="135" priceScale="20"   npcName="ANIMAL_DEALER" indicatorPosition="109 -270" /> <!-- village 01 - house 19 -->
+        <farmland id="136" priceScale="17"   npcName="GRANDPA" indicatorPosition="66 -283" /> <!-- village 01 - house 20 -->
+        <farmland id="137" priceScale="20"   npcName="HELPER" indicatorPosition="41 -281" /> <!-- village 01 - house 21 -->
+        <farmland id="138" priceScale="25"   npcName="FARMER" /> <!-- village 01 - house 22 -->
+        <farmland id="139" priceScale="22"   npcName="ANIMAL_DEALER" indicatorPosition="-30 -292" /> <!-- village 01 - house 23 -->
+        <farmland id="140" priceScale="15"   npcName="GRANDPA" /> <!-- village 01 - house 24 -->
+        <farmland id="141" priceScale="25"   npcName="FARMER" indicatorPosition="-75 -298" /> <!-- village 01 - house 25 -->
+        <farmland id="142" priceScale="20"   npcName="FORESTER" /> <!-- village 01 - house 26 -->
+        <farmland id="143" priceScale="15"   npcName="HELPER" /> <!-- village 01 - house 27 -->
+        <farmland id="144" priceScale="20"   npcName="GRANDPA" /> <!-- village 01 - house 28 -->
+        <farmland id="145" priceScale="15"   npcName="ANIMAL_DEALER" /> <!-- village 01 - house 29 -->
+        <farmland id="146" priceScale="11"   npcName="FORESTER" /> <!-- village 01 - house 30 -->
+        <farmland id="147" priceScale="0"    npcName="FORESTER" showOnFarmlandsScreen="false" /> <!-- sawmill -->
+        <farmland id="148" priceScale="25"   npcName="GRANDPA" indicatorPosition="-288 300" /> <!-- village 02 - pub -->
+        <farmland id="149" priceScale="20"   npcName="FARMER" indicatorPosition="-289 276" /> <!-- village 02 - house 01 -->
+        <farmland id="150" priceScale="25"   npcName="ANIMAL_DEALER" /> <!-- village 02 - house 02 -->
+        <farmland id="151" priceScale="4.6"  npcName="FARMER" /> <!-- village 02 - football field -->
+        <farmland id="152" priceScale="30"   npcName="ANIMAL_DEALER" /> <!-- village 02 - house 03 -->
+        <farmland id="153" priceScale="25"   npcName="FORESTER" /> <!-- village 02 - house 04 -->
+        <farmland id="154" priceScale="25"   npcName="HELPER" /> <!-- village 02 - house 05 -->
+        <farmland id="155" priceScale="20"   npcName="GRANDPA" /> <!-- village 02 - house 06 -->
+        <farmland id="156" priceScale="11"   npcName="FARMER" /> <!-- village 02 - house 07 -->
+        <farmland id="157" priceScale="15"   npcName="ANIMAL_DEALER" /> <!-- village 02 - house 08 -->
+        <farmland id="158" priceScale="20"   npcName="HELPER" indicatorPosition="-486 243" /> <!-- village 02 - house 09 -->
+        <farmland id="159" priceScale="20"   npcName="FORESTER" /> <!-- village 02 - house 10 -->
+        <farmland id="160" priceScale="20"   npcName="GRANDPA" /> <!-- village 02 - house 11 -->
+        <farmland id="161" priceScale="20"   npcName="FARMER" indicatorPosition="-564 231" /> <!-- village 02 - house 12 -->
+        <farmland id="162" priceScale="0.7"  npcName="FARMER" /> <!-- village 02 - empty land 01 -->
+        <farmland id="163" priceScale="1"    npcName="FARMER" /> <!-- village 02 - empty land 02 -->
+        <farmland id="164" priceScale="1"    npcName="FARMER" /> <!-- village 02 - empty land 03 -->
+        <farmland id="165" priceScale="0"    npcName="FARMER" showOnFarmlandsScreen="false" /> <!-- dairy -->
+        <farmland id="166" priceScale="0"    npcName="GRANDPA" showOnFarmlandsScreen="false" /> <!-- bakery -->
+        <farmland id="167" priceScale="0"    npcName="GRANDPA" showOnFarmlandsScreen="false" /> <!-- grain mill -->
+        <farmland id="168" priceScale="35"   npcName="ANIMAL_DEALER" indicatorPosition="-384 303" /> <!-- village 02 - house 13 -->
+        <farmland id="169" priceScale="20"   npcName="FORESTER" indicatorPosition="-412 295" /> <!-- village 02 - house 14 -->
+        <farmland id="170" priceScale="20"   npcName="GRANDPA" indicatorPosition="-436 297" /> <!-- village 02 - house 15 -->
+        <farmland id="171" priceScale="20"   npcName="HELPER" /> <!-- village 02 - house 16 -->
+        <farmland id="172" priceScale="30"   npcName="FARMER" indicatorPosition="-478 298" /> <!-- village 02 - house 17 -->
+        <farmland id="173" priceScale="20"   npcName="FORESTER" indicatorPosition="-500 297" /> <!-- village 02 - house 18 -->
+        <farmland id="174" priceScale="18"   npcName="ANIMAL_DEALER" /> <!-- village 02 - house 19 -->
+        <farmland id="175" priceScale="15"   npcName="GRANDPA" indicatorPosition="-556 287" /> <!-- village 02 - house 20 -->
+        <farmland id="176" priceScale="1"    npcName="FARMER" /> <!-- village 02 - empty land 04 -->
+        <farmland id="177" priceScale="6"    npcName="ANIMAL_DEALER" /> <!-- village 02 - horse ranch -->
+        <farmland id="178" priceScale="30"   npcName="FORESTER" indicatorPosition="-332 523.6" /> <!-- village 03 - house 01 -->
+        <farmland id="179" priceScale="30"   npcName="ANIMAL_DEALER" /> <!-- village 03 - house 02 -->
+        <farmland id="180" priceScale="30"   npcName="HELPER" indicatorPosition="-329 605" /> <!-- village 03 - house 03 -->
+        <farmland id="181" priceScale="0"    npcName="HELPER" showOnFarmlandsScreen="false" /> <!-- sugarmill -->
+        <farmland id="182" priceScale="10"   npcName="GRANDPA" /> <!-- village 03 - house 04 -->
+        <farmland id="183" priceScale="15"   npcName="FARMER" /> <!-- village 03 - house 05 -->
+        <farmland id="184" priceScale="15"   npcName="ANIMAL_DEALER" /> <!-- village 03 - house 06 -->
+        <farmland id="185" priceScale="10"   npcName="FORESTER" /> <!-- village 03 - house 07 -->
+        <farmland id="186" priceScale="12"   npcName="FARMER" /> <!-- village 03 - house 08 -->
+        <farmland id="187" priceScale="12"   npcName="GRANDPA" /> <!-- village 03 - house 09 -->
+        <farmland id="188" priceScale="17"   npcName="HELPER" /> <!-- village 03 - house 10 -->
+        <farmland id="189" priceScale="13"   npcName="ANIMAL_DEALER" /> <!-- village 03 - house 11 -->
+        <farmland id="190" priceScale="17"   npcName="HELPER" /> <!-- village 03 - house 12 -->
+        <farmland id="191" priceScale="43"   npcName="HELPER" indicatorPosition="-328 731.5" /> <!-- village 03 - pizzeria -->
+        <farmland id="192" priceScale="15"   npcName="GRANDPA" indicatorPosition="-346 742" /> <!-- village 03 - house 13 -->
+        <farmland id="193" priceScale="20"   npcName="FARMER" indicatorPosition="-365 719" /> <!-- village 03 - house 14 -->
+        <farmland id="194" priceScale="20"   npcName="FORESTER" /> <!-- village 03 - house 15 -->
+        <farmland id="195" priceScale="15"   npcName="ANIMAL_DEALER" /> <!-- village 03 - house 16 -->
+        <farmland id="196" priceScale="0"    npcName="HELPER" showOnFarmlandsScreen="false" /> <!-- wood artist -->
+        <farmland id="197" priceScale="20"   npcName="FARMER" /> <!-- village 03 - house 17 -->
+        <farmland id="198" priceScale="20"   npcName="FORESTER" indicatorPosition="-487 723" /> <!-- village 03 - house 18 -->
+        <farmland id="199" priceScale="30"   npcName="HELPER" indicatorPosition="-436 745" /> <!-- village 03 - house 19 -->
+        <farmland id="200" priceScale="25"   npcName="FORESTER" indicatorPosition="-439 783" /> <!-- village 03 - house 20 -->
+        <farmland id="201" priceScale="30"   npcName="FORESTER" indicatorPosition="-530 760" /> <!-- village 03 - house 21 -->
+        <farmland id="202" priceScale="20"   npcName="GRANDPA" indicatorPosition="-497 682" /> <!-- village 03 - house 22 -->
+    </farmlands>
+</map>

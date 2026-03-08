@@ -1,0 +1,1213 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<pedestrianSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/pedestrianSystem.xsd">
+    <groups>
+        <group name="standard" spawnWeight="1" allowHeadTurn="false" timeFrom="06:30:00" timeTo="18:00:00" >
+            <!-- <required spring="true" /> -->
+            <prevent spring="false" summer="false" autumn="false" winter="false" rain="true" snow="true" />
+            <sounds>
+                <sound name="step1" filename="$data/sounds/player/footsteps/plyrStepConcrete_01.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+                <sound name="step2" filename="$data/sounds/player/footsteps/plyrStepConcrete_02.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+                <sound name="step3" filename="$data/sounds/player/footsteps/plyrStepConcrete_03.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+                <sound name="step4" filename="$data/sounds/player/footsteps/plyrStepConcrete_04.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+                <sound name="step5" filename="$data/sounds/player/footsteps/plyrStepConcrete_05.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+                <sound name="step6" filename="$data/sounds/player/footsteps/plyrStepConcrete_06.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+                <sound name="step7" filename="$data/sounds/player/footsteps/plyrStepConcrete_07.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+                <sound name="step8" filename="$data/sounds/player/footsteps/plyrStepConcrete_08.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+            </sounds>
+        </group>
+        <group name="standardStatic" spawnWeight="1" allowHeadTurn="false" timeFrom="07:00:00" timeTo="18:00:00" >
+            <prevent spring="false" summer="false" autumn="false" winter="false" rain="false" snow="false" />
+        </group>
+        <group name="standardLatehoursStatic" spawnWeight="1" allowHeadTurn="false" timeFrom="11:00:00" timeTo="23:59:00" >
+            <prevent spring="false" summer="false" autumn="false" winter="false" rain="false" snow="false" />
+        </group>
+        <group name="standardFarmersMarketStatic" spawnWeight="1" allowHeadTurn="false" timeFrom="07:00:00" timeTo="18:00:00" >
+            <prevent spring="false" summer="false" autumn="false" winter="true" rain="true" snow="true" />
+        </group>
+
+        <group name="shopClerk" spawnWeight="1" allowHeadTurn="false" timeFrom="06:00:00" timeTo="18:00:00" >
+            <!-- <required spring="true" /> -->
+            <prevent spring="false" summer="false" autumn="false" winter="false" rain="true" snow="true" />
+            <sounds>
+                <sound name="step1" filename="$data/sounds/player/footsteps/plyrStepConcrete_01.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+                <sound name="step2" filename="$data/sounds/player/footsteps/plyrStepConcrete_02.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+                <sound name="step3" filename="$data/sounds/player/footsteps/plyrStepConcrete_03.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+                <sound name="step4" filename="$data/sounds/player/footsteps/plyrStepConcrete_04.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+                <sound name="step5" filename="$data/sounds/player/footsteps/plyrStepConcrete_05.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+                <sound name="step6" filename="$data/sounds/player/footsteps/plyrStepConcrete_06.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+                <sound name="step7" filename="$data/sounds/player/footsteps/plyrStepConcrete_07.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+                <sound name="step8" filename="$data/sounds/player/footsteps/plyrStepConcrete_08.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+            </sounds>
+        </group>
+        <group name="shopClerkStatic" spawnWeight="1" allowHeadTurn="false" timeFrom="06:00:00" timeTo="18:00:00" >
+            <prevent spring="false" summer="false" autumn="false" winter="false" rain="false" snow="false" />
+        </group>
+        <group name="shopClerkLatehoursStatic" spawnWeight="1" allowHeadTurn="false" timeFrom="11:00:00" timeTo="23:59:00" >
+            <prevent spring="false" summer="false" autumn="false" winter="false" rain="false" snow="false" />
+        </group>
+        <group name="shopClerkNonstopStatic" spawnWeight="1" allowHeadTurn="false" timeFrom="00:01:00" timeTo="23:59:00" >
+            <prevent spring="false" summer="false" autumn="false" winter="false" rain="false" snow="false" />
+        </group>
+
+        <group name="worker" spawnWeight="1" allowHeadTurn="false" timeFrom="06:00:00" timeTo="20:00:00" >
+            <!-- <required spring="true" /> -->
+            <prevent spring="false" summer="false" autumn="false" winter="false" rain="true" snow="true" />
+            <sounds>
+                <sound name="step1" filename="$data/sounds/player/footsteps/plyrStepConcrete_01.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+                <sound name="step2" filename="$data/sounds/player/footsteps/plyrStepConcrete_02.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+                <sound name="step3" filename="$data/sounds/player/footsteps/plyrStepConcrete_03.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+                <sound name="step4" filename="$data/sounds/player/footsteps/plyrStepConcrete_04.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+                <sound name="step5" filename="$data/sounds/player/footsteps/plyrStepConcrete_05.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+                <sound name="step6" filename="$data/sounds/player/footsteps/plyrStepConcrete_06.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+                <sound name="step7" filename="$data/sounds/player/footsteps/plyrStepConcrete_07.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+                <sound name="step8" filename="$data/sounds/player/footsteps/plyrStepConcrete_08.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+            </sounds>
+        </group>
+        <group name="workerStatic" spawnWeight="1" allowHeadTurn="false" timeFrom="06:00:00" timeTo="20:00:00" >
+            <prevent spring="false" summer="false" autumn="false" winter="false" rain="false" snow="false" />
+        </group>
+
+        <group name="farmer" spawnWeight="1" allowHeadTurn="false" timeFrom="05:30:00" timeTo="18:30:00" >
+            <!-- <required spring="true" /> -->
+            <prevent spring="false" summer="false" autumn="false" winter="false" rain="true" snow="true" />
+            <sounds>
+                <sound name="step1" filename="$data/sounds/player/footsteps/plyrStepConcrete_01.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+                <sound name="step2" filename="$data/sounds/player/footsteps/plyrStepConcrete_02.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+                <sound name="step3" filename="$data/sounds/player/footsteps/plyrStepConcrete_03.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+                <sound name="step4" filename="$data/sounds/player/footsteps/plyrStepConcrete_04.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+                <sound name="step5" filename="$data/sounds/player/footsteps/plyrStepConcrete_05.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+                <sound name="step6" filename="$data/sounds/player/footsteps/plyrStepConcrete_06.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+                <sound name="step7" filename="$data/sounds/player/footsteps/plyrStepConcrete_07.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+                <sound name="step8" filename="$data/sounds/player/footsteps/plyrStepConcrete_08.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+            </sounds>
+        </group>
+        <group name="farmerStatic" spawnWeight="1" allowHeadTurn="false" timeFrom="05:30:00" timeTo="18:30:00" >
+            <prevent spring="false" summer="false" autumn="false" winter="false" rain="false" snow="false" />
+        </group>
+
+        <group name="mechanic" spawnWeight="1" allowHeadTurn="false" timeFrom="06:00:00" timeTo="18:00:00" >
+            <!-- <required spring="true" /> -->
+            <prevent spring="false" summer="false" autumn="false" winter="false" rain="true" snow="true" />
+            <sounds>
+                <sound name="step1" filename="$data/sounds/player/footsteps/plyrStepConcrete_01.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+                <sound name="step2" filename="$data/sounds/player/footsteps/plyrStepConcrete_02.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+                <sound name="step3" filename="$data/sounds/player/footsteps/plyrStepConcrete_03.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+                <sound name="step4" filename="$data/sounds/player/footsteps/plyrStepConcrete_04.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+                <sound name="step5" filename="$data/sounds/player/footsteps/plyrStepConcrete_05.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+                <sound name="step6" filename="$data/sounds/player/footsteps/plyrStepConcrete_06.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+                <sound name="step7" filename="$data/sounds/player/footsteps/plyrStepConcrete_07.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+                <sound name="step8" filename="$data/sounds/player/footsteps/plyrStepConcrete_08.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+            </sounds>
+        </group>
+        <group name="mechanicStatic" spawnWeight="1" allowHeadTurn="false" timeFrom="06:00:00" timeTo="18:00:00" >
+            <prevent spring="false" summer="false" autumn="false" winter="false" rain="false" snow="false" />
+        </group>
+
+        <group name="farmersMarket" spawnWeight="1" allowHeadTurn="false" timeFrom="07:00:00" timeTo="18:00:00" >
+            <!-- <required spring="true" /> -->
+            <prevent spring="false" summer="false" autumn="false" winter="true" rain="true" snow="true" />
+            <sounds>
+                <sound name="step1" filename="$data/sounds/player/footsteps/plyrStepConcrete_01.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+                <sound name="step2" filename="$data/sounds/player/footsteps/plyrStepConcrete_02.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+                <sound name="step3" filename="$data/sounds/player/footsteps/plyrStepConcrete_03.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+                <sound name="step4" filename="$data/sounds/player/footsteps/plyrStepConcrete_04.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+                <sound name="step5" filename="$data/sounds/player/footsteps/plyrStepConcrete_05.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+                <sound name="step6" filename="$data/sounds/player/footsteps/plyrStepConcrete_06.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+                <sound name="step7" filename="$data/sounds/player/footsteps/plyrStepConcrete_07.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+                <sound name="step8" filename="$data/sounds/player/footsteps/plyrStepConcrete_08.wav" volume="1.3" indoorVolume="0.5" isWalkSound="true" />
+            </sounds>
+        </group>
+        <group name="farmersMarketStatic" spawnWeight="1" allowHeadTurn="false" timeFrom="07:00:00" timeTo="18:00:00" >
+            <prevent spring="false" summer="false" autumn="false" winter="true" rain="true" snow="true" />
+        </group>
+    </groups>
+
+    <pedestrians>
+    
+        <!-- MALE 01 A -->
+        <pedestrian variation="male">
+            <style filename="dataS/character/playerM/playerM.xml">
+                <bottom color="5" name="jeans"/>
+                <face color="1" name="head01"/>
+                <top color="1" name="denimJacket"/>
+                <footwear color="1" name="workBoots1"/>
+                <hairStyle color="18" name="hair06"/>
+                <beard color="18" name="stubble_head01"/>
+            </style>
+
+            <groups>
+                <group name="standard" />
+                <group name="standardStatic" />
+                <group name="standardLatehoursStatic" />
+                <group name="standardFarmersMarketStatic" />
+            </groups>
+
+            <walkAnimation animationName="NPCWalkMale01Source" blendWithAnimationName="" distance="1.4" speedScaleMin="0.9" speedScaleMax="1.1">
+                <stepSoundTrigger time="0.25" />
+                <stepSoundTrigger time="0.75" />
+            </walkAnimation>
+
+            <idleAnimation animationName="idle1Source" />
+
+            <staticIdleAnimation animationName="idle1Source" />
+            <staticIdleAnimation animationName="NPCMaleIdle01Source" />
+            <staticIdleAnimation animationName="NPCMaleIdle02Source" />
+            <staticIdleAnimation animationName="NPCTalkingMale01Source" />
+            <staticIdleAnimation animationName="NPCTalkingMale02Source" />
+
+            <!-- <required spring="true" /> -->
+            <prevent spring="false" summer="false" autumn="false" winter="false" rain="false" snow="false" />
+        </pedestrian>
+    
+        <!-- MALE 01 C -->
+        <pedestrian variation="male">
+            <style filename="dataS/character/playerM/playerM.xml">
+                <bottom color="2" name="cargo"/>
+                <face color="1" name="head01"/>
+                <top color="27" name="tShirt01"/>
+                <footwear color="1" name="eltenMaddoxLowYellow"/>
+                <hairStyle color="5" name="hair08"/>
+                <beard color="5" name="horseshoe_head01"/>
+            </style>
+
+            <groups>
+                <group name="standard" />
+                <group name="standardStatic" />
+                <group name="standardLatehoursStatic" />
+                <group name="standardFarmersMarketStatic" />
+            </groups>
+
+            <walkAnimation animationName="NPCWalkMale01Source" blendWithAnimationName="" distance="1.4" speedScaleMin="0.9" speedScaleMax="1.1">
+                <stepSoundTrigger time="0.25" />
+                <stepSoundTrigger time="0.75" />
+            </walkAnimation>
+
+            <idleAnimation animationName="idle1Source" />
+
+            <staticIdleAnimation animationName="idle1Source" />
+            <staticIdleAnimation animationName="NPCMaleIdle01Source" />
+            <staticIdleAnimation animationName="NPCMaleIdle02Source" />
+            <staticIdleAnimation animationName="NPCTalkingMale01Source" />
+            <staticIdleAnimation animationName="NPCTalkingMale02Source" />
+
+            <!-- <required spring="true" /> -->
+            <prevent spring="false" summer="false" autumn="false" winter="true" rain="false" snow="false" />
+        </pedestrian>
+        
+        <!-- MALE 01 C WINTER -->
+        <pedestrian variation="male">
+            <style filename="dataS/character/playerM/playerM.xml">
+                <bottom color="2" name="cargo"/>
+                <face color="1" name="head01"/>
+                <top color="4" name="winterVest"/>
+                <gloves color="6" name="riding"/>
+                <footwear color="1" name="eltenTerenceXXG5"/>
+                <hairStyle color="5" name="hair08"/>
+                <beard color="5" name="horseshoe_head01"/>
+            </style>
+
+            <groups>
+                <group name="standard" />
+                <group name="standardStatic" />
+                <group name="standardLatehoursStatic" />
+                <group name="standardFarmersMarketStatic" />
+            </groups>
+
+            <walkAnimation animationName="NPCWalkMale01Source" blendWithAnimationName="" distance="1.4" speedScaleMin="0.9" speedScaleMax="1.1">
+                <stepSoundTrigger time="0.25" />
+                <stepSoundTrigger time="0.75" />
+            </walkAnimation>
+
+            <idleAnimation animationName="idle1Source" />
+
+            <staticIdleAnimation animationName="idle1Source" />
+            <staticIdleAnimation animationName="NPCMaleIdle01Source" />
+            <staticIdleAnimation animationName="NPCMaleIdle02Source" />
+            <staticIdleAnimation animationName="NPCTalkingMale01Source" />
+            <staticIdleAnimation animationName="NPCTalkingMale02Source" />
+
+            <required winter="true" />
+            <prevent rain="false" snow="false" />
+        </pedestrian>
+
+        <!-- MALE 02 A -->      
+        <pedestrian variation="male">
+            <style filename="dataS/character/playerM/playerM.xml">
+                <onepiece color="2" name="mechanic"/>
+                <face color="1" name="head02"/>
+                <footwear color="1" name="riding"/>
+                <hairStyle color="2" name="hair12"/>
+                <beard color="2" name="goatee01_head02"/>
+            </style>
+
+            <groups>
+                <group name="standard" />
+                <group name="standardStatic" />
+                <group name="standardLatehoursStatic" />
+                <group name="standardFarmersMarketStatic" />
+            </groups>
+
+            <walkAnimation animationName="NPCWalkMale01Source" blendWithAnimationName="" distance="1.4" speedScaleMin="0.9" speedScaleMax="1.1">
+                <stepSoundTrigger time="0.25" />
+                <stepSoundTrigger time="0.75" />
+            </walkAnimation>
+
+            <idleAnimation animationName="idle1Source" />
+
+            <staticIdleAnimation animationName="idle1Source" />
+            <staticIdleAnimation animationName="NPCMaleIdle01Source" />
+            <staticIdleAnimation animationName="NPCMaleIdle02Source" />
+            <staticIdleAnimation animationName="NPCTalkingMale01Source" />
+            <staticIdleAnimation animationName="NPCTalkingMale02Source" />
+
+            <!-- <required spring="true" /> -->
+            <prevent spring="false" summer="false" autumn="false" winter="false" rain="false" snow="false" />
+        </pedestrian>           
+        
+        <!-- MALE 02 B -->      
+        <pedestrian variation="male">
+            <style filename="dataS/character/playerM/playerM.xml">
+                <onepiece color="4" name="synthetic"/>
+                <face color="1" name="head02"/>
+                <footwear color="1" name="workBoots1"/>
+                <hairStyle color="24" name="hair13"/>
+                <beard color="24" name="walrusXL_head02"/>
+            </style>
+
+            <groups>
+                <group name="standard" />
+                <group name="standardStatic" />
+                <group name="standardLatehoursStatic" />
+                <group name="standardFarmersMarketStatic" />
+            </groups>
+
+            <walkAnimation animationName="NPCWalkMale01Source" blendWithAnimationName="" distance="1.4" speedScaleMin="0.9" speedScaleMax="1.1">
+                <stepSoundTrigger time="0.25" />
+                <stepSoundTrigger time="0.75" />
+            </walkAnimation>
+
+            <idleAnimation animationName="idle1Source" />
+
+            <staticIdleAnimation animationName="idle1Source" />
+            <staticIdleAnimation animationName="NPCMaleIdle01Source" />
+            <staticIdleAnimation animationName="NPCMaleIdle02Source" />
+            <staticIdleAnimation animationName="NPCTalkingMale01Source" />
+            <staticIdleAnimation animationName="NPCTalkingMale02Source" />
+
+            <!-- <required spring="true" /> -->
+            <prevent spring="false" summer="false" autumn="false" winter="true" rain="false" snow="false" />
+        </pedestrian>         
+                
+        <!-- MALE 02 C -->      
+        <pedestrian variation="male">
+            <style filename="dataS/character/playerM/playerM.xml">
+                <bottom color="4" name="chinos"/>
+                <face color="1" name="head02"/>
+                <top color="1" name="collaredShirt"/>
+                <glasses color="1" name="reading"/>
+                <footwear color="1" name="chelsea02"/>
+                <hairStyle color="16" name="hair12"/>
+                <beard color="16" name="trimmedBeard_head02"/>
+            </style>
+
+            <groups>
+                <group name="standard" />
+                <group name="standardStatic" />
+                <group name="standardLatehoursStatic" />
+                <group name="standardFarmersMarketStatic" />
+            </groups>
+
+            <walkAnimation animationName="NPCWalkMale01Source" blendWithAnimationName="" distance="1.4" speedScaleMin="0.9" speedScaleMax="1.1">
+                <stepSoundTrigger time="0.25" />
+                <stepSoundTrigger time="0.75" />
+            </walkAnimation>
+
+            <idleAnimation animationName="idle1Source" />
+
+            <staticIdleAnimation animationName="idle1Source" />
+            <staticIdleAnimation animationName="NPCMaleIdle01Source" />
+            <staticIdleAnimation animationName="NPCMaleIdle02Source" />
+            <staticIdleAnimation animationName="NPCTalkingMale01Source" />
+            <staticIdleAnimation animationName="NPCTalkingMale02Source" />
+
+            <!-- <required spring="true" /> -->
+            <prevent spring="false" summer="false" autumn="false" winter="true" rain="false" snow="false" />
+        </pedestrian>         
+        
+        <!-- MALE 04 A -->
+        <pedestrian variation="male">
+            <style filename="dataS/character/playerM/playerM.xml">
+                <bottom color="4" name="leather"/>
+                <face color="1" name="head04"/>
+                <top color="1" name="topVest"/>
+                <footwear color="3" name="workBoots2"/>
+                <hairStyle color="18" name="hair04"/>
+            </style>
+
+            <groups>
+                <group name="standard" />
+                <group name="standardStatic" />
+                <group name="standardLatehoursStatic" />
+                <group name="standardFarmersMarketStatic" />
+            </groups>
+
+            <walkAnimation animationName="NPCWalkMale01Source" blendWithAnimationName="" distance="1.4" speedScaleMin="0.9" speedScaleMax="1.1">
+                <stepSoundTrigger time="0.25" />
+                <stepSoundTrigger time="0.75" />
+            </walkAnimation>
+
+            <idleAnimation animationName="idle1Source" />
+
+            <staticIdleAnimation animationName="idle1Source" />
+            <staticIdleAnimation animationName="NPCMaleIdle01Source" />
+            <staticIdleAnimation animationName="NPCMaleIdle02Source" />
+            <staticIdleAnimation animationName="NPCTalkingMale01Source" />
+            <staticIdleAnimation animationName="NPCTalkingMale02Source" />
+
+            <!-- <required spring="true" /> -->
+            <prevent spring="false" summer="false" autumn="false" winter="false" rain="false" snow="false" />
+        </pedestrian>   
+
+        <!-- MALE 05 A -->
+        <pedestrian variation="male">
+            <style filename="dataS/character/playerM/playerM.xml">
+                <bottom color="9" name="jeans"/>
+                <face color="1" name="head05"/>
+                <top color="68" name="zipNeckPullover"/>
+                <footwear color="9" name="sneakers"/>
+                <hairStyle color="16" name="hair05"/>
+                <beard color="16" name="goatee02_head05"/>
+            </style>
+
+            <groups>
+                <group name="standard" />
+                <group name="standardStatic" />
+                <group name="standardLatehoursStatic" />
+                <group name="standardFarmersMarketStatic" />
+            </groups>
+
+            <walkAnimation animationName="NPCWalkMale01Source" blendWithAnimationName="" distance="1.4" speedScaleMin="0.9" speedScaleMax="1.1">
+                <stepSoundTrigger time="0.25" />
+                <stepSoundTrigger time="0.75" />
+            </walkAnimation>
+
+            <idleAnimation animationName="idle1Source" />
+
+            <staticIdleAnimation animationName="idle1Source" />
+            <staticIdleAnimation animationName="NPCMaleIdle01Source" />
+            <staticIdleAnimation animationName="NPCMaleIdle02Source" />
+            <staticIdleAnimation animationName="NPCTalkingMale01Source" />
+            <staticIdleAnimation animationName="NPCTalkingMale02Source" />
+
+            <!-- <required spring="true" /> -->
+            <prevent spring="false" summer="false" autumn="false" winter="false" rain="false" snow="false" />
+        </pedestrian>    
+
+    <!-- WOMEN -->
+
+        <!-- FEMALE 01 B -->    
+        <pedestrian variation="female">
+            <style filename="dataS/character/playerF/playerF.xml">
+                <bottom color="8" name="jeans"/>
+                <face color="1" name="head01"/>
+                <top color="22" name="zipNeckPullover"/>
+                <glasses color="1" name="classic"/>
+                <footwear color="9" name="sneakers"/>
+                <hairStyle color="12" name="hair12"/>
+            </style>
+
+            <groups>
+                <group name="standard" />
+                <group name="standardStatic" />
+                <group name="standardLatehoursStatic" />
+                <group name="standardFarmersMarketStatic" />
+            </groups>
+
+            <walkAnimation animationName="NPCWalkFemale01Source" blendWithAnimationName="" distance="1.4" speedScaleMin="0.9" speedScaleMax="1.1">
+                <stepSoundTrigger time="0.25" />
+                <stepSoundTrigger time="0.75" />
+            </walkAnimation>
+
+            <idleAnimation animationName="idle1FemaleSource" />
+
+            <staticIdleAnimation animationName="idle1FemaleSource" />
+            <staticIdleAnimation animationName="NPCFemaleIdle01Source" />
+            <staticIdleAnimation animationName="NPCFemaleIdle02Source" />
+            <staticIdleAnimation animationName="NPCTalkingFemale01Source" />
+            <staticIdleAnimation animationName="NPCTalkingFemale02Source" />
+            <!-- <required spring="true" /> -->
+            <prevent spring="false" summer="false" autumn="false" winter="false" rain="false" snow="false" />
+        </pedestrian>
+
+
+        <!-- FEMALE 01 C -->    
+        <pedestrian variation="female">
+            <style filename="dataS/character/playerF/playerF.xml">
+                <bottom color="2" name="chinos"/>
+                <face color="1" name="head01"/>
+                <top color="2" name="topFarmJacketM"/>
+                <footwear color="1" name="chelsea01"/>
+                <hairStyle color="6" name="hair03"/>
+            </style>
+
+            <groups>
+                <group name="standard" />
+                <group name="standardStatic" />
+                <group name="standardLatehoursStatic" />
+                <group name="standardFarmersMarketStatic" />
+            </groups>
+
+            <walkAnimation animationName="NPCWalkFemale01Source" blendWithAnimationName="" distance="1.4" speedScaleMin="0.9" speedScaleMax="1.1">
+                <stepSoundTrigger time="0.25" />
+                <stepSoundTrigger time="0.75" />
+            </walkAnimation>
+
+            <idleAnimation animationName="idle1FemaleSource" />
+
+            <staticIdleAnimation animationName="idle1FemaleSource" />
+            <staticIdleAnimation animationName="NPCFemaleIdle01Source" />
+            <staticIdleAnimation animationName="NPCFemaleIdle02Source" />
+            <staticIdleAnimation animationName="NPCTalkingFemale01Source" />
+            <staticIdleAnimation animationName="NPCTalkingFemale02Source" />
+            <!-- <required spring="true" /> -->
+            <prevent spring="false" summer="false" autumn="false" winter="false" rain="false" snow="false" />
+        </pedestrian>
+
+
+        <!-- FEMALE 02 A -->    
+        <pedestrian variation="female">
+            <style filename="dataS/character/playerF/playerF.xml">
+                <bottom color="36" name="botSlacks"/>
+                <face color="1" name="head02"/>
+                <top color="1" name="tankTop"/>
+                <footwear color="8" name="sportSneakers"/>
+                <hairStyle color="2" name="hair16"/>
+            </style>
+
+            <groups>
+                <group name="standard" />
+                <group name="standardStatic" />
+                <group name="standardLatehoursStatic" />
+                <group name="standardFarmersMarketStatic" />
+            </groups>
+
+            <walkAnimation animationName="NPCWalkFemale01Source" blendWithAnimationName="" distance="1.4" speedScaleMin="0.9" speedScaleMax="1.1">
+                <stepSoundTrigger time="0.25" />
+                <stepSoundTrigger time="0.75" />
+            </walkAnimation>
+
+            <idleAnimation animationName="idle1FemaleSource" />
+
+            <staticIdleAnimation animationName="idle1FemaleSource" />
+            <staticIdleAnimation animationName="NPCFemaleIdle01Source" />
+            <staticIdleAnimation animationName="NPCFemaleIdle02Source" />
+            <staticIdleAnimation animationName="NPCTalkingFemale01Source" />
+            <staticIdleAnimation animationName="NPCTalkingFemale02Source" />
+            
+            <!-- <required spring="true" /> -->
+            <prevent spring="false" summer="false" autumn="false" winter="true" rain="false" snow="false" />
+        </pedestrian>
+        
+        <!-- FEMALE 02 B -->    
+        <pedestrian variation="female">
+            <style filename="dataS/character/playerF/playerF.xml">
+                <bottom color="5" name="jeanShorts"/>
+                <face color="1" name="head02"/>
+                <top color="9" name="windbreaker"/>
+                <footwear color="1" name="laceUpSneaker"/>
+                <hairStyle color="15" name="hair10"/>
+            </style>
+
+            <groups>
+                <group name="standard" />
+                <group name="standardStatic" />
+                <group name="standardLatehoursStatic" />
+                <group name="standardFarmersMarketStatic" />
+            </groups>
+
+            <walkAnimation animationName="NPCWalkFemale01Source" blendWithAnimationName="" distance="1.4" speedScaleMin="0.9" speedScaleMax="1.1">
+                <stepSoundTrigger time="0.25" />
+                <stepSoundTrigger time="0.75" />
+            </walkAnimation>
+
+            <idleAnimation animationName="idle1FemaleSource" />
+
+            <staticIdleAnimation animationName="idle1FemaleSource" />
+            <staticIdleAnimation animationName="NPCFemaleIdle01Source" />
+            <staticIdleAnimation animationName="NPCFemaleIdle02Source" />
+            <staticIdleAnimation animationName="NPCTalkingFemale01Source" />
+            <staticIdleAnimation animationName="NPCTalkingFemale02Source" />
+            
+            <!-- <required spring="true" /> -->
+            <prevent spring="false" summer="false" autumn="false" winter="false" rain="false" snow="false" />
+        </pedestrian>
+                
+        <!-- FEMALE 04 A -->           
+        <pedestrian variation="female">
+            <style filename="dataS/character/playerF/playerF.xml">
+                <bottom color="3" name="chinos"/>
+                <face color="1" name="head04"/>
+                <top color="4" name="aviatorJacket"/>
+                <footwear color="1" name="laceUpSneaker"/>
+                <hairStyle color="18" name="hair06"/>
+            </style>
+
+            <groups>
+                <group name="standard" />
+                <group name="standardStatic" />
+                <group name="standardLatehoursStatic" />
+                <group name="standardFarmersMarketStatic" />
+            </groups>
+
+            <walkAnimation animationName="NPCWalkFemale01Source" blendWithAnimationName="" distance="1.4" speedScaleMin="0.9" speedScaleMax="1.1">
+                <stepSoundTrigger time="0.25" />
+                <stepSoundTrigger time="0.75" />
+            </walkAnimation>
+
+            <idleAnimation animationName="idle1FemaleSource" />
+
+            <staticIdleAnimation animationName="idle1FemaleSource" />
+            <staticIdleAnimation animationName="NPCFemaleIdle01Source" />
+            <staticIdleAnimation animationName="NPCFemaleIdle02Source" />
+            <staticIdleAnimation animationName="NPCTalkingFemale01Source" />
+            <staticIdleAnimation animationName="NPCTalkingFemale02Source" />
+
+            <!-- <required spring="true" /> -->
+            <prevent spring="false" summer="false" autumn="false" winter="false" rain="false" snow="false" />
+        </pedestrian>
+
+        <!-- FEMALE 04 B -->           
+        <pedestrian variation="female">
+            <style filename="dataS/character/playerF/playerF.xml">
+                <bottom color="5" name="jeans"/>
+                <face color="1" name="head04"/>
+                <top color="9" name="topLightSweater"/>
+                <glasses color="1" name="reading"/>
+                <footwear color="1" name="newHollandBoots"/>
+                <hairStyle color="20" name="hair05"/>
+            </style>
+
+            <groups>
+                <group name="standard" />
+                <group name="standardStatic" />
+                <group name="standardLatehoursStatic" />
+                <group name="standardFarmersMarketStatic" />
+            </groups>
+
+            <walkAnimation animationName="NPCWalkFemale01Source" blendWithAnimationName="" distance="1.4" speedScaleMin="0.9" speedScaleMax="1.1">
+                <stepSoundTrigger time="0.25" />
+                <stepSoundTrigger time="0.75" />
+            </walkAnimation>
+
+            <idleAnimation animationName="idle1FemaleSource" />
+
+            <staticIdleAnimation animationName="idle1FemaleSource" />
+            <staticIdleAnimation animationName="NPCFemaleIdle01Source" />
+            <staticIdleAnimation animationName="NPCFemaleIdle02Source" />
+            <staticIdleAnimation animationName="NPCTalkingFemale01Source" />
+            <staticIdleAnimation animationName="NPCTalkingFemale02Source" />
+
+            <!-- <required spring="true" /> -->
+            <prevent spring="false" summer="false" autumn="false" winter="false" rain="true" snow="true" />
+        </pedestrian>
+
+        <!-- FEMALE 04 C -->           
+        <pedestrian variation="female">
+            <style filename="dataS/character/playerF/playerF.xml">
+                <bottom color="7" name="cargoShorts"/>
+                <face color="1" name="head04"/>
+                <top color="68" name="topVestM"/>
+                <glasses color="1" name="reading"/>
+                <footwear color="1" name="eltenSensationXX10"/>
+                <hairStyle color="20" name="hair14"/>
+            </style>
+
+            <groups>
+                <group name="standard" />
+                <group name="standardStatic" />
+                <group name="standardLatehoursStatic" />
+                <group name="standardFarmersMarketStatic" />
+            </groups>
+
+            <walkAnimation animationName="NPCWalkFemale01Source" blendWithAnimationName="" distance="1.4" speedScaleMin="0.9" speedScaleMax="1.1">
+                <stepSoundTrigger time="0.25" />
+                <stepSoundTrigger time="0.75" />
+            </walkAnimation>
+
+            <idleAnimation animationName="idle1FemaleSource" />
+
+            <staticIdleAnimation animationName="idle1FemaleSource" />
+            <staticIdleAnimation animationName="NPCFemaleIdle01Source" />
+            <staticIdleAnimation animationName="NPCFemaleIdle02Source" />
+            <staticIdleAnimation animationName="NPCTalkingFemale01Source" />
+            <staticIdleAnimation animationName="NPCTalkingFemale02Source" />
+
+            <!-- <required spring="true" /> -->
+            <prevent spring="false" summer="false" autumn="false" winter="false" rain="true" snow="true" />
+        </pedestrian>
+
+    <!-- SHOP CLERK -->
+        <!-- SHOP CLERK 1 - FEMALE -->
+        <pedestrian variation="female">
+            <style filename="dataS/character/playerF/playerF.xml">
+                <bottom color="11" name="skirt01"/>
+                <face color="1" name="head02"/>
+                <top color="1" name="straussTShirtMerino2nd"/>
+                <footwear color="1" name="sandal01"/>
+                <hairStyle color="13" name="hair16"/>
+            </style>
+
+            <groups>
+                <group name="shopClerk" />
+                <group name="shopClerkStatic" />
+                <group name="shopClerkLatehoursStatic" />
+                <group name="shopClerkNonstopStatic" />
+            </groups>
+
+            <walkAnimation animationName="NPCWalkFemale01Source" blendWithAnimationName="" distance="1.4" speedScaleMin="0.9" speedScaleMax="1.1">
+                <stepSoundTrigger time="0.25" />
+                <stepSoundTrigger time="0.75" />
+            </walkAnimation>
+
+            <idleAnimation animationName="idle1FemaleSource" />
+
+            <staticIdleAnimation animationName="idle1FemaleSource" />
+            <staticIdleAnimation animationName="NPCFemaleIdle01Source" />
+            <staticIdleAnimation animationName="NPCFemaleIdle02Source" />
+            <staticIdleAnimation animationName="NPCTalkingFemale01Source" />
+            <staticIdleAnimation animationName="NPCTalkingFemale02Source" />
+
+            <!-- <required spring="true" /> -->
+            <prevent spring="false" summer="false" autumn="false" winter="false" rain="false" snow="false" />
+        </pedestrian>
+
+        <!-- SHOP CLERK 2 - FEMALE -->
+        <pedestrian variation="female">
+            <style filename="dataS/character/playerF/playerF.xml">
+                <bottom color="9" name="skirt04"/>
+                <face color="1" name="head04"/>
+                <top color="37" name="collaredShirt"/>
+                <glasses color="1" name="classic"/>
+                <footwear color="3" name="sandal03"/>
+                <hairStyle color="17" name="hair13"/>
+            </style>
+
+            <groups>
+                <group name="shopClerk" />
+                <group name="shopClerkStatic" />
+                <group name="shopClerkLatehoursStatic" />
+                <group name="shopClerkNonstopStatic" />
+            </groups>
+
+            <walkAnimation animationName="NPCWalkFemale01Source" blendWithAnimationName="" distance="1.4" speedScaleMin="0.9" speedScaleMax="1.1">
+                <stepSoundTrigger time="0.25" />
+                <stepSoundTrigger time="0.75" />
+            </walkAnimation>
+
+            <idleAnimation animationName="idle1FemaleSource" />
+
+            <staticIdleAnimation animationName="idle1FemaleSource" />
+            <staticIdleAnimation animationName="NPCFemaleIdle01Source" />
+            <staticIdleAnimation animationName="NPCFemaleIdle02Source" />
+            <staticIdleAnimation animationName="NPCTalkingFemale01Source" />
+            <staticIdleAnimation animationName="NPCTalkingFemale02Source" />
+
+            <!-- <required spring="true" /> -->
+            <prevent spring="false" summer="false" autumn="false" winter="false" rain="false" snow="false" />
+        </pedestrian>
+
+        <!-- SHOP CLERK 3 - FEMALE -->
+        <pedestrian variation="female">
+            <style filename="dataS/character/playerF/playerF.xml">
+                <bottom color="5" name="jeanShorts"/>
+                <face color="1" name="head01"/>
+                <top color="1" name="collaredShirt"/>
+                <footwear color="3" name="eltenSensationXX10"/>
+                <hairStyle color="7" name="hair07"/>
+            </style>
+
+            <groups>
+                <group name="shopClerk" />
+                <group name="shopClerkStatic" />
+                <group name="shopClerkLatehoursStatic" />
+                <group name="shopClerkNonstopStatic" />
+            </groups>
+
+            <walkAnimation animationName="NPCWalkFemale01Source" blendWithAnimationName="" distance="1.4" speedScaleMin="0.9" speedScaleMax="1.1">
+                <stepSoundTrigger time="0.25" />
+                <stepSoundTrigger time="0.75" />
+            </walkAnimation>
+
+            <idleAnimation animationName="idle1FemaleSource" />
+
+            <staticIdleAnimation animationName="idle1FemaleSource" />
+            <staticIdleAnimation animationName="NPCFemaleIdle01Source" />
+            <staticIdleAnimation animationName="NPCFemaleIdle02Source" />
+            <staticIdleAnimation animationName="NPCTalkingFemale01Source" />
+            <staticIdleAnimation animationName="NPCTalkingFemale02Source" />
+
+            <!-- <required spring="true" /> -->
+            <prevent spring="false" summer="false" autumn="false" winter="false" rain="false" snow="false" />
+        </pedestrian>
+
+        <!-- SHOP CLERK 4 - MALE -->
+        <pedestrian variation="male">
+            <style filename="dataS/character/playerM/playerM.xml">
+                <bottom color="4" name="chinos"/>
+                <face color="1" name="head01"/>
+                <top color="9" name="zipNeckPullover"/>
+                <footwear color="32" name="racing"/>
+                <hairStyle color="19" name="hair10"/>
+            </style>
+
+            <groups>
+                <group name="shopClerk" />
+                <group name="shopClerkStatic" />
+                <group name="shopClerkLatehoursStatic" />
+                <group name="shopClerkNonstopStatic" />
+            </groups>
+
+            <walkAnimation animationName="NPCWalkMale01Source" blendWithAnimationName="" distance="1.4" speedScaleMin="0.9" speedScaleMax="1.1">
+                <stepSoundTrigger time="0.25" />
+                <stepSoundTrigger time="0.75" />
+            </walkAnimation>
+
+            <idleAnimation animationName="idle1Source" />
+
+            <staticIdleAnimation animationName="idle1Source" />
+            <staticIdleAnimation animationName="NPCMaleIdle01Source" />
+            <staticIdleAnimation animationName="NPCMaleIdle02Source" />
+            <staticIdleAnimation animationName="NPCTalkingMale01Source" />
+            <staticIdleAnimation animationName="NPCTalkingMale02Source" />
+
+            <!-- <required spring="true" /> -->
+            <prevent spring="false" summer="false" autumn="false" winter="false" rain="false" snow="false" />
+        </pedestrian>
+
+    <!-- WORKER / FARMER / MECHANIC -->
+        <!-- WORKER 1 - MALE -->
+        <pedestrian variation="male">
+            <style filename="dataS/character/playerM/playerM.xml">
+                <onepiece color="7" name="VolvoSuit"/>
+                <face color="1" name="head04"/>
+                <headgear color="12" name="VolvoHat"/>
+                <footwear color="1" name="workBoots1"/>
+                <hairStyle color="22" name="hair04"/>
+                <beard color="22" name="fullBeard_head04"/>
+            </style>
+
+            <groups>
+                <group name="worker" />
+                <group name="workerStatic" />
+            </groups>
+
+            <walkAnimation animationName="NPCWalkMale01Source" blendWithAnimationName="" distance="1.4" speedScaleMin="0.9" speedScaleMax="1.1">
+                <stepSoundTrigger time="0.25" />
+                <stepSoundTrigger time="0.75" />
+            </walkAnimation>
+
+            <idleAnimation animationName="idle1Source" />
+
+            <staticIdleAnimation animationName="idle1Source" />
+            <staticIdleAnimation animationName="NPCMaleIdle01Source" />
+            <staticIdleAnimation animationName="NPCMaleIdle02Source" />
+
+            <!-- <required spring="true" /> -->
+            <prevent spring="false" summer="false" autumn="false" winter="false" rain="false" snow="false" />
+        </pedestrian>
+
+        <!-- WORKER 2 - MALE -->
+        <pedestrian variation="male">
+            <style filename="dataS/character/playerM/playerM.xml">
+                <bottom color="8" name="cargo"/>
+                <face color="1" name="head05"/>
+                <top color="28" name="constructionVest"/>
+                <gloves color="1" name="esTrailLight02"/>
+                <footwear color="1" name="eltenTerenceXXG5"/>
+                <hairStyle color="18" name="hair12"/>
+                <beard color="18" name="trimmedBeard_head02"/>
+            </style>
+
+            <groups>
+                <group name="worker" />
+                <group name="workerStatic" />
+            </groups>
+
+            <walkAnimation animationName="NPCWalkMale01Source" blendWithAnimationName="" distance="1.4" speedScaleMin="0.9" speedScaleMax="1.1">
+                <stepSoundTrigger time="0.25" />
+                <stepSoundTrigger time="0.75" />
+            </walkAnimation>
+
+            <idleAnimation animationName="idle1Source" />
+
+            <staticIdleAnimation animationName="idle1Source" />
+            <staticIdleAnimation animationName="NPCMaleIdle01Source" />
+            <staticIdleAnimation animationName="NPCMaleIdle02Source" />
+
+            <!-- <required spring="true" /> -->
+            <prevent spring="false" summer="false" autumn="false" winter="false" rain="false" snow="false" />
+        </pedestrian>
+
+        <!-- WORKER 3 - MALE -->
+        <pedestrian variation="male">
+            <style filename="dataS/character/playerM/playerM.xml">
+                <bottom color="8" name="VolvoPants"/>
+                <face color="1" name="head01"/>
+                <top color="28" name="volvoFunctionalJacket"/>
+                <gloves color="8" name="racing"/>
+                <glasses color="1" name="classic"/>
+                <footwear color="1" name="eltenArborist"/>
+                <hairStyle color="7" name="hair06"/>
+                <beard color="7" name="trimmedBeard_head01"/>
+            </style>
+
+            <groups>
+                <group name="worker" />
+                <group name="workerStatic" />
+            </groups>
+
+            <walkAnimation animationName="NPCWalkMale01Source" blendWithAnimationName="" distance="1.4" speedScaleMin="0.9" speedScaleMax="1.1">
+                <stepSoundTrigger time="0.25" />
+                <stepSoundTrigger time="0.75" />
+            </walkAnimation>
+
+            <idleAnimation animationName="idle1Source" />
+
+            <staticIdleAnimation animationName="idle1Source" />
+            <staticIdleAnimation animationName="NPCMaleIdle01Source" />
+            <staticIdleAnimation animationName="NPCMaleIdle02Source" />
+
+            <!-- <required spring="true" /> -->
+            <prevent spring="false" summer="false" autumn="false" winter="false" rain="false" snow="false" />
+        </pedestrian>
+
+        <!-- WORKER 4 - MALE -->
+        <pedestrian variation="male">
+            <style filename="dataS/character/playerM/playerM.xml">
+                <bottom color="5" name="jeans"/>
+                <face color="1" name="head04"/>
+                <top color="28" name="constructionVest"/>
+                <footwear color="1" name="racing"/>
+                <hairStyle color="18" name="hair05"/>
+                <beard color="18" name="trimmedBeard_head04"/>
+            </style>
+
+            <groups>
+                <group name="worker" />
+                <group name="workerStatic" />
+            </groups>
+
+            <walkAnimation animationName="NPCWalkMale01Source" blendWithAnimationName="" distance="1.4" speedScaleMin="0.9" speedScaleMax="1.1">
+                <stepSoundTrigger time="0.25" />
+                <stepSoundTrigger time="0.75" />
+            </walkAnimation>
+
+            <idleAnimation animationName="idle1Source" />
+
+            <staticIdleAnimation animationName="idle1Source" />
+            <staticIdleAnimation animationName="NPCMaleIdle01Source" />
+            <staticIdleAnimation animationName="NPCMaleIdle02Source" />
+
+            <!-- <required spring="true" /> -->
+            <prevent spring="false" summer="false" autumn="false" winter="false" rain="false" snow="false" />
+        </pedestrian>
+
+        <!-- WORKER 5 - FEMALE -->
+        <pedestrian variation="female">
+            <style filename="dataS/character/playerF/playerF.xml">
+                <bottom color="6" name="VolvoPants"/>
+                <face color="1" name="head01"/>
+                <top color="1" name="volvoSoftJacket"/>
+                <gloves color="1" name="mechanic"/>
+                <footwear color="1" name="eltenTerenceXXG5"/>
+                <hairStyle color="7" name="hair07"/>
+            </style>
+
+            <groups>
+                <group name="worker" />
+                <group name="workerStatic" />
+            </groups>
+
+            <walkAnimation animationName="NPCWalkFemale01Source" blendWithAnimationName="" distance="1.4" speedScaleMin="0.9" speedScaleMax="1.1">
+                <stepSoundTrigger time="0.25" />
+                <stepSoundTrigger time="0.75" />
+            </walkAnimation>
+
+            <idleAnimation animationName="idle1FemaleSource" />
+
+            <staticIdleAnimation animationName="idle1FemaleSource" />
+            <staticIdleAnimation animationName="NPCFemaleIdle01Source" />
+            <staticIdleAnimation animationName="NPCFemaleIdle02Source" />
+
+            <!-- <required spring="true" /> -->
+            <prevent spring="false" summer="false" autumn="false" winter="false" rain="false" snow="false" />
+        </pedestrian>
+        
+        <!-- FARMER 1 / MECHANIC 1 - MALE -->
+        <pedestrian variation="male">
+            <style filename="dataS/character/playerM/playerM.xml">
+                <onepiece color="7" name="JDSuit"/>
+                <face color="1" name="head04"/>
+                <gloves color="8" name="generic"/>
+                <headgear color="12" name="JDGreen"/>
+                <footwear color="1" name="johnDeereBoots"/>
+                <hairStyle color="17" name="hair04"/>
+            </style>
+
+            <groups>
+                <group name="farmer" />
+                <group name="farmerStatic" />
+                <group name="mechanic" />
+                <group name="mechanicStatic" />
+            </groups>
+
+            <walkAnimation animationName="NPCWalkMale01Source" blendWithAnimationName="" distance="1.4" speedScaleMin="0.9" speedScaleMax="1.1">
+                <stepSoundTrigger time="0.25" />
+                <stepSoundTrigger time="0.75" />
+            </walkAnimation>
+
+            <idleAnimation animationName="idle1Source" />
+
+            <staticIdleAnimation animationName="idle1Source" />
+            <staticIdleAnimation animationName="NPCMaleIdle01Source" />
+            <staticIdleAnimation animationName="NPCMaleIdle02Source" />
+
+            <!-- <required spring="true" /> -->
+            <prevent spring="false" summer="false" autumn="false" winter="false" rain="false" snow="false" />
+        </pedestrian>          
+        
+        <!-- FARMER 2 / MECHANIC 2 - MALE -->
+        <pedestrian variation="male">
+            <style filename="dataS/character/playerM/playerM.xml">
+                <onepiece color="7" name="MFSuit"/>
+                <face color="1" name="head04"/>
+                <gloves color="4" name="generic"/>
+                <headgear color="12" name="MFhat"/>
+                <glasses color="1" name="sports1"/>
+                <footwear color="1" name="workBoots1"/>
+                <hairStyle color="15" name="hair04"/>
+                <beard color="15" name="goatee01_head04"/>
+            </style>
+
+            <groups>
+                <group name="farmer" />
+                <group name="farmerStatic" />
+                <group name="mechanic" />
+                <group name="mechanicStatic" />
+            </groups>
+
+            <walkAnimation animationName="NPCWalkMale01Source" blendWithAnimationName="" distance="1.4" speedScaleMin="0.9" speedScaleMax="1.1">
+                <stepSoundTrigger time="0.25" />
+                <stepSoundTrigger time="0.75" />
+            </walkAnimation>
+
+            <idleAnimation animationName="idle1Source" />
+
+            <staticIdleAnimation animationName="idle1Source" />
+            <staticIdleAnimation animationName="NPCMaleIdle01Source" />
+            <staticIdleAnimation animationName="NPCMaleIdle02Source" />
+
+            <!-- <required spring="true" /> -->
+            <prevent spring="false" summer="false" autumn="false" winter="false" rain="false" snow="false" />
+        </pedestrian>
+
+        <!-- FARMER 3 / MECHANIC 3 - MALE -->
+        <pedestrian variation="male">
+            <style filename="dataS/character/playerM/playerM.xml">
+                <bottom color="5" name="claas"/>
+                <face color="1" name="head02"/>
+                <top color="10" name="claas"/>
+                <gloves color="8" name="racing"/>
+                <footwear color="1" name="eltenArborist"/>
+                <hairStyle color="16" name="hair08"/>
+                <beard color="16" name="goatee01_head02"/>
+            </style>
+
+            <groups>
+                <group name="farmer" />
+                <group name="farmerStatic" />
+                <group name="mechanic" />
+                <group name="mechanicStatic" />
+            </groups>
+
+            <walkAnimation animationName="NPCWalkMale01Source" blendWithAnimationName="" distance="1.4" speedScaleMin="0.9" speedScaleMax="1.1">
+                <stepSoundTrigger time="0.25" />
+                <stepSoundTrigger time="0.75" />
+            </walkAnimation>
+
+            <idleAnimation animationName="idle1Source" />
+
+            <staticIdleAnimation animationName="idle1Source" />
+            <staticIdleAnimation animationName="NPCMaleIdle01Source" />
+            <staticIdleAnimation animationName="NPCMaleIdle02Source" />
+
+            <!-- <required spring="true" /> -->
+            <prevent spring="false" summer="false" autumn="false" winter="false" rain="false" snow="false" />
+        </pedestrian>
+
+        <!-- FARMER 4 / MECHANIC 4 - MALE -->
+        <pedestrian variation="male">
+            <style filename="dataS/character/playerM/playerM.xml">
+                <onepiece color="7" name="fendt"/>
+                <face color="1" name="head01"/>
+                <gloves color="8" name="esTrailLight"/>
+                <glasses color="1" name="reading"/>
+                <footwear color="1" name="racing"/>
+                <hairStyle color="6" name="hair12"/>
+                <beard color="6" name="stubble_head01"/>
+            </style>
+
+            <groups>
+                <group name="farmer" />
+                <group name="farmerStatic" />
+                <group name="mechanic" />
+                <group name="mechanicStatic" />
+            </groups>
+
+            <walkAnimation animationName="NPCWalkMale01Source" blendWithAnimationName="" distance="1.4" speedScaleMin="0.9" speedScaleMax="1.1">
+                <stepSoundTrigger time="0.25" />
+                <stepSoundTrigger time="0.75" />
+            </walkAnimation>
+
+            <idleAnimation animationName="idle1Source" />
+
+            <staticIdleAnimation animationName="idle1Source" />
+            <staticIdleAnimation animationName="NPCMaleIdle01Source" />
+            <staticIdleAnimation animationName="NPCMaleIdle02Source" />
+
+            <!-- <required spring="true" /> -->
+            <prevent spring="false" summer="false" autumn="false" winter="false" rain="false" snow="false" />
+        </pedestrian>
+
+        <!-- FARMER 5 - MALE -->
+        <pedestrian variation="male">
+            <style filename="dataS/character/playerM/playerM.xml">
+                <bottom color="5" name="jeans"/>
+                <face color="1" name="head04"/>
+                <top color="10" name="caseih"/>
+                <headgear color="2" name="caseih"/>
+                <footwear color="1" name="workBoots1"/>
+                <hairStyle color="18" name="hair02"/>
+            </style>
+
+            <groups>
+                <group name="farmer" />
+                <group name="farmerStatic" />
+                <group name="farmersMarket" />
+                <group name="farmersMarketStatic" />
+            </groups>
+
+            <walkAnimation animationName="NPCWalkMale01Source" blendWithAnimationName="" distance="1.4" speedScaleMin="0.9" speedScaleMax="1.1">
+                <stepSoundTrigger time="0.25" />
+                <stepSoundTrigger time="0.75" />
+            </walkAnimation>
+
+            <idleAnimation animationName="idle1Source" />
+
+            <staticIdleAnimation animationName="idle1Source" />
+            <staticIdleAnimation animationName="NPCMaleIdle01Source" />
+            <staticIdleAnimation animationName="NPCMaleIdle02Source" />
+
+            <!-- <required spring="true" /> -->
+            <prevent spring="false" summer="false" autumn="false" winter="false" rain="false" snow="false" />
+        </pedestrian>
+
+        <!-- FARMER 6 - MALE -->
+        <pedestrian variation="male">
+            <style filename="dataS/character/playerM/playerM.xml">
+                <bottom color="5" name="jeans"/>
+                <face color="1" name="head02"/>
+                <top color="1" name="aviatorJacket"/>
+                <glasses color="1" name="aviator"/>
+                <footwear color="1" name="workBoots2"/>
+                <hairStyle color="18" name="hair12"/>
+                <beard color="18" name="trimmedBeard_head02"/>
+            </style>
+
+            <groups>
+                <group name="farmer" />
+                <group name="farmerStatic" />
+            </groups>
+
+            <walkAnimation animationName="NPCWalkMale01Source" blendWithAnimationName="" distance="1.4" speedScaleMin="0.9" speedScaleMax="1.1">
+                <stepSoundTrigger time="0.25" />
+                <stepSoundTrigger time="0.75" />
+            </walkAnimation>
+
+            <idleAnimation animationName="idle1Source" />
+
+            <staticIdleAnimation animationName="idle1Source" />
+            <staticIdleAnimation animationName="NPCMaleIdle01Source" />
+            <staticIdleAnimation animationName="NPCMaleIdle02Source" />
+
+            <!-- <required spring="true" /> -->
+            <prevent spring="false" summer="false" autumn="false" winter="false" rain="false" snow="false" />
+        </pedestrian>
+
+        <!-- FARMER 7 - FEMALE -->
+        <pedestrian variation="female">
+            <style filename="dataS/character/playerF/playerF.xml">
+                <bottom color="11" name="botSlacks"/>
+                <face color="1" name="head02"/>
+                <top color="3" name="topEltenHoodie"/>
+                <footwear color="1" name="eltenArborist"/>
+                <hairStyle color="1" name="hair16"/>
+            </style>
+
+            <groups>
+                <group name="farmer" />
+                <group name="farmerStatic" />
+                <group name="farmersMarket" />
+                <group name="farmersMarketStatic" />
+            </groups>
+
+            <walkAnimation animationName="NPCWalkFemale01Source" blendWithAnimationName="" distance="1.4" speedScaleMin="0.9" speedScaleMax="1.1">
+                <stepSoundTrigger time="0.25" />
+                <stepSoundTrigger time="0.75" />
+            </walkAnimation>
+
+            <idleAnimation animationName="idle1FemaleSource" />
+
+            <staticIdleAnimation animationName="idle1FemaleSource" />
+            <staticIdleAnimation animationName="NPCFemaleIdle01Source" />
+            <staticIdleAnimation animationName="NPCFemaleIdle02Source" />
+
+            <!-- <required spring="true" /> -->
+            <prevent spring="false" summer="false" autumn="false" winter="false" rain="false" snow="false" />
+        </pedestrian>
+
+        <!-- FARMER 8 - FEMALE -->
+        <pedestrian variation="female">
+            <style filename="dataS/character/playerF/playerF.xml">
+                <onepiece color="10" name="motionSuit"/>
+                <face color="1" name="head04"/>
+                <gloves color="2" name="mccullochGloves"/>
+                <footwear color="1" name="riding"/>
+                <hairStyle color="18" name="hair12"/>
+            </style>
+
+            <groups>
+                <group name="farmer" />
+                <group name="farmerStatic" />
+                <group name="farmersMarket" />
+                <group name="farmersMarketStatic" />
+            </groups>
+
+            <walkAnimation animationName="NPCWalkFemale01Source" blendWithAnimationName="" distance="1.4" speedScaleMin="0.9" speedScaleMax="1.1">
+                <stepSoundTrigger time="0.25" />
+                <stepSoundTrigger time="0.75" />
+            </walkAnimation>
+
+            <idleAnimation animationName="idle1FemaleSource" />
+
+            <staticIdleAnimation animationName="idle1FemaleSource" />
+            <staticIdleAnimation animationName="NPCFemaleIdle01Source" />
+            <staticIdleAnimation animationName="NPCFemaleIdle02Source" />
+
+            <!-- <required spring="true" /> -->
+            <prevent spring="false" summer="false" autumn="false" winter="false" rain="false" snow="false" />
+        </pedestrian>
+
+    </pedestrians>
+    
+</pedestrianSystem>

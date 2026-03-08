@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="constructible" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_constructable_residentialBuilding02Preplaced01</name>
+        <functions>
+            <function>$l10n_function_buildableFarmHouse</function>
+        </functions>
+        <image>placeables/constructibles/mapIcon_constructableResidentialBuilding02Preplaced01.png</image>
+        <price>1000</price>
+        <dailyUpkeep>85</dailyUpkeep>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>PLACEABLE</species>
+        <category>farmhouses</category>
+        <brush>
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>constructibles</tab>
+        </brush>
+
+        <storeIconRendering>
+            <objectBundle>
+                <object filename="placeables/constructibles/constructableResidentialBuilding02.i3d">
+                    <node node="0|10|0|0"/>
+                </object>
+            </objectBundle>
+        </storeIconRendering>
+        <vertexBufferMemoryUsage>2750720</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>732160</indexBufferMemoryUsage>
+        <textureMemoryUsage>9895936</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>placeables/constructibles/constructableResidentialBuilding02.i3d</filename>
+        <canBeRenamed>false</canBeRenamed>
+        <canBeDeleted>false</canBeDeleted>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true">
+        <testAreas>
+            <testArea startNode="testAreaStart01Preplaced" endNode="testAreaEnd01Preplaced" />
+        </testAreas>
+
+        <sounds>
+            <place template="buildableImp" />
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearAreaStart01" widthNode="clearAreaWidth01" heightNode="clearAreaHeight01"/>
+        <clearArea startNode="clearAreaStart02" widthNode="clearAreaWidth02" heightNode="clearAreaHeight02"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30" >
+        <levelAreas>
+            <levelArea startNode="levelAreaStart01" widthNode="levelAreaWidth01" heightNode="levelAreaHeight01" />
+            <levelArea startNode="levelAreaStart02" widthNode="levelAreaWidth02" heightNode="levelAreaHeight02" />
+        </levelAreas>
+        <paintAreas>
+            <paintArea startNode="paintAreaStart01" widthNode="paintAreaWidth01" heightNode="paintAreaHeight01" />
+        </paintAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorAreaStart01" widthNode="indoorAreaWidth01" heightNode="indoorAreaHeight01" />
+        <indoorArea startNode="indoorAreaStart02" widthNode="indoorAreaWidth02" heightNode="indoorAreaHeight02" />
+        <indoorArea startNode="indoorAreaStart03" widthNode="indoorAreaWidth03" heightNode="indoorAreaHeight03" />
+        <indoorArea startNode="indoorAreaStart04" widthNode="indoorAreaWidth04" heightNode="indoorAreaHeight04" />
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
+        </updateAreas>
+    </ai>
+
+    <triggerMarkers>
+        <triggerMarker node="unloadTriggerMarkerPreplaced" filename="$data/shared/assets/marker/markerIconPallet.i3d" adjustToGround="true" />
+        <!-- <triggerMarker node="sleepTriggerMarker" filename="$data/shared/assets/marker/markerIconSleep.i3d"/> -->
+        <!-- <triggerMarker node="wardrobeTriggerMarker" filename="$data/shared/assets/marker/markerIconWardrobe.i3d"/> -->
+        <triggerMarker node="warningStripesPreplaced"/>
+    </triggerMarkers>
+
+    <hotspots>
+        <hotspot type="UNLOADING_PALLET" linkNode="unloadTriggerMarkerPreplaced" teleportNode="unloadTriggerMarkerPreplaced" />
+        <!-- <hotspot type="FARM"             linkNode="0>" teleportNode="spawnPoint" /> -->
+    </hotspots>
+
+    <!-- <farmhouse spawnNode="spawnPoint" isFinalized="false">
+        <sleeping triggerNode="sleepingTrigger" cameraNode="sleepCamera"/>
+    </farmhouse> -->
+
+    <!-- <wardrobe triggerNode="wardrobeTrigger"/> -->
+
+    <animatedObjects>
+        <animatedObject saveId="constructibleHouse02Preplaced_door01" >
+            <animation duration="1.75">
+                <part node="door01Left">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="0.75" rotation="0 -90 0"/>
+                </part>
+                <part node="door01Right">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="0.75" rotation="0 90 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="door01Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+            <sounds>
+                <moving linkNode="door06" template="woodDoorSqueaksSmall" pitchScale="0.8"/>
+                <posEnd linkNode="door06" template="woodDoorOpen" />
+                <negEnd linkNode="door06" template="woodDoorCloseRandom" />
+            </sounds>
+        </animatedObject>
+
+        <animatedObject saveId="constructibleHouse02Preplaced_door02" >
+            <animation duration="1.75">
+                <part node="door02Left">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="0.75" rotation="0 -90 0"/>
+                </part>
+                <part node="door02Right">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="0.75" rotation="0 90 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="door02Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+            <sounds>
+                <moving linkNode="door02Left" template="woodDoorSqueaksSmall" pitchScale="0.8"/>
+                <posEnd linkNode="door02Left" template="woodDoorOpen" />
+                <negEnd linkNode="door02Left" template="woodDoorCloseRandom" />
+            </sounds>
+        </animatedObject>
+
+        <animatedObject saveId="constructibleHouse02Preplaced_door03" >
+            <animation duration="1.75">
+                <part node="door03">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 90 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="door03Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+            <sounds>
+                <moving linkNode="door03" template="woodDoorSqueaksSmall" pitchScale="0.8"/>
+                <posEnd linkNode="door03" template="woodDoorOpen" />
+                <negEnd linkNode="door03" template="woodDoorCloseRandom" />
+            </sounds>
+        </animatedObject>
+
+        <animatedObject saveId="constructibleHouse02Preplaced_door04" >
+            <animation duration="1.75">
+                <part node="door04">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 90 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="door04Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+            <sounds>
+                <moving linkNode="door04" template="woodDoorSqueaksSmall" pitchScale="0.8"/>
+                <posEnd linkNode="door04" template="woodDoorOpen" />
+                <negEnd linkNode="door04" template="woodDoorCloseRandom" />
+            </sounds>
+        </animatedObject>
+
+        <animatedObject saveId="constructibleHouse02Preplaced_door05" >
+            <animation duration="1.75">
+                <part node="door05">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 90 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="door05Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+            <sounds>
+                <moving linkNode="door05" template="woodDoorSqueaksSmall" pitchScale="0.8"/>
+                <posEnd linkNode="door05" template="woodDoorOpen" />
+                <negEnd linkNode="door05" template="woodDoorCloseRandom" />
+            </sounds>
+        </animatedObject>
+
+        <animatedObject saveId="constructibleHouse02Preplaced_door06" >
+            <animation duration="1.75">
+                <part node="door06">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 90 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="door06Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+            <sounds>
+                <moving linkNode="door06" template="woodDoorSqueaksSmall" pitchScale="0.8"/>
+                <posEnd linkNode="door06" template="woodDoorOpen" />
+                <negEnd linkNode="door06" template="woodDoorCloseRandom" />
+            </sounds>
+        </animatedObject>
+
+        <animatedObject saveId="constructibleHouse02Preplaced_garageDoor" >
+            <animation duration="1.75">
+                <!-- <clip rootNode="garageGate_segment01_lod0" name="farmBuildingsConstructable02_animation" filename="$data/placeables/brandless/constructibles/farmBuildingsConstructable02/farmBuildingsConstructable02.i3d.anim" /> -->
+                <clip rootNode="garageGate_segment01_lod0" name="farmBuildingsConstructable02_animationSource"/>
+            </animation>
+            <controls triggerNode="garageGateTrigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving linkNode="garageGate_segment01_lod0" template="rollingGarageDoor" />
+                <posEnd linkNode="garageGate_segment01_lod0" template="slidingGateMetalOpen" />
+                <negEnd linkNode="garageGate_segment01_lod0" template="slidingGateMetalClose" />
+            </sounds>
+        </animatedObject>
+    </animatedObjects>
+
+    <infoTrigger triggerNode="infoTrigger" showAllPlayers="true"/>
+
+    <constructible>
+        <stateMachine>
+            <states>
+                <state name="SETUP" class="ConstructibleStateBuilding" >
+                    <toggleMesh node="LOD1"                              active="false" updatePhysics="false"/>
+                    <toggleMesh node="baseConcrete"                      active="false" updatePhysics="false"/>
+                    <toggleMesh node="baseConcreteUpstairs"              active="false" updatePhysics="false"/>
+                    <!-- <toggleMesh node="farmhouseFeatures"                 active="false" updatePhysics="true"/> -->
+                    <!-- <toggleMesh node="wardrobe"                          active="false" updatePhysics="true"/> -->
+                    <toggleMesh node="phase10"                           active="false" updatePhysics="false"/>
+                    <toggleMesh node="doors"                             active="false" updatePhysics="false"/>
+                    <toggleMesh node="propsFinishedNode"                 active="false" updatePhysics="true"/>
+                    <toggleMesh node="propsDecoNodePreplaced01"          active="false" updatePhysics="true"/>
+                    <toggleMesh node="snow1"                             active="false" updatePhysics="false"/>
+                    <toggleMesh node="snow2"                             active="false" updatePhysics="false"/>
+                    <toggleMesh node="icicles"                           active="false" updatePhysics="false"/>
+                    <toggleHotspot index="1" isVisible="true" />
+                    <!-- <toggleHotspot index="2" isVisible="false" /> -->
+
+                    <input fillType="CEMENTBRICKS" amount="3000" usagePerHour="400"/>
+                    <sounds>
+                        <active template="constructibleActive"/>
+                    </sounds>
+                </state>
+
+                <state name="BUILDING_1" class="ConstructibleStateBuilding" >
+                    <toggleMesh node="baseConcrete" active="true" updatePhysics="false"/>
+
+                    <input fillType="GRAVEL" amount="20000" usagePerHour="1000"/>
+                    <input fillType="CEMENT" amount="5000" usagePerHour="500"/>
+                    <sounds>
+                        <active template="constructibleActive"/>
+                    </sounds>
+                </state>
+
+                <state name="BUILDING_2" class="ConstructibleStateBuilding" >
+                    <mesh node="phase01" indexMin="0" indexMax="19" />
+
+                    <input fillType="CLAYBRICKS"   amount="12000" usagePerHour="500"/>
+                    <input fillType="GRAVEL"       amount="4000" usagePerHour="500"/>
+                    <input fillType="CEMENT"       amount="1000" usagePerHour="500"/>
+                    <sounds>
+                        <active template="constructibleActive"/>
+                    </sounds>
+                </state>
+
+                <state name="BUILDING_3" class="ConstructibleStateBuilding" >
+                    <toggleMesh node="baseConcreteUpstairs" active="true" updatePhysics="false"/>
+
+                    <input fillType="GRAVEL" amount="18000" usagePerHour="1000"/>
+                    <input fillType="CEMENT" amount="4000" usagePerHour="500"/>
+                    <sounds>
+                        <active template="constructibleActive"/>
+                    </sounds>
+                </state>
+
+                <state name="BUILDING_4" class="ConstructibleStateBuilding" >
+                    <mesh node="phase02" indexMin="0" indexMax="21" />
+
+                    <input fillType="CLAYBRICKS"   amount="10000" usagePerHour="500"/>
+                    <input fillType="GRAVEL"       amount="3500" usagePerHour="500"/>
+                    <input fillType="CEMENT"       amount="800" usagePerHour="500"/>
+                    <sounds>
+                        <active template="constructibleActive"/>
+                    </sounds>
+                </state>
+
+                <state name="BUILDING_5" class="ConstructibleStateBuilding" >
+                    <mesh node="phase03" indexMin="0" indexMax="45" />
+
+                    <input fillType="WOODBEAM" amount="5000" usagePerHour="500"/>
+                    <sounds>
+                        <active template="constructibleActive"/>
+                    </sounds>
+                </state>
+
+                <state name="BUILDING_6" class="ConstructibleStateBuilding" >
+                    <mesh node="phase04" indexMin="0" indexMax="23" />
+
+                    <input fillType="CHIPWOODBOARDS" amount="10000" usagePerHour="500"/>
+                    <sounds>
+                        <active template="constructibleActive"/>
+                    </sounds>
+                </state>
+
+                <state name="BUILDING_7" class="ConstructibleStateBuilding" >
+                    <mesh node="phase05" indexMin="0" indexMax="16" />
+
+                    <input fillType="PLANKS"     amount="2000" usagePerHour="500"/>
+                    <input fillType="FLOORTILES" amount="5000" usagePerHour="500"/>
+                    <input fillType="ROOFPLATES" amount="10000" usagePerHour="500"/>
+                    <sounds>
+                        <active template="constructibleActive"/>
+                    </sounds>
+                </state>
+
+                <state name="BUILDING_8" class="ConstructibleStateBuilding" >
+                    <toggleMesh node="snow1"                             active="true" updatePhysics="false"/>
+                    <toggleMesh node="snow2"                             active="true" updatePhysics="false"/>
+                    <mesh node="phase06" indexMin="0" indexMax="59" />
+
+                    <input fillType="SAND"   amount="8000" usagePerHour="500"/>
+                    <input fillType="CEMENT" amount="2000" usagePerHour="500"/>
+                    <sounds>
+                        <active template="constructibleActive"/>
+                    </sounds>
+                </state>
+
+                <state name="BUILDING_9" class="ConstructibleStateBuilding" >
+                    <mesh node="phase07" indexMin="0" indexMax="21" />
+
+                    <input fillType="CLAYBRICKS"   amount="1000" usagePerHour="500"/>
+                    <input fillType="PLANKS"       amount="4000" usagePerHour="500"/>
+                    <input fillType="BOARDS"       amount="2000" usagePerHour="500"/>
+                    <sounds>
+                        <active template="constructibleActive"/>
+                    </sounds>
+                </state>
+
+                <state name="BUILDING_10" class="ConstructibleStateBuilding" >
+                    <mesh node="phase08" indexMin="0" indexMax="8" />
+
+                    <input fillType="BOARDS" amount="1000" usagePerHour="250"/>
+                    <sounds>
+                        <active template="constructibleActive"/>
+                    </sounds>
+                </state>
+
+                <state name="BUILDING_11" class="ConstructibleStateBuilding" >
+                    <mesh node="phase09" indexMin="0" indexMax="3" />
+
+                    <input fillType="BOARDS" amount="1000" usagePerHour="250"/>
+                    <input fillType="PLANKS" amount="1000" usagePerHour="250"/>
+                    <sounds>
+                        <active template="constructibleActive"/>
+                    </sounds>
+                </state>
+
+                <state name="BUILDING_12" class="ConstructibleStateBuilding" >
+                    <toggleMesh node="icicles"                           active="true"  updatePhysics="false"/>
+                    <toggleMesh  node="phase10"  active="true"/>
+
+                    <input fillType="FURNITURE" amount="6000" usagePerHour="500"/>
+                    <input fillType="CHAIR"     amount="2000" usagePerHour="250"/>
+                    <input fillType="TABLE"     amount="2000" usagePerHour="250"/>
+                    <input fillType="ARMOIRE"   amount="2000" usagePerHour="250"/>
+                    <sounds>
+                        <active template="constructibleActive"/>
+                    </sounds>
+                </state>
+
+                <state name="BUILDING_13" class="ConstructibleStateBuilding" >
+                    <mesh node="phase11" indexMin="0" indexMax="2" />
+
+                    <input fillType="BOARDS" amount="2000" usagePerHour="250"/>
+                    <input fillType="PLANKS" amount="1000" usagePerHour="250"/>
+                    <sounds>
+                        <active template="constructibleActive"/>
+                    </sounds>
+                </state>
+
+                <state name="FINALIZE" class="ConstructibleStateFinalize" >
+                    <toggleMesh node="sellingStationPreplaced"           active="false" updatePhysics="true"/> <!-- disable unload trigger -->
+                    <toggleMesh node="propsConstructionNode"             active="false" updatePhysics="true"/> <!-- disable construction fence -->
+                    <toggleMesh node="LOD1"                              active="true"  updatePhysics="true"/> <!-- enable lod1 -->
+                    <!-- <toggleMesh node="farmhouseFeatures"                 active="true"  updatePhysics="true"/> --> <!-- enable farmhouse -->
+                    <!-- <toggleMesh node="wardrobe"                          active="true"  updatePhysics="true"/> --> <!-- enable wardrobe -->
+                    <toggleMesh node="doors"                             active="true"  updatePhysics="true"/> <!-- enable doors -->
+                    <toggleMesh node="infoTrigger"                       active="false" updatePhysics="true"/> <!-- disable info trigger -->
+                    <toggleMesh node="propsFinishedNode"                 active="true"  updatePhysics="true"/> <!-- enable propsBuilding -->
+                    <toggleMesh node="propsDecoNodePreplaced01"          active="true"  updatePhysics="true"/> <!-- enable props -->
+                    <toggleHotspot index="1" isVisible="false" />
+                    <!-- <toggleHotspot index="2" isVisible="true" /> -->
+                </state>
+
+                <state name="DONE" class="ConstructibleState" isPreviewState="true"/>
+            </states>
+
+            <transitions>
+                <transition from="SETUP"       to="BUILDING_1" />
+                <transition from="BUILDING_1"  to="BUILDING_2" />
+                <transition from="BUILDING_2"  to="BUILDING_3" />
+                <transition from="BUILDING_3"  to="BUILDING_4" />
+                <transition from="BUILDING_4"  to="BUILDING_5" />
+                <transition from="BUILDING_5"  to="BUILDING_6" />
+                <transition from="BUILDING_6"  to="BUILDING_7" />
+                <transition from="BUILDING_7"  to="BUILDING_8" />
+                <transition from="BUILDING_8"  to="BUILDING_9" />
+                <transition from="BUILDING_9"  to="BUILDING_10" />
+                <transition from="BUILDING_10" to="BUILDING_11" />
+                <transition from="BUILDING_11" to="BUILDING_12" />
+                <transition from="BUILDING_12" to="BUILDING_13" />
+                <transition from="BUILDING_13" to="FINALIZE" />
+                <transition from="FINALIZE"    to="DONE" />
+            </transitions>
+        </stateMachine>
+
+        <sellingStation appearsOnStats="true" supportsExtension="false">
+            <unloadTrigger exactFillRootNode="unloadTriggerPreplaced" fillTypes="GRAVEL SAND"/>
+            <palletTrigger triggerNode="palletTriggerPreplaced" fillTypes="WOODBEAM PLANKS BOARDS CEMENT CEMENTBRICKS ROOFPLATES FURNITURE GRAVEL SAND CLAYBRICKS CHIPWOODBOARDS FLOORTILES CHAIR TABLE ARMOIRE" />
+
+            <fillType name="WOODBEAM"        priceScale="1.15" disablePriceDrop="true" supportsGreatDemand="false" />
+            <fillType name="PLANKS"          priceScale="1.15" disablePriceDrop="true" supportsGreatDemand="false" />
+            <fillType name="BOARDS"          priceScale="1.15" disablePriceDrop="true" supportsGreatDemand="false" />
+            <fillType name="CEMENT"          priceScale="1.15" disablePriceDrop="true" supportsGreatDemand="false" />
+            <fillType name="CEMENTBRICKS"    priceScale="1.15" disablePriceDrop="true" supportsGreatDemand="false" />
+            <fillType name="ROOFPLATES"      priceScale="1.15" disablePriceDrop="true" supportsGreatDemand="false" />
+            <fillType name="FURNITURE"       priceScale="1.15" disablePriceDrop="true" supportsGreatDemand="false" />
+
+            <fillType name="GRAVEL"          priceScale="1.15" disablePriceDrop="true" supportsGreatDemand="false" />
+            <fillType name="SAND"            priceScale="1.65" disablePriceDrop="true" supportsGreatDemand="false" />
+            <fillType name="CLAYBRICKS"      priceScale="1.15" disablePriceDrop="true" supportsGreatDemand="false" />
+            <fillType name="CHIPWOODBOARDS"  priceScale="1.15" disablePriceDrop="true" supportsGreatDemand="false" />
+            <fillType name="FLOORTILES"      priceScale="1.15" disablePriceDrop="true" supportsGreatDemand="false" />
+            <fillType name="CHAIR"           priceScale="1.15" disablePriceDrop="true" supportsGreatDemand="false" />
+            <fillType name="TABLE"           priceScale="1.15" disablePriceDrop="true" supportsGreatDemand="false" />
+            <fillType name="ARMOIRE"         priceScale="1.15" disablePriceDrop="true" supportsGreatDemand="false" />
+        </sellingStation>
+
+        <storage isExtension="false" fillLevelSyncThreshold="50">
+            <capacity fillType="WOODBEAM"        capacity="5500" />
+            <capacity fillType="PLANKS"          capacity="8500" />
+            <capacity fillType="BOARDS"          capacity="6500" />
+            <capacity fillType="CEMENT"          capacity="13500" />
+            <capacity fillType="CEMENTBRICKS"    capacity="3500" />
+            <capacity fillType="ROOFPLATES"      capacity="10500" />
+            <capacity fillType="FURNITURE"       capacity="6500" />
+
+            <capacity fillType="GRAVEL"          capacity="45500" />
+            <capacity fillType="SAND"            capacity="8500" />
+            <capacity fillType="CLAYBRICKS"      capacity="23500" />
+            <capacity fillType="CHIPWOODBOARDS"  capacity="10500" />
+            <capacity fillType="FLOORTILES"      capacity="5500" />
+            <capacity fillType="CHAIR"           capacity="2500" />
+            <capacity fillType="TABLE"           capacity="2500" />
+            <capacity fillType="ARMOIRE"         capacity="2500" />
+        </storage>
+    </constructible>
+
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart node="1" linkNode="propsConstructionNode" filename="placeables/sharedAssets/props/constructionProps_constructableResidentialBuildings.i3d"/>
+        <dynamicallyLoadedPart node="1" linkNode="propsFinishedNode" filename="placeables/sharedAssets/propsBuilding/propsBuilding_constructibleBuildings.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="propsDecoNodePreplaced01" filename="placeables/sharedAssets/props/props_constructableResidentialBuilding02Preplaced.i3d"/>
+        <dynamicallyLoadedPart node="7" linkNode="propsDecoNodePreplaced01" filename="placeables/sharedAssets/props/cabinetWorkbecnches.i3d"/>
+    </dynamicallyLoadedParts>
+
+    <deletedNodes>
+        <deletedNode node="sleepingTrigger" />
+        <deletedNode node="wardrobeTrigger" />
+        <deletedNode node="unloadTrigger" />
+        <deletedNode node="palletTrigger" />
+        <deletedNode node="warningStripes" />
+    </deletedNodes>
+
+    <i3dMappings>
+        <i3dMapping id="snow1" node="0>0|0|0|0" />
+        <i3dMapping id="snow2" node="0>0|0|0|1" />
+        <i3dMapping id="icicles" node="0>0|0|0|2" />
+        <i3dMapping id="baseConcrete" node="0>0|0|1" />
+        <i3dMapping id="baseConcreteUpstairs" node="0>0|0|2" />
+        <i3dMapping id="phase01" node="0>0|0|3" />
+        <i3dMapping id="phase02" node="0>0|0|4" />
+        <i3dMapping id="phase03" node="0>0|0|5" />
+        <i3dMapping id="phase04" node="0>0|0|6" />
+        <i3dMapping id="phase05" node="0>0|0|7" />
+        <i3dMapping id="phase06" node="0>0|0|8" />
+        <i3dMapping id="phase07" node="0>0|0|9" />
+        <i3dMapping id="phase08" node="0>0|0|10" />
+        <i3dMapping id="phase09" node="0>0|0|11" />
+        <i3dMapping id="phase10" node="0>0|0|12" />
+        <i3dMapping id="phase11" node="0>0|0|13" />
+        <i3dMapping id="LOD1" node="0>0|1" />
+        <i3dMapping id="doors" node="0>1" />
+        <i3dMapping id="door01Left" node="0>1|0|0" />
+        <i3dMapping id="door01Right" node="0>1|0|1" />
+        <i3dMapping id="door02Left" node="0>1|1|0" />
+        <i3dMapping id="door02Right" node="0>1|1|1" />
+        <i3dMapping id="door03" node="0>1|2" />
+        <i3dMapping id="door04" node="0>1|3" />
+        <i3dMapping id="door05" node="0>1|4" />
+        <i3dMapping id="door06" node="0>1|5" />
+        <i3dMapping id="garageGate_segment01_lod0" node="0>1|6|0|0" />
+        <i3dMapping id="door01Trigger" node="0>1|7" />
+        <i3dMapping id="door02Trigger" node="0>1|8" />
+        <i3dMapping id="door03Trigger" node="0>1|9" />
+        <i3dMapping id="door04Trigger" node="0>1|10" />
+        <i3dMapping id="door05Trigger" node="0>1|11" />
+        <i3dMapping id="door06Trigger" node="0>1|12" />
+        <i3dMapping id="garageGateTrigger" node="0>1|13" />
+        <i3dMapping id="propsConstructionNode" node="0>2|0" />
+        <i3dMapping id="propsFinishedNode" node="0>2|1" />
+        <i3dMapping id="propsDecoNodePreplaced01" node="0>2|2" />
+        <i3dMapping id="propsDecoNodePreplaced02" node="0>2|3" />
+        <i3dMapping id="farmhouseFeatures" node="0>3" />
+        <i3dMapping id="sleepingTrigger" node="0>3|0" />
+        <i3dMapping id="sleepTriggerMarker" node="0>3|1" />
+        <i3dMapping id="spawnPoint" node="0>3|2" />
+        <i3dMapping id="sleepCamera" node="0>3|3" />
+        <i3dMapping id="wardrobe" node="0>4" />
+        <i3dMapping id="wardrobeTrigger" node="0>4|0" />
+        <i3dMapping id="wardrobeTriggerMarker" node="0>4|1" />
+        <i3dMapping id="sellingStation" node="0>5|0" />
+        <i3dMapping id="unloadTrigger" node="0>5|0|0" />
+        <i3dMapping id="palletTrigger" node="0>5|0|1" />
+        <i3dMapping id="unloadTriggerAINode" node="0>5|0|2" />
+        <i3dMapping id="unloadTriggerMarker" node="0>5|0|3" />
+        <i3dMapping id="warningStripes" node="0>5|0|4" />
+        <i3dMapping id="sellingStationPreplaced" node="0>5|1" />
+        <i3dMapping id="unloadTriggerPreplaced" node="0>5|1|0" />
+        <i3dMapping id="palletTriggerPreplaced" node="0>5|1|1" />
+        <i3dMapping id="unloadTriggerAINodePreplaced" node="0>5|1|2" />
+        <i3dMapping id="unloadTriggerMarkerPreplaced" node="0>5|1|3" />
+        <i3dMapping id="warningStripesPreplaced" node="0>5|1|4" />
+        <i3dMapping id="infoTrigger" node="0>6" />
+        <i3dMapping id="clearAreaStart01" node="0>7|0" />
+        <i3dMapping id="clearAreaWidth01" node="0>7|0|0" />
+        <i3dMapping id="clearAreaHeight01" node="0>7|0|1" />
+        <i3dMapping id="clearAreaStart02" node="0>7|1" />
+        <i3dMapping id="clearAreaWidth02" node="0>7|1|0" />
+        <i3dMapping id="clearAreaHeight02" node="0>7|1|1" />
+        <i3dMapping id="levelAreaStart01" node="0>8|0" />
+        <i3dMapping id="levelAreaWidth01" node="0>8|0|0" />
+        <i3dMapping id="levelAreaHeight01" node="0>8|0|1" />
+        <i3dMapping id="levelAreaStart02" node="0>8|1" />
+        <i3dMapping id="levelAreaWidth02" node="0>8|1|0" />
+        <i3dMapping id="levelAreaHeight02" node="0>8|1|1" />
+        <i3dMapping id="paintAreaStart01" node="0>9|0" />
+        <i3dMapping id="paintAreaWidth01" node="0>9|0|0" />
+        <i3dMapping id="paintAreaHeight01" node="0>9|0|1" />
+        <i3dMapping id="indoorAreaStart01" node="0>10|0" />
+        <i3dMapping id="indoorAreaWidth01" node="0>10|0|0" />
+        <i3dMapping id="indoorAreaHeight01" node="0>10|0|1" />
+        <i3dMapping id="indoorAreaStart02" node="0>10|1" />
+        <i3dMapping id="indoorAreaWidth02" node="0>10|1|0" />
+        <i3dMapping id="indoorAreaHeight02" node="0>10|1|1" />
+        <i3dMapping id="indoorAreaStart03" node="0>10|2" />
+        <i3dMapping id="indoorAreaWidth03" node="0>10|2|0" />
+        <i3dMapping id="indoorAreaHeight03" node="0>10|2|1" />
+        <i3dMapping id="indoorAreaStart04" node="0>10|3" />
+        <i3dMapping id="indoorAreaWidth04" node="0>10|3|0" />
+        <i3dMapping id="indoorAreaHeight04" node="0>10|3|1" />
+        <i3dMapping id="testAreaStart01" node="0>11|0" />
+        <i3dMapping id="testAreaEnd01" node="0>11|0|0" />
+        <i3dMapping id="testAreaStart02" node="0>11|1" />
+        <i3dMapping id="testAreaEnd02" node="0>11|1|0" />
+        <i3dMapping id="testAreaStart01Preplaced" node="0>11|2" />
+        <i3dMapping id="testAreaEnd01Preplaced" node="0>11|2|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart01" node="0>12|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd01" node="0>12|0|0" />
+    </i3dMappings>
+</placeable>

@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <texts>
+        <!-- Placeable Objects and Shop Items -->
+        <text name="placeableObject_preplacedMapObject" text="Размещаемые объекты" />
+        <text name="placeableObject_cowBarnSmall" text="Коровник" />
+        <text name="placeableObject_cowBarnSmallVector" text="Коровник с роботом-кормилкой" />
+        <text name="placeableObject_cowBarnSmallNoPasture" text="Коровник (без пастбища)" />
+        <text name="placeableObject_cowBarnSmallNoPastureVector" text="Коровник с роботом-кормилкой (бещ пастбища)" />
+        <text name="placeableObject_cowBarnBig" text="Коровник (большой)" />
+        <text name="placeableObject_cowBarnBigVector" text="Большой коровник с роботом-кормилкой" />
+        <text name="placeableObject_cowBarnBigNoPasture" text="Большой коровник без пастбища" />
+        <text name="placeableObject_cowBarnBigNoPastureVector" text="Большой коровник с роботом-кормилкой без пастбища" />
+        <text name="placeableObject_cow1" text="Коровник 1 - Штерусы" />
+        <text name="placeableObject_cow2" text="Коровник 2 - Штерусы" />
+        <text name="placeableObject_animalBarnHeiferStablePreplaced" text="Телятник - Штерусы" />
+        <text name="placeableObject_animalBarnCowYoungShelter" text="Навес для телят" />
+        <text name="placeableObject_animalBarnCowYoungShelterPreplaced" text="Навес для телят - Штерусы" />
+        <text name="placeableObject_calfHutSingle" text="Будка для телят - одноместный" />
+        <text name="placeableObject_calfHutGroupRight" text="Будка для телят-групповая (ориентация справа)" />
+        <text name="placeableObject_calfHutGroupLeft" text="Будка для телят-групповая (ориентация слева)" />
+        <text name="placeableObject_horse1" text="Конюшня- Штерусы" />
+        <text name="placeableObject_chicken1" text="Курятник- Ланкар" />
+        <text name="placeableObject_pig1" text="Свинарник - Штерусы" />
+        <text name="placeableObject_pig2" text="Свинарник 2 - Кочин" />
+        <text name="placeableObject_pig3" text="Свинарник 3 - Кочин" />
+        <text name="placeableObject_sheep1" text="Овчарня - Ланкар " />
+        <text name="placeableObject_coveredMultiBunkerSilo1" text="Накрытый многосекционный бункерный силос 1" />
+        <text name="placeableObject_coveredMultiBunkerSilo2" text="Накрытый многосекционный бункерный силос 2 " />
+        <text name="placeableObject_bgaBunkerSilo" text="Бункер БГА" />
+        <text name="placeableObject_bunkerSilo" text="Бункер" />
+        <text name="placeableObject_compostSilo" text="Бункер для  компоста" />
+        <text name="placeableObject_farmGatehouse" text="Проходная фермы" />
+        <text name="placeableObject_farmGatehouseWithWeight" text="Проходная фермы с весовой" />
+        <text name="placeableObject_farmOfficeBuilding" text="Фермерский дом с мастерской" />
+        <text name="placeableObject_fuelTank" text="Топливный бак" />
+        <text name="placeableObject_grainStorage" text="Мельница" />
+        <text name="placeableObject_grainStoragePreplaced" text="Мельница- Штерусы" />
+        <text name="placeableObject_liquidFertilizerAndHerbicideTanks" text="Баки жидких удобрений и гербицидов" />
+        <text name="placeableObject_milkingParlor" text="Доильный зал" />
+        <text name="placeableObject_easyShed01WithWalls" text="Навес со стенами" />
+        <text name="placeableObject_manureHeapMainFarm" text="Навозная куча - Штерусы" />
+        <text name="placeableObject_manureHeapPigFarm" text="Навозная куча - Кочин" />
+        <text name="placeableObject_manureHeapSheepFarm" text="Навозная яма - Ланкар" />
+        <text name="placeableObject_manureStorageSpotLower" text="Место хранения навоза - нижний уровень" />
+        <text name="placeableObject_manureStorageSpotUpper" text="Место хранения навоза - верхний уровень" />
+        <text name="placeableObject_manureHeapSmall" text="Навозная куча - маленькая " />
+        <text name="placeableObject_manureHeapSmallExtension" text="Навозная куча - маленькая (расширение)" />
+        <text name="placeableObject_manureHeapMedium" text="Средняя навозная куча" />
+        <text name="placeableObject_manureHeapMediumExtension" text="Навозная куча - средняя (расширение)" />
+        <text name="placeableObject_manureHeapLarge" text="Большая навозная куча" />
+        <text name="placeableObject_manureHeapLargeExtension" text="Навозная куча - большое (расширение)" />
+        <text name="placeableObject_repairRamp" text="Эстакада" />
+        <text name="placeableObject_siloPF" text="Зерновий силос - Кочин" />
+        <text name="placeableObject_siloSF" text="Зерновий силос- Ланкар" />
+        <text name="placeableObject_baleShed" text="Навес для тюков" />
+        <text name="placeableObject_consumablesStorage" text="Склад расходных материалов" />
+        <text name="placeableObject_hall1" text="Навес и склад для техники" />
+        <text name="placeableObject_hall2" text="Комплекс навесов и складов для техники" />
+        <text name="placeableObject_vehicleShelter1" text="Навес для техники-закрытый" />
+        <text name="placeableObject_vehicleShelter2" text="Гараж - открыт, большой" />
+        <text name="placeableObject_vehicleShelter3" text="Гараж - открыт, маленький" />
+        <text name="placeableObject_palletRack" text="Стелаж для паллет" />
+        <text name="placeableObject_waterTower" text="Водонапорная башня" />
+        <text name="placeableObject_calfArea" text="Здание для ухода за телятами" />
+        <text name="placeableObject_animalPigFence" text="Загон для свиней" />
+        <text name="placeableObject_animalSheepFence" text="Загон для овец" />
+        <text name="placeableObject_animalCowFence" text="Загон для коров" />
+        <text name="placeableObject_oldChainlinkFence" text="Старый забор рабица" />
+        <text name="placeableObject_metalGridFence" text="Рабица" />
+        <text name="placeableObject_metalGridFenceBase" text="Металлический решетчатый забор (с основанием)" />
+        <text name="placeableObject_concreteFence" text="Бетонный забор" />
+        <text name="placeableObject_chainlinkFenceBig" text="Большой сетчатый забор" />
+        <text name="placeableObject_chainlinkFenceBigBase" text="Большой сетчатый забор (с основанием)" />
+        <text name="placeableObject_constructionFence" text="Строительный забор" />
+        <text name="placeableObject_metalGate" text="Металлические ворота" />
+        <text name="placeableObject_metalGateDoorLeft" text="Металлические ворота с калиткой (слева)" />
+        <text name="placeableObject_metalGateDoorRight" text="Маталлические ворота с калиткой (справа)" />
+        <text name="placeableObject_floodLightPole" text="Опора прожекторного освещения" />
+        <text name="placeableObject_streetLight" text="Уличный фонарь" />
+        <text name="placeableObject_streetLightSmall" text="Маленький уличный фонарь" />
+        <text name="placeableObject_poleLamp" text="Фонарь на столбе" />
+        <text name="placeableObject_sleepTrigger" text="Триггер сна" />
+        <text name="placeableObject_sleepTriggerDoormat" text="Триаггер сна с ковриком" />
+        <text name="placeableObject_wardrobeTrigger" text="Триггер гардероба" />
+        <text name="shopItem_decoFoliageGrassMedium" text="Трава средняя" />
+        <text name="shopItem_decoFoliageGrassSmall" text="Трава маленькая" />
+        <text name="shopItem_decoFoliageGrassCut" text="Cкошенная трава" />
+        <text name="shopItem_decoFoliageFlowerWhite" text="Белый цветок" />
+        <text name="shopItem_decoFoliageFlowerLavender" text="Лаванда" />
+        <text name="shopItem_decoFoliageFlowerYellow" text="Жёлтый цветок" />
+        <text name="shopItem_decoFoliageFlowerBlue" text="Синий цветок" />
+        <text name="shopItem_decoFoliageWeedSmall" text="Сорняк маленький" />
+        <text name="shopItem_decoFoliageWeedSmallRumex" text="Сорняк - щавель малый" />
+        <text name="shopItem_decoFoliageWeedApera" text="Сорняк - Apera" />
+        <text name="shopItem_decoFoliageWeedChaerophyllum" text="Сорняк - Аэрофиллум" />
+        <text name="shopItem_decoFoliageWeedChenopodium" text="Сорняк - Хеноподиум" />
+        <text name="shopItem_decoFoliageWeedCirsium" text="Сорняк - Цирций" />
+        <text name="shopItem_decoFoliageWeedPapaverRhoeas" text="Сорняк - Папаверраис" />
+        <text name="shopItem_decoFoliageWeedRumex" text="Сорняк - щавель" />
+        <text name="shopItem_groundFoliageBranchesBig" text="Большие ветви" />
+        <text name="shopItem_groundFoliageBranchesSmall" text="Маленькие ветви" />
+        <text name="shopItem_groundFoliageBranchesDry" text="Сухие ветви" />
+        <text name="shopItem_groundFoliageMushroomChanterelle" text="Гриб лисичка" />
+        <text name="shopItem_groundFoliageMushroomBoletus" text="Белый гриб" />
+        <text name="shopItem_groundFoliageMushroomWhiteTip" text="Гриб белый наконечник" />
+        <text name="shopItem_groundFoliageMushroomFlyCap" text="Гриб - мухомор" />
+        <text name="shopItem_groundFoliageCoverFoliage" text="Покровная растительность" />
+        <text name="shopItem_groundFoliageThimbleberry" text="Морошка" />
+        <text name="shopItem_groundFoliageMaidenFern" text="Папоротник" />
+        <text name="shopItem_groundFoliageStingingNettle" text="Крапива" />
+        <text name="shopItem_forestPlantsClover" text="Клевер" />
+        <text name="shopItem_forestPlantsStarflower" text="Звездчатка" />
+        <text name="shopItem_forestPlantsBunchberry" text="Дерен" />
+        <text name="shopItem_forestPlantsSalmonberryBush" text="Куст малины лососевой" />
+        <text name="shopItem_forestPlantsStarryFalseSolomonSeal" text="Звездчатая кочка ненастоящая" />
+        <text name="shopItem_forestPlantsSwordFern" text="Папоротник мечевидный" />
+        <text name="shopItem_forestPlantsDeerFern" text="Олений папоротник" />
+        <text name="shopItem_forestPlantsGrass" text="Лесная трава" />
+        <text name="shopItem_waterPlantsTyphaLatifoliaSmall" text="Рогоз широколистный (малый)" />
+        <text name="shopItem_waterPlantsTyphaLatifoliaMedium" text="Рогоз широколистный (средний)" />
+        <text name="shopItem_waterPlantsTyphaLatifoliaLarge" text="Рогоз широколистный (большой))" />
+        <text name="shopItem_waterPlantsMiscanthusSinensisSmall" text="Китайский мискантус (маленький)" />
+        <text name="shopItem_waterPlantsMiscanthusSinensisMedium" text="Китайский мискантус (средний)" />
+        <text name="shopItem_waterPlantsMiscanthusSinensisLarge" text="Китайский мискантус (большой)" />
+        <text name="shopItem_waterPlantsStipaTenuissimaSmall" text="Ковыль тонкий (маленький)" />
+        <text name="shopItem_waterPlantsStipaTenuissimaLarge" text="Ковыль тонкий (большой)" />
+        <text name="shopItem_paintableFieldPlowed" text="Вспаханное поле" />
+        <text name="shopItem_paintableFieldCultivated" text="Культивированное поле" />
+        <text name="shopItem_paintableFieldRidged" text="Поле с грядками" />
+
+        <!-- Function Texts -->
+        <text name="function_roofSolarPanelsOption" text="На крыше этого здания есть возможность установить солнечные панели. Цена за панель: 265 $. Доход с каждой панели в месяц: 21,6 $ (при благоприятных погодных условиях)." />
+        <text name="function_heiferStable" text="Это укрытие предназначено для телок. Здесь они растут, а затем их следует перевести в другой коровник. Коровы в этом здании не дают молоко и жидкий навоз, но  производят навоз." />
+        <text name="function_cowYoungShelter" text="Это укрытие предназначено для телят или нетелей. Здесь они могут подрасти, а затем их следует перевести в другой коровник. Коровы в этом укрытии не дают молока и жидкого навоза, но они все равно производят  твёрдый навоз." />
+        <text name="function_calfHut" text="Эта будка предназначена только для телят. Здесь они растут и впоследствии должны быть переведены в другой коровник. Молоко и жидкий навоз не производятся — только твердый навоз. Нуждается в ежедневном ручном уходе!" />
+        <text name="function_bunkerSiloCC" text="Этот бункер для силоса можно заполнять сечкой, травой, люцерной и клевером. После трамбовки и накрытия содержимое превращается в силос. Примечание: при использовании мода Maize Plus функционал соответствует стандартам M+" />
+        <text name="function_grainStorage" text="Это многофункциональный комплекс располагает большим складским помещением, позволяющим хранить урожай на полу или перед переработкой, а так же для техники. Измельчитель позволяет готовить корм для ваших животных. Зерно также можно хранить в силосах большой емкости." />
+        <text name="function_fillableLiquidFertilizerAndHerbicideTanks" text="Эти емкости могут быть заполнены жидкими удобрениями и гербицидами." />
+        <text name="function_baleStorageCC" text="Здание для хранения тюков." />
+        <text name="function_palletStorage" text="Здание для хранения поддонов" />
+        <text name="function_orchard" text="Сад происзводит  фрукты. Требуется вода, жидкие удобрения и компост." />
+        <text name="function_greenhouseAdvanced" text="Современная теплица позволяет выращивать овощи быстрее, но требует большего ухода - требуется вода, жидкие удобрения и компост." />
+        <text name="function_compostSilo" text="Бункер для компоста можно заполнить органическими отходами. После уплотнения и закрывания бункера, содержимое превращается в компост." />
+        <text name="function_compost" text="Компост необходим в садах и теплицах. Может также использоваться в качестве удобрения  на поле." />
+        <text name="function_heapSpawnerStoneCC" text="Камни можно бесплатно получитьв этом здании. Производительность составляет 3000 единиц камня в час."/>
+        <text name="function_heapSpawnerLimestone" text="Известняк можно бесплатно забрать в этом здании. Производительность составляет 2800 единиц известняка в час."/>
+        <text name="function_heapSpawnerClay" text="Глину можно бесплатно получить в этом здании. Производительность составляет 1600 единиц глины в час."/>
+        <text name="function_heapSpawnerIronOre" text="Железную руду можно бесплатно получить из этого здания. Производит 800 единиц железной руды в час."/>
+        <text name="function_rentalHouse" text="Этот дом предназначен для сдачи в аренду и приносит прибыль в размере:"/>
+        <text name="function_rentalHouse01Income" text="2 500 $ в месяц"/>
+        <text name="function_rentalHouse02Income" text="3,000 $ в месяц"/>
+        <text name="function_rentalHouse03Income" text="2,000 $ в месяц"/>
+        <text name="function_chainlinkFenceBigGatePlacement" text="ПРИМЕЧАНИЕ ПО РАЗМЕЩЕНИЮ: Убедитесь, что ворота установлены параллельно забору и на ровной местности для придания эстетического вида." />
+        <text name="function_decorativeGrass" text="Эта трава не растет! Она остается на текущем этапе - служит декоративной травой." />
+        <text name="function_decorativeGardenCrops" text="Это декоративная садовая культура, она не функциональна. Она меняет внешний вид в зависимости от сезона или исчезает в определенное время, например, зимой. (В зависимости от того, когда она была нарисована, сезонные изменения могут начаться в следующем году. Также зависит от того, используете ли вы сезоны или нет. Если сезонное увеличение отключено, внешний вид игры меняется каждый игровой день)" />
+        <text name="function_paintableField" text="Создает почву для выращивания сельскохозяйственных культур." />
+
+        <!-- Fill Types -->
+        <text name="fillType_decoGardenFoliage" text="Декоративные садовые культуры" />
+        <text name="fillType_rye" text="Рожь" />
+        <text name="fillType_mustard" text="Горчица" />
+        <text name="fillType_mowedCrop" text="Скошенная трава" />
+        <text name="fillType_alfalfa" text="Люцерна" />
+        <text name="fillType_alfalfaHay" text="Сено из люцерны" />
+        <text name="fillType_alfalfaSilo" text="Сенах из люцерны" />
+        <text name="fillType_alfalfaSilage" text="Силос з люцерни" />
+        <text name="fillType_clover" text="Клевер" />
+        <text name="fillType_cloverHay" text="Сено из клевера" />
+        <text name="fillType_cloverSilo" text="Сенаж из клевера" />
+        <text name="fillType_cloverSilage" text="Силос из клевера" />
+        <text name="fillType_mustardProcessed" text="Горчица (обработанная)" />
+        <text name="fillType_apple" text="Яблоки" />
+        <text name="fillType_pear" text="Груши" />
+        <text name="fillType_apricot" text="Абрикосы" />
+        <text name="fillType_plum" text="Сливы" />
+        <text name="fillType_greenPepper" text="Зеленый перец" />
+        <text name="fillType_cucumber" text="Огурцы" />
+        <text name="fillType_watermelon" text="Дыня" />
+        <text name="fillType_appleJuice" text="Яблочный джем" />
+        <text name="fillType_apricotJam" text="Абрикосовый джем" />
+        <text name="fillType_plumJam" text="Сливовый джем" />
+        <text name="fillType_ketchup" text="Кетчуп" />
+        <text name="fillType_strawberryJuice" text="Клубничный сок" />
+        <text name="fillType_pickles" text="Маринованные огурцы" />
+        <text name="fillType_organicWaste" text="Органические отходы" />
+        <text name="fillType_compost" text="Компост" />
+        <text name="fillType_leather" text="Кожа" />
+        <text name="fillType_clayBrick" text="Глиняный кирпич" />
+        <text name="fillType_clayRoofPlate" text="Глинянная черепица" />
+        <text name="fillType_chipwoodBoards" text="ДСП" />
+        <text name="fillType_blastFurnaceSlag" text="Доменный шлак" />
+        <text name="fillType_limestone" text="Известняк" />
+        <text name="fillType_clay" text="Глина" />
+        <text name="fillType_sand" text="Песок" />
+        <text name="fillType_gravel" text="Гравий" />
+        <text name="fillTypeGroup_alfClo" text="Люцерна / клевер" />
+        
+        <!-- ProductionPoints -->
+        <text name="productionPoint_appleOrchard" text="Яблоневый сад" />
+        <text name="productionPoint_pearOrchard" text="Грушевый сад" />
+        <text name="productionPoint_apricotOrchard" text="Абрикосовый сад" />
+        <text name="productionPoint_plumOrchard" text="Сливовый сад" />
+        <text name="productionPoint_greenhouseSmallAdvanced" text="Небольшая теплица - улучшенная" />
+        <text name="productionPoint_greenhouseSmallAdvanced_watermelon" text="Небольшая теплица - улучшенная (арбуз)" />
+        <text name="productionPoint_greenhouseMediumAdvanced" text="Средняя теплица-улучшенная " />
+        <text name="productionPoint_greenhouseMediumAdvanced_watermelon" text="Средняя теплица - улучшенная (арбуз)" />
+        <text name="productionPoint_greenhouseLargeAdvanced" text="Большая теплица - улучшенная" />
+        <text name="productionPoint_greenhouseLargeAdvanced_watermelon" text="Большая теплица - улучшенная (арбуз)" />
+        <text name="productionPoint_fruitVegetableFactory" text="Фабрика по переработке фруктов и овощей" />
+        <text name="productionPoint_foodProcessingPlant" text="Пищевое перерабатывающее предприятие" />
+        <text name="productionPoint_sawMill" text="Лесопилка" />
+        <text name="productionPoint_fishFarmPond" text="Рыболовный пруд" />
+        <text name="productionPoint_woodArtist" text="Столяр" />
+        <text name="productionPoint_woodArtist_playgroundMaker" text="Столяр - Изготовление детской площадки" />
+        <text name="productionPoint_quarryStone" text="Карьер" />
+        <text name="productionPoint_quarryLimestone" text="Известковый карьер" />
+        <text name="productionPoint_quarryClay" text="Глиняный карьер" />
+        <text name="productionPoint_stoneCrusher" text="Дробилка камня" />
+        <text name="productionPoint_limestoneCrusher" text="Дробилка известняка" />
+        <!-- ProductionPoints - texts -->
+        <text name="productionPoint_grainShredder_pigFood1" text="Корм для свиней (рецепт 1)" />
+        <text name="productionPoint_grainShredder_pigFood2" text="Корм для свиней (рецепт 2)" />
+        <text name="productionPoint_fillType_friedOnion" text="Жареный лук" />
+        <text name="productionPoint_fillType_onionBag" text="Лук (упакованный)" />
+        <text name="productionPoint_fillType_onionSalt" text="Луковая соль" />
+        <text name="productionPoint_fillType_onionSoup" text="Луковый суп" />
+        <text name="productionPoint_fillType_fishFood" text="Корм для рыб" />
+        <text name="productionPoint_fillType_trout" text="Форель" />
+        <text name="productionPoint_fillType_troutYoung" text="Молодая форель" />
+
+        <!-- Production Point Pallets -->
+        <text name="pallet_applesBoxPallet" text="Поддон с яблоками" />
+        <text name="pallet_pearsBoxPallet" text="Поддон с грушами" />
+        <text name="pallet_apricotsBoxPallet" text="Поддон с абрикосами" />
+        <text name="pallet_plumsBoxPallet" text="Поддон со сливами" />
+        <text name="pallet_greenPepperBoxPallet" text="Поддон с зелёным перцем" />
+        <text name="pallet_cucumbersBoxPallet" text="Подднон с огурцами" />
+        <text name="pallet_onionsBoxPallet" text="Поддон с луком" />
+        <text name="pallet_watermelonBoxPallet" text="Поддон с арбузами" />
+        <text name="pallet_appleJuiceBoxPallet" text="Поддон с ялочным соком" />
+        <text name="pallet_apricotJamBoxPallet" text="Поддон с абрикосовым джемом" />
+        <text name="pallet_plumJamBoxPallet" text="Поддон со сливовым джемом " />
+        <text name="pallet_ketchupBoxPallet" text="Поддон с кетчупом" />
+        <text name="pallet_strawberryJuiceBoxPallet" text="Поддон с  клубничным соком" />
+        <text name="pallet_picklesBoxPallet" text="Паллет с маринованными огурцами" />
+        <text name="pallet_leathersPallet" text="Поддон с кожей" />
+        <text name="pallet_clayBricksPallet" text="Поддон с глиняным кирпичом" />
+        <text name="pallet_clayRoofPlatesPallet" text="Поддон с глиняной черепицей" />
+        <text name="pallet_chipwoodBoardsStackPallet" text="Поддон с ДСП" />
+
+        <!--Constructibles-->
+        <text name="constructable_rentalHouse01" text="Арендуемый дом 1" />
+        <text name="constructable_rentalHouse02" text="Арендуемый дом 2" />
+        <text name="constructable_rentalHouse03" text="Арендуемый дом 3" />
+        <text name="constructable_residentialBuilding01Preplaced01" text="Строительство жилого дома - Ланкар" />
+        <text name="constructable_residentialBuilding02Preplaced01" text="Строительство жилого дома - Штерусы" />
+        <text name="constructable_residentialBuilding02Preplaced02" text="Строительство жилого дома - Кочин		" />
+
+        <!-- Selling Stations -->
+        <text name="sellingStation_vehicleShop" text="Сервис и продажа техники Luca Motors" />
+        <text name="sellingStation_constructionMaterialTrader" text="Продажа строительных материалов" />
+        <text name="sellingStation_containerTrader" text="Продавец контейнеров" />
+        <text name="sellingStation_smallFarmer" text="Ферма Кэти" />
+        <text name="sellingStation_trainOtherTownSK" text="Žilina" />
+        <text name="sellingStation_railroadSiloBulk" text="Железнодорожный бункер - большой объем" />
+        <text name="sellingStation_railroadSiloGrain" text="Железнодорожный бункер для хранения зерна" />
+        <text name="openingHours_4-0" text="Часы работы: с 04: 00 до 00: 00." />
+        <text name="openingHours_5-23" text="Часы работы: с 05: 00 до 23: 00." />
+        <text name="openingHours_6-18" text="Часы работы: с 06: 00 до 18: 00." />
+        <text name="openingHours_6-22" text="Часы работы: с 06: 00 до 22: 00." />
+        <text name="openingHours_6-0" text="Часы работы: с 06: 00 до 00: 00." />
+
+        <!-- Buying Stations -->
+        <text name="buyingStation_farmSupplies" text="Поставщик фермерских товаров" />
+        <text name="buyingStation_creekWater" text="Вода из ручья" />
+        <text name="buyingStation_smallGasStation" text="Небольшая заправочная станция" />
+        <text name="buyingStation_horseRanch" text="Ранчо" />
+        <text name="buyingStation_chargingStationBiogasplant" text="Электрическая зарядная станция - биогазовая установка" />
+        <text name="buyingStation_biogasStationBiogasplant" text="Биометановая станция - биогазовая установка" />
+        <text name="buyingStation_chargingStation01GasStation01" text="Электрическая зарядная станция - заправка" />
+        <text name="buyingStation_chargingStation02GasStation02" text="Электрическая зарядная станция - маленькая заправка" />
+        <text name="buyingStation_biogasStation01GasStation01" text="Биометановая станция - заправка" />
+
+        <!--Income Buildings-->
+        <text name="incomeBuilding_horseRanch" text="Ранчо" />
+        <text name="incomeBuilding_pharmacy" text="Аптека" />
+        <text name="incomeBuilding_restaurantSterusy" text="Ресторан «Святой Пётр»" />
+        <text name="incomeBuilding_restaurantLancar" text="Пиццерия «Hungry Oven»" />
+        <text name="incomeBuilding_pubKocin" text="Паб «The Catman»" />
+        <text name="incomeBuilding_footballFieldSterusy" text="Футбольное поле - Штерусы" />
+        <text name="incomeBuilding_footballFieldKocín" text="Футбольное поле - Кочин" />
+
+        <!-- Animations -->
+        <text name="action_hideRoof" text="Скрытая крыша" />
+        <text name="action_unhideRoof" text="Показать крышу" />
+        <text name="action_openInspectionPit" text="Открыть смотровую яму" />
+        <text name="action_closeInspectionPit" text="Закрыть смотровую яму" />
+        <text name="action_disableElectricityPoleCols" text="Отключить коллизии опор низковольтных линий на полях" />
+        <text name="action_enableElectricityPoleCols" text="Включить коллизии опор низковольтных линий на полях" />
+        <text name="action_configureObjectStorageOff" text="Отключите автоматическое хранение объектов. ВНИМАНИЕ: перед переключением режима очистите хранилище" />
+        <text name="action_configureObjectStorageOn" text="Включите автоматическое хранение объектов. ВНИМАНИЕ: перед переключением режима очистите хранилище" />
+        <text name="action_heiferStableAddPoles" text="Добавить опоры крыши. ПРИМЕЧАНИЕ: Используйте в том случае, если вы продали бункер для силоса, к которому прикреплен этот сарай." />
+        <text name="action_heiferStableRemovePoles" text="Убрать опоры крыши. Примечание: Используйте, если еще есть бункер, к которому пристроен этот сарай.." />
+        <text name="action_moveFenceClean" text="Переместить забор в положение для очистки" />
+        <text name="action_moveFenceBack" text="Вернуть забор в нормальное положение" />
+        <text name="action_ladderUp" text="Лестница: вверх" />
+        <text name="action_ladderDown" text="Лестница: вниз" />
+
+        <!-- Colors -->
+        <text name="color_buildingSpecificDefault" text="LIZARD стандартный цвет здания" />
+        <text name="color_lizardRed" text="LIZARD Красный" />
+        <text name="color_lizardDarkRed" text="LIZARD Бордовый" />
+        <text name="color_lizardOrange" text="LIZARD Оранжевый" />
+        <text name="color_lizardBrown" text="LIZARD Коричневый" />
+        <text name="color_lizardYellow" text="LIZARD Жёлтый" />
+        <text name="color_lizardBrightYellow" text="LIZARD Ярко-желтый" />
+        <text name="color_lizardLimeGreen" text="LIZARD Зеленый лайм" />
+        <text name="color_lizardFarmBrightGreen" text="LIZARD фермерский ярко-зеленый" />
+        <text name="color_lizardBrightGreen" text="LIZARD Ярко-зеленый" />
+        <text name="color_lizardGreen" text="LIZARD Зелёный" />
+        <text name="color_lizardFarmGreen" text="LIZARD Зеленый фермский" />
+        <text name="color_lizardDarkGreen" text="LIZARD Тёмно-зеленый" />
+        <text name="color_lizardTurquoise" text="LIZARD Бирюзовый" />
+        <text name="color_lizardSkyBlue" text="LIZARD Небесно-голубой" />
+        <text name="color_lizardLizardBrightBlue" text="LIZARD Ярко-синий" />
+        <text name="color_lizardBlue" text="LIZARD Синий" />
+        <text name="color_lizardOceanBlue" text="LIZARD Океанически-синий" />
+        <text name="color_lizardDarkBlue" text="LIZARD Тёмно-синий" />
+        <text name="color_lizardPurple" text="LIZARD Фиолетовый" />
+        <text name="color_lizardBrightPurple" text="LIZARD Ярко-фиолетовый" />
+        <text name="color_lizardPink" text="LIZARD Розовый" />
+        <text name="color_lizardBrightPink" text="LIZARD Ярко-розовый" />
+
+        <!-- AI Helpers -->
+        <text name="aiHelperNameA" text="Лука" />
+        <text name="aiHelperNameB" text="Доминика" />
+        <text name="aiHelperNameC" text="Мартин" />
+        <text name="aiHelperNameD" text="София" />
+        <text name="aiHelperNameE" text="Станислав" />
+        <text name="aiHelperNameF" text="Эмма" />
+        <text name="aiHelperNameG" text="Патрик" />
+        <text name="aiHelperNameH" text="Лаура" />
+        <text name="aiHelperNameI" text="Давид" />
+        <text name="aiHelperNameJ" text="Кэти" />
+
+        <!-- Ground Types -->
+        <text name="groundType_asphaltDusty" text="Пыльный асфальт"/>
+        <text name="groundType_asphaltCracks" text="Потрескавшийся асфальт"/>
+        <text name="groundType_asphaltCracksDirt" text="Грязный потрескавшийся асфальт"/>
+        <text name="groundType_asphaltDirt" text="Грязный асфальт"/>
+        <text name="groundType_concreteDark" text="Темный бетон"/>
+        <text name="groundType_concreteDirty" text="Грязный бетон"/>
+        <text name="groundType_panel" text="Плита"/>
+        <text name="groundType_panelDamaged" text="Поврежденная плита"/>
+        <text name="groundType_panelDirt" text="Грязная плита"/>
+        <text name="groundType_pavement" text="Тротуар"/>
+        <text name="groundType_pavementHTiles" text="Тротуар - H-образная плитка"/>
+        <text name="groundType_pavementGrass" text="Травяная брусчатка" />
+        <text name="groundType_vehicleMud" text="Следы шин в грязи"/>
+        <text name="groundType_vehicleMudPuddle" text="Следы шин в грязи с лужами"/>
+        <text name="groundType_mud" text="Грязь"/>
+        <text name="groundType_riverBed" text="Русло реки"/>
+        <text name="groundType_grassTown" text="Луг"/>
+        <text name="groundType_grassLeaves" text="Трава с листьями"/>
+        <text name="groundType_gravelPathway" text="Гравийная дорожка"/>
+        <text name="groundType_gravelDirt" text="Почва с гравием"/>
+        <text name="groundType_gravelDirtBlend" text="Грязный гравий"/>
+        <text name="groundType_gravelMoss" text="Гравий с мхом"/>
+        <text name="groundType_forestNeedels" text="Лесная почва с иголками"/>
+        <text name="groundType_forestRoots" text="Лесная почва с корнями"/>
+        <text name="groundType_rockLight" text="Светлый камень"/>
+        <text name="groundType_rockDark" text="Темный камень"/>
+
+        <!-- Collectibles -->
+        <text name="collectible_cc_all_cow" text="Вы нашли всех 10 коров! Отправляйтесь в свою комнату в административном здании фермы, кое-что изменилось!" />
+        <text name="collectible_cc_all_harvester" text="Вы нашли все 10 комбайнов! Отправляйтесь в свою комнату в административном здании фермы, что-то изменилось!" />
+        <text name="collectible_cc_all_horse" text="Вы нашли всех 10 лошадей! Отправляйтесь в свою комнату в административном здании фермы, кое-что изменилось!" />
+        <text name="collectible_cc_all_pig" text="Вы нашли всех 10 свиней! Отправляйтесь в свою комнату в административном здании фермы, кое-что изменилось!" />
+        <text name="collectible_cc_all_plow" text="Вы нашли все 10 плугов! Отправляйтесь в свою комнату в административном здании фермы, кое-что изменилось!" />
+        <text name="collectible_cc_all_seeder" text="Вы нашли все 10 сеялок! Отправляйтесь в свою комнату в административном здании фермы, кое-что изменилось!" />
+        <text name="collectible_cc_all_sheep" text="Вы нашли всех 10 овец! Отправляйтесь в свою комнату в административном здании фермы, кое-что изменилось!" />
+        <text name="collectible_cc_all_tractor" text="Вы нашли все 10 тракторов! Отправляйтесь в свою комнату в административном здании фермы, кое-что изменилось!" />
+        <text name="collectible_cc_all_trailer" text="Вы нашли все 10 прицепов! Отправляйтесь в свою комнату в административном здании фермы, кое-что изменилось!" />
+        <text name="collectible_cc_all_waterTrailer" text="Вы нашли все 10 прицепов-бочек! Отправляйтесь в свою комнату в административном здании фермы, кое-что изменилось!" />
+    </texts>
+    <elements>
+        <e k="collectible_cc_cow" v="Вы нашли корову! Осталось найти еще несколько коров." tag="format"/>
+        <e k="collectible_cc_harvester" v="Вы нашли комбайн! Осталось найти еще несколько комбайнов." tag="format"/>
+        <e k="collectible_cc_horse" v="Вы нашли лошадь! Осталось найти еще несколько лошадей." tag="format"/>
+        <e k="collectible_cc_pig" v="Вы нашли свинью! Осталось найти еще несколько свиней." tag="format"/>
+        <e k="collectible_cc_plow" v="Вы нашли плуг! Осталось найти еще несколько плугов." tag="format"/>
+        <e k="collectible_cc_seeder" v="Вы нашли сеялку! Осталось найти еще несколько сеялок." tag="format"/>
+        <e k="collectible_cc_sheep" v="Вы нашли овцу! Осталось найти еще несколько овец." tag="format"/>
+        <e k="collectible_cc_tractor" v="Вы нашли трактор! Осталось найти еще несколько тракторов." tag="format"/>
+        <e k="collectible_cc_trailer" v="Вы нашли прицеп! Осталось найти еще несколько прицепов." tag="format"/>
+        <e k="collectible_cc_waterTrailer" v="Вы нашли прицеп-бочку! Есть еще несколько прицепов-бочек, которые можно найти." tag="format"/>
+    </elements>
+</l10n>

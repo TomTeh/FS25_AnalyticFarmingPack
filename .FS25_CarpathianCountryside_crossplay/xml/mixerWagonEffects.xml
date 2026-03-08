@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<motionPathEffects xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../shared/xml/schema/mapMotionPathEffects.xsd">
+    <motionPathEffect effectClass="TypedMotionPathEffect" effectType="MIXERWAGON" filename="effects/mixerWagon/mixerWagon.i3d">
+        <effectGeneration rootNode="0|0"/>
+        <typeDefinition fillTypes="GRASS_WINDROW DRYGRASS_WINDROW ALFALFA_WINDROW DRYALFALFA_WINDROW" speedScale="1.4"/>
+
+        <effectMeshes>
+            <effectMesh node="0|0|0" numRows="8"  rowLength="15" skipPositions="0" boundingBox="7 4 4"/>
+            <effectMesh node="0|0|1" numRows="8"  rowLength="30" skipPositions="0" boundingBox="7 4 4"/>
+        </effectMeshes>
+
+        <effectMaterials rootNode="0|1">
+            <effectMaterial node="0|1|0" fillTypes="GRASS_WINDROW" />
+            <effectMaterial node="0|1|1" fillTypes="DRYGRASS_WINDROW" />
+            <effectMaterial node="0|1|2" fillTypes="ALFALFA_WINDROW" />
+            <effectMaterial node="0|1|3" fillTypes="DRYALFALFA_WINDROW" />
+        </effectMaterials>
+
+        <customShaderDefaults>
+            <customShaderVariation name="alphaMapGradient_cosOffsetY"/>
+            <customShaderParameter name="visibilityX"   value="1.5 -1.5 0.0 0.0"/>
+            <customShaderParameter name="sizeScale"     value="1.0 1.0 0.0 0.0"/>
+            <customShaderMap name="shapeArray" filename="$data/effects/pickup/sharedPickupArrayIN.dds"/>
+            <customShaderMap name="alphaMap"   filename="$data/effects/pickup/shared/gradient_diffuse.png"/>
+        </customShaderDefaults>
+    </motionPathEffect>
+</motionPathEffects>

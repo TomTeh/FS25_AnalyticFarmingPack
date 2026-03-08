@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="sellingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_sellingStation_smallFarmer</name>
+        <image>placeables/sellingStations/mapIcon_sellingStationSmallFarmer.png</image>
+        <price>1</price>
+        <dailyUpkeep>0</dailyUpkeep>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>sellingPoints</category>
+        <vertexBufferMemoryUsage>17408</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>2816</indexBufferMemoryUsage>
+        <textureMemoryUsage>131072</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>placeables/sellingStations/sellingStationSmallFarmer.i3d</filename>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" />
+
+    <clearAreas/>
+
+    <leveling/>
+
+    <indoorAreas/>
+
+    <ai>
+        <updateAreas/>
+        <splines>
+            <spline node="aiSpline" />
+        </splines>
+    </ai>
+
+    <triggerMarkers>
+        <triggerMarker node="unloadTriggerMarkerGrain" filename="$data/shared/assets/marker/markerIconUnload.i3d" adjustToGround="false" />
+        <triggerMarker node="unloadTriggerMarkerRootCrops" filename="$data/shared/assets/marker/markerIconUnload.i3d" adjustToGround="true" />
+        <triggerMarker node="unloadTriggerMarkerStraw" filename="$data/shared/assets/marker/markerIconUnload.i3d" adjustToGround="true" />
+        <triggerMarker node="unloadTriggerMarkerManure" filename="$data/shared/assets/marker/markerIconUnload.i3d" adjustToGround="true" />
+        <triggerMarker node="unloadTriggerMarkerLiquidManure" filename="$data/shared/assets/marker/markerIconUnload.i3d" adjustToGround="true" />
+    </triggerMarkers>
+
+    <hotspots>
+        <hotspot type="UNLOADING" linkNode="hotspotNode" teleportNode="teleportNode" />
+    </hotspots>
+
+    <sellingStation node="0" appearsOnStats="true" supportsExtension="false" litersForFullPriceDrop="150000" fullPriceRecoverHours="48">
+        <unloadTrigger exactFillRootNode="unloadTriggerGrain" priceScale="1" fillTypes="WHEAT BARLEY OAT CANOLA SORGHUM SUNFLOWER SOYBEAN MAIZE RYE" />
+        <palletTrigger triggerNode="palletTriggerGrain" priceScale="1" fillTypes="WHEAT BARLEY OAT CANOLA SORGHUM SUNFLOWER SOYBEAN MAIZE RYE" />		
+
+        <unloadTrigger exactFillRootNode="unloadTriggerRootCrops" priceScale="1" fillTypeCategories="ROOT_CROPS VEGETABLES" />
+        <palletTrigger triggerNode="palletTriggerRootCrops" priceScale="1" fillTypeCategories="ROOT_CROPS VEGETABLES" />
+        <baleTrigger triggerNode="baleTriggerRootCrops" deleteLitersPerSecond="10000" priceScale="1" fillTypeCategories="ROOT_CROPS VEGETABLES" />
+
+        <unloadTrigger exactFillRootNode="unloadTriggerStraw" aiNode="unloadTriggerAINodeStraw" priceScale="1" fillTypeCategories="SELLINGSTATION_BALES ROOT_CROPS VEGETABLES" fillTypesExclude="COTTON WOODCHIPS" fillTypes="WHEAT BARLEY OAT CANOLA SORGHUM SUNFLOWER SOYBEAN MAIZE RYE MANURE COMPOST LIQUIDMANURE DIGESTATE" />
+        <palletTrigger triggerNode="palletTriggerStraw" aiNode="unloadTriggerAINodeStraw" priceScale="1" fillTypeCategories="SELLINGSTATION_BALES ROOT_CROPS VEGETABLES" fillTypesExclude="COTTON WOODCHIPS" fillTypes="WHEAT BARLEY OAT CANOLA SORGHUM SUNFLOWER SOYBEAN MAIZE RYE MANURE COMPOST LIQUIDMANURE DIGESTATE" />
+        <baleTrigger triggerNode="baleTriggerStraw" deleteLitersPerSecond="10000" aiNode="unloadTriggerAINodeStraw" priceScale="1" fillTypeCategories="SELLINGSTATION_BALES ROOT_CROPS VEGETABLES" fillTypesExclude="COTTON WOODCHIPS" fillTypes="WHEAT BARLEY OAT CANOLA SORGHUM SUNFLOWER SOYBEAN MAIZE RYE MANURE COMPOST LIQUIDMANURE DIGESTATE" />
+
+        <unloadTrigger exactFillRootNode="unloadTriggerManure" priceScale="1" fillTypes="MANURE COMPOST" />
+        <palletTrigger triggerNode="palletTriggerManure" priceScale="1" fillTypes="MANURE COMPOST" />		
+
+        <unloadTrigger exactFillRootNode="unloadTriggerLiquidManure" priceScale="1" fillTypes="LIQUIDMANURE DIGESTATE" />
+        <palletTrigger triggerNode="palletTriggerLiquidManure" priceScale="1" fillTypes="LIQUIDMANURE DIGESTATE" />		
+    </sellingStation>
+
+    <lights>
+        <group weatherRequiredFlags="NIGHT" />
+
+        <sharedLight filename="placeables/sharedAssets/lights/industrialWallLight.xml" linkNode="industrialWallLight01" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/industrialWallLight.xml" linkNode="industrialWallLight02" groupIndex="1"/>
+
+        <realLights>
+            <low>
+                <light node="realLightsLow" groupIndex="1"/>
+            </low>
+            <high>
+                <light node="realLightsHigh" groupIndex="1"/>
+            </high>
+        </realLights>
+    </lights>
+
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart node="0" linkNode="easyShed01Node" filename="placeables/sharedAssets/easyShed01.i3d" />
+        <dynamicallyLoadedPart node="0" linkNode="milkingRobotNode"  filename="$data/placeables/lely/astronautA5/astronautA5.i3d" />
+        <dynamicallyLoadedPart node="0" linkNode="milkContainerNode" filename="$data/placeables/lely/nautilus/nautilus.i3d"/>
+    </dynamicallyLoadedParts>
+
+    <i3dMappings>
+        <i3dMapping id="sellingStationGrain" node="0>0" />
+        <i3dMapping id="unloadTriggerGrain" node="0>0|0" />
+        <i3dMapping id="palletTriggerGrain" node="0>0|1" />
+        <i3dMapping id="unloadTriggerMarkerGrain" node="0>0|2" />
+        <i3dMapping id="unloadTriggerAINodeGrain" node="0>0|3" />
+        <i3dMapping id="unloadTriggerRootCrops" node="0>1|0" />
+        <i3dMapping id="palletTriggerRootCrops" node="0>1|1" />
+        <i3dMapping id="baleTriggerRootCrops" node="0>1|2" />
+        <i3dMapping id="unloadTriggerMarkerRootCrops" node="0>1|3" />
+        <i3dMapping id="unloadTriggerAINodeRootCrops" node="0>1|4" />
+        <i3dMapping id="unloadTriggerStraw" node="0>2|0" />
+        <i3dMapping id="palletTriggerStraw" node="0>2|1" />
+        <i3dMapping id="baleTriggerStraw" node="0>2|2" />
+        <i3dMapping id="unloadTriggerMarkerStraw" node="0>2|3" />
+        <i3dMapping id="unloadTriggerAINodeStraw" node="0>2|4" />
+        <i3dMapping id="unloadTriggerManure" node="0>3|0" />
+        <i3dMapping id="palletTriggerManure" node="0>3|1" />
+        <i3dMapping id="unloadTriggerMarkerManure" node="0>3|2" />
+        <i3dMapping id="unloadTriggerAINodeManure" node="0>3|3" />
+        <i3dMapping id="unloadTriggerLiquidManure" node="0>4|0" />
+        <i3dMapping id="palletTriggerLiquidManure" node="0>4|1" />
+        <i3dMapping id="unloadTriggerMarkerLiquidManure" node="0>4|2" />
+        <i3dMapping id="unloadTriggerAINodeLiquidManure" node="0>4|3" />
+        <i3dMapping id="connectorCollisionLiquidManure" node="0>4|4" />
+        <i3dMapping id="connectorNodeLiquidManure" node="0>4|5" />
+        <i3dMapping id="hotspotNode" node="0>5" />
+        <i3dMapping id="teleportNode" node="0>6" />
+        <i3dMapping id="aiSpline" node="0>7" />
+        <i3dMapping id="milkingRobotNode" node="0>8|0" />
+        <i3dMapping id="milkContainerNode" node="0>8|1" />
+        <i3dMapping id="easyShed01Node" node="0>9|0" />
+        <i3dMapping id="industrialWallLight01" node="0>9|1|0|0" />
+        <i3dMapping id="industrialWallLight02" node="0>9|1|0|1" />
+        <i3dMapping id="realLightsLow" node="0>9|1|1|0" />
+        <i3dMapping id="realLightsHigh" node="0>9|1|1|1" />
+    </i3dMappings>
+</placeable>

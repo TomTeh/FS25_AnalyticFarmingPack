@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="heapSpawner" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/placeable.xsd">
+    <storeData>
+        <name>$l10n_storeItem_miningShaftTower</name>
+        <functions>
+            <function>$l10n_function_heapSpawnerIronOre</function>
+        </functions>
+        <image>placeables/productionPoints/miningShaftTower/store_miningShaftTower.png</image>
+        <price>275000</price>
+        <dailyUpkeep>130</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>productionPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>factories</tab>
+        </brush>
+
+        <storeIconRendering>
+            <settings cameraXRot="-4" cameraYRot="26" advancedBoundingBox="true"/>
+        </storeIconRendering>
+        <vertexBufferMemoryUsage>1639680</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>332544</indexBufferMemoryUsage>
+        <textureMemoryUsage>8781824</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>placeables/productionPoints/miningShaftTower/miningShaftTower.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" placementPositionSnapSize="0.5" placementRotationSnapAngle="90" >
+        <testAreas>
+            <testArea startNode="testAreaStart1" endNode="testAreaEnd1" />
+            <testArea startNode="testAreaStart2" endNode="testAreaEnd2" />
+            <testArea startNode="testAreaStart3" endNode="testAreaEnd3" />
+        </testAreas>
+
+        <sounds>
+            <place template="largeImp" />
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearLevelAreaStart1" widthNode="clearLevelAreaWidth1" heightNode="clearLevelAreaHeight1"/>
+        <clearArea startNode="clearLevelAreaStart2" widthNode="clearLevelAreaWidth2" heightNode="clearLevelAreaHeight2"/>
+        <clearArea startNode="clearLevelAreaStart3" widthNode="clearLevelAreaWidth3" heightNode="clearLevelAreaHeight3"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30" >
+        <levelAreas>
+            <levelArea startNode="clearLevelAreaStart1" widthNode="clearLevelAreaWidth1" heightNode="clearLevelAreaHeight1" groundType="concrete"/>
+            <levelArea startNode="clearLevelAreaStart2" widthNode="clearLevelAreaWidth2" heightNode="clearLevelAreaHeight2" groundType="concrete"/>
+            <levelArea startNode="clearLevelAreaStart3" widthNode="clearLevelAreaWidth3" heightNode="clearLevelAreaHeight3" groundType="concrete"/>
+            <levelArea startNode="clearLevelAreaStart4" widthNode="clearLevelAreaWidth4" heightNode="clearLevelAreaHeight4" groundType="concrete"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorAreaStart1" widthNode="indoorAreaWidth1" heightNode="indoorAreaHeight1" />
+        <indoorArea startNode="indoorAreaStart2" widthNode="indoorAreaWidth2" heightNode="indoorAreaHeight2" />
+        <indoorArea startNode="indoorAreaStart3" widthNode="indoorAreaWidth3" heightNode="indoorAreaHeight3" />
+        <indoorArea startNode="indoorAreaStart4" widthNode="indoorAreaWidth4" heightNode="indoorAreaHeight4" />
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStart1" endNode="tipOcclusionUpdateAreaEnd1" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateAreaStart1" endNode="tipOcclusionUpdateAreaEnd1" />
+        </updateAreas>
+    </ai>
+
+    <hotspots>
+        <hotspot type="PRODUCTION_POINT" linkNode="teleportNode" teleportNode="teleportNode" />
+    </hotspots>
+
+    <lights>
+        <group weatherRequiredFlags="NIGHT" />
+
+        <sharedLight filename="placeables/sharedAssets/lights/warehouseWallLamp.xml" linkNode="warehouseWallLamp01" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/warehouseWallLamp.xml" linkNode="warehouseWallLamp02" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/warehouseWallLamp.xml" linkNode="warehouseWallLamp03" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/warehouseWallLamp.xml" linkNode="warehouseWallLamp04" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/warehouseHangingLamp.xml" linkNode="warehouseHangingLamp01" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/warehouseHangingLamp.xml" linkNode="warehouseHangingLamp02" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/industrialWallLight.xml" linkNode="industrialWallLight01" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/industrialWallLight.xml" linkNode="industrialWallLight02" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/industrialWallLight.xml" linkNode="industrialWallLight03" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/industrialWallLight.xml" linkNode="industrialWallLight04" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/industrialWallLight.xml" linkNode="industrialWallLight05" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/industrialWallLight.xml" linkNode="industrialWallLight06" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/industrialWallLight.xml" linkNode="industrialWallLight07" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/industrialWallLight.xml" linkNode="industrialWallLight08" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/industrialWallLight.xml" linkNode="industrialWallLight09" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/industrialWallLight.xml" linkNode="industrialWallLight10" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/industrialWallLight.xml" linkNode="industrialWallLight11" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/floodLight.xml" linkNode="floodLight01" groupIndex="1">
+            <rotationNode name="rotationNode01" rotation="0 0 40" />
+        </sharedLight>
+        <sharedLight filename="placeables/sharedAssets/lights/floodLight.xml" linkNode="floodLight02" groupIndex="1">
+            <rotationNode name="rotationNode01" rotation="0 0 40" />
+        </sharedLight>
+        <sharedLight filename="placeables/sharedAssets/lights/floodLight.xml" linkNode="floodLight03" groupIndex="1">
+            <rotationNode name="rotationNode01" rotation="0 0 55" />
+        </sharedLight>
+
+        <lightShape node="beaconGlass" groupIndex="1" />
+
+        <realLights>
+            <low>
+                <light node="realLightsLow" groupIndex="1"/>
+                <light node="realLightsLowBeacon" groupIndex="1"/>
+            </low>
+            <high>
+                <light node="realLightsHigh" groupIndex="1"/>
+                <light node="realLightsHighBeacon" groupIndex="1"/>
+            </high>
+        </realLights>
+    </lights>
+
+    <heapSpawner>
+        <spawnArea fillType="IRONORE" litersPerHour="800" >
+            <area startNode="spawnAreaStart1" widthNode="spawnAreaWidth1" heightNode="spawnAreaHeight1" />
+
+            <animationNodes>
+                <animationNode class="ScrollingAnimation" node="conveyorBelt" rotSpeed="-20" rotAxis="1" shaderComponentScale="-1 0 0 0" scrollSpeed="0.5" shaderParameterName="offsetUV"/>
+            </animationNodes>
+
+            <effectNodes>
+                <effectNode effectNode="effectSmoke" materialType="unloadingSmoke" fadeTime="0.5" useFruitColor="true"/>
+                <!-- <effectNode effectNode="effectParticle" effectClass="ParticleEffect" particleType="UNLOADING" materialType="unloadingParticle" defaultFillType="IRONORE" emitCountScale="0.1" speed="0.1" fadeScale="0.1"/>  -->
+            </effectNodes>
+
+            <sounds>
+                <work file="sounds/placeables/productionPoints/miningShaftTowerWork.wav" linkNode="soundNode_machineRoom" loops="0" innerRadius="7" outerRadius="40" supportsReverb="false">
+                    <volume indoor="0.4" outdoor="2.5"/>
+                </work>
+                <work2 file="sounds/placeables/productionPoints/machineRoom.wav" linkNode="soundNode_tower" loops="0" innerRadius="2" outerRadius="20" supportsReverb="false">
+                    <volume indoor="0.4" outdoor="2"/>
+                </work2>
+                <dropping file="sounds/placeables/productionPoints/rocksDischarge.wav" linkNode="soundNode_dropping" loops="0" innerRadius="2" outerRadius="30" supportsReverb="false" pitchScale="1.0">
+                    <volume indoor="0.4" outdoor="2.8"/>
+                </dropping>
+            </sounds>
+        </spawnArea>
+    </heapSpawner>
+
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart node="0" linkNode="propsNode" filename="placeables/sharedAssets/propsBuilding/propsBuilding_miningShaftTower.i3d" />
+        <dynamicallyLoadedPart node="6" linkNode="propsNode" filename="placeables/sharedAssets/props/cabinetWorkbecnches.i3d" />
+        <dynamicallyLoadedPart node="0" linkNode="propsNode" filename="placeables/sharedAssets/props/props_miningShaftTower.i3d" />
+    </dynamicallyLoadedParts>
+
+    <i3dMappings>
+        <i3dMapping id="conveyorBelt" node="0>0|0|1|7" />
+        <i3dMapping id="propsNode" node="0>2" />
+        <i3dMapping id="warehouseWallLamp01" node="0>3|0|0" />
+        <i3dMapping id="warehouseWallLamp02" node="0>3|0|1" />
+        <i3dMapping id="warehouseWallLamp03" node="0>3|0|2" />
+        <i3dMapping id="warehouseWallLamp04" node="0>3|0|3" />
+        <i3dMapping id="warehouseHangingLamp01" node="0>3|0|4" />
+        <i3dMapping id="warehouseHangingLamp02" node="0>3|0|5" />
+        <i3dMapping id="industrialWallLight01" node="0>3|0|6" />
+        <i3dMapping id="industrialWallLight02" node="0>3|0|7" />
+        <i3dMapping id="industrialWallLight03" node="0>3|0|8" />
+        <i3dMapping id="industrialWallLight04" node="0>3|0|9" />
+        <i3dMapping id="industrialWallLight05" node="0>3|0|10" />
+        <i3dMapping id="industrialWallLight06" node="0>3|0|11" />
+        <i3dMapping id="industrialWallLight07" node="0>3|0|12" />
+        <i3dMapping id="industrialWallLight08" node="0>3|0|13" />
+        <i3dMapping id="industrialWallLight09" node="0>3|0|14" />
+        <i3dMapping id="industrialWallLight10" node="0>3|0|15" />
+        <i3dMapping id="industrialWallLight11" node="0>3|0|16" />
+        <i3dMapping id="floodLight01" node="0>3|0|17" />
+        <i3dMapping id="floodLight02" node="0>3|0|18" />
+        <i3dMapping id="floodLight03" node="0>3|0|19" />
+        <i3dMapping id="realLightsLow" node="0>3|1|0" />
+        <i3dMapping id="realLightsHigh" node="0>3|1|1" />
+        <i3dMapping id="beaconGlass" node="0>3|2|1" />
+        <i3dMapping id="realLightsLowBeacon" node="0>3|2|2" />
+        <i3dMapping id="realLightsHighBeacon" node="0>3|2|3" />
+        <i3dMapping id="spawnAreaStart1" node="0>4|0|0" />
+        <i3dMapping id="spawnAreaWidth1" node="0>4|0|1" />
+        <i3dMapping id="spawnAreaHeight1" node="0>4|0|2" />
+        <i3dMapping id="effectSmoke" node="0>4|1|0" />
+        <i3dMapping id="effectParticle" node="0>4|1|1" />
+        <i3dMapping id="soundNode_machineRoom" node="0>4|2|0" />
+        <i3dMapping id="soundNode_tower" node="0>4|2|1" />
+        <i3dMapping id="soundNode_dropping" node="0>4|2|2" />
+        <i3dMapping id="teleportNode" node="0>4|3" />
+	    <i3dMapping id="clearLevelAreaStart1" node="0>5|0" />
+        <i3dMapping id="clearLevelAreaWidth1" node="0>5|0|0" />
+        <i3dMapping id="clearLevelAreaHeight1" node="0>5|0|1" />
+        <i3dMapping id="clearLevelAreaStart2" node="0>5|1" />
+        <i3dMapping id="clearLevelAreaWidth2" node="0>5|1|0" />
+        <i3dMapping id="clearLevelAreaHeight2" node="0>5|1|1" />
+        <i3dMapping id="clearLevelAreaStart3" node="0>5|2" />
+        <i3dMapping id="clearLevelAreaWidth3" node="0>5|2|0" />
+        <i3dMapping id="clearLevelAreaHeight3" node="0>5|2|1" />
+        <i3dMapping id="clearLevelAreaStart4" node="0>5|3" />
+        <i3dMapping id="clearLevelAreaWidth4" node="0>5|3|0" />
+        <i3dMapping id="clearLevelAreaHeight4" node="0>5|3|1" />
+        <i3dMapping id="indoorAreaStart1" node="0>6|0" />
+        <i3dMapping id="indoorAreaWidth1" node="0>6|0|0" />
+        <i3dMapping id="indoorAreaHeight1" node="0>6|0|1" />
+        <i3dMapping id="indoorAreaStart2" node="0>6|1" />
+        <i3dMapping id="indoorAreaWidth2" node="0>6|1|0" />
+        <i3dMapping id="indoorAreaHeight2" node="0>6|1|1" />
+        <i3dMapping id="indoorAreaStart3" node="0>6|2" />
+        <i3dMapping id="indoorAreaWidth3" node="0>6|2|0" />
+        <i3dMapping id="indoorAreaHeight3" node="0>6|2|1" />
+        <i3dMapping id="indoorAreaStart4" node="0>6|3" />
+        <i3dMapping id="indoorAreaWidth4" node="0>6|3|0" />
+        <i3dMapping id="indoorAreaHeight4" node="0>6|3|1" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart1" node="0>7|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd1" node="0>7|0|0" />
+        <i3dMapping id="testAreaStart1" node="0>8|0" />
+        <i3dMapping id="testAreaEnd1" node="0>8|0|0" />
+        <i3dMapping id="testAreaStart2" node="0>8|1" />
+        <i3dMapping id="testAreaEnd2" node="0>8|1|0" />
+        <i3dMapping id="testAreaStart3" node="0>8|2" />
+        <i3dMapping id="testAreaEnd3" node="0>8|2|0" />
+    </i3dMappings>
+</placeable>

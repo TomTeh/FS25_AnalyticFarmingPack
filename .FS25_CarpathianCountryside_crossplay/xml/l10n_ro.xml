@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <texts>
+        <!-- Placeable Objects and Shop Items -->
+        <text name="placeableObject_preplacedMapObject" text="Obiect de hartă preplasat" />
+        <text name="placeableObject_cowBarnSmall" text="Grajd de vaci" />
+        <text name="placeableObject_cowBarnSmallVector" text="Grajd de vaci cu robot de hrănire" />
+        <text name="placeableObject_cowBarnSmallNoPasture" text="Grajd de vaci (fără pășune)" />
+        <text name="placeableObject_cowBarnSmallNoPastureVector" text="Grajd de vaci cu robot de hrănire (fără pășune)" />
+        <text name="placeableObject_cowBarnBig" text="Grajd de vaci (mare)" />
+        <text name="placeableObject_cowBarnBigVector" text="Grajd de vaci (mare) cu robot de hrănire" />
+        <text name="placeableObject_cowBarnBigNoPasture" text="Grajd de vaci (mare, fără pășune)" />
+        <text name="placeableObject_cowBarnBigNoPastureVector" text="Grajd de vaci (mare) cu robot de hrănire (fără pășune)" />
+        <text name="placeableObject_cow1" text="Grajd de vaci 1 - Šterusy" />
+        <text name="placeableObject_cow2" text="Grajd de vaci 2 - Šterusy" />
+        <text name="placeableObject_animalBarnHeiferStablePreplaced" text="Adăpost pentru juninci - Šterusy" />
+        <text name="placeableObject_animalBarnCowYoungShelter" text="Adăpost pentru vaci tinere" />
+        <text name="placeableObject_animalBarnCowYoungShelterPreplaced" text="Adăpost pentru vaci tinere - Šterusy" />
+        <text name="placeableObject_calfHutSingle" text="Adăpost pentru viței - singur" />
+        <text name="placeableObject_calfHutGroupRight" text="Adăpost pentru viței - grup (Orientat spre dreapta)" />
+        <text name="placeableObject_calfHutGroupLeft" text="Adăpost pentru viței - grup (Orientat spre stânga)" />
+        <text name="placeableObject_horse1" text="Grajd pentru cai - Šterusy" />
+        <text name="placeableObject_chicken1" text="Coteț de găini - Lančár" />
+        <text name="placeableObject_pig1" text="Grajd pentru porci 1 - Šterusy" />
+        <text name="placeableObject_pig2" text="Grajd pentru porci 2 - Kočín" />
+        <text name="placeableObject_pig3" text="Grajd pentru porci 3 - Kočín" />
+        <text name="placeableObject_sheep1" text="Grajd pentru oi - Lančár" />
+        <text name="placeableObject_coveredMultiBunkerSilo1" text="Siloz tip buncăr multiplu acoperit 1" />
+        <text name="placeableObject_coveredMultiBunkerSilo2" text="Siloz tip buncăr multiplu acoperit 2" />
+        <text name="placeableObject_bgaBunkerSilo" text="Siloz buncăr pentru instalația de biogaz" />
+        <text name="placeableObject_bunkerSilo" text="Siloz buncăr" />
+        <text name="placeableObject_compostSilo" text="Siloz pentru compost" />
+        <text name="placeableObject_farmGatehouse" text="Cabină de pază a fermei" />
+        <text name="placeableObject_farmGatehouseWithWeight" text="Cabină de pază a fermei cu stație de cântărire" />
+        <text name="placeableObject_farmOfficeBuilding" text="Birou al fermei cu locuință și atelier" />
+        <text name="placeableObject_fuelTank" text="Rezervor de combustibil" />
+        <text name="placeableObject_grainStorage" text="Depozit de cereale cu tocător" />
+        <text name="placeableObject_grainStoragePreplaced" text="Depozit de cereale cu tocător - Šterusy" />
+        <text name="placeableObject_liquidFertilizerAndHerbicideTanks" text="Rezervoare pentru îngrășământ lichid și erbicide" />
+        <text name="placeableObject_milkingParlor" text="Sală de muls" />
+        <text name="placeableObject_easyShed01WithWalls" text="Adăpost cu ziduri" />
+        <text name="placeableObject_manureHeapMainFarm" text="Gunoi de grajd - Šterusy" />
+        <text name="placeableObject_manureHeapPigFarm" text="Gunoi de grajd - Kočín" />
+        <text name="placeableObject_manureHeapSheepFarm" text="Gunoi de grajd - Lančár" />
+        <text name="placeableObject_manureStorageSpotLower" text="Depozit gunoi de grajd - Lower" />
+        <text name="placeableObject_manureStorageSpotUpper" text="Depozit gunoi de grajd - Upper" />
+        <text name="placeableObject_manureHeapSmall" text="Gunoi de grajd - mic" />
+        <text name="placeableObject_manureHeapSmallExtension" text="Gunoi de grajd - extensie mică" />
+        <text name="placeableObject_manureHeapMedium" text="Gunoi de grajd - mediu" />
+        <text name="placeableObject_manureHeapMediumExtension" text="Gunoi de grajd - extensie medie" />
+        <text name="placeableObject_manureHeapLarge" text="Gunoi de grajd - mare" />
+        <text name="placeableObject_manureHeapLargeExtension" text="Gunoi de grajd - extensie mare" />
+        <text name="placeableObject_repairRamp" text="Rampă de reparații" />
+        <text name="placeableObject_siloPF" text="Siloz de cereale - Kočín" />
+        <text name="placeableObject_siloSF" text="Siloz de cereale - Lančár" />
+        <text name="placeableObject_baleShed" text="Adăpost pentru baloți" />
+        <text name="placeableObject_consumablesStorage" text="Depozit pentru consumabile" />
+        <text name="placeableObject_hall1" text="Adăpost și depozit pentru vehicule" />
+        <text name="placeableObject_hall2" text="Compoziție de adăposturi și depozite pentru vehicule" />
+        <text name="placeableObject_vehicleShelter1" text="Adăpost pentru vehicule – închis" />
+        <text name="placeableObject_vehicleShelter2" text="Adăpost pentru vehicule – deschis, mare" />
+        <text name="placeableObject_vehicleShelter3" text="Adăpost pentru vehicule – deschis, mic" />
+        <text name="placeableObject_palletRack" text="Raft pentru paleți" />
+        <text name="placeableObject_waterTower" text="Turn de apă" />
+        <text name="placeableObject_calfArea" text="Clădire pentru îngrijirea vițeilor" />
+        <text name="placeableObject_animalPigFence" text="Gard pentru porci" />
+        <text name="placeableObject_animalSheepFence" text="Gard pentru oi" />
+        <text name="placeableObject_animalCowFence" text="Gard pentru vaci" />
+        <text name="placeableObject_oldChainlinkFence" text="Gard vechi din plasă" />
+        <text name="placeableObject_metalGridFence" text="Gard metalic tip plasă" />
+        <text name="placeableObject_metalGridFenceBase" text="Gard metalic tip plasă (cu bază)" />
+        <text name="placeableObject_concreteFence" text="Gard din beton" />
+        <text name="placeableObject_chainlinkFenceBig" text="Gard mare din plasă" />
+        <text name="placeableObject_chainlinkFenceBigBase" text="Gard mare din plasă (cu bază)" />
+        <text name="placeableObject_constructionFence" text="Gard de construcție" />
+        <text name="placeableObject_metalGate" text="Poartă metalică" />
+        <text name="placeableObject_metalGateDoorLeft" text="Poartă metalică cu ușă mică (stânga)" />
+        <text name="placeableObject_metalGateDoorRight" text="Poartă metalică cu ușă mică (dreapta)" />
+        <text name="placeableObject_floodLightPole" text="Stâlp cu reflectoare" />
+        <text name="placeableObject_streetLight" text="Stalp de iluminat" />
+        <text name="placeableObject_streetLightSmall" text="Stalp mic de iluminat" />
+        <text name="placeableObject_poleLamp" text="Lampă pe stâlp" />
+        <text name="placeableObject_sleepTrigger" text="Punct de odihnă" />
+        <text name="placeableObject_sleepTriggerDoormat" text="Punct de odihnă cu covoraș" />
+        <text name="placeableObject_wardrobeTrigger" text="Punct de schimbat haine" />
+        <text name="shopItem_decoFoliageGrassMedium" text="Iarbă medie" />
+        <text name="shopItem_decoFoliageGrassSmall" text="Iarbă mică" />
+        <text name="shopItem_decoFoliageGrassCut" text="Iarbă cosită" />
+        <text name="shopItem_decoFoliageFlowerWhite" text="Floare albă" />
+        <text name="shopItem_decoFoliageFlowerLavender" text="Floare de lavandă" />
+        <text name="shopItem_decoFoliageFlowerYellow" text="Floare galbenă" />
+        <text name="shopItem_decoFoliageFlowerBlue" text="Floare albastră" />
+        <text name="shopItem_decoFoliageWeedSmall" text="Buruiană mică" />
+        <text name="shopItem_decoFoliageWeedSmallRumex" text="Buruiană - Rumex mic" />
+        <text name="shopItem_decoFoliageWeedApera" text="Buruiană - Apera" />
+        <text name="shopItem_decoFoliageWeedChaerophyllum" text="Buruiană - Chaerophyllum" />
+        <text name="shopItem_decoFoliageWeedChenopodium" text="Buruiană - Chenopodium" />
+        <text name="shopItem_decoFoliageWeedCirsium" text="Buruiană - Cirsium" />
+        <text name="shopItem_decoFoliageWeedPapaverRhoeas" text="Buruiană - Mac roșu sălbatic" />
+        <text name="shopItem_decoFoliageWeedRumex" text="Buruiană - Rumex" />
+        <text name="shopItem_groundFoliageBranchesBig" text="Crengi mari" />
+        <text name="shopItem_groundFoliageBranchesSmall" text="Crengi mici" />
+        <text name="shopItem_groundFoliageBranchesDry" text="Crengi uscate" />
+        <text name="shopItem_groundFoliageMushroomChanterelle" text="Ciupercă gălbioară" />
+        <text name="shopItem_groundFoliageMushroomBoletus" text="Ciupercă hrib" />
+        <text name="shopItem_groundFoliageMushroomWhiteTip" text="Ciupercă cu vârf alb" />
+        <text name="shopItem_groundFoliageMushroomFlyCap" text="Ciupercă cu cap de muscă" />
+        <text name="shopItem_groundFoliageCoverFoliage" text="Covor vegetal" />
+        <text name="shopItem_groundFoliageThimbleberry" text="Zmeur de pădure" />
+        <text name="shopItem_groundFoliageMaidenFern" text="Ferigă de pădure" />
+        <text name="shopItem_groundFoliageStingingNettle" text="Urzică" />
+        <text name="shopItem_forestPlantsClover" text="Trifoi" />
+        <text name="shopItem_forestPlantsStarflower" text="Floare stea" />
+        <text name="shopItem_forestPlantsBunchberry" text="Corn canadian" />
+        <text name="shopItem_forestPlantsSalmonberryBush" text="Arbuș de Salmonberry" />
+        <text name="shopItem_forestPlantsStarryFalseSolomonSeal" text="Starry False Solomon's Seal" />
+        <text name="shopItem_forestPlantsSwordFern" text="Ferigă sabie" />
+        <text name="shopItem_forestPlantsDeerFern" text="Ferigă cerb" />
+        <text name="shopItem_forestPlantsGrass" text="Iarbă de pădure" />
+        <text name="shopItem_waterPlantsTyphaLatifoliaSmall" text="Stuf cu frunză lată (mică)" />
+        <text name="shopItem_waterPlantsTyphaLatifoliaMedium" text="Stuf cu frunză lată (medie)" />
+        <text name="shopItem_waterPlantsTyphaLatifoliaLarge" text="Stuf cu frunză lată (mare)" />
+        <text name="shopItem_waterPlantsMiscanthusSinensisSmall" text="Miscanthus chinezesc (mic)" />
+        <text name="shopItem_waterPlantsMiscanthusSinensisMedium" text="Miscanthus chinezesc (mediu)" />
+        <text name="shopItem_waterPlantsMiscanthusSinensisLarge" text="Miscanthus chinezesc (mare)" />
+        <text name="shopItem_waterPlantsStipaTenuissimaSmall" text="Stipa foarte subțire (mică)" />
+        <text name="shopItem_waterPlantsStipaTenuissimaLarge" text="Stipa foarte subțire (mare)" />
+        <text name="shopItem_paintableFieldPlowed" text="Câmp arat" />
+        <text name="shopItem_paintableFieldCultivated" text="Câmp cultivat" />
+        <text name="shopItem_paintableFieldRidged" text="Câmp cu brazde" />
+
+        <!-- Function Texts -->
+        <text name="function_roofSolarPanelsOption" text="Această clădire are opțiunea de a adăuga panouri solare pe acoperiș. Preț per panou: 265 $. Venit per panou, pe lună: 21,6 $ (în condiții meteorologice adecvate)." />
+        <text name="function_heiferStable" text="Acest adăpost este destinat junincilor. Aici pot crește, apoi ar trebui mutate în alt grajd. Vacile din acest adăpost nu produc lapte și gunoi de grajd, dar tot produc gunoi." />
+        <text name="function_cowYoungShelter" text="Acest adăpost este destinat vițeilor sau junincilor. Aici pot crește, apoi trebuie mutați în alt grajd. Vacile din acest adăpost nu produc lapte și gunoi de grajd, dar tot produc gunoi." />
+        <text name="function_calfHut" text="Acest adăpost este destinat exclusiv vițeilor. Aici pot crește, apoi trebuie mutați în alt grajd. Vacile din acest țarc nu produc lapte și gunoi de grajd, ci doar gunoi și necesită multă îngrijire manuală zilnică!" />
+        <text name="function_bunkerSiloCC" text="Acest siloz buncăr poate fi umplut cu pleavă, iarbă, lucernă și trifoi. După compactarea și acoperirea silozului, conținutul se transformă în siloz. NOTĂ: Dacă se utilizează modulul Maize Plus, funcționalitatea acestui siloz se modifică la standardele M+." />
+        <text name="function_grainStorage" text="Această instalație multifuncțională are o hală mare de depozitare, permițându-vă să depozitați culturile pe teren sau să le păstrați înainte de procesare, având suficient spațiu chiar și pentru vehicule. Tocătorul produce hrană pentru animalele dumneavoastră. Cerealele pot fi, de asemenea, depozitate în silozuri de mare capacitate.." />
+        <text name="function_fillableLiquidFertilizerAndHerbicideTanks" text="Aceste rezervoare pot fi umplute cu îngrășământ lichid și erbicid." />
+        <text name="function_baleStorageCC" text="Această clădire poate fi folosită pentru depozitarea baloților dumneavoastră." />
+        <text name="function_palletStorage" text="Această clădire poate fi folosită pentru depozitarea paleților dumneavoastră." />
+        <text name="function_orchard" text="Livada produce fructe. Are nevoie de apă, îngrășământ lichid și compost." />
+        <text name="function_greenhouseAdvanced" text="Serele avansate produc legume mai rapid, dar necesită mai multă îngrijire - Necesită: Apă, Îngrășământ lichid și Compost." />
+        <text name="function_compostSilo" text="Un siloz de compost poate fi umplut cu deșeuri organice. După compactarea și acoperirea silozului, conținutul se transformă în compost." />
+        <text name="function_compost" text="Compostul este necesar în livezi și sere. Poate fi folosit și ca îngrășământ pe câmp." />
+        <text name="function_heapSpawnerStoneCC" text="Pietrele pot fi colectate gratuit din această clădire. Produce 3000 de unități de piatră pe oră."/>
+        <text name="function_heapSpawnerLimestone" text="Calcarul poate fi colectat gratuit din această clădire. Produce 2800 de unități de calcar pe oră."/>
+        <text name="function_heapSpawnerClay" text="Argila poate fi colectată gratuit din această clădire. Produce 1600 de unități de argilă pe oră."/>
+        <text name="function_heapSpawnerIronOre" text="Minereul de fier poate fi colectat gratuit din această clădire. Produce 800 de unități de minereu de fier pe oră."/>
+        <text name="function_rentalHouse" text="Această casă este destinată închirierii și generează profit de:"/>
+        <text name="function_rentalHouse01Income" text="2,500 $ pe lună"/>
+        <text name="function_rentalHouse02Income" text="3,000 $ pe lună"/>
+        <text name="function_rentalHouse03Income" text="2,000 $ pe lună"/>
+        <text name="function_chainlinkFenceBigGatePlacement" text="NOTĂ DE AMPLIFICARE: Asigurați-vă că amplasați poarta paralel cu gardul și pe teren plat pentru o estetică corectă." />
+        <text name="function_decorativeGrass" text="Această iarbă nu crește! Rămâne în stadiul actual - servește ca iarbă decorativă." />
+        <text name="function_decorativeGardenCrops" text="Aceasta este o plantă decorativă de grădină, nu este funcțională. Își schimbă aspectul în funcție de anotimp sau dispare în anumite perioade, cum ar fi iarna. (În funcție de momentul în care a fost vopsită, schimbările sezoniere pot începe anul viitor. De asemenea, depinde dacă utilizați sau nu creșterea sezonieră. Dacă creșterea sezonieră este dezactivată, își schimbă aspectul în fiecare zi din joc.)" />
+        <text name="function_paintableField" text="Creează sol pentru cultivarea culturilor." />
+
+        <!-- Fill Types -->
+        <text name="fillType_decoGardenFoliage" text="Culturi decorative de grădină" />
+        <text name="fillType_rye" text="Secară" />
+        <text name="fillType_mustard" text="Muştar" />
+        <text name="fillType_mowedCrop" text="Cultură cosită" />
+        <text name="fillType_alfalfa" text="Lucernă" />
+        <text name="fillType_alfalfaHay" text="Fân de lucernă" />
+        <text name="fillType_alfalfaSilo" text="Lucernă însilozată" />
+        <text name="fillType_alfalfaSilage" text="Siloz de lucernă" />
+        <text name="fillType_clover" text="Trifoi" />
+        <text name="fillType_cloverHay" text="Fân de trifoi" />
+        <text name="fillType_cloverSilo" text="Siloz de trifoi" />
+        <text name="fillType_cloverSilage" text="Trifoi silozat" />
+        <text name="fillType_mustardProcessed" text="Muştar (procesat)" />
+        <text name="fillType_apple" text="Mere" />
+        <text name="fillType_pear" text="Pere" />
+        <text name="fillType_apricot" text="Caise" />
+        <text name="fillType_plum" text="Prun" />
+        <text name="fillType_greenPepper" text="Ardei verde" />
+        <text name="fillType_cucumber" text="Castraveți" />
+        <text name="fillType_watermelon" text="Pepene verde" />
+        <text name="fillType_appleJuice" text="Suc de mere" />
+        <text name="fillType_apricotJam" text="Dulceață de caise" />
+        <text name="fillType_plumJam" text="Dulceață de prune" />
+        <text name="fillType_ketchup" text="Ketchup" />
+        <text name="fillType_strawberryJuice" text="Suc de căpșuni" />
+        <text name="fillType_pickles" text="Murături" />
+        <text name="fillType_organicWaste" text="Deșeuri organice" />
+        <text name="fillType_compost" text="Compost" />
+        <text name="fillType_leather" text="Piele" />
+        <text name="fillType_clayBrick" text="Cărămidă de lut" />
+        <text name="fillType_clayRoofPlate" text="Placă de acoperiș din lut" />
+        <text name="fillType_chipwoodBoards" text="Plăci din așchii" />
+        <text name="fillType_blastFurnaceSlag" text="Zgură de furnal" />
+        <text name="fillType_limestone" text="Calcar" />
+        <text name="fillType_clay" text="Lut" />
+        <text name="fillType_sand" text="Nisip" />
+        <text name="fillType_gravel" text="Pietriş" />
+        <text name="fillTypeGroup_alfClo" text="Lucernă / Trifoi" />
+        
+        <!-- ProductionPoints -->
+        <text name="productionPoint_appleOrchard" text="Livadă de mere" />
+        <text name="productionPoint_pearOrchard" text="Livadă de pere" />
+        <text name="productionPoint_apricotOrchard" text="Livadă de caise" />
+        <text name="productionPoint_plumOrchard" text="Livada de prune" />
+        <text name="productionPoint_greenhouseSmallAdvanced" text="Seră mică - Avansată" />
+        <text name="productionPoint_greenhouseSmallAdvanced_watermelon" text="Seră mică - Avansată (pepene verde)" />
+        <text name="productionPoint_greenhouseMediumAdvanced" text="Seră medie - Avansată" />
+        <text name="productionPoint_greenhouseMediumAdvanced_watermelon" text="Seră medie - Avansată (pepene verde)" />
+        <text name="productionPoint_greenhouseLargeAdvanced" text="Seră mare - Avansată" />
+        <text name="productionPoint_greenhouseLargeAdvanced_watermelon" text="Seră mare - Avansată (pepene verde)" />
+        <text name="productionPoint_fruitVegetableFactory" text="Fabrică de procesare a fructelor și legumelor" />
+        <text name="productionPoint_foodProcessingPlant" text="Fabrică de procesare a alimentelor" />
+        <text name="productionPoint_sawMill" text="Gatere" />
+        <text name="productionPoint_fishFarmPond" text="Iaz de pescuit" />
+        <text name="productionPoint_woodArtist" text="Artist din lemn" />
+        <text name="productionPoint_woodArtist_playgroundMaker" text="Artist din lemn - Producție loc de joacă" />
+        <text name="productionPoint_quarryStone" text="Carieră de piatră" />
+        <text name="productionPoint_quarryLimestone" text="Carieră de calcar" />
+        <text name="productionPoint_quarryClay" text="Groapă de lut" />
+        <text name="productionPoint_stoneCrusher" text="Spărgător de piatră" />
+        <text name="productionPoint_limestoneCrusher" text="Spărgător de calcar" />
+        <!-- ProductionPoints - texts -->
+        <text name="productionPoint_grainShredder_pigFood1" text="Hrană pentru porci (reţeta 1)" />
+        <text name="productionPoint_grainShredder_pigFood2" text="Hrană pentru porci (reţeta 2)" />
+        <text name="productionPoint_fillType_friedOnion" text="Ceapă prăjită" />
+        <text name="productionPoint_fillType_onionBag" text="Ceapă (ambalată)" />
+        <text name="productionPoint_fillType_onionSalt" text="Sare de ceapă" />
+        <text name="productionPoint_fillType_onionSoup" text="Supă de ceapă" />
+        <text name="productionPoint_fillType_fishFood" text="Hrană pentru pește" />
+        <text name="productionPoint_fillType_trout" text="Păstrăv" />
+        <text name="productionPoint_fillType_troutYoung" text="Păstrăv tânăr" />
+
+        <!-- Production Point Pallets -->
+        <text name="pallet_applesBoxPallet" text="Palet cu mere" />
+        <text name="pallet_pearsBoxPallet" text="Palet cu pere" />
+        <text name="pallet_apricotsBoxPallet" text="Palet cu caise" />
+        <text name="pallet_plumsBoxPallet" text="Palet cu prune" />
+        <text name="pallet_greenPepperBoxPallet" text="Palet cu ardei verde" />
+        <text name="pallet_cucumbersBoxPallet" text="Palet cu castraveți" />
+        <text name="pallet_onionsBoxPallet" text="Palet cu ceapă" />
+        <text name="pallet_watermelonBoxPallet" text="Palet cu pepeni verzi" />
+        <text name="pallet_appleJuiceBoxPallet" text="Palet cu suc de mere" />
+        <text name="pallet_apricotJamBoxPallet" text="Palet cu dulceață de caise" />
+        <text name="pallet_plumJamBoxPallet" text="Palet cu gem de prune" />
+        <text name="pallet_ketchupBoxPallet" text="Palet cu Ketchup" />
+        <text name="pallet_strawberryJuiceBoxPallet" text="Palet cu suc de căpșuni" />
+        <text name="pallet_picklesBoxPallet" text="Palet cu castraveți murați" />
+        <text name="pallet_leathersPallet" text="Palet cu piele" />
+        <text name="pallet_clayBricksPallet" text="Palet cu cărămizi de lut" />
+        <text name="pallet_clayRoofPlatesPallet" text="Palet cu plăci de acoperiș din lut" />
+        <text name="pallet_chipwoodBoardsStackPallet" text="Paleți cu plăci de așchii de lemn" />
+
+        <!-- Constructibles -->
+        <text name="constructable_rentalHouse01" text="Casă de închiriat 1" />
+        <text name="constructable_rentalHouse02" text="Casă de închiriat 2" />
+        <text name="constructable_rentalHouse03" text="Casă de închiriat 3" />
+        <text name="constructable_residentialBuilding01Preplaced01" text="Construcție casă familială - Lančár" />
+        <text name="constructable_residentialBuilding02Preplaced01" text="Construcție casă familială - Šterusy" />
+        <text name="constructable_residentialBuilding02Preplaced02" text="Construcție casă familială - Kočín" />
+
+        <!-- Selling Stations -->
+        <text name="sellingStation_vehicleShop" text="Service și vânzare vehicule Luca Motors" />
+        <text name="sellingStation_constructionMaterialTrader" text="Comerciant de materiale de construcții" />
+        <text name="sellingStation_containerTrader" text="Comerciant de containere" />
+        <text name="sellingStation_smallFarmer" text="Ferma lui Katie" />
+        <text name="sellingStation_trainOtherTownSK" text="Žilina" />
+        <text name="sellingStation_railroadSiloBulk" text="Silo feroviar – volum mare" />
+        <text name="sellingStation_railroadSiloGrain" text="Silo feroviar – cereale" />
+        <text name="openingHours_4-0" text="Orele de deschidere sunt: de la 4:00 la 12:00." />
+        <text name="openingHours_5-23" text="Orele de deschidere sunt: de la 5:00 la 23:00." />
+        <text name="openingHours_6-18" text="Orele de deschidere sunt: de la 6:00 la 18:00." />
+        <text name="openingHours_6-22" text="Orele de deschidere sunt: de la 6:00 la 22:00." />
+        <text name="openingHours_6-0" text="Orele de deschidere sunt: de la 6:00 la 12:00." />
+
+        <!-- Buying Stations -->
+        <text name="buyingStation_farmSupplies" text="Comerciant de produse agricole" />
+        <text name="buyingStation_creekWater" text="Apă din pârâu" />
+        <text name="buyingStation_smallGasStation" text="Mică benzinărie" />
+        <text name="buyingStation_horseRanch" text="Fermă" />
+        <text name="buyingStation_chargingStationBiogasplant" text="Stație de încărcare electrică - Instalație de biogaz" />
+        <text name="buyingStation_biogasStationBiogasplant" text="Stație de Biometan - Instalație de Biogaz" />
+        <text name="buyingStation_chargingStation01GasStation01" text="Stație de încărcare electrică - Benzinărie" />
+        <text name="buyingStation_chargingStation02GasStation02" text="Stație de încărcare electrică - benzinărie mică" />
+        <text name="buyingStation_biogasStation01GasStation01" text="Stație de biometan - Benzinărie" />
+
+        <!-- Income Buildings -->
+        <text name="incomeBuilding_horseRanch" text="Fermă" />
+        <text name="incomeBuilding_pharmacy" text="Farmacie" />
+        <text name="incomeBuilding_restaurantSterusy" text="Restaurant Saint Peter" />
+        <text name="incomeBuilding_restaurantLancar" text="Pizzeria Hungry Oven" />
+        <text name="incomeBuilding_pubKocin" text="Clubul Catman" />
+        <text name="incomeBuilding_footballFieldSterusy" text="Teren de fotbal Šterusy" />
+        <text name="incomeBuilding_footballFieldKocín" text="Teren de fotbal Kočín" />
+
+        <!-- Animations -->
+        <text name="action_hideRoof" text="Ascunde acoperișul" />
+        <text name="action_unhideRoof" text="Afișează acoperișul" />
+        <text name="action_openInspectionPit" text="Descoperă groapa de inspecție" />
+        <text name="action_closeInspectionPit" text="Acoperă groapa de inspecție" />
+        <text name="action_disableElectricityPoleCols" text="Dezactivează coliziunile stâlpilor de electricitate de joasă tensiune de pe câmpuri" />
+        <text name="action_enableElectricityPoleCols" text="Activează coliziunile stâlpilor de electricitate de joasă tensiune de pe câmpuri" />
+        <text name="action_configureObjectStorageOff" text="Dezactivează stocarea automată a obiectelor. ATENȚIE: goliți depozitul înainte de schimbarea modului." />
+        <text name="action_configureObjectStorageOn" text="Activează stocarea automată a obiectelor. ATENȚIE: goliți depozitul înainte de schimbarea modului." />
+        <text name="action_heiferStableAddPoles" text="Adaugă stâlpi de susținere pentru acoperiș. NOTĂ: Folosiți această opțiune dacă ați vândut silozul tip buncăr de care este atașat acest grajd." />
+        <text name="action_heiferStableRemovePoles" text="Îndepărtează stâlpii de susținere ai acoperișului. NOTĂ: Folosiți această opțiune dacă silozul tip buncăr de care este atașat acest grajd este încă prezent.." />
+        <text name="action_moveFenceClean" text="Mută gardul în poziția de curățare" />
+        <text name="action_moveFenceBack" text="Mută gardul înapoi în poziția normală" />
+        <text name="action_ladderUp" text="Scară: sus" />
+        <text name="action_ladderDown" text="Scară: jos" />
+
+        <!-- Colors -->
+        <text name="color_buildingSpecificDefault" text="Culoare implicită specifică clădirilor LIZARD" />
+        <text name="color_lizardRed" text="LIZARD roşu" />
+        <text name="color_lizardDarkRed" text="LIZARD roșu închis" />
+        <text name="color_lizardOrange" text="LIZARD portocaliu" />
+        <text name="color_lizardBrown" text="LIZARD maro" />
+        <text name="color_lizardYellow" text="LIZARD galben" />
+        <text name="color_lizardBrightYellow" text="LIZARD galben strălucitor" />
+        <text name="color_lizardLimeGreen" text="LIZARD verde lămâi" />
+        <text name="color_lizardFarmBrightGreen" text="LIZARD fermă verde strălucitor" />
+        <text name="color_lizardBrightGreen" text="LIZARD verde strălucitor" />
+        <text name="color_lizardGreen" text="LIZARD verde" />
+        <text name="color_lizardFarmGreen" text="LIZARD fermă verde" />
+        <text name="color_lizardDarkGreen" text="LIZARD verde închis" />
+        <text name="color_lizardTurquoise" text="LIZARD Turcoaz" />
+        <text name="color_lizardSkyBlue" text="LIZARD albastru cerului" />
+        <text name="color_lizardLizardBrightBlue" text="LIZARD albastru strălucitor" />
+        <text name="color_lizardBlue" text="LIZARD albastru" />
+        <text name="color_lizardOceanBlue" text="LIZARD albastru ocean" />
+        <text name="color_lizardDarkBlue" text="LIZARD albastru închis" />
+        <text name="color_lizardPurple" text="LIZARD violet" />
+        <text name="color_lizardBrightPurple" text="LIZARD violet strălucitor" />
+        <text name="color_lizardPink" text="LIZARD roz" />
+        <text name="color_lizardBrightPink" text="LIZARD roz strălucitor" />
+
+        <!-- AI Helpers -->
+        <text name="aiHelperNameA" text="Luca" />
+        <text name="aiHelperNameB" text="Dominica" />
+        <text name="aiHelperNameC" text="Martin" />
+        <text name="aiHelperNameD" text="Sofia" />
+        <text name="aiHelperNameE" text="Stan" />
+        <text name="aiHelperNameF" text="Emma" />
+        <text name="aiHelperNameG" text="Patrick" />
+        <text name="aiHelperNameH" text="Laura" />
+        <text name="aiHelperNameI" text="David" />
+        <text name="aiHelperNameJ" text="Ecaterina" />
+
+        <!-- Ground Types -->
+        <text name="groundType_asphaltDusty" text="Asfalt prăfuit"/>
+        <text name="groundType_asphaltCracks" text="Asfalt crăpat"/>
+        <text name="groundType_asphaltCracksDirt" text="Asfalt murdar crăpat"/>
+        <text name="groundType_asphaltDirt" text="Asfalt murdar"/>
+        <text name="groundType_concreteDark" text="Beton închis la culoare"/>
+        <text name="groundType_concreteDirty" text="Beton murdar"/>
+        <text name="groundType_panel" text="Panou"/>
+        <text name="groundType_panelDamaged" text="Panou deteriorat"/>
+        <text name="groundType_panelDirt" text="Panou murdar"/>
+        <text name="groundType_pavement" text="Trotuar"/>
+        <text name="groundType_pavementHTiles" text="Trotuar - formă de H"/>
+        <text name="groundType_pavementGrass" text="Trotuar cu iarbă"/>
+        <text name="groundType_vehicleMud" text="Urme de anvelope în noroi"/>
+        <text name="groundType_vehicleMudPuddle" text="Urme de anvelope în noroi cu bălți"/>
+        <text name="groundType_mud" text="Noroi"/>
+        <text name="groundType_riverBed" text="Albie de râu"/>
+        <text name="groundType_grassTown" text="Gazon"/>
+        <text name="groundType_grassLeaves" text="Iarbă cu frunze"/>
+        <text name="groundType_gravelPathway" text="Potecă pietruită"/>
+        <text name="groundType_gravelDirt" text="Pământ pietros"/>
+        <text name="groundType_gravelDirtBlend" text="Pietriș murdar"/>
+        <text name="groundType_gravelMoss" text="Pietriș cu mușchi"/>
+        <text name="groundType_forestNeedels" text="Sol de pădure cu ace de conifere"/>
+        <text name="groundType_forestRoots" text="Sol de pădure cu rădăcini"/>
+        <text name="groundType_rockLight" text="Stâncă deschisă la culoare"/>
+        <text name="groundType_rockDark" text="Stâncă închisă la culoare"/>
+
+        <!-- Collectibles -->
+        <text name="collectible_cc_all_cow" text="Ai găsit toate cele 10 vaci! Mergi la camera ta de cazare din clădirea biroului fermei, s-a schimbat ceva!" />
+        <text name="collectible_cc_all_harvester" text="Ai găsit toate cele 10 combine! Mergi la camera ta de cazare din clădirea biroului fermei, s-a schimbat ceva!" />
+        <text name="collectible_cc_all_horse" text="Ai găsit toți cei 10 cai! Mergi la camera ta de cazare din clădirea biroului fermei, s-a schimbat ceva!" />
+        <text name="collectible_cc_all_pig" text="Ai găsit toți cei 10 porci! Mergi la camera ta de cazare din clădirea biroului fermei, s-a schimbat ceva!" />
+        <text name="collectible_cc_all_plow" text="Ai găsit toate cele 10 pluguri! Mergi la camera ta de cazare din clădirea biroului fermei, s-a schimbat ceva!" />
+        <text name="collectible_cc_all_seeder" text="Ai găsit toate cele 10 semănători! Mergi la camera ta de cazare din clădirea biroului fermei, s-a schimbat ceva!" />
+        <text name="collectible_cc_all_sheep" text="Ai găsit toate cele 10 oi! Mergi la camera ta de cazare din clădirea biroului fermei, s-a schimbat ceva!" />
+        <text name="collectible_cc_all_tractor" text="Ai găsit toate cele 10 tractoare! Mergi la camera ta de cazare din clădirea biroului fermei, s-a schimbat ceva!" />
+        <text name="collectible_cc_all_trailer" text="Ai găsit toate cele 10 remorci! Mergi la camera ta de cazare din clădirea biroului fermei, s-a schimbat ceva!" />
+        <text name="collectible_cc_all_waterTrailer" text="Ai găsit toate cele 10 remorci de apă! Mergi la camera ta de cazare din clădirea biroului fermei, s-a schimbat ceva!" />
+    </texts>
+    <elements>
+        <e k="collectible_cc_cow" v="Ai găsit o vacă! Mai sunt de găsit încă %d vaci." tag="format"/>
+        <e k="collectible_cc_harvester" v="Ai găsit o combină! Mai sunt de găsit încă %d combine." tag="format"/>
+        <e k="collectible_cc_horse" v="Ai găsit un cal! Mai sunt de găsit încă %d cai." tag="format"/>
+        <e k="collectible_cc_pig" v="Ai găsit un porc! Mai sunt de găsit încă %d porci." tag="format"/>
+        <e k="collectible_cc_plow" v="Ai găsit un plug! Mai sunt de găsit încă %d pluguri." tag="format"/>
+        <e k="collectible_cc_seeder" v="Ai găsit o semănătoare! Mai sunt de găsit încă %d semănători." tag="format"/>
+        <e k="collectible_cc_sheep" v="Ai găsit o oaie! Mai sunt de găsit încă %d oi." tag="format"/>
+        <e k="collectible_cc_tractor" v="Ai găsit un tractor! Mai sunt de găsit încă %d tractoare." tag="format"/>
+        <e k="collectible_cc_trailer" v="Ai găsit o remorcă! Mai sunt de găsit încă %d remorci." tag="format"/>
+        <e k="collectible_cc_waterTrailer" v="Ai găsit o remorcă de apă! Mai sunt de găsit încă %d remorci de apă." tag="format"/>
+    </elements>
+</l10n>

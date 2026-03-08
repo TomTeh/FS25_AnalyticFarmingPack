@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <texts>
+        <!-- Placeable Objects and Shop Items -->
+        <text name="placeableObject_preplacedMapObject" text="Oggetto preposizionato" />
+        <text name="placeableObject_cowBarnSmall" text="Stalla" />
+        <text name="placeableObject_cowBarnSmallVector" text="Stalla con robot di alimentazione" />
+        <text name="placeableObject_cowBarnSmallNoPasture" text="Stalla (senza pascolo)" />
+        <text name="placeableObject_cowBarnSmallNoPastureVector" text="Stalla con robot di alimentazione (senza pascolo)" />
+        <text name="placeableObject_cowBarnBig" text="Stalla (grande)" />
+        <text name="placeableObject_cowBarnBigVector" text="Stalla (grande) con robot di alimentazione" />
+        <text name="placeableObject_cowBarnBigNoPasture" text="Stalla (grande, senza pascolo)" />
+        <text name="placeableObject_cowBarnBigNoPastureVector" text="Stalla (grande) con robot di alimentazione (senza pascolo)" />
+        <text name="placeableObject_cow1" text="Stalla 1 - Šterusy" />
+        <text name="placeableObject_cow2" text="Stalla 2 - Šterusy" />
+        <text name="placeableObject_animalBarnHeiferStablePreplaced" text="Stalla per manze - Šterusy" />
+        <text name="placeableObject_animalBarnCowYoungShelter" text="Stalla giovani mucche" />
+        <text name="placeableObject_animalBarnCowYoungShelterPreplaced" text="Stalla giovani mucche - Šterusy" />
+        <text name="placeableObject_calfHutSingle" text="Capanna per vitelli - singola" />
+        <text name="placeableObject_calfHutGroupRight" text="Capanna per vitelli - gruppo (orientata a destra)" />
+        <text name="placeableObject_calfHutGroupLeft" text="Capanna per vitelli - gruppo (orientata a sinistra)" />
+        <text name="placeableObject_horse1" text="Stalla per cavalli - Šterusy" />
+        <text name="placeableObject_chicken1" text="Pollaio - Lančár" />
+        <text name="placeableObject_pig1" text="Porcilaia 1 - Šterusy" />
+        <text name="placeableObject_pig2" text="Porcilaia 2 - Kočín" />
+        <text name="placeableObject_pig3" text="Porcilaia 3 - Kočín" />
+        <text name="placeableObject_sheep1" text="Stalla per ovini - Lančár" />
+        <text name="placeableObject_coveredMultiBunkerSilo1" text="Silo multiplo coperto 1" />
+        <text name="placeableObject_coveredMultiBunkerSilo2" text="Silo multiplo coperto 2" />
+        <text name="placeableObject_bgaBunkerSilo" text="Silo impianto di biogas" />
+        <text name="placeableObject_bunkerSilo" text="Trincea" />
+        <text name="placeableObject_compostSilo" text="Silo per Compost" />
+        <text name="placeableObject_farmGatehouse" text="Portineria fattoria" />
+        <text name="placeableObject_farmGatehouseWithWeight" text="Portineria fattoria con pesa" />
+        <text name="placeableObject_farmOfficeBuilding" text="Ufficio aziendale con alloggi e officina" />
+        <text name="placeableObject_fuelTank" text="Serbatoio carburante" />
+        <text name="placeableObject_grainStorage" text="Stoccaggio e trituratore per cereali" />
+        <text name="placeableObject_grainStoragePreplaced" text="Stoccaggio e trituratore per cereali - Šterusy" />
+        <text name="placeableObject_liquidFertilizerAndHerbicideTanks" text="Serbatoi liquidi ed erbicidi" />
+        <text name="placeableObject_milkingParlor" text="Sala di mungitura" />
+        <text name="placeableObject_easyShed01WithWalls" text="Capanno con pareti" />
+        <text name="placeableObject_manureHeapMainFarm" text="Cumulo di letame - Šterusy" />
+        <text name="placeableObject_manureHeapPigFarm" text="Cumulo di letame - Kočín" />
+        <text name="placeableObject_manureHeapSheepFarm" text="Cumulo di letame - Lančár" />
+        <text name="placeableObject_manureStorageSpotLower" text="Stoccaggio letame - Inferiore" />
+        <text name="placeableObject_manureStorageSpotUpper" text="Stoccaggio letame - Superiore" />
+        <text name="placeableObject_manureHeapSmall" text="Cumulo di letame - Piccolo" />
+        <text name="placeableObject_manureHeapSmallExtension" text="Cumulo di letame - estensione piccola" />
+        <text name="placeableObject_manureHeapMedium" text="Cumulo di letame - medio" />
+        <text name="placeableObject_manureHeapMediumExtension" text="Cumulo di letame - estensione media" />
+        <text name="placeableObject_manureHeapLarge" text="Cumulo di letame - Grande" />
+        <text name="placeableObject_manureHeapLargeExtension" text="Cumulo di letame - estensione grande" />
+        <text name="placeableObject_repairRamp" text="Rampa riparazioni" />
+        <text name="placeableObject_siloPF" text="Silo per cereali - Kočín" />
+        <text name="placeableObject_siloSF" text="Silo per cereali - Lančár" />
+        <text name="placeableObject_baleShed" text="Capanno per balle" />
+        <text name="placeableObject_consumablesStorage" text="Deposito materiali di consumo" />
+        <text name="placeableObject_hall1" text="Capanno per veicoli e stoccaggio" />
+        <text name="placeableObject_hall2" text="Capanno per veicoli e stoccaggio composto" />
+        <text name="placeableObject_vehicleShelter1" text="Capanno per veicoli - chiuso" />
+        <text name="placeableObject_vehicleShelter2" text="Capanno per veicoli - aperto, grande" />
+        <text name="placeableObject_vehicleShelter3" text="Capanno per veicoli - aperto, piccolo" />
+        <text name="placeableObject_palletRack" text="Scaffalatura per pallet" />
+        <text name="placeableObject_waterTower" text="Torre idrica" />
+        <text name="placeableObject_calfArea" text="Edificio per la cura dei vitelli" />
+        <text name="placeableObject_animalPigFence" text="Recinto per maiali" />
+        <text name="placeableObject_animalSheepFence" text="Recinto per pecore" />
+        <text name="placeableObject_animalCowFence" text="Recinto per mucche" />
+        <text name="placeableObject_oldChainlinkFence" text="Vecchia recinzione a maglie metalliche" />
+        <text name="placeableObject_metalGridFence" text="Recinzione a griglia metallica" />
+        <text name="placeableObject_metalGridFenceBase" text="Recinzione a griglia metallica (con base)" />
+        <text name="placeableObject_concreteFence" text="Recinzione in cemento" />
+        <text name="placeableObject_chainlinkFenceBig" text="Recinzione a maglie metalliche grande" />
+        <text name="placeableObject_chainlinkFenceBigBase" text="Recinzione a maglie metalliche grande (con base)" />
+        <text name="placeableObject_constructionFence" text="Recinzione da cantiere" />
+        <text name="placeableObject_metalGate" text="Cancello metallico" />
+        <text name="placeableObject_metalGateDoorLeft" text="Cancello metallico con porta piccola (sinistra)" />
+        <text name="placeableObject_metalGateDoorRight" text="Cancello metallico con porta piccola (destra)" />
+        <text name="placeableObject_floodLightPole" text="Palo con faretti" />
+        <text name="placeableObject_streetLight" text="Lampione stradale" />
+        <text name="placeableObject_streetLightSmall" text="Lampione stradale piccolo" />
+        <text name="placeableObject_poleLamp" text="Palo con lampada" />
+        <text name="placeableObject_sleepTrigger" text="Trigger per dormire" />
+        <text name="placeableObject_sleepTriggerDoormat" text="Trigger per dormire con zerbino" />
+        <text name="placeableObject_wardrobeTrigger" text="Trigger guardaroba" />
+        <text name="shopItem_decoFoliageGrassMedium" text="Erba media" />
+        <text name="shopItem_decoFoliageGrassSmall" text="Erba piccola" />
+        <text name="shopItem_decoFoliageGrassCut" text="Erba tagliata" />
+        <text name="shopItem_decoFoliageFlowerWhite" text="Fiore bianco" />
+        <text name="shopItem_decoFoliageFlowerLavender" text="Fiore di lavanda" />
+        <text name="shopItem_decoFoliageFlowerYellow" text="Fiore giallo" />
+        <text name="shopItem_decoFoliageFlowerBlue" text="Fiore blu" />
+        <text name="shopItem_decoFoliageWeedSmall" text="Erba piccola" />
+        <text name="shopItem_decoFoliageWeedSmallRumex" text="Erba infestante - Rumex piccola" />
+        <text name="shopItem_decoFoliageWeedApera" text="Erba infestante - Apera" />
+        <text name="shopItem_decoFoliageWeedChaerophyllum" text="Erba infestante - Chaerophyllum" />
+        <text name="shopItem_decoFoliageWeedChenopodium" text="Erba infestante - Chenopodium" />
+        <text name="shopItem_decoFoliageWeedCirsium" text="Erba infestante - Cirsium" />
+        <text name="shopItem_decoFoliageWeedPapaverRhoeas" text="Erba infestante - PapaverRhoeas" />
+        <text name="shopItem_decoFoliageWeedRumex" text="Erba infestante - Rumex" />
+        <text name="shopItem_groundFoliageBranchesBig" text="Rami grandi" />
+        <text name="shopItem_groundFoliageBranchesSmall" text="Rami piccoli" />
+        <text name="shopItem_groundFoliageBranchesDry" text="Rami secchi" />
+        <text name="shopItem_groundFoliageMushroomChanterelle" text="Fungo finferlo" />
+        <text name="shopItem_groundFoliageMushroomBoletus" text="Funghi porcini" />
+        <text name="shopItem_groundFoliageMushroomWhiteTip" text="Funghi a punta bianca" />
+        <text name="shopItem_groundFoliageMushroomFlyCap" text="Funghi a cappello di mosca" />
+        <text name="shopItem_groundFoliageCoverFoliage" text="Fogliame di copertura" />
+        <text name="shopItem_groundFoliageThimbleberry" text="Rosa di rovo" />
+        <text name="shopItem_groundFoliageMaidenFern" text="Felce vergine" />
+        <text name="shopItem_groundFoliageStingingNettle" text="Ortica" />
+        <text name="shopItem_forestPlantsClover" text="Trifoglio" />
+        <text name="shopItem_forestPlantsStarflower" text="Fiore stella" />
+        <text name="shopItem_forestPlantsBunchberry" text="Bacca di rovo" />
+        <text name="shopItem_forestPlantsSalmonberryBush" text="Bacca di salmone" />
+        <text name="shopItem_forestPlantsStarryFalseSolomonSeal" text="Falso sigillo di Salomone Stellato" />
+        <text name="shopItem_forestPlantsSwordFern" text="Felce spada" />
+        <text name="shopItem_forestPlantsDeerFern" text="Felce cervo" />
+        <text name="shopItem_forestPlantsGrass" text="Erba di bosco" />
+        <text name="shopItem_waterPlantsTyphaLatifoliaSmall" text="Tifa a foglie larghe (piccola)" />
+        <text name="shopItem_waterPlantsTyphaLatifoliaMedium" text="Tifa a foglie larghe (media)" />
+        <text name="shopItem_waterPlantsTyphaLatifoliaLarge" text="Tifa a foglie larghe (grande)" />
+        <text name="shopItem_waterPlantsMiscanthusSinensisSmall" text="Miscanto cinese (piccolo)" />
+        <text name="shopItem_waterPlantsMiscanthusSinensisMedium" text="Miscanto cinese (medio)" />
+        <text name="shopItem_waterPlantsMiscanthusSinensisLarge" text="Miscanto cinese (grande)" />
+        <text name="shopItem_waterPlantsStipaTenuissimaSmall" text="Stipa molto sottile (piccola)" />
+        <text name="shopItem_waterPlantsStipaTenuissimaLarge" text="Stipa molto sottile (grande)" />
+        <text name="shopItem_paintableFieldPlowed" text="Campo arato" />
+        <text name="shopItem_paintableFieldCultivated" text="Campo coltivato" />
+        <text name="shopItem_paintableFieldRidged" text="Campo ondulato" />
+
+        <!-- Function Texts -->
+        <text name="function_roofSolarPanelsOption" text="Questo edificio ha la possibilità di installare pannelli solari sul tetto. Prezzo per pannello: 265 $. Guadagno mensile per pannello: 21,6 $ (con condizioni meteorologiche adeguate)." />
+        <text name="function_heiferStable" text="Questo rifugio è destinato alle mucche. Qui possono crescere e poi essere spostate in un'altra stalla. Le mucche in questo rifugio non producono latte né liquame, ma producono comunque letame." />
+        <text name="function_cowYoungShelter" text="Questo rifugio è destinato ai vitelli o alle mucche. Qui possono crescere e poi essere spostati in un'altra stalla. Le mucche in questo rifugio non producono latte né letame liquido, ma producono comunque letame." />
+        <text name="function_calfHut" text="Questa capanna è destinata esclusivamente ai vitelli. Qui possono crescere e poi devono essere spostati in un'altra stalla. Le mucche in questo recinto non producono latte né letame liquido, ma solo letame, e richiedono molte cure manuali quotidiane!" />
+        <text name="function_bunkerSiloCC" text="Questo bunker silo può essere riempito con pula, erba, erba medica e trifoglio. Dopo la compattazione e la copertura del silo, il contenuto si trasforma in insilato. NOTA: se si utilizza la mod Maize Plus, la funzionalità di questo silo cambia in base agli standard M+." />
+        <text name="function_grainStorage" text="Questa struttura polivalente dispone di un ampio magazzino che consente di stoccare i raccolti a terra o di conservarli prima della lavorazione, con ampio spazio anche per i veicoli. Il trituratore produce cibo per i vostri animali. I cereali possono essere conservati anche in silos di grande capacità." />
+        <text name="function_fillableLiquidFertilizerAndHerbicideTanks" text="Questi serbatoi possono essere riempiti con fertilizzante liquido ed erbicida." />
+        <text name="function_baleStorageCC" text="Questo edificio può essere utilizzato per immagazzinare le tue balle." />
+        <text name="function_palletStorage" text="Questo edificio può essere utilizzato per immagazzinare i tuoi pallet." />
+        <text name="function_orchard" text="Il frutteto produce frutti. Ha bisogno di acqua, fertilizzante liquido e compost." />
+        <text name="function_greenhouseAdvanced" text="Le serre avanzate producono verdure più velocemente ma richiedono più cure - Necessità: acqua, fertilizzante liquido e compost." />
+        <text name="function_compostSilo" text="Un silo per il compost può essere riempito con rifiuti organici. Dopo la compattazione e la copertura del silo, il contenuto si trasforma in compost." />
+        <text name="function_compost" text="Il compost è necessario nei frutteti e nelle serre. Può essere utilizzato anche come fertilizzante nei campi." />
+        <text name="function_heapSpawnerStoneCC" text="Le pietre possono essere raccolte gratuitamente da questo edificio. Produce 3000 unità di pietra all'ora."/>
+        <text name="function_heapSpawnerLimestone" text="Calcare può essere raccolta gratuitamente da questo edificio. Produce 2800 unità di calcare all'ora."/>
+        <text name="function_heapSpawnerClay" text="L'argilla può essere ritirata gratuitamente da questo edificio. Produce 1600 unità di argilla all'ora."/>
+        <text name="function_heapSpawnerIronOre" text="Il minerale di ferro può essere raccolto gratuitamente da questo edificio. Produce 800 unità di minerale di ferro all'ora."/>
+        <text name="function_rentalHouse" text="Questa casa è destinata all'affitto e genera un utile di:"/>
+        <text name="function_rentalHouse01Income" text="2,500 $ al mese"/>
+        <text name="function_rentalHouse02Income" text="3,000 $ al mese"/>
+        <text name="function_rentalHouse03Income" text="2,000 $ al mese"/>
+        <text name="function_chainlinkFenceBigGatePlacement" text="PLACEMENT NOTE: Make sure to place the gate parallelly with the fence and on flat terrain for correct aesthetics." />
+        <text name="function_decorativeGrass" text="This grass doesn't grow! It remains in the current stage - it serves as a decorative grass." />
+        <text name="function_decorativeGardenCrops" text="This is decorative garden crop, it is not functional. It does change visuals depending on season or disapper in specific times like winter. (Depending on when it was painted, the seasonal changes may start next year. Also depended on whether you use seasonal growth or not. If seasonal growth is disabled it changes apperance every in-game day)" />
+        <text name="function_paintableField" text="Creates soil for growing crops." />
+
+        <!-- Fill Types -->
+        <text name="fillType_decoGardenFoliage" text="Colture ornamentali da giardino" />
+        <text name="fillType_rye" text="Segale" />
+        <text name="fillType_mustard" text="Senape" />
+        <text name="fillType_mowedCrop" text="Raccolto falciato" />
+        <text name="fillType_alfalfa" text="Erba medica" />
+        <text name="fillType_alfalfaHay" text="Fieno di erba medica" />
+        <text name="fillType_alfalfaSilo" text="Insilato di erba medica" />
+        <text name="fillType_alfalfaSilage" text="Insilato di erba medica" />
+        <text name="fillType_clover" text="Trifoglio" />
+        <text name="fillType_cloverHay" text="Fieno di trifoglio" />
+        <text name="fillType_cloverSilo" text="Insilato di trifoglio" />
+        <text name="fillType_cloverSilage" text="Insilato di trifoglio" />
+        <text name="fillType_mustardProcessed" text="Senape (lavorata)" />
+        <text name="fillType_apple" text="Mele" />
+        <text name="fillType_pear" text="Pere" />
+        <text name="fillType_apricot" text="Albicocche" />
+        <text name="fillType_plum" text="Prugne" />
+        <text name="fillType_greenPepper" text="Peperone verde" />
+        <text name="fillType_cucumber" text="Cetrioli" />
+        <text name="fillType_watermelon" text="Anguria" />
+        <text name="fillType_appleJuice" text="Succo di mela" />
+        <text name="fillType_apricotJam" text="Marmellata di albicocche" />
+        <text name="fillType_plumJam" text="Confettura di prugne" />
+        <text name="fillType_ketchup" text="Ketchup" />
+        <text name="fillType_strawberryJuice" text="Succo di fragola" />
+        <text name="fillType_pickles" text="Sottaceti" />
+        <text name="fillType_organicWaste" text="Rifiuti organici" />
+        <text name="fillType_compost" text="Compost" />
+        <text name="fillType_leather" text="Pelle" />
+        <text name="fillType_clayBrick" text="Mattoni di argilla" />
+        <text name="fillType_clayRoofPlate" text="Piastra del tetto in argilla" />
+        <text name="fillType_chipwoodBoards" text="Tavole di truciolato" />
+        <text name="fillType_blastFurnaceSlag" text="Scoria d'altoforno" />
+        <text name="fillType_limestone" text="Calcare" />
+        <text name="fillType_clay" text="Argilla" />
+        <text name="fillType_sand" text="Sabbia" />
+        <text name="fillType_gravel" text="Ghiaia" />
+        <text name="fillTypeGroup_alfClo" text="Erba medica / Trifoglio" />
+        
+        <!-- ProductionPoints -->
+        <text name="productionPoint_appleOrchard" text="Frutteto di mele" />
+        <text name="productionPoint_pearOrchard" text="Frutteto di pere" />
+        <text name="productionPoint_apricotOrchard" text="Frutteto di albicocche" />
+        <text name="productionPoint_plumOrchard" text="Frutteto di susine" />
+        <text name="productionPoint_greenhouseSmallAdvanced" text="Piccola serra - Avanzata" />
+        <text name="productionPoint_greenhouseSmallAdvanced_watermelon" text="Piccola serra - Avanzata (anguria)" />
+        <text name="productionPoint_greenhouseMediumAdvanced" text="Serra media - Avanzata" />
+        <text name="productionPoint_greenhouseMediumAdvanced_watermelon" text="Serra media - Avanzata (anguria)" />
+        <text name="productionPoint_greenhouseLargeAdvanced" text="Serra grande - Avanzata" />
+        <text name="productionPoint_greenhouseLargeAdvanced_watermelon" text="Serra grande - Avanzata (anguria)" />
+        <text name="productionPoint_fruitVegetableFactory" text="Impianto di lavorazione frutta e verdura" />
+        <text name="productionPoint_foodProcessingPlant" text="Impianto di lavorazione alimentare" />
+        <text name="productionPoint_sawMill" text="Segheria" />
+        <text name="productionPoint_fishFarmPond" text="Laghetto da pesca" />
+        <text name="productionPoint_woodArtist" text="Artista del legno" />
+        <text name="productionPoint_woodArtist_playgroundMaker" text="Artista del legno - Produzione di parchi giochi" />
+        <text name="productionPoint_quarryStone" text="Cava di pietra" />
+        <text name="productionPoint_quarryLimestone" text="Cava di calcare" />
+        <text name="productionPoint_quarryClay" text="Cava di argilla" />
+        <text name="productionPoint_stoneCrusher" text="Frantoio per pietre" />
+        <text name="productionPoint_limestoneCrusher" text="Frantoio per calcare" />
+        <!-- ProductionPoints - texts -->
+        <text name="productionPoint_grainShredder_pigFood1" text="Cibo per maiali (ricetta 1)" />
+        <text name="productionPoint_grainShredder_pigFood2" text="Cibo per maiali (ricetta 2)" />
+        <text name="productionPoint_fillType_friedOnion" text="Cipolla fritta" />
+        <text name="productionPoint_fillType_onionBag" text="Cipolle (confezionate)" />
+        <text name="productionPoint_fillType_onionSalt" text="Sale alla cipolla" />
+        <text name="productionPoint_fillType_onionSoup" text="Zuppa di cipolle" />
+        <text name="productionPoint_fillType_fishFood" text="Cibo per pesci" />
+        <text name="productionPoint_fillType_trout" text="Trota" />
+        <text name="productionPoint_fillType_troutYoung" text="Trota giovane" />
+
+        <!-- Production Point Pallets -->
+        <text name="pallet_applesBoxPallet" text="Pallet di mele" />
+        <text name="pallet_pearsBoxPallet" text="Pallet di pere" />
+        <text name="pallet_apricotsBoxPallet" text="Pallet di albicocche" />
+        <text name="pallet_plumsBoxPallet" text="Pallet di prugne" />
+        <text name="pallet_greenPepperBoxPallet" text="Pallet di Peperone verde" />
+        <text name="pallet_cucumbersBoxPallet" text="Pallet di cetrioli" />
+        <text name="pallet_onionsBoxPallet" text="Pallet di cipolle" />
+        <text name="pallet_watermelonBoxPallet" text="Pallet di angurie" />
+        <text name="pallet_appleJuiceBoxPallet" text="Pallet di succo di mela" />
+        <text name="pallet_apricotJamBoxPallet" text="Pallet di marmellata di albicocche" />
+        <text name="pallet_plumJamBoxPallet" text="Pallet di marmellata di prugne" />
+        <text name="pallet_ketchupBoxPallet" text="Pallet di ketchup" />
+        <text name="pallet_strawberryJuiceBoxPallet" text="Pallet di succo di fragola" />
+        <text name="pallet_picklesBoxPallet" text="Pallet di cetrioli sottaceto" />
+        <text name="pallet_leathersPallet" text="Pallet di pelli" />
+        <text name="pallet_clayBricksPallet" text="Pallet di mattoni di argilla" />
+        <text name="pallet_clayRoofPlatesPallet" text="Pallet di piastre per tetti in argilla" />
+        <text name="pallet_chipwoodBoardsStackPallet" text="Pallet di assi truciolato" />
+
+        <!--Constructibles-->
+        <text name="constructable_rentalHouse01" text="Casa in affitto 1" />
+        <text name="constructable_rentalHouse02" text="Casa in affitto 2" />
+        <text name="constructable_rentalHouse03" text="Casa in affitto 3" />
+        <text name="constructable_residentialBuilding01Preplaced01" text="Costruzione di case unifamiliari - Lančár" />
+        <text name="constructable_residentialBuilding02Preplaced01" text="Costruzione di case unifamiliari - Šterusy" />
+        <text name="constructable_residentialBuilding02Preplaced02" text="Costruzione di case unifamiliari - Kočín" />
+
+        <!-- Selling Stations -->
+        <text name="sellingStation_vehicleShop" text="Assistenza e vendita veicoli Luca Motors" />
+        <text name="sellingStation_constructionMaterialTrader" text="Commerciante di materiali da costruzione" />
+        <text name="sellingStation_containerTrader" text="Commerciante di container" />
+        <text name="sellingStation_smallFarmer" text="La fattoria di Katie" />
+        <text name="sellingStation_trainOtherTownSK" text="Žilina" />
+        <text name="sellingStation_railroadSiloBulk" text="Silo ferroviario - grande" />
+        <text name="sellingStation_railroadSiloGrain" text="Silo ferroviario - grano" />
+        <text name="openingHours_4-0" text="Gli orari di apertura sono: dalle 4:00 alle 24:00." />
+        <text name="openingHours_5-23" text="Gli orari di apertura sono: dalle 5:00 alle 23:00." />
+        <text name="openingHours_6-18" text="Gli orari di apertura sono: dalle 6:00 alle 18:00." />
+        <text name="openingHours_6-22" text="Gli orari di apertura sono: dalle 6:00 alle 22:00." />
+        <text name="openingHours_6-0" text="Gli orari di apertura sono: dalle 6:00 alle 24:00." />
+
+        <!-- Buying Stations -->
+        <text name="buyingStation_farmSupplies" text="Commerciante di forniture agricole" />
+        <text name="buyingStation_creekWater" text="Acqua del ruscello" />
+        <text name="buyingStation_smallGasStation" text="Piccola stazione di servizio" />
+        <text name="buyingStation_horseRanch" text="Ranch" />
+        <text name="buyingStation_chargingStationBiogasplant" text="Stazione di ricarica elettrica - Impianto a biogas" />
+        <text name="buyingStation_biogasStationBiogasplant" text="Stazione di biometano - Impianto di biogas" />
+        <text name="buyingStation_chargingStation01GasStation01" text="Stazione di ricarica elettrica - Stazione di servizio" />
+        <text name="buyingStation_chargingStation02GasStation02" text="Stazione di ricarica elettrica - Piccola stazione di servizio" />
+        <text name="buyingStation_biogasStation01GasStation01" text="Stazione di rifornimento di biometano - Stazione di servizio" />
+
+        <!--Income Buildings-->
+        <text name="incomeBuilding_horseRanch" text="Ranch" />
+        <text name="incomeBuilding_pharmacy" text="Farmacia" />
+        <text name="incomeBuilding_restaurantSterusy" text="Ristorante Saint Peter" />
+        <text name="incomeBuilding_restaurantLancar" text="Pizzeria Hungry Oven" />
+        <text name="incomeBuilding_pubKocin" text="The Catman's Pub" />
+        <text name="incomeBuilding_footballFieldSterusy" text="Football field Šterusy" />
+        <text name="incomeBuilding_footballFieldKocín" text="Football field Kočín" />
+
+        <!-- Animations -->
+        <text name="action_hideRoof" text="Nascondi il tetto." />
+        <text name="action_unhideRoof" text="Mostra il tetto." />
+        <text name="action_openInspectionPit" text="Scoprire la fossa di ispezione." />
+        <text name="action_closeInspectionPit" text="Coprire la fossa di ispezione." />
+        <text name="action_disableElectricityPoleCols" text="Disattiva collisioni pali della luce bassa tensione nei campi." />
+        <text name="action_enableElectricityPoleCols" text="Attiva collisioni pali della luce bassa tensione nei campi." />
+        <text name="action_configureObjectStorageOff" text="Disattiva l'archiviazione automatica degli oggetti. ATTENZIONE: svuotare l'archiviazione prima di cambiare modalità." />
+        <text name="action_configureObjectStorageOn" text="Attiva l'archiviazione automatica degli oggetti. ATTENZIONE: svuotare l'archiviazione prima di cambiare modalità." />
+        <text name="action_addPoles" text="Aggiungi pali del tetto. NOTA: da utilizzare nel caso in cui si sia venduto un silo bunker a cui è attaccato questo fienile." />
+        <text name="action_removePoles" text="Rimuovi pali del tetto. NOTA: da utilizzare se è ancora presente un silo bunker a cui è attaccato questo fienile." />
+        <text name="action_moveFenceClean" text="Spostare la recinzione in posizione di pulizia." />
+        <text name="action_moveFenceBack" text="Riportare la recinzione nella posizione normale." />
+        <text name="action_ladderUp" text="Scala: su." />
+        <text name="action_ladderDown" text="Scala: giù." />
+
+        <!-- Colors -->
+        <text name="color_buildingSpecificDefault" text="Colore predefinito dell'edificio LIZARD" />
+        <text name="color_lizardRed" text="LIZARD Rosso" />
+        <text name="color_lizardDarkRed" text="LIZARD Rosso scuro" />
+        <text name="color_lizardOrange" text="LIZARD Arancione" />
+        <text name="color_lizardBrown" text="LIZARD Marrone" />
+        <text name="color_lizardYellow" text="LIZARD Giallo" />
+        <text name="color_lizardBrightYellow" text="LIZARD Giallo brillante" />
+        <text name="color_lizardLimeGreen" text="LIZARD Verde lime" />
+        <text name="color_lizardFarmBrightGreen" text="LIZARD Fattoria verde brillante" />
+        <text name="color_lizardBrightGreen" text="LIZARD Verde brillante" />
+        <text name="color_lizardGreen" text="LIZARD Verde" />
+        <text name="color_lizardFarmGreen" text="LIZARD Fattoria Verde" />
+        <text name="color_lizardDarkGreen" text="LIZARD Verde scuro" />
+        <text name="color_lizardTurquoise" text="LIZARD Turchese" />
+        <text name="color_lizardSkyBlue" text="LIZARD Azzurro cielo" />
+        <text name="color_lizardLizardBrightBlue" text="LIZARD Blu brillante" />
+        <text name="color_lizardBlue" text="LIZARD Blu" />
+        <text name="color_lizardOceanBlue" text="LIZARD Blu oceano" />
+        <text name="color_lizardDarkBlue" text="LIZARD Blu scuro" />
+        <text name="color_lizardPurple" text="LIZARD Viola" />
+        <text name="color_lizardBrightPurple" text="LIZARD Viola brillante" />
+        <text name="color_lizardPink" text="LIZARD Rosa" />
+        <text name="color_lizardBrightPink" text="LIZARD Rosa brillante" />
+
+        <!-- AI Helpers -->
+        <text name="aiHelperNameA" text="Luca" />
+        <text name="aiHelperNameB" text="Dominica" />
+        <text name="aiHelperNameC" text="Martin" />
+        <text name="aiHelperNameD" text="Sofia" />
+        <text name="aiHelperNameE" text="Stanislao" />
+        <text name="aiHelperNameF" text="Emma" />
+        <text name="aiHelperNameG" text="Patrizio" />
+        <text name="aiHelperNameH" text="Laura" />
+        <text name="aiHelperNameI" text="Davide" />
+        <text name="aiHelperNameJ" text="Caterina" />
+
+        <!-- Ground Types -->
+        <text name="groundType_asphaltDusty" text="Asfalto polveroso"/>
+        <text name="groundType_asphaltCracks" text="Asfalto crepato"/>
+        <text name="groundType_asphaltCracksDirt" text="Asfalto sporco e crepato"/>
+        <text name="groundType_asphaltDirt" text="Asfalto sporco"/>
+        <text name="groundType_concreteDark" text="Calcestruzzo scuro"/>
+        <text name="groundType_concreteDirty" text="Calcestruzzo sporco"/>
+        <text name="groundType_panel" text="Pannello"/>
+        <text name="groundType_panelDamaged" text="Pannello danneggiato"/>
+        <text name="groundType_panelDirt" text="Pannello sporco"/>
+        <text name="groundType_pavement" text="Marciapiede"/>
+        <text name="groundType_pavementHTiles" text="Pavimentazione - forma ad H"/>
+        <text name="groundType_pavementGrass" text="Pavimentazione in erba"/>
+        <text name="groundType_vehicleMud" text="Tracce di pneumatici nel fango"/>
+        <text name="groundType_vehicleMudPuddle" text="Tracce di pneumatici nel fango con pozzanghere"/>
+        <text name="groundType_mud" text="Fango"/>
+        <text name="groundType_riverBed" text="Letto del fiume"/>
+        <text name="groundType_grassTown" text="Prato"/>
+        <text name="groundType_grassLeaves" text="Erba con foglie"/>
+        <text name="groundType_gravelPathway" text="Ghiaia del sentiero"/>
+        <text name="groundType_gravelDirt" text="Terra ghiaiosa"/>
+        <text name="groundType_gravelDirtBlend" text="Ghiaia sporca"/>
+        <text name="groundType_gravelMoss" text="Ghiaia con muschio"/>
+        <text name="groundType_forestNeedels" text="Terreno boschivo con aghi"/>
+        <text name="groundType_forestRoots" text="Terreno forestale con radici"/>
+        <text name="groundType_rockLight" text="Roccia leggera"/>
+        <text name="groundType_rockDark" text="Roccia scura"/>
+
+        <!-- Collectibles -->
+        <text name="collectible_cc_all_cow" text="Hai trovato tutte e 10 le mucche! Vai nella tua stanza nell'edificio degli uffici della fattoria, qualcosa è cambiato!" />
+        <text name="collectible_cc_all_harvester" text="Hai trovato tutte e 10 le mietitrici! Vai nella tua stanza nell'edificio degli uffici della fattoria, qualcosa è cambiato!" />
+        <text name="collectible_cc_all_horse" text="Hai trovato tutti e 10 i cavalli! Vai nella tua stanza nell'edificio degli uffici della fattoria, qualcosa è cambiato!" />
+        <text name="collectible_cc_all_pig" text="Hai trovato tutti e 10 i maiali! Vai nella tua stanza nell'edificio degli uffici della fattoria, qualcosa è cambiato!" />
+        <text name="collectible_cc_all_plow" text="Hai trovato tutti e 10 gli aratri! Vai nella tua stanza nell'edificio degli uffici della fattoria, qualcosa è cambiato!" />
+        <text name="collectible_cc_all_seeder" text="Hai trovato tutti e 10 i seeder! Vai nella tua stanza nell'edificio degli uffici della fattoria, qualcosa è cambiato!" />
+        <text name="collectible_cc_all_sheep" text="Hai trovato tutte e 10 le pecore! Vai nella tua stanza nell'edificio degli uffici della fattoria, qualcosa è cambiato!" />
+        <text name="collectible_cc_all_tractor" text="Hai trovato tutti e 10 i trattori! Vai nella tua stanza nell'edificio degli uffici della fattoria, qualcosa è cambiato!" />
+        <text name="collectible_cc_all_trailer" text="Hai trovato tutti e 10 i rimorchi! Vai nella tua stanza nell'edificio degli uffici della fattoria, qualcosa è cambiato!" />
+        <text name="collectible_cc_all_waterTrailer" text="Hai trovato tutti e 10 i rimorchi per l'acqua! Vai nella tua stanza nell'edificio degli uffici della fattoria, qualcosa è cambiato!" />
+    </texts>
+    <elements>
+        <e k="collectible_cc_cow" v="Hai trovato una mucca! Ci sono altre %d mucche da trovare." tag="format"/>
+        <e k="collectible_cc_harvester" v="Hai trovato una mietitrice! Ci sono altri %d mietitrici da trovare." tag="format"/>
+        <e k="collectible_cc_horse" v="Hai trovato un cavallo! Ci sono altri %d cavalli da trovare." tag="format"/>
+        <e k="collectible_cc_pig" v="Hai trovato un maiale! Ci sono altri %d maiali da trovare." tag="format"/>
+        <e k="collectible_cc_plow" v="Hai trovato un aratro! Ci sono altri %d aratri da trovare." tag="format"/>
+        <e k="collectible_cc_seeder" v="Hai trovato una seminatrice! Ci sono altri %d seminatrici da trovare." tag="format"/>
+        <e k="collectible_cc_sheep" v="Hai trovato una pecora! Ci sono altre %d pecore da trovare." tag="format"/>
+        <e k="collectible_cc_tractor" v="Hai trovato un trattore! Ci sono altri %d trattori da trovare." tag="format"/>
+        <e k="collectible_cc_trailer" v="Hai trovato un rimorchio! Ci sono altri %d rimorchi da trovare." tag="format"/>
+        <e k="collectible_cc_waterTrailer" v="Hai trovato un rimorchio per l'acqua! Ci sono altri %d rimorchi per l'acqua da trovare." tag="format"/>
+    </elements>
+</l10n>

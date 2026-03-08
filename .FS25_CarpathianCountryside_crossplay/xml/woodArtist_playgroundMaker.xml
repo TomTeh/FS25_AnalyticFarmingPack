@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="factory" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_productionPoint_woodArtist_playgroundMaker</name>
+        <functions>
+            <function>$l10n_function_sellingPoint</function>
+        </functions>
+        <image>placeables/productionPoints/mapIcon_woodArtist_playgroundMaker.png</image>
+        <price>60000</price>
+        <dailyUpkeep>15</dailyUpkeep>
+        <canBeSold>true</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>productionPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>factories</tab>
+        </brush>
+        <vertexBufferMemoryUsage>2048</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>1024</indexBufferMemoryUsage>
+        <textureMemoryUsage>65536</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>placeables/productionPoints/woodArtist_playgroundMaker.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+        <canBeDeleted>false</canBeDeleted>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" />
+
+    <clearAreas/>
+
+    <leveling/>
+
+    <indoorAreas/>
+
+    <tipOcclusionUpdateAreas/>
+
+    <ai>
+        <updateAreas></updateAreas>
+    </ai>
+
+    <triggerMarkers>
+        <triggerMarker node="unloadTriggerMarkerFactory" filename="$data/shared/assets/marker/markerIconUnload.i3d" adjustToGround="true" />
+        <triggerMarker node="playerTriggerMarkerFactory" filename="placeables/sharedAssets/marker/markerIconProductionPoint.i3d" adjustToGround="false" />
+    </triggerMarkers>
+
+    <infoTrigger triggerNode="infoTrigger"/>
+
+    <factory playerTrigger="playerTriggerFactory">
+        <item reward="35000" linkNode="playgroundElementLinkNode" filename="$data/placeables/mapUS/playgroundMaker/props/playgroundSet.i3d">
+            <progressiveVisibilityMesh>
+                <mesh node="0>" id="playgroundTractor" indexMin="0" indexMax="52" />
+            </progressiveVisibilityMesh>
+        </item>
+
+        <production>
+            <input  fillType="BOARDS" amount="8640" usagePerHour="120" />
+            <input  fillType="PLANKS" amount="2016" usagePerHour="28" />
+            <output fillType="TOYTRACTOR" />
+        </production>
+
+        <storage isExtension="false" fillLevelSyncThreshold="50">
+            <capacity fillType="BOARDS" capacity="17000" />
+            <capacity fillType="PLANKS" capacity="4100" />
+        </storage>
+    </factory>
+
+    <sellingStation node="sellingStationFactory" appearsOnStats="true" supportsExtension="false" allowMissions="false" litersForFullPriceDrop="30000" fullPriceRecoverHours="48">
+        <unloadTrigger exactFillRootNode="unloadTriggerFactory" fillTypes="BOARDS PLANKS" />
+        <palletTrigger triggerNode="palletTriggerFactory" fillTypes="BOARDS PLANKS"/>
+
+        <fillType name="BOARDS" priceScale="1.03" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="PLANKS" priceScale="1.03" supportsGreatDemand="true" disablePriceDrop="false" />
+    </sellingStation>
+
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart node="0" linkNode="zoneMarker" filename="$data/placeables/mapUS/playgroundMaker/props/playGroundMakerProps.i3d" />
+    </dynamicallyLoadedParts>
+
+    <i3dMappings>
+        <i3dMapping id="sellingStationFactory" node="0>0|0" />
+        <i3dMapping id="unloadTriggerFactory" node="0>0|0|0" />
+        <i3dMapping id="palletTriggerFactory" node="0>0|0|1" />
+        <i3dMapping id="unloadTriggerMarkerFactory" node="0>0|0|2" />
+        <i3dMapping id="playerTriggerFactory" node="0>0|1" />
+        <i3dMapping id="playerTriggerMarkerFactory" node="0>0|1|0" />
+        <i3dMapping id="playgroundElementLinkNode" node="0>0|2" />
+        <i3dMapping id="zoneMarker" node="0>0|3" />
+        <i3dMapping id="soundNodeFactory" node="0>0|4" />
+        <i3dMapping id="infoTrigger" node="0>1" />
+    </i3dMappings>
+</placeable>

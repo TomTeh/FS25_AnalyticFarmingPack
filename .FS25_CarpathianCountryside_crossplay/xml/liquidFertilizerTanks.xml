@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="silo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_placeableObject_liquidFertilizerAndHerbicideTanks</name>
+        <functions>
+            <function>$l10n_function_fillableLiquidFertilizerAndHerbicideTanks</function>
+        </functions>
+        <image>placeables/liquidFertilizerTanks/store_liquidFertilizerTanks.png</image>
+        <price>42000</price>
+        <dailyUpkeep>50</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>LIZARDSTORAGE</brand>
+        <species>placeable</species>
+        <category>fillableTanks</category>
+        <brush>
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>containers</tab>
+        </brush>
+
+        <storeIconRendering>
+            <settings cameraXRot="-10" cameraYRot="40" advancedBoundingBox="true"/>
+        </storeIconRendering>
+        <vertexBufferMemoryUsage>267776</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>53504</indexBufferMemoryUsage>
+        <textureMemoryUsage>2228224</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>placeables/liquidFertilizerTanks/liquidFertilizerTanks.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true"  >
+        <testAreas>
+            <testArea startNode="testAreaStart1" endNode="testAreaEnd1" />
+        </testAreas>
+
+        <sounds>
+            <place template="siloImp"/>
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearAreaStart1" widthNode="clearAreaWidth1" heightNode="clearAreaHeight1"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="3" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelAreaStart1" widthNode="levelAreaWidth1" heightNode="levelAreaHeight1" groundType="concrete"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorAreaStart1" widthNode="indoorAreaWidth1" heightNode="indoorAreaHeight1" />
+        <indoorArea startNode="indoorAreaStart2" widthNode="indoorAreaWidth2" heightNode="indoorAreaHeight2" />
+        <indoorArea startNode="indoorAreaStart3" widthNode="indoorAreaWidth3" heightNode="indoorAreaHeight3" />
+        <indoorArea startNode="indoorAreaStart4" widthNode="indoorAreaWidth4" heightNode="indoorAreaHeight4" />
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStart1" endNode="tipOcclusionUpdateAreaEnd1" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateAreaStart1" endNode="tipOcclusionUpdateAreaEnd1" />
+        </updateAreas>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger"/>
+
+    <silo playerActionTrigger="refillPlayerTrigger">
+        <loadingStation node="loadingTrigger" supportsExtension="false" >
+            <loadTrigger triggerNode="loadingTrigger" aiNode="loadingTriggerAINode" fillLitersPerSecond="200" fillTypes="LIQUIDFERTILIZER HERBICIDE"/>
+        </loadingStation>
+
+        <unloadingStation supportsExtension="false" >
+            <unloadTrigger exactFillRootNode="exactFillRootNode" aiNode="unloadingStationAINode" fillTypes="LIQUIDFERTILIZER HERBICIDE"/>
+        </unloadingStation>
+
+        <storages>
+            <storage node="storageNode" fillTypes="LIQUIDFERTILIZER HERBICIDE" capacity="166000" isExtension="false">
+                <startFillLevel fillType="LIQUIDFERTILIZER" fillLevel="0" />
+            </storage>
+        </storages>
+    </silo>
+
+    <hotspots>
+        <hotspot type="LOADING" linkNode="mapPosition" teleportNode="mapPosition"/>
+    </hotspots>
+
+    <triggerMarkers>
+        <triggerMarker node="markerLoading"       filename="$data/shared/assets/marker/markerIconLoad.i3d" adjustToGround="true" />
+        <triggerMarker node="refillTriggerMarker" filename="placeables/sharedAssets/marker/markerIconBuyConsumable.i3d" adjustToGround="false" />
+    </triggerMarkers>
+
+    <i3dMappings>
+        <i3dMapping id="storageNode" node="0>1|0" />
+        <i3dMapping id="mapPosition" node="0>1|1" />
+        <i3dMapping id="exactFillRootNode" node="0>1|2|0" />
+        <i3dMapping id="unloadingStationAINode" node="0>1|2|1" />
+        <i3dMapping id="loadingTrigger" node="0>1|3|0" />
+        <i3dMapping id="loadingTriggerAINode" node="0>1|3|1" />
+        <i3dMapping id="infoTrigger" node="0>1|4" />
+        <i3dMapping id="refillPlayerTrigger" node="0>1|5" />
+        <i3dMapping id="refillTriggerMarker" node="0>1|5|0" />
+        <i3dMapping id="markerLoading" node="0>1|6" />
+        <i3dMapping id="connectorNode1" node="0>1|7" />
+        <i3dMapping id="connectorNode2" node="0>1|8" />
+        <i3dMapping id="clearAreaStart1" node="0>2|0" />
+        <i3dMapping id="clearAreaWidth1" node="0>2|0|0" />
+        <i3dMapping id="clearAreaHeight1" node="0>2|0|1" />
+        <i3dMapping id="levelAreaStart1" node="0>3|0" />
+        <i3dMapping id="levelAreaWidth1" node="0>3|0|0" />
+        <i3dMapping id="levelAreaHeight1" node="0>3|0|1" />
+        <i3dMapping id="indoorAreaStart1" node="0>4|0" />
+        <i3dMapping id="indoorAreaWidth1" node="0>4|0|0" />
+        <i3dMapping id="indoorAreaHeight1" node="0>4|0|1" />
+        <i3dMapping id="indoorAreaStart2" node="0>4|1" />
+        <i3dMapping id="indoorAreaWidth2" node="0>4|1|0" />
+        <i3dMapping id="indoorAreaHeight2" node="0>4|1|1" />
+        <i3dMapping id="indoorAreaStart3" node="0>4|2" />
+        <i3dMapping id="indoorAreaWidth3" node="0>4|2|0" />
+        <i3dMapping id="indoorAreaHeight3" node="0>4|2|1" />
+        <i3dMapping id="indoorAreaStart4" node="0>4|3" />
+        <i3dMapping id="indoorAreaWidth4" node="0>4|3|0" />
+        <i3dMapping id="indoorAreaHeight4" node="0>4|3|1" />
+        <i3dMapping id="testAreaStart1" node="0>5|0" />
+        <i3dMapping id="testAreaEnd1" node="0>5|0|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart1" node="0>6|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd1" node="0>6|0|0" />
+        <i3dMapping id="collisions" node="0>7" />
+    </i3dMappings>
+</placeable>

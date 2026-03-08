@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="mapCC_fishFarmPond" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_productionPoint_fishFarmPond</name>
+        <functions>
+            <function>$l10n_function_productionPoint</function>
+        </functions>
+        <image>placeables/productionPoints/mapIcon_fishFarmPond.png</image>
+        <price>45000</price>
+        <dailyUpkeep>20</dailyUpkeep>
+        <canBeSold>true</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>productionPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>factories</tab>
+        </brush>
+        <vertexBufferMemoryUsage>3584</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>1536</indexBufferMemoryUsage>
+        <textureMemoryUsage>65536</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>placeables/productionPoints/fishFarmPond.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
+        <canBeDeleted>false</canBeDeleted>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" />
+
+    <clearAreas/>
+
+    <leveling/>
+
+    <indoorAreas/>
+
+    <tipOcclusionUpdateAreas/>
+
+    <ai>
+        <updateAreas></updateAreas>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger"/>
+
+    <hotspots>
+        <hotspot type="FISHPOND" linkNode="hotspotNode" teleportNode="teleportNode" />
+    </hotspots>
+
+    <triggerMarkers>
+        <triggerMarker node="playerTriggerMarker" filename="placeables/sharedAssets/marker/markerIconProductionPoint.i3d" adjustToGround="true" />
+        <triggerMarker node="unloadTriggerMarker" filename="$data/shared/assets/marker/markerIconUnload.i3d" adjustToGround="true" />
+    </triggerMarkers>
+
+    <incomePerHour>140</incomePerHour> <!-- 40,320 per year -->
+
+    <productionPoint>
+        <productions sharedThroughputCapacity="false">
+            <production id="trout01" name="%s" params="$l10n_productionPoint_fillType_trout" cyclesPerHour="20" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="TROUTYOUNG" amount="12" />
+                </inputs>
+                <outputs>
+                    <output fillType="TROUT" amount="8" />
+                </outputs>
+            </production>
+            <production id="trout02" name="%s (%s)" params="$l10n_productionPoint_fillType_trout|$l10n_productionPoint_fillType_fishFood" cyclesPerHour="24" costsPerActiveHour="1">
+                <inputs>
+                    <input fillType="TROUTYOUNG" amount="12" />
+                    <input fillType="FISHFOOD"   amount="3" />
+                </inputs>
+                <outputs>
+                    <output fillType="TROUT" amount="10" />
+                </outputs>
+            </production>
+        </productions>
+
+        <sellingStation node="sellingStation" supportsExtension="false" hideFromPricesMenu="true" allowMissions="false">
+            <unloadTrigger exactFillRootNode="unloadTrigger" fillTypes="TROUTYOUNG FISHFOOD"/>
+            <palletTrigger triggerNode="palletTrigger" fillTypes="TROUTYOUNG FISHFOOD" />
+        </sellingStation>
+
+        <loadingStation node="loadingTriggers" supportsExtension="false">
+            <loadTrigger triggerNode="loadingTriggerFake" fillTypes="TROUT" fillLitersPerSecond="1000"/>
+        </loadingStation>
+
+        <palletSpawner node="palletSpawner">
+            <spawnPlaces>
+                <spawnPlace startNode="spawnSpace1start" endNode="spawnSpace1end" />
+                <spawnPlace startNode="spawnSpace2start" endNode="spawnSpace2end" />
+            </spawnPlaces>
+        </palletSpawner>
+
+        <storage isExtension="false" fillLevelSyncThreshold="50">
+            <capacity fillType="TROUTYOUNG" capacity="30000" />
+            <capacity fillType="FISHFOOD"   capacity="9000" />
+            <capacity fillType="TROUT"      capacity="30000" />
+        </storage>
+
+        <playerTrigger node="playerTrigger" />
+    </productionPoint>
+
+    <i3dMappings>
+        <i3dMapping id="sellingStation" node="0>0" />
+        <i3dMapping id="unloadTrigger" node="0>0|0" />
+        <i3dMapping id="palletTrigger" node="0>0|1" />
+        <i3dMapping id="unloadTriggerMarker" node="0>0|2" />
+        <i3dMapping id="loadingTriggers" node="0>1" />
+        <i3dMapping id="loadingTriggerFake" node="0>1|0" />
+        <i3dMapping id="playerTrigger" node="0>2|0" />
+        <i3dMapping id="playerTriggerMarker" node="0>2|0|0" />
+        <i3dMapping id="palletSpawner" node="0>3" />
+        <i3dMapping id="spawnSpace1start" node="0>3|0" />
+        <i3dMapping id="spawnSpace1end" node="0>3|0|0" />
+        <i3dMapping id="spawnSpace2start" node="0>3|1" />
+        <i3dMapping id="spawnSpace2end" node="0>3|1|0" />
+        <i3dMapping id="infoTrigger" node="0>4" />
+        <i3dMapping id="hotspotNode" node="0>5" />
+        <i3dMapping id="teleportNode" node="0>6" />
+    </i3dMappings>
+</placeable>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="sellingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_shopItem_supermarket</name>
+        <image>placeables/sellingStations/mapIcon_sellingStationSupermarket.png</image>
+        <price>1</price>
+        <dailyUpkeep>0</dailyUpkeep>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>sellingPoints</category>
+        <vertexBufferMemoryUsage>1536</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>768</indexBufferMemoryUsage>
+        <textureMemoryUsage>65536</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>placeables/sellingStations/sellingStationSupermarket.i3d</filename>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" />
+
+    <clearAreas/>
+
+    <leveling/>
+
+    <indoorAreas/>
+
+    <ai>
+        <updateAreas/>
+    </ai>
+
+    <triggerMarkers>
+        <triggerMarker node="unloadTriggerMarker" filename="$data/shared/assets/marker/markerIconUnload.i3d" adjustToGround="true" />
+    </triggerMarkers>
+
+    <hotspots>
+        <hotspot type="UNLOADING" linkNode="hotspotNode" teleportNode="teleportNode" />
+    </hotspots>
+
+    <sellingStation node="sellingStation" appearsOnStats="true" supportsExtension="false" litersForFullPriceDrop="100000" fullPriceRecoverHours="48">
+        <unloadTrigger exactFillRootNode="unloadTrigger" priceScale="1" fillTypeCategories="SELLINGSTATION_PRODUCTSFOOD SELLINGSTATION_SUPERMARKET VEGETABLES"/>
+        <palletTrigger triggerNode="palletTrigger" priceScale="1" fillTypeCategories="SELLINGSTATION_PRODUCTSFOOD SELLINGSTATION_SUPERMARKET VEGETABLES"/>
+        <unloadTrigger exactFillRootNode="unloadTriggerAI" aiNode="unloadTriggerAINode" priceScale="1" fillTypeCategories="SELLINGSTATION_PRODUCTSFOOD SELLINGSTATION_SUPERMARKET VEGETABLES" />
+    </sellingStation>
+
+    <i3dMappings>
+        <i3dMapping id="sellingStation" node="0>0" />
+        <i3dMapping id="unloadTrigger" node="0>0|0" />
+        <i3dMapping id="palletTrigger" node="0>0|1" />
+        <i3dMapping id="unloadTriggerMarker" node="0>0|2" />
+        <i3dMapping id="unloadTriggerAI" node="0>0|3" />
+        <i3dMapping id="unloadTriggerAINode" node="0>0|4" />
+        <i3dMapping id="hotspotNode" node="0>1" />
+        <i3dMapping id="teleportNode" node="0>2" />
+    </i3dMappings>
+</placeable>

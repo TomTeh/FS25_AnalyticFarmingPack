@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="mapCC_objectStorage" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_placeableObject_baleShed</name>
+        <functions>
+            <function>$l10n_function_garage</function>
+            <function>$l10n_function_objectStorage</function>
+            <function>$l10n_function_roofSolarPanelsOption</function>
+        </functions>
+        <image>placeables/shed/store_baleShed.dds</image>
+        <price>20000</price>
+        <dailyUpkeep>10</dailyUpkeep>
+        <canBeSold>true</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>LIZARDBUILDING</brand>
+        <species>placeable</species>
+        <category>sheds</category>
+
+        <storeIconRendering>
+            <settings cameraXRot="-12" cameraYRot="-40" advancedBoundingBox="true"/>
+        </storeIconRendering>
+        <vertexBufferMemoryUsage>520704</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>82688</indexBufferMemoryUsage>
+        <textureMemoryUsage>4587520</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>placeables/shed/baleShed.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testAreaStart1" endNode="testAreaEnd1" />
+        </testAreas>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearAreaStart1" widthNode="clearAreaWidth1" heightNode="clearAreaHeight1"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="5" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelAreaStart1" widthNode="levelAreaWidth1" heightNode="levelAreaHeight1" groundType="concrete"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorAreaStart1" widthNode="indoorAreaWidth1" heightNode="indoorAreaHeight1"/>
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStart1Pig" endNode="tipOcclusionUpdateAreaEnd1Pig" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateAreaStart1Pig" endNode="tipOcclusionUpdateAreaEnd1Pig" />
+        </updateAreas>
+    </ai>
+
+    <lights>
+        <group name="$l10n_action_placeableLightShed" triggerNode="controledLightsTrigger">
+            <sounds>
+                <toggle template="lizardFloodLight" innerRadius="30" outerRadius="50" volumeScale="0.5"/>
+            </sounds>
+        </group>
+
+        <sharedLight filename="placeables/sharedAssets/lights/industrialWallLight.xml" linkNode="industrialWallLight01" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/industrialWallLight.xml" linkNode="industrialWallLight02" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/industrialWallLight.xml" linkNode="industrialWallLight03" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/industrialWallLight.xml" linkNode="industrialWallLight04" groupIndex="1"/>
+        <sharedLight filename="placeables/sharedAssets/lights/industrialWallLight.xml" linkNode="industrialWallLight05" groupIndex="1"/>
+
+        <realLights>
+            <low>
+                <light node="realLightsControledLow" groupIndex="1"/>
+            </low>
+            <high>
+                <light node="realLightsControledHigh" groupIndex="1"/>
+            </high>
+        </realLights>
+    </lights>
+
+    <animatedObjects>
+        <animatedObject saveId="baleShed_objectStorageConfig">
+            <animation duration="0.2">
+                <part node="objectTrigger">
+                    <keyFrame time="0" translation="0 0 2.45" />
+                    <keyFrame time="1.0" translation="0 -50 2.45" />
+                </part>
+                <part node="playerTrigger">
+                    <keyFrame time="0" translation="-21.2 0.5 4.7" />
+                    <keyFrame time="1.0" translation="-21.2 -50 4.7" />
+                </part>
+                <part node="infoTrigger">
+                    <keyFrame time="0" translation="0 3 0" />
+                    <keyFrame time="1.0" translation="0 -50 0" />
+                </part>
+                <part node="markers">
+                    <keyFrame time="0" visibility="true" />
+                    <keyFrame time="1.0" visibility="false" />
+                </part>
+                <part node="objectStorageCollisions">
+                    <keyFrame time="0" translation="0 0 0" />
+                    <keyFrame time="1.0" translation="0 -50 0" />
+                </part>
+            </animation>
+            <controls triggerNode="objectStorageConfig_trigger" posAction="ACTIVATE_HANDTOOL" posText="action_configureObjectStorageOff" negText="action_configureObjectStorageOn" />
+        </animatedObject>
+    </animatedObjects>
+
+    <hotspots>
+        <hotspot type="UNLOADING" linkNode="hotspotNode" teleportNode="teleportNode"/>
+    </hotspots>
+
+    <triggerMarkers>
+        <triggerMarker node="warningStripes" />
+        <triggerMarker node="objectTriggerMarker" filename="placeables/sharedAssets/marker/markerIconStorageIn.i3d" adjustToGround="true" />
+        <triggerMarker node="playerTriggerMarker" filename="placeables/sharedAssets/marker/markerIconStorageOut.i3d" adjustToGround="true" />
+        <triggerMarker node="objectStorageConfig_marker" filename="$data/shared/assets/marker/markerIconWrench.i3d" adjustToGround="true" />
+    </triggerMarkers>
+
+    <infoTrigger triggerNode="infoTrigger"/>
+
+    <objectStorage supportsBales="true" supportsPallets="true" capacity="1200" maxUnloadAmount="60" maxLength="8.5" maxWidth="6" maxHeight="6">
+        <playerTrigger node="playerTrigger" />
+        <objectTrigger node="objectTrigger" />
+        <storageAreas>
+            <storageArea startNode="storageAreaStart01" endNode="storageAreaEnd01" maxHeight="6"/>
+        </storageAreas>
+        <spawnAreas>
+            <spawnArea startNode="spawnAreaStart01" endNode="spawnAreaEnd01"/>
+        </spawnAreas>
+    </objectStorage>
+
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart node="0" linkNode="lightSwitch01" filename="$data/shared/assets/lights/rudolfHormann/powerSwitch.i3d" />
+        <dynamicallyLoadedPart node="0" linkNode="stopCrossing01" filename="$data/placeables/mapUS/objectStorage/stopCrossing.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="stopCrossing02" filename="$data/placeables/mapUS/objectStorage/stopCrossing.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="stopCrossing03" filename="$data/placeables/mapUS/objectStorage/stopCrossing.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="stopCrossing04" filename="$data/placeables/mapUS/objectStorage/stopCrossing.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="stopCrossing05" filename="$data/placeables/mapUS/objectStorage/stopCrossing.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="stopCrossing06" filename="$data/placeables/mapUS/objectStorage/stopCrossing.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="stopCrossing07" filename="$data/placeables/mapUS/objectStorage/stopCrossing.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="stopCrossing08" filename="$data/placeables/mapUS/objectStorage/stopCrossing.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="stopCrossing09" filename="$data/placeables/mapUS/objectStorage/stopCrossing.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="stopCrossing10" filename="$data/placeables/mapUS/objectStorage/stopCrossing.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="stopCrossing11" filename="$data/placeables/mapUS/objectStorage/stopCrossing.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="stopCrossing12" filename="$data/placeables/mapUS/objectStorage/stopCrossing.i3d"/>
+    </dynamicallyLoadedParts>
+
+    <deletedNodes>
+        <deletedNode node="pointLight06" />
+        <deletedNode node="warningStripesSF" />
+        <deletedNode node="tipCollisionsSheep" />
+        <deletedNode node="objectStorageConfig_triggerSF" />
+    </deletedNodes>
+
+    <solarPanels>
+        <solarPanelsConfigurations>
+            <solarPanelsConfiguration name="$l10n_ui_none" isActive="false"/>
+            <solarPanelsConfiguration name="117 A" isActive="true" price="31005" incomePerHour="105" >
+                <objectChange node="solarPanels01" visibilityActive="true"/>
+            </solarPanelsConfiguration>
+            <solarPanelsConfiguration name="117 B" isActive="true" price="31005" incomePerHour="105" >
+                <objectChange node="solarPanels02" visibilityActive="true"/>
+            </solarPanelsConfiguration>
+            <solarPanelsConfiguration name="234" isActive="true" price="62010" incomePerHour="210" >
+                <objectChange node="solarPanels01" visibilityActive="true"/>
+                <objectChange node="solarPanels02" visibilityActive="true"/>
+            </solarPanelsConfiguration>
+        </solarPanelsConfigurations>
+    </solarPanels>
+
+    <i3dMappings>
+        <i3dMapping id="propsBordersNodePF" node="0>1|0" />
+        <i3dMapping id="propsBordersNodeSF" node="0>1|1" />
+        <i3dMapping id="propsPreplacedNodePF" node="0>1|2" />
+        <i3dMapping id="propsPreplacedNodeSF" node="0>1|3" />
+        <i3dMapping id="industrialWallLight01" node="0>2|0|0" />
+        <i3dMapping id="industrialWallLight02" node="0>2|0|1" />
+        <i3dMapping id="industrialWallLight03" node="0>2|0|2" />
+        <i3dMapping id="industrialWallLight04" node="0>2|0|3" />
+        <i3dMapping id="industrialWallLight05" node="0>2|0|4" />
+        <i3dMapping id="industrialWallLight06" node="0>2|0|5" />
+        <i3dMapping id="realLightsControledLow" node="0>2|1|0" />
+        <i3dMapping id="realLightsControledHigh" node="0>2|1|1" />
+        <i3dMapping id="pointLight06" node="0>2|1|1|5" />
+        <i3dMapping id="lightSwitch01" node="0>2|2|0" />
+        <i3dMapping id="controledLightsTrigger" node="0>2|3" />
+        <i3dMapping id="objectTrigger" node="0>3|0" />
+        <i3dMapping id="playerTrigger" node="0>3|1" />
+        <i3dMapping id="storageAreaStart01" node="0>3|2|0" />
+        <i3dMapping id="storageAreaEnd01" node="0>3|2|0|0" />
+        <i3dMapping id="spawnAreaStart01" node="0>3|3|0" />
+        <i3dMapping id="spawnAreaEnd01" node="0>3|3|0|0" />
+        <i3dMapping id="infoTrigger" node="0>3|4" />
+        <i3dMapping id="markers" node="0>3|5" />
+        <i3dMapping id="warningStripes" node="0>3|5|0" />
+        <i3dMapping id="warningStripesSF" node="0>3|5|1" />
+        <i3dMapping id="objectTriggerMarker" node="0>3|5|2" />
+        <i3dMapping id="objectTriggerMarkerSF" node="0>3|5|3" />
+        <i3dMapping id="playerTriggerMarker" node="0>3|5|4" />
+        <i3dMapping id="stopCrossing01" node="0>3|5|5|0" />
+        <i3dMapping id="stopCrossing02" node="0>3|5|5|1" />
+        <i3dMapping id="stopCrossing03" node="0>3|5|5|2" />
+        <i3dMapping id="stopCrossing04" node="0>3|5|5|3" />
+        <i3dMapping id="stopCrossing05" node="0>3|5|5|4" />
+        <i3dMapping id="stopCrossing06" node="0>3|5|5|5" />
+        <i3dMapping id="stopCrossing07" node="0>3|5|5|6" />
+        <i3dMapping id="stopCrossing08" node="0>3|5|5|7" />
+        <i3dMapping id="stopCrossing09" node="0>3|5|5|8" />
+        <i3dMapping id="stopCrossing10" node="0>3|5|5|9" />
+        <i3dMapping id="stopCrossing11" node="0>3|5|5|10" />
+        <i3dMapping id="stopCrossing12" node="0>3|5|5|11" />
+        <i3dMapping id="hotspotNode" node="0>3|6" />
+        <i3dMapping id="teleportNode" node="0>3|7" />
+        <i3dMapping id="objectStorageCollisions" node="0>3|8" />
+        <i3dMapping id="objectStorageConfig_trigger" node="0>3|9|0" />
+        <i3dMapping id="objectStorageConfig_marker" node="0>3|9|1" />
+        <i3dMapping id="objectStorageConfig_triggerSF" node="0>3|10|0" />
+        <i3dMapping id="objectStorageConfig_markerSF" node="0>3|10|1" />
+        <i3dMapping id="clearAreaStart1" node="0>4|0" />
+        <i3dMapping id="clearAreaWidth1" node="0>4|0|0" />
+        <i3dMapping id="clearAreaHeight1" node="0>4|0|1" />
+        <i3dMapping id="levelAreaStart1" node="0>5|0" />
+        <i3dMapping id="levelAreaWidth1" node="0>5|0|0" />
+        <i3dMapping id="levelAreaHeight1" node="0>5|0|1" />
+        <i3dMapping id="indoorAreaStart1" node="0>6|0" />
+        <i3dMapping id="indoorAreaWidth1" node="0>6|0|0" />
+        <i3dMapping id="indoorAreaHeight1" node="0>6|0|1" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart1" node="0>7|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd1" node="0>7|0|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart1Pig" node="0>7|1" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd1Pig" node="0>7|1|0" />
+        <i3dMapping id="testAreaStart1" node="0>8|0" />
+        <i3dMapping id="testAreaEnd1" node="0>8|0|0" />
+        <i3dMapping id="tipCollisionsPig" node="0>9" />
+        <i3dMapping id="tipCollisionsSheep" node="0>10" />
+        <i3dMapping id="solarPanels01" node="0>12|0" />
+        <i3dMapping id="solarPanels02" node="0>12|1" />
+    </i3dMappings>
+</placeable>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="silo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_storeItem_liquidManureTank</name>
+        <image>placeables/liquidManureTank/store_liquidManureTank.png</image>
+        <functions>
+            <function>$l10n_function_liquidManureTank</function>
+        </functions>
+        <price>80000</price>
+        <dailyUpkeep>35</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>LIZARDSTORAGE</brand>
+        <species>placeable</species>
+        <category>silos</category>
+        <brush>
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>silos</tab>
+        </brush>
+
+        <storeIconRendering>
+            <settings cameraXRot="-20" cameraYRot="-40" advancedBoundingBox="true"/>
+        </storeIconRendering>
+        <vertexBufferMemoryUsage>446208</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>118528</indexBufferMemoryUsage>
+        <textureMemoryUsage>5636096</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>placeables/liquidManureTank/liquidManureTank.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testAreaStart1" endNode="testAreaEnd1" />
+        </testAreas>
+
+        <sounds>
+            <place template="smallImp" />
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearAreaStart1" widthNode="clearAreaWidth1" heightNode="clearAreaHeight1"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="5" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelAreaStart1" widthNode="levelAreaWidth1" heightNode="levelAreaHeight1" groundType="concrete"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorAreaStart1" widthNode="indoorAreaWidth1" heightNode="indoorAreaHeight1" />
+        <indoorArea startNode="indoorAreaStart2" widthNode="indoorAreaWidth2" heightNode="indoorAreaHeight2" />
+        <indoorArea startNode="indoorAreaStart3" widthNode="indoorAreaWidth3" heightNode="indoorAreaHeight3" />
+        <indoorArea startNode="indoorAreaStart4" widthNode="indoorAreaWidth4" heightNode="indoorAreaHeight4" />
+        <indoorArea startNode="indoorAreaStart5" widthNode="indoorAreaWidth5" heightNode="indoorAreaHeight5" />
+        <indoorArea startNode="indoorAreaStart6" widthNode="indoorAreaWidth6" heightNode="indoorAreaHeight6" />
+        <indoorArea startNode="indoorAreaStart7" widthNode="indoorAreaWidth7" heightNode="indoorAreaHeight7" />
+        <indoorArea startNode="indoorAreaStart8" widthNode="indoorAreaWidth8" heightNode="indoorAreaHeight8" />
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStart1" endNode="tipOcclusionUpdateAreaEnd1" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateAreaStart1" endNode="tipOcclusionUpdateAreaEnd1" />
+        </updateAreas>
+        <splines>
+            <spline node="aiSpline" />
+        </splines>
+    </ai>
+
+    <animatedObjects>
+        <animatedObject saveId="liquidManureTank_ladder" >
+            <animation duration="2">
+                <part node="ladder_collision">
+                    <keyFrame time="0.0" translation="-9.274 -1 0.602"/>
+                    <keyFrame time="1.0" translation="-9.274 5.217 0.602"/>
+                </part>
+            </animation>
+            <controls triggerNode="ladder_trigger" posAction="ACTIVATE_HANDTOOL" posText="action_ladderUp" negText="action_ladderDown" />
+        </animatedObject>
+    </animatedObjects>
+
+    <infoTrigger triggerNode="infoTrigger"/>
+
+    <silo>
+        <loadingStation node="loadingStation" supportsExtension="true" storageRadius="70">
+            <loadTrigger triggerNode="loadingTrigger" fillLitersPerSecond="2000" dischargeNode="dischargeNode" fillTypes="LIQUIDMANURE" aiNode="aiLoadingNode" />
+            <loadTrigger triggerNode="loadingTriggerMS" fillLitersPerSecond="285" dischargeNode="dischargeNodeMS" fillTypes="LIQUIDMANURE">
+                <effectNode effectClass="PipeEffect" effectNode="pipeEffectMS" materialType="PIPE" stopDelay="0.5" maxBending="0.8" extraDistance="0.2" controlPoint="4 0 0 0"/>
+            </loadTrigger>
+        </loadingStation>
+
+        <unloadingStation supportsExtension="true" storageRadius="70" >
+            <unloadTrigger exactFillRootNode="exactFillRootNode" fillTypes="LIQUIDMANURE" aiNode="aiLoadingNode"/>
+
+			<effectNodes>
+				<effectNode effectClass="PipeEffect" effectNode="pipeEffect" materialType="PIPE" startDelay="0.2" stopDelay="0.2" maxBending="1" />
+			</effectNodes>
+        </unloadingStation>
+
+        <storages>
+            <storage node="storageNode" fillTypes="LIQUIDMANURE" capacity="1500000" isExtension="true">
+                <fillPlane fillType="LIQUIDMANURE" node="liquidManurePlane" minY="0.09" maxY="6.2" />
+            </storage>
+        </storages>
+    </silo>
+
+    <triggerMarkers>
+        <triggerMarker node="markerLoading"   filename="$data/shared/assets/marker/markerIconLoad.i3d" adjustToGround="true" />
+        <triggerMarker node="markerUnloading" filename="$data/shared/assets/marker/markerIconUnload.i3d" adjustToGround="true" />
+    </triggerMarkers>
+
+    <hotspots>
+        <hotspot type="LOADING" linkNode="mapPosition" teleportNode="teleportNode" />
+    </hotspots>
+
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart node="0" linkNode="fillTowerNode" filename="placeables/sharedAssets/fillTower.i3d" />
+    </dynamicallyLoadedParts>
+
+    <i3dMappings>
+        <i3dMapping id="fillTowerPipeLOD0" node="0>0|0|3" />
+        <i3dMapping id="fillTowerPipe_boltDecals" node="0>0|0|4" />
+        <i3dMapping id="fillTowerPipeLOD1" node="0>0|1|1" />
+        <i3dMapping id="fillTowerNode" node="0>2" />
+        <i3dMapping id="ladder_collision" node="0>3|0" />
+        <i3dMapping id="ladder_trigger" node="0>3|1" />
+        <i3dMapping id="silo" node="0>4" />
+        <i3dMapping id="mapPosition" node="0>4|0" />
+        <i3dMapping id="storageNode" node="0>4|1" />
+        <i3dMapping id="liquidManurePlane" node="0>4|1|0" />
+        <i3dMapping id="loadingStation" node="0>4|2" />
+        <i3dMapping id="dischargeNode" node="0>4|2|0|0" />
+        <i3dMapping id="loadingTrigger" node="0>4|2|0|1" />
+        <i3dMapping id="aiLoadingNode" node="0>4|2|1" />
+        <i3dMapping id="aiSpline" node="0>4|2|2" />
+        <i3dMapping id="loadingTriggerMS" node="0>4|2|3|0" />
+        <i3dMapping id="dischargeNodeMS" node="0>4|2|3|1" />
+        <i3dMapping id="pipeEffectMS" node="0>4|2|3|2" />
+        <i3dMapping id="exactFillRootNode" node="0>4|3|0" />
+        <i3dMapping id="pipeEffect" node="0>4|3|1" />
+        <i3dMapping id="infoTrigger" node="0>4|4" />
+        <i3dMapping id="teleportNode" node="0>4|5" />
+        <i3dMapping id="clearAreaStart1" node="0>5|0" />
+        <i3dMapping id="clearAreaWidth1" node="0>5|0|0" />
+        <i3dMapping id="clearAreaHeight1" node="0>5|0|1" />
+        <i3dMapping id="levelAreaStart1" node="0>6|0" />
+        <i3dMapping id="levelAreaWidth1" node="0>6|0|0" />
+        <i3dMapping id="levelAreaHeight1" node="0>6|0|1" />
+        <i3dMapping id="indoorAreaStart1" node="0>7|0" />
+        <i3dMapping id="indoorAreaWidth1" node="0>7|0|0" />
+        <i3dMapping id="indoorAreaHeight1" node="0>7|0|1" />
+        <i3dMapping id="indoorAreaStart2" node="0>7|1" />
+        <i3dMapping id="indoorAreaWidth2" node="0>7|1|0" />
+        <i3dMapping id="indoorAreaHeight2" node="0>7|1|1" />
+        <i3dMapping id="indoorAreaStart3" node="0>7|2" />
+        <i3dMapping id="indoorAreaWidth3" node="0>7|2|0" />
+        <i3dMapping id="indoorAreaHeight3" node="0>7|2|1" />
+        <i3dMapping id="indoorAreaStart4" node="0>7|3" />
+        <i3dMapping id="indoorAreaWidth4" node="0>7|3|0" />
+        <i3dMapping id="indoorAreaHeight4" node="0>7|3|1" />
+        <i3dMapping id="indoorAreaStart5" node="0>7|4" />
+        <i3dMapping id="indoorAreaWidth5" node="0>7|4|0" />
+        <i3dMapping id="indoorAreaHeight5" node="0>7|4|1" />
+        <i3dMapping id="indoorAreaStart6" node="0>7|5" />
+        <i3dMapping id="indoorAreaWidth6" node="0>7|5|0" />
+        <i3dMapping id="indoorAreaHeight6" node="0>7|5|1" />
+        <i3dMapping id="indoorAreaStart7" node="0>7|6" />
+        <i3dMapping id="indoorAreaWidth7" node="0>7|6|0" />
+        <i3dMapping id="indoorAreaHeight7" node="0>7|6|1" />
+        <i3dMapping id="indoorAreaStart8" node="0>7|7" />
+        <i3dMapping id="indoorAreaWidth8" node="0>7|7|0" />
+        <i3dMapping id="indoorAreaHeight8" node="0>7|7|1" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart1" node="0>8|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd1" node="0>8|0|0" />
+        <i3dMapping id="testAreaStart1" node="0>9|0" />
+        <i3dMapping id="testAreaEnd1" node="0>9|0|0" />
+        <i3dMapping id="markerLoading" node="0>10" />
+        <i3dMapping id="markerUnloading" node="0>11" />
+        <i3dMapping id="collisions" node="0>12|0" />
+        <i3dMapping id="fillTowerPipe_collisions" node="0>12|2" />
+        <i3dMapping id="tipCollisions_fillTower" node="0>14" />
+    </i3dMappings>
+</placeable>

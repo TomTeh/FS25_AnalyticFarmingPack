@@ -1,38 +1,58 @@
-$sourcePath = $PSScriptRoot
+﻿# Nastavení kódování pro správné zobrazení diakritiky v terminálu
+[System.Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+$OutputEncoding = [System.Text.Encoding]::UTF8
+
+# --- Konfigurace ---
 $modName = "FS25_AnalyticFarmingPack"
-$gamePath = "$HOME/Documents/My Games/FarmingSimulator2025"
-$modDest = "$gamePath/mods/$modName"
-$logFile = "$gamePath/log.txt"
+$gameModsPath = "$HOME/Documents/My Games/FarmingSimulator2025/mods"
+$steamAppId = "2300320" # ID pro spuštění hry (upraveno dle uživatele)
 
-Write-Host "--- Priprava modu ---" -ForegroundColor Cyan
+# --- Cesty ---
+$sourcePath = $PSScriptRoot
+$destinationPath = Join-Path $gameModsPath $modName
+$logFile = "$HOME/Documents/My Games/FarmingSimulator2025/log.txt"
 
-# 1. Odstraníme starý mod, pokud existuje
-if (Test-Path $modDest) { 
-    Remove-Item -Recurse -Force $modDest 
+# --- Seznam souborů a složek modu ---
+# Zde definujeme, co patří do modu. Vše ostatní bude ignorováno.
+$modFiles = @(
+    "modDesc.xml",
+    "icon.dds",
+    "AnalyticMain.lua",
+    "l10n" # Celá složka
+    # "icon.png" # Příklad: odkomentuj, až budeš mít ikonu
+)
+
+# --- Průběh skriptu ---
+Write-Host "--- Startuji nasazení modu: $modName ---" -ForegroundColor Cyan
+
+# 1. Příprava cílové složky
+Write-Host "1. Čistím a připravuji cílovou složku: $destinationPath"
+if (Test-Path $destinationPath) {
+    Remove-Item -Recurse -Force $destinationPath
 }
+New-Item -ItemType Directory -Path $destinationPath | Out-Null
 
-# 2. ZKOPÍRUJEME CELOU SLOŽKU PROJEKTU NAJEDNOU
-# Tímto se zaručeně přenese i složka l10n se vším všudy
-Copy-Item -Path "$sourcePath" -Destination $modDest -Recurse -Force
-
-# 3. VYČISTÍME CÍLOVOU SLOŽKU OD SMETÍ
-# Smažeme věci, které ve hře nechceme (git, vscode, skripty)
-$trash = @(".git", ".vscode", "deploy.ps1", ".gitignore")
-foreach ($item in $trash) {
-    $pathToRemove = Join-Path $modDest $item
-    if (Test-Path $pathToRemove) {
-        Remove-Item -Recurse -Force $pathToRemove
+# 2. Kopírování souborů modu
+Write-Host "2. Kopíruji pouze potřebné soubory modu..."
+foreach ($item in $modFiles) {
+    $itemPath = Join-Path $sourcePath $item
+    if (Test-Path $itemPath) {
+        Write-Host "   - Kopíruji: $item"
+        Copy-Item -Path $itemPath -Destination $destinationPath -Recurse
+    } else {
+        Write-Host "   - POZOR: Soubor/složka '$item' nenalezen, přeskakuji." -ForegroundColor Yellow
     }
 }
+Write-Host "Kopírování dokončeno." -ForegroundColor Green
 
-Write-Host "--- Struktura i se slozkou l10n je nyni v: $modDest ---" -ForegroundColor White
-
-# 4. Cisteni logu
-Write-Host "--- Cisteni logu ---" -ForegroundColor Yellow
-if (Test-Path $logFile) { 
-    Remove-Item $logFile -ErrorAction SilentlyContinue 
+# 3. Čištění logu (volitelné)
+Write-Host "3. Čistím starý log soubor."
+if (Test-Path $logFile) {
+    Remove-Item $logFile -ErrorAction SilentlyContinue
 }
 
-# 5. Start hry (Opravil jsem ti ID na 2301650 pro plnou verzi)
-Write-Host "--- Spoustim Farming Simulator 25 ---" -ForegroundColor Green
-Start-Process "steam://rungameid/2300320"
+# 4. Spuštění hry
+Write-Host "4. Spouštím Farming Simulator 25 (ID: $steamAppId)..."
+Start-Process "steam://rungameid/$steamAppId"
+
+Write-Host "--- Nasazení dokončeno. Přeji příjemné testování! ---" -ForegroundColor Cyan

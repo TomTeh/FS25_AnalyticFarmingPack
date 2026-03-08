@@ -1,0 +1,1013 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="mapCC_farmOfficeBuilding" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_placeableObject_farmOfficeBuilding</name>
+        <functions>
+            <function>$l10n_function_farmHouse</function>
+            <function>$l10n_function_wardrobe</function>
+            <function>$l10n_function_workshop</function>
+        </functions>
+        <image>placeables/farmOfficeBuilding/store_farmOfficeBuilding.png</image>
+        <price>525000</price>
+        <dailyUpkeep>100</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>LIZARDBUILDING</brand>
+        <species>placeable</species>
+        <category>farmhouses</category>
+        <brush>
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>farmhouses</tab>
+        </brush>
+
+        <storeIconRendering>
+            <settings cameraXRot="-10" cameraYRot="40" advancedBoundingBox="true"/>
+        </storeIconRendering>
+        <vertexBufferMemoryUsage>2130944</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>424192</indexBufferMemoryUsage>
+        <textureMemoryUsage>15597568</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>placeables/farmOfficeBuilding/farmOfficeBuilding.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true">
+        <testAreas>
+            <testArea startNode="testAreaStart1" endNode="testAreaEnd1"/>
+            <testArea startNode="testAreaStart2" endNode="testAreaEnd2"/>
+            <testArea startNode="testAreaStart3" endNode="testAreaEnd3"/>
+        </testAreas>
+
+        <sounds>
+            <place template="largeImp" />
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearAreaStart1" widthNode="clearAreaWidth1" heightNode="clearAreaHeight1"/>
+        <clearArea startNode="clearAreaStart2" widthNode="clearAreaWidth2" heightNode="clearAreaHeight2"/>
+        <clearArea startNode="clearAreaStart3" widthNode="clearAreaWidth3" heightNode="clearAreaHeight3"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="5" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelAreaStart1" widthNode="levelAreaWidth1" heightNode="levelAreaHeight1" groundType="asphalt" />
+            <levelArea startNode="levelAreaStart2" widthNode="levelAreaWidth2" heightNode="levelAreaHeight2" groundType="asphalt" />
+            <levelArea startNode="levelAreaStart3" widthNode="levelAreaWidth3" heightNode="levelAreaHeight3" groundType="asphalt" />
+            <levelArea startNode="levelAreaStart4" widthNode="levelAreaWidth4" heightNode="levelAreaHeight4" groundType="asphalt" />
+            <levelArea startNode="levelAreaStart5" widthNode="levelAreaWidth5" heightNode="levelAreaHeight5" groundType="asphalt" />
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorAreaStart1" widthNode="indoorAreaWidth1" heightNode="indoorAreaHeight1" />
+        <indoorArea startNode="indoorAreaStart2" widthNode="indoorAreaWidth2" heightNode="indoorAreaHeight2" />
+        <indoorArea startNode="indoorAreaStart3" widthNode="indoorAreaWidth3" heightNode="indoorAreaHeight3" />
+        <indoorArea startNode="indoorAreaStart4" widthNode="indoorAreaWidth4" heightNode="indoorAreaHeight4" />
+        <indoorArea startNode="indoorAreaStart5" widthNode="indoorAreaWidth5" heightNode="indoorAreaHeight5" />
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStart1" endNode="tipOcclusionUpdateAreaEnd1"/>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStart2" endNode="tipOcclusionUpdateAreaEnd2"/>
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateAreaStart1" endNode="tipOcclusionUpdateAreaEnd1"/>
+            <updateArea startNode="tipOcclusionUpdateAreaStart2" endNode="tipOcclusionUpdateAreaEnd2"/>
+        </updateAreas>
+    </ai>
+
+    <farmhouse spawnNode="spawnPoint">
+        <sleeping triggerNode="sleepTrigger" cameraNode="sleepCameraNode"/>
+    </farmhouse>
+
+    <wardrobe triggerNode="wardrobeTrigger"/>
+
+    <workshop>
+        <sellingPoint playerTriggerNode="workshopPlayerTrigger" iconNode="workshopMarker" sellTriggerNode="workshopVehicleTrigger" ownWorkshop="true" mobileWorkshop="false" />
+    </workshop>
+
+    <handToolHolders>
+        <handToolHolder>
+            <holder type="CHAINSAW" node="chainsawNode01" dummyFilename="$data/shared/visualization/dummyChainsaw.i3d"/>
+            <trigger node="playerTrigger_chainsawHolder01" />
+        </handToolHolder>
+        <handToolHolder>
+            <holder type="CHAINSAW" node="chainsawNode02" dummyFilename="$data/shared/visualization/dummyChainsaw.i3d"/>
+            <trigger node="playerTrigger_chainsawHolder02" />
+        </handToolHolder>
+        <handToolHolder>
+            <holder type="CHAINSAW" node="chainsawNode03" dummyFilename="$data/shared/visualization/dummyChainsaw.i3d"/>
+            <trigger node="playerTrigger_chainsawHolder03" />
+        </handToolHolder>
+        <handToolHolder>
+            <holder type="CHAINSAW" node="chainsawNode04" dummyFilename="$data/shared/visualization/dummyChainsaw.i3d"/>
+            <trigger node="playerTrigger_chainsawHolder04" />
+        </handToolHolder>
+        <handToolHolder>
+            <holder type="SPRAYCAN" node="sprayCanNode01" dummyFilename="$data/shared/visualization/dummySprayCan.i3d"/>
+            <trigger node="playerTrigger_sprayCanHolder01" />
+        </handToolHolder>
+        <handToolHolder>
+            <holder type="SPRAYCAN" node="sprayCanNode02" dummyFilename="$data/shared/visualization/dummySprayCan.i3d"/>
+            <trigger node="playerTrigger_sprayCanHolder02" />
+        </handToolHolder>
+        <handToolHolder>
+            <holder type="SPRAYCAN" node="sprayCanNode03" dummyFilename="$data/shared/visualization/dummySprayCan.i3d"/>
+            <trigger node="playerTrigger_sprayCanHolder03" />
+        </handToolHolder>
+        <handToolHolder>
+            <holder type="SPRAYCAN" node="sprayCanNode04" dummyFilename="$data/shared/visualization/dummySprayCan.i3d"/>
+            <trigger node="playerTrigger_sprayCanHolder04" />
+        </handToolHolder>
+        <handToolHolder>
+            <holder type="SPRAYCAN" node="sprayCanNode05" dummyFilename="$data/shared/visualization/dummySprayCan.i3d"/>
+            <trigger node="playerTrigger_sprayCanHolder05" />
+        </handToolHolder>
+        <handToolHolder>
+            <holder type="SPRAYCAN" node="sprayCanNode06" dummyFilename="$data/shared/visualization/dummySprayCan.i3d"/>
+            <trigger node="playerTrigger_sprayCanHolder06" />
+        </handToolHolder>
+        <handToolHolder>
+            <holder type="HORSEBRUSH" node="brushNode01" dummyFilename="$data/shared/visualization/dummyHorseBrush.i3d"/>
+            <trigger node="playerTrigger_brushHolder01" />
+        </handToolHolder>
+    </handToolHolders>
+
+    <triggerMarkers>
+        <triggerMarker node="sleepTriggerMarker" filename="$data/shared/assets/marker/markerIconSleep.i3d" adjustToGround="false" />
+        <triggerMarker node="wardrobeTriggerMarker" filename="$data/shared/assets/marker/markerIconWardrobe.i3d" adjustToGround="false" />
+        <triggerMarker node="workshopMarker" filename="$data/shared/assets/marker/markerIconWrench.i3d" adjustToGround="false" />
+    </triggerMarkers>
+
+    <lights>
+        <group name="$l10n_action_placeableLightShed" triggerNode="workshopLightsTrigger">
+            <sounds>
+                <toggle template="lizardFloodLight" linkNode="workshopLights_soundNode" innerRadius="25" outerRadius="30" volumeScale="0.2"/>
+            </sounds>
+        </group>
+        <group weatherRequiredFlags="NIGHT" />
+        <group name="$l10n_category_floodLighting" triggerNode="kitchenLightsTrigger">
+            <sounds>
+                <toggle linkNode="kitchenLights_soundNode" file="sounds/placeables/lightSwitch.wav" innerRadius="4" outerRadius="10">
+                    <randomization minVolume="-0.1" maxVolume="0.1" minPitch="-0.1" maxPitch="0.1" isInside="true" isOutside="true" />
+                    <volume indoor="2.0" outdoor="2.0" />
+                </toggle>
+            </sounds>
+        </group>
+        <group name="$l10n_category_floodLighting" triggerNode="diningRoomLightsTrigger">
+            <sounds>
+                <toggle linkNode="diningRoomLights_soundNode" file="sounds/placeables/lightSwitch.wav" innerRadius="4" outerRadius="10">
+                    <randomization minVolume="-0.1" maxVolume="0.1" minPitch="-0.1" maxPitch="0.1" isInside="true" isOutside="true" />
+                    <volume indoor="2.0" outdoor="2.0" />
+                </toggle>
+            </sounds>
+        </group>
+        <group name="$l10n_category_floodLighting" triggerNode="corridorLightsTrigger">
+            <sounds>
+                <toggle linkNode="corridorLights_soundNode" file="sounds/placeables/lightSwitch.wav" innerRadius="5" outerRadius="15">
+                    <randomization minVolume="-0.1" maxVolume="0.1" minPitch="-0.1" maxPitch="0.1" isInside="true" isOutside="true" />
+                    <volume indoor="2.0" outdoor="2.0" />
+                </toggle>
+            </sounds>
+        </group>
+        <group name="$l10n_category_floodLighting" triggerNode="acommodationLightsTrigger">
+            <sounds>
+                <toggle linkNode="acommodationLights_soundNode" file="sounds/placeables/lightSwitch.wav" innerRadius="4" outerRadius="10">
+                    <randomization minVolume="-0.1" maxVolume="0.1" minPitch="-0.1" maxPitch="0.1" isInside="true" isOutside="true" />
+                    <volume indoor="2.0" outdoor="2.0" />
+                </toggle>
+            </sounds>
+        </group>
+
+        <sharedLight filename="placeables/sharedAssets/lights/warehouseHangingLamp.xml" linkNode="warehouseHangingLamp01" groupIndex="1" />
+        <sharedLight filename="placeables/sharedAssets/lights/warehouseHangingLamp.xml" linkNode="warehouseHangingLamp02" groupIndex="1" />
+        <sharedLight filename="placeables/sharedAssets/lights/warehouseHangingLamp.xml" linkNode="warehouseHangingLamp03" groupIndex="1" />
+        <sharedLight filename="placeables/sharedAssets/lights/warehouseHangingLamp.xml" linkNode="warehouseHangingLamp04" groupIndex="1" />
+        <sharedLight filename="placeables/sharedAssets/lights/warehouseHangingLamp.xml" linkNode="warehouseHangingLamp05" groupIndex="1" />
+        <sharedLight filename="placeables/sharedAssets/lights/warehouseHangingLamp.xml" linkNode="warehouseHangingLamp06" groupIndex="1" />
+        <sharedLight filename="placeables/sharedAssets/lights/warehouseHangingLamp.xml" linkNode="warehouseHangingLamp07" groupIndex="1" />
+        <sharedLight filename="placeables/sharedAssets/lights/warehouseHangingLamp.xml" linkNode="warehouseHangingLamp08" groupIndex="1" />
+        <sharedLight filename="placeables/sharedAssets/lights/warehouseHangingLamp.xml" linkNode="warehouseHangingLamp09" groupIndex="1" />
+        <sharedLight filename="placeables/sharedAssets/lights/warehouseWallLamp.xml" linkNode="warehouseWallLamp01" groupIndex="2" />
+        <sharedLight filename="placeables/sharedAssets/lights/neonLight01.xml" linkNode="neonLight01_01" groupIndex="1" />
+        <sharedLight filename="placeables/sharedAssets/lights/neonLight02.xml" linkNode="neonLight02_01" groupIndex="1" />
+        <sharedLight filename="placeables/sharedAssets/lights/neonLight01.xml" linkNode="neonLight01_02" groupIndex="1" />
+
+        <sharedLight filename="placeables/sharedAssets/lights/neonLight02.xml" linkNode="neonLight02_02" groupIndex="2" />
+        <sharedLight filename="placeables/sharedAssets/lights/neonLight02.xml" linkNode="neonLight02_03" groupIndex="2" />
+        <sharedLight filename="placeables/sharedAssets/lights/neonLight02.xml" linkNode="neonLight02_04" groupIndex="2" />
+        <sharedLight filename="placeables/sharedAssets/lights/houseLight04.xml" linkNode="houseLight04_01" groupIndex="2" />
+        <sharedLight filename="placeables/sharedAssets/lights/houseLight04.xml" linkNode="houseLight04_02" groupIndex="2" />
+        <sharedLight filename="placeables/sharedAssets/lights/houseLight04.xml" linkNode="houseLight04_03" groupIndex="2" />
+
+        <sharedLight filename="placeables/sharedAssets/lights/neonLight02.xml" linkNode="neonLight02_05" groupIndex="3" />
+        <sharedLight filename="placeables/sharedAssets/lights/neonLight02.xml" linkNode="neonLight02_06" groupIndex="3" />
+
+        <sharedLight filename="placeables/sharedAssets/lights/diningRoomLamp.xml" linkNode="diningRoomLamp01" groupIndex="4" />
+        <sharedLight filename="placeables/sharedAssets/lights/diningRoomLamp.xml" linkNode="diningRoomLamp02" groupIndex="4" />
+        <sharedLight filename="placeables/sharedAssets/lights/diningRoomLamp.xml" linkNode="diningRoomLamp03" groupIndex="4" />
+
+        <sharedLight filename="placeables/sharedAssets/lights/houseLight02.xml" linkNode="houseLight02_01" groupIndex="5" />
+        <sharedLight filename="placeables/sharedAssets/lights/houseLight02.xml" linkNode="houseLight02_02" groupIndex="5" />
+        <sharedLight filename="placeables/sharedAssets/lights/houseLight02.xml" linkNode="houseLight02_03" groupIndex="5" />
+        <sharedLight filename="placeables/sharedAssets/lights/houseLight02.xml" linkNode="houseLight02_04" groupIndex="5" />
+        <sharedLight filename="placeables/sharedAssets/lights/houseLight02.xml" linkNode="houseLight02_05" groupIndex="5" />
+        <sharedLight filename="placeables/sharedAssets/lights/houseLight02.xml" linkNode="houseLight02_06" groupIndex="5" />
+        <sharedLight filename="placeables/sharedAssets/lights/houseLight02.xml" linkNode="houseLight02_07" groupIndex="5" />
+        <sharedLight filename="placeables/sharedAssets/lights/houseLight02.xml" linkNode="houseLight02_08" groupIndex="5" />
+        <sharedLight filename="placeables/sharedAssets/lights/houseLight02.xml" linkNode="houseLight02_09" groupIndex="5" />
+        <sharedLight filename="placeables/sharedAssets/lights/houseLight02.xml" linkNode="houseLight02_10" groupIndex="5" />
+        <sharedLight filename="placeables/sharedAssets/lights/houseLight02.xml" linkNode="houseLight02_11" groupIndex="5" />
+        <sharedLight filename="placeables/sharedAssets/lights/houseLight02.xml" linkNode="houseLight02_12" groupIndex="5" />
+        <sharedLight filename="placeables/sharedAssets/lights/houseLight02.xml" linkNode="houseLight02_13" groupIndex="5" />
+
+        <sharedLight filename="placeables/sharedAssets/lights/houseLight02.xml" linkNode="houseLight02_14" groupIndex="6" />
+        <sharedLight filename="placeables/sharedAssets/lights/houseLight02.xml" linkNode="houseLight02_15" groupIndex="6" />
+
+        <realLights>
+            <low>
+                <light node="workshopLightsLow" groupIndex="1"/>
+                <light node="shelterLightsLow" groupIndex="2"/>
+                <light node="kitchenLightsLow" groupIndex="3"/>
+                <light node="diningRoomLightsLow" groupIndex="4"/>
+                <light node="corridorLightsLow" groupIndex="5"/>
+                <light node="acommodationLightsLow" groupIndex="6"/>
+            </low>
+            <high>
+                <light node="workshopLightsHigh" groupIndex="1"/>
+                <light node="shelterLightsHigh" groupIndex="2"/>
+                <light node="kitchenLightsHigh" groupIndex="3"/>
+                <light node="diningRoomLightsHigh" groupIndex="4"/>
+                <light node="corridorLightsHigh" groupIndex="5"/>
+                <light node="acommodationLightsHigh" groupIndex="6"/>
+                <light node="windowsLights" groupIndex="2"/>
+            </high>
+        </realLights>
+    </lights>
+
+    <animatedObjects>
+        <animatedObject saveId="officeBuilding_garageDoorInside" >
+            <animation duration="1.2">
+                <part node="garageDoorInside">
+                    <keyFrame time="0.1" rotation="90 0 180"/>
+                    <keyFrame time="1.0" rotation="90 140 180"/>
+                </part>
+                <part node="garageDoorInside_doorHandle">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="0.1" rotation="-35 0 0"/>
+                    <keyFrame time="0.2" rotation="0 0 0"/>
+                </part>
+                <part node="occluderMesh_garageDoorInside">
+                    <keyFrame time="0.0" visibility="true" />
+                    <keyFrame time="0.01" visibility="false" />
+                </part>
+            </animation>
+            <controls triggerNode="garageDoorInside_trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+            <sounds>
+                <moving linkNode="garageDoorInside_sound" template="glassDoorLoop" />
+                <posEnd linkNode="garageDoorInside_sound" template="fenceOpen" />
+                <negEnd linkNode="garageDoorInside_sound" template="fenceClose" />
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="officeBuilding_dinningRoomDoor" >
+            <animation duration="1.2">
+                <part node="dinningRoomDoor">
+                    <keyFrame time="0.1" rotation="-90 0 0"/>
+                    <keyFrame time="1.0" rotation="-90 -120 0"/>
+                </part>
+                <part node="dinningRoomDoor_doorHandle">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="0.1" rotation="-35 0 0"/>
+                    <keyFrame time="0.2" rotation="0 0 0"/>
+                </part>
+                <part node="occluderMesh_dinningRoomDoor">
+                    <keyFrame time="0.0" visibility="true" />
+                    <keyFrame time="0.01" visibility="false" />
+                </part>
+            </animation>
+            <controls triggerNode="dinningRoomDoor_trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+            <sounds>
+                <moving linkNode="dinningRoomDoor_sound" template="glassDoorLoop" />
+                <posEnd linkNode="dinningRoomDoor_sound" template="fenceOpen" />
+                <negEnd linkNode="dinningRoomDoor_sound" template="fenceClose" />
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="officeBuilding_kitchenDoor2" >
+            <animation duration="1.2">
+                <part node="kitchenDoor2">
+                    <keyFrame time="0.1" rotation="-90 0 0"/>
+                    <keyFrame time="1.0" rotation="-90 -105 0"/>
+                </part>
+                <part node="kitchenDoor2_doorHandle">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="0.1" rotation="-35 0 0"/>
+                    <keyFrame time="0.2" rotation="0 0 0"/>
+                </part>
+                <part node="occluderMesh_kitchenDoor2">
+                    <keyFrame time="0.0" visibility="true" />
+                    <keyFrame time="0.01" visibility="false" />
+                </part>
+            </animation>
+            <controls triggerNode="kitchenDoor2_trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+            <sounds>
+                <moving linkNode="kitchenDoor2_sound" template="glassDoorLoop" />
+                <posEnd linkNode="kitchenDoor2_sound" template="fenceOpen" />
+                <negEnd linkNode="kitchenDoor2_sound" template="fenceClose" />
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="officeBuilding_kitchenDoor1" >
+            <animation duration="1.2">
+                <part node="kitchenDoor1">
+                    <keyFrame time="0.1" rotation="-90 -90 0"/>
+                    <keyFrame time="1.0" rotation="-90 20 0"/>
+                </part>
+                <part node="kitchenDoor1_doorHandle">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="0.1" rotation="-35 0 0"/>
+                    <keyFrame time="0.2" rotation="0 0 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="kitchenDoor1_trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+            <sounds>
+                <moving linkNode="kitchenDoor1_sound" template="glassDoorLoop" />
+                <posEnd linkNode="kitchenDoor1_sound" template="fenceOpen" />
+                <negEnd linkNode="kitchenDoor1_sound" template="fenceClose" />
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="officeBuilding_accommodationDoor" >
+            <animation duration="1.2">
+                <part node="accommodationDoor">
+                    <keyFrame time="0.1" rotation="90 0 180"/>
+                    <keyFrame time="1.0" rotation="90 -95 180"/>
+                </part>
+                <part node="accommodationDoor_doorHandle">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="0.1" rotation="-35 0 0"/>
+                    <keyFrame time="0.2" rotation="0 0 0"/>
+                </part>
+                <part node="occluderMesh_accommodationDoor">
+                    <keyFrame time="0.0" visibility="true" />
+                    <keyFrame time="0.01" visibility="false" />
+                </part>
+            </animation>
+            <controls triggerNode="accommodationDoor_trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+            <sounds>
+                <moving linkNode="accommodationDoor_sound" template="glassDoorLoop" />
+                <posEnd linkNode="accommodationDoor_sound" template="fenceOpen" />
+                <negEnd linkNode="accommodationDoor_sound" template="fenceClose" />
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="officeBuilding_entranceDoor" >
+            <animation duration="1.2">
+                <part node="entranceDoor">
+                    <keyFrame time="0.1" rotation="-90 -90 0"/>
+                    <keyFrame time="1.0" rotation="-90 -194 0"/>
+                </part>
+                <part node="entranceDoor_doorHandle">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="0.1" rotation="-35 0 0"/>
+                    <keyFrame time="0.2" rotation="0 0 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="entranceDoor_trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+            <sounds>
+                <moving linkNode="entranceDoor_sound" template="glassDoorLoop" />
+                <posEnd linkNode="entranceDoor_sound" template="fenceOpen" />
+                <negEnd linkNode="entranceDoor_sound" template="fenceClose" />
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="officeBuilding_shelterDoor" >
+            <animation duration="1.2">
+                <part node="shelterDoor">
+                    <keyFrame time="0.1" rotation="-90 0 0"/>
+                    <keyFrame time="1.0" rotation="-90 -90 0"/>
+                </part>
+                <part node="shelterDoor_doorHandle">
+                    <keyFrame time="0.0" rotation="0 0 180"/>
+                    <keyFrame time="0.1" rotation="-35 0 180"/>
+                    <keyFrame time="0.2" rotation="0 0 180"/>
+                </part>
+            </animation>
+            <controls triggerNode="shelterDoor_trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+            <sounds>
+                <moving linkNode="shelterDoor_sound" template="glassDoorLoop" />
+                <posEnd linkNode="shelterDoor_sound" template="fenceOpen" />
+                <negEnd linkNode="shelterDoor_sound" template="fenceClose" />
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="officeBuilding_garageDoor1" >
+            <animation duration="1.2">
+                <part node="garageDoor1">
+                    <keyFrame time="0.1" rotation="-90 0 0"/>
+                    <keyFrame time="1.0" rotation="-90 -100 0"/>
+                </part>
+                <part node="garageDoor1_doorHandle">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="0.1" rotation="-35 0 0"/>
+                    <keyFrame time="0.2" rotation="0 0 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="garageDoor1_trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+            <sounds>
+                <moving linkNode="garageDoor1_sound" template="glassDoorLoop" />
+                <posEnd linkNode="garageDoor1_sound" template="fenceOpen" />
+                <negEnd linkNode="garageDoor1_sound" template="fenceClose" />
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="officeBuilding_garageDoor2" >
+            <animation duration="1.2">
+                <part node="garageDoor2">
+                    <keyFrame time="0.1" rotation="90 0 180"/>
+                    <keyFrame time="1.0" rotation="90 120 180"/>
+                </part>
+                <part node="garageDoor2_doorHandle">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="0.1" rotation="-35 0 0"/>
+                    <keyFrame time="0.2" rotation="0 0 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="garageDoor2_trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+            <sounds>
+                <moving linkNode="garageDoor2_sound" template="glassDoorLoop" />
+                <posEnd linkNode="garageDoor2_sound" template="fenceOpen" />
+                <negEnd linkNode="garageDoor2_sound" template="fenceClose" />
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="officeBuilding_garageGate1" >
+            <animation duration="6">
+                <part node="garageGate1_part1">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="0.990" translation="0 4.5 0"/>
+                </part>
+                <part node="garageGate1_part2">
+                    <keyFrame time="0.0" translation="0 0.76 0"/>
+                    <keyFrame time="0.825" translation="0 4.5 0"/>
+                    <keyFrame time="0.875" translation="0 4.5 -0.2"/>
+                </part>
+                <part node="garageGate1_part3">
+                    <keyFrame time="0.0" translation="0 1.52 0"/>
+                    <keyFrame time="0.660" translation="0 4.5 0"/>
+                    <keyFrame time="0.715" translation="0 4.5 -0.2"/>
+                </part>
+                <part node="garageGate1_part4">
+                    <keyFrame time="0.0" translation="0 2.28 0"/>
+                    <keyFrame time="0.495" translation="0 4.5 0"/>
+                    <keyFrame time="0.545" translation="0 4.5 -0.2"/>
+                </part>
+                <part node="garageGate1_part5">
+                    <keyFrame time="0.0" translation="0 3.04 0"/>
+                    <keyFrame time="0.330" translation="0 4.5 0"/>
+                    <keyFrame time="0.385" translation="0 4.5 -0.2"/>
+                </part>
+                <part node="garageGate1_part6">
+                    <keyFrame time="0.0" translation="0 3.8 0"/>
+                    <keyFrame time="0.165" translation="0 4.5 0"/>
+                    <keyFrame time="0.215" translation="0 4.5 -0.2"/>
+                </part>
+                <part node="garageGate1_redDot">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.01" visibility="true" />
+                    <keyFrame time="0.99" visibility="true" />
+                    <keyFrame time="1" visibility="false"/>
+                </part>
+                <part node="occluderMesh_garageGate1">
+                    <keyFrame time="0.0" visibility="true" />
+                    <keyFrame time="0.01" visibility="false" />
+                </part>
+            </animation>
+            <controls triggerNode="garageGate1_trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving linkNode="garageGate1_sound" file="sounds/placeables/gates/electricGate.wav" loops="0" innerRadius="5" outerRadius="18" fadeOut="0.1" >
+                    <randomization minVolume="-0.1" maxVolume="0.1" minPitch="-0.1" maxPitch="0.1" isInside="true" isOutside="true" />
+                    <volume indoor="3.5" outdoor="3.5" />
+                </moving>
+                <posEnd linkNode="garageGate1_sound" template="slidingGateMetalOpen" innerRadius="5" outerRadius="18" />
+                <negEnd linkNode="garageGate1_sound" file="sounds/placeables/gates/electricGate_closed.wav" innerRadius="5" outerRadius="18" >
+                    <randomization minVolume="-0.1" maxVolume="0.1" minPitch="-0.1" maxPitch="0.1" isInside="true" isOutside="true" />
+                    <volume indoor="3.5" outdoor="3.5" />
+                </negEnd>
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="officeBuilding_garageGate2" >
+            <animation duration="6">
+                <part node="garageGate2_part1">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="0.990" translation="0 4.5 0"/>
+                </part>
+                <part node="garageGate2_part2">
+                    <keyFrame time="0.0" translation="0 0.76 0"/>
+                    <keyFrame time="0.825" translation="0 4.5 0"/>
+                    <keyFrame time="0.875" translation="0 4.5 -0.2"/>
+                </part>
+                <part node="garageGate2_part3">
+                    <keyFrame time="0.0" translation="0 1.52 0"/>
+                    <keyFrame time="0.660" translation="0 4.5 0"/>
+                    <keyFrame time="0.715" translation="0 4.5 -0.2"/>
+                </part>
+                <part node="garageGate2_part4">
+                    <keyFrame time="0.0" translation="0 2.28 0"/>
+                    <keyFrame time="0.495" translation="0 4.5 0"/>
+                    <keyFrame time="0.545" translation="0 4.5 -0.2"/>
+                </part>
+                <part node="garageGate2_part5">
+                    <keyFrame time="0.0" translation="0 3.04 0"/>
+                    <keyFrame time="0.330" translation="0 4.5 0"/>
+                    <keyFrame time="0.385" translation="0 4.5 -0.2"/>
+                </part>
+                <part node="garageGate2_part6">
+                    <keyFrame time="0.0" translation="0 3.8 0"/>
+                    <keyFrame time="0.165" translation="0 4.5 0"/>
+                    <keyFrame time="0.215" translation="0 4.5 -0.2"/>
+                </part>
+                <part node="garageGate2_redDot">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.01" visibility="true" />
+                    <keyFrame time="0.99" visibility="true" />
+                    <keyFrame time="1" visibility="false"/>
+                </part>
+                <part node="occluderMesh_garageGate2">
+                    <keyFrame time="0.0" visibility="true" />
+                    <keyFrame time="0.01" visibility="false" />
+                </part>
+            </animation>
+            <controls triggerNode="garageGate2_trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving linkNode="garageGate2_sound" file="sounds/placeables/gates/electricGate.wav" loops="0" innerRadius="5" outerRadius="18" fadeOut="0.1" >
+                    <randomization minVolume="-0.1" maxVolume="0.1" minPitch="-0.1" maxPitch="0.1" isInside="true" isOutside="true" />
+                    <volume indoor="3.5" outdoor="3.5" />
+                </moving>
+                <posEnd linkNode="garageGate2_sound" template="slidingGateMetalOpen" innerRadius="5" outerRadius="18" />
+                <negEnd linkNode="garageGate2_sound" file="sounds/placeables/gates/electricGate_closed.wav" innerRadius="5" outerRadius="18" >
+                    <randomization minVolume="-0.1" maxVolume="0.1" minPitch="-0.1" maxPitch="0.1" isInside="true" isOutside="true" />
+                    <volume indoor="3.5" outdoor="3.5" />
+                </negEnd>
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="officeBuilding_garageGate3" >
+            <animation duration="6">
+                <part node="garageGate3_part1">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="0.990" translation="0 4.5 0"/>
+                </part>
+                <part node="garageGate3_part2">
+                    <keyFrame time="0.0" translation="0 0.76 0"/>
+                    <keyFrame time="0.825" translation="0 4.5 0"/>
+                    <keyFrame time="0.875" translation="0 4.5 -0.2"/>
+                </part>
+                <part node="garageGate3_part3">
+                    <keyFrame time="0.0" translation="0 1.52 0"/>
+                    <keyFrame time="0.660" translation="0 4.5 0"/>
+                    <keyFrame time="0.715" translation="0 4.5 -0.2"/>
+                </part>
+                <part node="garageGate3_part4">
+                    <keyFrame time="0.0" translation="0 2.28 0"/>
+                    <keyFrame time="0.495" translation="0 4.5 0"/>
+                    <keyFrame time="0.545" translation="0 4.5 -0.2"/>
+                </part>
+                <part node="garageGate3_part5">
+                    <keyFrame time="0.0" translation="0 3.04 0"/>
+                    <keyFrame time="0.330" translation="0 4.5 0"/>
+                    <keyFrame time="0.385" translation="0 4.5 -0.2"/>
+                </part>
+                <part node="garageGate3_part6">
+                    <keyFrame time="0.0" translation="0 3.8 0"/>
+                    <keyFrame time="0.165" translation="0 4.5 0"/>
+                    <keyFrame time="0.215" translation="0 4.5 -0.2"/>
+                </part>
+                <part node="garageGate3_redDot">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.01" visibility="true" />
+                    <keyFrame time="0.99" visibility="true" />
+                    <keyFrame time="1" visibility="false"/>
+                </part>
+                <part node="occluderMesh_garageGate3">
+                    <keyFrame time="0.0" visibility="true" />
+                    <keyFrame time="0.01" visibility="false" />
+                </part>
+            </animation>
+            <controls triggerNode="garageGate3_trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving linkNode="garageGate3_sound" file="sounds/placeables/gates/electricGate.wav" loops="0" innerRadius="5" outerRadius="18" fadeOut="0.1" >
+                    <randomization minVolume="-0.1" maxVolume="0.1" minPitch="-0.1" maxPitch="0.1" isInside="true" isOutside="true" />
+                    <volume indoor="3.5" outdoor="3.5" />
+                </moving>
+                <posEnd linkNode="garageGate3_sound" template="slidingGateMetalOpen" innerRadius="5" outerRadius="18" />
+                <negEnd linkNode="garageGate3_sound" file="sounds/placeables/gates/electricGate_closed.wav" innerRadius="5" outerRadius="18" >
+                    <randomization minVolume="-0.1" maxVolume="0.1" minPitch="-0.1" maxPitch="0.1" isInside="true" isOutside="true" />
+                    <volume indoor="3.5" outdoor="3.5" />
+                </negEnd>
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="officeBuilding_garageGate4" >
+            <animation duration="6">
+                <part node="garageGate4_part1">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="0.990" translation="0 4.5 0"/>
+                </part>
+                <part node="garageGate4_part2">
+                    <keyFrame time="0.0" translation="0 0.76 0"/>
+                    <keyFrame time="0.825" translation="0 4.5 0"/>
+                    <keyFrame time="0.875" translation="0 4.5 -0.2"/>
+                </part>
+                <part node="garageGate4_part3">
+                    <keyFrame time="0.0" translation="0 1.52 0"/>
+                    <keyFrame time="0.660" translation="0 4.5 0"/>
+                    <keyFrame time="0.715" translation="0 4.5 -0.2"/>
+                </part>
+                <part node="garageGate4_part4">
+                    <keyFrame time="0.0" translation="0 2.28 0"/>
+                    <keyFrame time="0.495" translation="0 4.5 0"/>
+                    <keyFrame time="0.545" translation="0 4.5 -0.2"/>
+                </part>
+                <part node="garageGate4_part5">
+                    <keyFrame time="0.0" translation="0 3.04 0"/>
+                    <keyFrame time="0.330" translation="0 4.5 0"/>
+                    <keyFrame time="0.385" translation="0 4.5 -0.2"/>
+                </part>
+                <part node="garageGate4_part6">
+                    <keyFrame time="0.0" translation="0 3.8 0"/>
+                    <keyFrame time="0.165" translation="0 4.5 0"/>
+                    <keyFrame time="0.215" translation="0 4.5 -0.2"/>
+                </part>
+                <part node="garageGate4_redDot">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.01" visibility="true" />
+                    <keyFrame time="0.99" visibility="true" />
+                    <keyFrame time="1" visibility="false"/>
+                </part>
+                <part node="occluderMesh_garageGate4">
+                    <keyFrame time="0.0" visibility="true" />
+                    <keyFrame time="0.01" visibility="false" />
+                </part>
+            </animation>
+            <controls triggerNode="garageGate4_trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving linkNode="garageGate4_sound" file="sounds/placeables/gates/electricGate.wav" loops="0" innerRadius="5" outerRadius="18" fadeOut="0.1" >
+                    <randomization minVolume="-0.1" maxVolume="0.1" minPitch="-0.1" maxPitch="0.1" isInside="true" isOutside="true" />
+                    <volume indoor="3.5" outdoor="3.5" />
+                </moving>
+                <posEnd linkNode="garageGate4_sound" template="slidingGateMetalOpen" innerRadius="5" outerRadius="18" />
+                <negEnd linkNode="garageGate4_sound" file="sounds/placeables/gates/electricGate_closed.wav" innerRadius="5" outerRadius="18" >
+                    <randomization minVolume="-0.1" maxVolume="0.1" minPitch="-0.1" maxPitch="0.1" isInside="true" isOutside="true" />
+                    <volume indoor="3.5" outdoor="3.5" />
+                </negEnd>
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="officeBuilding_garageGate5" >
+            <animation duration="6">
+                <part node="garageGate5_part1">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="0.990" translation="0 4.5 0"/>
+                </part>
+                <part node="garageGate5_part2">
+                    <keyFrame time="0.0" translation="0 0.76 0"/>
+                    <keyFrame time="0.825" translation="0 4.5 0"/>
+                    <keyFrame time="0.875" translation="0 4.5 -0.2"/>
+                </part>
+                <part node="garageGate5_part3">
+                    <keyFrame time="0.0" translation="0 1.52 0"/>
+                    <keyFrame time="0.660" translation="0 4.5 0"/>
+                    <keyFrame time="0.715" translation="0 4.5 -0.2"/>
+                </part>
+                <part node="garageGate5_part4">
+                    <keyFrame time="0.0" translation="0 2.28 0"/>
+                    <keyFrame time="0.495" translation="0 4.5 0"/>
+                    <keyFrame time="0.545" translation="0 4.5 -0.2"/>
+                </part>
+                <part node="garageGate5_part5">
+                    <keyFrame time="0.0" translation="0 3.04 0"/>
+                    <keyFrame time="0.330" translation="0 4.5 0"/>
+                    <keyFrame time="0.385" translation="0 4.5 -0.2"/>
+                </part>
+                <part node="garageGate5_part6">
+                    <keyFrame time="0.0" translation="0 3.8 0"/>
+                    <keyFrame time="0.165" translation="0 4.5 0"/>
+                    <keyFrame time="0.215" translation="0 4.5 -0.2"/>
+                </part>
+                <part node="garageGate5_redDot">
+                    <keyFrame time="0" visibility="false" />
+                    <keyFrame time="0.01" visibility="true" />
+                    <keyFrame time="0.99" visibility="true" />
+                    <keyFrame time="1" visibility="false"/>
+                </part>
+                <part node="occluderMesh_garageGate5">
+                    <keyFrame time="0.0" visibility="true" />
+                    <keyFrame time="0.01" visibility="false" />
+                </part>
+            </animation>
+            <controls triggerNode="garageGate5_trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving linkNode="garageGate5_sound" file="sounds/placeables/gates/electricGate.wav" loops="0" innerRadius="5" outerRadius="18" fadeOut="0.1" >
+                    <randomization minVolume="-0.1" maxVolume="0.1" minPitch="-0.1" maxPitch="0.1" isInside="true" isOutside="true" />
+                    <volume indoor="3.5" outdoor="3.5" />
+                </moving>
+                <posEnd linkNode="garageGate5_sound" template="slidingGateMetalOpen" innerRadius="5" outerRadius="18" />
+                <negEnd linkNode="garageGate5_sound" file="sounds/placeables/gates/electricGate_closed.wav" innerRadius="5" outerRadius="18" >
+                    <randomization minVolume="-0.1" maxVolume="0.1" minPitch="-0.1" maxPitch="0.1" isInside="true" isOutside="true" />
+                    <volume indoor="3.5" outdoor="3.5" />
+                </negEnd>
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="officeBuilding_inspectionPit" >
+            <animation duration="0.2">
+                <part node="inspectionPitBoards">
+                    <keyFrame time="0.0" visibility="true"/>
+                    <keyFrame time="0.1" visibility="false"/>
+                </part>
+                <part node="inspectionPitBoardsStack">
+                    <keyFrame time="0.0" visibility="false"/>
+                    <keyFrame time="0.1" visibility="true"/>
+                </part>
+                <part node="inspectionPitBoards_col">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 0 -2"/>
+                </part>
+                <part node="inspectionPitBoardsStack_col">
+                    <keyFrame time="0.0" translation="0 0 -0.5"/>
+                    <keyFrame time="1.0" translation="0 0 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="inspectionPit_trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openInspectionPit" negText="action_closeInspectionPit" />
+            <sounds>
+                <moving linkNode="inspectionPit_sound" file="sounds/placeables/gates/woodenPlankPick.wav" loops="1" innerRadius="5" outerRadius="15" >
+                    <randomization minVolume="-0.1" maxVolume="0.1" minPitch="-0.1" maxPitch="0.1" isInside="true" isOutside="true" />
+                    <volume indoor="1.5" outdoor="1.5" />
+                </moving>
+            </sounds>
+        </animatedObject>
+    </animatedObjects>
+
+    <hotspots>
+        <hotspot type="FARM" teleportNode="spawnPoint" />
+    </hotspots>
+
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart node="0" linkNode="lightSwitchWorkshop01" filename="$data/shared/assets/lights/rudolfHormann/powerSwitch.i3d" />
+        <dynamicallyLoadedPart node="0" linkNode="lightSwitchWorkshop02" filename="$data/shared/assets/lights/rudolfHormann/powerSwitch.i3d" />
+        <dynamicallyLoadedPart node="0" linkNode="lightSwitchWorkshop03" filename="$data/shared/assets/lights/rudolfHormann/powerSwitch.i3d" />
+        <dynamicallyLoadedPart node="0" linkNode="propsBuildingNode" filename="placeables/sharedAssets/propsBuilding/propsBuilding_farmOfficeBuilding.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="propsBuildingNode" filename="placeables/sharedAssets/props/interiorFarmOfficeBuilding.i3d"/>
+        <dynamicallyLoadedPart node="2" linkNode="propsDecoNode" filename="placeables/sharedAssets/props/cabinetWorkbecnches.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="propsDecoNode" filename="placeables/sharedAssets/props/props_farmOfficeBuilding.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="propsDecoNode" filename="placeables/sharedAssets/props/decals.i3d"/>
+    </dynamicallyLoadedParts>
+
+    <i3dMappings>
+        <i3dMapping id="garageDoorInside_sound" node="0>1|0" />
+        <i3dMapping id="garageDoorInside" node="0>1|0|0" />
+        <i3dMapping id="garageDoorInside_doorHandle" node="0>1|0|0|0" />
+        <i3dMapping id="garageDoorInside_trigger" node="0>1|0|1" />
+        <i3dMapping id="occluderMesh_garageDoorInside" node="0>1|0|2" />
+        <i3dMapping id="dinningRoomDoor_sound" node="0>1|1" />
+        <i3dMapping id="dinningRoomDoor" node="0>1|1|0" />
+        <i3dMapping id="dinningRoomDoor_doorHandle" node="0>1|1|0|0" />
+        <i3dMapping id="dinningRoomDoor_trigger" node="0>1|1|1" />
+        <i3dMapping id="occluderMesh_dinningRoomDoor" node="0>1|1|2" />
+        <i3dMapping id="kitchenDoor2_sound" node="0>1|2" />
+        <i3dMapping id="kitchenDoor2" node="0>1|2|0" />
+        <i3dMapping id="kitchenDoor2_doorHandle" node="0>1|2|0|0" />
+        <i3dMapping id="kitchenDoor2_trigger" node="0>1|2|1" />
+        <i3dMapping id="occluderMesh_kitchenDoor2" node="0>1|2|2" />
+        <i3dMapping id="kitchenDoor1_sound" node="0>1|3" />
+        <i3dMapping id="kitchenDoor1" node="0>1|3|0" />
+        <i3dMapping id="kitchenDoor1_doorHandle" node="0>1|3|0|0" />
+        <i3dMapping id="kitchenDoor1_trigger" node="0>1|3|1" />
+        <i3dMapping id="accommodationDoor_sound" node="0>1|4" />
+        <i3dMapping id="accommodationDoor" node="0>1|4|0" />
+        <i3dMapping id="accommodationDoor_doorHandle" node="0>1|4|0|0" />
+        <i3dMapping id="accommodationDoor_trigger" node="0>1|4|1" />
+        <i3dMapping id="occluderMesh_accommodationDoor" node="0>1|4|2" />
+        <i3dMapping id="entranceDoor_sound" node="0>1|5" />
+        <i3dMapping id="entranceDoor" node="0>1|5|0" />
+        <i3dMapping id="entranceDoor_doorHandle" node="0>1|5|0|0" />
+        <i3dMapping id="entranceDoor_trigger" node="0>1|5|1" />
+        <i3dMapping id="shelterDoor_sound" node="0>1|6" />
+        <i3dMapping id="shelterDoor" node="0>1|6|0" />
+        <i3dMapping id="shelterDoor_doorHandle" node="0>1|6|0|0" />
+        <i3dMapping id="shelterDoor_trigger" node="0>1|6|1" />
+        <i3dMapping id="garageDoor1_sound" node="0>1|7" />
+        <i3dMapping id="garageDoor1" node="0>1|7|0" />
+        <i3dMapping id="garageDoor1_doorHandle" node="0>1|7|0|0" />
+        <i3dMapping id="garageDoor1_trigger" node="0>1|7|1" />
+        <i3dMapping id="garageDoor2_sound" node="0>1|8" />
+        <i3dMapping id="garageDoor2" node="0>1|8|0" />
+        <i3dMapping id="garageDoor2_doorHandle" node="0>1|8|0|0" />
+        <i3dMapping id="garageDoor2_trigger" node="0>1|8|1" />
+        <i3dMapping id="garageGate1_part1" node="0>1|9|0" />
+        <i3dMapping id="garageGate1_part2" node="0>1|9|1" />
+        <i3dMapping id="garageGate1_part3" node="0>1|9|2" />
+        <i3dMapping id="garageGate1_part4" node="0>1|9|3" />
+        <i3dMapping id="garageGate1_part5" node="0>1|9|4" />
+        <i3dMapping id="garageGate1_part6" node="0>1|9|5" />
+        <i3dMapping id="garageGate1_redDot" node="0>1|9|6|0" />
+        <i3dMapping id="garageGate1_trigger" node="0>1|9|7" />
+        <i3dMapping id="garageGate1_sound" node="0>1|9|8" />
+        <i3dMapping id="occluderMesh_garageGate1" node="0>1|9|9" />
+        <i3dMapping id="garageGate2_part1" node="0>1|10|0" />
+        <i3dMapping id="garageGate2_part2" node="0>1|10|1" />
+        <i3dMapping id="garageGate2_part3" node="0>1|10|2" />
+        <i3dMapping id="garageGate2_part4" node="0>1|10|3" />
+        <i3dMapping id="garageGate2_part5" node="0>1|10|4" />
+        <i3dMapping id="garageGate2_part6" node="0>1|10|5" />
+        <i3dMapping id="garageGate2_redDot" node="0>1|10|6|0" />
+        <i3dMapping id="garageGate2_trigger" node="0>1|10|7" />
+        <i3dMapping id="garageGate2_sound" node="0>1|10|8" />
+        <i3dMapping id="occluderMesh_garageGate2" node="0>1|10|9" />
+        <i3dMapping id="garageGate3_part1" node="0>1|11|0" />
+        <i3dMapping id="garageGate3_part2" node="0>1|11|1" />
+        <i3dMapping id="garageGate3_part3" node="0>1|11|2" />
+        <i3dMapping id="garageGate3_part4" node="0>1|11|3" />
+        <i3dMapping id="garageGate3_part5" node="0>1|11|4" />
+        <i3dMapping id="garageGate3_part6" node="0>1|11|5" />
+        <i3dMapping id="garageGate3_redDot" node="0>1|11|6|0" />
+        <i3dMapping id="garageGate3_trigger" node="0>1|11|7" />
+        <i3dMapping id="garageGate3_sound" node="0>1|11|8" />
+        <i3dMapping id="occluderMesh_garageGate3" node="0>1|11|9" />
+        <i3dMapping id="garageGate4_part1" node="0>1|12|0" />
+        <i3dMapping id="garageGate4_part2" node="0>1|12|1" />
+        <i3dMapping id="garageGate4_part3" node="0>1|12|2" />
+        <i3dMapping id="garageGate4_part4" node="0>1|12|3" />
+        <i3dMapping id="garageGate4_part5" node="0>1|12|4" />
+        <i3dMapping id="garageGate4_part6" node="0>1|12|5" />
+        <i3dMapping id="garageGate4_redDot" node="0>1|12|6|0" />
+        <i3dMapping id="garageGate4_trigger" node="0>1|12|7" />
+        <i3dMapping id="garageGate4_sound" node="0>1|12|8" />
+        <i3dMapping id="occluderMesh_garageGate4" node="0>1|12|9" />
+        <i3dMapping id="garageGate5_part1" node="0>1|13|0" />
+        <i3dMapping id="garageGate5_part2" node="0>1|13|1" />
+        <i3dMapping id="garageGate5_part3" node="0>1|13|2" />
+        <i3dMapping id="garageGate5_part4" node="0>1|13|3" />
+        <i3dMapping id="garageGate5_part5" node="0>1|13|4" />
+        <i3dMapping id="garageGate5_part6" node="0>1|13|5" />
+        <i3dMapping id="garageGate5_redDot" node="0>1|13|6|0" />
+        <i3dMapping id="garageGate5_trigger" node="0>1|13|7" />
+        <i3dMapping id="garageGate5_sound" node="0>1|13|8" />
+        <i3dMapping id="occluderMesh_garageGate5" node="0>1|13|9" />
+        <i3dMapping id="inspectionPitBoards" node="0>1|14|0" />
+        <i3dMapping id="inspectionPitBoards_col" node="0>1|14|0|0" />
+        <i3dMapping id="inspectionPitBoardsStack" node="0>1|14|1" />
+        <i3dMapping id="inspectionPitBoardsStack_col" node="0>1|14|1|0" />
+        <i3dMapping id="inspectionPit_trigger" node="0>1|14|2" />
+        <i3dMapping id="inspectionPit_sound" node="0>1|14|3" />
+        <i3dMapping id="propsBuildingNode" node="0>2|1" />
+        <i3dMapping id="propsDecoNode" node="0>2|2" />
+        <i3dMapping id="propsBordersNode" node="0>2|3" />
+        <i3dMapping id="propsPreplacedNode" node="0>2|4" />
+        <i3dMapping id="warehouseHangingLamp01" node="0>3|0|0|0" />
+        <i3dMapping id="warehouseHangingLamp02" node="0>3|0|0|1" />
+        <i3dMapping id="warehouseHangingLamp03" node="0>3|0|0|2" />
+        <i3dMapping id="warehouseHangingLamp04" node="0>3|0|0|3" />
+        <i3dMapping id="warehouseHangingLamp05" node="0>3|0|0|4" />
+        <i3dMapping id="warehouseHangingLamp06" node="0>3|0|0|5" />
+        <i3dMapping id="warehouseHangingLamp07" node="0>3|0|0|6" />
+        <i3dMapping id="warehouseHangingLamp08" node="0>3|0|0|7" />
+        <i3dMapping id="warehouseHangingLamp09" node="0>3|0|0|8" />
+        <i3dMapping id="warehouseWallLamp01" node="0>3|0|0|9" />
+        <i3dMapping id="neonLight01_01" node="0>3|0|0|10" />
+        <i3dMapping id="neonLight02_01" node="0>3|0|0|11" />
+        <i3dMapping id="neonLight01_02" node="0>3|0|0|12" />
+        <i3dMapping id="neonLight02_02" node="0>3|0|1|0" />
+        <i3dMapping id="neonLight02_03" node="0>3|0|1|1" />
+        <i3dMapping id="neonLight02_04" node="0>3|0|1|2" />
+        <i3dMapping id="houseLight04_01" node="0>3|0|1|3" />
+        <i3dMapping id="houseLight04_02" node="0>3|0|1|4" />
+        <i3dMapping id="houseLight04_03" node="0>3|0|1|5" />
+        <i3dMapping id="neonLight02_05" node="0>3|0|2|0" />
+        <i3dMapping id="neonLight02_06" node="0>3|0|2|1" />
+        <i3dMapping id="diningRoomLamp01" node="0>3|0|3|0" />
+        <i3dMapping id="diningRoomLamp02" node="0>3|0|3|1" />
+        <i3dMapping id="diningRoomLamp03" node="0>3|0|3|2" />
+        <i3dMapping id="houseLight02_01" node="0>3|0|4|0" />
+        <i3dMapping id="houseLight02_02" node="0>3|0|4|1" />
+        <i3dMapping id="houseLight02_03" node="0>3|0|4|2" />
+        <i3dMapping id="houseLight02_04" node="0>3|0|4|3" />
+        <i3dMapping id="houseLight02_05" node="0>3|0|4|4" />
+        <i3dMapping id="houseLight02_06" node="0>3|0|4|5" />
+        <i3dMapping id="houseLight02_07" node="0>3|0|4|6" />
+        <i3dMapping id="houseLight02_08" node="0>3|0|4|7" />
+        <i3dMapping id="houseLight02_09" node="0>3|0|4|8" />
+        <i3dMapping id="houseLight02_10" node="0>3|0|4|9" />
+        <i3dMapping id="houseLight02_11" node="0>3|0|4|10" />
+        <i3dMapping id="houseLight02_12" node="0>3|0|4|11" />
+        <i3dMapping id="houseLight02_13" node="0>3|0|4|12" />
+        <i3dMapping id="houseLight02_14" node="0>3|0|5|0" />
+        <i3dMapping id="houseLight02_15" node="0>3|0|5|1" />
+        <i3dMapping id="workshopLightsLow" node="0>3|1|0|0" />
+        <i3dMapping id="shelterLightsLow" node="0>3|1|0|1" />
+        <i3dMapping id="kitchenLightsLow" node="0>3|1|0|2" />
+        <i3dMapping id="diningRoomLightsLow" node="0>3|1|0|3" />
+        <i3dMapping id="corridorLightsLow" node="0>3|1|0|4" />
+        <i3dMapping id="acommodationLightsLow" node="0>3|1|0|5" />
+        <i3dMapping id="workshopLightsHigh" node="0>3|1|1|0" />
+        <i3dMapping id="shelterLightsHigh" node="0>3|1|1|1" />
+        <i3dMapping id="kitchenLightsHigh" node="0>3|1|1|2" />
+        <i3dMapping id="diningRoomLightsHigh" node="0>3|1|1|3" />
+        <i3dMapping id="corridorLightsHigh" node="0>3|1|1|4" />
+        <i3dMapping id="acommodationLightsHigh" node="0>3|1|1|5" />
+        <i3dMapping id="windowsLights" node="0>3|1|2" />
+        <i3dMapping id="lightSwitchWorkshop01" node="0>3|2|0" />
+        <i3dMapping id="lightSwitchWorkshop02" node="0>3|2|1" />
+        <i3dMapping id="lightSwitchWorkshop03" node="0>3|2|2" />
+        <i3dMapping id="workshopLightsTrigger" node="0>3|3" />
+        <i3dMapping id="workshopLights_soundNode" node="0>3|3|0" />
+        <i3dMapping id="kitchenLightsTrigger" node="0>3|4" />
+        <i3dMapping id="kitchenLights_soundNode" node="0>3|4|0" />
+        <i3dMapping id="diningRoomLightsTrigger" node="0>3|5" />
+        <i3dMapping id="diningRoomLights_soundNode" node="0>3|5|0" />
+        <i3dMapping id="corridorLightsTrigger" node="0>3|6" />
+        <i3dMapping id="corridorLights_soundNode" node="0>3|6|0" />
+        <i3dMapping id="acommodationLightsTrigger" node="0>3|7" />
+        <i3dMapping id="acommodationLights_soundNode" node="0>3|7|0" />
+        <i3dMapping id="sleepTrigger" node="0>4|0|0" />
+        <i3dMapping id="sleepTriggerMarker" node="0>4|0|1" />
+        <i3dMapping id="sleepCameraNode" node="0>4|0|2" />
+        <i3dMapping id="spawnPoint" node="0>4|0|3" />
+        <i3dMapping id="wardrobeTrigger" node="0>4|1|0" />
+        <i3dMapping id="wardrobeTriggerMarker" node="0>4|1|1" />
+        <i3dMapping id="workshopMarker" node="0>5|0" />
+        <i3dMapping id="workshopWarningStripes" node="0>5|1" />
+        <i3dMapping id="workshopVehicleTrigger" node="0>5|2" />
+        <i3dMapping id="workshopPlayerTrigger" node="0>5|3" />
+        <i3dMapping id="chainsawNode01" node="0>6|0|0" />
+        <i3dMapping id="playerTrigger_chainsawHolder01" node="0>6|0|1" />
+        <i3dMapping id="chainsawNode02" node="0>6|1|0" />
+        <i3dMapping id="playerTrigger_chainsawHolder02" node="0>6|1|1" />
+        <i3dMapping id="chainsawNode03" node="0>6|2|0" />
+        <i3dMapping id="playerTrigger_chainsawHolder03" node="0>6|2|1" />
+        <i3dMapping id="chainsawNode04" node="0>6|3|0" />
+        <i3dMapping id="playerTrigger_chainsawHolder04" node="0>6|3|1" />
+        <i3dMapping id="sprayCanNode01" node="0>6|4|0" />
+        <i3dMapping id="playerTrigger_sprayCanHolder01" node="0>6|4|1" />
+        <i3dMapping id="sprayCanNode02" node="0>6|5|0" />
+        <i3dMapping id="playerTrigger_sprayCanHolder02" node="0>6|5|1" />
+        <i3dMapping id="sprayCanNode03" node="0>6|6|0" />
+        <i3dMapping id="playerTrigger_sprayCanHolder03" node="0>6|6|1" />
+        <i3dMapping id="sprayCanNode04" node="0>6|7|0" />
+        <i3dMapping id="playerTrigger_sprayCanHolder04" node="0>6|7|1" />
+        <i3dMapping id="sprayCanNode05" node="0>6|8|0" />
+        <i3dMapping id="playerTrigger_sprayCanHolder05" node="0>6|8|1" />
+        <i3dMapping id="sprayCanNode06" node="0>6|9|0" />
+        <i3dMapping id="playerTrigger_sprayCanHolder06" node="0>6|9|1" />
+        <i3dMapping id="brushNode01" node="0>6|10|0" />
+        <i3dMapping id="playerTrigger_brushHolder01" node="0>6|10|1" />
+        <i3dMapping id="clearAreaStart1" node="0>7|0" />
+        <i3dMapping id="clearAreaWidth1" node="0>7|0|0" />
+        <i3dMapping id="clearAreaHeight1" node="0>7|0|1" />
+        <i3dMapping id="clearAreaStart2" node="0>7|1" />
+        <i3dMapping id="clearAreaWidth2" node="0>7|1|0" />
+        <i3dMapping id="clearAreaHeight2" node="0>7|1|1" />
+        <i3dMapping id="clearAreaStart3" node="0>7|2" />
+        <i3dMapping id="clearAreaWidth3" node="0>7|2|0" />
+        <i3dMapping id="clearAreaHeight3" node="0>7|2|1" />
+        <i3dMapping id="levelAreaStart1" node="0>8|0" />
+        <i3dMapping id="levelAreaWidth1" node="0>8|0|0" />
+        <i3dMapping id="levelAreaHeight1" node="0>8|0|1" />
+        <i3dMapping id="levelAreaStart2" node="0>8|1" />
+        <i3dMapping id="levelAreaWidth2" node="0>8|1|0" />
+        <i3dMapping id="levelAreaHeight2" node="0>8|1|1" />
+        <i3dMapping id="levelAreaStart3" node="0>8|2" />
+        <i3dMapping id="levelAreaWidth3" node="0>8|2|0" />
+        <i3dMapping id="levelAreaHeight3" node="0>8|2|1" />
+        <i3dMapping id="levelAreaStart4" node="0>8|3" />
+        <i3dMapping id="levelAreaWidth4" node="0>8|3|0" />
+        <i3dMapping id="levelAreaHeight4" node="0>8|3|1" />
+        <i3dMapping id="levelAreaStart5" node="0>8|4" />
+        <i3dMapping id="levelAreaWidth5" node="0>8|4|0" />
+        <i3dMapping id="levelAreaHeight5" node="0>8|4|1" />
+        <i3dMapping id="indoorAreaStart1" node="0>9|0" />
+        <i3dMapping id="indoorAreaWidth1" node="0>9|0|0" />
+        <i3dMapping id="indoorAreaHeight1" node="0>9|0|1" />
+        <i3dMapping id="indoorAreaStart2" node="0>9|1" />
+        <i3dMapping id="indoorAreaWidth2" node="0>9|1|0" />
+        <i3dMapping id="indoorAreaHeight2" node="0>9|1|1" />
+        <i3dMapping id="indoorAreaStart3" node="0>9|2" />
+        <i3dMapping id="indoorAreaWidth3" node="0>9|2|0" />
+        <i3dMapping id="indoorAreaHeight3" node="0>9|2|1" />
+        <i3dMapping id="indoorAreaStart4" node="0>9|3" />
+        <i3dMapping id="indoorAreaWidth4" node="0>9|3|0" />
+        <i3dMapping id="indoorAreaHeight4" node="0>9|3|1" />
+        <i3dMapping id="indoorAreaStart5" node="0>9|4" />
+        <i3dMapping id="indoorAreaWidth5" node="0>9|4|0" />
+        <i3dMapping id="indoorAreaHeight5" node="0>9|4|1" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart1" node="0>10|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd1" node="0>10|0|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart2" node="0>10|1" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd2" node="0>10|1|0" />
+        <i3dMapping id="testAreaStart1" node="0>11|0" />
+        <i3dMapping id="testAreaEnd1" node="0>11|0|0" />
+        <i3dMapping id="testAreaStart2" node="0>11|1" />
+        <i3dMapping id="testAreaEnd2" node="0>11|1|0" />
+        <i3dMapping id="testAreaStart3" node="0>11|2" />
+        <i3dMapping id="testAreaEnd3" node="0>11|2|0" />
+    </i3dMappings>
+</placeable>
